@@ -24,3 +24,6 @@ religion = pirate
 	b_greygallows = ca_asoiaf_pirateshipyard_2
 	b_greygallows = ca_asoiaf_pirateshipyard_3
 }
+8314.1.1 = {
+	religion = weeping_lady
+}

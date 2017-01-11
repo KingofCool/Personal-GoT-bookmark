@@ -1,0 +1,17 @@
+# 695 - Vaes Jimma
+
+# County Title
+title = c_vaes_jimma
+
+# Settlements
+max_settlements = 3
+
+b_vaes_jimma = tribal
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+# History
+6000.1.1 = {
+}

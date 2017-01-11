@@ -1,0 +1,23 @@
+202.1.1 = { liege="d_wendwater" }
+
+7994.1.1 = { holder=300313 }	# Rickard Fell (nc)
+8012.1.1 = { holder=301313 }	# Raymund Fell (nc)
+8037.1.1 = { holder=303313 }	# Selwyn Fell (nc)
+8072.1.1 = { holder=304313 }	# Cedric Fell (nc)
+8096.1.1 = { holder=306313 }	# Selwyn Fell (nc)
+8117.1.1 = { holder=307313 }	# Raymund Fell (nc)
+8131.1.1 = { holder=308313 }	# Donal Fell (nc)
+8159.1.1 = { holder=309313 }	# Arstan Fell (nc)
+8200.1.1 = { holder=310313 }	# Thurgood Fell (C)
+8221.1.1 = { holder=311313 }	# Selwyn Fell (nc)
+8251.1.1 = { holder=312313 }	# Rickard Fell (nc)
+8277.1.1 = { holder=313 }		# Lucas Fell (C)
+8282.9.15 = { liege=0 } # RR
+8283.1.1={
+	liege="k_stormlands"
+	holder=175313  # Michael Fell (nc)
+}
+8295.1.1 = {
+	holder=1313  # Harwood Fell (C)
+}
+8299.7.1 = { liege="k_stormlands" }

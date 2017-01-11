@@ -1,0 +1,800 @@
+first_men = {
+	graphical_cultures = { westerngfx } # buildings, portraits, units
+	
+	northman = {
+		graphical_cultures = { northmangfx } # portraits
+		
+		color = { 0.95 0.95 0.95 }
+		
+		male_names = {
+			Aethan Alaric Alyn Arnolf Arthor Artos
+			Bannen Barth Bartimus Bass Benfred Benjen Benjicot Beren Bernarr Beron Bowen Brandon Brenett Byam Bennard Barthogan
+			Calon Cayn Cellador Chayle Cley Cregan Cregard
+			Damon Danny Daryn Desmond Domeric Donnel Donnis Donnor Dorren Duncan Dywen
+			Eddard Edderion Edrick Edwyle Edwyn Ethan Eyron Elric Edric Errold
+			Farlen
+			Galbart Gariss Garth Gawen
+			Hallis Halys Hareth Harlon Harmond Harrion Harwin Harwood Helman Heward Hoarfrost Hother Howland Hugo Hullen
+			Jeor Jojen Jon Jonnel Jonos Jorah Jory Joseth
+			Karlon Kyle
+			Larence Leobald Luton Lonnel
+			Mallador Mark Marlon Martyn Medger Mikken Morgan Mors
+			Ondrew Osric Owen
+			Pate Porther
+			Qhorin Quent
+			Ramsay Rickard Rickon Robb Robett Robin Rodrik Rodwell Roger Ronnel Roose Rogar Royce Robard
+			Theo Theodan Theon Tomard Torghen Torren Torrhen
+			Vayon
+			Walder Walton Wayn Wendel Willam Wyl Wylis Wyman Wynton
+			Yoren
+		}
+		female_names = {
+			Alys Alysane Alyssa Alyx Arya Arra Arsa Arrana Aregelle
+			Barba Barbara Barbrey Bellena Berena Bessa Beth Bethany Branda
+			Cassana
+			Dacey Danelle Danny Darlessa Donella
+			Eddara Elyana Erena
+			Gilliane
+			Harra
+			Jeyne Jonella Jonnela Jorelle Jyana Jynessa Jocelyn
+			Kyra
+			Lacey Larra Leana Leona Lyanna Lyessa Lyra Lysa Lynarra Lysara
+			Maege Maegelle Marissa Meera Meliana Morra Mylessa Margaret Mariah Melantha Marna
+			Palla Perra
+			Rowena Raya
+			Sansa Sarra Serra Shiera Shyra Sybelle Serena
+			Wylla Wynafryd
+		}
+		
+		from_dynasty_prefix = "de "
+		
+		# Chance de male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 25
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance de female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 5
+		mat_grm_name_chance = 20
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+	
+	hill_clansman = {
+		graphical_cultures = { northmangfx } # portraits
+		
+		color = { 0.8 0.8 0.8 }
+		
+		male_names = {
+			Aethan Alaric Alyn Arnolf Arthor Artos
+			Bannen Barth Bartimus Bass Benfred Benjen Benjicot Beren Bernarr Beron Bowen Brandon Brenett Byam
+			Calon Cayn Cellador Chayle Cley Cregan
+			Damon Danny Daryn Desmond Domeric Donnel Donnis Donnor Dorren Duncan Dywen
+			Eddard Edderion Edrick Edwyle Edwyn Ethan Eyron
+			Farlen
+			Galbart Gariss Garth Gawen
+			Hallis Halys Hareth Harlon Harmond Harrion Harwin Harwood Helman Heward Hoarfrost Hother Howland Hugo Hullen
+			Jeor Jojen Jon Jonnel Jonos Jorah Jory Joseth
+			Karlon Kyle
+			Larence Leobald Luton
+			Mallador Mark Marlon Martyn Medger Mikken Morgan Mors
+			Ned Ondrew Osric Owen
+			Pate Porther
+			Qhorin Quent
+			Ramsay Rickard Rickon Robb Robett Robin Rodrik Rodwell Roger Ronnel Roose
+			Theo Theodan Theon Tomard Torghen Torren Torrhen
+			Vayon
+			Walder Walton Wayn Wendel Willam Wyl Wylis Wyman Wynton
+			Yoren
+		}
+		female_names = {
+			Alys Alysane Alyssa Alyx Arya
+			Barba Barbara Barbrey Bellena Berena Bessa Beth Bethany
+			Cassana
+			Dacey Danelle Danny Darlessa Donella
+			Eddara Elyana Erena
+			Harra
+			Jeyne Jonella Jonnela Jorelle Jyana Jynessa
+			Kyra
+			Lacey Larra Leana Leona Lyanna Lyessa Lyra
+			Maege Maegelle Marissa Meera Meliana Morra Mylessa
+			Palla Perra
+			Rowena
+			Sansa Sarra Serra Shiera Shyra Sybelle
+			Wylla Wynafryd
+		}
+		
+		from_dynasty_prefix = "de "
+		
+		# Chance de male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 25
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance de female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 5
+		mat_grm_name_chance = 20
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+	
+	crannogman = {
+		graphical_cultures = { northmangfx } # portraits
+		
+		color = { 0.7 0.7 0.7 }
+		
+		male_names = {
+			Aethan Alaric Alyn Arnolf Arthor Artos
+			Bannen Barth Bartimus Bass Benfred Benjen Benjicot Beren Bernarr Beron Bowen Brandon Brenett Byam Bennard
+			Calon Cayn Cellador Chayle Cley Cregan
+			Damon Danny Daryn Desmond Domeric Donnel Donnis Donnor Dorren Duncan Dywen
+			Eddard Edderion Edrick Edwyle Edwyn Ethan Eyron Elric
+			Farlen
+			Galbart Gariss Garth Gawen
+			Hallis Halys Hareth Harlon Harmond Harrion Harwin Harwood Helman Heward Hoarfrost Hother Howland Hugo Hullen
+			Jeor Jojen Jon Jonnel Jonos Jorah Jory Joseth
+			Karlon Kyle
+			Larence Leobald Luton
+			Mallador Mark Marlon Martyn Medger Mikken Morgan Mors
+			Ondrew Osric Owen
+			Pate Porther
+			Qhorin Quent
+			Ramsay Rickard Rickon Robb Robett Robin Rodrik Rodwell Roger Ronnel Roose
+			Theo Theodan Theon Tomard Torghen Torren Torrhen
+			Vayon
+			Walder Walton Wayn Wendel Willam Wyl Wylis Wyman Wynton
+			Yoren
+		}
+		female_names = {
+			Alys Alysane Alyssa Alyx Arya Arra
+			Barba Barbara Barbrey Bellena Berena Bessa Beth Bethany
+			Cassana
+			Dacey Danelle Danny Darlessa Donella
+			Eddara Elyana Erena
+			Gilliane
+			Harra
+			Jeyne Jonella Jonnela Jorelle Jyana Jynessa
+			Kyra
+			Lacey Larra Leana Leona Lyanna Lyessa Lyra Lysa
+			Maege Maegelle Marissa Meera Meliana Morra Mylessa Margaret
+			Palla Perra
+			Rowena
+			Sansa Sarra Serra Shiera Shyra Sybelle
+			Wylla Wynafryd
+		}
+		
+		from_dynasty_prefix = "de "
+		
+		# Chance de male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 25
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance de female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 5
+		mat_grm_name_chance = 20
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+	
+	half_southron = {
+		graphical_cultures = { englishgfx } # portraits
+		
+		color = { 0.87 0.87 0.87 }
+		
+		male_names = {
+			Aethan Alaric Alyn Arnolf Arthor Artos
+			Bannen Barth Bartimus Bass Benfred Benjen Benjicot Beren Bernarr Beron Bowen Brandon Brenett Byam
+			Calon Cayn Cellador Chayle Cley Cregan
+			Damon Danny Daryn Desmond Domeric Donnel Donnis Donnor Dorren Duncan Dywen
+			Eddard Edderion Edrick Edwyle Edwyn Ethan Eyron
+			Farlen Florian
+			Galbart Gariss Garlan Garreth Garse Garth Gawen Glendon Gormon
+			Hallis Halys Hareth Harlon Harmond Harrion Harwin Harwood Helman Heward Hoarfrost Hobber Horas Hosman Hother Howland Hugo Hullen
+			Jeor Jojen Jon Jonnel Jonos Jorah Jory Joseth
+			Karlon Kyle
+			Larence Leobald Loras Luthor Luton
+			Mallador Mark Marlon Martyn Medger Mern Mikken Morgan Moribald Mors
+			Ondrew Osric Owen
+			Pate Porther
+			Qhorin Quent
+			Ramsay Rickard Rickon Robb Robett Robin Rodrik Rodwell Roger Ronnel Roose
+			Samwell Samwyle
+			Theo Theodan Theon Tomard Torghen Torren Torrhen
+			Vayon Vortimer
+			Walder Walton Warryn Wayn Wilbert Wendel Willam Willas Wyl Wylis Wyman Wynton
+			Yoren
+		}
+		female_names = {
+			Alerie Alys Alysane Arya
+			Barbrey Berena Bessa Beth Bethany
+			Dacey Danny Desmera Donella
+			Eddara Emma Erena
+			Jeyne Jonella Jonnela Jonquil Jorelle Jyana
+			Kyra
+			Leona Lyanna Lyessa Lyra
+			Maege Malessa Malora Margaery Margot Meera Megga Melara Melessa Meliana Meredyth Mina Myriame
+			Olene Olenna
+			Palla
+			Rhonda Rohanne Rylene
+			Sansa Selyse Shyra Sybelle
+			Wylla Wynafrei Wynafryd
+		}
+		from_dynasty_prefix = "de "
+		
+		# Chance de male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 25
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance de female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 5
+		mat_grm_name_chance = 20
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+	
+	crackclawmen = {
+		graphical_cultures = { saxongfx } # portraits
+		
+		color = { 0.55 0.2 0.75 }
+		
+		male_names = {
+			Adrian Alan Alaric Allar Allard Alliser Alyn Ardrian Aron Arneld Arryk Aurane Athos Annos Aethan
+			Balman Barre Barth Belgrave Belis Bennard Boros Bronn Bryen Bartimos Benjen Beron Bowen
+			Clarence Clayton Clement Crispian Criston Cregan Cayn
+			Dale Danos Davos Denys Devan Dobber Donnel Dontos Duncan Duram Damond Dolen Durance Dywen
+			Elwood Erryk Eustace Egon Edderion Edrick Edwyle Ethan
+			Ferret Florian Farlen	
+			Igon
+			Kendel
+			Gendry Gilbert Godry Guncer Gwayne Gyles Galbart
+			Howard Hubard Humfrey Harmond Harrion Harwin
+			Jacelyn Janos Jaremy Jarman Jarmen Jon Jothos Justin Jeor Joseth Jory
+			Lothar Lothor Lucifer Lucos Laren Larence
+			Malcolm Malliard Maric Matthos Merrel Monford Morgan Morros Mortimer Martyn
+			Ollidor Osfryd Osmund Osney Oswell Ondrew Osric
+			Pate Perkin
+			Qarlton
+			Renfred Rennifer Robin Roger Rolland Rorge Rupert Ramsay Rickard Robett
+			Sefton Simon Steffon Symon Sherion Samwyle
+			Triston Tarell Theo Torghen
+			Ulmer
+			Vayon
+			Yohnen Yoren	
+			Wallace Will Willis
+		}
+		female_names = {
+			Aglantine Alerie Alla Alyce Alynne Alys Alysanne Annara Arianne
+			Barra Bethany Brella 
+			Cassana Corenna Cyrenna
+			Dalla Delena Denyse Desmera Donyse
+			Eglantine Ermesande Elenora Elrone
+			Falena Falyse
+			Idane Ismyra
+			Jeyne Jonquil Joyeuse Jalona
+			Lemore Leona Leonette Leyla Lia Lollys Lira_Lera
+			Pella
+			Malessa Malora Marei Mary Marya Matrice Melicent Mhaegan Mhaegen Moelle Mordane Mylenda Myrcella
+			Ravella Roelle
+			Scolera Selyse Senelle Shireen Sylvia Syrella Sabrina Sharra Sirona Shella Sharena Serina
+			Talla Tanda
+			Unella
+		}
+		
+		from_dynasty_prefix = "de "
+		
+		# Chance de male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 25
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance de female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 5
+		mat_grm_name_chance = 20
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+	
+	moon_clansman = { # Wildling copy as placeholder
+		graphical_cultures = { northmangfx } # portraits
+		
+		color = { 0.5 0.5 0.5 }
+		
+		male_names = {
+			Bodger Brogg
+			Calon Calor Cheyk Crawn
+			Dolf Doss Dryn Dywen
+			Errok Eyron
+			Galt Gunthor Gurn
+			Haggon Holger Howd
+			Jaggot
+			Kyleg
+			Lenn
+			Medger
+			Quort
+			Shagga Sigorn Soren Styr
+			Timett Toregg Torghen Torrek
+			Ulf Umar
+			Ygon
+		}
+		female_names = {
+			Brella Briar
+			Chella
+			Ferny Frenya Frynne
+			Gretchel Grisel Grisella
+			Harma Harra Helya
+			Meha Morna Morra Munda
+			Ragwyle Rowan
+			Val
+			Ynys Ysilla
+			Zia
+		}
+		
+		from_dynasty_prefix = "de "
+		
+		male_patronym = "Fils de "
+		prefix = yes # The patronym is added as a suffix
+		
+		founder_named_dynasties = yes
+		
+		# Chance de male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance de female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+
+	skagosi = {
+		graphical_cultures = { northmangfx } # portraits
+		
+		color = { 0.6 0.6 0.6 }
+		
+		male_names = { # Wildling names as placeholder
+			Aethan Alaric Alfyn Alyn Arnolf Arson Arthor Artos
+				Bael Bannen Bass Benjen Benjicot Beren Bernarr Beron Bodger Borroq Bowen Brandon Brogg Byam
+				Calon Cayn Chayle Craster Cregan
+				Daryn Del Desmond Devyn Domeric Donnel Donnis Donnor Dormund Dorren Doss Dryn Dywen
+				Eddard Edderion Edrick Edwyle Edwyn Errok Ethan Eyron
+				Farlen
+				Galbart Gariss Gavin Gawen Gendel Gerrick Gorne Grigg
+				Haggon Halleck Hallis Halys Hareth Harle Harlon Harmond Harrion Harwin Harwood Helman Heward Hoarfrost Hother Howd Howland Hullen
+				Jarl Jeor Jojen Jon Jonnel Jonos Jorah Joramun Jory Joseth
+				Karlon Kyleg
+				Lenn Lenyl Luton
+				Mance Marlon Medger Mikken Morgan Mors
+				Ondrew Orell Osric
+				Pate Porther
+				Qhorin Quent Quort
+				Raymun Rickard Rickon Robb Robett Rodrik Rodwell Ronnel Roose Ryk
+				Sigorn Soren Stiv Styr
+				Theo Theodan Theon Tomard Toregg Torghen Tormund Torren Torrhen Torwynd
+				Varamyr Vayon
+				Wallen Wyl Wynton
+				Ygon Yoren
+		}
+		female_names = {
+			Alys Alysane Arya
+			Barbrey Berena Bessa Beth Bethany
+			Dacey Dalla Danny Donella Dyah
+			Eddara Erena
+			Ferny Frenya
+			Gilly Grisella
+			Hali Harma Holly
+			Jeyne Jonella Jonnela Jorelle Jyana
+			Kyra
+			Leona Lyanna Lyessa Lyra
+			Maege Meera Meha Meliana Morna Munda Myrtle
+			Nella
+			Osha
+			Palla
+			Ragwyle Rowan
+			Sansa Shyra Sybelle
+			Val
+			Wylla Wynafryd
+			Ygritte
+		}
+		
+		from_dynasty_prefix = "de "
+		
+		
+		# Chance de male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance de female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+
+	thenn = {
+		graphical_cultures = { northmangfx } # portraits
+		
+		color = { 0.5 0.5 0.5 }
+		
+		male_names = {
+			Alfyn Arnolf Arthor Artos Arson
+				Bael Bernarr Beron Bodger Borroq Briar Brogg Bump Byam
+				Calon Cayn Craster Cregan
+				Dan Del Devyn Dormund Dorren Doss Dryn Dywen
+				Errok Eyron
+				Galbart Gariss Gavin Gendel Gerrick Gorne Grigg
+				Haggon Halleck Hallis Halys Hareth Harle Harlon Harmond Henk Howd
+				Jarl Jeor Jojen Joramun Joseth
+				Karlon Kyleg
+				Lenn Lenyl
+				Mance Medger Mikken Mors
+				Orell Ondrew Owen
+				Qhorin Quent Quort
+				Raymun Ryk
+				Sigorn Soren Stiv Styr
+				Toregg Torghen Tormund Torwynd
+				Varamyr Vayon
+				Wallen Walton Wayn
+				Ygon Yoren
+		}
+		female_names = {
+			Brella Briar
+			Dalla Dyah
+			Erena Esgred
+			Ferny Frenya Frynne
+			Gilly Gretchel Grisel Grisella
+			Hali Harma Harra Helya Holly
+			Jonella Jonnela Jorelle Jyana
+			Kyra
+			Larra Lyra
+			Maege Meera Meha Morna Morra Munda Myrtle
+			Nella
+			Osha
+			Palla
+			Ragwyle Rowan
+			Sansa
+			Thistle
+			Val
+			Willow
+			Ygritte Ysilla
+			Zia
+		}
+		
+		from_dynasty_prefix = "de "
+		
+		# Chance de male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance de female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+	
+	old_first_man = {
+		graphical_cultures = { northmangfx } # portraits
+		
+		used_for_random = no
+		allow_in_ruler_designer = no
+		
+		color = { 0.95 0.95 0.95 }
+		
+		male_names = {
+			Addam_Adam Aethelmure Alesander Alyn Alyx Ambrose Andahar Andrey Androw Anguy Argrave Arlan Arwood Arwyn Andrian Arbert Adron Anson Alvyn Alard Athos
+			Belgrave Ben Benfrey Bennet Bennifer Bradamar Bryan Brynden Bryar Benjicot Bellos Barion Beslon Bryne
+			Cetheres Clarence Clement Cleos Colmar Cosgrove Creighton Criston Cormond Cleyson Cavan Corlos Carlon
+			Dafyn Damon Danwell Dennett Denys Deremond Desmond Dickon Donnel Dudley Duncan Dywen
+			Ebrose Edmund Edmure Edmyn Edwyn Ellery Elmar Elwood Emmon Enger Erreg Euson Erron Ellard Eddyn Estion Ermen Elys Eddam
+			Florian Franklyn Ferris
+			Garrett Garse Geremy Gillam Gaston Gwayne Garibald Garyn Gorgon Gerold Gylbert
+			Halmon Harbert Harry Harsley Harys Hendry Hibald Hosteen Hoster Hugo Hobert Harwin Halion Harstyn
+			Illifer Igon
+			Jaime Jammos_Jamos Jared Jason Jeffory John_Jon Jon_Jon Jonn_Jon Jonos Jonothor Jonthor Joseth Jorin Josua
+			Karyl Kirth Kennoth Kelis Kenric Kedge
+			Lennocks Leslyn Lewys Lister Lothar Lucamore Lucan Lucas Luceon Lucias Luke Lyman Lymond Lyonel Larys Leon Loreon
+			Malwyn Manfred Manfryd Marq Martyn Mathis Maynard Medgar Melwys Meribald Merrett Mohor Myles Mance Madden
+			Narbert Ned Norbert
+			Olyvar Osmund Osmynd Oswell Otho Owen Othan Oscar Olver Orland Osgood
+			Pate Patrek Perwyn Petyr Pyron
+			Quentyn Quincy
+			Rawney Raymond Raymun Raymund Robert Robin Roger Roland Ronald Ronel Ryger Ryman Rormund Rorran Ryan Robar
+			Sandor Steffon Stevron Symond Simons Samwell
+			Theo Theomar Thoren_Toren Tion Tommard Tristan Tristifer Tytos Thaddeus Tymond Tomas Terin Tybolt
+			Utherydes
+			Walder Walton Waltyr Wendel Whalen Wilbert Willam Willamen Willem William Willis Willum Wyl Willard
+			Yorwyck Yoren Yorick
+			Zachery
+		}
+		female_names = {
+			Arwen Alyce Alys Alysanne Alyssa Alyx Amabel Amerei Arwyn Arianne Ammara Andorea Andrya Amyra Amera Alise Alessa Amane
+			Barba Barbara Becca Bella_Belle Bellena_Belenna Bess Bessa Bethany Belarra Bea Betha
+			Carellen Cass Catelyn Cynthea Carene_Cerena Carene_Carene Cyrene
+			Danelle Della Darianne Dolessa Damina
+			Eleanor Ellery Elyana Emberlei Emphyria Ermesande Elonne Eldacey Eleyne Elyria
+			Harra Hostella Helya Halanna
+			Ilyse_Ilysa Ilyse_Ilyse Idera
+			Jayne Jeyne Jonquil Joyeuse Jyanna Jyzene Jannia
+			Kyra Keleria
+			Lacey Leana Leslyn Liane Lysa Lythene Leomella Lorell Leonylla
+			Maegelle Maerie Marianne Marissa Mariya Masha Mellara Merianne Minisa Mordane Morya Mylessa Meria Meredith_Meredyth Melene Melantha
+			Orissa Osmeria Olanei
+			Nolla
+			Perra Perriane Pia Philena
+			Randa Ravella Rhialta Roslin Ryella Riona Ronessa
+			Sallei Sarra Sarya Serra Sharna Shella Shirei Sylwa Sylvia Syrella Sabrina
+			Tysane Tyta Tyressa Tinessa Tyiah Tilly
+			Ursula
+			Violet
+			Yolanda
+			Walda Wynafrei
+			Zhoe Zia
+		}
+		
+		from_dynasty_prefix = "de "
+		
+		# Chance de male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 25
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance de female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 5
+		mat_grm_name_chance = 20
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+}
+
+free_folk = {
+	graphical_cultures = { freefolkgfx }# buildings
+	
+	wildling = {
+		graphical_cultures = { northmangfx } # portraits
+		
+		color = { 0.5 0.5 0.5 }
+		
+		male_names = {
+			Alfyn Arnolf Arthor Artos Arson
+				Bael Bernarr Beron Bodger Borroq Briar Brogg Bump Byam
+				Calon Cayn Craster Cregan
+				Dan Del Devyn Dormund Dorren Doss Dryn Dywen
+				Errok Eyron
+				Galbart Gariss Gavin Gendel Gerrick Gorne Grigg
+				Haggon Halleck Hallis Halys Hareth Harle Harlon Harmond Henk Howd
+				Jarl Jeor Jojen Joramun Joseth
+				Karlon Kyleg
+				Lenn Lenyl
+				Mance Medger Mikken Mors
+				Orell Ondrew Owen
+				Qhorin Quent Quort
+				Raymun Ryk
+				Sigorn Soren Stiv Styr
+				Toregg Torghen Tormund Torwynd
+				Varamyr Vayon
+				Wallen Walton Wayn
+				Ygon Yoren
+		}
+		female_names = {
+			Brella Briar
+			Dalla Dyah
+			Erena Esgred
+			Ferny Frenya Frynne
+			Gilly Gretchel Grisel Grisella
+			Hali Harma Harra Helya Holly
+			Jonella Jonnela Jorelle Jyana
+			Kyra
+			Larra Lyra
+			Maege Meera Meha Morna Morra Munda Myrtle
+			Nella
+			Osha
+			Palla
+			Ragwyle Rowan
+			Sansa
+			Thistle
+			Val
+			Willow
+			Ygritte Ysilla
+			Zia
+		}
+		
+		from_dynasty_prefix = "de "
+		
+		# Chance de male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance de female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+
+	frozen_shore = {
+		graphical_cultures = { northmangfx } # portraits
+		
+		color = { 0.5 0.5 0.5 }
+		
+		male_names = {
+			Ant Anteater Horse Donkey 
+			Bear Boar Bat Beetle Bird
+			Cat Catfish
+			Dog Direwolf Lion Unicorn
+			Eagle Eel Snowbear
+			Goat Elk Deer Stag 
+			Mammoth Giant Frog Fox
+			Shadowcat Whale Seal Wolf
+		}
+		female_names = {
+			Ant Anteater Horse Donkey 
+			Bear Boar Bat Beetle Bird
+			Cat Catfish
+			Dog Direwolf Lion Unicorn
+			Eagle Eel Snowbear
+			Goat Elk Deer Stag 
+			Mammoth Giant Frog Fox
+			Shadowcat Whale Seal Wolf
+		}
+		
+		from_dynasty_prefix = "de "
+		
+		# Chance de male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance de female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+
+	hornfoot = {
+		graphical_cultures = { northmangfx } # portraits
+		
+		color = { 0.5 0.5 0.5 }
+		
+		male_names = {
+			Alfyn Arnolf Arthor Artos Arson
+				Bael Bernarr Beron Bodger Borroq Briar Brogg Bump Byam
+				Calon Cayn Craster Cregan
+				Dan Del Devyn Dormund Dorren Doss Dryn Dywen
+				Errok Eyron
+				Galbart Gariss Gavin Gendel Gerrick Gorne Grigg
+				Haggon Halleck Hallis Halys Hareth Harle Harlon Harmond Henk Howd
+				Jarl Jeor Jojen Joramun Joseth
+				Karlon Kyleg
+				Lenn Lenyl
+				Mance Medger Mikken Mors
+				Orell Ondrew Owen
+				Qhorin Quent Quort
+				Raymun Ryk
+				Sigorn Soren Stiv Styr
+				Toregg Torghen Tormund Torwynd
+				Varamyr Vayon
+				Wallen Walton Wayn
+				Ygon Yoren
+		}
+		female_names = {
+			Brella Briar
+			Dalla Dyah
+			Erena Esgred
+			Ferny Frenya Frynne
+			Gilly Gretchel Grisel Grisella
+			Hali Harma Harra Helya Holly
+			Jonella Jonnela Jorelle Jyana
+			Kyra
+			Larra Lyra
+			Maege Meera Meha Morna Morra Munda Myrtle
+			Nella
+			Osha
+			Palla
+			Ragwyle Rowan
+			Sansa
+			Thistle
+			Val
+			Willow
+			Ygritte Ysilla
+			Zia
+		}
+		
+		from_dynasty_prefix = "de "
+		
+		# Chance de male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance de female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+
+	cannibal_clan = {
+		graphical_cultures = { northmangfx } # portraits
+		
+		color = { 0.5 0.5 0.5 }
+		
+		male_names = {
+			Alfyn Arnolf Arthor Artos Arson
+				Bael Bernarr Beron Bodger Borroq Briar Brogg Bump Byam
+				Calon Cayn Craster Cregan
+				Dan Del Devyn Dormund Dorren Doss Dryn Dywen
+				Errok Eyron
+				Galbart Gariss Gavin Gendel Gerrick Gorne Grigg
+				Haggon Halleck Hallis Halys Hareth Harle Harlon Harmond Henk Howd
+				Jarl Jeor Jojen Joramun Joseth
+				Karlon Kyleg
+				Lenn Lenyl
+				Mance Medger Mikken Mors
+				Orell Ondrew Owen
+				Qhorin Quent Quort
+				Raymun Ryk
+				Sigorn Soren Stiv Styr
+				Toregg Torghen Tormund Torwynd
+				Varamyr Vayon
+				Wallen Walton Wayn
+				Ygon Yoren
+		}
+		female_names = {
+			Brella Briar
+			Dalla Dyah
+			Erena Esgred
+			Ferny Frenya Frynne
+			Gilly Gretchel Grisel Grisella
+			Hali Harma Harra Helya Holly
+			Jonella Jonnela Jorelle Jyana
+			Kyra
+			Larra Lyra
+			Maege Meera Meha Morna Morra Munda Myrtle
+			Nella
+			Osha
+			Palla
+			Ragwyle Rowan
+			Sansa
+			Thistle
+			Val
+			Willow
+			Ygritte Ysilla
+			Zia
+		}
+		
+		from_dynasty_prefix = "de "
+		
+		# Chance de male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance de female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+	
+}

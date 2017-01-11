@@ -1,0 +1,39 @@
+# 191 - deep_den
+
+# County Title
+title = c_deep_den
+
+# Settlements
+max_settlements = 5
+b_deep_den = castle
+b_deep_dencastletwo = castle
+b_deep_den_sept = temple
+b_deep_dentown = city
+
+# Misc
+culture = westerman
+religion = the_seven
+
+terrain = mountainpass
+
+#History
+
+6000.1.1 = {b_deep_den = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_deep_den = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_deep_den = ca_asoiaf_westerland_basevalue_3}
+6000.1.1 = {b_deep_den = ca_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_deep_dencastletwo = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_deep_dencastletwo = ca_asoiaf_westerland_basevalue_2}
+
+6000.1.1 = {b_deep_dentown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_deep_dentown = ct_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_deep_dentown = ct_asoiaf_westerland_basevalue_3}
+#6000.1.1 = {b_deep_dentown = ct_asoiaf_westerland_basevalue_4}
+
+8070.1.1 = { #Jaehaerys constructs road network
+	b_deep_den = ca_goldroad
+}
+
+
+

@@ -1,0 +1,17 @@
+# 554 - Northern Hills of Kasath
+
+# County Title
+title = c_n_hills_kasath
+
+# Settlements
+max_settlements = 2
+
+b_n_hills_kasath = tribal
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+# History
+6000.1.1 = {
+}

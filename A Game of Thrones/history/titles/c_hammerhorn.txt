@@ -1,0 +1,41 @@
+#NOTE: The holder of this title has the House Goodbrother dynasty tracker set in roberts_rebellion_events
+900.1.1={
+	liege="d_great_wyk"
+}
+6196.1.1 = {
+	holder = 550112
+}
+6211.1.1 = { holder = 0 }
+7943.1.1 = {	
+	holder=110112
+}
+7972.1.1 = {	
+	holder=108112
+}
+7991.1.1 = {	
+	holder=107112
+}
+7998.2.1 = {
+	holder=106112
+}
+8055.1.1 = {	
+	holder=105112
+}
+8104.1.1 = {	
+	holder=104112
+}
+8134.1.1 = {	
+	holder=103112
+}
+8165.1.1 = {	
+	holder=102112
+}
+8197.1.1 = {	
+	holder=101112
+}
+8242.1.1 = {	
+	holder=100112
+}
+8276.1.1 = {	
+	holder=112
+}

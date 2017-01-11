@@ -1,0 +1,117 @@
+harass_tactic_very_bad;Failed Harassment;Harcèlement échoué;;;Hostigamiento fallido;;;;;;;;;x
+volly_harass_tactic_very_bad;Failed Harassment & Volley;Harcèlement et volée échoués;;;Hostigamiento y descarga fallidos;;;;;;;;;x
+volly_tactic_very_bad;Failed Volley;Volée échouée;;;Descarga fallida;;;;;;;;;x
+swarm_volly_tactic_very_bad;Failed Swarm & Volley;Nuée et volée échouées;;;Descarga y enjambre fallidos;;;;;;;;;x
+swarm_tactic_very_bad;Failed Dothraki Swarm;Nuée Dothraki échouée;;;Enjambre Dothraki fallido;;;;;;;;;x
+harras_swarm_tactic_very_bad;Failed Harassment & Swarm;Harcèlement et nuée échoués;;;Hostigamiento y enjambre fallidos;;;;;;;;;x
+shieldwall_tactic_very_bad;Failed Shieldwall;Mur de bouclier échoué;;;Muro de escudos fallido;;;;;;;;;x
+feint_tactic_very_bad;Failed Feint;Feinte échouée;;;Finta fallida;;;;;;;;;x
+prepare_tactic_very_bad;Failed Preparation;Préparation échouée;;;Preparación fallida;;;;;;;;;x
+charge_of_opportunity_tactic_very_bad;Failed Charge of Opportunity;Charge d'opportunité échouée;;;Carga de oportunidad fallida;;;;;;;;;x
+charge_tactic_very_bad;Failed Charge;Charge échouée;;;Carga fallida;;;;;;;;;x
+wait_tactic_very_bad;Failed Caution;Prudence échouée;;;Precaución fallida;;;;;;;;;x
+advance_tactic_very_bad;Failed Infantry Advance;Avancée d'infanterie échouée;;;Avance de infantería fallido;;;;;;;;;x
+awesome_advance_tactic_very_bad;Failed Cavalry Advance;Avancée de cavalerie échouée;;;Avance de caballería fallido;;;;;;;;;x
+stand_fast_tactic_very_bad;Failed Last Stand;Dernier carré échoué;;;Última defensa fallida;;;;;;;;;x
+slow_advance_tactic_very_bad;Failed Slow Advance;Avancée lente échouée;;;Avance lento fallido;;;;;;;;;x
+awesome_charge_tactic_very_bad;Failed Cavalry Charge;Charge de cavalerie échouée;;;Carga de caballería fallida;;;;;;;;;x
+awesomer_charge_tactic_very_bad;Failed Full Charge;Pleine charge échouée;;;Carga total fallida;;;;;;;;;x
+barrage_tactic_very_bad;Failed Barrage;Barrage échoué;;;Cortina de fuego fallida;;;;;;;;;x
+raid_tactic_very_bad;Failed Raid;Raid échoué;;;Incursión fallida;;;;;;;;;x
+harass_tactic_bad;Botched Harassment;Harcèlement raté;;;Hostigamiento pifiado;;;;;;;;;x
+volly_harass_tactic_bad;Botched Harassment & Volley;Harcèlement et volée ratés;;;Hostigamiento y descarga pifiado;;;;;;;;;x
+volly_tactic_bad;Botched Volley;Volée ratée;;;Descarga pifiada;;;;;;;;;x
+swarm_volly_tactic_bad;Botched Swarm & Volley;Nuée et volée ratées;;;Descarga y enjambre pifiados;;;;;;;;;x
+swarm_tactic_bad;Botched Dothraki Swarm;Nuée Dothraki échouée;;;Enjambre Dothraki pifiado;;;;;;;;;x
+harras_swarm_tactic_bad;Botched Harassment & Swarm;Harcèlement et nuée ratés;;;Hostigamiento y enjambre pifiados;;;;;;;;;x
+shieldwall_tactic_bad;Botched Shieldwall;Mur de bouclier raté;;;Muro de escudos pifiado;;;;;;;;;x
+feint_tactic_bad;Botched Feint;Feinte ratée;;;Finta pifiada;;;;;;;;;x
+prepare_tactic_bad;Botched Preparation;Préparation raté;;;Preparación pifiada;;;;;;;;;x
+charge_of_opportunity_tactic_bad;Botched Charge of Opportunity;Charge d'opportunité ratée;;;Carga de oportunidad pifiada;;;;;;;;;x
+charge_tactic_bad;Botched Charge;Charge ratée;;;Carga pifiada;;;;;;;;;x
+wait_tactic_bad;Botched Caution;Prudence ratée;;;Precaución pifiada;;;;;;;;;x
+advance_tactic_bad;Botched Infantry Advance;Avancée d'infanterie ratée;;;Avance de infantería pifiado;;;;;;;;;x
+awesome_advance_tactic_bad;Botched Cavalry Advance;Avancée de cavalerie ratée;;;Avance de caballería pifiada;;;;;;;;;x
+stand_fast_tactic_bad;Botched Last Stand;Dernier carré raté;;;Última defensa pifiada;;;;;;;;;x
+slow_advance_tactic_bad;Botched Slow Advance;Avancée lente ratée;;;Avance lento pifiado;;;;;;;;;x
+awesome_charge_tactic_bad;Botched Cavalry Charge;Charge de cavalerie ratée;;;Carga de caballería pifiada;;;;;;;;;x
+awesomer_charge_tactic_bad;Botched Full Charge;Pleine charge ratée;;;Carga total pifiada;;;;;;;;;x
+barrage_tactic_bad;Botched Barrage;Barrage raté;;;Cortina de fuego pifiada;;;;;;;;;x
+raid_tactic_bad;Botched Raid;Raid raté;;;Incursión pifiada;;;;;;;;;x
+harass_tactic_normal;Classic Harassment;Harcèlement classique;;;Hostigamiento clásico;;;;;;;;;x
+volly_harass_tactic_normal;Classic Harassment & Volley;Harcèlement et volée classiques;;;Hostigamiento y descarga clásicos;;;;;;;;;x
+volly_tactic_normal;Classic Volley;Volée classique;;;Descarga clásica;;;;;;;;;x
+swarm_volly_tactic_normal;Classic Swarm & Volley;Nuée et volée classiques;;;Descarga y enjambre clásicos;;;;;;;;;x
+swarm_tactic_normal;Classic Dothraki Swarm;Nuée Dothraki classique;;;Enjambre Dothraki clásico;;;;;;;;;x
+harras_swarm_tactic_normal;Classic Harassment & Swarm;Harcèlement et nuée classiques;;;Hostigamiento y enjambre clásicos;;;;;;;;;x
+shieldwall_tactic_normal;Classic Shieldwall;Mur de bouclier classique;;;Muro de escudos clásico;;;;;;;;;x
+feint_tactic_normal;Classic Feint;Feinte classique;;;Finta clásica;;;;;;;;;x
+prepare_tactic_normal;Classic Preparation;Préparation classique;;;Preparación clásica;;;;;;;;;x
+charge_of_opportunity_tactic_normal;Classic Charge of Opportunity;Charge d'opportunité classique;;;Carga de oportunidad clásica;;;;;;;;;x
+charge_tactic_normal;Classic Charge;Charge classique;;;Carga clásica;;;;;;;;;x
+wait_tactic_normal;Classic Caution;Prudence classique;;;Precaución clásica;;;;;;;;;x
+advance_tactic_normal;Classic Infantry Advance;Avancée d'infanterie classique;;;Avance de infantería clásico;;;;;;;;;x
+awesome_advance_tactic_normal;Classic Cavalry Advance;Avancée de cavalerie classique;;;Avance de caballería clásico;;;;;;;;;x
+stand_fast_tactic_normal;Classic Last Stand;Dernier carré classique;;;Última defensa clásica;;;;;;;;;x
+slow_advance_tactic_normal;Classic Slow Advance;Avancée lente classique;;;Avance lento clásico;;;;;;;;;x
+awesome_charge_tactic_normal;Classic Cavalry Charge;Charge de cavalerie classique;;;Carga de caballería clásica;;;;;;;;;x
+awesomer_charge_tactic_normal;Classic Full Charge;Pleine charge classique;;;Carga total clásica;;;;;;;;;x
+barrage_tactic_normal;Classic Barrage;Barrage classique;;;Cortina de fuego clásica;;;;;;;;;x
+raid_tactic_normal;Classic Raid;Raid classique;;;Incursión clásica;;;;;;;;;x
+harass_tactic_good;Impressive Harassment;Harcèlement impressionnant;;;Hostigamiento impresionante;;;;;;;;;x
+volly_harass_tactic_good;Impressive Harassment & Volley;Harcèlement et volée impressionnants;;;Hostigamiento y descarga impresionantes;;;;;;;;;x
+volly_tactic_good;Impressive Volley;Volée impressionnantes;;;Descarga impresionante;;;;;;;;;x
+swarm_volly_tactic_good;Impressive Swarm & Volley;Nuée et volée impressionnantes;;;Descarga y enjambre impresionantes;;;;;;;;;x
+swarm_tactic_good;Impressive Dothraki Swarm;Nuée Dothraki impressionnante;;;Enjambre Dothraki impresionante;;;;;;;;;x
+harras_swarm_tactic_good;Impressive Harassment & Swarm;Harcèlement et nuée impressionants;;;Hostigamiento y enjambre impresionantes;;;;;;;;;x
+shieldwall_tactic_good;Impressive Shieldwall;Mur de boucliers impressionant;;;Muro de escudos impresionante;;;;;;;;;x
+feint_tactic_good;Impressive Feint;Feinte impressionnante;;;Finta impresionante;;;;;;;;;x
+prepare_tactic_good;Impressive Preparation;Préaparation impressionnante;;;Preparación impresionante;;;;;;;;;x
+charge_of_opportunity_tactic_good;Impressive Charge of Opportunity;Charge d'opportunité impressionnante;;;Carga de oportunidad impresionante;;;;;;;;;x
+charge_tactic_good;Impressive Charge;Charge impressionnante;;;Carga impresionante;;;;;;;;;x
+wait_tactic_good;Impressive Caution;Prudence impressionnante;;;Precaución impresionante;;;;;;;;;x
+advance_tactic_good;Impressive Infantry Advance;Avancée d'infanterie impressionnante;;;Avance de infantería impresionante;;;;;;;;;x
+awesome_advance_tactic_good;Impressive Cavalry Advance;Avancée de cavalerie impressionante;;;Avance de caballería impresionante;;;;;;;;;x
+stand_fast_tactic_good;Impressive Last Stand;Dernier carré impressionnant;;;Última defensa impresionante;;;;;;;;;x
+slow_advance_tactic_good;Impressive Slow Advance;Avancée lente impressionnante;;;Avance lento impresionante;;;;;;;;;x
+awesome_charge_tactic_good;Impressive Cavalry Charge;Charge de cavalerie impressionante;;;Carga de caballería impresionante;;;;;;;;;x
+awesomer_charge_tactic_good;Impressive Full Charge;Pleine charge impressionnante;;;Carga total impresionante;;;;;;;;;x
+barrage_tactic_good;Impressive Barrage;Barrage impressionnant;;;Cortina de fuego impresionante;;;;;;;;;x
+raid_tactic_good;Impressive Raid;Raid impressionnant;;;Incursión impresionante;;;;;;;;;x
+harass_tactic_very_good;Legendary Harassment;Harcèlement légendaire;;;Hostigamento legendario;;;;;;;;;x
+volly_harass_tactic_very_good;Legendary Harassment & Volley;Harcèlement et volée légendaires;;;Hostigamiento y descarga legendarios;;;;;;;;;x
+volly_tactic_very_good;Legendary Volley;Volée légendaire;;;Descarga legendaria;;;;;;;;;x
+swarm_volly_tactic_very_good;Legendary Swarm & Volley;Nuée et volée légendaires;;;Descarga y enjambre legendarios;;;;;;;;;x
+swarm_tactic_very_good;Legendary Dothraki Swarm;Nuée Dothraki légendaire;;;Enjambre Dothraki legendario;;;;;;;;;x
+harras_swarm_tactic_very_good;Legendary Harassment & Swarm;Harcèlement et nuée légendaires;;;Hostigamiento y enjambre legendarios;;;;;;;;;x
+shieldwall_tactic_very_good;Legendary Shieldwall;Mur de boucliers légendaire;;;Muro de escudos legendario;;;;;;;;;x
+feint_tactic_very_good;Legendary Feint;Feinte légendaire;;;Finta legendaria;;;;;;;;;x
+prepare_tactic_very_good;Legendary Preparation;Préparation légendaire;;;Preparación legendaria;;;;;;;;;x
+charge_of_opportunity_tactic_very_good;Legendary Charge of Opportunity;Charge d'opportunité légendaire;;;Carga de oportunidad legendaria;;;;;;;;;x
+charge_tactic_very_good;Legendary Charge;Charge légendaire;;;Carga legendaria;;;;;;;;;x
+wait_tactic_very_good;Legendary Caution;Prudence légendaire;;;Precaución legendaria;;;;;;;;;x
+advance_tactic_very_good;Legendary Infantry Advance;Avancée d'infanterie légendaire;;;Avance de infantería legendario;;;;;;;;;x
+awesome_advance_tactic_very_good;Legendary Cavalry Advance;Avancée de cavalerie légendaire;;;Avance de caballería legendario;;;;;;;;;x
+stand_fast_tactic_very_good;Legendary Last Stand;Dernier carré légendaire;;;Úlitma defensa legendaria;;;;;;;;;x
+slow_advance_tactic_very_good;Legendary Slow Advance;Avancée lente légendaire;;;Avance lento legendario;;;;;;;;;x
+awesome_charge_tactic_very_good;Legendary Cavalry Charge;Charge de cavalerie légendaire;;;Carga de caballería legendaria;;;;;;;;;x
+awesomer_charge_tactic_very_good;Legendary Full Charge;Pleine charge légendaire;;;Carga total legendaria;;;;;;;;;x
+barrage_tactic_very_good;Legendary Barrage;Barrage légendaire;;;Cortina de fuego legendaria;;;;;;;;;x
+raid_tactic_very_good;Legendary Raid;Raid légendaire;;;Incursión legendaria;;;;;;;;;x
+feint_tactic_very_bad;Failed Feint;Feinte échouée;;;Finta fallada;;;;;;;;;x
+feint_tactic_bad;Botched Feint;Feinte ratée;;;Finta pifiada;;;;;;;;;x
+feint_tactic_normal;Classic Feint;Feinte classique;;;Finta clásica;;;;;;;;;x
+harass_swarm_tactic_very_bad;Failed Harassment & Swarm;Harcèlement et nué échoués;;;Hostigamiento y enjambre fallidos;;;;;;;;;x
+harass_swarm_tactic_bad;Botched Harassment & Swarm;Harcèlement et nué ratés;;;Hostigamiento y enjambre pifiados;;;;;;;;;x
+harass_swarm_tactic_normal;Classic Harassment & Swarm;Harcèlement et nué classiques;;;Hostigamiento y enjambre clásicos;;;;;;;;;x
+harass_swarm_tactic_good;Impressive Harassment & Swarm;Harcèlement et nué impressionnants;;;Hostigamiento y enjambre impresionantes;;;;;;;;;x
+dragon_harass_tactic_light;Light Dragon Harass;Léger harcèlement de dragon;;;Hostigamiento ligero de dragón;;;;;;;;;x
+dragon_harass_tactic;Dragon Harass;Harcèlement de dragon;;;Hostigamiento de dragón;;;;;;;;;x
+dragon_harass_tactic_good;Good Dragon Harass;Bon harcèlement de dragon;;;Hostigamiento de dragón bueno;;;;;;;;;x
+dragon_harass_tactic_heavy;Impressive Dragon Harass;Harcèlement de dragon impressionnant;;;Hostigamiento de dragón impresionante;;;;;;;;;x
+dragon_harass_tactic_awesome;Legendary Dragon Harass;Harcèlement de dragon légendaire;;;Hostigamiento de dragón legendario;;;;;;;;;x
+field_of_fire_tactic_light;Light Field of Fire;Petit champ de feu;;;Campo de fuego ligero;;;;;;;;;x
+field_of_fire_tactic;Field of Fire;Champ de feu;;;Campo de fuego;;;;;;;;;x
+field_of_fire_tactic_good;Good Field of Fire;Bon champ de feu;;;Campo de fuego bueno;;;;;;;;;x
+field_of_fire_tactic_heavy;Impressive Field of Fire;Champ de feu impressionnant;;;Campo de fuego impresionante;;;;;;;;;x
+field_of_fire_tactic_awesome;Legendary Field of Fire;Champ de feu légendaire;;;Campo de fuego legendario;;;;;;;;;x

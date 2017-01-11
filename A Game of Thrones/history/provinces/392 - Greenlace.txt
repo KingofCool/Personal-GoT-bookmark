@@ -1,0 +1,24 @@
+# 392 - Greenlace
+
+# County Title
+title = c_greenlace
+
+# Settlements
+max_settlements = 3
+
+b_greenlace_castle = castle
+b_greenlace = city
+b_greenlace_temple = temple
+
+# Misc
+culture = myrman
+religion = rhllor
+
+# History
+6000.1.1 = {
+	b_greenlace_castle = ca_asoiaf_essos_basevalue_1
+	b_greenlace_castle = ca_asoiaf_essos_basevalue_2
+	
+	b_greenlace = ct_asoiaf_essos_basevalue_1
+	b_greenlace = ct_asoiaf_essos_basevalue_2
+}

@@ -1,0 +1,20 @@
+#House Kano
+7980.1.1 = { 
+	holder=100304024 
+	liege=d_tall_trees_valley
+	law = succ_seniority
+	law = cognatic_succession
+} # Adeyemu (nc)
+8002.1.1 = { holder=101304024 } # Jaramogo (nc)
+8020.1.1 = { holder=102304024 } # Lusala (nc)
+8067.1.1 = { holder=104304024 } # Xhelimo (nc)
+8084.1.1 = { holder=106304024 } # Xhonodo (nc)
+8116.1.1 = { holder=107304024 } # Arkamun (nc)
+8125.1.1 = { holder=109304024 } # Manahuru (nc)
+8142.1.1 = { holder=112304024 } # Xhelimo (nc)
+8171.1.1 = { holder=115304024 } # Mermesbhar (nc)
+8205.1.1 = { holder=120304024 } # Dubaku (nc)
+8206.1.1 = { holder=121304024 } # Isodo (nc)
+8235.1.1 = { holder=122304024 } # Quhuru (nc)
+8252.1.1 = { holder=124304024 } # Qubhar (nc)
+8273.1.1 = { holder=127304024 } # Xhal (nc)

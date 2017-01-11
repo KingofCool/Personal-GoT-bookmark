@@ -1,0 +1,24 @@
+#NOTE: The holder of this title has the House Connington dynasty tracker set in roberts_rebellion_events
+202.1.1 = {liege="e_stormlands"}
+
+7994.1.1 = { holder = 300316 } # Lester Connington (nc)
+7998.2.27={
+	liege = k_stormlands
+}
+
+8015.1.1 = { holder = 301316 } # Narbert Connington (nc)
+8019.1.1 = { holder = 302316 } # Myles Connington (nc)
+8065.1.1 = { holder = 305316 } # Orys Connington (nc)
+8074.1.1 = { holder = 306316 } # Aegon Connington (nc)
+8134.1.1 = { holder = 307316 } # Alyn Connington (nc)
+8140.1.1 = { holder = 308316 } # Jon Connington (nc)
+8172.1.1 = { holder = 309316 } # Aegon Connington (nc)
+8196.1.1 = { holder = 310316 } # Alaric Connington (nc)
+8230.1.1 = { holder = 311316 } # Renly Connington (nc)
+8237.1.1 = { holder = 100316 } # Alyn Connington (nc)
+8267.1.1 = { holder = 1316 } # Armond Connington (C)
+8279.1.1 = { holder = 316 } # Jon Connington (C)
+8282.9.15 = { liege=0 } # RR
+8283.1.1 = { holder = 2316 } # Ronald Connington (C)
+8283.1.1=  {liege="k_stormlands"} # Ronald bends the knee to Robert.
+8295.1.1 = { holder = 3316 } # Ronnet Connington (C)

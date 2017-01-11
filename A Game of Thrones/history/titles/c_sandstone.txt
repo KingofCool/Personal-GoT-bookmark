@@ -1,0 +1,22 @@
+
+7240.1.1={
+	liege="d_brimstone"
+	law = true_cognatic_succession
+}
+
+7988.1.1 = { holder=60015 } # Allar (nc)
+8006.1.1 = { holder=60115 } # Lythene (nc)
+8045.1.1 = { holder=60315 } # Leyla (nc)
+8059.1.1 = { holder=60415 } # Bedwyck (nc)
+8063.1.1 = { holder=60615 } # Arron (nc)
+8066.1.1 = { holder=60915 } # Quentyn (nc)
+8110.1.1 = { holder=61115 } # Elyana (nc)
+8147.1.1 = { holder=61515 } # Perros (nc)
+8157.1.1 = { holder=61815 } # Deziel (nc)
+8159.1.1 = { holder=61915 } # Obara (nc)
+8166.1.1 = { holder=62215 } # Cedra (nc)
+8190.1.1 = { holder=62315 } # Arthur (nc)
+8209.1.1 = { holder=62515 } # Harmen (nc)
+8236.1.1 = { holder=62815 } # Allar (nc)
+8259.2.8 = { holder=5015 } # Qymors (nc)
+8259.2.9 = { holder=15 } # Quentyn (C)

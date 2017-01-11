@@ -1,0 +1,147 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+free_folk;Free Folk;Peuple Libre;Free Folk;;Pueblo Libre;;;;;;;;;x
+free_folk_FEATURES;§Y*§! Is a traditional anti-slavery culture\n§Y*§! May freely invade neighbours if independent\n§Y*§! Vassals may renounce weak heirs\n§Y*§! More resistant to the effects of severe winter;§Y*§! Est une culture traditionnellement opposée à l'esclavage\n§Y*§! Peut envahir librement les voisins s'ils sont indépendants\n§Y*§! Des vassaux peuvent renier des héritiers faibles\n§Y*§! Sont plus résistants aux hivers rigoureux.;;;;;;;;;;;;x
+wildling;Wildling;Sauvageon;Wildling;;Salvaje;;;;;;;;;x
+skagosi;Skagosi;Skaggs;Skagosi;;Skagosí;;;;;;;;;x
+thenn;Thenn;Thenn;Thenn;;Thennita;;;;;;;;;x
+thenn_FEATURES;§Y*§! May freely invade neighbours if independent\n§Y*§! Vassals may renounce weak heirs;§Y*§! Peut envahir librement les voisins s'ils sont indépendants\n§Y*§! Des vassaux peuvent renier des héritiers faibles;;;§Y*§! Pueden invadir libremente a los vecinos si son independientes\n§Y*§! Sus vasallos pueden hacer renunciar a los herederos débiles;;;;;;;;;x
+mountain_clans;Mountain Clansman;Clans des Montagnes;Mountain Clans;;Montañesa;;;;;;;;;x
+moon_clansman;Mountain Clansman;Clan des Montagnes de la Lune;Mountain Clansman;;Clanes de las Montañas de la Luna;;;;;;;;;x
+moon_clansman_FEATURES;§Y*§! Can freely castrate and blind captives;§Y*§! Peut librement castrer et aveugler ses prisonniers;Mountain Clansman;;§Y*§! Pueden castrar y cegar libremente a sus prisioneros;;;;;;;;;x
+first_men;First Man;Premier Homme;First Men;;Primeros Hombres;;;;;;;;;x
+first_men_FEATURES;§Y*§! Can NOT take lovers as concubines\n§Y*§! Is a traditional anti-slavery culture\n§Y*§! More resistant to the effects of severe winter;§Y*§! Ne peut PAS prendre des amantes comme concubines\n§Y*§! Est une culture traditionnellement opposée à l'esclavage\n§Y*§! Sont plus résistants aux hivers rigoureux.;;;;;;;;;;;;x
+old_first_man;First Man;Premier Homme;First Men;;Primeros Hombres;;;;;;;;;x
+northman;Northman;Nordien;Northman;;Norteña;;;;;;;;;x
+hill_clansman;Hill Clansman;Clans des Collines;Hill Clansman;;Clanes de las Colinas;;;;;;;;;x
+crannogman;Crannogman;Paludier;Crannogman;;Lacustre;;;;;;;;;x
+half_southron;Former Southron;Sudier;Former Southron;;Antigua Sureña;;;;;;;;;x
+andal;Andal;Andal;Andal;;Ándala;;;;;;;;;x
+andal_FEATURES;§Y*§! Can NOT take lovers as concubines\n§Y*§! Is a traditional anti-slavery culture;§Y*§! Ne peut PAS prendre des amants comme cuncubines\n§Y*§! Est une culture traditionnellement opposée à l'esclavage;;;§Y*§! No pueden tomar amantes como concubinas\n§Y*§! Es una cultura tradicionalmente opuesta al esclavismo\n;;;;;;;;;x
+riverlander;Riverman;Riverain;Riverlander;;Ribereña;;;;;;;;;x
+westerman;Westerman;Ouestien;Westerman;;Occidental;;;;;;;;;x
+valeman;Valeman;Du Val;Valeman;;Vallense;;;;;;;;;x
+crownlander;Kingslander;Des Terres de la Couronne;Crownlander;;Coronense;;;;;;;;;x
+stormlander;Stormlander;Orageois;Stormlander;;Tormenteña;;;;;;;;;x
+reachman;Reachman;Du Bief;Reachman;;Dominiense;;;;;;;;;x
+sisterman;Sisterman;Soeurois;;;Hermaneña;;;;;;;;;x
+old_andal;Andal;Andal;Andal;;Ándala;;;;;;;;;x
+dornish_andal;Dornish;Dornien;;;Dorniense;;;;;;;;;x
+iron_isles_culture;Ironborn;Fer-Né;Ironborn;;Herreña;;;;;;;;;x
+ironborn;Ironborn;Fer-Né;Ironborn;;Hijos del Hierro;;;;;;;;;x
+ironborn_FEATURES;§Y*§! Can go on landless adventures;Fer-Né;Ironborn;;§Y*§! Pueden ir a aventuras sin tierras;;;;;;;;;x
+dornish;Dornishman;Rhoynar;Rhoynar;;Dorniense;;;;;;;;;x
+dornish_FEATURES;§Y*§! Can take lovers as concubines\n§Y*§! Is a traditional anti-slavery culture;§Y*§! Peut prendre des amants comme cuncubines\n§Y*§! Est une culture traditionnellement opposée à l'esclavage;;;§Y*§! Pueden tomar amantes como concubinas\n§Y*§! Es una cultura tradicionalmente opuesta al esclavismo\n;;;;;;;;;x
+stone_dornish;Stone Dornish;Dornien Rocheux;Steindornen;;Dorniense de la Piedra;;;;;;;;;x
+sand_dornish;Sand Dornish;Dornien Sableux;Sanddornen;;Dorniense de la Arena;;;;;;;;;x
+salt_dornish;Salt Dornish;Dornien Salé;Salzdornen;;Dorniense de la Sal;;;;;;;;;x
+rhoynar;Rhoynar;Rhoynar;Rhoynar;;Rhoynar;;;;;;;;;x
+valyrian;Valyrian;Valyrien;Valyrisch;;Valyria;;;;;;;;;x
+high_valyrian;High Valyrian;Haut Valyrien;Hochvalyrisch;;Alta Valyria;;;;;;;;;x
+high_valyrian_FEATURES;§Y*§! Is a traditional slaver culture\n§Y*§! Targaryen and Blackfyre dynasties can arrange marriages between close family members;Ghiscari;;;§Y*§! Es una cultura tradicionalmente esclavista\n§Y*§! Las casas Targaryen y Fuegoscuro pueden casarse entre parientes cercanos.;;;;;;;;;x
+western_valyrian;Westerosi Valyrian;Valyrien de l'Ouest;Westvalyrisch;;Valyria Occidental;;;;;;;;;x
+eastern_valyrian;Essosi Valyrian;Valyrien;;;Valyria Oriental;;;;;;;;;x
+eastern_valyrian_FEATURES;§Y*§! Is a traditional slaver culture;§Y*§! Est une culture traditionnellement esclavagiste;;;§Y*§! Es una cultura tradicionalmente esclavista;;;;;;;;;x
+free_cities;Essosi;Essosi;Freie Städte;;Ciudades Libres;;;;;;;;;x
+pentosi;Pentoshi;Pentoshi;Pentosi;;Péntica;;;;;;;;;x
+pentosi_FEATURES;§Y*§! Is a traditional slaver culture;Ghiscari;;;§Y*§! Es una cultura tradicionalmente esclavista;;;;;;;;;x
+braavosi;Braavosi;Braavien;Braavosi;;Braavosi;;;;;;;;;x
+braavosi_FEATURES;§Y*§! Is a traditional anti-slavery culture;§Y*§! Est une culture traditionnellement contre l'esclavage;;;§Y*§! Es una cultura tradicionalmente opuesta al esclavismo;;;;;;;;;x
+lysene;Lyseni;Lysien;Lysene;;Lysena;;;;;;;;;x
+lysene_FEATURES;§Y*§! Is a traditional slaver culture;§Y*§! Est une culture traditionnellement esclavagiste;;;§Y*§! Es una cultura tradicionalmente esclavista;;;;;;;;;x
+qohorik;Qohorik;Qohorien;Qohorik;;Qohoriense;;;;;;;;;x
+qohorik_FEATURES;§Y*§! Is a traditional slaver culture;§Y*§! Est une culture traditionnellement esclavagiste;;;§Y*§! Es una cultura tradicionalmente esclavista;;;;;;;;;x
+norvosi;Norvoshi;Norvosien;Norvosi;;Norvoyita;;;;;;;;;x
+norvosi_FEATURES;§Y*§! Is a traditional slaver culture;§Y*§! Est une culture traditionnellement esclavagiste;;;§Y*§! Es una cultura tradicionalmente esclavista;;;;;;;;;x
+myrman;Myrman;Myrien;Myrman;;Myriense;;;;;;;;;x
+myrman_FEATURES;§Y*§! Is a traditional slaver culture;§Y*§! Est une culture traditionnellement esclavagiste;;;§Y*§! Es una cultura tradicionalmente esclavista;;;;;;;;;x
+tyroshi;Tyroshi;Tyroshi;Tyroshi;;Tyroshi;;;;;;;;;x
+tyroshi_FEATURES;§Y*§! Is a traditional slaver culture;§Y*§! Est une culture traditionnellement esclavagiste;;;§Y*§! Es una cultura tradicionalmente esclavista;;;;;;;;;x
+volantene;Volantene;Volantain;Volantene;;Volantina;;;;;;;;;x
+volantene_FEATURES;§Y*§! Is a traditional slaver culture;§Y*§! Est une culture traditionnellement esclavagiste;;;§Y*§! Es una cultura tradicionalmente esclavista;;;;;;;;;x
+lorathi;Lorathi;Lorathi;Lorathi;;Lorathia;;;;;;;;;x
+lorathi_FEATURES;§Y*§! Is a traditional slaver culture;§Y*§! Est une culture traditionnellement esclavagiste;;;§Y*§! Es una cultura tradicionalmente esclavista;;;;;;;;;x
+mantaryan;Mantaryan;Mantaryen;Mantaryan;;Mantarya;;;;;;;;;x
+mantaryan_FEATURES;§Y*§! Is a traditional slaver culture;§Y*§! Est une culture traditionnellement esclavagiste;;;§Y*§! Es una cultura tradicionalmente esclavista;;;;;;;;;x
+tolosi;Tolosi;Tolosien;Tolosi;;Tolosi;;;;;;;;;x
+tolosi_FEATURES;§Y*§! Is a traditional slaver culture;§Y*§! Est une culture traditionnellement esclavagiste;;;§Y*§! Es una cultura tradicionalmente esclavista;;;;;;;;;x
+elyrian;Elyrian;Elyrien;Elyrian;;Elyria;;;;;;;;;x
+elyrian_FEATURES;§Y*§! Is a traditional slaver culture;§Y*§! Est une culture traditionnellement esclavagiste;;;§Y*§! Es una cultura tradicionalmente esclavista;;;;;;;;;x
+dothraki_group;Dothraki;Dothraki;Dothrakis;;Dothraki;;;;;;;;;x
+dothraki;Dothraki;Dothraki;Dothraki;;Dothraki;;;;;;;;;x
+dothraki_FEATURES;§Y*§! Is a traditional slaver culture;§Y*§! Est une culture traditionnellement esclavagiste;;;§Y*§! Es una cultura tradicionalmente esclavista;;;;;;;;;x
+qarth_group;Qaathi;Qarthien;Qartheen;;Qaatheca;;;;;;;;;x
+qartheen;Qartheen;Qarthien;Qartheen;;Qarthiense;;;;;;;;;x
+qartheen_FEATURES;§Y*§! Is a traditional slaver culture;§Y*§! Est une culture traditionnellement esclavagiste;;;§Y*§! Es una cultura tradicionalmente esclavista;;;;;;;;;x
+ghiscari_group;Ghiscari;Ghiscari;;;Ghiscaria;;;;;;;;;x
+ghiscari_group_FEATURES;§Y*§! Is a traditional slaver culture;§Y*§! Est une culture traditionnellement esclavagiste;;;§Y*§! Es una cultura tradicionalmente esclavista;;;;;;;;;x
+slaver;Slaver;Esclavagiste;;;Esclavo;;;;;;;;;x
+astapori;Astapori;Astapori;;;Astapori;;;;;;;;;x
+astapori_FEATURES;§Y*§! May train and sell unsullied if slavery is legal;Astapori;;;§Y*§! Pueden entrenar y vender inmaculados si el esclavismo es legal;;;;;;;;;x
+yunkaii;Yunkai'i;Yunkaïi;;;Yunkia;;;;;;;;;x
+meereenese;Meereenese;Meereenien;;;Meerena;;;;;;;;;x
+ghiscari;Ghiscari;Ghiscari;;;Ghiscaria;;;;;;;;;x
+ibbenese;Ibbenese;Ibbénien;;;Ibbenesa;;;;;;;;;x
+ibbenese_FEATURES;§Y*§! Cannot breed with other cultures;§Y*§! Ne peut pas se reproduire avec d'autres cultures;Brindlemen;;§Y*§! No pueden reproducirse con otras culturas;;;;;;;;;x
+naath_group;Naathi;Naathi;;;Naatí;;;;;;;;;x
+naathi;Naathi;Naathi;;;Naatí;;;;;;;;;x
+sell_swords;Sell Swords;Epée-Louées;;;Mercenarios;;;;;;;;;x
+dornish_sellswords;Dornish Sellsword;Epée-Louée Dornienne;;;Mercenarios dornienses;;;;;;;;;x
+northman_sell;Northman Sellsword;Epée-Louée Nordienne;;;Mercenarios norteños;;;;;;;;;x
+riverlander_sell;Riverlander Sellsword;Epée-Louée du Conflans;;;Mercenarios ribereños;;;;;;;;;x
+westerman_sell;Westerman Sellsword;Epée-Louée Ouestrienne;;;Mercenarios occidentales;;;;;;;;;x
+valeman_sell;Valeman Sellsword;Epée-Louée du Val;;;Mercenarios vallenses;;;;;;;;;x
+stormlander_sell;Stormlander Sellsword;Epée-Louée des Terres de l'Orage;;;Mercenarios tormenteños;;;;;;;;;x
+reachman_sell;Reachman Sellsword;Epée-Louée du Bief;;;Mercenarios dominienses;;;;;;;;;x
+ironborn_sell;Ironborn Sellswerd;Epée-Louée des Îles de Fer;;;Mercenerios herreños;;;;;;;;;x
+dornish_sell;Dornish Sellsword;Epée-Louée Dornienne;;;Mercenarios dornienses;;;;;;;;;x
+lhazareen;Lhazareen;Lhazaréen;Lhazareen;;Lhazareena;;;;;;;;;x
+yi_ti_group;YiTish;Yitien;YiTish;;Yitiense;;;;;;;;;x
+yi_ti_group_FEATURES;§Y*§! Is a traditional slaver culture;§Y*§! Est une culture traditionnellement esclavagiste;;;§Y*§! Es una cultura tradicionalmente esclavista;;;;;;;;;x
+yi_ti;YiTish;Yitien;YiTish;;Yitiense;;;;;;;;;x
+leng;Leng;Lengii;;;Lenguita;;;;;;;;;x
+asshai_group;Asshai'i;Asshaï'i;Asshai'i;;Asshaíta;;;;;;;;;x
+asshai;Asshai'i;Asshaï'i;Asshai'i;;Asshaíta;;;;;;;;;x
+summer_islands;Summer Islands;Iles d'Eté;;;Islas del Verano;;;;;;;;;x
+summer_islander;Summer Islander;Estivien;;;Estiveña;;;;;;;;;x
+summer_islander_FEATURES;§Y*§! Can hold archery tournaments;§Y*§! Peut organiser des tournois d'archerie;;;§Y*§! Pueden organizar torneos de arquería;;;;;;;;;x
+sothoryos_group;Sothoryosi;Sothoryosi;Sothoryos;;Sothorí;;;;;;;;;x
+basilisk_islander;Basilisk Islander;Basilikien;Basilisk Islander;;Basilisqueña;;;;;;;;;x
+brindlemen;Brindleman;Moucheté;Brindlemen;;Hombres Pintos;;;;;;;;;x
+brindlemen_FEATURES;§Y*§! Cannot breed with other cultures;§Y*§! Ne peut pas se reproduire avec d'autres cultures;Brindlemen;;§Y*§! No pueden reproducirse con otras culturas;;;;;;;;;x
+sarnor_group;Sarnori;Sarnore;;;Sarnoresa;;;;;;;;;x
+sarnorian;Tall Man;Homme Grand;;;Hombres Altos;;;;;;;;;x
+omberi;Omberi;Omberi;;;Omberesa;;;;;;;;;x
+sothoryos_islands;Sothoryosi;Sothoryien;;;Sothorí;;;;;;;;;x
+sisterman;Sisterman;Soeurois;;;Hermaneña;;;;;;;;;x
+moraqi_group;Moraqi;Moraqi;;;Moraqi;;;;;;;;;x
+farosi;Farosi;Farosi;;;Farosi;;;;;;;;;x
+moraqi;Moraqi;Moraqi;;;Moraqi;;;;;;;;;x
+zabhadi;Zabhadi;Zabhadi;;;Zabhadi;;;;;;;;;x
+vahari;Vahari;Vahari;;;Vahari;;;;;;;;;x
+hyrkoon_group;Hyrkooni;Hyrkoon;;;Hyrkunesa;;;;;;;;;x
+kayakayanayan;Kayakayanayan;Kayakayanayan;;;Kayakayanaya;;;;;;;;;x
+kayakayanayan_FEATURES;§Y*§! Women lead armies, out of the belief that only those who give birth are permitted to take life at will\n§Y*§! Most boys are gelded when they reach the age of 13. Only the most promising males, the largest, strongest, and most comely, are permitted to mature, breed, and become rulers, or Great Fathers, in their turn.\n§Y*§! Can adopt promising young men as sons\n§Y*§! Can freely take female courtiers as concubines;§Y*§! Les femmes mènent les armées car la croyance veut que seules celles qui donnent la vie peuvent la prendre\n§Y*§! La plupart des garçons sont castrés à l'âge de 13 ans. Seuls les mâles les plus prometteurs, les plus firts, les plus grands et les plus beaux ont le droit de procréer et de devenir des dirigeants ou des Eminents Pères.\n§Y*§! Peut adopter des jeunes hommes prometteurs\n§Y*§! Peut librement prendre des courtisanes comme concubines;;;§Y*§! Las mujeres lideran los ejércitos por la creencia de que sólo quien puede dar la vida la puede quitar\n§Y*§! La mayoría de los jóvenes son castrados a los 13 años. Sólamente los más prometedores, grandes, fuertes y atractivos tienen el derecho de reproducirse y convertirse en gobernantes o en Grandes Padres.\n§Y*§! Pueden adoptar jóvenes prometedores\n§Y*§! Pueden tomar libremente cortesanas como concubinas;;;;;;;;;x
+samyrianan;Samyrianan;Samyrianan;;;Samyriana;;;;;;;;;x
+samyrianan_FEATURES;§Y*§! Women lead armies, out of the belief that only those who give birth are permitted to take life at will\n§Y*§! Most boys are gelded when they reach the age of 13. Only the most promising males, the largest, strongest, and most comely, are permitted to mature, breed, and become rulers, or Great Fathers, in their turn.\n§Y*§! Can adopt promising young men as sons\n§Y*§! Can freely take female courtiers as concubines;§Y*§! Les femmes mènent les armées car la croyance veut que seules celles qui donnent la vie peuvent la prendre\n§Y*§! La plupart des garçons sont castrés à l'âge de 13 ans. Seuls les mâles les plus prometteurs, les plus firts, les plus grands et les plus beaux ont le droit de procréer et de devenir des dirigeants ou des Eminents Pères.\n§Y*§! Peut adopter des jeunes hommes prometteurs\n§Y*§! Peut librement prendre des courtisanes comme concubines;;;§Y*§! Las mujeres lideran los ejércitos por la creencia de que sólo quien puede dar la vida la puede quitar\n§Y*§! La mayoría de los jóvenes son castrados a los 13 años. Sólamente los más prometedores, grandes, fuertes y atractivos tienen el derecho de reproducirse y convertirse en gobernantes o en Grandes Padres.\n§Y*§! Pueden adoptar jóvenes prometedores\n§Y*§! Pueden tomar libremente cortesanas como concubinas;;;;;;;;;x
+bayasabhadi;Bayasabhadi;Bayasabhadi;;;Bayasabhadi;;;;;;;;;x
+bayasabhadi_FEATURES;§Y*§! Women lead armies, out of the belief that only those who give birth are permitted to take life at will\n§Y*§! Most boys are gelded when they reach the age of 13. Only the most promising males, the largest, strongest, and most comely, are permitted to mature, breed, and become rulers, or Great Fathers, in their turn.\n§Y*§! Can adopt promising young men as sons\n§Y*§! Can freely take female courtiers as concubines;§Y*§! Les femmes mènent les armées car la croyance veut que seules celles qui donnent la vie peuvent la prendre\n§Y*§! La plupart des garçons sont castrés à l'âge de 13 ans. Seuls les mâles les plus prometteurs, les plus firts, les plus grands et les plus beaux ont le droit de procréer et de devenir des dirigeants ou des Eminents Pères.\n§Y*§! Peut adopter des jeunes hommes prometteurs\n§Y*§! Peut librement prendre des courtisanes comme concubines;;;§Y*§! Las mujeres lideran los ejércitos por la creencia de que sólo quien puede dar la vida la puede quitar\n§Y*§! La mayoría de los jóvenes son castrados a los 13 años. Sólamente los más prometedores, grandes, fuertes y atractivos tienen el derecho de reproducirse y convertirse en gobernantes o en Grandes Padres.\n§Y*§! Pueden adoptar jóvenes prometedores\n§Y*§! Pueden tomar libremente cortesanas como concubinas;;;;;;;;;x
+asabhadi;Asabhadi;Asabhadi;;;Asabhadi;;;;;;;;;x
+old_races;Old Races;Vieilles races;;;Antiguas Razas;;;;;;;;;x
+giant;Giant;Géant;;;Gigante;;;;;;;;;x
+children_forest;Children of the Forest;Enfant de la Forêt;;;Niños del Bosque;;;;;;;;;x
+crackclawmen;Clawman;de Clacquepince;;;Zarpeña;;;;;;;;;x
+jogos_nhai_group;Jogos Nhai;Jogos Nhai;Jogos Nhai;;Jogos Nhai;;;;;;;;;x
+jogos_nhai;Jogos Nhai;Jogos Nhai;Jogos Nhai;;Jogos Nhai;;;;;;;;;x
+jade_islands_group;Jade Islands;Iles de Jade;;;Jadiense;;;;;;;;;x
+lengi;Lengi;Lengii;;;Lenguita;;;;;;;;;x
+nghai_group;N'Ghai;N'Ghai;;;N'Ghai;;;;;;;;;x
+nghai;N'Ghai;N'Ghai;;;N'Ghai;;;;;;;;;x
+hyrkooni;Hyrkooni;Hyrkooni;;;Hyrkunesa;;;;;;;;;x
+cannibal_clan;Ice River Clansman;des clans des fleuves gelés;;;Clanes del Río de Hielo;;;;;;;;;x
+hornfoot;Hornfoot;Pied Corné;;;Pies de Cuerno;;;;;;;;;x
+frozen_shore;Frozen Shore;Morsois;;;Hombres Morsa;;;;;;;;;x
+islander;Thousand Islander;des Milles Îles;;;Milisleña;;;;;;;;;x
+further_east;Further East;de l'Outre-Orient;;;Lejano Oriente;;;;;;;;;x
+grey_waste;Grey Clansman;Des clans du Désert Gris;;;Desierto Gris;;;;;;;;;x
+shadowlander;Shadowlander;des Contrées de l'Ombre;;;Tierras Sombrías;;;;;;;;;x
+shadowlander_FEATURES;§Y*§! May freely invade neighbours if independent;§Y*§! Peut librement envahir ses voisins si indépendants;;;§Y*§! Pueden invadir libremente a los vecinos si son independientes;;;;;;;;;x

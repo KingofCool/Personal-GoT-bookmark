@@ -1,0 +1,40 @@
+# 62 - White Harbor
+
+# County Title
+title = c_whiteharbor
+
+# Settlements
+max_settlements = 7
+b_newcastle = castle
+b_whiteharbor = city
+b_wolfsden = castle
+b_septofsnow = temple
+b_hardmead = city
+#b_alethorp = castle
+
+# Misc
+culture = northman
+religion = the_seven
+
+# History
+
+6000.1.1 = {
+	b_newcastle = ca_asoiaf_north_basevalue_1
+	b_newcastle = ca_asoiaf_north_basevalue_2
+	b_newcastle = ca_asoiaf_north_basevalue_3
+	b_newcastle = ca_asoiaf_north_basevalue_4
+	b_newcastle = ca_cellar_1
+	b_whiteharbor = ct_asoiaf_north_basevalue_1
+	b_whiteharbor = ct_asoiaf_north_basevalue_2
+	b_whiteharbor = ct_asoiaf_north_basevalue_3
+	b_whiteharbor = ct_asoiaf_north_basevalue_4
+	b_whiteharbor = ct_asoiaf_north_basevalue_5
+	b_whiteharbor = ct_asoiaf_north_basevalue_6
+	b_whiteharbor = ct_asoiaf_smallshipyard
+	b_wolfsden = ca_asoiaf_north_basevalue_1
+	b_wolfsden = ca_asoiaf_north_basevalue_2
+
+	b_hardmead = ct_asoiaf_north_basevalue_1
+	b_hardmead = ct_asoiaf_north_basevalue_2
+	b_hardmead = ct_asoiaf_north_basevalue_3
+}

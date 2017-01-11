@@ -1,0 +1,5 @@
+#unclaimed
+8037.9.9={
+	de_jure_liege = k_crownlands
+	holder = 0
+}

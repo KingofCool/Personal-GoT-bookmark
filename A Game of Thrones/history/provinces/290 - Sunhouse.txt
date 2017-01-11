@@ -1,0 +1,31 @@
+
+
+# County Title
+title = c_sunhouse
+
+# Settlements
+max_settlements = 4
+b_sunflower_hall = castle
+b_sunhouse = city 
+
+#b_fairlight
+#b_sotherton
+
+# Misc
+culture = reachman
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_sunflower_hall = ca_asoiaf_reach_basevalue_1
+	b_sunflower_hall = ca_asoiaf_reach_basevalue_2
+	b_sunflower_hall = ca_asoiaf_reach_basevalue_3
+	b_sunflower_hall = ca_asoiaf_reach_basevalue_4
+}
+6000.1.1 = {
+	b_sunhouse = ct_asoiaf_reach_basevalue_1
+	b_sunhouse = ct_asoiaf_reach_basevalue_2
+
+
+}
+

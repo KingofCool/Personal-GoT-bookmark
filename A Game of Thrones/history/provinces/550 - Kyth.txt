@@ -1,0 +1,22 @@
+# 550 - Kyth
+
+# County Title
+title = c_kyth
+
+# Settlements
+max_settlements = 4
+
+b_kyth = tribal
+b_kyth1 = city
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+# History
+6000.1.1 = {
+	b_kyth1 = ct_asoiaf_sarnor_basevalue_1
+	b_kyth1 = ct_asoiaf_sarnor_basevalue_2
+	b_kyth1 = ct_asoiaf_sarnor_basevalue_3
+	b_kyth1 = ct_asoiaf_sarnor_basevalue_4
+}

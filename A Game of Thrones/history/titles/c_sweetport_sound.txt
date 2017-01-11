@@ -1,0 +1,26 @@
+800.1.1={
+	liege="d_dragonstone"
+}
+7985.1.1 = { holder=30051 } # Viserys (nc)
+8025.1.1 = { holder=30151 } # Rhaegar (nc)
+8037.1.1 = { holder=30251 } # Aegor (nc)
+8051.1.1 = { holder=30751 } # Aelinor (nc)
+8084.1.1 = { holder=30851 } # Gyles (nc)
+8112.1.1 = { holder=31151 } # Bennard (nc)
+8135.1.1 = { holder=31451 } # Allar (nc)
+8155.1.1 = { holder=31651 } # Sefton (nc)
+8182.1.1 = { holder=31951 } # Aegon (nc)
+8212.1.1 = { holder=32151 } # Serenei (nc)
+8234.1.1 = { holder=32251 } # Monford (nc)
+8251.1.1={
+	holder = 2051 	#Triston Sunglass (nc)
+}
+8276.1.1={
+	holder = 51 	#Guncer Sunglass
+}
+8299.1.1 = { 
+	liege = 0 
+}
+8299.7.1 = { 
+	holder=1051 #Guncer's Brother
+}

@@ -1,0 +1,31 @@
+# 213 - Hollard Hall
+
+# County Title
+title = c_hollard_hall
+
+# Settlements
+max_settlements = 3
+b_hollard_hall = castle
+b_saissac = city
+
+#b_bluedell = castle
+#b_seamill = city
+
+#Misc
+culture = riverlander
+religion = the_seven
+
+# History
+
+
+1066.1.1 = {
+
+	b_hollard_hall = ca_asoiaf_crown_basevalue_1
+	b_hollard_hall = ca_asoiaf_crown_basevalue_2
+	b_hollard_hall = ca_asoiaf_crown_basevalue_3
+
+
+	b_saissac = ct_asoiaf_crown_basevalue_1
+	b_saissac = ct_asoiaf_crown_basevalue_2
+
+}

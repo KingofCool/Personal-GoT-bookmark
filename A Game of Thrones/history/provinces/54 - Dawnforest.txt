@@ -1,0 +1,20 @@
+# 54 - Dawnforest
+
+# County Title
+title = c_dawnforest
+
+# Settlements
+max_settlements = 2
+b_glencastle = castle
+#b_childrenscopse = temple
+
+# Misc
+culture = northman
+religion = old_gods
+
+# History
+
+6000.1.1 = {
+	b_glencastle = ca_asoiaf_north_basevalue_1
+	b_glencastle = ca_asoiaf_north_basevalue_2
+}

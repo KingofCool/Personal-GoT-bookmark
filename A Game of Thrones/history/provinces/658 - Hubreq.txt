@@ -1,0 +1,16 @@
+
+# County Title
+title = c_hubreq
+
+# Settlements
+max_settlements = 2
+
+b_hubreq = tribal
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+# History
+6000.1.1 = {
+}

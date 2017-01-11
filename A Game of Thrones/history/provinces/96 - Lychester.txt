@@ -1,0 +1,34 @@
+# 96 - Medway
+
+# County Title
+title = c_medway
+
+# Settlements
+max_settlements = 4
+b_castlelynchester = castle
+b_medway = city
+b_sallydance = city
+
+# Misc
+culture = riverlander
+religion = the_seven
+
+# History
+
+6000.1.1 = {
+
+b_castlelynchester = ca_asoiaf_river_basevalue_1
+b_castlelynchester = ca_asoiaf_river_basevalue_2
+
+b_medway = ct_asoiaf_river_basevalue_1
+b_medway = ct_asoiaf_river_basevalue_2
+b_medway = ct_asoiaf_river_basevalue_3
+
+b_sallydance = ct_asoiaf_river_basevalue_1
+b_sallydance = ct_asoiaf_river_basevalue_2
+
+
+}
+8070.1.1 = { #Jaehaerys constructs road network
+	b_castlelynchester = ca_river_road
+}

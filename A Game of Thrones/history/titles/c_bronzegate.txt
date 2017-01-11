@@ -1,0 +1,15 @@
+202.1.1={ liege="d_wendwater" }
+
+7960.1.1={ holder=60000319} # Edric Buckler (nc)
+8002.1.1={ holder=3000319 } # Rickard Buckler (nc)
+8028.1.1={ holder=3001319 } # Edric Buckler (nc)
+8055.1.1={ holder=3002319 } # Orys Buckler (nc)
+8073.1.1={ holder=3003319 } # Rickard Buckler (nc)
+8087.1.1={ holder=3004319 } # Maric Buckler (nc)
+8103.1.1={ holder=3005319 } # Cedryk Buckler (nc)
+8112.1.1={ holder=3006319 } # Orys Buckler (nc)
+8175.1.1={ holder=3008319 } # Ralph Buckler (nc)
+8201.1.1={ holder=3010319 } # Rickard Buckler (nc)
+8222.1.1={ holder=3011319 } # Orys Buckler (nc)
+8254.1.1={ holder=3012319 } # Oryk Buckler (nc)
+8281.1.1={ holder=319 } # Ralph Buckler (C)

@@ -1,0 +1,19 @@
+# 567 - Chev'rak
+
+# County Title
+title = c_chevrak
+
+# Settlements
+max_settlements = 3
+
+b_chevrak = tribal
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+terrain = forest
+
+# History
+6000.1.1 = {
+}

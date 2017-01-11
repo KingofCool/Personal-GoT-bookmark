@@ -1,0 +1,26 @@
+7965.1.1 = { 
+	holder=100332 # Joffrey (nc)
+	effect = {
+		holder_scope = {
+			set_dynasty_flag = is_cadet_house
+			c_21544 = { #durrandon father
+				set_dynasty_flag = has_cadet_house
+				set_dynasty_flag = owned_cadet_house_@PREV 
+				ROOT = { holder_scope = { set_dynasty_flag = cadet_house_@PREVPREV } }
+			}
+		}
+	}
+} 
+7986.1.1 = { holder=101332 } # Pate (nc)
+8020.1.1 = { holder=103332 } # Phillip (nc)
+8066.1.1 = { holder=104332 } # Ralph (nc)
+8081.1.1 = { holder=107332 } # Bryce (nc)
+8084.1.1 = { holder=112332 } # Orys (nc)
+8141.1.1 = { holder=114332 } # Cortnay (nc)
+8147.1.1 = { holder=119332 } # Lomas (nc)
+8167.1.1 = { holder=121332 } # Robert (nc)
+8192.1.1 = { holder=2000332 } # Florian (nc)
+8230.1.1 = { holder=3001332 } # Ormund Bolling (nc)
+8264.1.1 = { holder=3004332 } # Harwood Bolling (nc)
+8278.1.1 = { holder=3005332 } # Joffrey Bolling (nc)
+8292.1.1 = { holder=3008332 } # Harlan Bolling (nc)

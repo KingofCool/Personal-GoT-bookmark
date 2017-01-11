@@ -1,0 +1,20 @@
+800.1.1={
+	liege="d_rosby"
+}
+7980.1.1 = { holder=300038 } # Robin (nc)
+8005.1.1 = { holder=300138 } # Janos (nc)
+8027.1.1 = { holder=300338 } # Alan (nc)
+8082.1.1 = { holder=300738 } # Howard (nc)
+8103.1.1 = { holder=300938 } # Ardrian (nc)
+8130.1.26={ holder=301138 } # Rorge (nc)
+8144.1.1 = { holder=301238 } # Jacelyn (nc)
+8183.1.1 = { holder=301438 } # Bronn (nc)
+8195.1.1 = { holder=301638 } # Mortimer (nc)
+8200.1.1 = { holder=301938 } # Qarlton (nc)
+8214.1.1 = { holder=302238 } # Ferret (nc)
+8228.1.1={
+	holder = 2039 	#Rymond Rosby
+}
+8266.1.1={
+	holder = 38	#Gyles Rosby
+}

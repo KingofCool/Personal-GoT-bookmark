@@ -1,0 +1,15 @@
+7600.1.1={
+	law = succ_ultimogeniture
+}
+7985.1.1 = { holder=10055916 } # Jommo (nc)
+8018.1.1 = { holder=10355916 } # Fogo (nc)
+8035.1.1 = { holder=10655916 } # Zollo (nc)
+8087.1.1 = { holder=10855916 } # Aggo (nc)
+8094.1.1 = { holder=11155916 } # Iggo (nc)
+8138.1.1 = { holder=11755916 } # Ogo (nc)
+8176.1.1 = { holder=12155916 } # Zollo (nc)
+8185.1.1 = { holder=12655916 } # Bharbo (nc)
+8198.1.1 = { holder=12955916 } # Haggo (nc)
+8239.1.1 = { holder=13455916 } # Cohollo (nc)
+8266.1.1 = { holder=13655916 } # Pono (nc)
+8269.1.1 = { holder=14055916 } # Rakharo (nc)

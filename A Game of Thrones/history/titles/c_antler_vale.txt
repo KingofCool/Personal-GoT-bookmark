@@ -1,0 +1,25 @@
+8197.1.1={
+	holder=21359
+}
+8213.1.1={
+	liege="k_beyond_wall"
+}
+8226.9.9={
+	holder=121359
+	liege=0
+}
+8230.1.1={
+	holder=421359
+}
+8252.1.1={
+	holder=521359
+}
+8278.1.1={
+	holder=574800
+}
+8298.1.1={
+	liege="k_beyond_wall"
+}
+8300.1.1={
+	liege="d_haunted_forest"
+}

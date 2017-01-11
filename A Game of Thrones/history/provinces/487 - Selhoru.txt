@@ -1,0 +1,17 @@
+
+
+# County Title
+title = c_selhoru
+
+# Settlements
+max_settlements = 2
+
+b_selhoru = tribal
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+# History
+6000.1.1 = {
+}

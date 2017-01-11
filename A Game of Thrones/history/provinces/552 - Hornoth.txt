@@ -1,0 +1,22 @@
+# 552 - Hornoth
+
+# County Title
+title = c_hornoth
+
+# Settlements
+max_settlements = 5
+
+b_hornoth = tribal
+b_hornoth1 = city
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+# History
+6000.1.1 = {
+	b_hornoth1 = ct_asoiaf_sarnor_basevalue_1
+	b_hornoth1 = ct_asoiaf_sarnor_basevalue_2
+	b_hornoth1 = ct_asoiaf_sarnor_basevalue_3
+	b_hornoth1 = ct_asoiaf_sarnor_basevalue_4
+}

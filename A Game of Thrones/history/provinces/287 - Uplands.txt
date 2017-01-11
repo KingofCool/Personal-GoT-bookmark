@@ -1,0 +1,36 @@
+
+
+# County Title
+title = c_uplands
+
+# Settlements
+max_settlements = 5
+b_uplands = castle
+b_mullhill = city
+b_orangeford = city
+b_daresbury = city
+
+#b_ladyhall
+
+# Misc
+culture = reachman
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_uplands = ca_asoiaf_reach_basevalue_1
+	b_uplands = ca_asoiaf_reach_basevalue_2
+	b_uplands = ca_asoiaf_reach_basevalue_3
+}
+6000.1.1 = {
+	b_mullhill = ct_asoiaf_reach_basevalue_1
+	b_mullhill = ct_asoiaf_reach_basevalue_2
+}
+6000.1.1 = {
+	b_orangeford = ct_asoiaf_reach_basevalue_1
+	b_orangeford = ct_asoiaf_reach_basevalue_2
+}
+6000.1.1 = {
+	b_daresbury = ct_asoiaf_reach_basevalue_1
+}
+

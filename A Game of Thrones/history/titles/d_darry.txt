@@ -1,0 +1,61 @@
+6540.1.1 = {
+	holder=0
+	law = succ_primogeniture
+	liege="e_riverlands"
+}
+7992.1.1 = {
+	holder=114137
+}
+7998.2.1={
+	liege="k_riverlands"
+}
+8040.1.1 = {
+	holder=113137
+}
+8052.1.1 = {
+	holder=112137
+}
+8072.1.1 = {
+	holder=111137
+}
+8085.1.1 = {
+	holder=110137
+}
+8100.1.1 = {
+	holder=109137 # Lucias Darry
+}
+8119.1.1 = {
+	holder=5500137 # Jonothor Darry
+}
+8129.7.1 = {
+    holder=5510137 # Derrick Darry
+}
+8131.1.1={
+	holder=107137 # Roland Darry
+}
+8168.1.1 = {
+	holder=105137 # Jorin Darry
+}
+8203.1.1 = {
+	holder=104137
+}
+8238.1.1 = {
+	holder=103137
+}
+8263.1.1 = {
+	holder=100137
+}
+8282.9.15 = {
+	liege=0
+}
+8283.7.1={
+	holder = 0 #Darrys stripped of power
+}
+8299.11.12 = {
+	holder=8190 #Lancel
+	liege="k_riverlands"
+}
+8300.4.1 = {
+	holder=9190 #Martyn
+}
+

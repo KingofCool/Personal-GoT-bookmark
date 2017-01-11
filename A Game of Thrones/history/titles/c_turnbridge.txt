@@ -1,0 +1,17 @@
+6000.1.1={
+	liege="d_riverrun"
+}
+#chambers
+7981.1.1 = { holder=100178453 } # Arwyn (nc)
+8002.1.1 = { holder=101178453 } # Patrek (nc)
+8026.1.1 = { holder=105178453 } # Damon (nc)
+8056.1.1 = { holder=107178453 } # Dennett (nc)
+8097.1.1 = { holder=111178453 } # Bennet (nc)
+8119.1.1 = { holder=112178453 } # Rawney (nc)
+8135.1.1 = { holder=113178453 } # Melwys (nc)
+8175.1.1 = { holder=120178453 } # Jaime (nc)
+8209.1.1 = { holder=126178453 } # Arwood (nc)
+8240.1.1 = { holder=127178453 } # Dickon (nc)
+8272.1.1 = { holder=132178453 } # Desmond (nc)
+8284.1.1 = { holder=135178453 } # Luceon (nc)
+8296.1.1 = { holder=136178453 } # Willum (nc)

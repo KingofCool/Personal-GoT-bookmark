@@ -1,0 +1,20 @@
+900.1.1 = {liege="d_rainwood"}
+
+7970.1.1 = { holder=60100323} # Alaric Staedmon (nc)
+7997.2.2 = { holder=300323 } # Arrec Staedmon (nc)
+8000.2.27 = { holder=301323 } # Arstan Staedmon (nc)
+8005.1.1 = { holder=302323 } # Armond Staedmon (nc)
+8035.1.1 = { holder=306323 } # Arstan Staedmon (nc)
+8056.1.1 = { holder=310323 } # Addam Staedmon (nc)
+8095.1.1 = { holder=317323 } # Bryen Staedmon (nc)
+8103.1.1 = { holder=313323 } # Corenna Staedmon (nc)
+8132.1.1 = { holder=319323 } # Bonifer Staedmon (nc)
+8164.1.1 = { holder=326323 } # Arrec Staedmon (nc)
+8177.1.1 = { holder=327323 } # Mylenda Staedmon (nc)
+8189.1.1 = { holder=328323 } # Matriice Staedmon (nc)
+8213.1.1 = { holder=329323 } # Casper Staedmon (nc)
+8231.1.1 = { holder=330323 } # Criston Staedmon (nc)
+8262.1.1 = { holder=335323 } # Simon Staedmon (nc)
+8277.1.1 = { holder=200323 } # Alesander Staedmon (C)
+8299.1.1 = { liege="k_stormlands" }
+8299.7.1 = { liege = 0 }

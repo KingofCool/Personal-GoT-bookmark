@@ -1,0 +1,236 @@
+ibbenese = {
+	graphical_cultures = { norsegfx } # buildings
+	
+	ibbenese = {
+		graphical_cultures = { celticgfx ibbenesegfx } # portraits, units
+		
+		color = { 0.45 0.45 0.55 }
+		
+		male_names = {
+			Togg Bodger Brogg
+			Caloth Cull Clargg Colosh
+			Doth Drogg Durr Draloth			Erroth Eleogg			Galt Groo Gurn
+			Haggon Holger Howd
+			Jogg Joth Jarr
+			Krull			Morr Moggoth			Quort
+			Slugg Sogg Sogoloth
+			Tumosh Tugg Torr Teleoth
+			Ulf Umar Ygon
+			
+		}
+		female_names = {
+			Assadora Brella Brea Bellegere Betharios
+			Cossoma Denia
+			Ferny Frynne
+			Gylenios Grisel Gylora
+			Izembara Harra Jaqea
+			Mellario Lanna Meralyia Mera Mordea			Rogga Rowan
+			Yorka Yna Umma
+			Ynys Tagganaria Torma
+			Zia
+		}
+		from_dynasty_prefix = "de "
+		
+		# Chance de male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance de female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+}
+jogos_nhai_group = {
+	graphical_cultures = { mongolgfx } # buildings
+
+	jogos_nhai = {
+		graphical_cultures = { jogosgfx muslimgfx }
+		#horde = yes
+		
+		color = { 0.28 0 0.28 }
+		
+		male_names = { #Afghan
+			#Canon
+			Gharak:500
+			
+			#Non-canon
+			Aamir Aarak Aasif Adeib
+			Babrak Bakhshi Baktash Bakhtiyar Barialy Basir	
+			Changaze Churak Chaman
+			Daoud Dastgir
+			Edrees Ehsan Enullak Elhash Emal	
+			Fateh Faisal Faqar Fardeen Farhad
+			Ghous Ghulak Gulloo	Gomal
+			Hafak Haider Hakim
+			Idress Isak	Ikhlas Inzir
+			Jakar Jakan Jaan Janan Jawak
+			Kader Khair Kahkazan Khalek	Karzai
+			Laiqshah Lajrak Latik Lemar
+			Mahwak Maiwand Malik
+			Nadek Naim Naherak
+			Obiad
+			Paiman Partak Parviz 
+			Qader Quandik Qurban
+			Rafeek Ramazan Ramez Rasoul
+			Sabeir Sabry Sadaf Sadik Sahar
+			Tabish Tahib Temur Taj Tamim Tarakai
+			Uzrak
+			Vidak
+			Waheek Wafa Wais Wakel
+			Yaldak Yasaman Yasen
+			Zabi Zafar Zabiullak Zahar Zaid
+		}
+		
+		female_names = {
+			#Canon
+			Zhea:500
+			
+			#Non-canon
+			Aatifa Abagull 
+			Bahara Bakhtawar Basima
+			Camila Chehra
+			Daywa Darya Deena Diba Durkhany Donyaa
+			Elina
+			Fahima Fakhria Farah Faria Fareshta
+			Ghezal Geeti Gulja
+			Hadi Hafifa	Hafiza Hajera Hila Halima	
+			Ilaaha Inaara 		
+			Jamila 
+			Karima Kamila Karma
+			Laila Lailuma Laimah Latifa Leena Leepa	Lima Lida
+			Madina Makai Malalai Malia	
+			Naazi Nabi Nabila Nadera Nagia
+			Obiada Omira Orzala	 	
+			Pari Parwana Patra	
+			Qais Qudratu
+			Rabeha Rahila Raihana
+			Sabroo Saeeda Sadika
+			Tahira Tahmina Tamana Tarana  
+			Uzra Usma
+			Vida	
+			Wahida Wajia Walia
+			Xebaida		
+			Yalda Yama
+			Zabia Zahida Zeba Zeena	Zahba Zahra 		
+		}
+		
+		character_modifier = {
+			#demesne_size = 6
+		}
+		
+		male_patronym = " Fils de "
+		female_patronym = " Fille de "
+		prefix = yes
+		
+		#dynasty_title_names = yes
+		founder_named_dynasties = yes
+		dukes_called_kings = yes
+		allow_looting = yes
+		
+		#from_dynasty_prefix = "de "
+		
+		pat_grf_name_chance = 25
+		mat_grf_name_chance = 25
+		father_name_chance = 25
+		
+		pat_grm_name_chance = 25
+		mat_grm_name_chance = 25
+		mother_name_chance = 25
+		
+		modifier = default_culture_modifier
+	}
+}
+nghai_group = {
+	graphical_cultures = { indiangfx } # buildings
+	
+	nghai = {
+		graphical_cultures = { mongolgfx muslimgfx }
+		
+		color = { 0.775 0.5 0.15 }
+		
+		male_names = {
+			An "An Dung" Ba Bao Binh
+			Chien Chinh Dai Danh Duc
+			Hai Hao Hieu Huu Huynh
+			Lanh Minh Ngai
+			Nhung Phong Phuc
+			Quan Quy Sang 
+			Thanh Thao Thinh Trai Trang Truc Tu
+			Van Vien Vinh Xuan
+		}
+		
+		female_names = {
+			Bich Cam Chau Chi Cuc
+			Hanh Hoa Hong Hue
+			Kim "Kim Cuc" "Kim Ly"
+			Lien Linh Mai Ngoc Ngon Nguyet
+			Phuong Quyen
+			Thi Thu Thuy Tien
+			Yen		
+		}
+		
+		#from_dynasty_prefix = "de "
+		
+		pat_grf_name_chance = 25
+		mat_grf_name_chance = 25
+		father_name_chance = 25
+		
+		pat_grm_name_chance = 25
+		mat_grm_name_chance = 25
+		mother_name_chance = 25
+		
+		modifier = default_culture_modifier
+	}
+}	
+islander = {
+	graphical_cultures = { norsegfx } # buildings
+	
+	islander = {
+		graphical_cultures = { islandergfx }
+
+		used_for_random = no
+		
+		color = { 0.45 0.45 0.55 }
+		
+		male_names = {
+			Togg Bodger Brogg
+			Caloth Cull Clargg Colosh
+			Doth Drogg Durr Draloth			Erroth Eleogg			Galt Groo Gurn
+			Haggon Holger Howd
+			Jogg Joth Jarr
+			Krull			Morr Moggoth			Quort
+			Slugg Sogg Sogoloth
+			Tumosh Tugg Torr Teleoth
+			Ulf Umar Ygon
+			
+		}
+		female_names = {
+			Assadora Brella Brea Bellegere Betharios
+			Cossoma Denia
+			Ferny Frynne
+			Gylenios Grisel Gylora
+			Izembara Harra Jaqea
+			Mellario Lanna Meralyia Mera Mordea			Rogga Rowan
+			Yorka Yna Umma
+			Ynys Tagganaria Torma
+			Zia
+		}
+		from_dynasty_prefix = "de "
+		
+		# Chance de male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance de female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+}

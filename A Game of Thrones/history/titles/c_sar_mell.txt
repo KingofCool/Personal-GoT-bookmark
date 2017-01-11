@@ -1,0 +1,4 @@
+600.1.1={
+	liege="d_selhorys"
+}
+8000.1.1 = { liege = 0 }

@@ -1,0 +1,34 @@
+# 179 - goldshire
+
+# County Title
+title = c_goldshire
+
+# Settlements
+max_settlements = 5
+b_goldshire = castle
+b_goldshiretown = city
+b_goldshiretowntwo = castle
+b_goldshiresept = city
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_goldshire = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_goldshire = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_goldshire = ca_asoiaf_westerland_basevalue_3}
+6000.1.1 = {b_goldshire = ca_asoiaf_westerland_basevalue_4}
+6000.1.1 = {b_goldshire = ca_goldmine}
+
+6000.1.1 = {b_goldshiretown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_goldshiretown = ct_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_goldshiretown = ct_asoiaf_westerland_basevalue_3}
+
+6000.1.1 = {b_goldshiretowntwo = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_goldshiretowntwo = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_goldshiretowntwo = ca_asoiaf_westerland_basevalue_3}
+
+6000.1.1 = {b_goldshiresept = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_goldshiresept = ct_asoiaf_westerland_basevalue_2}

@@ -1,0 +1,23 @@
+# 181 - brent_brook
+
+# County Title
+title = c_brent_brook
+
+# Settlements
+max_settlements = 3
+b_brent_brook = castle
+b_brent_brooktown = city
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_brent_brook = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_brent_brook = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_brent_brook = ca_asoiaf_westerland_basevalue_3}
+6000.1.1 = {b_brent_brook = ca_goldmine}
+
+6000.1.1 = {b_brent_brooktown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_brent_brooktown = ct_asoiaf_westerland_basevalue_2}

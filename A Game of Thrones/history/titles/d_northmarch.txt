@@ -1,0 +1,21 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="e_reach"
+}
+7940.1.1={
+	holder=88295
+}
+7985.1.1={
+	holder=88287
+}
+7992.1.1={
+	holder=88286
+}
+7998.6.6={
+	liege="k_reach"
+}
+8035.1.1={
+	holder=88285
+}
+8044.1.1={
+	holder=0 #Osgreys lose titles
+}

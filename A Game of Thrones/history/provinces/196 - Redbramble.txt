@@ -1,0 +1,29 @@
+# 196 - redbramble
+
+# County Title
+title = c_redbramble
+
+# Settlements
+max_settlements = 4
+b_redbramble = castle
+b_redbrambletown = city
+b_redbramblesept = castle
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_redbramble = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_redbramble = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_redbramble = ca_asoiaf_westerland_basevalue_3}
+#6000.1.1 = {b_redbramble = ca_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_redbrambletown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_redbrambletown = ct_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_redbrambletown = ct_asoiaf_westerland_basevalue_3}
+#6000.1.1 = {b_redbrambletown = ct_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_redbramblesept = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_redbramblesept = ca_asoiaf_westerland_basevalue_2}

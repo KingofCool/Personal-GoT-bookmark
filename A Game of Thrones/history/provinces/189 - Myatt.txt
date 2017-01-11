@@ -1,0 +1,30 @@
+# 189 - myatt
+
+# County Title
+title = c_myatt
+
+# Settlements
+max_settlements = 4
+b_myatt = castle
+b_myatttown = city
+#b_myattsept = temple
+b_myatttowntwo = city
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_myatt = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_myatt = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_myatt = ca_asoiaf_westerland_basevalue_3}
+6000.1.1 = {b_myatt = ca_silvermine}
+
+6000.1.1 = {b_myatttown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_myatttown = ct_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_myatttown = ct_asoiaf_westerland_basevalue_3}
+#6000.1.1 = {b_myatttown = ct_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_myatttowntwo = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_myatttowntwo = ct_asoiaf_westerland_basevalue_2}

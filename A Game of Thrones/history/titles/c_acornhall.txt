@@ -1,0 +1,31 @@
+6000.1.1={
+	liege="d_wayfarersrest"
+	law = succ_primogeniture
+}
+7991.1.1={
+	holder=10156
+}
+8014.1.1={
+	holder=9156
+}
+8061.1.1={
+	holder=8156
+}
+8073.1.1={
+	holder=7156
+}
+8123.1.1={
+	holder=6156
+}
+8167.1.1={
+	holder=4156
+}
+8216.1.1={
+	holder=3156
+}
+8247.1.1={
+	holder=1336
+}
+8278.1.1={
+	holder=156
+}

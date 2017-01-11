@@ -1,0 +1,31 @@
+# 29 - Karhold
+
+# County Title
+title = c_karhold
+
+# Settlements
+max_settlements = 5
+b_karhold = castle
+b_barbleton = city
+b_eastharbor = city
+b_snowdell = temple
+#b_greyclifftower = castle
+
+# Misc
+culture = northman
+religion = old_gods
+
+# History
+
+6000.1.1 = {
+	b_karhold = ca_asoiaf_north_basevalue_1
+	b_karhold = ca_asoiaf_north_basevalue_2
+	b_karhold = ca_asoiaf_north_basevalue_3
+	b_karhold = ca_asoiaf_north_basevalue_4
+	b_barbleton = ct_asoiaf_north_basevalue_1
+	b_barbleton = ct_asoiaf_north_basevalue_2
+	b_eastharbor = ct_asoiaf_north_basevalue_1
+	b_eastharbor = ct_asoiaf_north_basevalue_2
+	b_eastharbor = ct_asoiaf_north_basevalue_3
+	b_eastharbor = ct_asoiaf_north_basevalue_4
+}

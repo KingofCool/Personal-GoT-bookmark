@@ -1,0 +1,24 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="d_tumbleton"
+}
+7991.1.1 = { holder=6000294 } # Branston (nc)
+8006.1.1 = { holder=6001294 } # Lucas (nc)
+8050.1.1 = { holder=6005294 } # Samwell (nc)
+8066.1.1 = { holder=6007294 } # Anslem (nc)
+8117.1.1 = { holder=6008294 } # Hosman (nc)
+8120.1.1 = { holder=6009294 } # Abelar (nc)
+8133.1.1 = { holder=6012294 } # Walys (nc)
+8182.1.1 = { holder=6015294 } # Colin (nc)
+8183.1.1 = { holder=6019294 } # Hosman (nc)
+8189.1.1 = { holder=6023294 } # Mathis (nc)
+8218.1.1 = { holder=6025294 } # Tommen (nc)
+8258.1.1 = { holder=6028294 } # Leo (nc)
+
+8272.1.1={
+	holder=294
+}
+
+
+
+
+

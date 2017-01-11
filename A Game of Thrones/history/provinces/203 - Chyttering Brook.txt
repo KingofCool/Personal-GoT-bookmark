@@ -1,0 +1,31 @@
+# 203 - Chyttering Brook
+
+# County Title
+title = c_chyttering_brook
+
+# Settlements
+max_settlements = 3
+b_chyttering_brook = castle
+b_mallowhall = city
+
+#b_agramunt = castle
+#b_aelwick = city
+
+# Misc
+culture = riverlander
+religion = the_seven
+
+# History
+
+
+1066.1.1 = {
+
+	b_chyttering_brook = ca_asoiaf_crown_basevalue_1
+	b_chyttering_brook = ca_asoiaf_crown_basevalue_2
+	b_chyttering_brook = ca_asoiaf_crown_basevalue_3
+
+
+	b_mallowhall = ct_asoiaf_crown_basevalue_1
+	b_mallowhall = ct_asoiaf_crown_basevalue_2
+
+}

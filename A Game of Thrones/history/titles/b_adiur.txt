@@ -1,0 +1,18 @@
+600.1.1={
+	liege="k_asshai"
+	holding_dynasty = 32901 #Adiur
+}
+7990.1.1 = { holder=10032901 } # Sumalika (nc)
+8017.1.1 = { holder=10532901 } # Awil (nc)
+8043.1.1 = { holder=10732901 } # Dadanum (nc)
+8054.1.1 = { holder=11132901 } # Mamagal (nc)
+8114.1.1 = { holder=11532901 } # Damuzi (nc)
+8133.1.1 = { holder=11932901 } # Qasmath (nc)
+8147.1.1 = { holder=12132901 } # Samuqan (nc)
+8176.1.1 = { holder=12532901 } # Utu (nc)
+8215.1.1 = { holder=12932901 } # Ibnatum (nc)
+8240.1.1 = { holder=13332901 } # Qasmath (nc)
+8273.1.1 = { holder=13632901 } # Bunuth (nc)
+8274.1.1 = { holder=13932901 } # Yatum (nc)
+
+

@@ -1,0 +1,41 @@
+#d_goldshire
+900.1.1={ liege = "e_westerlands" }
+7994.1.1 = {	
+	holder=311233
+}
+7998.7.6 = {
+	liege="k_westerlands"
+}
+8036.1.1 = {	
+	holder=310233
+}
+8039.3.6 = {	
+	holder=309233
+}
+8069.1.1 = {	
+	holder=308233
+}
+8104.1.1 = {	
+	holder=307233
+}
+8135.1.1 = {	
+	holder=305233
+}
+8157.12.7 = {	
+	holder=304233
+}
+8195.3.7={
+	liege = 0
+}
+8196.1.1={
+	liege = "k_westerlands"
+}
+8215.1.1 = {	
+	holder=302233
+}
+8271.1.1 = {	
+	holder=300233
+}
+8276.1.1 = {	
+	holder=233
+}

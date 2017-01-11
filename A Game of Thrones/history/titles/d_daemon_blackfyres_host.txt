@@ -1,0 +1,15 @@
+20.1.1={
+	active = no
+}
+8195.3.7 = {
+	active = yes
+	holder=77024
+	liege="e_iron_throne"
+	law = succ_primogeniture
+	law = cognatic_succession
+}
+8196.6.1={
+	holder = 0
+	liege = 0
+	active = no
+}

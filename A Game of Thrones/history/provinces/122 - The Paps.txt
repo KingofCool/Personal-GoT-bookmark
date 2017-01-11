@@ -1,0 +1,20 @@
+# 122 - The Paps
+
+# County Title
+title = c_the_paps
+
+# Settlements
+max_settlements = 2
+b_elseham = castle
+#b_twostone = city
+
+# Misc
+culture = valeman
+religion = the_seven
+
+#History
+
+6000.1.1 = {
+	b_elseham = ca_asoiaf_vale_basevalue_1
+	b_elseham = ca_asoiaf_vale_basevalue_2
+}

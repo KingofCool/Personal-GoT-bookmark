@@ -1,0 +1,31 @@
+# 75 - Mistlewood
+
+# County Title
+title = c_mistlewood
+
+# Settlements
+max_settlements = 3
+
+b_charlscastle = castle
+b_charlton = city
+
+# Misc
+culture = riverlander
+religion = the_seven
+
+terrain = woods
+
+# History
+
+
+6000.1.1 = {
+
+b_charlscastle = ca_asoiaf_river_basevalue_1
+
+
+
+b_charlton = ct_asoiaf_river_basevalue_1
+b_charlton = ct_asoiaf_river_basevalue_2
+b_charlton = ct_asoiaf_river_basevalue_2
+
+}

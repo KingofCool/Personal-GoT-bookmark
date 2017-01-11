@@ -1,0 +1,25 @@
+# 547 - Protosh
+
+# County Title
+title = c_protosh
+
+# Settlements
+max_settlements = 3
+
+b_protosh = castle
+b_protosh_city = city
+b_protosh_temple = temple
+
+# Misc
+culture = lorathi
+religion = gods_lorath
+
+# History
+6000.1.1 = {
+	b_protosh_city = ct_asoiaf_sarnor_basevalue_1
+	b_protosh_city = ct_asoiaf_sarnor_basevalue_2
+}
+
+6000.1.1 = {
+	b_protosh = ca_asoiaf_sarnor_basevalue_1
+}

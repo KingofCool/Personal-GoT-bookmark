@@ -1,0 +1,24 @@
+# 549 - Rathylar
+
+# County Title
+title = c_rathylar
+
+# Settlements
+max_settlements = 4
+
+b_rathylar = tribal
+b_rathylar1 = city
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+terrain = valyrianroad
+
+# History
+6000.1.1 = {
+	b_rathylar1 = ct_asoiaf_sarnor_basevalue_1
+	b_rathylar1 = ct_asoiaf_sarnor_basevalue_2
+	b_rathylar1 = ct_asoiaf_sarnor_basevalue_3
+	b_rathylar1 = ct_asoiaf_sarnor_basevalue_4
+}

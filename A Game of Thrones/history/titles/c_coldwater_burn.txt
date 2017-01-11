@@ -1,0 +1,18 @@
+6000.1.1={
+	liege="d_runestone"
+	law = succ_primogeniture
+}
+7993.1.1 = { holder=3000169 } # Florian (nc)
+8023.1.1 = { holder=3002169 } # Albar (nc)
+8032.1.1 = { holder=3006169 } # Elbert (nc)
+8070.1.1 = { holder=3010169 } # Wyl (nc)
+8076.1.1 = { holder=3016169 } # Bryen (nc)
+8104.1.1 = { holder=3018169 } # Banor (SC)
+8170.1.1 = { holder=3026169 } # Eustace (nc)
+8201.1.1 = { holder=3030169 } # Rolley (nc)
+8222.1.1 = { holder=3032169 } # Gilwood (nc)
+8247.1.1 = { holder=3036169 } # Royce (nc)
+
+8273.1.1={
+	holder=94040
+}

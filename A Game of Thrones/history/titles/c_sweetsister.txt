@@ -1,0 +1,20 @@
+6200.1.1={
+	liege="d_the_sisters"
+	law = succ_primogeniture
+}
+7994.1.1 = { holder=3000165 } # Wyl (nc)
+8025.1.1 = { holder=3001165 } # Humfrey (nc)
+8063.1.1 = { holder=3004165 } # Oswell (nc)
+8076.1.1 = { holder=3006165 } # Morgarth (nc)
+8129.1.1 = { holder=3008165 } # Umfred (nc)
+8171.1.1 = { holder=3012165 } # Wallace (nc)
+8188.1.1 = { holder=3014165 } # Kyle (nc)
+8218.1.1 = { holder=3017165 } # Elbert (nc)
+8246.1.1 = { holder=3019165 } # Umfred (nc)
+
+8258.1.1={
+	holder=94035
+}
+8290.1.1={
+	holder=94036
+}

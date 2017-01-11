@@ -1,0 +1,34 @@
+# 193 - peckledon
+
+# County Title
+title = c_peckledon
+
+# Settlements
+max_settlements = 6
+b_peckledon = castle
+b_peckledontown = city
+b_peckledon_sept = temple
+b_peckledontowntwo = castle
+b_peckledonsept = city
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_peckledon = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_peckledon = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_peckledon = ca_asoiaf_westerland_basevalue_3}
+#6000.1.1 = {b_peckledon = ca_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_peckledontown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_peckledontown = ct_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_peckledontown = ct_asoiaf_westerland_basevalue_3}
+#6000.1.1 = {b_peckledontown = ct_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_peckledontowntwo = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_peckledontowntwo = ca_asoiaf_westerland_basevalue_2}
+
+6000.1.1 = {b_peckledonsept = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_peckledonsept = ct_asoiaf_westerland_basevalue_2}

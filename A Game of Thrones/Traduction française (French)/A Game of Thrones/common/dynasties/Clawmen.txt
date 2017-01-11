@@ -1,0 +1,193 @@
+## Clawmen ##
+#non-canon
+174413 = {
+	name="Barren"
+	culture = crackclawmen
+}
+174414 = {
+	name="Chuchottes"
+	culture = crackclawmen
+}
+174415 = {
+	name="esquicheur"
+	culture = crackclawmen
+}
+174416 = {
+	name="Vally"
+	culture = crackclawmen
+}
+174417 = {
+	name="Baie"
+	culture = crackclawmen
+}
+174418 = {
+	name="Point"
+	culture = crackclawmen
+}
+174419 = {
+	name="Batler"
+	culture = crackclawmen
+}
+174420 = {
+	name="Sentel"
+	culture = crackclawmen
+}
+174421 = {
+	name="Gardebois"
+	culture = crackclawmen
+}
+174422 = {
+	name="Archyr"
+	culture = crackclawmen
+}
+174423 = {
+	name = Rackley
+	culture = crackclawmen
+}
+174424 = {
+	name = Bouclepince
+	culture = crackclawmen
+}
+174425 = {
+	name = Rochiers
+	culture = crackclawmen
+}
+174426 = {
+	name = Fallow
+	culture = crackclawmen
+}
+174427 = {
+	name = Knolley
+	culture = crackclawmen
+}
+174428 = {
+	name = Peary
+	culture = crackclawmen
+}
+174429 = {
+	name = Swayne
+	culture = crackclawmen
+}
+174430 = {
+	name = Powers
+	culture = crackclawmen
+}
+174431 = {
+	name = Haie
+	culture = crackclawmen
+}
+174432 = {
+	name = Chayce
+	culture = crackclawmen
+}
+174433 = {
+	name = Dyne
+	culture = crackclawmen
+}
+174434 = {
+	name = Passland
+	culture = crackclawmen
+}
+174435 = {
+	name = Agnell
+	culture = crackclawmen
+}
+174436 = {
+	name = Trayce
+	culture = crackclawmen
+}
+174437 = {
+	name = Hory
+	culture = crackclawmen
+}
+#canon
+174410 = {
+	name="Tourbier"
+	culture = crackclawmen
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 40
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+42 = {
+	name="Brune"
+	culture = crackclawmen
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 21
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+174411 = {
+	name="Grotte"
+	culture = crackclawmen
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 42
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1197 = {
+	name="Crabbe"
+	culture = crackclawmen
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 27
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+47 = {
+	name="Hardy"
+	culture = crackclawmen
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 43
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+174412 = {
+	name="Pynède"
+	culture = crackclawmen
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 44
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}

@@ -1,0 +1,34 @@
+
+
+# County Title
+title = c_threetowers
+
+# Settlements
+max_settlements = 6
+b_three_towers = castle
+b_three_towers_sept = temple
+b_whisper_point = castle
+b_cosscliff = city
+
+#b_oak_house
+#b_poxwell
+
+# Misc
+culture = reachman
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_three_towers = ca_asoiaf_reach_basevalue_1
+	b_three_towers = ca_asoiaf_reach_basevalue_2
+	b_three_towers = ca_asoiaf_reach_basevalue_3
+}
+6000.1.1 = {
+	b_whisper_point = ca_asoiaf_reach_basevalue_1
+}
+6000.1.1 = {
+	b_cosscliff = ct_asoiaf_reach_basevalue_1
+	b_cosscliff= ct_asoiaf_reach_basevalue_2
+}
+
+

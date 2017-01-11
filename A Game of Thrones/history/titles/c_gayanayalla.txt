@@ -1,0 +1,17 @@
+600.1.1={
+	liege="d_linqi"
+}
+7995.1.1 = { holder=10069198 } # Mukhtar (nc)
+8035.1.1 = { holder=10269198 } # Rafiqa (nc)
+8039.1.1 = { holder=10469198 } # Fadil (nc)
+8058.1.1 = { holder=10569198 } # Zeyd (nc)
+8078.1.1 = { holder=10769198 } # Wahab (nc)
+8112.1.1 = { holder=10869198 } # Youkhanna (nc)
+8134.1.1 = { holder=10969198 } # Najib (nc)
+8153.1.1 = { holder=11169198 } # Sadiq (nc)
+8174.1.1 = { holder=11469198 } # Mahdi (nc)
+8201.1.1 = { holder=11669198 } # Qawurd (nc)
+8249.1.1 = { holder=11969198 } # Najib (nc)
+8264.1.1 = { holder=12169198 } # Khalil (nc)
+
+

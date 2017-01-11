@@ -1,0 +1,29 @@
+# 139 - Longbow Hall
+
+# County Title
+title = c_longbow_hall
+
+# Settlements
+max_settlements = 3
+b_longbow_hall = castle
+b_fletcham = city
+#b_hunters_point = castle
+
+# Misc
+culture = valeman
+religion = the_seven
+
+terrain = hills
+
+#History
+
+6000.1.1 = {
+	b_longbow_hall = ca_asoiaf_vale_basevalue_1
+	b_longbow_hall = ca_asoiaf_vale_basevalue_2
+	b_longbow_hall = ca_asoiaf_vale_basevalue_3
+	b_longbow_hall = ca_asoiaf_vale_basevalue_4
+	
+	b_fletcham = ct_asoiaf_vale_basevalue_1
+	b_fletcham = ct_asoiaf_vale_basevalue_2
+	b_fletcham = ct_asoiaf_vale_basevalue_3
+}

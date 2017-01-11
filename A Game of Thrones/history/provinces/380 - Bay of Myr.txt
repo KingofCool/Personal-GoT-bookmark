@@ -1,0 +1,28 @@
+# 380 - Bay of Myr
+
+# County Title
+title = c_bayofmyr
+
+# Settlements
+max_settlements = 3
+
+b_bayofmyr = city
+b_bayofmyr_castle = castle
+b_bayofmyr_temple = temple
+
+# Misc
+culture = myrman
+religion = rhllor
+
+# History
+6000.1.1 = {
+	b_bayofmyr = ct_asoiaf_essos_basevalue_1
+	b_bayofmyr = ct_asoiaf_essos_basevalue_2
+	b_bayofmyr = ct_asoiaf_essos_basevalue_3
+	
+	b_bayofmyr_castle = ca_asoiaf_essos_basevalue_1
+	b_bayofmyr_castle = ca_asoiaf_essos_basevalue_2
+	b_bayofmyr_castle = ca_asoiaf_essos_basevalue_3
+	
+	trade_post = b_lornel
+}

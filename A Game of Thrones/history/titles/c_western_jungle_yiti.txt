@@ -1,0 +1,18 @@
+600.1.1={
+	liege="d_tiqui"
+}
+7995.1.1 = { holder=10069112 } # Qawurd (nc)
+8026.1.1 = { holder=10169112 } # Zeyd (nc)
+8060.1.1 = { holder=10369112 } # Mahdi (nc)
+8084.1.1 = { holder=10769112 } # Bahir (nc)
+8108.1.1 = { holder=10969112 } # Idris (nc)
+8134.1.1 = { holder=11169112 } # Halil (nc)
+8171.1.1 = { holder=11569112 } # Is'mail (nc)
+8187.1.1 = { holder=11769112 } # Aghlab (nc)
+8206.1.1 = { holder=12069112 } # Aghlab (nc)
+8209.1.1 = { holder=12369112 } # Akin (nc)
+8251.1.1 = { holder=12669112 } # Muslihiddin (nc)
+8276.1.1 = { holder=13069112 } # Jabir (nc)
+
+
+

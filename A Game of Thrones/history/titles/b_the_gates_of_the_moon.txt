@@ -1,0 +1,86 @@
+900.1.1={liege="c_the_eyrie"}
+
+2979.1.1={ holder=174405 }	#The Griffin King
+3000.1.1 = { holder = 0 }
+
+6539.1.1 = { holder=900178 }	#Artys I Arryn
+6563.1.1 = { holder=5060178 }	#Osric I
+6575.1.1 = { holder=5560178 }	#Alester I
+6586.1.1 = { holder=5061178 }	#Roland I
+6602.1.1 = { 
+	holder=550178 #Mathos I
+	law = succ_appointment
+	effect = {
+		set_title_flag = military_command
+		holder_scope = {
+			if = {
+				limit = { primary_title = { title = PREVPREV } }
+				set_government_type = military_command_government 
+				PREV = { succession = appointment }
+				recalc_succession = yes
+			}
+		}
+	}
+}	
+6616.1.1 = { holder=551178 }	#Osric II
+6634.1.1 = { holder=552178 }	#Roland II
+6639.1.1 = { holder=553178 }	#Robin
+
+6652.1.1 = { holder=557178 }	#Hugh
+6683.1.1 = { holder=559178 }	#Hugo
+6710.1.1 = { holder=560178 }	#Alester II
+6735.1.1 = { holder=561178 }	#Mathos II
+6761.1.1 = { holder=5161178 }	#Ronnel
+
+6789.1.1 = { holder=0 }
+
+
+7081.1.1 = { holder=554178 }	#Osric III
+7132.1.1 = { holder=555178 }	#Osric IV
+7146.1.1 = { holder=556178 }	#Osric V
+7167.1.1 = { holder=562178 }	#Osgood
+7220.1.1 = { holder=563178 }	#Oswin
+7229.1.1 = { holder=564178 }	#Oswell I
+
+
+7247.1.1 = { holder=0 }
+
+7910.1.1={ holder=214178 }	#Artys III
+7965.1.1={ holder=213178 }	#Oswell II
+7990.1.1={ holder=211178 }	#Robar
+7995.1.1={ holder=210178 }  #Ronnel Arryn - The Arryn that bent the knee. Last person to wear the Falcon Crown.
+8038.4.1 = { holder=251178 } # Jonos Arryn (brother usurper)
+8039.1.1 = { holder=5085178}	#Hubert Arryn
+8050.1.1 = { holder=208178 }	#Elbert Arryn
+8060.1.1={ holder=207178 }	#Rodrik Arryn
+8100.1.1 = { holder=5052178 }	#Jeyne Arryn
+8134.6.1 = { holder=5050178 }	#Joffrey Arryn
+8151.1.1={ holder=204178 }	#Jonothor Arryn
+8180.1.1={ holder=202178 }	#Donnel Arryn
+8218.1.1={ holder=200178 }	#Othor Arryn
+8220.1.1={ holder=94001 }	#Jesper Arryn
+8258.1.1 = { holder=94002 }	#Jon Arryn
+8297.1.1={
+	#holder=5159 #lysa regent
+	holder=94003 #robert
+}
+8300.3.1={
+	holder=94074 #Royce of gates of moon
+	law = succ_primogeniture
+	effect = {
+		clr_title_flag = military_command
+		holder_scope = {
+			if = {
+				limit = { primary_title = { title = PREVPREV } }
+				set_government_type = feudal_government 
+				PREV = { succession = primogeniture }
+				recalc_succession = yes
+			}
+		}
+	}
+}
+
+
+
+
+

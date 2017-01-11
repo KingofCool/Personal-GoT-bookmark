@@ -1,0 +1,23 @@
+# 660 - Vaes Jini/Yinishar
+
+# County Title
+title = c_yinishar
+
+# Settlements
+max_settlements = 5
+
+b_yinishar = tribal
+b_yinishar2 = city
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+# History
+6000.1.1 = {
+	b_yinishar2 = ct_asoiaf_eastern_basevalue_1
+	b_yinishar2 = ct_asoiaf_eastern_basevalue_2
+	b_yinishar2 = ct_asoiaf_eastern_basevalue_3
+	b_yinishar2 = ct_asoiaf_eastern_basevalue_4
+	b_yinishar2 = ct_asoiaf_eastern_basevalue_5
+}

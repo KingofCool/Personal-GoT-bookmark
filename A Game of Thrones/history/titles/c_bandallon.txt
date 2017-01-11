@@ -1,0 +1,20 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="d_oldtown"
+}
+7993.1.1 = { holder=3000283 } # Quentyn (nc)
+8044.1.1 = { holder=3002283 } # Dontos (nc)
+8061.1.1 = { holder=3003283 } # Garse (nc)
+8080.1.1 = { holder=3009283 } # Raymund (nc)
+8103.1.1 = { holder=3012283 } # Kyle (nc)
+8106.1.1 = { holder=3014283 } # Edwyd (nc)
+8139.1.1 = { holder=3015283 } # Edwyd (nc)
+8152.1.1 = { holder=3016283 } # Edgerran (nc)
+8173.1.1 = { holder=3020283 } # Lyonel (nc)
+8222.1.1 = { holder=3022283 } # Olymer (nc)
+8258.1.1 = { holder=3023283 } # Olyvar (nc)
+8276.1.1={
+	holder=88092
+}
+
+
+

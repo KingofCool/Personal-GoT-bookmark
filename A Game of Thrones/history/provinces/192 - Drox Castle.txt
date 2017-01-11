@@ -1,0 +1,34 @@
+# 192 - drox_castle
+
+# County Title
+title = c_drox_castle
+
+# Settlements
+max_settlements = 4
+b_drox_castle = castle
+b_drox_castletwo = castle
+b_drox_castletown = city
+#b_drox_castlesept = temple
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_drox_castle = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_drox_castle = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_drox_castle = ca_asoiaf_westerland_basevalue_3}
+6000.1.1 = {b_drox_castle = ca_asoiaf_westerland_basevalue_4}
+#6000.1.1 = {b_drox_castle = ca_asoiaf_westerland_basevalue_5}
+
+6000.1.1 = {b_drox_castletwo = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_drox_castletwo = ca_asoiaf_westerland_basevalue_2}
+
+6000.1.1 = {b_drox_castletown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_drox_castletown = ct_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_drox_castletown = ct_asoiaf_westerland_basevalue_3}
+
+8070.1.1 = { #Jaehaerys constructs road network
+	b_drox_castle = ca_goldroad
+}

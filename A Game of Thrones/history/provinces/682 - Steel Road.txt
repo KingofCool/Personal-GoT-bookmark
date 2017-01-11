@@ -1,0 +1,33 @@
+# 682 - Steel Road
+
+# County Title
+title = c_steelroad
+
+# Settlements
+max_settlements = 3
+
+b_steelroad = castle
+b_steelroad_city = city
+b_steelroad_temple = temple
+
+
+# Misc
+culture = kayakayanayan
+religion = gods_bone_mountains
+
+terrain = mountainpass
+
+# History
+6000.1.1 = {
+
+	b_steelroad = ca_asoiaf_eastern_basevalue_1
+	b_steelroad = ca_asoiaf_eastern_basevalue_2
+
+	b_steelroad_city = ct_asoiaf_eastern_basevalue_1
+	b_steelroad_city = ct_asoiaf_eastern_basevalue_2
+	b_steelroad_city = ct_asoiaf_eastern_basevalue_3
+
+
+}
+
+

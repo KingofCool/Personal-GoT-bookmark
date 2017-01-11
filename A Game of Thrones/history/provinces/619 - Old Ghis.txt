@@ -1,0 +1,33 @@
+# 619 - Old Ghis
+
+# County Title
+title = c_oldghis
+
+# Settlements
+max_settlements = 7
+
+b_pyramidoldghis = castle
+b_oldghis = city
+b_oldghistemple = temple
+
+# Misc
+culture = ghiscari
+religion = harpy
+
+# History
+6000.1.1 = {
+	b_pyramidoldghis = ca_asoiaf_ghiscari_basevalue_1
+	b_pyramidoldghis = ca_asoiaf_ghiscari_basevalue_2
+	b_pyramidoldghis = ca_asoiaf_ghiscari_basevalue_3
+	b_pyramidoldghis = ca_asoiaf_ghiscari_basevalue_4
+	b_pyramidoldghis = ca_asoiaf_ghiscari_basevalue_5
+	b_pyramidoldghis = ca_asoiaf_ghiscari_basevalue_6
+}
+6000.1.1 = {
+	b_oldghis = ct_asoiaf_ghiscari_basevalue_1
+	b_oldghis = ct_asoiaf_ghiscari_basevalue_2
+	b_oldghis = ct_asoiaf_ghiscari_basevalue_3
+	b_oldghis = ct_asoiaf_ghiscari_basevalue_4
+	b_oldghis = ct_asoiaf_ghiscari_basevalue_5
+	b_oldghis = ct_asoiaf_ghiscari_basevalue_6
+}

@@ -1,0 +1,6 @@
+New French Loc options added in 2.6
+
+- Added [GetNoneE] to get the ending e for feminine version of adjective/nouns in french
+- Added [GetNoneEOpp] to invert the result from [GetNoneE]
+
+Werther: i love you !

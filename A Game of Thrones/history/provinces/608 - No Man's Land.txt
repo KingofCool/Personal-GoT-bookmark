@@ -1,0 +1,29 @@
+# 608 - No Man's Land
+
+# County Title
+title = c_nomansland
+
+# Settlements
+max_settlements = 3
+
+b_nomanslandcastle = castle
+b_nomansland = city
+b_nomanslandtemple = temple
+
+# Misc
+culture = meereenese
+religion = harpy
+
+terrain = plains
+
+# History
+6000.1.1 = {
+	b_nomansland = ct_asoiaf_ghiscari_basevalue_1
+	
+	b_nomanslandcastle = ca_asoiaf_ghiscari_basevalue_1
+	b_nomanslandcastle = ca_asoiaf_ghiscari_basevalue_2	
+	b_nomanslandcastle = ca_asoiaf_ghiscari_basevalue_3
+	
+	trade_post = b_galare
+
+}

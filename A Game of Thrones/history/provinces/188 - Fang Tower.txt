@@ -1,0 +1,31 @@
+# 188 - Fang Tower (Formerly Greenmont)
+
+# County Title
+title = c_fang_tower
+
+# Settlements
+max_settlements = 4
+b_fangtower = castle
+b_fangtowertown = city
+b_fangtowertowntwo = city
+
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_fangtower = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_fangtower = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_fangtower = ca_asoiaf_westerland_basevalue_3}
+6000.1.1 = {b_fangtower = ca_asoiaf_westerland_basevalue_4}
+#6000.1.1 = {b_fangtower = ca_asoiaf_westerland_basevalue_5}
+
+6000.1.1 = {b_fangtowertown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_fangtowertown = ct_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_fangtowertown = ct_asoiaf_westerland_basevalue_3}
+
+6000.1.1 = {b_fangtowertowntwo = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_fangtowertowntwo = ct_asoiaf_westerland_basevalue_2}
+

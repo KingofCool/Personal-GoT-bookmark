@@ -1,0 +1,16 @@
+1.1.1={
+	law = succ_primogeniture
+	law = agnatic_succession
+	law = centralization_1
+	law = slavery_3
+	law = first_night_1
+}
+5451.1.1 = {
+	holder = 500122
+}
+5498.1.1 = {
+	holder = 501122
+}
+5515.1.1 = {
+	holder = 0
+}

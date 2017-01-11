@@ -1,0 +1,15 @@
+8213.1.1={
+	liege="k_beyond_wall"
+}
+8226.9.9={
+	liege="0"
+}
+8280.1.1 = {
+	name = c_crasters_keep_B
+	effect = { location = { set_name = "Craster's Keep" } }
+	holder=574350
+}
+8299.5.5 = {
+	holder=121411 # Dirk
+}
+

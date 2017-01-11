@@ -1,0 +1,12 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="c_pebbleton"
+}
+8279.1.1 = {	
+	holder=600112
+}
+
+
+
+
+
+

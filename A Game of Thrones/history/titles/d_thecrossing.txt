@@ -1,0 +1,58 @@
+7600.1.1={
+	liege="e_riverlands"
+	law = succ_primogeniture
+}
+7995.1.1={
+	holder=26127
+}
+7998.2.1={
+	liege="k_riverlands"
+}
+8009.1.1={
+	holder=25127
+}
+8029.1.1={
+	holder=24127
+}
+8076.1.1={
+	holder=23127
+}
+8091.1.1={
+	holder=22127
+}
+8111.1.1={
+	holder=21127
+}
+8122.1.1={
+	holder=20127 # Forrest Frey
+}
+8130.1.1 = {
+	holder=18127 # Whalen Frey
+}
+8169.1.1={
+	holder=16127 # Orland Frey
+}
+8195.3.7={
+	liege = 0
+}
+8196.1.1={
+	liege = "k_riverlands"
+}
+8210.1.1={
+	holder=10127
+}
+8231.1.1={
+	holder=127
+}
+8282.9.15={
+	liege = 0
+}
+8282.12.31={
+	liege = "k_riverlands"
+}
+8299.6.1={
+	liege = 0
+}
+8299.11.5 = {
+	liege = "k_riverlands"
+}

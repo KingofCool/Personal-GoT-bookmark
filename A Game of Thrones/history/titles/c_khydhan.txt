@@ -1,0 +1,22 @@
+7000.1.1 = {
+	liege = k_hazdahn
+}
+7995.1.1 = { holder=10069119 } # Hizdhar (nc)
+8015.1.1 = {
+	liege = d_rhaesh_jim
+	holder=102600202 # Jhaquo (nc)
+}
+8055.1.1 = { holder=104600202 } # Qotho (nc)
+8073.1.1 = { holder=107600202 } # Mago (nc)
+8102.1.1 = { holder=111600202 } # Bharbo (nc)
+8104.1.1 = { holder=114600202 } # Bharbo (nc)
+8140.1.1 = { holder=117600202 } # Fogo (nc)
+8144.1.1 = { holder=118600202 } # Qotho (nc)
+8180.1.1 = { holder=119600202 } # Aggo (nc)
+8193.1.1 = { holder=120600202 } # Bharbo (nc)
+8202.1.1 = { holder=122600202 } # Temmo (nc)
+8243.1.1 = { holder=127600202 } # Drogo (nc)
+8260.1.1 = { holder=130600202 } # Zollo (nc)
+8287.1.1 = { 
+	holder=3300102 #Jhaqo
+} 

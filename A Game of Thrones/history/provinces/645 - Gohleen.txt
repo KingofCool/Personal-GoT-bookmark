@@ -1,0 +1,21 @@
+
+# County Title
+title = c_gohleen
+
+# Settlements
+max_settlements = 5
+
+b_gohleen = tribal
+b_gohleen2 = city
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+# History
+6000.1.1 = {
+	b_gohleen2 = ct_asoiaf_ghiscari_basevalue_1
+	b_gohleen2 = ct_asoiaf_ghiscari_basevalue_2
+	b_gohleen2 = ct_asoiaf_ghiscari_basevalue_3
+	b_gohleen2 = ct_asoiaf_ghiscari_basevalue_4
+}

@@ -1,0 +1,21 @@
+#NOTE: The holder of this title has the House Mullendore dynasty tracker set in roberts_rebellion_events
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="d_oldtown"
+}
+7973.1.1 = { holder=3000290 } # Waldon (nc)
+7998.1.1 = { holder=3001290 } # Alester (nc)
+8036.1.1 = { holder=3004290 } # Garth (nc)
+8066.1.1 = { holder=3006290 } # Alekyne (nc)
+8095.1.1 = { holder=3010290 } # Lucia (nc)
+8109.1.1 = { holder=3013290 } # Igon (nc)
+8149.1.1 = { holder=3014290 } # Garlan (nc)
+8183.1.1 = { holder=3017290 } # Jon (nc)
+8203.1.1 = { holder=3020290 } # Horas (nc)
+8231.1.1 = { holder=3021290 } # Androw (nc)
+8257.1.1 = { holder=3023290 } # Alester (nc)
+8269.1.1={
+	holder=290 #Martyn
+}
+
+
+

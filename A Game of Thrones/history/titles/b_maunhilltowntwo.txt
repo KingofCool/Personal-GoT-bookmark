@@ -1,0 +1,49 @@
+7994.1.1 = {	
+holder=312226
+}
+7998.6.6 = {	
+holder=309226 
+}
+8037.1.1 = {	
+holder=308226
+}
+8054.1.1 = {	
+holder=307226
+}
+8087.1.1 = {	
+holder=306226
+}
+8115.1.1 = {	
+holder=305226
+}
+8121.1.1 = {	
+holder=304226
+}
+8147.1.1 = {	
+holder=303226
+}
+8168.1.1 = {	
+holder=203226
+}
+8176.6.3 = {	
+holder=3050226
+}
+8195.1.1 = {	
+holder=202226
+}
+8231.1.1 = {	
+holder=302226
+}
+8246.1.1 = {	
+holder=301226
+}	
+8258.5.6 = {
+holder=197 # Taken from the Plumm's by the Reynes and Tarbecks
+}
+8261.3.5 = {	
+holder=301226 # Returned to the Plumm's
+}
+8267.1.1 = {
+holder=60000266 # Osmyn Plumm, brother of Philip (nc)
+}	
+

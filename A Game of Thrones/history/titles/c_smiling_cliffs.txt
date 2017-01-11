@@ -1,0 +1,23 @@
+#House Agbelu
+7983.1.1 = { 
+	holder=100304011 
+	liege=d_omburu
+	law = succ_seniority
+	law = cognatic_succession
+} # Ratemo (nc)
+8040.1.1 = { holder=101304011 } # Isingodo (nc)
+8045.1.1 = { holder=103304011 } # Lusaxharo (nc)
+8058.1.1 = { holder=105304011 } # Gwalahuru (nc)
+8072.1.1 = { holder=110304011 } # Nyadundo (nc)
+8114.1.1 = { holder=113304011 } # Eskender (nc)
+8119.1.1 = { holder=116304011 } # Jarado (nc)
+8125.1.1 = { holder=117304011 } # Simbhar (nc)
+8185.1.1 = { holder=122304011 } # Gatubhar (nc)
+8203.1.1 = { holder=125304011 } # Jalahuru (nc)
+8239.1.1 = { holder=130304011 } # Chakoro (nc)
+8246.1.1 = { holder=131304011 } # Thabo (nc)
+8282.1.1 = { holder=133304011 } # Chibundo (nc)
+8295.1.1 = { holder=134304011 } # Tapuhuru (nc)
+
+
+

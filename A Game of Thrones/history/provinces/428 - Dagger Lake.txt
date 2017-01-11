@@ -1,0 +1,26 @@
+# 428 - Dagger Lake
+
+# County Title
+title = c_daggerlake
+
+# Settlements
+max_settlements = 3
+
+b_daggerlake_castle = castle
+b_daggerlake = city
+b_daggerlake_temple = temple
+
+# Misc
+culture = rhoynar
+religion = pirate
+
+# History
+6000.1.1 = {
+	
+	b_daggerlake = ct_asoiaf_essos_basevalue_1
+	b_daggerlake = ct_asoiaf_essos_basevalue_2
+	
+	b_daggerlake_castle = ca_asoiaf_essos_basevalue_1
+	b_daggerlake_castle = ca_asoiaf_essos_basevalue_2
+
+}

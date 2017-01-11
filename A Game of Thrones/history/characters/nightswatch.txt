@@ -1,0 +1,795 @@
+##Nightswatch characters
+##ids 121000-121499
+
+121000 = {
+	name="Jantos" #996th Lord Commander	
+	dynasty=15 #Qorgyle
+	dna="afbeaycaaar"
+	properties="cj0eck0000"
+	
+	martial = 12
+	stewardship = 12
+	
+	religion="the_seven"
+	culture="sand_dornish"
+	
+	father=62815
+	mother=52815
+	
+	
+	8232.1.1 = {birth="8232.1.1"}
+	8248.1.1 = {add_trait=knight add_trait=skilled_warrior add_trait=tough_soldier}
+	8251.1.1 = {add_trait=diligent}
+	8262.1.1 = { add_trait=nightswatch}
+	8294.1.1 = {death="8294.1.1"}
+}
+121001 = {
+	name="Blane" #	
+	martial = 8
+	religion="the_seven"
+	culture="valeman"
+	8255.1.1 = {
+		birth="8255.1.1"
+	}
+	8275.1.1 = {	
+		employer=121000 
+		add_trait="nightswatch"
+	}
+	8294.1.1 = {	
+		employer=336 
+	}
+	8300.3.1 = {	
+		employer=1002059 
+	}
+
+}
+121002 = {
+	name="Cotter" #	
+	martial = 6
+	stewardship = 10 
+	religion="drowned_god"	
+	culture="ironborn"
+	add_trait="tough_soldier"
+	add_trait="strong"
+	add_trait="bastard"
+	give_nickname = nick_pyke
+	8256.1.1 = {
+		birth="8256.1.1"
+	}
+	8275.1.1 = {	
+		employer=121000 
+		add_trait="nightswatch"
+	}
+	8294.1.1 = {	
+		employer=336 
+	}
+	8300.3.1 = {	
+		employer=1002059 
+	}
+}
+121003 = {
+	name="Donal Noye" #	
+	martial = 4
+	religion="the_seven"	
+	culture="stormlander"
+	add_trait="tough_soldier"
+	add_trait="strong"
+	add_trait="honest"
+	add_trait="trusting"
+	
+	8258.1.1 = {
+		birth="8258.1.1"
+	}
+	8282.1.1 = {
+		employer=317
+	}
+	8290.1.1 = {	
+		employer=121000 
+		add_trait="nightswatch"
+		add_trait="crippled"
+	}
+	8294.1.1 = {	
+		employer=336 
+	}
+	8299.11.11 = {
+		death = {
+			death_reason = death_duel
+			killer = 157013
+		}
+	}
+
+}
+121004 = {
+	name="Othell" #	
+	dynasty=205
+	stewardship = 7
+	religion="the_seven"	
+	culture="westerman"
+	add_trait="thrifty_clerk"
+	
+	father = 205
+	mother=2205	
+	
+	8251.1.1 = {
+		birth="8251.1.1"
+	}
+	8275.1.1 = {	
+		employer=121000 
+		add_trait="nightswatch"
+	}
+	8294.1.1 = {	
+		employer=336 
+	}
+	8300.3.1 = {	
+		employer=1002059 
+	}
+}
+121005 = {
+	name="Qhorin" #	Halfhand
+	martial = 8
+	religion="the_seven"	
+	culture="westerman"
+	add_trait="skilled_tactician"
+	add_trait="master_warrior"
+	add_trait="just"
+	add_trait="brave"
+	add_trait="patient"
+	8252.1.1 = {
+		birth="8252.1.1"
+	}
+	8272.1.1 = {	
+		employer=2128
+		add_trait="nightswatch"
+	}
+	8278.1.1 = {
+		effect = {
+			if = {
+				limit = { has_dlc = "Reapers" }
+				add_trait = one_handed
+			}
+			if = {
+				limit = { NOT = { has_dlc = "Reapers" } }
+				add_trait = "disfigured_AGOT"
+			}
+		}
+		give_nickname = nick_half_hand
+	}
+	8295.1.1 = {
+		employer=336
+	}
+	8299.7.1 = {
+		death="8299.7.1"
+	}
+	
+}
+
+121006 = {
+	name="Small Paul" 
+	martial = 5
+	religion="the_seven"
+	culture="riverlander"
+	add_trait="skilled_warrior"
+	add_trait="brave"
+	add_trait="strong"
+	add_trait="tough_soldier"
+	8277.1.1 = {
+		birth="8277.1.1"
+	}
+	8295.1.1 = {	
+		employer=336
+		add_trait="nightswatch"
+	}
+	8299.7.14 = {
+		death="8299.7.14"
+	}
+}
+121007 = {
+	name="Yoren" 
+	religion="old_gods"	
+	culture="northman"
+	add_trait="skilled_warrior"
+	add_trait="brave"
+	add_trait="tough_soldier"
+	8256.1.1 = {
+		birth="8256.1.1"
+	}
+	8275.1.1 = {	
+		add_trait="nightswatch"
+		employer=121000
+	}
+	8294.1.1 ={employer=336}
+	8299.2.3 = {
+		death="8299.2.3"
+	}
+}
+121008 = {
+	name="Chett"
+	religion="the_seven"
+	culture="valeman"
+	add_trait="craven"
+	8270.1.1 = {
+		birth="8270.1.1"
+	}
+	8289.1.1 = {	
+		add_trait="nightswatch"
+	}
+	8294.1.1 ={employer=336}
+	8299.7.1 = {
+		death="8299.7.1"
+	}
+}
+121009 = {
+	name="Ollo" 
+	dna="bhagnhpnblj"
+	properties="cd0ddk"
+	
+	religion="trios"	
+	culture="tyroshi"	
+	
+	add_trait="trained_warrior"
+	
+	8261.1.1 = {
+		birth="8261.1.1"
+	}
+	8282.1.1={
+		employer=121000 
+		add_trait="nightswatch"
+		give_nickname = nick_lophand
+		add_trait="scarred" # Not life-threatening
+	}
+	8294.1.1 = {	
+		employer=336 
+	}
+	8299.5.5 = {	
+		employer=121411
+		add_trait = "deserter"
+	}
+}
+121010 = {
+	name="Cellador" 
+	
+	religion="the_seven"
+	culture="valeman"
+	
+	add_trait="drunkard"
+	add_trait="zealous"
+	
+	8250.1.1 = {
+		birth="8250.1.1"
+	}
+	8282.1.1={
+		employer=121000 
+		add_trait="nightswatch"
+		add_trait="septon"
+	}
+	8294.1.1 = {	
+		employer=336 
+	}
+	8300.3.1 = {	
+		employer=1002059 
+	}
+}
+121410 = {
+	name="Clydas"	
+	stewardship = 8
+	learning = 8
+	
+	religion="the_seven"
+	culture="stormlander"
+	
+	8240.1.1 = {birth="8240.1.1"}
+	8260.1.1 = { add_trait="maester"}
+	8270.1.1 = { 
+		add_trait="nightswatch"
+		employer =121404 
+	}
+	8275.1.1 = {	
+		employer=121000 
+	}
+	8294.1.1 = {	
+		employer=336
+	}
+}
+121420 = {
+	name="Pyp"	
+	
+	martial = 2
+	intrigue = 2
+	diplomacy = 2
+	stewardship = 1
+	learning = 1
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	add_trait=gregarious
+	add_trait=kind
+	add_trait=honest
+	add_trait=poet
+	add_trait=cynical
+	
+	disallow_random_traits = yes
+	
+	8283.1.1 = {birth="8283.1.1"}
+	8298.1.1 = {
+		employer = 336
+		add_trait="nightswatch"
+		effect = {
+			add_friend = 1002059 #Jon
+			add_friend = 121421 #Grenn
+			add_friend = 1296 #Sam
+		}
+	}
+	8299.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="misguided_warrior"
+	}
+	8300.3.1 = {	
+		employer=1002059 
+	}
+}
+121421 = {
+	name="Grenn"	
+	
+	martial = 4
+	intrigue = 1
+	diplomacy = 3
+	stewardship = 1
+	learning = 1
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	add_trait=strong
+	add_trait=lustful
+	add_trait=honorable
+	add_trait=proud
+	
+	disallow_random_traits = yes
+	
+	8282.1.1 = {birth="8282.1.1"}
+	8298.1.1 = {
+		employer = 336
+		add_trait="nightswatch"
+		effect = {
+			add_friend = 1002059 #Jon
+			add_friend = 121420 #Pyp
+			add_friend = 1296 #Sam
+		}
+	}
+	8298.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="misguided_warrior"
+	}
+	8300.3.1 = {	
+		employer=1002059 
+	}
+}
+121423 = {
+	name="Finn"	
+	
+	religion="old_gods"
+	culture="northman"
+	
+	martial = 4
+	diplomacy = 1
+	learning = 1
+	
+	add_trait=strong
+	add_trait=rude
+	add_trait=wroth
+	add_trait=proud
+	
+	disallow_random_traits = yes
+	
+	8283.1.1 = {birth="8283.1.1"}
+	8300.1.1 = {
+		employer=1002059 
+		add_trait="nightswatch"
+		add_trait="trained_warrior"
+		add_trait="misguided_warrior"
+		effect = {
+			add_friend = 511443 #Gared
+		}
+	}
+}
+121424 = {
+	name="Cotter"	
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	martial = 1
+	intrigue = 5
+	diplomacy = 1
+	
+	mother = 121430
+	
+	add_trait=quick
+	add_trait=greedy
+	add_trait=patient
+	add_trait=ambitious
+	add_trait=deceitful
+	add_trait=wildling
+	
+	disallow_random_traits = yes
+	
+	8281.1.1 = {birth="8281.1.1"}
+	8300.1.1 = {
+		employer=1002059 
+		add_trait="nightswatch"
+		add_trait="intricate_webweaver"
+		effect = {
+			add_friend = 511443 #Gared
+		}
+	}
+}
+121429 = {
+	name="Sylvi"	
+	female=yes
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	martial = 3
+	intrigue = 2
+	
+	mother = 121430
+	
+	add_trait=quick
+	add_trait=rude
+	add_trait=patient
+	add_trait=ambitious
+	add_trait=familyperson
+	
+	disallow_random_traits = yes
+	
+	8284.1.1 = {birth="8284.1.1"}
+	8300.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="trained_warrior"
+	}
+}
+121430 = {
+	name="Munda"	
+	female = yes
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	martial = 3
+	intrigue = 2
+	
+	add_trait=quick
+	add_trait=rude
+	add_trait=patient
+	add_trait=ambitious
+	add_trait=familyperson
+	
+	disallow_random_traits = yes
+	
+	8260.1.1 = {birth="8260.1.1"}
+	8276.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="trained_warrior"
+	}
+}
+121431 = {
+	name="Denner"	
+	
+	religion="old_gods"
+	culture="northman"
+	
+	martial = 4
+	
+	add_trait=quick
+	add_trait=rude
+	add_trait=wroth
+	add_trait=stubborn
+	add_trait=cynical
+	
+	8246.1.1 = {birth="8246.1.1"}
+	8262.1.1 = {add_trait=trained_warrior}
+	8275.1.1 = {	
+		employer=121000 
+		add_trait="nightswatch"
+	}
+	8280.1.1 = {
+		effect = {
+			if = {
+				limit = { has_dlc = "Reapers" }
+				add_trait = one_handed
+			}
+			if = {
+				limit = { NOT = { has_dlc = "Reapers" } }
+				add_trait = disfigured_AGOT
+			}
+		}	
+		give_nickname = nick_frostfinger
+	}
+	8294.1.1 = {	
+		employer=336 
+	}
+	8300.3.1 = {	
+		employer=1002059 
+	}
+}
+########
+#####Historic Lord Commanders#####
+########
+121400 = {
+	name="Tristan"	# Canon, one of the worst Lord Commander's in history
+	dynasty=174399 # Mudd
+	
+	martial = 12
+	stewardship = 12
+	
+	religion="old_gods"
+	culture="riverlander"
+	
+	father=649174399 # Illifer Mudd
+	
+	
+	8123.1.1 = {birth="8123.1.1"}
+	8150.1.1 = { add_trait=nightswatch}
+	8168.1.1 = {death="8168.1.1"}
+}
+121401 = {
+	name="Runcel" # Canon, tried to pass Castle Black and the Watch to his bastard son.	
+	dynasty=285 #Hightower
+	
+	martial = 12
+	stewardship = 12
+	
+	religion="the_seven"
+	culture="reachman"
+
+	father=154285
+		
+	8156.1.1 = {birth="8156.1.1"}
+	8182.1.1 = {add_trait=knight}
+	8204.1.1 = { add_trait=nightswatch}
+	8215.1.1 = {death = {death_reason = death_execution}}
+}
+121402 = {
+	name="Martyn" #Canon, Runcel's bastard son.	
+	dynasty=285 #Hightower
+	
+	martial = 12
+	stewardship = 12
+	
+	religion="the_seven"
+	culture="reachman"
+
+	father=121401
+
+	add_trait="bastard"
+	give_nickname = nick_flowers
+	
+	8186.1.1 = {birth="8186.1.1"}
+	8204.1.1 = { add_trait=nightswatch}
+	8215.1.1 = {death = {death_reason = death_execution}}
+}
+121403 = {
+	name="Rodrik"	
+	dynasty=84 #Flint #Canon, tried to make himself King Beyond the Wall
+	
+	martial = 12
+	stewardship = 12
+	
+	religion="old_gods"
+	culture="hill_clansman"
+
+	father=10075
+		
+	8065.1.1 = {birth="8065.1.1"}
+	8086.1.1 = {add_trait=skilled_warrior add_trait=tough_soldier}
+	8089.1.1 = {add_trait=ambitious}
+	8090.1.1 = { add_trait=nightswatch}
+	8117.1.1 = {death="8117.1.1"}
+}
+121405 = {
+	name="Merlon"	# Non Canon, based off "Griffin" shield described by Jon in the Shieldhall
+	dynasty=316 # Connington
+	
+	martial = 12
+	stewardship = 12
+	
+	religion="the_seven"
+	culture="stormlander"
+
+	father=302316
+	mother=402316
+	
+	8038.1.1 = {birth="8038.1.1"}
+	8060.1.1 = { add_trait=nightswatch}
+	8090.1.1 = {death="8090.1.1"}
+}
+121406 = {
+	name="Marq" #Canon, one of the worst Lord Commanders.	
+	dynasty=174415 #Rankenfell
+	
+	martial = 12
+	stewardship = 12
+	
+	religion="the_seven"
+	culture="riverlander"
+		
+	8091.1.1 = {birth="8091.1.1"}
+	8109.1.1 = {add_trait=knight add_trait=skilled_warrior add_trait=tough_soldier}
+	8112.1.1 = { add_trait=nightswatch}
+	8119.1.1 = { give_nickname = nick_the_mad}
+	8144.1.1 = {death="8144.1.1"}
+}
+121407 = {
+	name="Karlon"	# Non Canon, based off "Sun" shield described by Jon in the Shieldhall
+	dynasty=89 # Karstark
+	
+	martial = 12
+	stewardship = 12
+	
+	religion="old_gods"
+	culture="northman"
+
+	father=17089
+	
+	7985.1.1 = {birth="7985.1.1"}
+	8002.1.1 = {add_trait=nightswatch}
+	8027.1.1 = {death="8027.1.1"}
+}
+121408 = {
+	name="Ryman" # Non Canon, based off "Spider" shield described by Jon in the Shieldhall.	
+	dynasty=238 #Webber
+	
+	martial = 12
+	stewardship = 12
+	
+	religion="the_seven"
+	culture="reachman"
+
+	father=88288
+		
+	8116.1.1 = {birth="8116.1.1"}
+	8130.1.1 = {add_trait=knight}
+	8137.1.1 = {add_trait=nightswatch}
+	8156.1.1 = {death="8156.1.1"}
+}
+121409 = {
+	name="Petyr" # Non Canon, based off "Falcon" shield described by Jon in the Shieldhall.	
+	dynasty=178 #Arryn
+	
+	martial = 12
+	stewardship = 12
+	
+	religion="the_seven"
+	culture="valeman"
+
+	father=5082178 # Artys Arryn
+	#mother=4085178
+		
+	8012.1.1 = {birth="8012.1.1"}
+	8026.1.1 = {add_trait=skilled_warrior add_trait=knight}
+	8032.1.1 = {add_trait=nightswatch}
+	8052.1.1 = {death="8052.1.1"}
+}
+
+#####  Mutineers
+
+121411 = {
+	name="Dirk"	
+	
+	religion="the_seven"
+	culture="stormlander"
+	
+	8267.1.1 = {birth="8267.1.1"}
+	8295.1.1 = { add_trait="nightswatch"}
+	8299.5.5 = { 
+		add_trait="deserter"
+		remove_trait="nightswatch"
+	}
+}
+121412 = {
+	name="Garth"	
+	
+	religion="the_seven"
+	culture="reachman"
+	
+	8273.1.1 = {birth="8273.1.1"}
+	8291.1.1 = { add_trait="nightswatch"}
+	8299.5.5 = {	
+		employer=121411
+		add_trait="deserter"
+		remove_trait="nightswatch"
+	}
+}
+121413 = {
+	name="Alan"	
+	
+	religion="the_seven"
+	culture="crownlander"
+	
+	8274.1.1 = {birth="8274.1.1"}
+	8295.1.1 = { add_trait="nightswatch"}
+	8299.5.5 = {	
+		employer=121411
+		add_trait="deserter"
+		remove_trait="nightswatch"
+	}
+}
+121414 = {
+	name="Rolley"	
+	
+	religion="the_seven"
+	culture="sisterman"
+	
+	8270.1.1 = {birth="8270.1.1"}
+	8291.1.1 = { add_trait="nightswatch"}
+	8299.5.5 = {	
+		employer=121411
+		add_trait="deserter"
+		remove_trait="nightswatch"
+	}
+}
+121415 = {
+	name="Karl"	
+	
+	religion="the_seven"
+	culture="crownlander"
+
+	add_trait="clubfooted"
+	
+	8276.1.1 = {birth="8276.1.1"}
+	8294.1.1 = { add_trait="nightswatch"}
+	8299.5.5 = {	
+		employer=121411
+		add_trait="deserter"
+		remove_trait="nightswatch"
+	}
+}
+121416 = {
+	name="Mawney"	
+	
+	religion="the_seven"
+	culture="valeman"
+	
+	8272.1.1 = {birth="8272.1.1"}
+	8295.1.1 = { add_trait="nightswatch"}
+	8299.5.5 = {	
+		employer=121411
+		add_trait="deserter"
+		remove_trait="nightswatch"
+	}
+}
+
+#####
+
+121417 = {
+	name="Tim" # canon
+	
+	martial = 5
+	stewardship = 3
+	diplomacy = 2
+	intrigue = 3
+	learning = 1
+	
+	religion="the_seven"
+	culture="reachman"
+
+	add_trait=honorable
+	add_trait=diligent
+	add_trait=tough_soldier
+	add_trait=bastard
+	give_nickname=nick_stone
+		
+	8269.1.1 = {birth="8269.1.1"}
+	8285.1.1 = {
+		employer=121000
+		add_trait=nightswatch
+		add_trait=trained_warrior
+	}
+	8294.1.1 = {	
+		employer=336 
+	}
+	8300.3.1 = {	
+		employer=1002059 
+	}
+}

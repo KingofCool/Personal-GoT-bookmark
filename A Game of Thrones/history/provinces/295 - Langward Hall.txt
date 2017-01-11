@@ -1,0 +1,19 @@
+# 295 - Langward Hall - Duchy of Wendwater
+
+# County Title
+title = c_langward_hall
+
+# Settlements
+max_settlements = 1
+
+b_langward_hall = castle	# Canon - County Seat
+
+# Misc
+culture = stormlander
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_langward_hall = ca_asoiaf_crown_basevalue_1
+	b_langward_hall = ca_asoiaf_crown_basevalue_2
+}

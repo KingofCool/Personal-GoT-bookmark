@@ -1,0 +1,13 @@
+202.1.1 = { liege="d_shipbreaker" }
+
+7994.1.1 = { holder=300321 } # Alarik Morrigen (nc)
+8013.1.1 = { holder=301321 } # Lewys Morrigen (nc)
+8043.1.1 = { holder=302321 } # Herbert Morrigen (nc)
+8047.1.1 = { holder=303321 } # Donnel Morrigen (nc)
+8102.1.1 = { holder=304321 } # Herbert Morrigen (nc)
+8128.1.1 = { holder=305321 } # Cressen Morrigen (nc)
+8161.1.1 = { holder=306321 } # Phillip Morrigen (nc)
+8210.1.1 = { holder=200321 } # Grance Morrigen (C)
+8222.1.1 = { holder=309321 } # Lyonel Morrigen (nc)
+8278.1.1 = { holder=310321 } # Ronnet Morrigen (nc)
+8283.1.1 = { holder=201321 } # Lester Morrigen (C)

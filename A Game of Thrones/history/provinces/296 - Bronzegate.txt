@@ -1,0 +1,29 @@
+# 296 - Bronzegate - Duchy of Wendwater
+
+# County Title
+title = c_bronzegate
+
+# Settlements
+max_settlements = 4
+
+b_bronzegate = castle 	# Canon - County Seat
+b_bucklerforge = castle	# NON CANON - Castle
+b_bronze_sept = temple	# NON CANON - Sept
+
+
+# Misc
+culture = stormlander
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_bronzegate = ca_asoiaf_storm_basevalue_1
+	b_bronzegate = ca_asoiaf_storm_basevalue_2
+	b_bronzegate = ca_asoiaf_storm_basevalue_3
+	b_bronzegate = ca_asoiaf_storm_basevalue_4
+	
+	b_bucklerforge = ca_asoiaf_storm_basevalue_1
+}
+8070.1.1 = { #Jaehaerys constructs road network
+	b_bronzegate = ca_kingsroad
+}

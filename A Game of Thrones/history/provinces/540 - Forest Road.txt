@@ -1,0 +1,19 @@
+# 540 - Forest Road
+
+# County Title
+title = c_hills_essaria
+
+# Settlements
+max_settlements = 3
+
+b_hills_essaria = tribal
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+terrain = valyrianroad
+
+# History
+6000.1.1 = {
+}

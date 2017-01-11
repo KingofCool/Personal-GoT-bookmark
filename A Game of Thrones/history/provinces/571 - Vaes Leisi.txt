@@ -1,0 +1,19 @@
+# 571 - Vaes Leisi
+
+# County Title
+title = c_vaes_leisi
+
+# Settlements
+max_settlements = 5
+
+b_vaes_leisi = tribal
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+terrain = forest
+
+# History
+6000.1.1 = {
+}

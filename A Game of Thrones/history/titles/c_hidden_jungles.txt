@@ -1,0 +1,16 @@
+600.1.1={
+	liege="d_linqi_jungle"
+}
+7995.1.1 = { holder=10069199 } # Khaireddin (nc)
+8023.1.1 = { holder=10169199 } # Burhanaddin (nc)
+8060.1.1 = { holder=10269199 } # Is'mail (nc)
+8061.1.1 = { holder=10669199 } # Halil (nc)
+8105.1.1 = { holder=11069199 } # Youkhanna (nc)
+8131.1.1 = { holder=11369199 } # Yusuf (nc)
+8183.1.1 = { holder=11669199 } # Qadir (nc)
+8198.1.1 = { holder=12169199 } # Youkhanna (nc)
+8215.1.1 = { holder=12269199 } # Khaireddin (nc)
+8226.1.1 = { holder=12469199 } # Qawurd (nc)
+8257.1.1 = { holder=12769199 } # Ramadan (nc)
+8265.1.1 = { holder=13069199 } # Nasr (nc)
+

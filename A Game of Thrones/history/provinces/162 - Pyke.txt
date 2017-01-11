@@ -1,0 +1,33 @@
+# 162 - Pyke
+
+# County Title
+title = c_pyke
+
+# Settlements
+max_settlements = 5
+b_pyke = castle
+b_iron_acton = castle
+b_seagrave = temple
+b_codd_hall = castle
+
+#b_brodsworth = castle
+
+
+# Misc
+culture = ironborn
+religion = drowned_god
+
+#History
+
+6000.1.1 = {b_pyke = ca_asoiaf_ironislands_basevalue_1}
+6000.1.1 = {b_pyke = ca_asoiaf_ironislands_basevalue_2}
+6000.1.1 = {b_pyke = ca_asoiaf_ironislands_basevalue_3}
+6000.1.1 = {b_pyke = ca_asoiaf_ironislands_basevalue_4}
+6000.1.1 = {b_pyke = ca_asoiaf_ironislands_basevalue_5}
+6000.1.1 = {b_pyke = ca_asoiaf_ironislands_basevalue_6}
+
+6000.1.1 = {b_iron_acton = ca_asoiaf_ironislands_basevalue_1}
+6000.1.1 = {b_iron_acton = ca_asoiaf_ironislands_basevalue_2}
+6000.1.1 = {b_iron_acton = ca_asoiaf_ironislands_basevalue_3}
+6000.1.1 = {b_iron_acton = ca_asoiaf_ironislands_basevalue_4}
+6000.1.1 = {b_pyke = ca_asoiaf_ironshipyard}

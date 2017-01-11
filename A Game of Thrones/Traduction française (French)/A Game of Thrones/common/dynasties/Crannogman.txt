@@ -1,0 +1,232 @@
+# crannogman
+# crannogman
+1452 = {
+	name="Tourbier"
+	culture = crannogman
+}
+#non-canon
+1453 = {
+	name="Wett"
+	culture = crannogman
+}
+1454 = {
+	name="Slough"
+	culture = crannogman
+}
+1455 = {
+	name="Brunevase"
+	culture = crannogman
+}
+1456 = {
+	name="Longreed"
+	culture = crannogman
+}
+1457 = {
+	name="Vertevase"
+	culture = crannogman
+}
+1458 = {
+	name="Bassetourbe"
+	culture = crannogman
+}
+1459 = {
+	name="Neckier"
+	culture = crannogman
+}
+1460 = {
+	name="Bouheux"
+	culture = crannogman
+}
+1461 = {
+	name="Grenouille"
+	culture = crannogman
+}
+1462 = {
+	name="Marsh"
+	culture = crannogman
+}
+1463 = {
+	name="Thatcher"
+	culture = crannogman
+}
+800900 = {
+	name = Bogwell
+	culture = crannogman
+}
+800901 = {
+	name = Grue
+	culture = crannogman
+}
+800902 = {
+	name = Willot
+	culture = crannogman
+}
+800903 = {
+	name = Coster
+	culture = crannogman
+}
+800904 = {
+	name = Hayle
+	culture = crannogman
+}
+800905 = {
+	name = Cavett
+	culture = crannogman
+}
+800906 = {
+	name = Mossby
+	culture = crannogman
+}
+800907 = {
+	name = Reinette
+	culture = crannogman
+}
+800908 = {
+	name = Webley
+	culture = crannogman
+}
+800909 = {
+	name = Hicks
+	culture = crannogman
+}
+#
+
+72 = {
+	name="Mousse"
+	culture = crannogman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 25
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+73 = {
+	name="Fenn"
+	culture = crannogman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+74 = {
+	name="Noyrevase"
+	culture = crannogman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 49
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+78 = {
+	name="Marsh"
+	culture = crannogman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 22
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+126 = {
+	name="Reed"
+	culture = crannogman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 29
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1447 = {
+	name="Tamm"
+	culture = crannogman
+}
+1448 = {
+	name="Crevisse"
+	culture = crannogman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 50
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1449 = {
+	name="Bonvert"
+	culture = crannogman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 51
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1450 = {
+	name="Tourbe"
+	culture = crannogman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 52
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1451 = {
+	name="Palus"
+	culture = crannogman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 53
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}

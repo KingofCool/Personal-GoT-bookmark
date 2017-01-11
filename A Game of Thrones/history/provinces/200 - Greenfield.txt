@@ -1,0 +1,34 @@
+# 200 - greenfield
+
+# County Title
+title = c_greenfield
+
+# Settlements
+max_settlements = 5
+b_greenfield = castle
+b_greenfieldtown = city
+b_greenfieldtowntwo = castle
+b_greenfieldsept = city
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_greenfield = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_greenfield = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_greenfield = ca_asoiaf_westerland_basevalue_3}
+#6000.1.1 = {b_greenfield = ca_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_greenfieldtown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_greenfieldtown = ct_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_greenfieldtown = ct_asoiaf_westerland_basevalue_3}
+#6000.1.1 = {b_greenfieldtown = ct_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_greenfieldtowntwo = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_greenfieldtowntwo = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_greenfieldtowntwo = ca_asoiaf_westerland_basevalue_3}
+
+6000.1.1 = {b_greenfieldsept = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_greenfieldsept = ct_asoiaf_westerland_basevalue_2}

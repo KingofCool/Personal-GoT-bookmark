@@ -1,0 +1,17 @@
+# 562 - Malath
+
+# County Title
+title = c_malath
+
+# Settlements
+max_settlements = 2
+
+b_malath = tribal
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+# History
+6000.1.1 = {
+}

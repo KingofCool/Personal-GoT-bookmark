@@ -1,0 +1,24 @@
+# 318 Broad Arch - Duchy of Rainwood
+
+# County Title
+title = c_broad_arch
+
+# Settlements
+max_settlements = 3
+
+b_broad_arch = castle 	# Canon - County Seat
+b_overstone = castle	# NON CANON - Castle
+
+# Misc
+culture = stormlander
+religion = the_seven
+
+terrain = woods
+
+# History
+6000.1.1 = {
+	b_broad_arch = ca_asoiaf_storm_basevalue_1
+	b_broad_arch = ca_asoiaf_storm_basevalue_2
+	b_broad_arch = ca_asoiaf_storm_basevalue_3
+	b_overstone = ca_asoiaf_storm_basevalue_1
+}

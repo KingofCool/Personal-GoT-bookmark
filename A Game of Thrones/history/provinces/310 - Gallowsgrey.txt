@@ -1,0 +1,23 @@
+# 310 - Gallowsgrey - Duchy of Summerhall
+
+# County Title
+title = c_gallowsgrey
+
+# Settlements
+max_settlements = 3
+
+b_gallowsgrey = castle 	# Canon - County Seat
+b_foes_end = castle	# NON CANON - Castle
+
+# Misc
+culture = stormlander
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_gallowsgrey = ca_asoiaf_storm_basevalue_1
+	b_gallowsgrey = ca_asoiaf_storm_basevalue_2
+	b_gallowsgrey = ca_asoiaf_storm_basevalue_3
+	b_foes_end = ca_asoiaf_storm_basevalue_1
+
+}

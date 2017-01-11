@@ -1,0 +1,34 @@
+# 343 - The Tor
+
+# County Title
+title = c_thetor
+
+# Settlements
+max_settlements = 4
+b_thetor = castle
+b_thetor_sept = temple
+b_sandgate = city
+#b_amber = castle
+#b_bushmills = city
+#b_sharkshore = castle
+
+# Misc
+culture = salt_dornish
+religion = the_seven
+terrain = hills
+
+6000.1.1 = {
+
+	b_thetor = ca_asoiaf_dorne_basevalue_1
+	b_thetor = ca_asoiaf_dorne_basevalue_2
+	b_thetor = ca_asoiaf_dorne_basevalue_3
+
+
+}
+
+6000.1.1 = {
+	b_sandgate = ct_asoiaf_dorne_basevalue_1
+	b_sandgate = ct_asoiaf_dorne_basevalue_2
+	b_sandgate = ct_asoiaf_dorne_basevalue_3
+
+}

@@ -1,0 +1,22 @@
+# 99 - Kanet
+
+# County Title
+title = c_kanet
+
+# Settlements
+max_settlements = 3
+b_underhillcastle = castle
+b_underhilltown = city
+
+# Misc
+culture = riverlander
+religion = the_seven
+
+# History
+
+6000.1.1 = {
+b_underhillcastle = ca_asoiaf_river_basevalue_1
+
+b_underhilltown = ct_asoiaf_river_basevalue_1
+b_underhilltown = ct_asoiaf_river_basevalue_2
+}

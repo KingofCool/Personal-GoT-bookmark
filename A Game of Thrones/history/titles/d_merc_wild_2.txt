@@ -1,0 +1,6 @@
+8286.1.1={
+	holder=57003 # Harma Dogshead
+}
+8299.11.11={
+	holder=57004 # Halleck
+}

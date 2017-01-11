@@ -1,0 +1,15 @@
+800.1.1 = {liege="d_duskendale"}
+
+7994.1.1 = { holder=3000034 } # Anguy Buckwell (nc)
+8001.1.1 = { holder=3001034 } # Morros Buckwell (nc)
+8013.1.1 = { holder=3002034 } # Ferret Buckwell (nc)
+8057.1.1 = { holder=3004034 } # Cyrenna Buckwell (nc)
+8066.1.1 = { holder=3005034 } # Alliser Buckwell (nc)
+8100.1.1 = { holder=3006034 } # Aurane Buckwell (nc)
+8137.1.1 = { holder=3011034 } # Guncer Buckwell (nc)
+8165.1.1 = { holder=3016034 } # Joyeuse Buckwell (nc)
+8177.1.1 = { holder=3019034 } # Hubard Buckwell (nc)
+8202.1.1 = { holder=3020034 } # Bryen Buckwell (nc)
+8244.1.1 = { holder=3025034 } # Eustace Buckwell (nc)
+8256.1.1 = { holder=3026034 } # Donnel Buckwell (nc)
+8296.1.1 = { holder=3030034 } # Morgan Buckwell (nc)

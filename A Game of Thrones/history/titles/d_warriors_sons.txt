@@ -1,0 +1,23 @@
+4000.1.1 = {
+	active = yes
+	liege = k_the_most_devout
+	law = succ_open_elective
+}
+8028.1.1={
+	holder=351321 #Damon Morrrigen
+}
+8042.6.1={
+	holder=178285 #Morgan Hightower
+}
+8046.1.1= { holder=0 }
+
+8058.1.1={ #Supressed, disbanded by Jaehaerys I
+	liege = 0
+	active = no
+}
+8300.3.1 = { #cersei
+	active = yes
+	liege = k_the_most_devout
+	law = succ_open_elective
+	holder = 60000081 #Theodan Wells
+}

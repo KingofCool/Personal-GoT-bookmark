@@ -1,0 +1,51 @@
+# 419 - Old Volantis
+
+# County Title
+title = c_oldvolantis
+
+# Settlements
+max_settlements = 6
+
+b_oldvolantis = city
+b_blackwall = castle
+b_rhoyne_manor = castle
+b_blood_palace = castle
+b_izulepsia = castle
+
+# Misc
+culture = eastern_valyrian
+religion = valyrian
+
+terrain = valyrianroad
+
+# History
+6000.1.1 = {
+	b_oldvolantis = ct_asoiaf_essos_basevalue_1
+	b_oldvolantis = ct_asoiaf_essos_basevalue_2
+	b_oldvolantis = ct_asoiaf_essos_basevalue_3
+	b_oldvolantis = ct_asoiaf_essos_basevalue_4
+	b_oldvolantis = ct_asoiaf_essos_basevalue_5
+	b_oldvolantis = ct_asoiaf_essos_basevalue_6
+	b_oldvolantis = ct_asoiaf_essosshipyard
+	
+	b_oldvolantis = ct_culture_indian_1
+	b_oldvolantis = ct_culture_indian_2
+}
+
+6000.1.1 = {
+	b_blackwall = ca_asoiaf_essos_basevalue_1
+	b_blackwall = ca_asoiaf_essos_basevalue_2
+	b_blackwall = ca_asoiaf_essos_basevalue_3
+	b_blackwall = ca_asoiaf_essos_basevalue_4
+	
+	b_rhoyne_manor = ca_asoiaf_essos_basevalue_1
+	b_rhoyne_manor = ca_asoiaf_essos_basevalue_2
+	
+	b_blood_palace = ca_asoiaf_essos_basevalue_1
+	b_blood_palace = ca_asoiaf_essos_basevalue_2
+	
+	b_izulepsia = ca_asoiaf_essos_basevalue_1
+	b_izulepsia = ca_asoiaf_essos_basevalue_2
+	
+	trade_post=b_maegyr
+}

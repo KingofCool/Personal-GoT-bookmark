@@ -1,0 +1,16 @@
+202.1.1 = {liege="d_tarth"}
+
+7994.1.1 = { holder=3000362 } # Armond Musgood (nc)
+8034.1.1 = { holder=3001362 } # Alaric Musgood (nc)
+8071.1.1 = { holder=3003362 } # Arys Musgood (nc)
+8078.1.1 = { holder=3006362 } # Lyana Musgood (nc)
+8099.1.1 = { holder=3014362 } # Alaric Musgood (nc)
+8131.1.1 = { holder=3017362 } # Awen Musgood (nc)
+8144.1.1 = { holder=3018362 } # Alesander Musgood (nc)
+8146.1.1 = { holder=3019362 } # Allard Musgood (nc)
+8194.1.1 = { holder=3021362 } # Alaric Musgood (nc)
+8202.1.1 = { holder=3025362 } # Awen Musgood (nc)
+8231.1.1 = { holder=3026362 } # Alesander Musgood (nc)
+8233.1.1 = { holder=3032362 } # Arrys Musgood (nc)
+8270.1.1 = { holder=3035362 } # Alaric Musgood (nc)
+8294.1.1 = { holder=3038362 } # Argilac Musgood (nc)

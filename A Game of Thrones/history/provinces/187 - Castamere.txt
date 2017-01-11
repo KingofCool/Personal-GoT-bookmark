@@ -1,0 +1,47 @@
+# 187 - castamere
+
+# County Title
+title = c_castamere
+
+# Settlements
+max_settlements = 6
+b_castamere = castle
+b_castameretown = city
+b_castameresept = temple
+b_pickhill = city
+b_cubeck = castle
+
+#b_castameretowntwo = city
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {
+	b_castamere = ca_asoiaf_westerland_basevalue_1
+	b_castamere = ca_asoiaf_westerland_basevalue_2
+	b_castamere = ca_asoiaf_westerland_basevalue_3
+	b_castamere = ca_asoiaf_westerland_basevalue_4
+	b_castamere = ca_asoiaf_westerland_basevalue_5
+	
+	b_cubeck = ca_asoiaf_westerland_basevalue_1
+	b_cubeck = ca_asoiaf_westerland_basevalue_2
+	b_cubeck = ca_asoiaf_westerland_basevalue_3
+}
+6000.1.1 = {
+	b_castamere = ca_goldmine
+	b_castamere = ca_large_goldmine
+}
+
+6000.1.1 = {b_castameretown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_castameretown = ct_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_castameretown = ct_asoiaf_westerland_basevalue_3}
+6000.1.1 = {b_castameretown = ct_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_pickhill = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_pickhill = ct_asoiaf_westerland_basevalue_2}
+
+
+

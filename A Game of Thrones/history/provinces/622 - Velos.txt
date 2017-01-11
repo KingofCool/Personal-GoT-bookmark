@@ -1,0 +1,30 @@
+# 622 - Velos
+
+# County Title
+title = c_velos
+
+# Settlements
+max_settlements = 3
+
+b_velos = city
+b_velos_castle = castle
+b_velos_temple = temple
+
+# Misc
+culture = eastern_valyrian
+religion = valyrian
+
+terrain = forest
+
+# History
+6000.1.1 = {
+	b_velos = ct_asoiaf_ghiscari_basevalue_1
+	b_velos = ct_asoiaf_ghiscari_basevalue_2
+	b_velos = ct_asoiaf_ghiscari_basevalue_3
+	b_velos = ct_asoiaf_ghiscari_basevalue_4
+	b_velos = ct_asoiaf_ghiscari_basevalue_5
+
+	b_velos_castle = ca_asoiaf_ghiscari_basevalue_1
+	b_velos_castle = ca_asoiaf_ghiscari_basevalue_2
+	b_velos_castle = ca_asoiaf_ghiscari_basevalue_3
+}

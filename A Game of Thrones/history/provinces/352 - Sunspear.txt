@@ -1,0 +1,48 @@
+# 352 - Sunspear
+
+# County Title
+title = c_sunspear
+
+# Settlements
+max_settlements = 6
+b_speartower = castle
+b_theshadowtown = city
+b_watergardens = city
+b_towerofthesun = castle
+b_sunspear_sept = temple
+#b_threefoldgate = castle
+#b_oldpalace = city
+
+# Misc
+culture = salt_dornish
+religion = the_seven
+terrain = desert
+
+6000.1.1 = {
+
+	b_speartower = ca_asoiaf_dorne_basevalue_1
+	b_speartower = ca_asoiaf_dorne_basevalue_2
+	b_speartower = ca_asoiaf_dorne_basevalue_3
+	b_speartower = ca_asoiaf_dorne_basevalue_4
+	b_speartower = ca_asoiaf_dorne_basevalue_5
+}
+
+6000.1.1 = {
+	b_theshadowtown = ct_asoiaf_dorne_basevalue_1
+	b_theshadowtown = ct_asoiaf_dorne_basevalue_2
+	b_theshadowtown = ct_asoiaf_dorne_basevalue_3
+	b_theshadowtown = ct_asoiaf_dorne_basevalue_4
+
+}
+
+6000.1.1 = {
+	b_watergardens = ct_asoiaf_dorne_basevalue_1
+	b_watergardens = ct_asoiaf_dorne_basevalue_2
+	b_watergardens = ct_asoiaf_dorne_basevalue_3
+}
+
+6000.1.1 = {
+	b_towerofthesun = ca_asoiaf_dorne_basevalue_1
+	b_towerofthesun = ca_asoiaf_dorne_basevalue_2
+	b_towerofthesun = ca_asoiaf_dorne_basevalue_3
+}

@@ -1,0 +1,20 @@
+#House Xhurabo
+7980.1.1 = { 
+	holder=100304035 
+	liege=d_indigo_straits
+	law = succ_seniority
+	law = cognatic_succession
+} # Simbhar (nc)
+8024.1.1 = { holder=101304035 } # Xhelimo (nc)
+8053.1.1 = { holder=105304035 } # Gwalahuru (nc)
+8080.1.1 = { holder=107304035 } # Kwasdo (nc)
+8113.1.1 = { holder=109304035 } # Jiradhar (nc)
+8118.1.1 = { holder=110304035 } # Abrafo (nc)
+8131.1.1 = { holder=113304035 } # Udo (nc)
+8153.1.1 = { holder=116304035 } # Odingaxho (nc)
+8156.1.1 = { holder=117304035 } # Koraxha (nc)
+8183.1.1 = { holder=118304035 } # Makhan (nc)
+8215.1.1 = { holder=120304035 } # Xhelimo (nc)
+8262.1.1 = { holder=124304035 } # Udo (nc)
+8288.1.1 = { holder=126304035 } # Orengo (nc)
+

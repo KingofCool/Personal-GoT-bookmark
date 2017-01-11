@@ -1,0 +1,1635 @@
+#Dorne
+##these to kill off "of such and such" places##
+805950 = {
+	name = Marstyne
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 92
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805951 = {
+	name = Valatar
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 21
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805952 = {
+	name = Mantollen
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 22
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805953 = {
+	name = Ynoralt
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 23
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805954 = {
+	name = Golstand
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 24
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805955 = {
+	name = Wattell
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 25
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805956 = {
+	name = Floryons
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 26
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805957 = {
+	name = Brimlion
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 27
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805958 = {
+	name = Allayen
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 28
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805959 = {
+	name = Gapalgar
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 29
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805960 = {
+	name = Norland
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 30
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805961 = {
+	name = Galesand
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 31
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805962 = {
+	name = Ramdrin
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 32
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805963 = {
+	name = Manroner
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 33
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805964 = {
+	name = Grisestoke
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 34
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805965 = {
+	name = Solhart
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 35
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805966 = {
+	name = Alminset
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 36
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805967 = {
+	name = Aldana
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 37
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805968 = {
+	name = Tanatell
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 38
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805969 = {
+	name = Solavar
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 39
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805970 = {
+	name = Reddune
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 40
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805971 = {
+	name = Jordion
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 41
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805972 = {
+	name = Sourton
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 42
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805973 = {
+	name = Barrows
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 43
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805974 = {
+	name = Sevengrace
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 44
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805975 = {
+	name = Nymercain
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 45
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805976 = {
+	name = Santon
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 46
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805977 = {
+	name = Mercourt
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 47
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805978 = {
+	name = Sixcollines
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 48
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805979 = {
+	name = Sudcoste
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 49
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+805980 = {
+	name = Tidmarsh
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 50
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+##non canon for random##
+806000 = {
+	name = Forcevoie
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 51
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806001 = {
+	name = Vorloi
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 52
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806002 = {
+	name = Paldwyn
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 53
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806003 = {
+	name = Sombreroy
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 54
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806004 = {
+	name = Grospuits
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 55
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806005 = {
+	name = Lorvell
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 56
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806006 = {
+	name = Quarton
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 57
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806007 = {
+	name = Boyard
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 58
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806008 = {
+	name = Byrnell
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 59
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806009 = {
+	name = Lockhart
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 60
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806010 = {
+	name = Brilleforge
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 61
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806011 = {
+	name = Ryparr
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 62
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806012 = {
+	name = Wendane
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 63
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806013 = {
+	name = Furshaw
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 64
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806014 = {
+	name = Pensaule
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 65
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806015 = {
+	name = Blanchetrique
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 66
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806016 = {
+	name = Dartyng
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 67
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806017 = {
+	name = Rougam
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 68
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806018 = {
+	name = Septbois
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 69
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806019 = {
+	name = Danseur
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 70
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806020 = {
+	name = Bosqueloi
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 71
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806021 = {
+	name = Tawnell
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 72
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806022 = {
+	name = Ullétoile
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 73
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806023 = {
+	name = Estives
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 74
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806024 = {
+	name = Trowpont
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 75
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806025 = {
+	name = Ethers
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 76
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806026 = {
+	name = Briddon
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 77
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806027 = {
+	name = Crépuscule
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 78
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806028 = {
+	name = Citronnier
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 79
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806029 = {
+	name = Lances
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 80
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806030 = {
+	name = Ferporte
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 81
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806031 = {
+	name = Slane
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 82
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806032 = {
+	name = Shadbolt
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 83
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806033 = {
+	name = Meredyn
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 84
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806034 = {
+	name = Justesaules
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 85
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806035 = {
+	name = Cloches
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 86
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806036 = {
+	name = Collijoie
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 87
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806037 = {
+	name = Cassimer
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 88
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806038 = {
+	name = Qowell
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 89
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806039 = {
+	name = l'Aride #canon
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 90
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806040 = {
+	name = l'Aride #canon
+	culture = dornish_andal
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 91
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+806041 = {
+	name = "de la Sang-vert"
+	culture = salt_dornish
+}
+806042 = {
+	name = "des Bois"
+	culture = salt_dornish
+}
+806043 = {
+	name = "Conquet"
+	culture = salt_dornish
+}
+##canon##
+1 = {
+	name="Martell"
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2 = {
+	name="Santagar"
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+3 = {
+	name="Boisleau"
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+4 = {
+	name="Toland"
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	used_for_random = no
+	can_appear = no
+}
+499 = {
+	name="Toland" #pre conquest CoA
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 20
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	used_for_random = no
+	can_appear = no
+}
+5 = {
+	name="Labriaux"
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+6 = {
+	name="Dalt"
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+7 = {
+	name="Gargalen"
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+8 = {
+	name="le Voi"
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9 = {
+	name="Allyrion"
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+10 = {
+	name="Jordayne"
+	culture = salt_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 9
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+11 = {
+	name="Wells"
+	culture = sand_dornish
+	 coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 10
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+12 = {
+	name="Ferboys"
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 11
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+13 = {
+	name="Uller"
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 12
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+14 = {
+	name="Poulet"
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 13
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+15 = {
+	name="Qorgyle"
+	culture = sand_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 14
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+16 = {
+	name="Dayne"
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 15
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+17 = {
+	name="Dayne"
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 16
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+18 = {
+	name="Noirmont"
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 17
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+19 = {
+	name="Wyl"
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 18
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+20 = {
+	name="Forrest"
+	culture = stone_dornish
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 19
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+####rhoynar
+174407 = {
+	name="Nymeros"
+	culture = rhoynar
+	coat_of_arms = {
+		template = 0
+		religion = "old_ones"
+		layer = {
+			texture = 3
+			texture_internal = 93
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+#non-canon 
+86001 = {
+	name="Treboros"
+	culture = rhoynar
+}	
+86002 = {
+	name="Nymeros"
+	culture = rhoynar
+}	
+86003 = {
+	name="Myros"
+	culture = rhoynar
+}	
+86004 = {
+	name="Aryenos"
+	culture = rhoynar
+}	
+86005 = {
+	name="Allerion"
+	culture = rhoynar
+}	
+86006 = {
+	name="Leynar"
+	culture = rhoynar
+}	
+86007 = {
+	name="Chroyos"
+	culture = rhoynar
+}
+86008 = {
+	name="Ghoylen"
+	culture = rhoynar
+}
+86009 = {
+	name="Nylayne"
+	culture = rhoynar
+}
+86010 = {
+	name="Largyle"
+	culture = rhoynar
+}
+86011 = {
+	name="Lorezos"
+	culture = rhoynar
+}
+86012 = {
+	name="Ryonar"
+	culture = rhoynar
+}
+86013 = {
+	name="Obarlen"
+	culture = rhoynar
+}
+86014 = {
+	name="Rhoynos"
+	culture = rhoynar
+}
+86015 = {
+	name="Yandros"
+	culture = rhoynar
+}
+86016 = {
+	name="Largyle"
+	culture = rhoynar
+}
+86017 = {
+	name="Malloren"
+	culture = rhoynar
+}
+86018 = {
+	name="Nystos"
+	culture = rhoynar
+}
+86019 = {
+	name="Belgyle"
+	culture = rhoynar
+}
+86020 = {
+	name="Noylos"
+	culture = rhoynar
+}
+86021 = {
+	name="Mirtayne"
+	culture = rhoynar
+}
+86022 = {
+	name="Feron"
+	culture = rhoynar
+}
+86023 = {
+	name="Sandamel"
+	culture = rhoynar
+}
+86024 = {
+	name="Hylane"
+	culture = rhoynar
+}
+86025 = {
+	name="Wendane"
+	culture = rhoynar
+}
+86026 = {
+	name="Solayne"
+	culture = rhoynar
+}
+86027 = {
+	name="Silvane"
+	culture = rhoynar
+}
+

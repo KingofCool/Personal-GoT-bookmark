@@ -1,0 +1,952 @@
+## Crownlander ##
+##non canon for random##
+803000 = {
+	name = Buckshorn
+	culture = crownlander
+}
+803001 = {
+	name = Rougewyck
+	culture = crownlander
+}
+803002 = {
+	name = Pêchepuits
+	culture = crownlander
+}
+803003 = {
+	name = Neuvesalle
+	culture = crownlander
+}
+803004 = {
+	name = Hendy
+	culture = crownlander
+}
+803005 = {
+	name = Pickbois
+	culture = crownlander
+}
+803006 = {
+	name = Lynchchamps
+	culture = crownlander
+}
+803007 = {
+	name = Durbon
+	culture = crownlander
+}
+803008 = {
+	name = Grindell
+	culture = crownlander
+}
+803009 = {
+	name = Knollbois
+	culture = crownlander
+}
+803010 = {
+	name = Hagarbre
+	culture = crownlander
+}
+803011 = {
+	name = Gorland
+	culture = crownlander
+}
+803012 = {
+	name = Merion
+	culture = crownlander
+}
+803013 = {
+	name = Noiryston
+	culture = crownlander
+}
+803014 = {
+	name = Boismoucheté
+	culture = crownlander
+}
+803015 = {
+	name = Corbier
+	culture = crownlander
+}
+803016 = {
+	name = Claughton
+	culture = crownlander
+}
+803017 = {
+	name = Glenshaw
+	culture = crownlander
+}
+803018 = {
+	name = Gotwyck
+	culture = crownlander
+}
+803019 = {
+	name = Hallamore
+	culture = crownlander
+}
+803020 = {
+	name = Shearer
+	culture = crownlander
+}
+803021 = {
+	name = Boiroy
+	culture = crownlander
+}
+803022 = {
+	name = Gullet
+	culture = crownlander
+}
+803023 = {
+	name = Emmerwyck
+	culture = crownlander
+}
+803024 = {
+	name = Blancrose
+	culture = crownlander
+}
+803025 = {
+	name = Brock
+	culture = crownlander
+}
+803026 = {
+	name = "du Gris-vallon"
+	culture = crownlander
+}
+803027 = {
+	name = Bentley
+	culture = crownlander
+}
+803028 = {
+	name = Lansdale
+	culture = crownlander
+}
+
+803029 = {
+	name = Poireau
+	culture = crownlander
+}
+803030 = {
+	name = "de Colline creuse"
+	culture = crownlander
+	used_for_random = no
+}
+803031 = {
+	name = "Broigne"
+	culture = crownlander
+}
+803032 = {
+	name = "Deem"
+	culture = crownlander
+}
+##canon##
+174413 = {
+	name="Cargyll"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 41
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+174416 = {
+	name="Lamûre"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 52
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+174417 = {
+	name="Suggs"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 53
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+174418 = {
+	name="Foster"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 54
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1442 = {
+	name="de Mont-Taïaut"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 50
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1543 = {
+	name="Hivernes"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 51
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+174401 = {
+	name="Chaume"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 49
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+174800 = {
+	name="Marteau"
+	culture = crownlander
+}
+174801 = {
+	name="Blanc"
+	culture = crownlander
+}
+174802 = {
+	name="Tanneur"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 58
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+174803 = {
+	name="Digitale"
+	culture = crownlander
+}
+174804 = {
+	name="Sombre"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 59
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+174805 = {
+	name="Sombrebois"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 60
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+174806 = {
+	name="Sombrebon"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 61
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+174807 = {
+	name="Balaie"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 62
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+174808 = {
+	name="Quince"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 63
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+174809 = {
+	name="Largent"
+	culture = crownlander
+}
+174810 = {
+	name="Correy"
+	culture = crownlander
+}
+174811 = {
+	name="Lebon"
+	culture = crownlander
+}
+174812 = {
+	name="Vrayfeu"
+	culture = crownlander
+	used_for_random = no
+	can_appear = no
+}
+174813 = {
+	name="Belgrave"
+	culture = crownlander
+}
+174814 = {
+	name="Tascer" #non-canon
+	culture = crownlander
+}
+174815 = {
+	name="Farrest" #non-canon
+	culture = crownlander
+}
+174816 = {
+	name="Brewlan" #non-canon
+	culture = crownlander
+}
+174817 = {
+	name="Smithe" #non-canon
+	culture = crownlander
+}
+174818 = {
+	name="Malver" #non-canon
+	culture = crownlander
+}
+
+21 = {
+	name="Follard"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+22 = {
+	name="Blount"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+23 = {
+	name="Gaunt"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+24 = {
+	name="Farring"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+25 = {
+	name="Chelsted"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+26 = {
+	name="Mallery"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+27 = {
+	name="Cressey"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+28 = {
+	name="Chyttering"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+29 = {
+	name="Roulegué"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+30 = {
+	name="Thorne"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 9
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+31 = {
+	name="Verraz"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 10
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+32 = {
+	name="Fengué"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 11
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+33 = {
+	name="Harte"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 12
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+34 = {
+	name="Buckwell"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 13
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+35 = {
+	name="Castelfoyer"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 14
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+36 = {
+	name="Rykker"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 15
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+37 = {
+	name="Hollard"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 16
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+38 = {
+	name="Rosby"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 17
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+39 = {
+	name="Boulleau"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 18
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+40 = {
+	name="Edgerton"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 19
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+41 = {
+	name="Staunton"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 20
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+43 = {
+	name="Manning"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 26
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+44 = {
+	name="de la Wend"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 22
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+45 = {
+	name="Prédeaux"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 23
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+46 = {
+	name="Massey"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 24
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+48 = {
+	name="Langward"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 35
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+55 = {
+	name="Pyle"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 25
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+352 = {
+	name="Potaunoir"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 36
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	used_for_random = no
+	can_appear = no
+}
+353 = {
+	name="Slynt"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 55
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	used_for_random = no	
+	can_appear = no
+}
+354 = {
+	name="Frétilletrique"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 30
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+364 = {
+	name="Sombrelyn"
+	culture="crownlander"
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 38
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1007 = {
+	name="Cole"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 34
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1440 = {
+	name="de la Néra"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 37
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	used_for_random = no
+	can_appear = no
+}
+# 1575 = {
+	# name="Baratheon-Lannister"
+	# culture = crownlander
+	# coat_of_arms = {
+		# template = 0
+		# layer = {
+			# texture = 10
+			# texture_internal = 35
+			# emblem = 0
+			# color = 0
+			# color = 0
+			# color = 0
+		# }
+	# }
+# }
+9110 = {
+	name="Mervault"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 29
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	used_for_random = no
+	can_appear = no
+}
+1873 = {
+	name="Branfield"
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 80
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+777777 = {
+	name="" #Used for random/lowborn high septons
+	culture = crownlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 57
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	used_for_random = no
+	can_appear = no
+}

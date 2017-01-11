@@ -1,0 +1,20 @@
+# 671 - The Sand Road
+
+# County Title
+title = c_sandroad
+
+# Settlements
+max_settlements = 3
+
+b_sandroad = castle
+b_sandroad_city = city
+b_sandroad_temple = temple
+
+
+# Misc
+culture = bayasabhadi
+religion = gods_bone_mountains
+
+terrain = mountainpass
+
+

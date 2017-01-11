@@ -1,0 +1,20 @@
+# 51 - Eastmelt
+
+# County Title
+title = c_eastmelt
+
+# Settlements
+max_settlements = 2
+b_karlspost = castle
+#b_eastmelt = city
+
+# Misc
+culture = northman
+religion = old_gods
+
+# History
+
+6000.1.1 = {
+	b_karlspost = ca_asoiaf_north_basevalue_1
+	b_karlspost = ca_asoiaf_north_basevalue_2
+}

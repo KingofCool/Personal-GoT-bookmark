@@ -1,0 +1,29 @@
+
+
+# County Title
+title = c_dosk
+
+# Settlements
+max_settlements = 4
+b_bulls_keep = castle
+b_dosk  = city
+
+#b_little_dosk   = city
+#b_dunecross  = city
+
+
+# Misc
+culture = reachman
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_bulls_keep = ca_asoiaf_reach_basevalue_1
+}
+6000.1.1 = {
+	b_dosk = ct_asoiaf_reach_basevalue_1
+	b_dosk = ct_asoiaf_reach_basevalue_2
+	b_dosk = ct_asoiaf_reach_basevalue_3
+	b_dosk = ct_asoiaf_reach_basevalue_4
+
+}

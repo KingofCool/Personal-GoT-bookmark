@@ -1,0 +1,17 @@
+600.1.1={
+	liege="d_hills_tiqui"
+}
+7995.1.1 = { holder=10069110 } # Hafiz (nc)
+8034.1.1 = { holder=10269110 } # Alim (nc)
+8055.1.1 = { holder=10669110 } # Talib (nc)
+8064.1.1 = { holder=10869110 } # Uways (nc)
+8097.1.1 = { holder=11069110 } # Shaiban (nc)
+8116.1.1 = { holder=11169110 } # Hussayn (nc)
+8150.1.1 = { holder=11269110 } # Husam (nc)
+8181.1.1 = { holder=11769110 } # Mirza (nc)
+8214.1.1 = { holder=12169110 } # Mansur (nc)
+8226.1.1 = { holder=12369110 } # Husam (nc)
+8234.1.1 = { holder=12769110 } # Husam (nc)
+8279.1.1 = { holder=13069110 } # Hafiz (nc)
+
+

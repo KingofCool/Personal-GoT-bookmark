@@ -1,0 +1,18 @@
+600.1.1={
+	liege="k_leng"
+}
+
+7995.1.1 = { holder=100055962 } # Yusuf (nc)
+8038.1.1 = { holder=100155962 } # Mirza (nc)
+8053.1.1 = { holder=100655962 } # Mukhtar (nc)
+8076.1.1 = { holder=100955962 } # Husam (nc)
+8117.1.1 = { holder=101255962 } # Yusuf (nc)
+8118.1.1 = { holder=101355962 } # Youkhanna (nc)
+8167.1.1 = { holder=101555962 } # Najib (nc)
+8177.1.1 = { holder=101855962 } # Uways (nc)
+8179.1.1 = { holder=102155962 } # Uways (nc)
+8222.1.1 = { holder=102455962 } # Sami (nc)
+8276.1.1 = { holder=102955962 } # Alim (nc)
+8288.1.1 = { holder=103255962 } # Jaleel (nc)
+
+

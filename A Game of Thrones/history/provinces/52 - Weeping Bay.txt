@@ -1,0 +1,20 @@
+# 52 - Weeping Bay
+
+# County Title
+title = c_weepingbay
+
+# Settlements
+max_settlements = 2
+b_rangersrefuge = castle
+#b_gancliff = city
+
+# Misc
+culture = northman
+religion = old_gods
+
+# History
+
+6000.1.1 = {
+	b_rangersrefuge = ca_asoiaf_north_basevalue_1
+	b_rangersrefuge = ca_asoiaf_north_basevalue_2
+}

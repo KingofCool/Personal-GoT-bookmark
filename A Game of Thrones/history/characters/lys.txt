@@ -1,0 +1,4250 @@
+###  House Erosenes
+
+150300540 = {
+	name="Groleo"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	7964.1.1 = {birth="7964.1.1"}
+	7982.1.1 = {add_spouse=250300540}
+	8025.1.1 = {death="8025.1.1"}
+}
+250300540 = {
+	name="Bellonara"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	7966.1.1 = {birth="7966.1.1"}
+	8023.1.1 = {death="8023.1.1"}
+}
+100300540 = {
+	name="Allequo"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=150300540
+	mother=250300540
+
+	7983.1.1 = {birth="7983.1.1"}
+	8018.1.1 = {add_trait=poor_warrior}
+	8020.1.1 = {add_spouse=200300540}
+	8056.1.1 = {death="8056.1.1"}
+}
+200300540 = {
+	name="Bellonara"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	7983.1.1 = {birth="7983.1.1"}
+	8056.1.1 = {death="8056.1.1"}
+}
+101300540 = {
+	name="Collio"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=100300540
+	mother=200300540
+
+	8021.1.1 = {birth="8021.1.1"}
+	8037.1.1 = {add_trait=poor_warrior}
+	8039.1.1 = {add_spouse=201300540}
+	8061.1.1 = {death="8061.1.1"}
+}
+201300540 = {
+	name="Ferrega"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8021.1.1 = {birth="8021.1.1"}
+	8061.1.1 = {death="8061.1.1"}
+}
+102300540 = {
+	name="Ferrega"	# not a lord
+	female=yes
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=100300540
+	mother=200300540
+
+	8022.1.1 = {birth="8022.1.1"}
+	8065.1.1 = {death="8065.1.1"}
+}
+103300540 = {
+	name="Denia"	# not a lord
+	female=yes
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=100300540
+	mother=200300540
+
+	8023.1.1 = {birth="8023.1.1"}
+	8064.1.1 = {death="8064.1.1"}
+}
+104300540 = {
+	name="Yorka"	# not a lord
+	female=yes
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=101300540
+	mother=201300540
+
+	8044.1.1 = {birth="8044.1.1"}
+	8092.1.1 = {death = {death_reason = death_accident}}
+}
+105300540 = {
+	name="Lothea"	# not a lord
+	female=yes
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=101300540
+	mother=201300540
+
+	8045.1.1 = {birth="8045.1.1"}
+	8102.1.1 = {death="8102.1.1"}
+}
+106300540 = {
+	name="Alia"	# not a lord
+	female=yes
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=101300540
+	mother=201300540
+
+	8047.1.1 = {birth="8047.1.1"}
+	8110.1.1 = {death="8110.1.1"}
+}
+107300540 = {
+	name="Syrio"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=101300540
+	mother=201300540
+
+	8048.1.1 = {birth="8048.1.1"}
+	8064.1.1 = {add_trait=trained_warrior}
+	8066.1.1 = {add_spouse=207300540}
+	8098.1.1 = {death="8098.1.1"}
+}
+207300540 = {
+	name="Rogga"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8048.1.1 = {birth="8048.1.1"}
+	8098.1.1 = {death="8098.1.1"}
+}
+108300540 = {
+	name="Serenei"	# not a lord
+	female=yes
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=101300540
+	mother=201300540
+
+	8050.1.1 = {birth="8050.1.1"}
+	8103.1.1 = {death="8103.1.1"}
+}
+110300540 = {
+	name="Pynto"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=107300540
+	mother=207300540
+
+	8068.1.1 = {birth="8068.1.1"}
+	8084.1.1 = {add_trait=trained_warrior}
+	8086.1.1 = {add_spouse=210300540}
+	8119.1.1 = {death="8119.1.1"}
+}
+210300540 = {
+	name="Taena"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8068.1.1 = {birth="8068.1.1"}
+	8119.1.1 = {death="8119.1.1"}
+}
+111300540 = {
+	name="Khorane"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=107300540
+	mother=207300540
+
+	8082.1.1 = {birth="8082.1.1"}
+	8098.1.1 = {add_trait=trained_warrior}
+	8110.1.1 = {add_spouse=211300540}
+	8123.1.1 = {death="8123.1.1"}
+}
+211300540 = {
+	name="Lucerre"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8082.1.1 = {birth="8082.1.1"}
+	8123.1.1 = {death="8123.1.1"}
+}
+112300540 = {
+	name="Gyleno"	# not a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=107300540
+	mother=207300540
+
+	8084.1.1 = {birth="8084.1.1"}
+	8110.1.1 = {add_trait=poor_warrior}
+	8112.1.1 = {add_spouse=212300540}
+	8153.1.1 = {death="8153.1.1"}
+}
+212300540 = {
+	name="Lothea"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8084.1.1 = {birth="8084.1.1"}
+	8153.1.1 = {death="8153.1.1"}
+}
+113300540 = {
+	name="Gylono"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=111300540
+	mother=211300540
+
+	8114.1.1 = {birth="8114.1.1"}
+	8130.1.1 = {add_trait=trained_warrior}
+	8132.1.1 = {add_spouse=213300540}
+	8165.1.1 = {death="8165.1.1"}
+}
+213300540 = {
+	name="Nohia"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8114.1.1 = {birth="8114.1.1"}
+	8165.1.1 = {death="8165.1.1"}
+}
+115300540 = {
+	name="Betharios"	# not a lord
+	female=yes
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=111300540
+	mother=211300540
+
+	8116.1.1 = {birth="8116.1.1"}
+	8175.1.1 = {death="8175.1.1"}
+}
+116300540 = {
+	name="Moredea"	# not a lord
+	female=yes
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=113300540
+	mother=213300540
+
+	8134.1.1 = {birth="8134.1.1"}
+	8185.1.1 = {death="8185.1.1"}
+}
+117300540 = {
+	name="Joss"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=113300540
+	mother=213300540
+
+	8135.1.1 = {birth="8135.1.1"}
+	8151.1.1 = {add_trait=master_warrior}
+	8153.1.1 = {add_spouse=217300540}
+	8208.1.1 = {death="8208.1.1"}
+}
+217300540 = {
+	name="Yna"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8135.1.1 = {birth="8135.1.1"}
+	8208.1.1 = {death="8208.1.1"}
+}
+118300540 = {
+	name="Torma"	# not a lord
+	female=yes
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=117300540
+	mother=217300540
+
+	8155.1.1 = {birth="8155.1.1"}
+	8207.1.1 = {death="8207.1.1"}
+}
+119300540 = {
+	name="Orbela"	# not a lord
+	female=yes
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=117300540
+	mother=217300540
+
+	8157.1.1 = {birth="8157.1.1"}
+	8224.1.1 = {death="8224.1.1"}
+}
+120300540 = {
+	name="Serala"	# not a lord
+	female=yes
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=117300540
+	mother=217300540
+
+	8159.1.1 = {birth="8159.1.1"}
+	8216.1.1 = {death="8216.1.1"}
+}
+121300540 = {
+	name="Tagganaro"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=117300540
+	mother=217300540
+
+	8162.1.1 = {birth="8162.1.1"}
+	8178.1.1 = {add_trait=poor_warrior}
+	8180.1.1 = {add_spouse=221300540}
+	8239.1.1 = {death="8239.1.1"}
+}
+221300540 = {
+	name="Ferrega"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8162.1.1 = {birth="8162.1.1"}
+	8239.1.1 = {death="8239.1.1"}
+}
+122300540 = {
+	name="Jaqea"	# not a lord
+	female=yes
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=117300540
+	mother=217300540
+
+	8164.1.1 = {birth="8164.1.1"}
+	8205.1.1 = {death="8205.1.1"}
+}
+124300540 = {
+	name="Brusco"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=121300540
+	mother=221300540
+
+	8190.1.1 = {birth="8190.1.1"}
+	8206.1.1 = {add_trait=poor_warrior}
+	8208.1.1 = {add_spouse=224300540}
+	8254.1.1 = {death="8254.1.1"}
+}
+224300540 = {
+	name="Taena"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8190.1.1 = {birth="8190.1.1"}
+	8254.1.1 = {death="8254.1.1"}
+}
+125300540 = {
+	name="Ternesia"	# not a lord
+	female=yes
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=121300540
+	mother=221300540
+
+	8192.1.1 = {birth="8192.1.1"}
+	8269.1.1 = {death="8269.1.1"}
+}
+126300540 = {
+	name="Betharios"	# not a lord
+	female=yes
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=121300540
+	mother=221300540
+
+	8195.1.1 = {birth="8195.1.1"}
+	8252.1.1 = {death="8252.1.1"}
+}
+127300540 = {
+	name="Ternesio"	# a lord
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=124300540
+	mother=224300540
+
+	8218.1.1 = {birth="8218.1.1"}
+	8234.1.1 = {add_trait=trained_warrior}
+	8236.1.1 = {add_spouse=227300540}
+	8270.1.1 = {death = {death_reason = death_accident}}
+}
+227300540 = {
+	name="Syrea"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8218.1.1 = {birth="8218.1.1"}
+	8262.1.1 = {death="8262.1.1"}
+}
+128300540 = {
+	name="Allaquo"	# not a lord
+	dynasty=55925
+	
+	martial = 10
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=124300540
+	mother=224300540
+	
+	add_trait = ambitious
+
+	8221.1.1 = {birth="8221.1.1"}
+	8237.1.1 = {add_trait=trained_warrior}
+	8273.1.1 = {death="8273.1.1"}
+}
+129300540 = {
+	name="Ternesia"	# not a lord
+	female=yes
+	dynasty=55925
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=127300540
+	mother=227300540
+
+	8236.1.1 = {birth="8236.1.1"}
+	8279.1.1 = {death = {death_reason = death_accident}}
+}
+2003994 = {
+	name="Orbello"
+	dynasty=55925 
+
+	culture="lysene"
+	religion="weeping_lady"
+
+	father=127300540
+	mother=227300540
+
+	8259.1.1 = {birth="8259.1.1"}
+	8281.1.1 = {add_spouse=21003994}
+}
+21003994 = {
+	name="Taeneyrs"
+	female=yes
+
+	culture="lysene"
+	religion="weeping_lady"
+
+	8259.1.1 = {birth="8259.1.1"}
+}
+2013994 = {
+	name="Tregar"
+	dynasty=55925 
+
+	culture="lysene"
+	religion="weeping_lady"
+
+	father=2003994
+	mother=21003994
+
+	8284.1.1 = {birth="8284.1.1"}
+}
+2023994 = {
+	name="Sharako"
+	dynasty=55925 
+
+	culture="lysene"
+	religion="weeping_lady"
+
+	father=2003994
+	mother=21003994
+
+	8288.1.1 = {birth="8288.1.1"}
+}
+###  House Ormollen
+
+11001386 = {
+	name="Doniphos"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	7959.1.1 = {birth="7959.1.1"}
+	7975.1.1 = {add_spouse=21001386}
+	8027.1.1 = {death="8027.1.1"}
+}
+21001386 = {
+	name="Serenie"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	7964.1.1 = {birth="7964.1.1"}
+	8029.1.1 = {death="8029.1.1"}
+}
+10001386 = {
+	name="Sullhiem"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=11001386
+	mother=21001386
+
+	7984.1.1 = {birth="7984.1.1"}
+	8016.1.1 = {add_trait=poor_warrior}
+	8018.1.1 = {add_spouse=20001386}
+	8063.1.1 = {death="8063.1.1"}
+}
+20001386 = {
+	name="Terrios"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	7984.1.1 = {birth="7984.1.1"}
+	8063.1.1 = {death="8063.1.1"}
+}
+10011386 = {
+	name="Lothea"	# not a lord
+	female=yes
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10001386
+	mother=20001386
+
+	8022.1.1 = {birth="8022.1.1"}
+	8072.1.1 = {death="8072.1.1"}
+}
+10021386 = {
+	name="Tagganaro"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10001386
+	mother=20001386
+
+	8024.1.1 = {birth="8024.1.1"}
+	8040.1.1 = {add_trait=poor_warrior}
+	8066.1.1 = {death="8066.1.1"}
+}
+10031386 = {
+	name="Luco"	# not a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10001386
+	mother=20001386
+
+	8026.1.1 = {birth="8026.1.1"}
+	8042.1.1 = {add_trait=poor_warrior}
+	8044.1.1 = {add_spouse=20031386}
+	8067.1.1 = {death="8067.1.1"}
+}
+20031386 = {
+	name="Betharios"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8026.1.1 = {birth="8026.1.1"}
+	8067.1.1 = {death="8067.1.1"}
+}
+10041386 = {
+	name="Cossoma"	# not a lord
+	female=yes
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10001386
+	mother=20001386
+
+	8029.1.1 = {birth="8029.1.1"}
+	8080.1.1 = {death="8080.1.1"}
+}
+10051386 = {
+	name="Lucerre"	# not a lord
+	female=yes
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10031386
+	mother=20031386
+
+	8051.1.1 = {birth="8051.1.1"}
+	8131.1.1 = {death="8131.1.1"}
+}
+10061386 = {
+	name="Qarro"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10031386
+	mother=20031386
+
+	8052.1.1 = {birth="8052.1.1"}
+	8068.1.1 = {add_trait=poor_warrior}
+	8070.1.1 = {add_spouse=20061386}
+	8112.1.1 = {death="8112.1.1"}
+}
+20061386 = {
+	name="Izembara"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8052.1.1 = {birth="8052.1.1"}
+	8112.1.1 = {death="8112.1.1"}
+}
+10071386 = {
+	name="Terrios"	# not a lord
+	female=yes
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10031386
+	mother=20031386
+
+	8054.1.1 = {birth="8054.1.1"}
+	8096.1.1 = {death="8096.1.1"}
+}
+10081386 = {
+	name="Joss"	# not a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10031386
+	mother=20031386
+
+	8055.1.1 = {birth="8055.1.1"}
+	8071.1.1 = {add_trait=poor_warrior}
+	8104.1.1 = {death="8104.1.1"}
+}
+10091386 = {
+	name="Gylenios"	# not a lord
+	female=yes
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10061386
+	mother=20061386
+
+	8070.1.1 = {birth="8070.1.1"}
+	8117.1.1 = {death="8117.1.1"}
+}
+10101386 = {
+	name="Lysono"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10061386
+	mother=20061386
+
+	8071.1.1 = {birth="8071.1.1"}
+	8087.1.1 = {add_trait=trained_warrior}
+	8089.1.1 = {add_spouse=20101386}
+	8128.1.1 = {death="8128.1.1"}
+}
+20101386 = {
+	name="Myrmellios"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8071.1.1 = {birth="8071.1.1"}
+	8128.1.1 = {death="8128.1.1"}
+}
+10111386 = {
+	name="Myrmellios"	# not a lord
+	female=yes
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10061386
+	mother=20061386
+
+	8074.1.1 = {birth="8074.1.1"}
+	8130.1.1 = {death="8130.1.1"}
+}
+10121386 = {
+	name="Terro"	# not a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10101386
+	mother=20101386
+
+	8092.1.1 = {birth="8092.1.1"}
+	8106.1.1 = {death="8106.1.1"}
+}
+10131386 = {
+	name="Roggo"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10101386
+	mother=20101386
+
+	8104.1.1 = {birth="8104.1.1"}
+	8120.1.1 = {add_trait=trained_warrior}
+	8122.1.1 = {add_spouse=20131386}
+	8162.1.1 = {death="8162.1.1"}
+}
+20131386 = {
+	name="Serra"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8104.1.1 = {birth="8104.1.1"}
+	8162.1.1 = {death="8162.1.1"}
+}
+10141386 = {
+	name="Ollo"	# not a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10101386
+	mother=20101386
+
+	8106.1.1 = {birth="8106.1.1"}
+	8122.1.1 = {add_trait=trained_warrior}
+	8184.1.1 = {death="8184.1.1"}
+}
+10151386 = {
+	name="Terro"	# not a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10101386
+	mother=20101386
+
+	8107.1.1 = {birth="8107.1.1"}
+	8123.1.1 = {add_trait=trained_warrior}
+	8145.1.1 = {death = {death_reason = death_battle}}
+}
+10161386 = {
+	name="Brea"	# not a lord
+	female=yes
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10131386
+	mother=20131386
+
+	8135.1.1 = {birth="8135.1.1"}
+	8172.1.1 = {death="8172.1.1"}
+}
+10171386 = {
+	name="Gyleno"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10131386
+	mother=20131386
+
+	8137.1.1 = {birth="8137.1.1"}
+	8153.1.1 = {add_trait=trained_warrior}
+	8155.1.1 = {add_spouse=20171386}
+	8197.1.1 = {death="8197.1.1"}
+}
+20171386 = {
+	name="Jaqea"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8137.1.1 = {birth="8137.1.1"}
+	8197.1.1 = {death="8197.1.1"}
+}
+10181386 = {
+	name="Narbo"	# not a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10131386
+	mother=20131386
+
+	8138.1.1 = {birth="8138.1.1"}
+	8154.1.1 = {add_trait=poor_warrior}
+	8156.1.1 = {add_spouse=20181386}
+	8193.1.1 = {death="8193.1.1"}
+}
+20181386 = {
+	name="Qarria"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8138.1.1 = {birth="8138.1.1"}
+	8193.1.1 = {death="8193.1.1"}
+}
+10191386 = {
+	name="Jaqen"	# not a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10131386
+	mother=20131386
+
+	8139.1.1 = {birth="8139.1.1"}
+	8155.1.1 = {add_trait=master_warrior}
+	8157.1.1 = {add_spouse=20191386}
+	8212.1.1 = {death="8212.1.1"}
+}
+20191386 = {
+	name="Orios"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8139.1.1 = {birth="8139.1.1"}
+	8212.1.1 = {death="8212.1.1"}
+}
+10201386 = {
+	name="Ternesio"	# not a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10171386
+	mother=20171386
+
+	8155.1.1 = {birth="8155.1.1"}
+	8171.1.1 = {add_trait=poor_warrior}
+	8196.1.1 = {death="8196.1.1"}
+}
+10211386 = {
+	name="Jaqen"	# not a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10171386
+	mother=20171386
+
+	8157.1.1 = {birth="8157.1.1"}
+	8173.1.1 = {add_trait=poor_warrior}
+	8195.1.1 = {death = {death_reason = death_murder}}
+}
+10221386 = {
+	name="Gylora"	# not a lord
+	female=yes
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10171386
+	mother=20171386
+
+	8168.1.1 = {birth="8168.1.1"}
+	8192.1.1 = {death="8192.1.1"}
+}
+10231386 = {
+	name="Collio"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10171386
+	mother=20171386
+
+	8170.1.1 = {birth="8170.1.1"}
+	8186.1.1 = {add_trait=skilled_warrior}
+	8188.1.1 = {add_spouse=20231386}
+	8221.1.1 = {death="8221.1.1"}
+}
+20231386 = {
+	name="Mellario"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8170.1.1 = {birth="8170.1.1"}
+	8221.1.1 = {death="8221.1.1"}
+}
+10241386 = {
+	name="Bellegere"	# not a lord
+	female=yes
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10171386
+	mother=20171386
+
+	8173.1.1 = {birth="8173.1.1"}
+	8228.1.1 = {death="8228.1.1"}
+}
+10251386 = {
+	name="Ezzere"	# not a lord
+	female=yes
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10171386
+	mother=20171386
+
+	8174.1.1 = {birth="8174.1.1"}
+	8231.1.1 = {death="8231.1.1"}
+}
+10261386 = {
+	name="Alia"	# not a lord
+	female=yes
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10171386
+	mother=20171386
+
+	8177.1.1 = {birth="8177.1.1"}
+	8203.1.1 = {death="8203.1.1"}
+}
+10271386 = {
+	name="Roro"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10231386
+	mother=20231386
+
+	8197.1.1 = {birth="8197.1.1"}
+	8213.1.1 = {add_trait=poor_warrior}
+	8215.1.1 = {add_spouse=20271386}
+	8234.1.1 = {death = {death_reason = death_battle}}
+}
+20271386 = {
+	name="Ferrega"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8197.1.1 = {birth="8197.1.1"}
+	8234.1.1 = {death="8234.1.1"}
+}
+10281386 = {
+	name="Lysono"	# not a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10231386
+	mother=20231386
+
+	8198.1.1 = {birth="8198.1.1"}
+	8214.1.1 = {add_spouse=20281386}
+	8216.1.1 = {death="8216.1.1"}
+}
+20281386 = {
+	name="Umma"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8198.1.1 = {birth="8198.1.1"}
+	8216.1.1 = {death="8216.1.1"}
+}
+10291386 = {
+	name="Yna"	# not a lord
+	female=yes
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10231386
+	mother=20231386
+
+	8199.1.1 = {birth="8199.1.1"}
+	8238.1.1 = {death="8238.1.1"}
+}
+10301386 = {
+	name="Tagganaria"	# not a lord
+	female=yes
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10231386
+	mother=20231386
+
+	8201.1.1 = {birth="8201.1.1"}
+	8239.1.1 = {death="8239.1.1"}
+}
+10311386 = {
+	name="Syrio"	# a lord
+	dynasty=1386
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10271386
+	mother=20271386
+
+	8220.1.1 = {birth="8220.1.1"}
+	8241.1.1 = {add_trait=skilled_warrior}
+	8242.1.1 = {add_spouse=20381386}
+	8274.1.1 = {death="8274.1.1"}
+}
+20381386 = {
+	name="Nyssa"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8225.1.1 = {birth="8225.1.1"}
+	8270.1.1 = {death="8270.1.1"}
+}
+88108 = {
+	name="Tregar"
+	dynasty=1386 #Ormollen
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=10311386
+	mother=20381386
+
+	add_trait="fortune_builder"
+	add_trait="lustful"
+
+	8250.1.1={
+		birth="8250.1.1"
+	}
+	8272.1.1={
+		add_spouse=488108
+	}
+	8295.1.1={
+		effect = {
+			random_character = {
+				limit = { character = 3284 } #Lynesse Hightower
+				add_consort = ROOT
+				add_lover = ROOT
+				move_character = ROOT
+			}
+		}		
+	}
+} 
+488108 = {
+	name="Melyssa"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8250.1.1 = {birth="8250.1.1"}
+	8290.1.1 = {death="8290.1.1"}
+}
+881108 = {
+	name="Syrio"
+	dynasty=1386 #Ormollen
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=88108
+	mother=488108
+
+	8274.1.1={
+		birth="8274.1.1"
+	}
+} 
+882108 = {
+	name="Mellario"
+	dynasty=1386 #Ormollen
+	female=yes
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=88108
+	mother=488108
+
+	8277.1.1={
+		birth="8277.1.1"
+	}
+} 
+883108 = {
+	name="Parquello"
+	dynasty=1386 #Ormollen
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=88108
+	mother=488108
+
+	8281.1.1={
+		birth="8281.1.1"
+	}
+} 
+
+### House Sathmantes
+
+150300546 = {
+	name="Vaelar"	# a lord
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	7961.1.1 = {birth="7961.1.1"}
+	7983.1.1 = {add_spouse=250300546}
+	8036.1.1 = {death="8036.1.1"}
+}
+250300546 = {
+	name="Daenys"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	7962.1.1 = {birth="7962.1.1"}
+	8036.1.1 = {death="8036.1.1"}
+}
+100300546 = {
+	name="Roro"	# a lord
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=150300546
+	mother=250300546
+
+	7985.1.1 = {birth="7985.1.1"}
+	8026.1.1 = {add_trait=poor_warrior}
+	8028.1.1 = {add_spouse=200300546}
+	8079.1.1 = {death="8079.1.1"}
+}
+200300546 = {
+	name="Mellario"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	7985.1.1 = {birth="7985.1.1"}
+	8079.1.1 = {death="8079.1.1"}
+}
+101300546 = {
+	name="Alia"	# not a lord
+	female=yes
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=100300546
+	mother=200300546
+
+	8032.1.1 = {birth="8032.1.1"}
+	8104.1.1 = {death="8104.1.1"}
+}
+102300546 = {
+	name="Bellegere"	# not a lord
+	female=yes
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=100300546
+	mother=200300546
+
+	8034.1.1 = {birth="8034.1.1"}
+	8080.1.1 = {death="8080.1.1"}
+}
+104300546 = {
+	name="Umma"	# not a lord
+	female=yes
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=100300546
+	mother=200300546
+
+	8039.1.1 = {birth="8039.1.1"}
+	8062.1.1 = {death="8062.1.1"}
+}
+105300546 = {
+	name="Sallodhor"	# a lord
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=100300546
+	mother=200300546
+
+	8040.1.1 = {birth="8040.1.1"}
+	8056.1.1 = {add_trait=trained_warrior}
+	8058.1.1 = {add_spouse=205300546}
+	8106.1.1 = {death="8106.1.1"}
+}
+205300546 = {
+	name="Gylora"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	8040.1.1 = {birth="8040.1.1"}
+	8106.1.1 = {death="8106.1.1"}
+}
+106300546 = {
+	name="Tagganaro"	# a lord
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=105300546
+	mother=205300546
+
+	8064.1.1 = {birth="8064.1.1"}
+	8082.1.1 = {add_spouse=206300546}
+	8129.1.1 = {death="8129.1.1"}
+}
+206300546 = {
+	name="Cossoma"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	8064.1.1 = {birth="8064.1.1"}
+	8080.1.1 = {add_trait=poor_warrior}
+	8129.1.1 = {death="8129.1.1"}
+}
+107300546 = {
+	name="Taena"	# not a lord
+	female=yes
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=106300546
+	mother=206300546
+
+	8089.1.1 = {birth="8089.1.1"}
+	8146.1.1 = {death="8146.1.1"}
+}
+109300546 = {
+	name="Syrio"	# a lord
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=106300546
+	mother=206300546
+
+	8093.1.1 = {birth="8093.1.1"}
+	8109.1.1 = {add_trait=poor_warrior}
+	8111.1.1 = {add_spouse=209300546}
+	8168.1.1 = {death="8168.1.1"}
+}
+209300546 = {
+	name="Meralyia"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	8093.1.1 = {birth="8093.1.1"}
+	8168.1.1 = {death="8168.1.1"}
+}
+111300546 = {
+	name="Tormo"	# not a lord
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=109300546
+	mother=209300546
+
+	8115.1.1 = {birth="8115.1.1"}
+	8131.1.1 = {add_trait=poor_warrior}
+	8158.1.1 = {death="8158.1.1"}
+}
+112300546 = {
+	name="Ordello"	# a lord
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=109300546
+	mother=209300546
+
+	8116.1.1 = {birth="8116.1.1"}
+	8132.1.1 = {add_trait=poor_warrior}
+	8134.1.1 = {add_spouse=212300546}
+	8196.1.1 = {death="8196.1.1"}
+}
+212300546 = {
+	name="Pynta"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	8116.1.1 = {birth="8116.1.1"}
+	8196.1.1 = {death="8196.1.1"}
+}
+113300546 = {
+	name="Moreo"	# not a lord
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=109300546
+	mother=209300546
+
+	8118.1.1 = {birth="8118.1.1"}
+	8134.1.1 = {add_trait=trained_warrior}
+	8136.1.1 = {add_spouse=213300546}
+	8159.1.1 = {death="8159.1.1"}
+}
+213300546 = {
+	name="Myrmellios"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	8118.1.1 = {birth="8118.1.1"}
+	8159.1.1 = {death="8159.1.1"}
+}
+114300546 = {
+	name="Beqqo"	# not a lord
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=112300546
+	mother=212300546
+
+	8140.1.1 = {birth="8140.1.1"}
+	8156.1.1 = {add_trait=trained_warrior}
+	8186.1.1 = {death="8186.1.1"}
+}
+115300546 = {
+	name="Illyrio"	# a lord
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=112300546
+	mother=212300546
+
+	8143.1.1 = {birth="8143.1.1"}
+	8159.1.1 = {add_trait=trained_warrior}
+	8161.1.1 = {add_spouse=215300546}
+	8205.1.1 = {death="8205.1.1"}
+}
+215300546 = {
+	name="Serra"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	8143.1.1 = {birth="8143.1.1"}
+	8205.1.1 = {death="8205.1.1"}
+}
+116300546 = {
+	name="Lotho"	# not a lord
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=112300546
+	mother=212300546
+
+	8146.1.1 = {birth="8146.1.1"}
+	8162.1.1 = {add_trait=trained_warrior}
+	8164.1.1 = {add_spouse=216300546}
+	8175.1.1 = {death="8175.1.1"}
+}
+216300546 = {
+	name="Gylora"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	8146.1.1 = {birth="8146.1.1"}
+	8175.1.1 = {death="8175.1.1"}
+}
+117300546 = {
+	name="Ordello"	# a lord
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=115300546
+	mother=215300546
+
+	8167.1.1 = {birth="8167.1.1"}
+	8183.1.1 = {add_trait=trained_warrior}
+	8185.1.1 = {add_spouse=217300546}
+	8227.1.1 = {death="8227.1.1"}
+}
+217300546 = {
+	name="Talea"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	8167.1.1 = {birth="8167.1.1"}
+	8227.1.1 = {death="8227.1.1"}
+}
+118300546 = {
+	name="Izembaro"	# a lord
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=117300546
+	mother=217300546
+
+	8192.1.1 = {birth="8192.1.1"}
+	8208.1.1 = {add_trait=poor_warrior}
+	8210.1.1 = {add_spouse=218300546}
+	8249.1.1 = {death="8249.1.1"}
+}
+218300546 = {
+	name="Cossoma"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	8192.1.1 = {birth="8192.1.1"}
+	8249.1.1 = {death="8249.1.1"}
+}
+119300546 = {
+	name="Tycho"	# not a lord
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=117300546
+	mother=217300546
+
+	8195.1.1 = {birth="8195.1.1"}
+	8211.1.1 = {add_trait=trained_warrior}
+	8275.1.1 = {death="8275.1.1"}
+}
+120300546 = {
+	name="Ferrego"	# not a lord
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=117300546
+	mother=217300546
+
+	8197.1.1 = {birth="8197.1.1"}
+	8213.1.1 = {add_trait=poor_warrior}
+	8261.1.1 = {death="8261.1.1"}
+}
+121300546 = {
+	name="Yna"	# not a lord
+	female=yes
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=118300546
+	mother=218300546
+
+	8218.1.1 = {birth="8218.1.1"}
+	8274.1.1 = {death="8274.1.1"}
+}
+122300546 = {
+	name="Tycho"	# a lord
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=118300546
+	mother=218300546
+
+	8220.1.1 = {birth="8220.1.1"}
+	8236.1.1 = {add_trait=poor_warrior}
+	8274.1.1 = {death="8274.1.1"}
+}
+123300546 = {
+	name="Ezzere"	# not a lord
+	female=yes
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=118300546
+	mother=218300546
+
+	8222.1.1 = {birth="8222.1.1"}
+	8258.1.1 = {death="8258.1.1"}
+}
+124300546 = {
+	name="Lanna"	# not a lord
+	female=yes
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=118300546
+	mother=218300546
+
+	8225.1.1 = {birth="8225.1.1"}
+	8294.1.1 = {death="8294.1.1"}
+}
+125300546 = {
+	name="Gyleno"	# a lord
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=122300546
+
+	8251.1.1 = {birth="8251.1.1"}
+	8267.1.1 = {add_trait=poor_warrior}
+	8270.1.1 = {add_spouse=225300546}
+}
+225300546 = {
+	name="Nyssa"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+
+	8251.1.1 = {birth="8251.1.1"}
+}
+126300546 = {
+	name="Yorko"	# not a lord
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=122300546
+
+	8253.1.1 = {birth="8253.1.1"}
+	8269.1.1 = {add_trait=poor_warrior}
+}
+151300546 = {
+	name="Kohrane"	# canon
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=125300546
+	mother=225300546
+
+	8276.1.1 = {birth="8276.1.1"}
+}
+132300546 = {
+	name="Tycho"	# not a lord
+	dynasty=300546
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=125300546
+	mother=225300546
+
+	8280.1.1 = {birth="8280.1.1"}
+}
+
+###  House Rogare
+
+150300539 = {
+	name="Nyessos"	# a lord
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	7960.1.1 = {birth="7960.1.1"}
+	7976.1.1 = { add_trait="truth" }
+	7982.1.1 = {add_spouse=250300539}
+	8029.1.1 = {death="8029.1.1"}
+}
+250300539 = {
+	name="Bellegre"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	7966.1.1 = {birth="7966.1.1"}
+	8030.1.1 = {death="8030.1.1"}
+}
+100300539 = {
+	name="Doniphos"	# a lord
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=150300539
+	mother=250300539
+
+	7990.1.1 = {birth="7990.1.1"}
+	8022.1.1 = {add_trait=poor_warrior}
+	8024.1.1 = {add_spouse=200300539}
+	8029.1.1 = { add_trait="truth" }
+	8075.1.1 = {death="8075.1.1"}
+}
+200300539 = {
+	name="Betharios"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	7990.1.1 = {birth="7990.1.1"}
+	8075.1.1 = {death="8075.1.1"}
+}
+101300539 = {
+	name="Beqqo"	# not a lord
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=100300539
+	mother=200300539
+
+	8030.1.1 = {birth="8030.1.1"}
+	8046.1.1 = {add_trait=master_warrior}
+	8055.1.1 = {death="8055.1.1"}
+}
+102300539 = {
+	name="Serala"	# not a lord
+	female=yes
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=100300539
+	mother=200300539
+
+	8029.1.1 = {birth="8029.1.1"}
+	8081.1.1 = {death="8081.1.1"}
+}
+103300539 = {
+	name="Syrea"	# not a lord
+	female=yes
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=100300539
+	mother=200300539
+
+	8032.1.1 = {birth="8032.1.1"}
+	8083.1.1 = {death="8083.1.1"}
+}
+104300539 = {
+	name="Orbelo"	# a lord
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=100300539
+	mother=200300539
+
+	8034.1.1 = {birth="8034.1.1"}
+	8050.1.1 = {add_trait=skilled_warrior}
+	8052.1.1 = {add_spouse=204300539}
+	8075.1.1 = { add_trait="truth" }
+	8077.1.1 = {death="8077.1.1"}
+}
+204300539 = {
+	name="Gylenios"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	8034.1.1 = {birth="8034.1.1"}
+	8077.1.1 = {death="8077.1.1"}
+}
+105300539 = {
+	name="Orbela"	# not a lord
+	female=yes
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=100300539
+	mother=200300539
+
+	8035.1.1 = {birth="8035.1.1"}
+	8092.1.1 = {death="8092.1.1"}
+}
+106300539 = {
+	name="Oro"	# a lord
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=104300539
+	mother=204300539
+
+	8055.1.1 = {birth="8055.1.1"}
+	8071.1.1 = {add_trait=skilled_warrior}
+	8073.1.1 = {add_spouse=206300539}
+	8077.1.1 = { add_trait="truth" }
+	8115.1.1 = {death="8115.1.1"}
+}
+206300539 = {
+	name="Meralyia"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	8055.1.1 = {birth="8055.1.1"}
+	8115.1.1 = {death="8115.1.1"}
+}
+107300539 = {
+	name="Gyleno"	# a lord
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=106300539
+	mother=206300539
+
+	8076.1.1 = {birth="8076.1.1"}
+	8092.1.1 = {add_trait=poor_warrior}
+	8095.1.1 = {add_spouse=207300539}
+	8115.1.1 = { add_trait="truth" }
+	8125.1.1 = {death="8125.1.1"}
+}
+207300539 = {
+	name="Myrmellios"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	8076.1.1 = {birth="8076.1.1"}
+	8125.1.1 = {death="8125.1.1"}
+}
+108300539 = {
+	name="Lysandro"	# a lord
+	dynasty=55999
+	
+	stewardship=8
+	martial=2
+	diplomacy=7
+	intrigue=3
+	learning=3
+
+	religion="rhllor"
+	culture="high_valyrian"
+
+	father=107300539
+	mother=207300539
+	
+	add_trait=ambitious
+	add_trait=ruthless
+	add_trait=gregarious
+	add_trait=midas_touched
+	add_trait=quick
+
+	8095.1.1 = {
+		birth="8095.1.1"
+		effect = { culture = lysene }
+	}
+	8111.1.1 = {add_trait=trained_warrior}
+	8114.1.1 = {add_spouse=208300539}
+	8125.1.1 = { add_trait="truth" }
+	8130.1.1 = { 
+		give_nickname=nick_the_magnificent
+	}
+	8140.1.1 = {
+		culture = lysene
+		death={
+			death_reason = death_murder_unknown
+		}
+	}
+}
+208300539 = {
+	name="Lothea"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	8095.1.1 = {birth="8095.1.1"}
+	8140.1.1 = {death="8140.1.1"}
+}
+109300539 = {
+	name="Drazenko"	# Prince Consort of Dorne
+	dynasty=55999
+	
+	diplomacy=8
+
+	religion="rhllor"
+	culture="high_valyrian"
+
+	father=107300539
+	mother=207300539
+	
+	add_trait=ambitious
+	add_trait=grey_eminence
+
+	8100.1.1 = {
+		birth="8100.1.1"
+		effect = { culture = lysene }
+	}
+	8116.1.1 = {add_trait=skilled_warrior}
+	8140.1.1 = {
+		culture = lysene
+		death={
+			death_reason = death_murder_unknown
+		}
+	}
+}
+110300539 = {
+	name="Lysaro"	# A Lord
+	dynasty=55999
+	
+	stewardship=4
+	diplomacy=1
+	intrigue=3
+	martial=3
+	learning=4
+
+	religion="rhllor"
+	culture="high_valyrian"
+
+	father=108300539
+	mother=208300539
+	
+	add_trait=indulgent_wastrel
+	add_trait=greedy
+	add_trait=proud
+	add_trait=ambitious
+	add_trait=wroth
+	add_trait=rude
+
+	8114.1.1 = {
+		birth="8114.1.1"
+		effect = { culture = lysene }
+	}
+	8135.1.1 = {
+		effect = {
+			if = {
+				limit = { 
+					is_ruler = no 
+					NOT = { year = 8139 }
+				}
+				e_iron_throne = { holder_scope = { ROOT = { move_character = PREV } } }
+			}
+		}
+	}
+	8145.1.1 = {
+		culture = lysene
+		death = {
+			death_reason = death_execution #scourged to death
+		}
+	}
+}
+159300539 = {
+	name="Larra"	# Married Viserys II Targaryen
+	female=yes
+	dynasty=55999
+
+	religion="rhllor"
+	culture="high_valyrian"
+	
+	add_trait=fair
+	add_trait=shy
+	add_trait=proud
+
+	father=108300539
+	mother=208300539
+
+	8115.1.1 = {
+		birth="8115.1.1"
+		effect = { culture = lysene }
+	}
+	8139.6.1 = {
+		effect = {
+			b_rogare = { holder_scope = { ROOT = { move_character = PREV } } }
+		}
+	}
+	8145.1.1 = {
+		culture = lysene
+		death="8145.1.1"
+	}
+}
+112300539 = {
+	name="Moredo"	# not a lord
+	dynasty=55999
+	
+	martial=7
+
+	religion="rhllor"
+	culture="high_valyrian"
+
+	father=108300539
+	mother=208300539
+	
+	add_trait=skilled_tactician
+	add_trait=diligent
+	add_trait=just
+
+	8121.1.1 = {
+		birth="8121.1.1"
+		effect = { culture = lysene }
+	}
+	8137.1.1 = {
+		add_trait=skilled_warrior
+		effect = {
+			if = {
+				limit = { 
+					is_ruler = no 
+					NOT = { year = 8139 }
+				}
+				e_iron_throne = { holder_scope = { ROOT = { move_character = PREV } } }
+			}
+		}
+	}
+	8139.1.1 = {add_spouse=212300539}
+	8140.1.1 = { add_trait="truth" }
+	8165.1.1 = {
+		culture = lysene
+		death="8165.1.1"
+	}
+}
+212300539 = {
+	name="Meralyia"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	8121.1.1 = {birth="8121.1.1"}
+	8165.1.1 = {death="8165.1.1"}
+}
+113300539 = {
+	name="Qarria"	# not a lord
+	female=yes
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=112300539
+	mother=212300539
+
+	8147.1.1 = {birth="8147.1.1"}
+	8199.1.1 = {death = {death_reason = death_accident}}
+}
+114300539 = {
+	name="Orbelo"	# a lord
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=112300539
+	mother=212300539
+
+	8148.1.1 = {birth="8148.1.1"}
+	8160.1.1 = { add_trait="truth" }
+	8164.1.1 = {add_trait=skilled_warrior}
+	8166.1.1 = {add_spouse=214300539}
+	8209.1.1 = {death="8209.1.1"}
+}
+214300539 = {
+	name="Nohia"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	8148.1.1 = {birth="8148.1.1"}
+	8209.1.1 = {death="8209.1.1"}
+}
+115300539 = {
+	name="Tagganaria"	# not a lord
+	female=yes
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=112300539
+	mother=212300539
+
+	8151.1.1 = {birth="8151.1.1"}
+	8230.1.1 = {death="8230.1.1"}
+}
+116300539 = {
+	name="Ternesia"	# not a lord
+	female=yes
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=112300539
+	mother=212300539
+
+	8152.1.1 = {birth="8152.1.1"}
+	8185.1.1 = {death="8185.1.1"}
+}
+117300539 = {
+	name="Ollo"	# not a lord
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=114300539
+	mother=214300539
+
+	8167.1.1 = {birth="8167.1.1"}
+	8180.1.1 = {death = {death_reason = death_murder}}
+}
+118300539 = {
+	name="Denyo"	# not a lord
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=114300539
+	mother=214300539
+
+	8169.1.1 = {birth="8169.1.1"}
+	8185.1.1 = {add_trait=skilled_warrior}
+	8204.1.1 = {death="8204.1.1"}
+}
+119300539 = {
+	name="Moreo"	# a lord
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=114300539
+	mother=214300539
+
+	8171.1.1 = {birth="8171.1.1"}
+	8187.1.1 = {add_trait=trained_warrior}
+	8189.1.1 = {add_spouse=219300539}
+	8209.1.1 = { add_trait="truth" }
+	8233.1.1 = {death="8233.1.1"}
+}
+219300539 = {
+	name="Lucerre"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	8171.1.1 = {birth="8171.1.1"}
+	8233.1.1 = {death="8233.1.1"}
+}
+120300539 = {
+	name="Gyleno"	# a lord
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=119300539
+	mother=219300539
+
+	8191.1.1 = {birth="8191.1.1"}
+	8207.1.1 = {add_trait=poor_warrior}
+	8209.1.1 = {add_spouse=220300539}
+	8233.1.1 = { add_trait="truth" }
+	8252.1.1 = {death="8252.1.1"}
+}
+220300539 = {
+	name="Syrea"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	8191.1.1 = {birth="8191.1.1"}
+	8252.1.1 = {death="8252.1.1"}
+}
+121300539 = {
+	name="Qarria"	# not a lord
+	female=yes
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=119300539
+	mother=219300539
+
+	8193.1.1 = {birth="8193.1.1"}
+	8239.1.1 = {death="8239.1.1"}
+}
+122300539 = {
+	name="Yorka"	# not a lord
+	female=yes
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=119300539
+	mother=219300539
+
+	8195.1.1 = {birth="8195.1.1"}
+	8213.1.1 = {death="8213.1.1"}
+}
+123300539 = {
+	name="Orbelo"	# a lord
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=120300539
+	mother=220300539
+
+	8218.1.1 = {birth="8218.1.1"}
+	8234.1.1 = {add_trait=trained_warrior}
+	8236.1.1 = {add_spouse=223300539}
+	8252.1.1 = { add_trait="truth" }
+	8260.1.1 = {death="8260.1.1"}
+}
+223300539 = {
+	name="Qarria"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	8218.1.1 = {birth="8218.1.1"}
+	8260.1.1 = {death="8260.1.1"}
+}
+124300539 = {
+	name="Gylora"	# not a lord
+	female=yes
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=120300539
+	mother=220300539
+
+	8219.1.1 = {birth="8219.1.1"}
+	8270.1.1 = {death="8270.1.1"}
+}
+125300539 = {
+	name="Byan"	# a lord
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=123300539
+	mother=223300539
+
+	8253.1.1 = {birth="8253.1.1"}
+	8260.1.1 = { add_trait="truth" }
+	8269.1.1 = {add_trait=trained_warrior}
+	8275.1.1 = {add_spouse=225300539}
+}
+225300539 = {
+	name="Serra"
+	female=yes
+
+	religion="rhllor"
+	culture="lysene"
+
+	8253.1.1 = {birth="8253.1.1"}
+}
+126300539 = {
+	name="Syrio"	# not a lord
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=123300539
+	mother=223300539
+
+	8256.1.1 = {birth="8256.1.1"}
+	8272.1.1 = {add_trait=skilled_warrior}
+}
+151300539 = {
+	name="Gyleno"
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=125300539
+	mother=225300539
+
+	8278.1.1 = {birth="8278.1.1"}
+}
+152300539 = {
+	name="Mellario"	
+	female=yes
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=125300539
+	mother=225300539
+
+	8281.1.1 = {birth="8281.1.1"}
+}
+153300539 = {
+	name="Tybaro"
+	dynasty=55999
+
+	religion="rhllor"
+	culture="lysene"
+
+	father=125300539
+	mother=225300539
+
+	8284.1.1 = {birth="8284.1.1"}
+}
+
+### House Lohar
+
+150300523 = {
+	name="Maelys"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	7960.1.1 = {birth="7960.1.1"}
+	7982.1.1 = {add_spouse=250300523}
+	8018.1.1 = {death="8018.1.1"}
+}
+250300523 = {
+	name="Shiera"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	7963.1.1 = {birth="7963.1.1"}
+	8024.1.1 = {death="8024.1.1"}
+}
+100300523 = {
+	name="Beqqo"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=150300523
+	mother=250300523
+
+	7993.1.1 = {birth="7993.1.1"}
+	8028.1.1 = {add_trait=poor_warrior}
+	8030.1.1 = {add_spouse=200300523}
+	8080.1.1 = {death="8080.1.1"}
+}
+200300523 = {
+	name="Moredea"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	7993.1.1 = {birth="7993.1.1"}
+	8080.1.1 = {death="8080.1.1"}
+}
+101300523 = {
+	name="Talea"	# not a lord
+	female=yes
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=100300523
+	mother=200300523
+
+	8031.1.1 = {birth="8031.1.1"}
+	8060.1.1 = {death="8060.1.1"}
+}
+102300523 = {
+	name="Allaquo"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=100300523
+	mother=200300523
+
+	8033.1.1 = {birth="8033.1.1"}
+	8049.1.1 = {add_trait=trained_warrior}
+	8051.1.1 = {add_spouse=202300523}
+	8086.1.1 = {death="8086.1.1"}
+}
+202300523 = {
+	name="Bellonara"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8033.1.1 = {birth="8033.1.1"}
+	8086.1.1 = {death="8086.1.1"}
+}
+103300523 = {
+	name="Pynto"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=102300523
+	mother=202300523
+
+	8053.1.1 = {birth="8053.1.1"}
+	8069.1.1 = {add_trait=trained_warrior}
+	8071.1.1 = {add_spouse=203300523}
+	8115.1.1 = {death = {death_reason = death_murder}}
+}
+203300523 = {
+	name="Alia"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8053.1.1 = {birth="8053.1.1"}
+	8115.1.1 = {death = {death_reason = death_murder}}
+}
+104300523 = {
+	name="Umma"	# not a lord
+	female=yes
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=102300523
+	mother=202300523
+
+	8055.1.1 = {birth="8055.1.1"}
+	8080.1.1 = {death="8080.1.1"}
+}
+105300523 = {
+	name="Myrmellios"	# not a lord
+	female=yes
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=103300523
+	mother=203300523
+
+	8088.1.1 = {birth="8088.1.1"}
+	8121.1.1 = {death="8121.1.1"}
+}
+106300523 = {
+	name="Sharako"	# a lord, canon
+	dynasty=300523
+	
+	martial = 9
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=103300523
+	mother=203300523
+	
+	add_trait = skilled_tactician
+
+	8079.1.1 = {birth="8079.1.1"}
+	8105.1.1 = {add_trait=skilled_warrior}
+	8107.1.1 = {add_spouse=206300523}
+	8130.1.1 = {death="8130.1.1"}
+}
+206300523 = {
+	name="Syrea"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8079.1.1 = {birth="8079.1.1"}
+	8133.1.1 = {death="8133.1.1"}
+}
+107300523 = {
+	name="Tregar"	# not a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=103300523
+	mother=203300523
+
+	8081.1.1 = {birth="8081.1.1"}
+	8097.1.1 = {add_trait=poor_warrior}
+	8099.1.1 = {add_spouse=207300523}
+	8113.1.1 = {death="8113.1.1"}
+}
+207300523 = {
+	name="Nohia"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8081.1.1 = {birth="8081.1.1"}
+	8113.1.1 = {death="8113.1.1"}
+}
+108300523 = {
+	name="Meralyn"	# not a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=106300523
+	mother=206300523
+
+	8122.1.1 = {birth="8122.1.1"}
+	8138.1.1 = {add_trait=skilled_warrior}
+	8190.1.1 = {death="8190.1.1"}
+}
+109300523 = {
+	name="Talea"	# not a lord
+	female=yes
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=106300523
+	mother=206300523
+
+	8125.1.1 = {birth="8125.1.1"}
+	8173.1.1 = {death="8173.1.1"}
+}
+110300523 = {
+	name="Mellario"	# a lord
+	female=yes
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=107300523
+	mother=207300523
+
+	8105.1.1 = {birth="8105.1.1"}
+	8166.1.1 = { death = { death_reason = death_murder } }
+}
+111300523 = {
+	name="Tregar"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=107300523
+	mother=207300523
+
+	8109.1.1 = {birth="8109.1.1"}
+	8125.1.1 = {add_trait=trained_warrior}
+	8127.1.1 = {add_spouse=211300523}
+	8160.1.1 = {death="8160.1.1"}
+}
+211300523 = {
+	name="Cossoma"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8109.1.1 = {birth="8109.1.1"}
+	8167.1.1 = {death="8167.1.1"}
+}
+112300523 = {
+	name="Illyrio"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=111300523
+	mother=211300523
+
+	8148.1.1 = {birth="8148.1.1"}
+	8168.1.1 = {add_trait=poor_warrior}
+	8170.1.1 = {add_spouse=212300523}
+	8208.1.1 = {death="8208.1.1"}
+}
+212300523 = {
+	name="Gylenios"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8148.1.1 = {birth="8148.1.1"}
+	8208.1.1 = {death="8208.1.1"}
+}
+113300523 = {
+	name="Oro"	# not a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=111300523
+	mother=211300523
+
+	8158.1.1 = {birth="8158.1.1"}
+	8174.1.1 = {add_trait=poor_warrior}
+	8176.1.1 = {add_spouse=213300523}
+	8215.1.1 = {death="8215.1.1"}
+}
+213300523 = {
+	name="Mera"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8158.1.1 = {birth="8158.1.1"}
+	8215.1.1 = {death="8215.1.1"}
+}
+114300523 = {
+	name="Tycho"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=112300523
+	mother=212300523
+
+	8170.1.1 = {birth="8170.1.1"}
+	8186.1.1 = {add_trait=skilled_warrior}
+	8188.1.1 = {add_spouse=214300523}
+	8232.1.1 = {death="8232.1.1"}
+}
+214300523 = {
+	name="Betharios"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8170.1.1 = {birth="8170.1.1"}
+	8232.1.1 = {death="8232.1.1"}
+}
+115300523 = {
+	name="Tycha"	# not a lord
+	female=yes
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=112300523
+	mother=212300523
+
+	8173.1.1 = {birth="8173.1.1"}
+	8232.1.1 = {death="8232.1.1"}
+}
+116300523 = {
+	name="Beqqo"	# not a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=114300523
+	mother=214300523
+
+	8201.1.1 = {birth="8201.1.1"}
+	8216.1.1 = {add_spouse=216300523}
+	8219.1.1 = {death = {death_reason = death_accident}}
+}
+216300523 = {
+	name="Rogga"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8201.1.1 = {birth="8201.1.1"}
+	8219.1.1 = {death="8219.1.1"}
+}
+117300523 = {
+	name="Yna"	# not a lord
+	female=yes
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=114300523
+	mother=214300523
+
+	8203.1.1 = {birth="8203.1.1"}
+	8232.1.1 = {death = {death_reason = death_murder}}
+}
+118300523 = {
+	name="Tregar"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=114300523
+	mother=214300523
+
+	8204.1.1 = {birth="8204.1.1"}
+	8220.1.1 = {add_trait=poor_warrior}
+	8222.1.1 = {add_spouse=218300523}
+	8244.1.1 = {death="8244.1.1"}
+}
+218300523 = {
+	name="Lothea"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8204.1.1 = {birth="8204.1.1"}
+	8244.1.1 = {death="8244.1.1"}
+}
+119300523 = {
+	name="Ezzere"	# not a lord
+	female=yes
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=114300523
+	mother=214300523
+
+	8205.1.1 = {birth="8205.1.1"}
+	8225.1.1 = {death="8225.1.1"}
+}
+120300523 = {
+	name="Lothea"	# not a lord
+	female=yes
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=118300523
+	mother=218300523
+
+	8225.1.1 = {birth="8225.1.1"}
+}
+121300523 = {
+	name="Gyleno"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=118300523
+	mother=218300523
+
+	8226.1.1 = {birth="8226.1.1"}
+	8242.1.1 = {add_trait=poor_warrior}
+	8244.1.1 = {add_spouse=221300523}
+	8277.1.1 = {death="8277.1.1"}
+}
+221300523 = {
+	name="Taena"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8226.1.1 = {birth="8226.1.1"}
+	8277.1.1 = {death="8277.1.1"}
+}
+122300523 = {
+	name="Illyrio"	# a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=121300523
+	mother=221300523
+
+	8260.1.1 = {birth="8260.1.1"}
+	8276.1.1 = {add_trait=skilled_warrior}
+	8281.1.1 = {add_spouse=222300523}
+}
+222300523 = {
+	name="Bellagere"
+	female=yes
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	8260.1.1 = {birth="8260.1.1"}
+}
+123300523 = {
+	name="Bellonara"	# not a lord
+	female=yes
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=121300523
+	mother=221300523
+
+	8261.1.1 = {birth="8261.1.1"}
+}
+124300523 = {
+	name="Orbela"	# not a lord
+	female=yes
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=121300523
+	mother=221300523
+
+	8262.1.1 = {birth="8262.1.1"}
+	8311.1.1 = {death="8311.1.1"}
+}
+125300523 = {
+	name="Khorane"	# not a lord
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=121300523
+	mother=221300523
+
+	8265.1.1 = {birth="8265.1.1"}
+	8281.1.1 = {add_trait=poor_warrior}
+}
+126300523 = {
+	name="Terrios"	# not a lord
+	female=yes
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=121300523
+	mother=221300523
+
+	8267.1.1 = {birth="8267.1.1"}
+	8277.1.1 = {death="8277.1.1"}
+}
+127300523 = {
+	name="Ternessio"
+	dynasty=300523
+
+	religion="weeping_lady"
+	culture="lysene"
+
+	father=122300523
+	mother=222300523
+
+	8283.1.1 = {birth="8283.1.1"}
+}
+
+###Pirates of the Stepstones###
+#Sunstone
+100982367 = {
+	name="Mero"	# not a lord
+	dynasty=982367
+
+	religion="pirate"
+	culture="lysene"
+
+	7975.1.1 = {birth="7975.1.1"}
+	7991.1.1 = {add_trait=trained_warrior}
+	8024.1.1 = {death="8024.1.1"}
+}
+101982367 = {
+	name="Denyo"	# a lord
+	dynasty=982367
+
+	religion="pirate"
+	culture="lysene"
+
+	father=100982367
+
+	8007.1.1 = {birth="8007.1.1"}
+	8023.1.1 = {add_trait=trained_warrior}
+	8046.1.1 = {death="8046.1.1"}
+}
+104982367 = {
+	name="Yorko"	# a lord
+	dynasty=982367
+
+	religion="pirate"
+	culture="lysene"
+
+	father=101982367
+
+	8030.1.1 = {birth="8030.1.1"}
+	8046.1.1 = {add_trait=skilled_warrior}
+	8089.1.1 = {death="8089.1.1"}
+}
+105982367 = {
+	name="Ternesio"	# a lord
+	dynasty=982367
+
+	religion="pirate"
+	culture="lysene"
+
+	father=104982367
+
+	8057.1.1 = {birth="8057.1.1"}
+	8073.1.1 = {add_trait=poor_warrior}
+	8137.1.1 = {death="8137.1.1"}
+}
+109982367 = {
+	name="Allaquo"	# a lord
+	dynasty=982367
+
+	religion="pirate"
+	culture="lysene"
+
+	father=105982367
+
+	8077.1.1 = {birth="8077.1.1"}
+	8093.1.1 = {add_trait=trained_warrior}
+	8144.1.1 = {death="8144.1.1"}
+}
+112982367 = {
+	name="Tycho"	# a lord
+	dynasty=982367
+
+	religion="pirate"
+	culture="lysene"
+
+	father=109982367
+
+	8115.1.1 = {birth="8115.1.1"}
+	8131.1.1 = {add_trait=skilled_warrior}
+	8160.1.1 = {death="8160.1.1"}
+}
+113982367 = {
+	name="Ordello"	# a lord
+	dynasty=982367
+
+	religion="pirate"
+	culture="lysene"
+
+	father=112982367
+
+	8137.1.1 = {birth="8137.1.1"}
+	8153.1.1 = {add_trait=poor_warrior}
+	8175.1.1 = {death = {death_reason = death_murder}}
+}
+114982367 = {
+	name="Sallodhor"	# a lord
+	dynasty=982367
+
+	religion="pirate"
+	culture="lysene"
+
+	father=113982367
+
+	8156.1.1 = {birth="8156.1.1"}
+	8172.1.1 = {add_trait=skilled_warrior}
+	8202.1.1 = {death = {death_reason = death_murder}}
+}
+115982367 = {
+	name="Meralyn"	# a lord
+	dynasty=982367
+
+	religion="pirate"
+	culture="lysene"
+
+	father=114982367
+
+	8180.1.1 = {birth="8180.1.1"}
+	8196.1.1 = {add_trait=poor_warrior}
+	8234.1.1 = {death="8234.1.1"}
+}
+116982367 = {
+	name="Daario"	# a lord
+	dynasty=982367
+
+	religion="pirate"
+	culture="lysene"
+
+	father=115982367
+
+	8208.1.1 = {birth="8208.1.1"}
+	8224.1.1 = {add_trait=master_warrior}
+	8254.1.1 = {death="8254.1.1"}
+}
+117982367 = {
+	name="Tormo"	# a lord
+	dynasty=982367
+
+	religion="pirate"
+	culture="lysene"
+
+	father=116982367
+
+	8234.1.1 = {birth="8234.1.1"}
+	8250.1.1 = {add_trait=poor_warrior}
+}
+118982367 = {
+	name="Ferrego"	# not a lord
+	dynasty=982367
+
+	religion="pirate"
+	culture="lysene"
+
+	father=117982367
+
+	8264.1.1 = {birth="8264.1.1"}
+	8280.1.1 = {add_trait=trained_warrior}
+}
+###House Saan###
+100982370 = {
+	name="Lysono"	# a lord
+	dynasty=982370
+
+	religion="pirate"
+	culture="lysene"
+	
+	add_trait = ruthless
+	add_trait = tough_soldier
+
+	7975.1.1 = {birth="7975.1.1"}
+	7991.1.1 = {add_trait=trained_warrior}
+	7993.1.1 = {add_spouse=400982370}
+	8024.1.1 = {death="8024.1.1"}
+}
+400982370 = {
+	name="Orbela"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	7975.1.1 = {birth="7975.1.1"}
+	8024.1.1 = {death="8024.1.1"}
+}
+101982370 = {
+	name="Salassor"	# a lord
+	dynasty=982370
+
+	religion="pirate"
+	culture="lysene"
+
+	father=100982370
+	mother=400982370
+	
+	add_trait = ruthless
+	add_trait = tough_soldier
+
+	8007.1.1 = {birth="8007.1.1"}
+	8023.1.1 = {add_trait=trained_warrior}
+	8025.1.1 = {add_spouse=401982370}
+	8057.1.1 = {death="8057.1.1"}
+}
+401982370 = {
+	name="Qarria"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	8007.1.1 = {birth="8007.1.1"}
+	8057.1.1 = {death="8057.1.1"}
+}
+102982370 = {
+	name="Groleo"	# not a lord
+	dynasty=982370
+
+	religion="pirate"
+	culture="lysene"
+
+	father=100982370
+	mother=400982370
+
+	8009.1.1 = {birth="8009.1.1"}
+	8025.1.1 = {add_trait=trained_warrior}
+	8080.1.1 = {death = {death_reason = death_accident}}
+}
+103982370 = {
+	name="Jaqea"	# not a lord
+	female=yes
+	dynasty=982370
+
+	religion="pirate"
+	culture="lysene"
+
+	father=101982370
+	mother=401982370
+
+	8042.1.1 = {birth="8042.1.1"}
+	8066.1.1 = {death="8066.1.1"}
+}
+105982370 = {
+	name="Collio"	# a lord
+	dynasty=982370
+
+	religion="pirate"
+	culture="lysene"
+
+	father=101982370
+	mother=401982370
+
+	8047.1.1 = {birth="8047.1.1"}
+	8063.1.1 = {add_trait=poor_warrior}
+	8065.1.1 = {add_spouse=405982370}
+	8115.1.1 = {death="8115.1.1"}
+}
+405982370 = {
+	name="Betharios"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	8047.1.1 = {birth="8047.1.1"}
+	8115.1.1 = {death="8115.1.1"}
+}
+106982370 = {
+	name="Tregar"	# a lord
+	dynasty=982370
+
+	religion="pirate"
+	culture="lysene"
+
+	father=105982370
+	mother=405982370
+
+	8075.1.1 = {birth="8075.1.1"}
+	8091.1.1 = {add_trait=skilled_warrior}
+	8093.1.1 = {add_spouse=406982370}
+	8138.1.1 = {death="8138.1.1"}
+}
+406982370 = {
+	name="Ternesia"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	8075.1.1 = {birth="8075.1.1"}
+	8138.1.1 = {death="8138.1.1"}
+}
+107982370 = {
+	name="Ferrega"	# not a lord
+	female=yes
+	dynasty=982370
+
+	religion="pirate"
+	culture="lysene"
+
+	father=105982370
+	mother=405982370
+
+	8076.1.1 = {birth="8076.1.1"}
+	8122.1.1 = {death="8122.1.1"}
+}
+108982370 = {
+	name="Taena"	# not a lord
+	female=yes
+	dynasty=982370
+
+	religion="pirate"
+	culture="lysene"
+
+	father=106982370
+	mother=406982370
+
+	8096.1.1 = {birth="8096.1.1"}
+	8149.1.1 = {death="8149.1.1"}
+}
+110982370 = {
+	name="Sulleham"	# a lord, semi canon from the MUSH
+	dynasty=982370
+
+	religion="pirate"
+	culture="lysene"
+
+	father=106982370
+	mother=406982370
+
+	8101.1.1 = {birth="8101.1.1"}
+	8117.1.1 = {add_trait=skilled_warrior}
+	8119.1.1 = {add_spouse=410982370}
+	8167.1.1 = {death="8167.1.1"}
+}
+410982370 = {
+	name="Mellario"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	8101.1.1 = {birth="8101.1.1"}
+	8167.1.1 = {death="8167.1.1"}
+}
+150982370 = {
+	name="Saathos"	# Canon, Corsair King
+	dynasty=982370
+	
+	martial=5
+	stewardship=3
+	diplomacy=5
+	intrigue=4
+	learning=2
+
+	religion="pirate"
+	culture="lysene"
+
+	father=106982370
+	mother=406982370
+	
+	add_trait=ambitious
+	add_trait=deceitful
+	add_trait=brave
+	add_trait=skilled_tactician
+	
+	8102.1.1 = {birth="8102.1.1"}
+	8118.1.1 = {add_trait=trained_warrior}
+	8120.1.1 = {
+		employer=113300544
+		effect = { 
+			if = {
+				limit = { NOT = { year = 8125 } }
+				religion="rhllor" 
+			}	
+		}
+	}
+	8125.1.1 = { #Becomes Corsair King
+		effect = { religion="corsair" }
+		add_trait=pirate
+		employer=0
+	}
+	8155.1.1 = {
+		death="8155.1.1"
+		religion="corsair"
+	}
+}
+111982370 = {
+	name="Gyleno"	# a lord
+	dynasty=982370
+
+	religion="pirate"
+	culture="lysene"
+
+	father=110982370
+	mother=410982370
+
+	8128.1.1 = {birth="8128.1.1"}
+	8144.1.1 = {add_trait=trained_warrior}
+	8146.1.1 = {add_spouse=411982370}
+	8180.1.1 = {death = {death_reason = death_battle}}
+}
+411982370 = {
+	name="Rogga"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	8128.1.1 = {birth="8128.1.1"}
+	8180.1.1 = {death="8180.1.1"}
+}
+112982370 = {
+	name="Lysono"	# a lord
+	dynasty=982370
+
+	religion="pirate"
+	culture="lysene"
+
+	father=111982370
+	mother=411982370
+
+	8157.1.1 = {birth="8157.1.1"}
+	8173.1.1 = {add_trait=poor_warrior}
+	8175.1.1 = {add_spouse=412982370}
+	8219.1.1 = {death="8219.1.1"}
+}
+412982370 = {
+	name="Alia"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	8157.1.1 = {birth="8157.1.1"}
+	8219.1.1 = {death="8219.1.1"}
+}
+113982370 = {
+	name="Qarria"	# not a lord
+	female=yes
+	dynasty=982370
+
+	religion="pirate"
+	culture="lysene"
+
+	father=111982370
+	mother=411982370
+
+	8159.1.1 = {birth="8159.1.1"}
+	8208.1.1 = {death="8208.1.1"}
+}
+114982370 = {
+	name="Noho"	# a lord
+	dynasty=982370
+
+	religion="pirate"
+	culture="lysene"
+
+	father=112982370
+	mother=412982370
+
+	8190.1.1 = {birth="8190.1.1"}
+	8206.1.1 = {add_trait=skilled_warrior}
+	8250.1.1 = {death="8250.1.1"}
+}
+115982370 = {
+	name="Ordello"	# a lord
+	dynasty=982370
+
+	religion="pirate"
+	culture="lysene"
+
+	father=112982370
+	mother=412982370
+
+	8191.1.1 = {birth="8191.1.1"}
+	8207.1.1 = {add_trait=trained_warrior}
+	8209.1.1 = {add_spouse=415982370}
+	8253.1.1 = {death="8253.1.1"}
+}
+415982370 = {
+	name="Rogga"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	8191.1.1 = {birth="8191.1.1"}
+	8266.1.1 = {death="8266.1.1"}
+}
+117982370 = {
+	name="Terro"	# not a lord
+	dynasty=982370
+
+	religion="pirate"
+	culture="lysene"
+
+	father=115982370
+	mother=415982370
+
+	8225.1.1 = {birth="8225.1.1"}
+	8241.1.1 = {add_trait=poor_warrior}
+	8245.1.1 = {death="8245.1.1"}
+}
+118982370 = {
+	name="Samarro"	# a lord
+	dynasty=982370
+
+	religion="pirate"
+	culture="lysene"
+	
+	martial=12
+	diplomacy=10
+	intrigue=8
+	stewardship=5
+	add_trait="pirate"
+	add_trait=greedy
+	add_trait=ruthless
+	add_trait=proud
+
+	father=115982370
+	mother=415982370
+
+	8227.1.1 = {birth="8227.1.1"}
+	8243.1.1 = {add_trait=skilled_warrior}
+	8245.1.1 = {add_spouse=418982370}
+	8259.1.1 = {
+		give_nickname = nick_the_last_valyrian
+		effect = { 
+			set_character_flag = band_of_nine
+			liege = {
+				reverse_opinion = {
+					who = ROOT
+					modifier = opinion_band_of_nine
+					years = 20
+				}
+			}	
+		} 
+	}
+	8280.1.1 = {death="8280.1.1"}
+}
+418982370 = {
+	name="Terrios"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	8227.1.1 = {birth="8227.1.1"}
+	8280.1.1 = {death="8280.1.1"}
+}
+### Sallador ! A mighty pirate ! ###
+119982370 = { 
+	name="Salladhor"
+	dynasty=982370
+	dna="akhmisffaaq"
+	properties="ae00ba"
+	
+	martial = 7
+	diplomacy = 7
+	stewardship = 6
+	intrigue = 5
+	learning = 3
+
+	religion="pirate"
+	culture="lysene"
+
+	father=118982370
+	mother=418982370
+
+	add_trait="proud"
+	add_trait="fashionable"
+	add_trait="charismatic_negotiator"
+	add_trait="gregarious"
+	add_trait="lustful"
+	
+	8259.1.1 = {birth="8259.1.1"}
+	8275.1.1 = {add_trait=trained_warrior}
+	8284.1.1 = {
+		effect = {
+			prestige = 450
+			wealth = 300
+			add_character_modifier = {
+				name = regular_flagship
+				duration = 9125
+			}
+			hidden_tooltip = {
+				e_rebels = {
+					holder_scope = {
+						create_character = {
+							dynasty = none
+							name = "Valyrian"
+							culture = ROOT
+							religion = ROOT
+						}
+						new_character = {
+							add_trait = dead_target
+							ROOT = { set_character_flag = flagship_name_@PREV }
+							death = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	8299.2.11 = {
+		effect = {
+			d_dragonstone = {
+				holder_scope = {
+					ROOT = { join_attacker_wars = PREV }
+				}
+			}
+		}
+	}
+}
+#concubines
+419982370 = {
+	name="Serala"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	8272.1.1 = {birth="8272.1.1"}
+	8287.1.1 = {
+		employer = 119982370
+		effect = {
+			liege = { ROOT = { add_consort = PREV } }
+		}
+	}
+}
+429982370 = {
+	name="Narba"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	8277.1.1 = {birth="8277.1.1"}
+	8292.1.1 = {
+		employer = 119982370
+		effect = {
+			liege = { ROOT = { add_consort = PREV } }
+		}
+	}
+}
+439982370 = {
+	name="Yorka"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	8278.1.1 = {birth="8278.1.1"}
+	8294.1.1 = {
+		employer = 119982370
+		effect = {
+			liege = { ROOT = { add_consort = PREV } }
+		}
+	}
+}
+120982370 = {
+	name="Lysono"	# not a lord
+	dynasty=982370
+
+	religion="pirate"
+	culture="lysene"
+
+	father=119982370
+	mother=419982370
+	
+	add_trait = child_of_consort
+
+	8287.1.1 = {birth="8287.1.1"}
+	8303.1.1 = {add_trait=poor_warrior}
+}
+121982370 = {
+	name="Mellario"	# not a lord
+	female=yes
+	dynasty=982370
+
+	religion="pirate"
+	culture="lysene"
+
+	father=119982370
+	mother=419982370
+	
+	add_trait = child_of_consort
+
+	8290.1.1 = {birth="8290.1.1"}
+}
+122982370 = {
+	name="Byan"	# not a lord
+	dynasty=982370
+
+	religion="pirate"
+	culture="lysene"
+
+	father=119982370
+	mother=429982370
+	
+	add_trait = child_of_consort
+
+	8293.1.1 = {birth="8293.1.1"}
+	8309.1.1 = {add_trait=skilled_warrior}
+}
+123982370 = {
+	name="Ferrego"	# not a lord
+	dynasty=982370
+
+	religion="pirate"
+	culture="lysene"
+
+	father=119982370
+	mother=439982370
+	
+	add_trait = child_of_consort
+
+	8295.1.1 = {birth="8295.1.1"}
+	8311.1.1 = {add_trait=trained_warrior}
+}
+
+### Bloodstone rulers to stop fix targaryen title history
+1001639 = {
+	name="Syrio"	# not a lord
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+	
+	add_trait = poison
+
+	7965.1.1 = {birth="7965.1.1"}
+	7981.1.1 = {add_trait=skilled_warrior}
+	7983.1.1 = {add_spouse=4001639}
+	8023.1.1 = {death="8023.1.1"}
+}
+4001639 = {
+	name="Syrea"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	7965.1.1 = {birth="7965.1.1"}
+	8023.1.1 = {death="8023.1.1"}
+}
+1011639 = {
+	name="Mero"	# a lord
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=1001639
+	mother=4001639
+
+	7994.1.1 = {birth="7994.1.1"}
+	8010.1.1 = {add_trait=skilled_warrior}
+	8012.1.1 = {add_spouse=4011639}
+	8023.1.1 = {add_trait = poison}
+	8032.1.1 = {death="8032.1.1"}
+}
+4011639 = {
+	name="Lanna"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	7994.1.1 = {birth="7994.1.1"}
+	8032.1.1 = {death="8032.1.1"}
+}
+1051639 = {
+	name="Daario"	# not a lord
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=1001639
+	mother=4001639
+
+	7996.1.1 = {birth="7996.1.1"}
+	8012.1.1 = {add_trait=poor_warrior}
+	8054.1.1 = {death="8054.1.1"}
+}
+1061639 = {
+	name="Torma"	# not a lord
+	female=yes
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=1011639
+	mother=4011639
+
+	8022.1.1 = {birth="8022.1.1"}
+	8028.1.1 = {death="8028.1.1"}
+}
+1071639 = {
+	name="Moredo"	# a lord
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=1011639
+	mother=4011639
+
+	8025.1.1 = {birth="8025.1.1"}
+	8032.1.1 = {add_trait = poison}
+	8041.1.1 = {add_trait=trained_warrior}
+	8043.1.1 = {add_spouse=4071639}
+	8081.1.1 = {death="8081.1.1"}
+}
+4071639 = {
+	name="Moredea"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	8025.1.1 = {birth="8025.1.1"}
+	8081.1.1 = {death="8081.1.1"}
+}
+1081639 = {
+	name="Yorko"	# a lord
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=1071639
+	mother=4071639
+
+	8054.1.1 = {birth="8054.1.1"}
+	8070.1.1 = {add_trait=trained_warrior}
+	8072.1.1 = {add_spouse=4081639}
+	8081.1.1 = {add_trait = poison}
+	8129.1.1 = {death="8129.1.1"}
+}
+4081639 = {
+	name="Bellonara"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	8054.1.1 = {birth="8054.1.1"}
+	8129.1.1 = {death="8129.1.1"}
+}
+1091639 = {
+	name="Yorka"	# not a lord
+	female=yes
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=1081639
+	mother=4081639
+
+	8083.1.1 = {birth="8083.1.1"}
+	8139.1.1 = {death="8139.1.1"}
+}
+1101639 = {
+	name="Meralyn"	# a lord
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=1081639
+	mother=4081639
+
+	8086.1.1 = {birth="8086.1.1"}
+	8102.1.1 = {add_trait=skilled_warrior}
+	8104.1.1 = {add_spouse=4101639}
+	8129.1.1 = {add_trait = poison}
+	8131.1.1 = {death="8131.1.1"}
+}
+4101639 = {
+	name="Talea"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	8086.1.1 = {birth="8086.1.1"}
+	8131.1.1 = {death="8131.1.1"}
+}
+1111639 = {
+	name="Areo"	# a lord
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=1101639
+	mother=4101639
+
+	8115.1.1 = {birth="8115.1.1"}
+	8131.1.1 = {
+		add_trait=skilled_warrior
+		add_trait=poison
+	}
+	8133.1.1 = {add_spouse=4111639}
+	8153.1.1 = {death = {death_reason = death_execution}}
+}
+4111639 = {
+	name="Lucerre"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	8115.1.1 = {birth="8115.1.1"}
+	8153.1.1 = {death="8153.1.1"}
+}
+1121639 = {
+	name="Terro"	# not a lord
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=1101639
+	mother=4101639
+
+	8116.1.1 = {birth="8116.1.1"}
+	8132.1.1 = {add_trait=poor_warrior}
+	8171.1.1 = {death="8171.1.1"}
+}
+1131639 = {
+	name="Orbela"	# not a lord
+	female=yes
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=1111639
+	mother=4111639
+
+	8139.1.1 = {birth="8139.1.1"}
+	8192.1.1 = {death="8192.1.1"}
+}
+1141639 = {
+	name="Beqqo"	# a lord
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=1111639
+	mother=4111639
+
+	8141.1.1 = {birth="8141.1.1"}
+	8153.1.1 = {add_trait = poison}
+	8157.1.1 = {add_trait=trained_warrior}
+	8159.1.1 = {add_spouse=4141639}
+	8185.1.1 = {death = {death_reason = death_battle}}
+}
+4141639 = {
+	name="Brea"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	8141.1.1 = {birth="8141.1.1"}
+	8185.1.1 = {death="8185.1.1"}
+}
+1151639 = {
+	name="Moreo"	# a lord
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=1141639
+	mother=4141639
+
+	8159.1.1 = {birth="8159.1.1"}
+	8175.1.1 = {add_trait=trained_warrior}
+	8185.1.1 = {add_trait = poison}
+	8217.1.1 = {death="8217.1.1"}
+}
+1161639 = {
+	name="Jaqen"	# not a lord
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=1141639
+	mother=4141639
+
+	8161.1.1 = {birth="8161.1.1"}
+	8177.1.1 = {add_trait=master_warrior}
+	8216.1.1 = {death = {death_reason = death_accident}}
+}
+1171639 = {
+	name="Denyo"	# a lord
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=1141639
+	mother=4141639
+
+	8164.1.1 = {birth="8164.1.1"}
+	8180.1.1 = {add_trait=trained_warrior}
+	8182.1.1 = {add_spouse=4171639}
+	8217.1.1 = {add_trait = poison}
+	8222.1.1 = {death="8222.1.1"}
+}
+4171639 = {
+	name="Betharios"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	8164.1.1 = {birth="8164.1.1"}
+	8222.1.1 = {death="8222.1.1"}
+}
+1181639 = {
+	name="Sallodhor"	# not a lord
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=1141639
+	mother=4141639
+
+	8166.1.1 = {birth="8166.1.1"}
+	8182.1.1 = {add_trait=poor_warrior}
+	8242.1.1 = {death="8242.1.1"}
+}
+1191639 = {
+	name="Illyrio"	# a lord
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=1171639
+	mother=4171639
+
+	8195.1.1 = {birth="8195.1.1"}
+	8211.1.1 = {add_trait=poor_warrior}
+	8213.1.1 = {add_spouse=4191639}
+	8222.1.1 = {add_trait = poison}
+	8251.1.1 = {death = {death_reason = death_accident}}
+}
+4191639 = {
+	name="Ferrega"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	8195.1.1 = {birth="8195.1.1"}
+	8260.1.1 = {death="8260.1.1"}
+}
+10001639 = {
+	name="Roro"	# a lord
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=1191639
+	mother=4191639
+
+	8228.1.1 = {birth="8228.1.1"}
+	8244.1.1 = {add_trait=skilled_warrior}
+	8246.1.1 = {add_spouse=40001639}
+	8260.11.11 = {add_trait = poison}
+	8281.1.1 = {death = {death_reason = death_battle}}
+}
+40001639 = {
+	name="Narba"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	8228.1.1 = {birth="8228.1.1"}
+	8281.1.1 = {death="8281.1.1"}
+}
+1201639 = {
+	name="Sallodhor"	# not a lord
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=1191639
+	mother=4191639
+
+	8230.1.1 = {birth="8230.1.1"}
+	8246.1.1 = {add_trait=poor_warrior}
+	8283.1.1 = {death="8283.1.1"}
+}
+1211639 = {
+	name="Pynta"	# not a lord
+	female=yes
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=1191639
+	mother=4191639
+
+	8231.1.1 = {birth="8231.1.1"}
+	8280.1.1 = {death="8280.1.1"}
+}
+10011639 = {
+	name="Lothea"	# not a lord
+	female=yes
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=10001639
+	mother=40001639
+
+	8251.1.1 = {birth="8251.1.1"}
+	8327.1.1 = {death="8327.1.1"}
+}
+10021639 = {
+	name = "Gyleno"	# a lord
+	dynasty = 982375
+	dna = blfdepiddfu
+	properties = mn0eck000000
+
+	religion = pirate
+	culture = lysene
+
+	father = 10001639
+	mother = 40001639
+	
+	diplomacy = 6
+	martial = 6
+	stewardship = 5
+	intrigue = 5
+	learning = 3
+	
+	add_trait = fair
+	add_trait = ruthless
+	add_trait = brave
+	add_trait = deceitful
+	add_trait = gregarious
+	add_trait = lustful
+
+	8262.1.1 = { birth= "8262.1.1" }
+	8278.1.1 = {
+		add_trait = tough_soldier
+		add_trait = trained_warrior
+		add_trait = duelist
+		add_trait = trickster
+	}
+	8280.1.1 = { add_spouse=40021639 }
+	8281.1.1 = {add_trait = poison}
+}
+40021639 = {
+	name="Betharios"
+	female=yes
+
+	religion="pirate"
+	culture="lysene"
+
+	8252.1.1 = {birth="8252.1.1"}
+	8318.1.1 = {death="8318.1.1"}
+}
+# 10031639 = {
+	# name="Moredo"	# not a lord
+	# dynasty=982375
+
+	# religion="pirate"
+	# culture="lysene"
+
+	# father=10001639
+	# mother=40001639
+
+	# 8254.1.1 = {birth="8254.1.1"}
+	# 8270.1.1 = {add_trait=skilled_warrior}
+	# 8298.1.1 = {death="8298.1.1"}
+# }
+# 10041639 = {
+	# name="Jaqen"	# not a lord
+	# dynasty=982375
+
+	# religion="pirate"
+	# culture="lysene"
+
+	# father=10001639
+	# mother=40001639
+
+	# 8255.1.1 = {birth="8255.1.1"}
+	# 8271.1.1 = {add_trait=trained_warrior}
+	# 8289.1.1 = {death="8289.1.1"}
+# }
+10051639 = {
+	name="Gylora"	# not a lord
+	female=yes
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=10001639
+	mother=40001639
+
+	8257.1.1 = {birth="8257.1.1"}
+	8297.1.1 = {death = {death_reason = death_dungeon}}
+}
+10061639 = {
+	name="Tormo"	# not a lord
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=10021639
+	mother=40021639
+
+	8289.1.1 = {birth="8289.1.1"}
+}
+10071639 = {
+	name="Daario"	# not a lord
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=10021639
+	mother=40021639
+
+	8292.1.1 = {birth="8292.1.1"}
+}
+10081639 = {
+	name="Ternesia"	# not a lord
+	female=yes
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	father=10021639
+	mother=40021639
+
+	8296.1.1 = {birth="8296.1.1"}
+}
+10091639 = {
+	name="Alia"	# not a lord
+	female=yes
+	dynasty=982375
+
+	religion="pirate"
+	culture="lysene"
+
+	mother=10051639
+
+	8297.1.1 = {birth="8297.1.1"}
+}

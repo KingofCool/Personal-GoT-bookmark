@@ -1,0 +1,31 @@
+# 80 - Rushmoor
+
+# County Title
+title = c_rushmoor
+
+# Settlements
+max_settlements = 4
+
+b_rushmoor = castle
+b_moorville = city
+b_moorkeep = castle
+
+# Misc
+culture = riverlander
+religion = the_seven
+
+# History
+
+
+
+
+6000.1.1 = {
+
+b_rushmoor = ca_asoiaf_river_basevalue_1
+
+b_moorville = ct_asoiaf_river_basevalue_1
+b_moorville = ct_asoiaf_river_basevalue_2
+
+b_moorkeep = ca_asoiaf_river_basevalue_1
+
+}

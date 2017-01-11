@@ -1,0 +1,24 @@
+# 175 - Nunns Deep
+
+# County Title
+title = c_nunns_deep
+
+# Settlements
+max_settlements = 2
+b_nunns_deep = castle
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_nunns_deep = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_nunns_deep = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_nunns_deep = ca_asoiaf_westerland_basevalue_3}
+#6000.1.1 = {b_nunns_deep = ca_asoiaf_westerland_basevalue_4}
+6000.1.1 = {b_nunns_deep = ca_goldmine}
+
+8070.1.1 = { #Jaehaerys constructs road network
+	b_nunns_deep = ca_river_road
+}

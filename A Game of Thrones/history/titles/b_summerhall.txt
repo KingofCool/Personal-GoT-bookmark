@@ -1,0 +1,44 @@
+7000.1.1={
+	liege="c_summerhall"
+	name = B_BLACKHEART_KEEP
+}
+7967.1.1 = { holder=10000307 } # Symeon (nc)
+7988.1.1 = { holder=20000307 } # Clarence (nc)
+8017.1.1 = { holder=40000307 } # Martyn (nc)
+8065.1.1 = { holder=50000307 } # Robert (nc)
+8080.1.1 = { holder=60000307 } # Tristan (nc)
+8136.1.1 = { holder=80000307 } # Gyles (nc)
+8170.1.1 = { holder=100000307 } # Myles (nc)
+8178.6.1={
+	holder = 77020		#Aegon IV the Unworthy
+}
+8184.1.1={
+	holder = 77023		#Daeron II the Good
+}
+8185.1.1={
+	holder = 77024 		#Daemon Blackfyre
+}
+8196.6.1={
+	holder = 77031		#Maekar I
+}
+8198.1.1={	
+	reset_name = yes
+}
+8233.6.1={
+	holder = 77034		#Aegon V the Unlikley
+}
+8259.1.1={
+	holder = 77036		#Jaehaerys II
+}
+8262.1.1={
+	holder = 77037		#Aerys II the Mad
+}
+8284.1.1={
+	holder = 317		#Robert I Baratheon
+}
+8298.10.28 = {
+	holder = 9316 #Joffrey I "Baratheon"
+}
+8300.1.2 = {
+	holder = 7316 #Tommen I "Baratheon"
+}

@@ -1,0 +1,33 @@
+# 199 - cornfield
+
+# County Title
+title = c_cornfield
+
+# Settlements
+max_settlements = 5
+b_cornfield = castle
+b_cornfieldtown = city
+b_cornfieldtowntwo = city
+b_cornfieldsept = temple
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_cornfield = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_cornfield = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_cornfield = ca_asoiaf_westerland_basevalue_3}
+
+6000.1.1 = {b_cornfieldtown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_cornfieldtown = ct_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_cornfieldtown = ct_asoiaf_westerland_basevalue_3}
+6000.1.1 = {b_cornfieldtown = ct_asoiaf_westerland_basevalue_4}
+#6000.1.1 = {b_cornfieldtown = ct_asoiaf_westerland_basevalue_5}
+
+6000.1.1 = {b_cornfieldtowntwo = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_cornfieldtowntwo = ct_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_cornfieldtowntwo = ct_asoiaf_westerland_basevalue_3}
+
+8260.5.4 = { b_cornfield = ca_asoiaf_westerland_basevalue_4 }

@@ -1,0 +1,31 @@
+1.1.1 = {
+	law = succ_turkish_succession
+	law = agnatic_succession
+}
+7975.1.1 = { holder=101559112 } # Lenn (nc)
+8008.1.1 = { holder=102559112 } # Orell (nc)
+8041.1.1 = { holder=103559112 } # Torwynd (nc)
+8073.1.1 = { holder=106559112 } # Arnolf (nc)
+8091.1.1 = { holder=107559112 } # Beron (nc)
+8144.1.1 = { holder=109559112 } # Halleck (nc)
+8176.1.1 = { holder=114559112 } # Lenn (nc)
+8199.1.1 = { holder=117559112 } # Soren (nc)
+8211.1.1 = { holder=118559112 } # Dryn (nc)
+8213.1.1={
+	liege="k_beyond_wall"
+}
+8226.9.9={
+	liege="0"
+}
+8247.1.1 = { holder=119559112 } # Ondrew (nc)
+8262.1.1 = { holder=121559112 } # Borroq (nc)
+8282.1.1={
+	holder=157008
+}
+8298.1.1={
+	liege="k_beyond_wall"
+}
+8300.1.1={
+	holder=999000666
+}
+

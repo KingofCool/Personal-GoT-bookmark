@@ -1,0 +1,64 @@
+900.1.1={
+	liege="d_darry"
+}
+7992.1.1 = {
+	holder=114137
+}
+8040.1.1 = {
+	holder=113137
+}
+8052.1.1 = {
+	holder=112137
+}
+8072.1.1 = {
+	holder=111137
+}
+8085.1.1 = {
+	holder=110137
+}
+8100.1.1 = {
+	holder=109137 # Lucias Darry
+}
+8119.1.1 = {
+	holder=5500137 # Jonothor Darry
+}
+8129.7.1 = {
+    holder=5510137 # Derrick Darry
+}
+8131.1.1={
+	holder=107137 # Roland Darry
+}
+8168.1.1 = {
+	holder=105137 # Jorin Darry
+}
+8203.1.1 = {
+	holder=104137
+}
+8238.1.1 = {
+	holder=103137
+}
+8263.1.1 = {
+	holder=100137
+}
+8283.7.1={
+	holder=137
+}
+8283.7.1={
+	liege="k_riverlands"
+}
+8298.10.1={
+	holder=1137
+}
+8299.5.1={
+	holder=159
+}
+8299.10.15={
+	holder=4159
+}
+8299.11.12 = {
+	holder=8190 #Lancel
+	liege="d_darry"
+}
+8300.4.1 = {
+	holder=9190 #Martyn
+}

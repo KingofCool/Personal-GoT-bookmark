@@ -1,0 +1,34 @@
+# 78 - Freylands
+
+# County Title
+title = c_freylands
+
+# Settlements
+max_settlements = 4
+
+b_fairstead = castle
+b_carcroft = city
+
+# Misc
+culture = riverlander
+religion = the_seven
+
+# History
+
+
+6000.1.1 = {
+
+b_fairstead = ca_asoiaf_river_basevalue_1
+b_fairstead = ca_asoiaf_river_basevalue_2
+
+}
+
+6000.1.1 = {
+
+b_carcroft = ct_asoiaf_river_basevalue_1
+b_carcroft = ct_asoiaf_river_basevalue_2
+
+}
+8070.1.1 = { #Jaehaerys constructs road network
+	b_fairstead = ca_kingsroad
+}

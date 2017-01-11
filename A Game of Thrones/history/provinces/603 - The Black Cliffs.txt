@@ -1,0 +1,29 @@
+# 603 - Black Cliffs
+
+# County Title
+title = c_black_cliffs
+
+# Settlements
+max_settlements = 3
+
+b_black_cliffs = city
+b_black_cliffscastle = castle
+b_black_cliffstemple = temple
+
+# Misc
+culture = tolosi
+religion = valyrian
+
+# History
+6000.1.1 = {
+	b_black_cliffs = ct_asoiaf_essos_basevalue_1
+	b_black_cliffs = ct_asoiaf_essos_basevalue_2
+	b_black_cliffs = ct_asoiaf_essos_basevalue_3
+	
+	b_black_cliffscastle = ca_asoiaf_essos_basevalue_1
+	b_black_cliffscastle = ca_asoiaf_essos_basevalue_2
+	b_black_cliffscastle = ca_asoiaf_essos_basevalue_3
+	
+	trade_post = b_kandaq
+
+}

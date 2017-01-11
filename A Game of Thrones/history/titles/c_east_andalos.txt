@@ -1,0 +1,16 @@
+5000.1.1={
+	law = succ_primogeniture
+	liege = k_pentos
+}
+7964.1.1 = { holder=100174901 } # Morton (nc)
+8009.1.1 = { holder=106174901 } # Royce (nc)
+8054.1.1 = { holder=107174901 } # Gilwood (nc)
+8096.1.1 = { holder=112174901 } # Horton (nc)
+8130.1.1 = { holder=115174901 } # Albar (nc)
+8140.1.1 = { holder=117174901 } # Harlan (nc)
+8165.1.1 = { holder=121174901 } # Randyll (nc)
+8195.1.1 = { holder=122174901 } # Wallace (nc)
+8216.1.1 = { holder=126174901 } # Gerold (nc)
+8237.1.1 = { holder=129174901 } # Ronnel (nc)
+8253.1.1 = { holder=130174901 } # Umfred (nc)
+8279.1.1 = { holder=133174901 } # Yohn (nc)

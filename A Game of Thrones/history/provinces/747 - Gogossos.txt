@@ -1,0 +1,31 @@
+# 747 - Gogossos
+
+# County Title
+title = c_gogossos
+
+# Settlements
+max_settlements = 3
+
+b_gogossos = city
+b_gogossos_castle = castle
+b_gogossos_temple = temple
+
+# Misc
+culture = basilisk_islander
+religion = corsair
+
+6000.1.1 = {
+	b_gogossos = ct_asoiaf_summerisland_basevalue_1
+	b_gogossos = ct_asoiaf_summerisland_basevalue_2
+	b_gogossos = ct_asoiaf_summerisland_basevalue_3
+	b_gogossos = ct_asoiaf_summerisland_basevalue_4
+	b_gogossos = ct_asoiaf_summerisland_basevalue_5
+	b_gogossos = ct_asoiaf_summerisland_basevalue_6
+
+	b_gogossos_castle = ca_asoiaf_summerisland_basevalue_1
+	b_gogossos_castle = ca_asoiaf_summerisland_basevalue_2
+	b_gogossos_castle = ca_asoiaf_summerisland_basevalue_3
+	b_gogossos_castle = ca_asoiaf_summerisland_basevalue_4
+	b_gogossos_castle = ca_asoiaf_summerisland_basevalue_5
+	b_gogossos_castle = ca_asoiaf_summerisland_basevalue_6
+}

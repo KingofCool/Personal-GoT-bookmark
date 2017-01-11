@@ -1,0 +1,12 @@
+800.1.1 = {liege="d_duskendale"}
+
+7994.1.1 = { holder=3001039 } # Pate Byrch (nc)
+8035.1.1 = { holder=3004039 } # Will Byrch (nc)
+8072.1.1 = { holder=3008039 } # Gendry Byrch (nc)
+8110.1.1 = { holder=3013039 } # Monford Byrch (nc)
+8146.1.1 = { holder=3015039 } # Alaric Byrch (nc)
+8170.1.1 = { holder=3018039 } # Triston Byrch (nc)
+8196.1.1 = { holder=3019039 } # Monford Byrch (nc)
+8204.1.1 = { holder=3021039 } # Matthos Byrch (nc)
+8266.1.1 = { holder=3027039 } # Clayton Byrch (nc)
+8287.1.1 = { holder=3032039 } # Devan Byrch (nc)

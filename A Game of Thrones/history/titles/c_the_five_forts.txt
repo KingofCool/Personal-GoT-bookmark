@@ -1,0 +1,42 @@
+600.1.1={
+	liege="d_the_five_forts"
+	law = succ_appointment
+	law = agnatic_succession
+	effect = {
+		set_title_flag = military_command
+		holder_scope = { 
+			if = {
+				limit = { primary_title = { title = PREVPREV } }
+				set_government_type = military_command_government 
+				PREV = { succession = appointment }
+				recalc_succession = yes
+			}	
+		}
+		any_direct_de_jure_vassal_title = {
+			set_title_flag = military_command
+			holder_scope = { 
+				if = {
+					limit = { primary_title = { title = PREVPREV } }
+					set_government_type = military_command_government 
+					PREV = { succession = appointment }
+					recalc_succession = yes
+				}	
+			}		
+		}
+	}
+}
+7996.1.1 = { 
+	holder=10055954 # Gafur (nc)
+} 
+8027.1.1 = { holder=10155954 } # Hasan_Hasan (nc)
+8056.1.1 = { holder=10655954 } # Mukhtar (nc)
+8079.1.1 = { holder=10755954 } # Azam (nc)
+8081.1.1 = { holder=11155954 } # Fadil (nc)
+8123.1.1 = { holder=11455954 } # Mukhtar (nc)
+8156.1.1 = { holder=11755954 } # Ramadan (nc)
+8165.1.1 = { holder=11955954 } # Jibril (nc)
+8197.1.1 = { holder=12155954 } # Uways (nc)
+8221.1.1 = { holder=12355954 } # Burhanaddin (nc)
+8252.1.1 = { holder=13055954 } # Bakr (nc)
+
+

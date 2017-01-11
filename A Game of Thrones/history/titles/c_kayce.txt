@@ -1,0 +1,25 @@
+#c_kayce
+900.1.1={
+	liege="d_kayce"
+}
+5335.1.1 = {
+	holder = 150195 #Herrock Whoreson
+}
+5365.1.1 = { holder = 0 }
+
+7880.1.1 = { holder = 315195 } # Kenning of Kayce, fourth son of Harlaw.
+7905.1.1 = { holder = 314195 } 
+7945.1.1 = { holder = 313195 }
+7975.1.1 = { holder = 312195 }
+7982.1.1 = { holder = 311195 }
+7998.6.6 = { holder = 310195 }
+8036.1.1 = { holder = 309195 }
+8040.1.1 = { holder = 308195 }
+8093.1.1 = { holder = 307195 }
+8116.1.1 = { holder = 306195 }
+8129.4.9 = { holder = 305195 }
+8173.1.1 = { holder = 304195 }
+8196.5.5 = { holder = 303195 }
+8236.1.1 = { holder = 302195 }
+8261.1.1 = { holder = 300195 }	
+8273.1.1 = { holder = 195  }

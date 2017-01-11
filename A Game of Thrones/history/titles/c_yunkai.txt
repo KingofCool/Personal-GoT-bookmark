@@ -1,0 +1,21 @@
+600.1.1={
+	liege="d_yunkai"
+}
+7995.1.1 = { holder=150360023 } # Grazdhan (nc)
+8012.1.1 = { holder=100360024 } # Yezzan (nc)
+8028.1.1 = { holder=100360022 } # Maezon (nc)
+8050.1.1 = { holder=101360020 } # Haezdhar (nc)
+8072.1.1 = { holder=106360023 } # Maezon (nc)
+8113.1.1 = { holder=106360024 } # Sharkaz (nc)
+8135.1.1 = { holder=109360022 } # Mizlak (nc)
+8142.1.1 = { holder=116360020 } # Grazdan (nc)
+8170.1.1 = { holder=112360024 } # Ghazdor (nc)
+8187.1.1 = { holder=116360023 } # Yurkhaz (nc)
+8200.1.1 = { holder=117360022 } # Lazhak (nc)
+8218.1.1 = { holder=113360024 } # Skahaz (nc)
+8224.1.1 = { holder=122360020 } # Grazdhan (nc)
+8239.1.1 = { holder=125360023 } # Kraznys (nc)
+8264.1.1 = { holder=130360020 } # Gazdhor (nc)
+8280.1.1={
+	holder=6571003 # Yurkhaz
+}

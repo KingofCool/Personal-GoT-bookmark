@@ -1,0 +1,33 @@
+# 224 - Rollingford
+
+# County Title
+title = c_rollingford
+
+# Settlements
+max_settlements = 3
+b_rollingford = castle
+b_dragonmarsh = city
+
+#b_montroll = city
+#b_stoneroll = castle
+
+# Misc
+culture = riverlander
+religion = the_seven
+
+# History
+
+1066.1.1 = {
+
+	b_rollingford = ca_asoiaf_crown_basevalue_1
+	b_rollingford = ca_asoiaf_crown_basevalue_2
+	b_rollingford = ca_asoiaf_crown_basevalue_3
+
+
+	b_dragonmarsh = ct_asoiaf_crown_basevalue_1
+	b_dragonmarsh = ct_asoiaf_crown_basevalue_2
+
+}
+8070.1.1 = { #Jaehaerys constructs road network
+	b_rollingford = ca_kingsroad
+}

@@ -1,0 +1,34 @@
+# 92 - Blue Fork
+
+# County Title
+title = c_bluefork
+
+# Settlements
+
+max_settlements = 4
+
+b_sevenbridges = castle
+b_brokerstream = city
+b_bybushmill = city
+
+# Misc
+culture = riverlander
+religion = the_seven
+
+# History
+
+
+
+6000.1.1 = {
+
+b_sevenbridges = ca_asoiaf_river_basevalue_1
+
+
+b_brokerstream = ct_asoiaf_river_basevalue_1
+b_brokerstream = ct_asoiaf_river_basevalue_2
+b_brokerstream = ct_asoiaf_river_basevalue_3
+
+b_bybushmill = ct_asoiaf_river_basevalue_1
+
+
+}

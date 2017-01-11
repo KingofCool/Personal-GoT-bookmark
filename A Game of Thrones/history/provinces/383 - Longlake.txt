@@ -1,0 +1,25 @@
+# 383 - Longlake
+
+# County Title
+title = c_longlake
+
+# Settlements
+max_settlements = 3
+
+b_longlake_castle = castle
+b_longlake = city
+b_longlake_temple = temple
+
+# Misc
+culture = myrman
+religion = rhllor
+
+# History
+6000.1.1 = {
+	b_longlake = ct_asoiaf_essos_basevalue_1
+	b_longlake = ct_asoiaf_essos_basevalue_2
+	
+	b_longlake_castle = ca_asoiaf_essos_basevalue_1
+	b_longlake_castle = ca_asoiaf_essos_basevalue_2
+
+}

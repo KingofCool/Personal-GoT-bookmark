@@ -1,0 +1,51 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="e_reach"
+}
+7974.1.1={
+    holder=60000265
+}	
+7990.1.1={
+	holder=18265
+}
+7998.6.6={
+	liege="k_reach"
+}
+8003.6.2={
+    holder=17265
+}	
+8049.1.1={
+	holder=16265
+}
+8066.1.1={
+	holder=15265
+}
+8107.1.1={
+	holder=14265
+}
+8124.1.1={
+	holder=13265
+}
+8142.1.1={
+	holder=12265
+}
+8164.1.1={
+	holder=11265
+}
+8182.1.1={
+	holder=88026
+}
+8196.1.1={
+	liege="d_cockleswhent"
+}
+8220.1.1={
+	holder=265
+}
+8250.1.1={
+	holder=88027
+}
+8276.1.1={
+	holder=88028
+}
+
+
+

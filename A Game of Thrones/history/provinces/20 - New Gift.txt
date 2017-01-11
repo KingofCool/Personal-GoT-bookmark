@@ -1,0 +1,15 @@
+# County Title
+title = c_new_gift
+
+# Settlements
+max_settlements = 3
+b_queenscrown = castle
+
+# Misc
+culture = northman
+religion = old_gods
+
+#History
+90.1.1 = {
+	b_queenscrown = ca_asoiaf_north_basevalue_1
+}	

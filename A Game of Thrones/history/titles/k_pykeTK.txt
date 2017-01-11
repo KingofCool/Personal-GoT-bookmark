@@ -1,0 +1,35 @@
+1.1.1={
+	law = succ_primogeniture
+	law = agnatic_succession
+	law = centralization_1
+	law = slavery_3
+	law = first_night_1
+}
+4681.1.1 = {
+	holder=500107 #Loron the Old Kraken	
+}
+4754.1.1 = {
+	holder=501107
+}
+4760.1.1 = {
+	holder=502107
+}
+4792.1.1 = { holder=0 }
+
+5344.1.1 = {
+	holder = 503107
+}
+5360.1.1 = { holder = 0 }
+
+5397.1.1 = {
+	holder = 504107
+}
+5425.1.1 = {
+	holder = 505107
+}
+5459.1.1 = { holder = 0 }
+
+6090.1.1 = {
+	holder = 506107
+}
+6136.1.1 = { holder = 0 }

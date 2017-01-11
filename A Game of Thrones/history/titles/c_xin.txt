@@ -1,0 +1,17 @@
+600.1.1={
+	liege="d_xin"
+}
+7995.1.1 = { holder=10069194 } # Is'mail (nc)
+8041.1.1 = { holder=10269194 } # Fadil (nc)
+8047.1.1 = { holder=10469194 } # Khalil (nc)
+8072.1.1 = { holder=10569194 } # Qawurd (nc)
+8098.1.1 = { holder=10869194 } # Youkhanna (nc)
+8150.1.1 = { holder=11069194 } # Ramadan (nc)
+8178.1.1 = { holder=11169194 } # Jaleel (nc)
+8181.1.1 = { holder=11369194 } # Jalil (nc)
+8205.1.1 = { holder=11769194 } # Jabir (nc)
+8247.1.1 = { holder=11869194 } # Khaireddin (nc)
+8280.1.1 = { holder=12469194 } # Isa (nc)
+
+
+

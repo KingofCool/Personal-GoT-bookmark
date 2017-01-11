@@ -1,0 +1,32 @@
+# 89 - Fairmarket
+
+# County Title
+title = c_fairmarket
+
+# Settlements
+max_settlements = 5
+
+b_fairmarketcastle = castle
+b_fairmarket = city
+b_fairmarket_sept = temple
+b_ramsford = city
+
+# Misc
+culture = riverlander
+religion = the_seven
+
+# History
+
+6000.1.1 = {
+
+b_fairmarketcastle= ca_asoiaf_river_basevalue_1
+
+b_fairmarket= ct_asoiaf_river_basevalue_1
+b_fairmarket= ct_asoiaf_river_basevalue_2
+b_fairmarket= ct_asoiaf_river_basevalue_3
+b_fairmarket= ct_asoiaf_river_basevalue_4
+b_fairmarket= ct_asoiaf_river_basevalue_5
+
+b_ramsford = ct_asoiaf_river_basevalue_1
+
+}

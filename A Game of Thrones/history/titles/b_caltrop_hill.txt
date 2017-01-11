@@ -1,0 +1,24 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="c_tumbleton"
+}
+##Owned by footlys until granted tumbleton in 196 (non-canon story)
+7985.1.1 = { holder=3000248 } # Hosman (nc)
+8022.1.1 = { holder=3001248 } # Branston (nc)
+8057.1.1 = { holder=3004248 } # Canther (nc)
+8074.1.1 = { holder=3007248 } # Erryk (nc)
+8103.1.1 = { holder=3010248 } # Mark (nc)
+8120.1.1 = { holder=3015248 } # Mark (nc)
+8171.1.1 = { holder=3016248 } # Emmon (nc)
+8190.1.1 = { holder=3020248 } # Gormon (nc)
+
+##8196.6.6 gained by house lyberr
+8276.1.1={
+	holder=88211
+}
+
+
+
+
+
+
+

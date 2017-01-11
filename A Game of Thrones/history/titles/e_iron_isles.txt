@@ -1,0 +1,129 @@
+16.1.1 = { 
+	holder=750066  # The Grey King
+	law = succ_feudal_elective
+	law = agnatic_succession
+	law = centralization_1
+	law = slavery_3
+	law = first_night_1
+} 
+1001.1.1 = { holder = 0 }
+
+4039.1.1 = { holder = 500174420 } #Urras  Greyiron
+4064.1.1 = { holder = 501174420 } #Erich I Greyiron
+4065.1.1 = { holder = 5011121 } #Regnar  Drumm
+4078.1.1 = { holder = 502174420 } #Theon I Greyiron (NC)
+4115.1.1 = { holder = 354066 } #Sylas  
+4131.1.1 = { holder = 503174420 } #Balon I Greyiron (NC)
+4156.1.1 = { holder = 0 }
+
+4600.1.1 = { holder = 355066 } #Harrag  Hoare
+4641.1.1 = { holder = 357066 } #Erich II Hoare
+4667.1.1 = { holder = 504174420 } #Urrathon I Greyiron (NC)
+4678.1.1 = { holder = 505174420 } #Urrathon II Greyiron (NC)
+4700.1.1 = { holder = 500107 } #Loron  Greyjoy
+4754.1.1 = { holder = 501107 } #Theon II Greyjoy (NC)
+4760.1.1 = { holder = 506174420 } #Urragon I Greyiron (NC)
+4780.1.1 = { holder = 502107 } #Balon II Greyjoy (NC)
+4792.1.1 = { holder = 358066 } #Qhored  Hoare
+4867.1.1 = { holder = 0 }
+
+5281.1.1 = { holder = 507174420 } #Balon III Greyiron (NC)
+5299.1.1 = { holder = 508174420 } #Erich III Greyiron (NC)
+5338.1.1 = { holder = 509174420 } #Rognar I Greyiron (NC)
+5352.1.1 = { holder = 503107 } #Theon III Greyjoy
+5360.1.1 = { holder = 510174420 } #Erich IV Greyiron (NC)
+5400.1.1 = { holder = 511174420 } #Urrathon III Greyiron (NC)
+5409.1.1 = { holder = 504107 } #Balon IV Greyjoy (NC)
+5425.1.1 = { holder = 505107 } #Balon V Greyjoy
+5459.1.1 = { holder = 500122 } #Erich V Harlaw
+5498.1.1 = { holder = 501122 } #Harron  Harlaw
+5515.1.1 = { holder = 0 }
+
+6100.1.1 = { holder = 506107 } #Balon VI Greyjoy (NC)
+6136.1.1 = { holder = 524174420 } #Urragon II Greyiron (NC)
+6145.1.1 = { holder = 500118 } #Joron I Blacktyde
+6181.1.1 = { holder = 512174420 } #Urragon III Greyiron
+6209.1.1 = { holder = 550112 } #Urrathon IV Goodbrother
+6211.1.1 = { holder = 513174420 } #Torgon  Greyiron
+6251.1.1 = { holder = 517174420 } #Urragon IV Greyiron
+6303.1.1 = { 
+	holder = 520174420  #Urron  Greyiron
+	law = succ_primogeniture
+} 
+6325.1.1 = { holder = 0 }
+
+7232.1.1 = { holder = 525174420 } #Joron II Greyiron (NC)
+7261.1.1 = { holder = 521174420 } #Euron I Greyiron (NC)
+7279.1.1 = { holder = 522174420 } #Balon VII Greyiron (NC)
+7318.1.1 = { holder = 523174420 } #Rognar II Greyiron
+7341.1.1 = { holder = 359066 } #Harras  Hoare
+7371.1.1 = { holder = 360066 } #Wulfgar  Hoare
+7401.1.1 = { holder = 361066 } #Balon VIII Hoare (NC)
+7405.1.1 = { holder = 362066 } #Euron II Hoare (NC)
+7433.1.1 = { holder = 363066 } #Horgan  Hoare
+7458.1.1 = { holder = 364066 } #Fergon  Hoare
+7470.1.1 = { holder = 365066 } #Othgar I Hoare
+7518.1.1 = { holder = 366066 } #Othgar II Hoare
+7539.1.1 = { holder = 367066 } #Craghorn  Hoare
+7547.1.1 = { holder = 368066 } #Harmund I Hoare
+7598.1.1 = { holder = 369066 } #Harmund II Hoare
+7612.1.1 = { holder = 370066 } #Harmund III Hoare
+7615.1.1 = { holder = 371066 } #Hagon  Hoare
+7622.1.1 = { holder = 150227 } #Aubrey Crakehall
+7622.6.1 = { holder = 0 }
+
+7784.1.1 = { holder=193066 } # Harrald Half-Drowned
+7815.1.1 = { holder=191066 } # Harrald II
+7880.1.1 = { holder=11066 } # Qhorwyn
+7923.1.1 = { holder=11366 } # Harwyn
+7956.1.1 = { holder=11466 } # Harrock
+7960.1.1 = { 
+	holder=11566 # Harren (C)
+} 
+7998.2.1={
+	holder=0
+}
+8060.1.1={ law = first_night_0 } #First Night abolished
+8289.1.1={
+	holder = 1107 #Balon
+	effect = {
+		holder_scope = { 
+			any_realm_lord = {
+				any_demesne_title = {
+					limit = { 
+						NOT = { holder_scope = { culture = ruin } } 
+						NOT = { tier = BARON }
+						NOT = { tier = EMPEROR }
+					}
+					set_variable = { which = "de_facto_empire" value = 1 }
+				}
+			}	
+		} 
+	}
+}
+8289.6.1={
+	holder=0
+}
+8299.3.4 = {
+	holder = 1107 #Balon
+	law = centralization_3
+	effect = {
+		holder_scope = { 
+			any_realm_lord = {
+				any_demesne_title = {
+					limit = { 
+						NOT = { holder_scope = { culture = ruin } } 
+						NOT = { tier = BARON }
+						NOT = { tier = EMPEROR }
+					}
+					set_variable = { which = "de_facto_empire" value = 3 }
+				}
+			}	
+		} 
+	}
+}
+8299.11.3 = {
+	#law = succ_feudal_elective #kingsmoot
+	holder=2107 #Euron
+	law = centralization_3
+}

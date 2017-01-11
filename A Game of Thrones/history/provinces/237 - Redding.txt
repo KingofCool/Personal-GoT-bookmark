@@ -1,0 +1,30 @@
+
+
+# County Title
+title = c_redding
+
+# Settlements
+max_settlements = 3
+b_redding = castle
+b_lockeridge  = city
+
+#b_old_catton   = city
+
+
+
+# Misc
+culture = reachman
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_redding = ca_asoiaf_reach_basevalue_1
+	b_redding = ca_asoiaf_reach_basevalue_2
+
+}
+6000.1.1 = {
+	b_lockeridge = ct_asoiaf_reach_basevalue_1
+	b_lockeridge = ct_asoiaf_reach_basevalue_2
+	b_lockeridge = ct_asoiaf_reach_basevalue_3
+
+}

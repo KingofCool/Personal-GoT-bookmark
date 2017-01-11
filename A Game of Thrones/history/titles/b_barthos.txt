@@ -1,0 +1,18 @@
+900.1.1={ 
+	liege="d_tourmaline"
+	holding_dynasty = 350016
+}
+7995.1.1 = { holder=150350016 } # Wendello (nc)
+8027.1.1 = { holder=100350016 } # Luceo (nc)
+8057.1.1 = { holder=101350016 } # Regon (nc)
+8080.1.1 = { holder=104350016 } # Sybassion (nc)
+8110.1.1 = { holder=106350016 } # Sybassion (nc)
+8122.1.1 = { holder=107350016 } # Nyessos (nc)
+8129.1.1 = { holder=110350016 } # Urrathon (nc)
+8148.1.1 = { holder=113350016 } # Mundello (nc)
+8200.1.1 = { holder=116350016 } # Methyso (nc)
+8223.1.1 = { holder=121350016 } # Nyessos (nc)
+8247.1.1 = { holder=123350016 } # Egon (nc)
+8281.1.1 = { holder=126350016 } # Egon (nc)
+
+

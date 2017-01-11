@@ -1,0 +1,775 @@
+##non canon for random##
+805000 = {
+	name = Cendrecoeur
+	culture = stormlander
+}
+805001 = {
+	name = Butler
+	culture = stormlander
+}
+805002 = {
+	name = Bosquebrume
+	culture = stormlander
+}
+805003 = {
+	name = Chevallier
+	culture = stormlander
+}
+805004 = {
+	name = Lyntombe
+	culture = stormlander
+}
+805005 = {
+	name = Tuckpuits
+	culture = stormlander
+}
+805006 = {
+	name = Clary
+	culture = stormlander
+}
+805007 = {
+	name = Verdacre
+	culture = stormlander
+}
+805008 = {
+	name = Chulmond
+	culture = stormlander
+}
+805009 = {
+	name = Codarrion
+	culture = stormlander
+}
+805010 = {
+	name = Coubovin
+	culture = stormlander
+}
+805011 = {
+	name = Charpentier
+	culture = stormlander
+}
+805012 = {
+	name = Hawkett
+	culture = stormlander
+}
+805013 = {
+	name = Cordonneur
+	culture = stormlander
+}
+805014 = {
+	name = Withers
+	culture = stormlander
+}
+805015 = {
+	name = Taurier
+	culture = stormlander
+}
+805016 = {
+	name = Bosquencre
+	culture = stormlander
+}
+805017 = {
+	name = Ereham
+	culture = stormlander
+}
+805018 = {
+	name = Tairy
+	culture = stormlander
+}
+805019 = {
+	name = Brulenoir
+	culture = stormlander
+}
+805020 = {
+	name = Pearley
+	culture = stormlander
+}
+805021 = {
+	name = Cogswell
+	culture = stormlander
+}
+805022 = {
+	name = Spevins
+	culture = stormlander
+}
+805023 = {
+	name = Congrave
+	culture = stormlander
+}
+805024 = {
+	name = Estwyck
+	culture = stormlander
+}
+805025 = {
+	name = Youncey
+	culture = stormlander
+}
+805026 = {
+	name = Lanépine
+	culture = stormlander
+}
+805027 = {
+	name = Rouier
+	culture = stormlander
+}
+805028 = {
+	name = Chutes
+	culture = stormlander
+}
+805029 = {
+	name = Milbanc
+	culture = stormlander
+}
+805030 = {
+	name = Daltrey
+	culture = stormlander
+}
+805031 = {
+	name = Petridge
+	culture = stormlander
+}
+805032 = {
+	name = Eaugué
+	culture = stormlander
+}
+805033 = {
+	name = Leschutes
+	culture = stormlander
+}
+805034 = {
+	name = Coeurier
+	culture = stormlander
+}
+805035 = {
+	name = Pierrefort
+	culture = stormlander
+}
+805036 = {
+	name = Pluviers
+	culture = stormlander
+}
+805037 = {
+	name = Pierreverte
+	culture = stormlander
+}
+805038 = {
+	name = Pluissiers
+	culture = stormlander
+}
+805039 = {
+	name = Malbois
+	culture = stormlander
+}
+805040 = {
+	name = Pettysmith
+	culture = stormlander
+}
+805041 = {
+	name = Mendham
+	culture = stormlander
+}
+805042 = {
+	name = Slatpont
+	culture = stormlander
+}
+805043 = {
+	name = Broyce
+	culture = stormlander
+}
+805044 = {
+	name = Boisné
+	culture = stormlander
+}
+805045 = {
+	name = Ambre
+	culture = stormlander
+}
+805046 = {
+	name = Whitehead
+	culture = stormlander
+}
+
+##canon##
+54 = {
+	name="Torth"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+273 = {
+	name="Cachepoix"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+301 = {
+	name="Caron"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+302 = {
+	name="Selmy"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+303 = {
+	name="Dondarrion"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+304 = {
+	name="Trant"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+305 = {
+	name="Lonbec"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+306 = {
+	name="Swann"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+307 = {
+	name="Tignac"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 33
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	used_for_random = no
+	can_appear = no
+}
+308 = {
+	name="Grandison"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 9
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+310 = {
+	name="Cafferen"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 10
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+311 = {
+	name="Horpe"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+312 = {
+	name="Hastif"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 11
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+313 = {
+	name="Fell"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 12
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+316 = {
+	name="Connington"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 13
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+317 = {
+	name="Baratheon"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 14
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	used_for_random = no
+	can_appear = no
+}
+318 = {
+	name="Errol"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 15
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+319 = {
+	name="Buckler"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 16
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+320 = {
+	name="Penrose"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 17
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+321 = {
+	name="Morrigen"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 18
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+322 = {
+	name="Rogers"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 19
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+323 = {
+	name="Staedmon"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 20
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+324 = {
+	name="Herston"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 21
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+325 = {
+	name="Tudbury"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 22
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+326 = {
+	name="Goüer"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 28
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+327 = {
+	name="Mertyns"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 23
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+328 = {
+	name="Kellington"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 24
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+329 = {
+	name="Wylde"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 25
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+330 = {
+	name="Estremont"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 26
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+331 = {
+	name="Rambton"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 27
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+332 = {
+	name="Boulin"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 34
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+333 = {
+	name="Wensington"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 35
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+361 = {
+	name="Swygert"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 31
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+362 = {
+	name="Mossegonde"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 32
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1544 = {
+	name="Durrandon"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 14
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	used_for_random = no
+	can_appear = no
+}
+174398 = {
+	name="Pease"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 14
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+174436 = {
+	name="d'Etanverts"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 36
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+49 = {
+	name="Bar Emmon"
+	culture = stormlander
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 28
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+69147 = {
+	name = "de Pourprétang"
+	culture = stormlander
+}
+65100 = {
+	name = "du Mont-Réal"
+	culture = stormlander
+}

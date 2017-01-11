@@ -1,0 +1,24 @@
+# 464 - Prestaynos
+
+# County Title
+title = c_prestaynos
+
+# Settlements
+max_settlements = 3
+
+b_prestaynoscastle = castle
+b_prestaynos = city
+b_prestaynostemple = temple
+
+# Misc
+culture = braavosi
+religion = moonsingers
+
+# History
+6000.1.1 = {
+	b_prestaynos = ct_asoiaf_essos_basevalue_1
+	b_prestaynos = ct_asoiaf_essos_basevalue_2
+	
+	b_prestaynoscastle = ca_asoiaf_essos_basevalue_1
+	b_prestaynoscastle = ca_asoiaf_essos_basevalue_2
+}

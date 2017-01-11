@@ -1,0 +1,31 @@
+# 232 - Wendwater
+
+# County Title
+title = c_wendwater
+
+# Settlements
+max_settlements = 3
+b_wendwater = castle
+b_wendbridge = city
+
+#b_orley = castle
+#b_lowercliff = city
+
+
+# Misc
+culture = stormlander
+religion = the_seven
+
+# History
+
+1066.1.1 = {
+
+	b_wendwater = ca_asoiaf_crown_basevalue_1
+	b_wendwater = ca_asoiaf_crown_basevalue_2
+	b_wendwater = ca_asoiaf_crown_basevalue_3
+
+
+	b_wendbridge = ct_asoiaf_crown_basevalue_1
+	b_wendbridge = ct_asoiaf_crown_basevalue_2
+
+}

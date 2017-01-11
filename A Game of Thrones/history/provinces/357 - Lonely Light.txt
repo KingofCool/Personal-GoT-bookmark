@@ -1,0 +1,17 @@
+# 357 - Lonely Light
+
+# County Title
+title = c_lonely_light
+
+# Settlements
+max_settlements = 2
+b_lonely_light = castle
+
+# Misc
+culture = ironborn
+religion = drowned_god
+
+#History
+
+6000.1.1 = {b_lonely_light = ca_asoiaf_ironislands_basevalue_1}
+6000.1.1 = {b_lonely_light = ca_asoiaf_ironislands_basevalue_2}

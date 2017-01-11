@@ -1,0 +1,18 @@
+900.1.1={ 
+	liege="c_dyrenohill"
+}
+7970.1.1 = { holder=150300546 } # Vaelar (nc)
+8036.1.1 = { holder=100300546 } # Roro (nc)
+8079.1.1 = { holder=105300546 } # Sallodhor (nc)
+8106.1.1 = { holder=106300546 } # Cossoma (nc)
+8129.1.1 = { holder=109300546 } # Syrio (nc)
+8168.1.1 = { holder=112300546 } # Ordello (nc)
+8196.1.1 = { holder=115300546 } # Illyrio (nc)
+8205.1.1 = { holder=117300546 } # Ordello (nc)
+8227.1.1 = { holder=118300546 } # Izembaro (nc)
+8249.1.1 = { holder=122300546 } # Tycho (nc)
+8259.1.1={ holder = 0 } #Ninepenny king
+8259.12.31 = { holder = 122300546 } 
+8274.1.1 = { holder=125300546 } # Gyleno (nc)
+
+

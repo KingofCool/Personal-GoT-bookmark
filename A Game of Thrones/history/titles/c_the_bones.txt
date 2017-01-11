@@ -1,0 +1,21 @@
+#House Bone
+7995.1.1 = { 
+	holder=100304001 
+	liege=d_parrot_bay
+	law = succ_seniority
+	law = cognatic_succession
+} # Arkamun (nc)
+8013.1.1 = { holder=101304001 } # Sango (nc)
+8042.1.1 = { holder=105304001 } # Qaro (nc)
+8076.1.1 = { holder=107304001 } # Rudo (nc)
+8085.1.1 = { holder=110304001 } # Rudo (nc)
+8152.1.1 = { holder=111304001 } # Isodo (nc)
+8183.1.1 = { holder=113304001 } # Orengo (nc)
+8191.1.1 = { holder=117304001 } # Olujondo (nc)
+8193.1.1 = { holder=115304001 } # Isodo (nc)
+8202.1.1 = { holder=118304001 } # Qubhar (nc)
+8229.1.1 = { holder=121304001 } # Qubhar (nc)
+8264.1.1 = { holder=127304001 } # Delmabhar (nc)
+8271.1.1 = { holder=130304001 } # Kwasdo (nc)
+8276.1.1 = { holder=131304001 } # Koroxhar (nc)
+

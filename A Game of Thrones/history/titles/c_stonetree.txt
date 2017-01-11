@@ -1,0 +1,16 @@
+900.1.1={
+	liege="d_harlaw"
+	law=succ_primogeniture law=cognatic_succession
+}
+7994.1.1 = { holder=6000120 } # Lucimore (nc)
+8040.1.1 = { holder=6001120 } # Donnel (nc)
+8044.1.1 = { holder=6004120 } # Aeron (nc)
+8086.1.1 = { holder=6007120 } # Gevin (nc)
+8109.1.1 = { holder=6011120 } # Adrack (nc)
+8129.1.1 = { holder=6017120 } # Harmund (nc)
+8159.1.1 = { holder=6019120 } # Urras (nc)
+8205.1.1 = { holder=6021120 } # Ragnor (nc)
+8249.1.1 = { holder=9120 }
+8260.1.1 = {	
+	holder=120
+}

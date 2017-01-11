@@ -1,0 +1,16 @@
+800.1.1={
+	liege="k_lorath"
+	law = succ_primogeniture
+}
+7995.1.1 = { holder=100069136 } # Moredo (nc)
+8042.1.1 = { holder=100269136 } # Tregar (nc)
+8061.1.1 = { holder=100669136 } # Izembaro (nc)
+8075.1.1 = { holder=100869136 } # Orbelo (nc)
+8089.1.1 = { holder=101269136 } # Mero (nc)
+8122.1.1 = { holder=101569136 } # Meralyn (nc)
+8146.1.1 = { holder=101769136 } # Tagganaro (nc)
+8160.1.1 = { holder=101969136 } # Ordello (nc)
+8212.1.1 = { holder=102169136 } # Brusco (nc)
+8230.1.1 = { holder=102369136 } # Gyloro (nc)
+8257.1.1 = { holder=102569136 } # Moredo (nc)
+8271.1.1 = { holder=102869136 } # Terro (nc)

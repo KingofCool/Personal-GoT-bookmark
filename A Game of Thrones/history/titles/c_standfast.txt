@@ -1,0 +1,47 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="d_northmarch"
+}
+7940.1.1={
+	holder=88295
+}
+7985.1.1={
+	holder=88287
+}
+7992.1.1={
+	holder=88286
+}
+8035.1.1={
+	holder=88285
+}
+8044.1.1={
+	liege="d_goldengrove" #Osgreys lose titles
+	holder=88284
+}
+8087.1.1={
+	holder=88282
+}
+8122.1.1={
+	holder=88281
+}
+8153.1.1={
+	holder=88050
+}
+8172.1.1={
+	holder=235
+}
+8195.3.7={
+	liege=0
+}
+8196.1.1={
+	liege="d_goldengrove"
+}
+8215.1.1={
+	holder=88053
+}
+8275.1.1={
+	holder=88054
+}
+
+
+
+

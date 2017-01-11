@@ -1,0 +1,34 @@
+# 847 - Trader Town
+
+# County Title
+title = c_trader_town
+
+# Settlements
+max_settlements = 3
+
+b_trader_town = castle
+b_trader_town_city = city
+b_trader_town_temple = temple
+
+
+# Misc
+culture = yi_ti
+religion = yiti_gods
+
+# History
+6000.1.1 = {
+
+	b_trader_town = ca_asoiaf_yiti_basevalue_1
+	b_trader_town = ca_asoiaf_yiti_basevalue_2
+	b_trader_town = ca_asoiaf_yiti_basevalue_3
+	b_trader_town = ca_asoiaf_yiti_basevalue_4
+
+	b_trader_town_city = ct_asoiaf_yiti_basevalue_1
+	b_trader_town_city = ct_asoiaf_yiti_basevalue_2
+	b_trader_town_city = ct_asoiaf_yiti_basevalue_3
+	b_trader_town_city = ct_asoiaf_yiti_basevalue_4
+
+
+}
+
+

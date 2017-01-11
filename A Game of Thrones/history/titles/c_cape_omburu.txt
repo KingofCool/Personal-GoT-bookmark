@@ -1,0 +1,21 @@
+#House Xhanu
+7987.1.1 = { 
+	holder=100304006 
+	liege=d_omburu
+	law = succ_seniority
+	law = cognatic_succession
+} # Doshuru (nc)
+8025.1.1 = { holder=101304006 } # Xhonodo (nc)
+8032.1.1 = { holder=106304006 } # Qubhar (nc)
+8082.1.1 = { holder=108304006 } # Xaro (nc)
+8107.1.1 = { holder=112304006 } # Xhal (nc)
+8109.1.1 = { holder=117304006 } # Jiradhar (nc)
+8151.1.1 = { holder=121304006 } # Tal (nc)
+8166.1.1 = { holder=123304006 } # Eskender (nc)
+8205.1.1 = { holder=126304006 } # Isodo (nc)
+8235.1.1 = { holder=131304006 } # Xhondo (nc)
+8258.1.1 = { holder=132304006 } # Punuxharo (nc)
+
+
+
+

@@ -1,0 +1,29 @@
+# 94 - Green Fork Deddington
+
+# County Title
+title = c_greenfork
+
+# Settlements
+max_settlements = 4
+b_deddington = castle
+b_sherrer = city
+b_rosemallowpond = city
+
+
+# Misc
+culture = riverlander
+religion = the_seven
+
+# History
+6000.1.1 = {
+
+b_deddington = ca_asoiaf_river_basevalue_1
+
+b_sherrer = ct_asoiaf_river_basevalue_1
+b_sherrer = ct_asoiaf_river_basevalue_2
+b_sherrer = ct_asoiaf_river_basevalue_3
+
+b_rosemallowpond = ct_asoiaf_river_basevalue_1
+b_rosemallowpond = ct_asoiaf_river_basevalue_2
+
+}

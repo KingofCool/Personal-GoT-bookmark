@@ -1,0 +1,14 @@
+202.1.1 = {liege="d_shipbreaker"}
+
+7994.1.1 = { holder=301354 } # Robert Wagstaff (nc)
+8033.1.1 = { holder=305354 } # Harlan Wagstaff (nc)
+8067.1.1 = { holder=307354 } # Beric Wagstaff (nc)
+8095.1.1 = { holder=310354 } # Gowen Wagstaff (nc)
+8103.1.1 = { holder=313354 } # Eldon Wagstaff (nc)
+8105.1.1 = { holder=315354 } # Harlan Wagstaff (nc)
+8159.1.1 = { holder=321354 } # Lester Wagstaff (nc)
+8167.1.1 = { holder=322354 } # Pate Wagstaff (nc)
+8184.1.1 = { holder=328354 } # Beric Wagstaff (nc)
+8206.1.1 = { holder=331354 } # Joffrey Wagstaff (nc)
+8243.1.1 = { holder=335354 } # Myrcella Wagstaff (nc)
+8290.1.1 = { holder=341354 } # Harlan Wagstaff (nc)

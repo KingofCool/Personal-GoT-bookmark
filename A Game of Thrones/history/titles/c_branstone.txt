@@ -1,0 +1,66 @@
+6000.1.1={
+	liege="d_riverrun"
+}
+6648.1.1 = {
+    holder=650153 #Armistead (C)
+}
+6675.1.1 = {
+	holder = 0
+}
+7771.1.1 = {
+    holder=652153 #Robert (C)
+}
+7785.1.1 = {
+	holder = 0
+}
+
+7967.1.1={
+    holder=550153
+}
+7986.1.1={
+    holder=560153
+}	
+8010.1.1={
+	holder=21153
+}
+8025.1.1={
+	holder=20153
+}
+8055.1.1={
+	holder=18153
+}
+8090.1.1={
+	holder=17153
+}
+8113.1.1={
+	holder=16153
+}
+8124.1.1={
+	holder=15153
+}
+8150.1.1={
+	holder=14153
+}
+8179.1.1={
+	holder=13153
+}
+8188.1.1={
+	holder=12153
+}
+#Tullys take over when vance moves to atranta
+8212.1.1={
+	holder=10159
+}
+8258.1.1={
+	holder=175159
+}
+8265.1.1 = {
+	holder=159
+}
+8299.10.15={
+	holder=4159
+}
+8300.4.15 = {
+	holder=2127 #Emmon Frey
+}
+

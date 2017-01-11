@@ -1,0 +1,19 @@
+# 575 - Qev'rak
+
+# County Title
+title = c_qevrak
+
+# Settlements
+max_settlements = 3
+
+b_qevrak = tribal
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+terrain = forest
+
+# History
+6000.1.1 = {
+}

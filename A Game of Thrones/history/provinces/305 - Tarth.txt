@@ -1,0 +1,31 @@
+# 305 - Tarth - Duchy of Tarth
+
+# County Title
+title = c_tarth
+
+# Settlements
+max_settlements = 6
+
+b_evenfall = castle	 	# Canon - County Seat
+b_manning_hall = castle		# Castle - Castle
+b_tarth_sept = temple	# NON CANON - Sept
+b_sapphire_point = castle	# NON CANON - Castle
+
+# Misc
+culture = stormlander
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_evenfall = ca_asoiaf_storm_basevalue_1
+	b_evenfall = ca_asoiaf_storm_basevalue_2
+	b_evenfall = ca_asoiaf_storm_basevalue_3
+	b_evenfall = ca_asoiaf_storm_basevalue_4
+	b_evenfall = ca_asoiaf_storm_basevalue_5
+	
+	b_manning_hall = ca_asoiaf_storm_basevalue_1
+	b_manning_hall = ca_asoiaf_storm_basevalue_2
+	
+	b_sapphire_point = ca_asoiaf_storm_basevalue_1
+	b_sapphire_point = ca_asoiaf_storm_basevalue_2
+}

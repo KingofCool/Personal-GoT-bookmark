@@ -1,0 +1,24 @@
+# 163 - banefort
+
+# County Title
+title = c_banefort
+
+# Settlements
+max_settlements = 3
+b_banefort = castle
+b_baneforttown = city
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_banefort = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_banefort = ca_asoiaf_westerland_basevalue_2}
+#6000.1.1 = {b_banefort = ca_asoiaf_westerland_basevalue_3}
+#6000.1.1 = {b_banefort = ca_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_baneforttown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_baneforttown = ct_asoiaf_westerland_basevalue_2}
+#6000.1.1 = {b_baneforttown = ct_asoiaf_westerland_basevalue_3}

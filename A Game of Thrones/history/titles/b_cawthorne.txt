@@ -1,0 +1,33 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="c_yelshire"
+}
+7982.1.1 = { holder=3000257 } # Walys (nc)
+8020.1.1 = { holder=3003257 } # Emmon (nc)
+8058.1.1 = { holder=3006257 } # Paxter (nc)
+8086.1.1 = { holder=3007257 } # Rycherd (nc)
+8133.1.1 = { holder=3010257 } # Arthur (nc)
+8154.1.1 = { holder=3013257 } # Branston (nc)
+8187.1.1 = { holder=3017257 } # Amelryc (nc)
+#8196 Gormon Peake loses castle after balckfyre rebellion, house norridge takes over
+
+# 7996.1.1 = { holder=100269 } # Tristram (nc)
+# 8032.1.1 = { holder=102269 } # Arthur (nc)
+# 8073.1.1 = { holder=105269 } # Canther (nc)
+# 8076.1.1 = { holder=106269 } # Waldon (nc)
+# 8137.1.1 = { holder=108269 } # Gauter (nc)
+#8168.1.1 = { holder=111269 } # Igon (nc)
+
+8196.1.1 = { holder=111269 } # Igon (nc)
+8200.1.1 = { holder=113269 } # Bertram (nc)
+8206.1.1 = { holder=117269 } # Quenton (nc)
+8225.1.1 = { holder=119269 } # Garlan (nc)
+8269.1.1 = { holder=122269 } # Leyton (nc)
+8272.1.1 = { holder=126269 } # Olymer (nc)
+
+
+
+
+
+
+
+

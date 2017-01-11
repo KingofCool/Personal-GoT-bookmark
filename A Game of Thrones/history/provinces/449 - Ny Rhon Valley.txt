@@ -1,0 +1,22 @@
+# 449 - Ny Rhon Valley
+
+# County Title
+title = c_nyrhonvalley
+
+# Settlements
+max_settlements = 3
+
+b_nyrhonvalleycastle = castle
+b_nyrhonvalley = city
+
+# Misc
+culture = norvosi
+religion = bearded_priests
+
+# History
+6000.1.1 = {
+	b_nyrhonvalleycastle = ca_asoiaf_essos_basevalue_1
+	b_nyrhonvalleycastle = ca_asoiaf_essos_basevalue_2
+	
+	b_nyrhonvalley = ct_asoiaf_essos_basevalue_1
+}

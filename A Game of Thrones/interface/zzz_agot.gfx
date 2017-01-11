@@ -1,0 +1,157 @@
+objectTypes = {
+}
+
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_blank"	
+		texturefile = "gfx\\interface\\blank.dds"
+		noOfFrames = 1
+	}
+	
+	#combat.gfx
+	spriteType = {
+		name = "GFX_combat_tactic_strip"	
+		texturefile = "gfx\\interface\\combat_tactic_strip.dds"
+		noOfFrames = 40
+	}
+	
+	#domestic_court.gfx
+	spriteType = {
+		name = "GFX_action_oversee_province"
+		texturefile = "gfx\\interface\\job_oversee_province.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_action_oversee_province_nomadic"
+		texturefile = "gfx\\interface\\job_oversee_province.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_action_improve_defenses"
+		texturefile = "gfx\\interface\\job_train_troops.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_action_pacify_province"
+		texturefile = "gfx\\interface\\job_pacify_province.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_action_pacify_province_nomadic"
+		texturefile = "gfx\\interface\\job_pacify_province.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_action_study_technology"
+		texturefile = "gfx\\interface\\job_sabotage_economy.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_action_improve_castle_holding"
+		texturefile = "gfx\\interface\\job_upgrade_castle.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_action_NW_recruit"
+		texturefile = "gfx\\interface\\job_improve_relations.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_voting_reason_sprite"
+		texturefile = "gfx\\interface\\council_voting_reason.dds"
+		noOfFrames = 19
+	}
+	
+	#domestic_diplomacy.gfx
+	spriteType = {
+		name = "GFX_cb_icon_strip"
+		texturefile = "gfx\\interface\\cb_icon_strip.tga"
+		noOfFrames = 28
+	}
+	
+	#generalstuff.gfx
+	spriteType = {
+		name = "GFX_religion_icon_strip"
+		texturefile = "gfx\\interface\\religion_icon_strip.tga"
+		noOfFrames = 41
+	}
+	spriteType = {
+		name = "GFX_religion_icon_strip_small"
+		texturefile = "gfx\\interface\\religion_icon_strip_small.tga"
+		noOfFrames = 41
+	}
+	
+	#main.gfx
+	spriteType = {
+		name = "GFX_topbar_folder_tech_disabled"
+		texturefile = "gfx\\interface\\topbar_folder_tech_disabled.dds"
+	}
+	
+	#frontend.gfx
+	spriteType = {
+		name = "GFX_big_button_tutorial_disabled"
+		texturefile = "gfx\\interface\\big_button_tutorial_disabled.dds"
+	}
+	
+	#New Governments
+	spriteType = {
+		name = "GFX_icon_NW_government"
+		texturefile = "gfx\\interface\\government_icon_nightswatch.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_KG_government"
+		texturefile = "gfx\\interface\\government_icon_kingsguard.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_ruin_government"
+		texturefile = "gfx\\interface\\government_icon_ruin.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_winter_government"
+		texturefile = "gfx\\interface\\government_icon_winter.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_pirate_government"
+		texturefile = "gfx\\interface\\government_icon_pirate.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_alliance_government"
+		texturefile = "gfx\\interface\\government_icon_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_triarch_merchant_republic_government"
+		texturefile = "gfx\\interface\\government_icon_triarch.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_military_command_government"
+		texturefile = "gfx\\interface\\government_icon_military_command.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_feudal_government_LP"
+		texturefile = "gfx\\interface\\government_icon_feudal_LP.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_wildling_feudal_government"
+		#texturefile = "gfx\\interface\\government_icon_wildling_feudal_government.dds"
+		texturefile = "gfx\\interface\\government_icon_tribal.dds"
+	}
+	
+	# Dragon fake focuses
+	spriteType = {
+		name = "GFX_focus_ed_dragon"
+		texturefile = "gfx/ambitions/focus_education_dragon.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_focus_ch_dragon"
+		texturefile = "gfx/ambitions/focus_education_dragon.tga"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_attribute_strip_council_AGOT"
+		texturefile = "gfx\\interface\\attribute_strip_council_AGOT.dds"
+		noOfFrames = 5
+	}
+}

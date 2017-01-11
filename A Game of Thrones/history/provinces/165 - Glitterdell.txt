@@ -1,0 +1,35 @@
+# 165 - Glitterdale
+
+# County Title
+title = c_glitterdale
+
+# Settlements
+max_settlements = 5
+b_glitterdale = castle
+b_glitterdaletown = city
+b_glitterdaletowntwo = castle
+b_glitterdaletownthree = city
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_glitterdale = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_glitterdale = ca_asoiaf_westerland_basevalue_2}
+#6000.1.1 = {b_glitterdale = ca_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_glitterdaletown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_glitterdaletown = ct_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_glitterdaletown = ct_asoiaf_westerland_basevalue_3}
+#6000.1.1 = {b_glitterdaletown = ct_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_glitterdaletowntwo = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_glitterdaletowntwo = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_glitterdaletowntwo = ca_asoiaf_westerland_basevalue_3}
+
+6000.1.1 = {b_glitterdaletownthree = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_glitterdaletownthree = ct_asoiaf_westerland_basevalue_2}
+
+8260.5.4 = { b_glitterdale = ca_asoiaf_westerland_basevalue_3 }

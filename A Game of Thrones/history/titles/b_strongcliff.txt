@@ -1,0 +1,44 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="c_southern_crackclaw_point"
+}
+7995.1.1={
+	holder=10047
+}
+8011.1.1={
+	holder=101047
+}
+8027.1.1={
+	holder=10247
+}
+8052.1.1={
+	holder=10347
+}
+8076.1.1={
+	holder=10547
+}
+8097.1.1={
+	holder=10647
+}
+8123.1.1={
+	holder=10747
+}
+8152.1.1={
+	holder=10847
+}
+8176.1.1={
+	holder=10947
+}
+8196.1.1={
+	holder=11047
+}
+8215.1.1={
+	holder=111047
+}
+8254.1.1={
+	holder=11247
+}
+8263.1.1={
+	holder=11347
+}
+
+

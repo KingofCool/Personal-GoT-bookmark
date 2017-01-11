@@ -1,0 +1,27 @@
+# 452 - Velvetpeak
+
+# County Title
+title = c_velvetpeak
+
+# Settlements
+max_settlements = 3
+
+b_velvetpeak_castle = castle
+b_velvetpeak = city
+b_velvetpeak_temple = temple
+
+# Misc
+culture = pentosi
+religion = rhllor
+
+terrain = valyrianroad
+
+# History
+6000.1.1 = {
+	b_velvetpeak = ct_asoiaf_essos_basevalue_1
+	b_velvetpeak = ct_asoiaf_essos_basevalue_2
+	
+	b_velvetpeak_castle = ca_asoiaf_essos_basevalue_1
+	b_velvetpeak_castle = ca_asoiaf_essos_basevalue_2
+
+}

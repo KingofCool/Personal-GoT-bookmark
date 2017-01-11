@@ -1,0 +1,27 @@
+# 156 - Orkmont
+
+# County Title
+title = c_orkmont
+
+# Settlements
+max_settlements = 3
+b_orkwatch = castle
+b_nettlebank = castle
+
+#b_pinehole
+
+
+# Misc
+culture = ironborn
+religion = drowned_god
+
+#History
+
+6000.1.1 = {b_orkwatch = ca_asoiaf_ironislands_basevalue_1}
+6000.1.1 = {b_orkwatch = ca_asoiaf_ironislands_basevalue_2}
+6000.1.1 = {b_orkwatch = ca_asoiaf_ironislands_basevalue_3}
+6000.1.1 = {b_orkwatch = ca_asoiaf_ironislands_basevalue_4}
+
+6000.1.1 = {b_nettlebank = ca_asoiaf_ironislands_basevalue_1}
+6000.1.1 = {b_nettlebank = ca_asoiaf_ironislands_basevalue_2}
+6000.1.1 = {b_nettlebank = ca_asoiaf_ironislands_basevalue_3}

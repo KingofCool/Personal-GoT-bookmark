@@ -1,0 +1,33 @@
+# 88 - Blackrush
+
+# County Title
+title = c_blackrush
+
+# Settlements
+max_settlements = 4
+b_halterfalls = castle
+b_shawneytown = city
+b_riverhalt = city
+
+# Misc
+culture = riverlander
+religion = the_seven
+
+# History
+
+
+6000.1.1 = {
+
+b_halterfalls = ca_asoiaf_river_basevalue_1
+b_halterfalls = ca_asoiaf_river_basevalue_2
+
+
+b_shawneytown = ct_asoiaf_river_basevalue_1
+b_shawneytown = ct_asoiaf_river_basevalue_2
+b_shawneytown = ct_asoiaf_river_basevalue_3
+
+b_riverhalt = ct_asoiaf_river_basevalue_1
+b_riverhalt = ct_asoiaf_river_basevalue_2
+
+
+}

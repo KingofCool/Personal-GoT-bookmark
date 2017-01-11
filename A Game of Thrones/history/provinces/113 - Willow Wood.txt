@@ -1,0 +1,26 @@
+# 113 - Willow Wood
+
+# County Title
+title = c_willowwood
+
+# Settlements
+max_settlements = 4
+b_willowhill = castle
+b_crossways = city
+b_smallwood = city
+
+culture = riverlander
+religion = the_seven
+
+# History
+
+6000.1.1 = {
+
+b_willowhill = ca_asoiaf_river_basevalue_1
+
+b_crossways = ct_asoiaf_river_basevalue_1
+b_crossways = ct_asoiaf_river_basevalue_2
+
+b_smallwood = ct_asoiaf_river_basevalue_1
+b_smallwood = ct_asoiaf_river_basevalue_2
+}

@@ -1,0 +1,67 @@
+4000.1.1={
+	liege="d_redmountains"
+	law=succ_primogeniture
+	law = true_cognatic_succession
+}
+4751.1.1 = {
+	holder = 150016 #Samwell
+}
+4798.1.1 = {
+	holder = 0
+}
+7281.1.1 = {
+	holder = 152016 #Vorian
+}
+7305.1.1 = {
+	holder = 153016 #Trystane
+}
+7355.1.1 = {
+	holder = 155016 #Maron
+}
+7378.1.1 = { holder = 0 }
+
+7935.1.1 = { holder=60016 } # Arthur (nc)
+7977.1.1 = { holder=24017 } # Gerold (nc)
+
+8001.2.5= {
+holder=23017
+}
+8054.1.1= {
+holder=22017
+}
+8076.1.1= {
+holder=21017
+}
+8098.1.1= {
+holder=20017
+}
+8112.1.1= {
+holder=18017
+}
+8132.1.1= {
+holder=17017
+}
+8158.8.4= {
+holder=15017
+}
+8159.3.5= {
+holder=13017
+}
+8204.1.1= {
+holder=12017
+}
+8231.1.1= {
+holder=11017
+}
+8265.1.1= {
+holder=1017
+}
+8272.1.1= {
+holder=1016
+}
+8284.1.1= {
+holder=6016
+}
+8296.1.1= {
+holder=9016
+}

@@ -1,0 +1,22 @@
+name = "Guerre de Stannis Baratheon pour le Nord"
+
+casus_belli={
+	casus_belli=cb_stannis_war_north
+	actor=4317
+	recipient=87
+	landed_title=k_north
+	date=8300.3.1
+}
+
+8300.3.1 = {
+	add_defender = 87 		#Roose Bolton
+	add_defender = 127 	#Walder Frey
+	add_defender = 2089 	#Karstarks
+	add_attacker = 4317		# Stannis Baratheon
+	add_attacker = 77152	# House Follard
+	add_attacker = 24 		# House Farring
+	add_attacker = 77153 	# House Massey
+	add_attacker = 2031028  #Chyttering
+	add_attacker = 119982370 # Salladhor Saan
+}
+

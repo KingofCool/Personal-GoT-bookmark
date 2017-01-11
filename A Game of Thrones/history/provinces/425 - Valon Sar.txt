@@ -1,0 +1,24 @@
+# 425 - Valon Sar
+
+# County Title
+title = c_valonsar
+
+# Settlements
+max_settlements = 3
+
+b_valonsar = city
+b_valonsar_castle = castle
+b_valonsar_temple = temple
+
+# Misc
+culture = volantene
+religion = rhllor
+
+# History
+6000.1.1 = {
+	b_valonsar = ct_asoiaf_essos_basevalue_1
+	b_valonsar = ct_asoiaf_essos_basevalue_2
+	b_valonsar = ct_asoiaf_essos_basevalue_3
+	
+	b_valonsar_castle = ca_asoiaf_essos_basevalue_1
+}

@@ -1,0 +1,21 @@
+8200.1.1={
+	liege="c_gulltown"
+	law = succ_primogeniture
+}
+8200.1.1 = { holder=203178 } # Artys (nc)
+8210.1.1 = { 
+	holder=8000178 # Wallace (nc)
+	effect = {
+		holder_scope = {
+			set_dynasty_flag = is_cadet_house
+			c_203178 = { #arryn father
+				set_dynasty_flag = has_cadet_house
+				set_dynasty_flag = owned_cadet_house_@PREV 
+				ROOT = { holder_scope = { set_dynasty_flag = cadet_house_@PREVPREV } }
+			}
+		}
+	}
+} 
+8234.1.1 = { holder=8003178 } # Andar (nc)
+8268.1.1 = { holder=8006178 } # Humfrey (nc)
+8278.1.1 = { holder=8008178 } # Creighton (nc)

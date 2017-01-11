@@ -1,0 +1,23 @@
+# 555 Vojjor Samui/Kasath
+
+# County Title
+title = c_kasath
+
+# Settlements
+max_settlements = 5
+
+b_kasath = tribal
+b_kasath1 = city
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+# History
+6000.1.1 = {
+	b_kasath1 = ct_asoiaf_sarnor_basevalue_1
+	b_kasath1 = ct_asoiaf_sarnor_basevalue_2
+	b_kasath1 = ct_asoiaf_sarnor_basevalue_3
+	b_kasath1 = ct_asoiaf_sarnor_basevalue_4
+	b_kasath1 = ct_asoiaf_sarnor_basevalue_5
+}

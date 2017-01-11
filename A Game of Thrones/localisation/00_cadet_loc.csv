@@ -1,0 +1,288 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESCcadet.1;What will you call this new Cadet House?;Comment allez-vous appeler cette nouvelle maison cadette ?;;;Cómo vas a llamar a esta nueva casa menor?;;;;;;;;;x
+EVTOPTAcadet.1;House Whitewolf;Maison Nersnow;;;Casa Whitewolf;;;;;;;;;x
+EVTOPTBcadet.1;House Goldfang;Maison Orstark;;;Casa Goldfang;;;;;;;;;x
+EVTOPTCcadet.1;House Dreadwolf;Maison Granstark;;;Casa Dreadwolf;;;;;;;;;x
+EVTOPTDcadet.1;House Winterhold;Maison Forstark;;;Casa Winterhold;;;;;;;;;x
+EVTOPTAcadet.2;House Redwyrm;Maison Rougefeu;;;Casa Redwyrm;;;;;;;;;x
+EVTOPTBcadet.2;House Truedrake;Maison Dragonoyr;;;Casa Truedrake;;;;;;;;;x
+EVTOPTCcadet.2;House Fyreblood;Maison Rougedragon;;;Casa Fyreblood;;;;;;;;;x
+EVTOPTDcadet.2;House Goldfyre;Maison Ordragon;;;Casa Goldfyre;;;;;;;;;x
+EVTOPTAcadet.3;House Silvermane;Maison Lannhill;;;Casa Silvermane;;;;;;;;;x
+EVTOPTBcadet.3;House Redclaw;Maison Tylann;;;Casa Redclaw;;;;;;;;;x
+EVTOPTCcadet.3;House Roaring;Maison Orlion;;;Casa Roaring;;;;;;;;;x
+EVTOPTDcadet.3;House Lionford;Maison Grifferouge;;;Casa Loinford;;;;;;;;;x
+EVTOPTAcadet.4;House Darksun;Maison Solnoir;;;Casa Darksun;;;;;;;;;x
+EVTOPTBcadet.4;House Sunviper;Maison Vipère;;;Casa Sunviper;;;;;;;;;x
+EVTOPTCcadet.4;House Blackadder;Maison Neraspic;;;Casa Blackadder;;;;;;;;;x
+EVTOPTDcadet.4;House Snakespear;Maison Sandaspic;;;Casa Sankerspear;;;;;;;;;x
+EVTOPTAcadet.5;House Redriver;Maison Riversaigues;;;Casa Redriver;;;;;;;;;x
+EVTOPTBcadet.5;House Darkfish;Maison Nertruite;;;Casa Darkfish;;;;;;;;;x
+EVTOPTCcadet.5;House Goldfish;Maison Ortruite;;;Casa Goldfish;;;;;;;;;x
+EVTOPTDcadet.5;House Steeltrout;Maison Ecailles;;;Casa Steeltrout;;;;;;;;;x
+EVTOPTAcadet.6;House Redwing;Maison Rougestone;;;Casa Redwing;;;;;;;;;x
+EVTOPTBcadet.6;House Kestrel;Maison Oroyseau;;;Casa Kestrel;;;;;;;;;x
+EVTOPTCcadet.6;House Bluebird;Maison Serrazur;;;Casa Bluebird;;;;;;;;;x
+EVTOPTDcadet.6;House Skywarden;Maison Oyseaunoir;;;Casa Skywarden;;;;;;;;;x
+EVTOPTAcadet.7;House Stagborn;Maison Durstorm;;;Casa Stagborn;;;;;;;;;x
+EVTOPTBcadet.7;House Stormhart;Maison Biche;;;Casa Stormhart;;;;;;;;;x
+EVTOPTCcadet.7;House Durrande;Maison Durrande;;;Casa Durrande;;;;;;;;;x
+EVTOPTDcadet.7;House Deer;Maison Orbois;;;Casa Deer;;;;;;;;;x
+EVTOPTAcadet.8;House Bloodrose;Maison Belflowers;;;Casa Bloodrose;;;;;;;;;x
+EVTOPTBcadet.8;House Blackrose;Maison Rosenoyr;;;Casa Blackrose;;;;;;;;;x
+EVTOPTCcadet.8;House Smallrose;Maison Orose;;;Casa Smallrose;;;;;;;;;x
+EVTOPTDcadet.8;House Greenrose;Maison Neufjardin;;;Casa Greenrose;;;;;;;;;x
+EVTOPTAcadet.9;House Silverink;Maison Noirpyke;;;Casa Silverink;;;;;;;;;x
+EVTOPTBcadet.9;House Redjoy;Maison Rougefer;;;Casa Redjoy;;;;;;;;;x
+EVTOPTCcadet.9;House Ironkraken;Maison Nerjoy;;;Casa Ironkraken;;;;;;;;;x
+EVTOPTDcadet.9;House Hardman;Maison Ferjoy;;;Casa Hardman;;;;;;;;;x
+EVTOPTAcadet.13;House Twinchild;Maison Jumeau;;;Casa Twinchild;;;;;;;;;x
+EVTOPTBcadet.13;House Goldcross;Maison Orpont;;;Casa Goldcross;;;;;;;;;x
+EVTOPTCcadet.13;House Tollbridge;Maison Frivers;;;Casa Tollbridge;;;;;;;;;x
+EVTOPTDcadet.13;House Northgate;Maison Noirpont;;;Casa Northgate;;;;;;;;;x
+EVTDESCcadet.10;The bond your cadet house has with its creator is thicker than water.;Le lien qu'a votre famille cadette avec la branche principale est indéfectible.;;;El vínculo que su rama cadete tiene con la casa principal es inquebrantable.;;;;;x;;;;
+EVTOPTAcadet.10;Ok;Ok;GERMAN;;Ok;;;;;;;;;x
+cadet_bastard;Give a Cadet Dynasty;Créer une dynastie cadette;GERMAN;;Crear una dinastía menor para [Root.GetBestName];;;;;;;;;x
+cadet_bastard_desc;[Root.GetBestName] will become head of a new dynasty and is promised a title.;[Root.GetBestName] deviendra le chef d'une nouvelle dynastie et se verra promettre un titre. ;GERMAN;;[Root.GetBestName] se convertirá en el cabeza de una nueva dinastía y se promete un título.;;;;;;;;;x
+EVTOPTAcadet.11;House North;Maison Nordier;GERMAN;;Casa Norte;;;;;;;;;x
+EVTOPTBcadet.11;House South;Maison Sudron;GERMAN;;Casa Sur;;;;;;;;;x
+EVTOPTCcadet.11;House West;Maison Ouestan;GERMAN;;Casa Este;;;;;;;;;x
+EVTOPTDcadet.11;House East;Maison Estard;GERMAN;;Casa Oeste;;;;;;;;;x
+legitimise_not_bastard_cadet;Acknowledge a Cadet Dynasty;Reconnaître une branche cadette;;;Reconocer una rama cadete;;;;;;;;;x
+legitimise_not_bastard_cadet;One of your kinsman was granted a cadet dynasty and its own land and name to rule. However House [From.GetOnlyDynastyName] desperately needs an heir and they can provide one...;Reconnaître une branche cadette;;;Uno de vuestros parientes a recibido el derecho de fundar una dinastía, de dirigir sus propias tierras y de llevar su propio apellido. Sin embargo, la casa [From.GetOnlyDynastyName] necesita desesperadamente un heredero y  esta rama cadete puede proporcionarlo...;;;;;;;;;x
+EVT_DESC_cadet_15;[Root.GetTitledFirstName], I hereby grant you the honour of naming your cadet house of [Root.GetOnlyDynastyName] full and legitimate members of House [From.GetOnlyDynastyName]. In doing so you and your kin are henceforth acknowledged as rightful heirs of my house.\n\nYours\n[From.GetTitledFirstName] of the House [From.GetOnlyDynastyName],;[From.GetTitledFirstName] de la maison [From.GetOnlyDynastyName] a reconnu notre maison comme faisant partie de la sienne !;;;[From.GetTitledFirstName] de la casa [From.GetOnlyDynastyName] a reconocido nuestra casa como parte de la suya!;;;;;;;;;x
+EVT_OPTA_cadet_15;We are all one!;Nous sommes un !;;;Todos somos uno!;;;;;;;;;x
+TOOLTIPlegitimise_cadet;All members of the [Root.GetOnlyDynastyName] cadet house will be legitimised and become full members of House [From.GetOnlyDynastyName]\n;Tous les membres de cette branche cadette seront reconnus comme membres à part entière de votre dynastie.;;;Todos los miembros de la rama cadete serán legitimados y serán miembros  de tu dinastía.;;;;;;;;;x
+legitimise_cadet;Legitmise Cadet House;Légitimise branche cadette;;;;;;;;;;;;x
+legitimise_cadet_desc; ;;;;;;;;;;;;;x
+legitimise_cadet_named;Legitmise House [Root.GetOnlyDynastyName];Légitimise Maison [Root.GetOnlyDynastyName];;;;;;;;;;;;x
+TOOLTIPlegitimise_cadetA;[From.GetTitledFirstName] is the last living member of House [From.GetOnlyDynastyName] who can inherit titles\n;[From.GetTitledFirstName] est la dernière personne en vie de la Maison [From.GetOnlyDynastyName] qui peut hériter de titres\n;;;;;;;;;;;;x
+EVT_DESC_cadet_17;To all good lords of the realm, I hereby grant my kins[legitmised_cadet.GetManWoman] [legitmised_cadet.GetTitledFirstName] the honour of naming [legitmised_cadet.GetHerHis] cadet house of [legitmised_cadet.GetOnlyDynastyName] full and legitimate members of House [cadet_legitimiser.GetOnlyDynastyName]. In doing so [legitmised_cadet.GetSheHe] and [legitmised_cadet.GetHerHis] kin are henceforth acknowledged as rightful heirs of my house.\n\nSigned\n[cadet_legitimiser.GetTitledFirstName] of the House [cadet_legitimiser.GetOnlyDynastyName];"A tous les lords du royaume, par la présente, j'accorde à ma famille [legitmised_cadet.GetManWoman] [legitmised_cadet.GetTitledFirstName] l'honneur de reconnaître sa branche cadette sous le nom de [legitmised_cadet.GetOnlyDynastyName] ; ses membres font pleinement partie de la Maison [cadet_legitimiser.GetOnlyDynastyName]. Ainsi [legitmised_cadet.GetSheHe] et sa parentèle sont reconnus comme étant les héritiers légitimes de ma maison.\n\nSigné\n[cadet_legitimiser.GetTitledFirstName] de la Maison [cadet_legitimiser.GetOnlyDynastyName]";;;[From.GetTitledFirstName] de la casa [From.GetOnlyDynastyName] a reconocido nuestra casa como parte de la suya!;;;;;;;;;x
+EVTOPTAcadet.20;House Staine;Maison Teinte;;;;;;;;;;;;x
+EVTOPTBcadet.20;House Bradshaw;Maison Liane;;;;;;;;;;;;x
+EVTOPTCcadet.20;House Wilkowe;Maison Loulige;;;;;;;;;;;;x
+EVTOPTAcadet.21;House Telwall;Maison Francmur;;;;;;;;;;;;x
+EVTOPTBcadet.21;House Stopford;Maison Poingué;;;;;;;;;;;;x
+EVTOPTCcadet.21;House Baille;Maison Baille;;;;;;;;;;;;x
+EVTOPTAcadet.22;House Sable;Maison Sable;;;;;;;;;;;;x
+EVTOPTBcadet.22;House Brinkdale;Maison Bordvallée;;;;;;;;;;;;x
+EVTOPTCcadet.22;House Morgenster;Maison Mastre;;;;;;;;;;;;x
+EVTOPTAcadet.23;House Elleston;Maison Pierrine;;;;;;;;;;;;x
+EVTOPTBcadet.23;House Lindby;Maison Parilleul;;;;;;;;;;;;x
+EVTOPTCcadet.23;House Shawe;Maison Fourré;;;;;;;;;;;;x
+EVTOPTAcadet.24;House Dromegar;Maison Bossegar;;;;;;;;;;;;x
+EVTOPTBcadet.24;House Caladryon;Maison Caladryon;;;;;;;;;;;;x
+EVTOPTCcadet.24;House Embartys;Maison Scelartys;;;;;;;;;;;;x
+EVTOPTAcadet.25;House Sindoryen;Maison Sindoryen;;;;;;;;;;;;x
+EVTOPTBcadet.25;House Hardshell;Maison Coquardu;;;;;;;;;;;;x
+EVTOPTCcadet.25;House Angotys;Maison Angotys;;;;;;;;;;;;x
+EVTOPTAcadet.26;House Eldricport;Maison Aldriquai;;;;;;;;;;;;x
+EVTOPTBcadet.26;House Iton;Maison Hespérie;;;;;;;;;;;;x
+EVTOPTCcadet.26;House Goisham;Maison Goisham;;;;;;;;;;;;x
+EVTOPTAcadet.27;House Whitestaff;Maison Bâtonblanc;;;;;;;;;;;;x
+EVTOPTBcadet.27;House Ravenscar;Maison Coupdefreux;;;;;;;;;;;;x
+EVTOPTCcadet.27;House Breakbow;Maison Brisarc;;;;;;;;;;;;x
+EVTOPTAcadet.28;House Randle;Maison Randalle;;;;;;;;;;;;x
+EVTOPTBcadet.28;House Knoll;Maison Monticule;;;;;;;;;;;;x
+EVTOPTCcadet.28;House Hengston;Maison Cocotte;;;;;;;;;;;;x
+EVTOPTAcadet.29;House Hardcastle;Maison Castelfort;;;;;;;;;;;;x
+EVTOPTBcadet.29;House Earnewold;Maison Vieilgagne;;;;;;;;;;;;x
+EVTOPTCcadet.29;House Algarmont;Maison Algarmont;;;;;;;;;;;;x
+EVTOPTAcadet.30;House Young;Maison Jeune;;;;;;;;;;;;x
+EVTOPTBcadet.30;House Banners;Maison Bannière;;;;;;;;;;;;x
+EVTOPTCcadet.30;House Maidenfield;Maison Champvierge;;;;;;;;;;;;x
+EVTOPTAcadet.31;House Lumbard;Maison Lombard;;;;;;;;;;;;x
+EVTOPTBcadet.31;House Goreland;Maison Sangterre;;;;;;;;;;;;x
+EVTOPTCcadet.31;House Weale;Maison Zébron;;;;;;;;;;;;x
+EVTOPTAcadet.32;House Stonehelm;Maison Vigipierre;;;;;;;;;;;;x
+EVTOPTBcadet.32;House Olorton;Maison Olorton;;;;;;;;;;;;x
+EVTOPTCcadet.32;House Marchersford;Maison Marchegué;;;;;;;;;;;;x
+EVTOPTAcadet.33;House Marbury;Maison Marbrure;;;;;;;;;;;;x
+EVTOPTBcadet.33;House Gates;Maison Portes;;;;;;;;;;;;x
+EVTOPTCcadet.33;House Pallather;Maison Bonnecume;;;;;;;;;;;;x
+EVTOPTAcadet.34;House Tetherstone;Maison Pierrelongue;;;;;;;;;;;;x
+EVTOPTBcadet.34;House Rumbold;Maison Bravetrange;;;;;;;;;;;;x
+EVTOPTCcadet.34;House Damport;Maison Diguepoise;;;;;;;;;;;;x
+EVTOPTAcadet.35;House Bullen;Maison Bruten;;;;;;;;;;;;x
+EVTOPTBcadet.35;House Vayerr;Maison Vayerr;;;;;;;;;;;;x
+EVTOPTCcadet.35;House Cemberlyng;Maison Cembrelyn;;;;;;;;;;;;x
+EVTOPTAcadet.36;House Eastyng;Maison Estain;;;;;;;;;;;;x
+EVTOPTBcadet.36;House Corrund;Maison Noyaud;;;;;;;;;;;;x
+EVTOPTCcadet.36;House Garriot;Maison Garriot;;;;;;;;;;;;x
+EVTOPTAcadet.37;House Mothall;Maison Phalène;;;;;;;;;;;;x
+EVTOPTBcadet.37;House Wyeton;Maison Chênon;;;;;;;;;;;;x
+EVTOPTCcadet.37;House Salbach;Maison Solisel;;;;;;;;;;;;x
+EVTOPTAcadet.38;House Casanmar;Maison Casanmar;;;;;;;;;;;;x
+EVTOPTBcadet.38;House Garglass;Maison Verregar;;;;;;;;;;;;x
+EVTOPTCcadet.38;House Anvil;Maison Enclume;;;;;;;;;;;;x
+EVTOPTAcadet.39;House Serenmont;Maison Montserein;;;;;;;;;;;;x
+EVTOPTBcadet.39;House Torendayne;Maison Torendayne;;;;;;;;;;;;x
+EVTOPTCcadet.39;House Palestone;Maison Pierrepale;;;;;;;;;;;;x
+EVTOPTAcadet.40;House Lisland;Maison Lisle;;;;;;;;;;;;x
+EVTOPTBcadet.40;House Bowyer;Maison Archet;;;;;;;;;;;;x
+EVTOPTCcadet.40;House Spires;Maison Flèches;;;;;;;;;;;;x
+EVTOPTAcadet.41;House Curson;Maison Sortil;;;;;;;;;;;;x
+EVTOPTBcadet.41;House Medlar;Maison Milieuve;;;;;;;;;;;;x
+EVTOPTCcadet.41;House Ironquill;Maison Ferplumme;;;;;;;;;;;;x
+EVTOPTAcadet.42;House Alomar;Maison Alomar;;;;;;;;;;;;x
+EVTOPTBcadet.42;House Santarion;Maison Saintrion;;;;;;;;;;;;x
+EVTOPTCcadet.42;House Brimstone;Maison Bordpierre;;;;;;;;;;;;x
+EVTOPTAcadet.43;House Glendour;Maison Durglisse;;;;;;;;;;;;x
+EVTOPTBcadet.43;House Arqert;Maison Argère;;;;;;;;;;;;x
+EVTOPTCcadet.43;House Blackgate;Maison Nerporte;;;;;;;;;;;;x
+EVTOPTAcadet.44;House Redsail;Maison Rougevoile;;;;;;;;;;;;x
+EVTOPTBcadet.44;House Hackland;Maison De la Brèche;;;;;;;;;;;;x
+EVTOPTCcadet.44;House Freeman;Maison Affranchi;;;;;;;;;;;;x
+EVTOPTAcadet.45;House Sheercliff;Maison Purfalaise;;;;;;;;;;;;x
+EVTOPTBcadet.45;House Ardway;Maison Durvoie;;;;;;;;;;;;x
+EVTOPTCcadet.45;House Saltyre;Maison Salant;;;;;;;;;;;;x
+EVTOPTAcadet.46;House Strongrow;Maison Fortefile;;;;;;;;;;;;x
+EVTOPTBcadet.46;House Balekeep;Maison Balai;;;;;;;;;;;;x
+EVTOPTCcadet.46;House Thirsck;Maison Soiffarde;;;;;;;;;;;;x
+EVTOPTAcadet.47;House Isswynd;Maison Vantfreis;;;;;;;;;;;;x
+EVTOPTBcadet.47;House Cruelsea;Maison Mercruel;;;;;;;;;;;;x
+EVTOPTCcadet.47;House Whaler;Maison Baleinier;;;;;;;;;;;;x
+EVTOPTAcadet.48;House Delving;Maison Creusant;;;;;;;;;;;;x
+EVTOPTBcadet.48;House Osterwyck;Maison Tulipe;;;;;;;;;;;;x
+EVTOPTCcadet.48;House Tendale;Maison Tendale;;;;;;;;;;;;x
+EVTOPTAcadet.49;House Nayrest;Maison Nonrepos;;;;;;;;;;;;x
+EVTOPTBcadet.49;House Nethermoor;Maison Moissonneuse;;;;;;;;;;;;x
+EVTOPTCcadet.49;House Fastolf;Maison Loqueteau;;;;;;;;;;;;x
+EVTOPTAcadet.50;House Tanckred;Maison Rougecuve;;;;;;;;;;;;x
+EVTOPTBcadet.50;House Cadmont;Maison Montrustre;;;;;;;;;;;;x
+EVTOPTCcadet.50;House Gull;Maison Mouette;;;;;;;;;;;;x
+EVTOPTAcadet.51;House Hawkwood;Maison Crécerelle;;;;;;;;;;;;x
+EVTOPTBcadet.51;House Laine;Maison Laine;;;;;;;;;;;;x
+EVTOPTCcadet.51;House Rutland;Maison Terreau;;;;;;;;;;;;x
+EVTOPTAcadet.52;House Weirstone;Maison Pierredeboue;;;;;;;;;;;;x
+EVTOPTBcadet.52;House Caskeld;Maison Tonnelet;;;;;;;;;;;;x
+EVTOPTCcadet.52;House Brasse;Maison Brasse;;;;;;;;;;;;x
+EVTOPTAcadet.53;House Farthyng;Maison Lointayn;;;;;;;;;;;;x
+EVTOPTBcadet.53;House Cartwright;Maison Chariot;;;;;;;;;;;;x
+EVTOPTCcadet.53;House Radbroke;Maison Radecasse;;;;;;;;;;;;x
+EVTOPTAcadet.54;House Candleston;Maison Chandelier;;;;;;;;;;;;x
+EVTOPTBcadet.54;House Kannock;Maison Lencoche;;;;;;;;;;;;x
+EVTOPTCcadet.54;House Thaller;Maison Plusencore;;;;;;;;;;;;x
+EVTOPTAcadet.55;House Ysley;Maison Fluette;;;;;;;;;;;;x
+EVTOPTBcadet.55;House Chalcke;Maison Craye;;;;;;;;;;;;x
+EVTOPTCcadet.55;House Lylburne;Maison Petybrule;;;;;;;;;;;;x
+EVTOPTAcadet.56;House Galvayn;Maison Vygnette;;;;;;;;;;;;x
+EVTOPTBcadet.56;House Bruges;Maison Bruges;;;;;;;;;;;;x
+EVTOPTCcadet.56;House Montgawin;Maison Montgawin;;;;;;;;;;;;x
+EVTOPTAcadet.57;House Skinner;Maison Écorcheur;;;;;;;;;;;;x
+EVTOPTBcadet.57;House Culling;Maison Abattage;;;;;;;;;;;;x
+EVTOPTCcadet.57;House Wailbeck;Maison Larmoyant;;;;;;;;;;;;x
+EVTOPTAcadet.58;House Barrows;Maison Brancards;;;;;;;;;;;;x
+EVTOPTBcadet.58;House Thanett;Maison Nobliette;;;;;;;;;;;;x
+EVTOPTCcadet.58;House Crownes;Maison Couronnes;;;;;;;;;;;;x
+EVTOPTAcadet.59;House Glen;Maison Vallon;;;;;;;;;;;;x
+EVTOPTBcadet.59;House Sward;Maison Pelouse;;;;;;;;;;;;x
+EVTOPTCcadet.59;House Shale;Maison Argile;;;;;;;;;;;;x
+EVTOPTAcadet.60;House Karlsby;Maison Plenchet;;;;;;;;;;;;x
+EVTOPTBcadet.60;House Burnwood;Maison Flambosc;;;;;;;;;;;;x
+EVTOPTCcadet.60;House Greycliff;Maison Grisfalaise;;;;;;;;;;;;x
+EVTOPTAcadet.61;House Rounton;Maison Écurie;;;;;;;;;;;;x
+EVTOPTBcadet.61;House Wyse;Maison Érudit;;;;;;;;;;;;x
+EVTOPTCcadet.61;House Hall;Maison Corridor;;;;;;;;;;;;x
+EVTOPTAcadet.62;House Hume;Maison Fumeur;;;;;;;;;;;;x
+EVTOPTBcadet.62;House Flagg;Maison Signal;;;;;;;;;;;;x
+EVTOPTCcadet.62;House Barlough;Maison Barrelac;;;;;;;;;;;;x
+EVTOPTAcadet.63;House Firth;Maison Premier;;;;;;;;;;;;x
+EVTOPTBcadet.63;House Wett;Maison Humide;;;;;;;;;;;;x
+EVTOPTCcadet.63;House Drownland;Maison Terrenoyé;;;;;;;;;;;;x
+EVTOPTAcadet.64;House Rhynn;Maison Rhynn;;;;;;;;;;;;x
+EVTOPTBcadet.64;House Trott;Maison Trotteur;;;;;;;;;;;;x
+EVTOPTCcadet.64;House Maresfold;Maison Juments;;;;;;;;;;;;x
+EVTOPTAcadet.65;House Bellows;Maison Soufflet;;;;;;;;;;;;x
+EVTOPTBcadet.65;House Horn;Maison Corne;;;;;;;;;;;;x
+EVTOPTCcadet.65;House Aske;Maison Pose;;;;;;;;;;;;x
+EVTOPTAcadet.66;House Bracewell;Maison Entretoise;;;;;;;;;;;;x
+EVTOPTBcadet.66;House Holt;Maison Croq;;;;;;;;;;;;x
+EVTOPTCcadet.66;House Ward;Maison Quartier;;;;;;;;;;;;x
+EVTOPTAcadet.67;House Erkin;Maison Erkin;;;;;;;;;;;;x
+EVTOPTBcadet.67;House Jett;Maison Jett;;;;;;;;;;;;x
+EVTOPTCcadet.67;House Mayall;Maison Peutout;;;;;;;;;;;;x
+EVTOPTAcadet.68;House Ambleton;Maison Échouage;;;;;;;;;;;;x
+EVTOPTBcadet.68;House Tanfield;Maison Bronzechamp;;;;;;;;;;;;x
+EVTOPTCcadet.68;House Raby;Maison Raby;;;;;;;;;;;;x
+EVTOPTAcadet.69;House Wake;Maison Éveil;;;;;;;;;;;;x
+EVTOPTBcadet.69;House Stonewall;Maison Pierredemur;;;;;;;;;;;;x
+EVTOPTCcadet.69;House Flambard;Maison Flambard;;;;;;;;;;;;x
+EVTOPTAcadet.70;House Slumberton;Maison Beausommeil;;;;;;;;;;;;x
+EVTOPTBcadet.70;House Nettlefield;Maison Champdortie;;;;;;;;;;;;x
+EVTOPTCcadet.70;House Greenacre;Maison Acrevert;;;;;;;;;;;;x
+EVTOPTAcadet.71;House Waringham;Maison Guerrecrasse;;;;;;;;;;;;x
+EVTOPTBcadet.71;House Acton;Maison Acton;;;;;;;;;;;;x
+EVTOPTCcadet.71;House Broadmoat;Maison Largefosse;;;;;;;;;;;;x
+EVTOPTAcadet.72;House Groan;Maison Plainte;;;;;;;;;;;;x
+EVTOPTBcadet.72;House Gormont;Maison Montbleu;;;;;;;;;;;;x
+EVTOPTCcadet.72;House Starpike;Maison Piquétoile;;;;;;;;;;;;x
+EVTOPTAcadet.73;House Strongvine;Maison Vigneforte;;;;;;;;;;;;x
+EVTOPTBcadet.73;House Vintner;Maison Vigneron;;;;;;;;;;;;x
+EVTOPTCcadet.73;House Rypewell;Maison Byenmur;;;;;;;;;;;;x
+EVTOPTAcadet.74;House Thadbury;Maison Malfosse;;;;;;;;;;;;x
+EVTOPTBcadet.74;House Correy;Maison Trognon;;;;;;;;;;;;x
+EVTOPTCcadet.74;House Poynton;Maison Poynteur;;;;;;;;;;;;x
+EVTOPTAcadet.75;House Hornby;Maison Cornu;;;;;;;;;;;;x
+EVTOPTBcadet.75;House Illwyck;Maison Malmèche;;;;;;;;;;;;x
+EVTOPTCcadet.75;House Redheath;Maison Rougebruyère;;;;;;;;;;;;x
+EVTOPTAcadet.76;House Brimsley;Maison Bordure;;;;;;;;;;;;x
+EVTOPTBcadet.76;House Catherby;Maison Chatoune;;;;;;;;;;;;x
+EVTOPTCcadet.76;House Trapper;Maison Trappeur;;;;;;;;;;;;x
+EVTOPTAcadet.77;House Brey;Maison Brey;;;;;;;;;;;;x
+EVTOPTBcadet.77;House Oldwater;Maison Vieuzeaux;;;;;;;;;;;;x
+EVTOPTCcadet.77;House Nockford;Maison Cochegué;;;;;;;;;;;;x
+EVTOPTAcadet.78;House Silvercote;Maison Cotargent;;;;;;;;;;;;x
+EVTOPTBcadet.78;House Underwood;Maison Soubosc;;;;;;;;;;;;x
+EVTOPTCcadet.78;House Vernon;Maison Vernon;;;;;;;;;;;;x
+EVTOPTAcadet.79;House Bardsley;Maison Bardard;;;;;;;;;;;;x
+EVTOPTBcadet.79;House Eardhill;Maison Collinemer;;;;;;;;;;;;x
+EVTOPTCcadet.79;House Holgreve;Maison Creu ;;;;;;;;;;;;x
+EVTOPTAcadet.80;House Fletchfield;Maison Champfléché;;;;;;;;;;;;x
+EVTOPTBcadet.80;House Newhall;Maison neomanoir;;;;;;;;;;;;x
+EVTOPTCcadet.80;House Dowbridge;Maison Baspont;;;;;;;;;;;;x
+EVTOPTAcadet.81;House Wyverley;Maison Vyvante;;;;;;;;;;;;x
+EVTOPTBcadet.81;House Hove;Maison Flotte;;;;;;;;;;;;x
+EVTOPTCcadet.81;House Longfell;Maison Longuechute;;;;;;;;;;;;x
+EVTOPTAcadet.82;House Glaveston;Maison Glaçures;;;;;;;;;;;;x
+EVTOPTBcadet.82;House Moll;Maison Meuf;;;;;;;;;;;;x
+EVTOPTCcadet.82;House Oderrich;Maison Autreriche;;;;;;;;;;;;x
+EVTOPTAcadet.83;House Daventree;Maison Arbretrone;;;;;;;;;;;;x
+EVTOPTBcadet.83;House Nordwyck;Maison Norrmèche;;;;;;;;;;;;x
+EVTOPTCcadet.83;House Reeve;Maison Rechaud;;;;;;;;;;;;x
+EVTOPTAcadet.84;House Bougher;Maison Bruyère;;;;;;;;;;;;x
+EVTOPTBcadet.84;House Lyringham;Maison Parleur;;;;;;;;;;;;x
+EVTOPTCcadet.84;House Urse;Maison Urse;;;;;;;;;;;;x
+EVTOPTAcadet.85;House Orresby;Maison Minéral;;;;;;;;;;;;x
+EVTOPTBcadet.85;House Gravenor;Maison Tombal;;;;;;;;;;;;x
+EVTOPTCcadet.85;House Russard;Maison Russard;;;;;;;;;;;;x
+EVTOPTAcadet.86;House Pitt;Maison Fosse;;;;;;;;;;;;x
+EVTOPTBcadet.86;House Queensmark;Maison Reginacrosse;;;;;;;;;;;;x
+EVTOPTCcadet.86;House Splinterford;Maison Pondéclat;;;;;;;;;;;;x
+EVTOPTAcadet.87;House Argenmont;Maison Argenmont;;;;;;;;;;;;x
+EVTOPTBcadet.87;House Roache;Maison Cafard;;;;;;;;;;;;x
+EVTOPTCcadet.87;House Peckfield;Maison Champicore;;;;;;;;;;;;x
+EVTOPTAcadet.88;House Cour;Maison Cour;;;;;;;;;;;;x
+EVTOPTBcadet.88;House Estley;Maison Estien;;;;;;;;;;;;x
+EVTOPTCcadet.88;House Pollard;Maison Sondard;;;;;;;;;;;;x
+EVTOPTAcadet.89;House Emberton;Maison Brasier;;;;;;;;;;;;x
+EVTOPTBcadet.89;House Hoarmont;Maison Montgivre;;;;;;;;;;;;x
+EVTOPTCcadet.89;House Ashenspurr;Maison Cendrepurr;;;;;;;;;;;;x
+EVTOPTAcadet.90;House Nelsby;Maison Faispaschier;;;;;;;;;;;;x
+EVTOPTBcadet.90;House Audley;Maison Audard;;;;;;;;;;;;x
+EVTOPTCcadet.90;House Idmer;Maison Idmer;;;;;;;;;;;;x
+EVTOPTAcadet.91;House Alton;Maison Alton;;;;;;;;;;;;x
+EVTOPTBcadet.91;House Cesselrig;Maison Abandonné;;;;;;;;;;;;x
+EVTOPTCcadet.91;House Lonnshead;Maison voilée;;;;;;;;;;;;x
+EVTOPTAcadet.92;House Myddenham;Maison Bonfumyer;;;;;;;;;;;;x
+EVTOPTBcadet.92;House Holham;Maison Jolytrou;;;;;;;;;;;;x
+EVTOPTCcadet.92;House Yeald;Maison Weshwesh;;;;;;;;;;;;x
+EVTOPTAcadet.93;House Alestrum;Maison Alestrum;;;;;;;;;;;;x
+EVTOPTBcadet.93;House Dunmill;Maison Meunier;;;;;;;;;;;;x
+EVTOPTCcadet.93;House Montcarr;Maison Portemont;;;;;;;;;;;;x
+EVTOPTAcadet.94;House Nestleigh;Maison Nidtraineau;;;;;;;;;;;;x
+EVTOPTBcadet.94;House Steele;Maison Aciere;;;;;;;;;;;;x
+EVTOPTCcadet.94;House Deresby;Maison Nompourri;;;;;;;;;;;;x
+EVTOPTAcadet.95;House Brewerston;Maison Brasserie;;;;;;;;;;;;x
+EVTOPTBcadet.95;House Fyne;Maison Byen;;;;;;;;;;;;x
+EVTOPTCcadet.95;House Mellor;Maison Moelleuse;;;;;;;;;;;;x

@@ -1,0 +1,29 @@
+# 443 - Narros
+
+# County Title
+title = c_narros
+
+# Settlements
+max_settlements = 3
+
+b_narros = city
+b_narroscastle = castle
+b_narrostemple = temple
+
+
+# Misc
+culture = norvosi
+religion = bearded_priests
+
+terrain = hills
+
+# History
+6000.1.1 = {
+	b_narros = ct_asoiaf_essos_basevalue_1
+	b_narros = ct_asoiaf_essos_basevalue_2
+	b_narros = ct_asoiaf_essos_basevalue_3
+	
+	b_narroscastle = ca_asoiaf_essos_basevalue_1
+	b_narroscastle = ca_asoiaf_essos_basevalue_2
+
+}

@@ -1,0 +1,43 @@
+6000.1.1={
+	liege="d_winterfell"
+	law = succ_primogeniture
+}
+7976.1.1={
+	holder=18060
+}
+8011.1.1={
+	holder=17060
+}
+8042.1.1={
+	holder=16060
+}
+8080.1.1={
+	holder=15060
+}
+8121.1.1={
+	holder=13060
+}
+8161.1.1={
+	holder=12060
+}
+8175.1.1={
+	holder=11060
+}
+8202.1.1={
+	holder=10060
+}
+8248.1.1={
+	holder=2060
+}
+8281.1.1={
+	holder=60 #martyn
+}
+8284.1.1 = {
+	holder=4060 #jory
+}
+8298.1.1 = {
+	holder=3060 #rodrik
+}
+8299.6.29 = {
+	holder=9060 #beth
+}

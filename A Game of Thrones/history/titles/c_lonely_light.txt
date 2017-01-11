@@ -1,0 +1,30 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="e_iron_isles"
+}
+7995.1.1 = { holder=3005114 } # Rodrik (nc)
+7998.2.1={
+liege="k_iron_isles"
+}
+8038.1.1 = { holder=40018114 } # Greydon (nc)
+8068.1.1 = { holder=30038114 } # Quellon(nc)
+8092.1.1 = { holder=30048114 } # Shierle (nc)
+8106.1.1 = { holder=30068114 } # Dunstan (nc)
+8138.1.1 = { holder=30098114 } # Victarion (nc)
+8160.1.1 = { holder=30148114 } # Rodrik (nc)
+8203.1.1 = { holder=30158114 } # Malora (nc)
+8218.1.1 = { holder=30188114 } # Kenned (nc)
+8239.1.1 = { holder=30218114 } # Ulf (nc)
+8270.1.1 = { holder=30258114 } # Gylbert (c)
+8289.1.1={
+	liege="e_iron_isles"
+}
+8289.6.1={
+	liege="k_iron_isles"
+}
+8299.3.4 = {
+	liege="e_iron_isles"
+}
+
+
+
+

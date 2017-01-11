@@ -1,0 +1,25 @@
+900.1.1={
+	liege="d_blackwood"
+	law = succ_primogeniture
+}
+#House Strong
+7967.1.1 = { holder=148356 } #Lucan (nc)
+8005.1.1 = { holder=150356 } # Harsley (nc)
+8024.1.1 = { holder=152356 } # Ryman (nc)
+8049.1.1 = { holder=6356 } # Jonothor (nc)
+8076.1.1 = { holder=4356 } # Lyonel (C)
+#House Bigglestone
+8084.1.1 = { holder=102178452 } # Bennifer (nc)
+8104.1.1 = { holder=103178452 } # Hendry (nc)
+8112.1.1 = { holder=109178452 } # Sandor (nc)
+8130.1.1 = { holder=110178452 } # Sandor (nc)
+8140.1.1 = { holder=117178452 } # Meribald (nc)
+8186.1.1 = { holder=119178452 } # Dickon (nc)
+8196.1.1 = { holder=122178452 } # Raymund (nc)
+8235.1.1 = { holder=127178452 } # Raymund (nc)
+8259.1.1 = { holder=128178452 } # Ebrose (nc)
+8275.1.1 = { holder=129178452 } # Osmund (nc)
+8289.1.1 = { holder=131178452 } # Brynden (nc)
+
+
+

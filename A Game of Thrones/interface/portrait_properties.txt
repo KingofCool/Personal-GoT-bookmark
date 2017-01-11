@@ -1,0 +1,2444 @@
+# The choice is made based on a weighted random, but the first factor that evaluates to >= 100 will be automatically chosen
+
+# p0 background
+0 = {
+	0 = { # castle 1
+		factor = 1
+		modifier = { #Drogon
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_1 }
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture = wildling
+				culture = moon_clansman
+				culture = dothraki
+				culture = lhazareen
+				is_nomadic = yes
+			}
+		}
+	}
+
+	1 = { #throne room
+		factor = 50
+		modifier = { #Balerion
+			factor = 0
+			culture = dragon
+			NOT = { character = 77990001 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { tier = king }
+			NOT = { tier = emperor }
+			NOT = { culture = dragon }
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = first_men
+				culture = ironborn
+				culture = wildling
+				culture = moon_clansman
+				culture = dothraki
+				culture = lhazareen
+				is_nomadic = yes
+			}
+		}
+	}
+
+	2 = { # dungeon
+		factor = 100
+		modifier = { #Rhaegal
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_2 }
+		}
+		modifier = {
+			factor = 0
+			AND = {
+				prisoner = no
+				NOT = { trait = impaler }
+			}
+			NOT = { culture = dragon }
+			NOT = { death_reason = death_dungeon }
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture = wildling
+				culture = moon_clansman
+				culture = dothraki
+				culture = lhazareen
+			}
+		}
+	}
+
+	3 = { # forest
+		factor = 1
+		modifier = { #Viserion
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_3 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+			AND = {
+				NOT = { culture_group = first_men }
+				NOT = { culture_group = free_folk }
+				NOT = { culture = moon_clansman }
+				NOT = { culture_group = dothraki_group }
+				NOT = { culture_group = summer_islands }
+				NOT = { culture_group = ibbenese }
+				NOT = { culture_group = sothoryos_islands }				
+			}
+		}
+	}
+
+	4 = { # bed
+		factor = 100
+		modifier = {
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_4 }
+		}
+		modifier = {
+			factor = 0
+			is_alive = yes
+			NOT = { trait = incapable }
+			NOT = { trait = infirm }
+			NOT = { culture = dragon }
+		}
+		modifier = {
+			factor = 0.001
+			OR = {
+				death_sacrificed_trigger = yes
+				death_reason = death_battle
+				death_execution_trigger = yes
+				death_reason = death_dungeon
+			}
+		}
+		modifier = {
+			factor = 0.02
+			trait = infirm
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture = wildling
+				culture = moon_clansman
+				culture = dothraki
+				culture = lhazareen
+			}
+		}
+	}
+	
+	5 = { # tavern
+		factor = 40
+		modifier = { 
+			factor = 0
+			culture = dragon #Silver/Metal
+			NOT = { trait = dragon_5 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+			NOR = {
+				trait = drunkard
+				trait = gluttonous
+				AND = {
+					trait = hedonist
+					NOT = { trait = impaler }
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				culture = wildling
+				culture = moon_clansman
+				culture = dothraki
+				culture = lhazareen
+			}
+		}
+	}
+	
+	6 = { # military camp
+		factor = 100
+		modifier = { #Silverwing
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_6 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+			OR = {
+				AND = {
+					is_alive = yes
+					in_command = no
+					NOT = { has_job_title  = job_marshal }
+					NOT = { government = military_command_government }
+				}
+				AND = {
+					is_alive = no
+					NOT = { death_reason = death_battle }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.05
+			is_alive = yes
+			in_command = no
+		}
+	}
+	7 = { # Dolmen
+		factor = 5
+		modifier = { #Vermithor
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_7 }
+		}
+		modifier = {
+			factor = 100
+			is_alive = no
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+			AND = {
+				NOT = { culture_group = free_folk }
+				NOT = { culture = moon_clansman }
+			}
+		}
+		modifier = {
+			factor = 2
+			is_priest = yes
+		}
+	}
+	8 = { # Gallows
+		factor = 2
+		modifier = { #Vhagar
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_8 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+			NOT = { has_minor_title  = title_justice_of_king }
+			NOT = { trait = cruel }
+			NOT = { trait = impaler }
+			NOT = { death_execution_trigger = yes }
+		}
+		modifier = {
+			factor = 20
+			OR = {
+				trait = impaler
+				death_execution_trigger = yes
+			}
+		}
+	}
+	9 = { # Church
+		factor = 100
+		modifier = { #Red
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_9 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+			OR = {
+				AND = {
+					NOT = { trait = septon }
+					NOT = { trait = septa }
+					NOT = { trait = silent_sister }
+				}
+				AND = {
+					NOT = { trait = zealous }
+					NOT = { religion = the_seven }
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+			OR = {
+				AND = {
+					is_ruler = yes
+					AND = {
+						NOT = { trait = septon }
+						NOT = { trait = septa }
+						NOT = { trait = silent_sister }
+					}
+				}
+				AND = {
+					is_theocracy = yes
+					AND = {
+						NOT = { trait = septon }
+						NOT = { trait = septa }
+						NOT = { trait = silent_sister }
+					}
+				}
+			}
+		}
+	}
+	10 = { # Desert
+		factor = 1
+		modifier = { #Yellow Syrax
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_10 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+			NOT = { location = { terrain = desert } }
+		}
+	}
+	11 = { # Steppe
+		factor = 1
+		modifier = { #Golden Sunfyre
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_11 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+			NOT = { culture_group = dothraki_group }
+			NOT = { culture = jogos_nhai }
+			NOT = { is_nomadic = yes }
+		}
+		modifier = {
+			factor = 10
+			is_nomadic = yes
+		}
+	}
+	12 = { # Ocean w ships
+		factor = 10
+		modifier = { #Blue Tessarion
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_12 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+			NOT = { culture = ironborn }
+			NOT = { trait = pirate }
+			is_patrician = no
+		}
+	}
+	13 = { # Muslim interior
+		factor = 1
+		modifier = { #ugly
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_13 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+			NOT = { culture_group = free_cities }
+			NOT = { culture_group = ghiscari_group }
+			NOT = { culture_group = hyrkoon_group }
+			NOT = { culture_group = moraqi_group }
+			NOT = { culture_group = qarth_group }
+			NOT = { culture_group = asshai_group }
+			NOT = { culture_group = yi_ti_group }
+		}
+	}
+	14 = { # Harem
+		factor = 1
+		modifier = { #white
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_14 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+			NOT = { culture_group = free_cities }
+			NOT = { culture_group = ghiscari_group }
+			NOT = { culture_group = hyrkoon_group }
+			NOT = { culture_group = moraqi_group }
+			NOT = { culture_group = qarth_group }
+			NOT = { culture_group = asshai_group }
+			NOT = { culture_group = yi_ti_group }
+		}
+	}
+	15 = { # Muslim interior 2
+		factor = 1
+		modifier = { #purple
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_15 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+			NOT = { culture_group = free_cities }
+			NOT = { culture_group = ghiscari_group }
+			NOT = { culture_group = hyrkoon_group }
+			NOT = { culture_group = moraqi_group }
+			NOT = { culture_group = qarth_group }
+			NOT = { culture_group = asshai_group }
+			NOT = { culture_group = yi_ti_group }
+		}
+	}
+
+	16 = { # Mongol camp 1
+		factor = 1
+		modifier = { #bright green
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_16 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+			NOT = { culture = dothraki }
+			NOT = { culture = jogos_nhai }
+		}
+	}
+
+	17 = { # Mongol camp 2
+		factor = 1
+		modifier = { 
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_17 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+			NOT = { culture = dothraki }
+			NOT = { culture = jogos_nhai }
+		}
+	}
+
+	18 = { # Iron Throne
+		factor = 1
+		modifier = { 
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_18 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+			NOT = { has_landed_title = e_iron_throne }
+			NOT = { host = { has_landed_title = e_iron_throne } }
+		}
+		modifier = {
+			factor = 75
+			has_landed_title = e_iron_throne
+		}
+	}
+
+	19 = { # The Wall
+		factor = 2
+		modifier = { 
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_19 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+			NOT = { location = { region = world_the_wall } }
+		}
+		modifier = {
+			factor = 5
+			trait = nightswatch
+		}
+	}
+
+	20 = { # Pagan human sacrifice
+		factor = 1
+		modifier = { 
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_20 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+			NOT = { culture = skagosi }
+			NOT = { culture_group = hyrkoon_group }
+			NOT = { culture_group = moraqi_group }
+			NOT = { death_sacrificed_trigger = yes }
+		}
+		modifier = {
+			factor = 1000
+			death_sacrificed_trigger = yes
+		}
+	}
+	
+	#Extra Dragons
+	21 = { #
+		factor = 1
+		modifier = { 
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_21 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+		}
+	}
+	22 = { #
+		factor = 1
+		modifier = { 
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_22 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+		}
+	}
+	23 = { #
+		factor = 1
+		modifier = { 
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_23 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+		}
+	}
+	24 = { #
+		factor = 1
+		modifier = { 
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_24 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+		}
+	}
+	25 = { #
+		factor = 1
+		modifier = { 
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_25 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+		}
+	}
+	26 = { #
+		factor = 1
+		modifier = { 
+			factor = 0
+			culture = dragon
+			NOT = { trait = dragon_26 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture = dragon }
+		}
+	}
+}
+
+# p1 hair
+1 = {
+	0 = { # Completely bald
+		factor = 1
+		modifier = {
+			factor = 0.1
+			is_female = no
+			NOT = {
+				age = 50
+			}
+		}
+		modifier = {
+			factor = 0.1
+			is_female = yes
+		}
+		modifier = {
+			factor = 0
+			trait = not_a_bear
+		}
+	}
+
+	1 = { # Black Adder
+		factor = 1
+	}
+	
+	2 = { # Page
+		factor = 1
+	}
+
+	3 = { # Synth
+		factor = 1
+	}
+
+	4 = { # Long Straight
+		factor = 1
+	}
+
+	5 = { # Long Curly
+		factor = 1
+	}
+
+	6 = {  # Tonsure
+		factor = 1
+		modifier = {
+			factor = 0
+			is_female = no
+			is_ruler = yes
+		}
+		modifier = {
+			factor = 0
+			is_female = no
+			NOT = { religion_group = christian }
+		}
+		modifier = {
+			factor = 0
+			is_female = no
+			NOT = { trait = detached_priest }
+			NOT = { trait = martial_cleric }
+			NOT = { trait = scholarly_theologian }
+			NOT = { trait = mastermind_theologian }
+			NOT = { has_job_title = job_spiritual }
+		}
+
+		modifier = {
+			factor = 50
+			is_female = no
+		}
+	}
+	
+	7 = {  # Short
+		factor = 1
+	}
+	
+	8 = { # Short Curly
+		factor = 1
+	}
+	
+	9 = {  # Short Uncouth
+		factor = 1
+		modifier = {
+			factor = 5
+			religion_group = pagan_group
+		}
+	}
+	
+	10 = {  # Long Uncouth
+		factor = 1
+		modifier = {
+			factor = 5
+			religion_group = pagan_group
+		}
+	}
+	
+	11 = { # Balding
+		factor = 1
+		modifier = {
+			factor = 0.1
+			is_female = no
+			NOT = {
+				age = 50
+			}
+		}
+	}
+	
+	12 = { # Marine
+		factor = 1
+		modifier = {
+			factor = 0
+			trait = not_a_bear
+		}
+	}
+	
+	13 = { # Mohawk
+		factor = 1
+	}
+	
+	14 = { # Rhaegar's pretty hair
+		factor = 1
+		modifier = {
+			factor = 0
+			trait = not_a_bear
+		}
+	}
+}
+
+# p2 base
+#2 = {
+#}
+
+# p3 clothes
+3 = {
+	
+	0 = { # Royal clothes 1
+		factor = 1
+		modifier = {
+			factor = 3
+			OR = {
+				tier = EMPEROR
+				spouse = { tier = EMPEROR }
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { higher_tier_than = DUKE }
+			NOT = { spouse = { higher_tier_than = DUKE } }
+			NOT = { has_minor_title = title_prince }
+			NAND = {
+				culture_group = sarnor_group
+				tier = DUKE
+			}
+		}
+	}
+	
+	1 = { # Royal clothes 2
+		factor = 1
+		modifier = {
+			factor = 3
+			OR = {
+				tier = EMPEROR
+				spouse = { tier = EMPEROR }
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { higher_tier_than = DUKE }
+			NOT = { spouse = { higher_tier_than = DUKE } }
+			NOT = { has_minor_title = title_prince }
+			NAND = {
+				culture_group = sarnor_group
+				tier = DUKE
+			}
+		}
+	}
+	
+	2 = { # Royal clothes 3
+		factor = 1
+		modifier = {
+			factor = 3
+			OR = {
+				tier = EMPEROR
+				spouse = { tier = EMPEROR }
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { higher_tier_than = DUKE }
+			NOT = { spouse = { higher_tier_than = DUKE } }
+			NOT = { has_minor_title = title_prince }
+			NAND = {
+				culture_group = sarnor_group
+				tier = DUKE
+			}
+		}
+	}
+	
+	3 = { # Noble clothes 1
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				trait = peasant_leader
+				trait = heresiarch
+				trait = maester
+				trait = archmaester
+			}
+		}
+		modifier = {
+			factor = 100
+			AND = {
+				is_female = yes
+				trait = red_priest
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { trait = red_priest }
+			is_ruler = no
+			spouse = { is_ruler = no }
+			NOT = { has_minor_title = title_prince }
+		}
+	}
+	
+	4 = { # Noble clothes 2
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				trait = peasant_leader
+				trait = heresiarch
+				trait = maester
+				trait = archmaester
+			}
+		}
+		modifier = {
+			factor = 0
+			is_ruler = no
+			spouse = { is_ruler = no }
+			NOT = { has_minor_title = title_prince }
+		}
+	}
+	
+	5 = { # Noble clothes 3
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				trait = peasant_leader
+				trait = heresiarch
+				trait = maester
+				trait = archmaester
+			}
+		}
+		modifier = {
+			factor = 0
+			is_ruler = no
+			spouse = { is_ruler = no }
+			NOT = { has_minor_title = title_prince }
+		}
+	}
+	
+	6 = { # Modest clothes 1
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { trait = peasant_leader }
+			NOT = { trait = heresiarch }
+			OR = {
+				trait = red_priest
+				has_minor_title = title_prince
+				is_ruler = yes
+				spouse = { higher_tier_than = COUNT }
+				trait = maester
+				trait = archmaester
+			}
+		}
+		# modifier = {
+			# factor = 0
+			# OR = {
+				# AND = {
+					# is_ruler = no
+					# NOT = { trait = red_priest }
+				# }
+				# AND = {
+					# is_theocracy = no
+					# NOT = { trait = red_priest }
+				# }
+				# AND = {
+					# trait = red_priest
+					# is_female = yes
+				# }
+			# }
+			# #NOT = { has_job_title = job_spiritual }
+		# }
+	}
+	7 = { # Modest clothes 2
+		factor = 1
+		modifier = {
+			factor = 100
+			OR = {
+				trait = septa
+				trait = silent_sister
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { trait = peasant_leader }
+			NOT = { trait = heresiarch }
+			OR = {
+				is_ruler = yes
+				has_minor_title = title_prince
+				spouse = { higher_tier_than = COUNT }
+				trait = maester
+				trait = archmaester
+			}
+		}
+	}
+	
+	8 = { # Modest clothes 3
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { trait = peasant_leader }
+			NOT = { trait = heresiarch }
+			OR = {
+				is_ruler = yes
+				has_minor_title = title_prince
+				spouse = { higher_tier_than = COUNT }
+				trait = maester
+				trait = archmaester
+			}
+		}
+	}
+	9 = { # Shady clothes
+		factor = 3
+		modifier = {
+			factor = 0
+			OR = {
+				higher_tier_than = DUKE
+				AND = {
+					tier = DUKE
+					demesne_size = 1
+				}
+				spouse = { higher_tier_than = DUKE }
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_job_title = job_spymaster }
+			NOT = { intrigue = 10 }
+		}
+	}
+	
+	# Martial
+	10 = {
+		factor = 100
+		modifier = {
+			factor = 0
+			in_command = no
+			NOT = { government = military_command_government }
+			NOT = { has_job_title  = job_marshal }
+			NOT = { primary_title = { mercenary = yes } }
+			NOT = { trait = bearded_priest }
+			NOT = { trait = shieldmaiden }
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				trait = kingsguard
+				trait = maester
+				trait = archmaester
+				trait = nightswatch
+				AND = {
+					is_alive = no
+					NOT = { government = military_command_government }
+					NOT = { death_reason = death_battle }
+				}
+			}
+		}
+	}
+	
+	# Ragged prison clothes
+	11 = {
+		factor = 2000
+		modifier = {
+			factor = 0
+			prisoner = no	
+			NOT = { trait = slave }
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				is_councillor = yes
+				has_minor_title = title_regent
+			}	
+		}
+	}
+	
+	# Maester robes and chain
+	12 = {
+		factor = 1000
+		modifier = {
+			factor = 0
+			trait = kingsguard
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				trait = maester
+				trait = archmaester
+			}
+		}
+	}
+	
+	# Kingsguard armor
+	13 = {
+		factor = 1000
+		modifier = {
+			factor = 0
+			trait = nightswatch
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				trait = kingsguard
+			}
+		}
+	}
+	
+	# Nightswatch clothes
+	14 = {
+		factor = 1000
+		modifier = {
+			factor = 0
+			NOR = {
+				trait = nightswatch
+				primary_title = { title = k_nightswatch }
+			}
+		}
+	}
+}
+
+#p4 beard
+# 4 = {
+	# 0 = {
+		# factor = 1
+		# modifier = {
+			# factor = 0
+			# trait = bearded_priest
+		# }
+	# }
+	# 1 = {
+		# factor = 1
+		# modifier = {
+			# factor = 0
+			# trait = bearded_priest
+		# }
+	# }
+	# 2 = {
+		# factor = 1
+		# modifier = {
+			# factor = 0
+			# culture = norvosi
+			# NOT = { trait = bearded_priest }
+		# }
+	# }
+	# 3 = {
+		# factor = 1
+		# modifier = {
+			# factor = 0
+			# culture = norvosi
+			# NOT = { trait = bearded_priest }
+		# }
+	# }
+	# 4 = {
+		# factor = 1
+		# modifier = {
+			# factor = 0
+			# culture = norvosi
+			# NOT = { trait = bearded_priest }
+		# }
+	# }
+	# 5 = {
+		# factor = 1
+		# modifier = {
+			# factor = 0
+			# trait = bearded_priest
+		# }
+	# }
+	# 6 = {
+		# factor = 1
+		# modifier = {
+			# factor = 0
+			# culture = norvosi
+			# NOT = { trait = bearded_priest }
+		# }
+	# }
+	# 7 = {
+		# factor = 1
+		# modifier = {
+			# factor = 0
+			# trait = bearded_priest
+		# }
+	# }
+	# 8 = {
+		# factor = 1
+		# modifier = {
+			# factor = 0
+			# trait = bearded_priest
+		# }
+	# }
+# }
+
+# p5 headgear
+5 = {
+	# Big, elaborate crown
+	0 = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = { higher_real_tier_than = DUKE }
+			NOT = { spouse = { higher_real_tier_than = DUKE } }
+			NOT = { primary_title = { title = d_prince_pentos } }
+			NAND = {
+				culture_group = sarnor_group
+				tier = DUKE
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				is_feudal = no
+				government = alliance_government
+				government = feudal_government_LP	
+				AND = {
+					spouse = { government = feudal_government_LP }
+					NAND = { 
+						higher_real_tier_than = DUKE 
+						NOT = { government = feudal_government_LP }	
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			trait = proud
+		}
+		modifier = {
+			factor = 0.05
+			trait = humble
+		}
+		# Specific kings who wore this crown
+		modifier = {
+			factor = 100
+			OR = {
+				character = 77020
+				character = 77023
+				character = 77030
+				character = 77037
+				character = 159
+			}
+		}
+	}
+	
+	# Warrior-king's crown
+	1 = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = { higher_real_tier_than = DUKE }
+			NOT = { spouse = { higher_real_tier_than = DUKE } }
+			NOT = { primary_title = { title = d_prince_pentos } }
+			NAND = {
+				culture_group = sarnor_group
+				tier = DUKE
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				is_feudal = no
+				government = alliance_government
+				government = feudal_government_LP	
+				AND = {
+					spouse = { government = feudal_government_LP }
+					NAND = { 
+						higher_real_tier_than = DUKE 
+						NOT = { government = feudal_government_LP }	
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				martial = 12
+				trait = master_warrior
+			}
+		}
+		# Specific kings who wore this crown
+		modifier = {
+			factor = 100
+			OR = {
+				character = 77000
+				character = 77005
+				character = 77013
+				character = 77016
+			}
+		}
+	}
+
+	# Diplomat-King's Crown
+	2 = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = { higher_real_tier_than = DUKE }
+			NOT = { spouse = { higher_real_tier_than = DUKE } }
+			NOT = { primary_title = { title = d_prince_pentos } }
+			NAND = {
+				culture_group = sarnor_group
+				tier = DUKE
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				is_feudal = no
+				government = alliance_government
+				government = feudal_government_LP	
+				AND = {
+					spouse = { government = feudal_government_LP }
+					NAND = { 
+						higher_real_tier_than = DUKE 
+						NOT = { government = feudal_government_LP }	
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			diplomacy = 12
+		}
+		# Specific kings who wore this crown
+		modifier = {
+			factor = 100
+			OR = {
+				character = 77004
+				character = 77006
+				character = 77009
+				character = 77012
+				character = 33561496
+				character = 33562496
+				character = 33563496
+			}
+		}
+	}
+
+	# Non-Specific Crown
+	3 = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = { higher_real_tier_than = DUKE }
+			NOT = { spouse = { higher_real_tier_than = DUKE } }
+			NOT = { primary_title = { title = d_prince_pentos } }
+			NAND = {
+				culture_group = sarnor_group
+				tier = DUKE
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				is_feudal = no
+				government = alliance_government
+				government = feudal_government_LP	
+				AND = {
+					spouse = { government = feudal_government_LP }
+					NAND = { 
+						higher_real_tier_than = DUKE 
+						NOT = { government = feudal_government_LP }	
+					}
+				}
+			}
+		}
+		# Specific kings who wore this crown
+		modifier = {
+			factor = 100
+			OR = {
+				character = 77031
+				character = 77036
+			}
+		}
+	}
+
+	# Simple golden band
+	4 = {
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = { higher_real_tier_than = DUKE }
+			NOT = { spouse = { higher_real_tier_than = DUKE } }
+			NOT = { primary_title = { title = d_prince_pentos } }
+			NAND = {
+				culture_group = sarnor_group
+				tier = DUKE
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				is_feudal = no
+				government = alliance_government
+				government = feudal_government_LP	
+				AND = {
+					spouse = { government = feudal_government_LP }
+					NAND = { 
+						higher_real_tier_than = DUKE 
+						NOT = { government = feudal_government_LP }	
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.05
+			trait = proud
+		}
+		modifier = {
+			factor = 5
+			trait = humble
+		}
+		# Specific kings who wore this crown
+		modifier = {
+			factor = 100
+			OR = {
+				character = 77015
+				character = 77017
+				character = 77019
+				character = 77034
+			}
+		}
+	}
+
+	# Common headgear 1 - hood
+	5 = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { trait = peasant_leader }
+			NOT = { trait = heresiarch }
+			OR = {
+				is_ruler = yes
+				has_minor_title = title_prince
+				spouse = { higher_tier_than = COUNT }
+				trait = kingsguard
+			}
+		}
+		modifier = {
+			factor = 10
+			is_ruler = yes
+			is_theocracy = yes
+			religion_group = pagan_group
+		}
+	}
+	
+	# Common headgear 2 - hood
+	6 = {
+		factor = 1
+		modifier = {
+			factor = 100
+			AND = {
+				is_female = yes
+				trait = red_priest
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { trait = peasant_leader }
+			NOT = { trait = heresiarch }
+			NOT = { trait = red_priest }
+			OR = {
+				is_ruler = yes
+				has_minor_title = title_prince
+				spouse = { higher_tier_than = COUNT }
+				trait = kingsguard
+			}
+		}
+	}
+
+	# Common headgear 3 - Red hat
+	7 = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { trait = peasant_leader }
+			NOT = { trait = heresiarch }
+			OR = {
+				is_ruler = yes
+				has_minor_title = title_prince
+				spouse = { higher_tier_than = COUNT }
+				trait = kingsguard
+				trait = nightswatch
+				trait = bearded_priest
+				in_command = yes
+				government = military_command_government
+				has_job_title  = job_marshal
+				primary_title = { mercenary = yes }
+				prisoner = yes
+				trait = slave
+			}
+		}
+	}
+	
+	# Common headgear 4 - hood
+	8 = {
+		factor = 1
+		modifier = {
+			factor = 100
+			trait = septa
+		}
+		modifier = {
+			factor = 0
+			NOT = { trait = peasant_leader }
+			NOT = { trait = heresiarch }
+			OR = {
+				is_ruler = yes
+				has_minor_title = title_prince
+				spouse = { higher_tier_than = COUNT }
+				trait = kingsguard
+			}
+		}
+	}
+
+	# Shady headgear
+	9 = {
+		factor = 3
+		modifier = {
+			factor = 100
+			trait = silent_sister
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				higher_tier_than = DUKE
+				AND = {
+					tier = DUKE
+					demesne_size = 1
+					NOT = { has_job_title = job_spymaster }
+				}
+				any_spouse = { higher_tier_than = DUKE }
+				trait = kingsguard
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { trait = silent_sister }
+			NOT = { has_job_title = job_spymaster }
+			NOT = { intrigue = 10 }
+		}
+	}
+
+	# Martial headgear
+	10 = {
+		factor = 100
+		modifier = {
+			factor = 0
+			in_command = no
+			NOT = { government = military_command_government }
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				#is_female = yes
+				AND = {
+					is_alive = no
+					NOT = { government = military_command_government }
+					NOT = { death_reason = death_battle }
+				}
+				higher_real_tier_than = DUKE
+				AND = {
+					tier = DUKE
+					demesne_size = 1
+					NOT = { government = military_command_government }
+					NOT = { trait = nightswatch }
+					NOT = { trait = kingsguard }
+					NOT = {
+						primary_title = {
+							OR = {
+								mercenary = yes
+								holy_order = yes
+							}
+						}
+					}
+				}
+				trait = maester
+				trait = archmaester
+			}
+		}
+	}
+
+	# Blank
+	11 = {
+		factor = 1
+		modifier = {
+			factor = 10
+			trait = slave
+		}
+		modifier = {
+			factor = 10000
+			culture = jogos_nhai
+			OR = {
+				AND = {
+					is_ruler = yes
+					NOR = {
+						is_feudal = yes
+						is_republic = yes
+					}	
+				}
+				AND = {
+					is_ruler = no
+					liege = {
+						NOR = {
+							is_feudal = yes
+							is_republic = yes
+						}	
+					}	
+				}
+			}	
+		}
+	}
+}
+
+# p6 imprisoned
+6 = {
+	0 = { # blank
+		factor = 100
+		modifier = {
+			factor = 0
+			prisoner = yes
+		}
+	}
+
+	1 = { # prisoner
+		factor = 100
+		modifier = {
+			factor = 0
+			prisoner = no
+		}
+	}
+}
+
+# p7 scars
+7 = {
+	0 = { # blank
+		factor = 100
+		modifier = {
+			factor = 0
+			OR = {
+				trait = maimed
+				trait = wounded
+				trait = scarred
+			}
+		}
+   	}
+
+	1 = { # scar 1
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { 
+				OR = {
+					trait = maimed
+					trait = wounded
+					trait = scarred
+				}
+			}
+		}
+   	}
+
+	2 = { # scar 2
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { 
+				OR = {
+					trait = maimed
+					trait = wounded
+					trait = scarred
+				}
+			}
+		}
+   	}
+
+	3 = { # scar 3
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { 
+				OR = {
+					trait = maimed
+					trait = wounded
+					trait = scarred
+				}
+			}
+		}
+   	}
+
+	4 = { # scar 4
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { 
+				OR = {
+					trait = maimed
+					trait = wounded
+					trait = scarred
+				}
+			}
+		}
+   	}
+}
+
+# p8 red dots
+8 = {
+	0 = { # blank
+		factor = 100
+		modifier = {
+			factor = 0
+			OR = {
+				trait = has_measles
+				trait = has_small_pox
+			}
+		}
+ 	}
+
+	1 = { # red dots
+		factor = 100
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = {
+					trait = has_measles
+					trait = has_small_pox
+				}
+			}
+		}
+  	}
+}
+
+# p9 boils
+9 = {
+
+	0 = { # blank
+		factor = 100
+		modifier = {
+			factor = 0
+			trait = has_bubonic_plague
+		}
+		modifier = {
+			factor = 0
+			trait = has_grey_plague
+		}
+		modifier = {
+			factor = 0
+			trait = not_a_bear
+		}
+		modifier = {
+			factor = 0
+			character = 4301
+		}
+ 	}
+
+	1 = { # boils
+		factor = 100
+		modifier = {
+			factor = 0
+			AND = {
+				NOT = {
+					trait = has_bubonic_plague
+				}
+				NOT = {
+					trait = has_grey_plague
+				}
+				NOT = {
+					character = 4301
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			trait = not_a_bear
+		}
+ 	}
+
+	2 = { # ?
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { trait = not_a_bear }
+		}
+ 	}
+ 	
+}
+
+# p10 blinded and eyepatches
+10 = {
+	0 = { #blank
+		factor = 1
+		modifier = {
+			factor = 0
+			#OR = {
+				trait = blinded
+				#has_character_flag = eye_injury
+				#character = 2107
+			#}
+		}
+	}
+	
+	1 =  { #blinded
+		factor = 100
+		modifier = {
+			factor = 0
+			#OR = {
+				NOT = { trait = blinded }
+				#has_character_flag = eye_injury
+				#character = 2107
+			#}
+		}
+	}
+
+	# 2 = { # eyepatch left
+		# factor = 100
+		# modifier = {
+			# factor = 0
+			# OR = {
+				# trait = blinded
+				# AND = {
+					# NOT = { has_character_flag = eye_injury }
+					# NOT = { character = 2107 }
+				# }
+			# }
+		# }
+ 	# }
+
+	# 3 = { # eyepatch left and blinded
+		# factor = 100
+		# modifier = {
+			# factor = 0
+			# OR = {
+				# NOT = { trait = blinded }
+				# AND = {
+					# NOT = { has_character_flag = eye_injury }
+					# NOT = { character = 2107 }
+				# }
+			# }
+		# }
+  	# }
+
+	# 4 = { # eyepatch right
+		# #Unused and disabled for now
+		# factor = 0
+ 	# }
+
+	# 5 = { # eyepatch right and blinded
+		# #Unused and disabled for now
+		# factor = 0
+  	# }
+}
+
+# p11 player
+11 = {
+	0 = { # blank
+		factor = 1
+		modifier = {
+			factor = 0
+			AND = {
+				ai = no
+				multiplayer = yes
+			}
+		}
+	}
+
+	1 = { # player
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				ai = yes
+				multiplayer = no
+			}
+		}
+	}
+}
+
+# p12 mask for the disfigured
+12 = {
+	0 = { # blank
+		factor = 100
+		modifier = {
+			factor = 0
+			OR = { 
+				trait = disfigured 
+				has_character_modifier = attending_masquerade
+				has_character_modifier = forced_mask
+				AND = {
+					culture = asshai
+					NOT = { trait = shadowbinder }				
+					location = { province_id = 795 }
+					in_command = no
+					NOT = { has_character_modifier = holding_large_feast }#not worn during feasts
+					NOT = { liege = { has_character_modifier = holding_large_feast } }
+				}
+			}	
+		}
+  	}
+
+	1 = { # mask 1 bone
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOR = { 
+					trait = disfigured 
+					has_character_modifier = attending_masquerade
+					has_character_modifier = forced_mask
+				}
+				NOR = {
+					is_tribal = yes
+					is_nomadic = yes
+					culture = moon_clansman
+					culture = skagosi
+					culture = thenn
+					culture_group = free_folk
+					culture = brindlemen
+					culture = lhazareen
+					culture_group = further_east
+				}
+				has_character_modifier = golden_mask
+			}
+		}
+	}
+
+	2 = { # mask 2 silver
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOR = { 
+					trait = disfigured 
+					has_character_modifier = attending_masquerade
+					has_character_modifier = forced_mask
+					AND = {
+						culture = asshai
+						NOT = { trait = shadowbinder }				
+						location = { province_id = 795 }
+						in_command = no
+						NOT = { has_character_modifier = holding_large_feast }#not worn during feasts
+						NOT = { liege = { has_character_modifier = holding_large_feast } }
+					}
+				}
+				AND = {
+					is_landed = no
+					is_married = no
+				}
+				AND = {
+					is_landed = yes
+					NOT = { higher_tier_than = DUKE }
+				}
+				AND = {
+					is_landed = no
+					is_married = yes
+					spouse = { NOT = { higher_tier_than = DUKE } }
+				}
+				is_tribal = yes
+				is_nomadic = yes
+				culture = moon_clansman
+				culture = skagosi
+				culture = thenn
+				culture_group = free_folk
+				culture = brindlemen
+				culture = lhazareen
+				culture_group = further_east
+				has_character_modifier = golden_mask
+			}
+		}
+	}
+
+	3 = { # mask 3 iron
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOR = { 
+					trait = disfigured 
+					has_character_modifier = attending_masquerade
+					has_character_modifier = forced_mask
+					AND = {
+						culture = asshai
+						NOT = { trait = shadowbinder }				
+						location = { province_id = 795 }
+						in_command = no
+						NOT = { has_character_modifier = holding_large_feast }#not worn during feasts
+						NOT = { liege = { has_character_modifier = holding_large_feast } }
+					}
+				}
+				AND = {
+					is_landed = yes
+					higher_tier_than = DUKE
+				}
+				AND = {
+					is_landed = no
+					is_married = yes
+					spouse = { higher_tier_than = DUKE }
+				}
+				is_tribal = yes
+				is_nomadic = yes
+				culture = moon_clansman
+				culture = skagosi
+				culture = thenn
+				culture_group = free_folk
+				culture = brindlemen
+				culture = lhazareen
+				culture_group = further_east
+				has_character_modifier = golden_mask
+			}
+		}
+	}
+	
+	4 = { # mask 4 bone - blue stripes
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOR = { 
+					trait = disfigured 
+					has_character_modifier = attending_masquerade
+					has_character_modifier = forced_mask
+				}
+				NOR = {
+					is_tribal = yes
+					is_nomadic = yes
+					is_tribal = yes
+					is_nomadic = yes
+					culture = moon_clansman
+					culture = skagosi
+					culture = thenn
+					culture_group = free_folk
+					culture = brindlemen
+					culture = lhazareen
+					culture_group = further_east
+				}
+				has_character_modifier = golden_mask
+			}
+		}
+	}
+	
+	5 = { # mask 5 bone - orange stripes
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOR = { 
+					trait = disfigured 
+					has_character_modifier = attending_masquerade
+					has_character_modifier = forced_mask
+				}
+				NOR = {
+					is_tribal = yes
+					is_nomadic = yes
+					is_tribal = yes
+					is_nomadic = yes
+					culture = moon_clansman
+					culture = skagosi
+					culture = thenn
+					culture_group = free_folk
+					culture = brindlemen
+					culture = lhazareen
+					culture_group = further_east
+				}
+				has_character_modifier = golden_mask
+			}
+		}
+	}
+	
+	6 = { # mask 6 bone - red dots
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOR = { 
+					trait = disfigured 
+					has_character_modifier = attending_masquerade
+					has_character_modifier = forced_mask
+				}
+				has_character_modifier = golden_mask
+			}
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				is_tribal = yes
+				is_nomadic = yes
+				culture = moon_clansman
+				culture = skagosi
+				culture = thenn
+				culture_group = free_folk
+				culture = brindlemen
+				culture = lhazareen
+				culture_group = further_east
+			}
+		}
+	}
+	
+	7 = { # mask 7 bone - black stripes
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOR = { 
+					trait = disfigured 
+					has_character_modifier = attending_masquerade
+					has_character_modifier = forced_mask
+				}
+				has_character_modifier = golden_mask
+			}
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				is_tribal = yes
+				is_nomadic = yes
+				culture = moon_clansman
+				culture = skagosi
+				culture = thenn
+				culture_group = free_folk
+				culture = brindlemen
+				culture = lhazareen
+				culture_group = further_east
+			}
+		}
+	}
+	
+	8 = { # mask 8 bone - red stripes/eyes
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOR = { 
+					trait = disfigured 
+					has_character_modifier = attending_masquerade
+					has_character_modifier = forced_mask
+				}
+				NOR = {
+					is_tribal = yes
+					is_nomadic = yes
+					culture = moon_clansman
+					culture = skagosi
+					culture = thenn
+					culture_group = free_folk
+					culture = brindlemen
+					culture = lhazareen
+					culture_group = further_east
+				}
+				has_character_modifier = golden_mask
+			}
+		}
+	}
+	
+	9 = { # mask 9 bone - black eyes/lightning
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOR = { 
+					trait = disfigured 
+					has_character_modifier = attending_masquerade
+					has_character_modifier = forced_mask
+				}
+				NOR = {
+					is_tribal = yes
+					is_nomadic = yes
+					culture = moon_clansman
+					culture = skagosi
+					culture = thenn
+					culture_group = free_folk
+					culture = brindlemen
+					culture = lhazareen
+					culture_group = further_east
+				}
+				has_character_modifier = golden_mask
+			}
+		}
+	}
+	
+	10 = { # mask 10 - decorated silver
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOR = { 
+					trait = disfigured 
+					has_character_modifier = attending_masquerade
+					has_character_modifier = forced_mask
+					AND = {
+						culture = asshai
+						NOT = { trait = shadowbinder }				
+						location = { province_id = 795 }
+						in_command = no
+						NOT = { has_character_modifier = holding_large_feast }#not worn during feasts
+						NOT = { liege = { has_character_modifier = holding_large_feast } }
+					}
+				}
+				AND = {
+					is_landed = no
+					is_married = no
+				}
+				AND = {
+					is_landed = yes
+					NOT = { higher_tier_than = DUKE }
+				}
+				AND = {
+					is_landed = no
+					is_married = yes
+					spouse = { NOT = { higher_tier_than = DUKE } }
+				}
+				is_tribal = yes
+				is_nomadic = yes
+				culture = moon_clansman
+				culture = skagosi
+				culture = thenn
+				culture_group = free_folk
+				culture = brindlemen
+				culture = lhazareen
+				culture_group = further_east
+				has_character_modifier = golden_mask
+			}
+		}
+	}
+	
+	11 = { # mask 11 - decorated gold
+		factor = 2
+		modifier = {
+			factor = 0
+			OR = {
+				NOR = { 
+					trait = disfigured 
+					has_character_modifier = attending_masquerade
+					has_character_modifier = forced_mask
+					AND = {
+						culture = asshai
+						NOT = { trait = shadowbinder }				
+						location = { province_id = 795 }
+						in_command = no
+						NOT = { has_character_modifier = holding_large_feast }#not worn during feasts
+						NOT = { liege = { has_character_modifier = holding_large_feast } }
+					}
+				}
+				AND = {
+					is_landed = no
+					is_married = no
+				}
+				AND = {
+					is_landed = yes
+					NOT = { higher_tier_than = DUKE }
+				}
+				AND = {
+					is_landed = no
+					is_married = yes
+					spouse = { NOT = { higher_tier_than = DUKE } }
+				}
+				is_tribal = yes
+				is_nomadic = yes
+				culture = moon_clansman
+				culture = skagosi
+				culture = thenn
+				culture_group = free_folk
+				culture = brindlemen
+				culture = lhazareen
+				culture_group = further_east
+			}
+			NOT = { has_character_modifier = golden_mask }
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				trait = greedy
+				trait = proud
+				trait = ambitious
+				trait = envious
+				culture = manden
+				culture = berber
+			}
+			NOT = { has_character_modifier = golden_mask }
+		}
+		modifier = {
+			factor = 1000
+			has_character_modifier = golden_mask
+		}
+	}
+	
+	12 = { # mask 12 - full mask 1 leather
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOR = { 
+					trait = disfigured 
+					has_character_modifier = attending_masquerade
+					has_character_modifier = forced_mask
+					AND = {
+						culture = asshai
+						NOT = { trait = shadowbinder }				
+						location = { province_id = 795 }
+						in_command = no
+						NOT = { has_character_modifier = holding_large_feast }#not worn during feasts
+						NOT = { liege = { has_character_modifier = holding_large_feast } }
+					}
+				}
+				AND = {
+					is_landed = no
+					is_married = no
+				}
+				AND = {
+					is_landed = yes
+					NOT = { higher_tier_than = DUKE }
+				}
+				AND = {
+					is_landed = no
+					is_married = yes
+					spouse = { NOT = { higher_tier_than = DUKE } }
+				}
+				has_character_modifier = golden_mask
+			}
+		}
+	}
+	
+	13 = { # mask 13 - full mask 2 bone
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOR = { 
+					trait = disfigured 
+					has_character_modifier = attending_masquerade
+					has_character_modifier = forced_mask
+				}
+				AND = {
+					is_landed = no
+					is_married = no
+				}
+				AND = {
+					is_landed = yes
+					NOT = { higher_tier_than = DUKE }
+				}
+				AND = {
+					is_landed = no
+					is_married = yes
+					spouse = { NOT = { higher_tier_than = DUKE } }
+				}
+				has_character_modifier = golden_mask
+			}
+		}
+	}
+}
+
+# p13 eyepatch for one_eyed
+13 = {
+	0 = { # blank
+		factor = 100
+		modifier = {
+			factor = 0
+			trait = one_eyed
+			NOT = { has_character_modifier = glass_eye }
+		}
+	}
+
+	1 = { # eyepatch 1
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { trait = one_eyed }
+				has_character_modifier = glass_eye
+			}
+		}
+	}
+	
+	2 = { # eyepatch 2 - red leather
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { trait = one_eyed }
+				has_character_modifier = glass_eye
+			}
+		}
+	}
+	
+	3 = { # eyepatch 3 - painted eye
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NAND = {
+					trait = one_eyed
+					OR = {
+						trait = paranoid
+						trait = possessed
+					}
+				}
+				has_character_modifier = glass_eye
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				trait = paranoid
+				trait = possessed
+			}
+		}
+	}
+	
+	4 = { # eyepatch 4 - red
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { trait = one_eyed }
+				has_character_modifier = glass_eye
+			}
+		}
+	}
+	
+	5 = { # eyepatch 5 - white rag
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { trait = one_eyed }
+				has_character_modifier = glass_eye
+				has_character_flag = eye_patch
+			}
+		}
+		modifier = {
+			factor = 3
+			AND = {
+				religion = the_seven
+				is_theocracy = yes
+			}
+		}
+	}
+	
+	6 = { # eyepatch 6 - blue rag
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { trait = one_eyed }
+				has_character_modifier = glass_eye
+				has_character_flag = eye_patch
+			}
+		}
+	}
+	
+	7 = { # eyepatch 7 - green rag
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { trait = one_eyed }
+				has_character_modifier = glass_eye
+				has_character_flag = eye_patch
+			}
+		}
+	}
+	
+	8 = { # eyepatch 8 - red rag
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { trait = one_eyed }
+				has_character_modifier = glass_eye
+				has_character_flag = eye_patch
+			}
+		}
+	}
+	
+	9 = { # eyepatch 9 - bloodied rag
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NAND = {
+					trait = one_eyed
+					OR = {
+						trait = wroth
+						trait = cruel
+						has_minor_title = title_commander
+					}
+				}
+				has_character_modifier = glass_eye
+				has_character_flag = eye_patch
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				trait = wroth
+				trait = cruel
+				has_minor_title = title_commander
+			}
+		}
+		modifier = {
+			factor = 2
+			martial = 12
+		}
+	}
+	
+	10 = { # eyepatch 10 - tartan rag
+		factor = 3
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { trait = one_eyed }
+				has_character_modifier = glass_eye
+				has_character_flag = eye_patch
+			}	
+		}
+	}
+	
+	11 = { # eyepatch 11 - scarred eye 1
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { trait = one_eyed }
+		}
+		modifier = {
+			factor = 0
+			trait = shy
+		}
+		modifier = {
+			factor = 4
+			OR = {
+				is_tribal = yes
+				is_nomadic = yes
+				culture = moon_clansman
+				culture = skagosi
+				culture = thenn
+				culture_group = free_folk
+				culture = brindlemen
+				culture = lhazareen
+				culture_group = further_east			
+				trait = stubborn
+				has_character_flag = eye_patch
+			}
+		}
+	}
+	
+	12 = { # eyepatch 12 - scarred eye 2
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { trait = one_eyed }
+		}
+		modifier = {
+			factor = 0
+			trait = shy
+		}
+		modifier = {
+			factor = 4
+			OR = {
+				is_tribal = yes
+				is_nomadic = yes
+				culture = moon_clansman
+				culture = skagosi
+				culture = thenn
+				culture_group = free_folk
+				culture = brindlemen
+				culture = lhazareen
+				culture_group = further_east
+				trait = stubborn
+				has_character_flag = eye_patch
+			}
+		}
+	}
+}
+

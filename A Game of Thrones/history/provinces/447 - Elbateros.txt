@@ -1,0 +1,28 @@
+# 447 - Elbateros
+
+# County Title
+title = c_elbateros
+
+# Settlements
+max_settlements = 3
+
+b_elbateros = city
+b_elbateroscastle = castle
+b_elbaterostemple = temple
+
+# Misc
+culture = lorathi
+religion = gods_lorath
+
+# History
+6000.1.1 = {
+	b_elbateros = ct_asoiaf_essos_basevalue_1
+	b_elbateros = ct_asoiaf_essos_basevalue_2
+	b_elbateros = ct_asoiaf_essos_basevalue_3
+
+	b_elbateroscastle = ca_asoiaf_essos_basevalue_1
+	b_elbateroscastle = ca_asoiaf_essos_basevalue_2
+	b_elbateroscastle = ca_asoiaf_essos_basevalue_3
+	
+	trade_post = b_oloryon
+}

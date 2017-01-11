@@ -1,0 +1,25 @@
+6200.1.1={
+	law = succ_primogeniture
+}
+7335.1.1 = { holder=500172 } # Luceon (C)
+7349.1.1 = { liege="e_vale" }
+7358.1.1 = { holder = 0 }
+7878.1.1 = { holder=3100172 } # Walace (nc)
+7940.1.1 = { holder=3201172 } # Lyn (nc)
+7995.1.1 = { holder=3000172 } # Umfred (nc)
+7999.1.1={ 
+	liege="k_vale"
+} 
+8043.1.1 = { holder=3001172 } # Gerold (nc)
+8047.1.1 = { holder=3005172 } # Byron (nc)
+8078.1.1 = { holder=3006172 } # Uthor (nc)
+8114.1.1 = { holder=3009172 } # Mychel (nc)
+8116.1.1 = { holder=3010172 } # Rolland (nc)
+8139.1.1 = { holder=3011172 } # Nestor (nc)
+8192.1.1 = { holder=3015172 } # Osfryd (nc)
+8196.6.1={ holder=3016172 } # Alesandor (nc)
+8248.1.1 = { holder=3017172 } # Eddison (nc)
+
+8261.1.1={
+	holder=94044
+}

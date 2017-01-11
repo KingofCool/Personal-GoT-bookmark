@@ -1,0 +1,83 @@
+1.1.1={
+	#liege="e_iron_throne"
+	law = succ_open_elective
+	law = centralization_4
+}
+120.1.1 = {
+	holder=830059 #The Night's King
+}
+141.1.1 = {
+	holder = 0
+}
+7285.1.1 = {
+	holder=1052105 #Crowl
+}
+7322.1.1 = {
+	holder = 0
+}
+7600.1.1 = {
+	holder=822059 #Osric Stark
+}
+7660.5.1 = {
+	holder = 0
+}
+7980.1.1 = {
+	holder=11966 #Rodrik Hoare
+}
+8009.1.1 = {
+	holder = 121407 #Karlon Karstark
+}
+8027.1.1 = {
+	holder=3003264 #Orbert Caswell
+}
+8036.1.1 = {
+	holder = 121409 #Petyr Arryn
+}
+8052.1.1 = {
+	holder = 88285 #Ormond Osgrey
+}
+8065.1.1 = {
+	holder = 121405 #Merlon Connington
+}
+8090.1.1 = {
+	holder = 5356 #Lucamore Strong
+}
+8099.1.1 = {
+	holder = 121403 #Rodrik Flint
+}
+8117.1.1 = {
+	holder = 121406 #Mad Marq Rankenfell
+}
+8144.1.1 = {
+	holder = 121408 #Ryman Webber
+}
+8156.1.1 = {
+	holder = 121400 #Tristan Mudd
+}
+8168.1.1 = {
+	holder = 350174410 #Robin Boggs (nc)
+}
+8184.1.1 = {
+	holder = 5150137 #Patrek Darry (nc)
+}
+8206.1.1 = {
+	holder=121401 #Runcel Hightower
+}
+8215.1.1 = {
+	holder=3067362 #Sleepy Jack Musgood
+}
+8239.1.1 = {
+	holder=77026 #Bloodraven
+}
+8252.6.1={
+	holder =121404 #Robin Hill
+}
+8275.1.1 = {	
+	holder=121000 #Qorgyle aka good old Jantos
+}
+8294.1.1 = {	
+	holder=336 #Jeor Mormont
+}
+8300.3.1 = {	
+	holder=1002059 #Jon Snow
+}

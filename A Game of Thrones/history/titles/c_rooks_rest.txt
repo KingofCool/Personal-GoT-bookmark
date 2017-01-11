@@ -1,0 +1,22 @@
+7600.1.1={
+	liege="e_riverlands"
+	law = succ_primogeniture
+}
+7995.1.1 = { holder=6000041 } # Eustace (nc)
+7998.2.1={
+	liege="e_iron_throne"
+}
+8022.1.1 = { holder=6000141 } # Alaric (nc)
+8060.1.1 = { holder=6000441 } # Clayton (nc)
+8083.1.1 = { holder=6000841 } # Maric (nc)
+8089.1.1 = { holder=6000941 } # Belgrave (nc)
+8113.1.1 = { holder=6001041 } # Arneld (nc)
+8166.1.1 = { holder=6001241 } # Lothar (nc)
+8169.1.1 = { holder=6001641 } # Lucos (nc)
+8227.1.1 = { holder=6001741 } # Howard (nc)
+8239.1.1 = { holder=6002341 } # Oswell (nc)
+8247.1.1 = { holder=6002741 } # Symond (C)
+
+8290.1.1={
+	holder = 41 	#Lothor Staunton
+}

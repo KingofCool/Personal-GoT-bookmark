@@ -1,0 +1,53 @@
+6000.1.1={
+	liege="e_north"
+	law = succ_primogeniture
+}
+7986.1.1={
+	holder = 22083
+}
+7999.1.1={
+	liege="k_north"
+}
+8028.1.1={
+	holder = 21083
+}
+8047.1.1={
+	holder = 20083
+}
+8069.1.1={
+	holder = 19083
+}
+8089.1.1={
+	holder = 18083
+}
+8126.1.1={
+	holder = 17083
+}
+8141.1.1={
+	holder = 16083
+}
+8148.1.1={
+	holder = 15083
+}
+8178.1.1={
+	holder = 14083
+}
+8196.1.1={
+	holder = 13083
+}
+8235.1.1={
+	holder = 11083
+}
+8253.1.1={
+	holder = 10083
+}
+8266.1.1={
+	holder = 83
+}
+8299.1.1={
+	holder = 4080 #Donella Manderly (Lady Hornwood)
+}
+8299.3.7 = {
+	holder = 80 #Wyman manderly siezes castle
+}
+

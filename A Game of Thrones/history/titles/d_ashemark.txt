@@ -1,0 +1,20 @@
+#d_ashemark
+900.1.1={ liege = "e_westerlands" }
+
+7985.1.1 = {holder=312207}
+7998.6.6 = {holder=311207}
+7998.7.6 = {
+	liege="k_westerlands"
+}
+8036.1.1 = {holder=310207}
+8040.3.11 = {holder=309207}
+8044.1.1 = {holder=312212} # Addam (NC)
+8095.1.1 = {holder=311212} # Dunsen (NC)
+8114.1.1 = {holder=310212} # Dake (NC)
+8129.3.7 = {holder=309212} # Gerion (NC)
+8129.7.5 = {holder=307212} # Seldon (SC)
+8170.1.1 = {holder=306212} # Arden (SC)
+8188.1.1 = {holder=305212} # Irena (SC)
+8199.5.8 = {holder=301212} # Quenton (NC)
+8240.1.1 = {holder=300212} # Denys (C)	
+8260.1.18 = {holder=212} # Damon (C)

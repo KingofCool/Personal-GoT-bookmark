@@ -1,0 +1,17 @@
+600.1.1={
+	law = succ_open_elective
+	law = true_cognatic_succession
+}
+7984.1.1 = { holder=100305620 } # Allaquo (nc)
+8018.1.1 = { holder=102305620 } # Methyso (nc)
+8045.1.1 = { holder=104305620 } # Taena (nc)
+8073.1.1 = { holder=105305620 } # Moqorro (nc)
+8105.1.1 = { holder=107305620 } # Serenei (nc)
+8142.1.1 = { holder=108305620 } # Rolloquo (nc)
+8157.1.1 = { holder=111305620 } # Moqorro (nc)
+8184.1.1 = { holder=113305620 } # Benerro (nc)
+8192.1.1 = { holder=116305620 } # Rolloquo (nc)
+8231.1.1 = { holder=118305620 } # Belicho (nc)
+8245.1.1 = { holder=119305620 } # Vysarro (nc)
+8279.1.1 = { holder=124305620 } # Qarro (nc)
+8295.1.1 = { holder=127305620 } # Korra (C)

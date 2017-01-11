@@ -1,0 +1,27 @@
+# 164 - the_crag
+
+# County Title
+title = c_the_crag
+
+# Settlements
+max_settlements = 4
+b_the_crag = castle
+b_the_cragsept = temple
+b_the_cragtown = city
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_the_crag = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_the_crag = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_the_crag = ca_asoiaf_westerland_basevalue_3}
+6000.1.1 = {b_the_crag = ca_asoiaf_westerland_basevalue_4}
+#6000.1.1 = {b_the_crag = ca_asoiaf_westerland_basevalue_5}
+6000.1.1 = {b_the_crag = ca_silvermine}
+
+6000.1.1 = {b_the_cragtown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_the_cragtown = ct_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_the_cragtown = ct_asoiaf_westerland_basevalue_3}

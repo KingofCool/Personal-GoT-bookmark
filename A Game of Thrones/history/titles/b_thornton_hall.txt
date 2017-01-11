@@ -1,0 +1,24 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="c_highgarden"
+}
+7900.1.1 = { holder=60000260 } # Codan (nc) # House Ball
+7955.1.1 = { holder=61000260 } # Grydion (nc)
+7957.1.1 = { holder=62000260 } # Rucan (nc)
+7980.1.1 = { holder=62001260 } # Codan (nc)
+8014.1.1 = { holder=62003260 } # Byren (nc)
+8028.1.1 = { holder=62009260 } # Gwayne (nc)
+8042.1.1 = { holder=62010260 } # Garth (nc)
+8083.1.1 = { holder=62013260 } # Glendon (nc)
+8128.1.1 = { holder=62014260 } # Grydion (nc)
+8154.1.1 = { holder=62015260 } # Merle (nc)
+8196.1.1 = { holder=88184 }
+8200.1.1 = { holder=88186 }
+8225.1.1 = { holder=88189 }
+8260.1.1 = { holder=88191 }
+8290.1.1 = { holder=88193 }
+
+
+
+
+
+

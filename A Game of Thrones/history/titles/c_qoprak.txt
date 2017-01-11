@@ -1,0 +1,22 @@
+600.1.1={
+	law = slavery_2
+	law = succ_turkish_succession
+	law = agnatic_succession
+}
+7996.1.1 = { 
+	holder=100305001  # Brotherhood of Bones
+	liege = d_western_isles
+} 
+8025.1.1 = { 
+	holder=0 
+	liege = 0
+}
+8125.1.1 = {
+	liege = k_basilisk_isles
+}
+8155.1.1 = {
+	liege = 0
+}
+8300.1.1={
+	liege = k_basilisk_isles
+}

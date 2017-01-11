@@ -1,0 +1,549 @@
+559101 = {
+	name="Fend-l’Écu"
+	culture = wildling
+}
+559102 = {
+	name="Marcassin"
+	culture = wildling
+}
+559103 = {
+	name="Fort-Crinière"
+	culture = wildling
+}
+559104 = {
+	name="Bouclesang"
+	culture = wildling
+}
+559105 = {
+	name="Chasse-Peau"
+	culture = wildling
+}
+559106 = {
+	name="Ragebleue"
+	culture = wildling
+}
+559107 = {
+	name="Hachebar"
+	culture = wildling
+}
+559108 = {
+	name="Torgrand"
+	culture = wildling
+}
+559109 = {
+	name="Aubecrâne"
+	culture = wildling
+}
+559110 = {
+	name="Varaloup"
+	culture = wildling
+}
+559111 = {
+	name="Egelgrand"
+	culture = wildling
+}
+
+559112 = {
+	name="Mercrâne"
+	culture = wildling
+}
+559113 = {
+	name="Manconn"
+	culture = wildling
+}
+559114 = {
+	name="Barthe"
+	culture = wildling
+}
+559115 = {
+	name="Marahorn"
+	culture = wildling
+}
+559116 = {
+	name="Granpique"
+	culture = wildling
+}
+559117 = {
+	name="Noir-écu"
+	culture = wildling
+}
+559118 = {
+	name="Lordpoison"
+	culture = wildling
+}
+559119 = {
+	name="Morverrat"
+	culture = wildling
+}
+559120 = {
+	name="Ecorchephoque"
+	culture = wildling
+}
+559121 = {
+	name="Wanderer"
+	culture = wildling
+}
+559122 = {
+	name="Chassecorbac"
+	culture = wildling
+}
+559123 = {
+	name="Tuecorbac"
+	culture = wildling
+}
+559124 = {
+	name="Fléaucorbac"
+	culture = wildling
+}
+559125 = {
+	name="Glaceguerrier"
+	culture = wildling
+}
+559126 = {
+	name="Masque Blanc"
+	culture = wildling
+}
+559127 = {
+	name="Bronzépée"
+	culture = wildling
+}
+559128 = {
+	name="Piquegelée"
+	culture = wildling
+}
+559129 = {
+	name="Dressepont"
+	culture = wildling
+}
+559130 = {
+	name="Membreroi"
+	culture = wildling
+}
+559131 = {
+	name="Sygerrik"
+	culture = wildling
+}
+174345 = {
+	name="de Cramoisi"
+	culture = wildling
+}
+174346 = {
+	name="du Col Museux"
+	culture = wildling
+}
+174347 = {
+	name = "Rayder"
+	culture = wildling
+}
+174348 = {
+	name="Sangderoi"
+	culture = wildling
+}
+174349 = {
+	name="de Fort-Moss"
+	culture = wildling
+	}
+174350 = {
+	name="de Tourblanche"
+	culture = wildling
+}
+174351 = {
+	name="des Crocgivre"
+	culture = wildling
+}
+174352 = {
+	name="de Glacegarde"
+	culture = wildling
+}
+174353 = {
+	name="de la Forêt Hantée"
+	culture = wildling
+}
+174402 = {
+	name="des Oreilles de Bois"
+	culture = wildling
+}
+174403 = {
+	name="de la Forêt Frissonnante"
+	culture = wildling
+}
+174404 = {
+	name="de la Grève Glacée"
+	culture = wildling
+}
+174408 = {
+	name="de l'Epois"
+	culture = wildling
+}
+
+
+
+#Toocs legitimized Wildlings
+1174344 = {
+	name="Thenn"
+	culture = hill_clansman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 47
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1174345 = {
+	name="Barberouge"
+	culture = wildling
+}
+
+4500016 = {
+	name = "des Crocgivre Centraux"
+	culture = wildling
+}
+4500017 = {
+	name = "de Fort-Craster"
+	culture = wildling
+}
+
+
+### Giants
+6660010 = {
+	name = "Mar Tun Doh Weg"
+	culture = giant
+}
+6660011 = {
+	name = "Weg Wun Dar Wun"
+	culture = giant
+}
+6660012 = {
+	name = "Doh War Wun Tug"
+	culture = giant
+}
+6660013 = {
+	name = "Mar Weg Doh Wun"
+	culture = giant
+}
+6660014 = {
+	name = "Doh Wun Dar Weg"
+	culture = giant
+}
+6660015 = {
+	name = "Weg Mar Bun Doh"
+	culture = giant
+}
+
+###  Thenn catch-all
+
+6660016 = {
+	name = "de Thenn"
+	culture = thenn
+}
+
+## Frozen Shore
+559250 = {
+	name="Ibarg"
+	culture = frozen_shore
+}
+559251 = {
+	name="Latag"
+	culture = frozen_shore
+}
+559252 = {
+	name="Frebgi"
+	culture = frozen_shore
+}
+559253 = {
+	name="Mubroch"
+	culture = frozen_shore
+}
+559254 = {
+	name="Slumnir"
+	culture = frozen_shore
+}
+559255 = {
+	name="Lacrion"
+	culture = frozen_shore
+}
+559256 = {
+	name="Mibgan"
+	culture = frozen_shore
+}
+559257 = {
+	name="Deglor"
+	culture = frozen_shore
+}
+559258 = {
+	name="Nokrus"
+	culture = frozen_shore
+}
+559259 = {
+	name="Sribzak"
+	culture = frozen_shore
+}
+559260 = {
+	name="Fuzlog"
+	culture = frozen_shore
+}
+559261 = {
+	name="Variok"
+	culture = frozen_shore
+}
+559262 = {
+	name="Drufum"
+	culture = frozen_shore
+}
+559263 = {
+	name="Trasak"
+	culture = frozen_shore
+}
+559264 = {
+	name="Jalog"
+	culture = frozen_shore
+}
+559265 = {
+	name="Redsog"
+	culture = frozen_shore
+}
+559266 = {
+	name="Oskus"
+	culture = frozen_shore
+}
+559267 = {
+	name="Lemgar"
+	culture = frozen_shore
+}
+559268 = {
+	name="Crewdyr"
+	culture = frozen_shore
+}
+559269 = {
+	name="Hukal"
+	culture = frozen_shore
+}
+559270 = {
+	name="Vaom"
+	culture = frozen_shore
+}
+559271 = {
+	name="Gladwor"
+	culture = frozen_shore
+}
+559272 = {
+	name="Ukor"
+	culture = frozen_shore
+}
+559273 = {
+	name="Tringi"
+	culture = frozen_shore
+}
+559274 = {
+	name="Varok"
+	culture = frozen_shore
+}
+
+## Hornfoot
+559300 = {
+	name="Dursemelle"
+	culture = hornfoot
+}
+559301 = {
+	name="Cornepied"
+	culture = hornfoot
+}
+559302 = {
+	name="Mortenuit"
+	culture = hornfoot
+}
+559303 = {
+	name="Cornepeine"
+	culture = hornfoot
+}
+559304 = {
+	name="Rougepouce"
+	culture = hornfoot
+}
+559305 = {
+	name="Granpied"
+	culture = hornfoot
+}
+559306 = {
+	name="Grandemarche"
+	culture = hornfoot
+}
+559307 = {
+	name="Vagabond"
+	culture = hornfoot
+}
+559308 = {
+	name="Griffier"
+	culture = hornfoot
+}
+559309 = {
+	name="Marchecorne"
+	culture = hornfoot
+}
+559310 = {
+	name="Lointard"
+	culture = hornfoot
+}
+559311 = {
+	name="Chantepin"
+	culture = hornfoot
+}
+559312 = {
+	name="Feunuit"
+	culture = hornfoot
+}
+559313 = {
+	name="Mortecorne"
+	culture = hornfoot
+}
+559314 = {
+	name="Cornaille"
+	culture = hornfoot
+}
+559315 = {
+	name="Argenpied"
+	culture = hornfoot
+}
+559316 = {
+	name="Grandecorne"
+	culture = hornfoot
+}
+559317 = {
+	name="Bouclecorne"
+	culture = hornfoot
+}
+559318 = {
+	name="Durcorne"
+	culture = hornfoot
+}
+559319 = {
+	name="Cornecorbac"
+	culture = hornfoot
+}
+559320 = {
+	name="Blanchemort"
+	culture = hornfoot
+}
+559321 = {
+	name="Troiporteur"
+	culture = hornfoot
+}
+559322 = {
+	name="Cornebleue"
+	culture = hornfoot
+}
+559323 = {
+	name="Tonnepied"
+	culture = hornfoot
+}
+559324 = {
+	name="Marchepierre"
+	culture = hornfoot
+}
+
+## Cannibal Clan
+559350 = {
+	name = Poinglacé
+	culture = cannibal_clan
+}
+559351 = {
+	name = Keenbend
+	culture = cannibal_clan
+}
+559352 = {
+	name = Mangemort
+	culture = cannibal_clan
+}
+559353 = {
+	name = Peaufestin
+	culture = cannibal_clan
+}
+559354 = {
+	name = Briseclan
+	culture = cannibal_clan
+}
+559355 = {
+	name = Rougerive
+	culture = cannibal_clan
+}
+559356 = {
+	name = Hivrechef
+	culture = cannibal_clan
+}
+559357 = {
+	name = Rivesang
+	culture = cannibal_clan
+}
+559358 = {
+	name = Glacemont
+	culture = cannibal_clan
+}
+559359 = {
+	name = Tranchecorbac
+	culture = cannibal_clan
+}
+559360 = {
+	name = Gosier
+	culture = cannibal_clan
+}
+559361 = {
+	name = Courrerune
+	culture = cannibal_clan
+}
+559362 = {
+	name = Fortedent
+	culture = cannibal_clan
+}
+559363 = {
+	name = Cannibal
+	culture = cannibal_clan
+}
+559364 = {
+	name = Chasselhomme
+	culture = cannibal_clan
+}
+559365 = {
+	name = Glacesang
+	culture = cannibal_clan
+}
+559366 = {
+	name = Peaudeuil
+	culture = cannibal_clan
+}
+559367 = {
+	name = Peaudecorbac
+	culture = cannibal_clan
+}
+559368 = {
+	name = Fléauvert
+	culture = cannibal_clan
+}
+559369 = {
+	name = Guerracier
+	culture = cannibal_clan
+}
+559370 = {
+	name = Lordmangaille
+	culture = cannibal_clan
+}
+559371 = {
+	name = Fleuveglacé
+	culture = cannibal_clan
+}
+559372 = {
+	name = Boivesang
+	culture = cannibal_clan
+}
+559373 = {
+	name = Bronzebois
+	culture = cannibal_clan
+}
+559374 = {
+	name = Os
+	culture = cannibal_clan
+}

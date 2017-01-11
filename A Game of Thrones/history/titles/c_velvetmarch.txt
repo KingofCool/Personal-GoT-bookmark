@@ -1,0 +1,17 @@
+600.1.1={
+	liege="k_pentos"
+}
+
+7995.1.1 = { holder=100300013 } # Gyloro (nc)
+8042.1.1 = { holder=102300013 } # Cossomo (nc)
+8060.1.1 = { holder=103300013 } # Ordello (nc)
+8085.1.1 = { holder=108300013 } # Myrmello (nc)
+8094.1.1 = { holder=109300013 } # Syrio (nc)
+8115.1.1 = { holder=113300013 } # Qarro (nc)
+8123.1.1 = { holder=118300013 } # Illyrio (nc)
+8165.1.1 = { holder=119300013 } # Moredo (nc)
+8200.1.1 = { holder=122300013 } # Moreo (nc)
+8226.1.1 = { holder=127300013 } # Pynto (nc)
+8258.1.1 = { holder=130300013 } # Byan (nc)
+8271.1.1 = { holder=133300013 } # Pynto (nc)
+8277.1.1 = { holder=135300013 } # Daario (nc)

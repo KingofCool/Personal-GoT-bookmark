@@ -1,0 +1,20 @@
+# 325 - Wrathrock - Duchy of Cape Wrath
+
+# County Title
+title = c_wrathrock
+
+# Settlements
+max_settlements = 2
+
+b_wrathrock = castle 		#Non Canon - County Seat
+
+
+# Misc
+culture = stormlander
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_wrathrock = ca_asoiaf_storm_basevalue_1
+	b_wrathrock = ca_asoiaf_storm_basevalue_2
+}

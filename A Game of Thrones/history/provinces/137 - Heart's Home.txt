@@ -1,0 +1,29 @@
+# 137 - Heart's Home
+
+# County Title
+title = c_hearts_home
+
+# Settlements
+max_settlements = 4
+b_hearts_home = castle
+b_creek_castle = castle
+b_hearts_home_sept = temple
+#b_wingpass = city
+
+# Misc
+culture = valeman
+religion = the_seven
+
+terrain = hills
+
+#History
+
+6000.1.1 = {
+	b_hearts_home = ca_asoiaf_vale_basevalue_1
+	b_hearts_home = ca_asoiaf_vale_basevalue_2
+	b_hearts_home = ca_asoiaf_vale_basevalue_3
+	b_hearts_home = ca_asoiaf_vale_basevalue_4
+	
+	b_creek_castle = ca_asoiaf_vale_basevalue_1
+	b_creek_castle = ca_asoiaf_vale_basevalue_2
+}

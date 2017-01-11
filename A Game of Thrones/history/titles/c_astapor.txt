@@ -1,0 +1,22 @@
+600.1.1={
+	liege="d_astapor"
+}
+7990.1.1 = { holder=150360002 } # Grazdan (nc)
+8023.1.1 = { holder=100360000 } # Barghaz (nc)
+8042.1.1 = { holder=101360001 } # Grazdan (nc)
+8071.1.1 = { holder=106360001 } # Grazdhan (nc)
+8105.1.1 = { holder=105360027 } # Grazdan (nc)
+8133.1.1 = { holder=109360002 } # Barkhaz (nc)
+8154.1.1 = { holder=114360026 } # Kraznys (nc)
+8172.1.1 = { holder=121360001 } # Maezon (nc)
+8223.1.1 = { holder=114360002 } # Kraznys (nc)
+8235.1.1 = { holder=121360026 } # Prendahl (nc)
+8249.1.1 = { holder=126360000 } # Yezzan (nc)
+8253.1.1 = { holder=127360027 } # Gunzak (nc)
+8262.1.1 = { holder=129360000 } # Marghaz (nc)
+8289.1.1={
+	holder=6571000 # Kraznys
+}
+8299.12.12={
+	holder=600000060 # Cleon the Butcher King
+}

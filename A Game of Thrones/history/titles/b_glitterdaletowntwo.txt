@@ -1,0 +1,21 @@
+
+7985.1.1 = {holder=312207}
+7998.6.6 = {holder=311207}
+8036.1.1 = {holder=310207}
+8040.3.11 = {holder=309207}
+8074.1.1 = {holder=308207}
+8098.1.1 = {holder=307207}
+8124.1.1 = {holder=306207}
+8130.2.9 = {holder=305207}
+8195.1.1 = {holder=304207}
+8196.5.5 = {holder=301207}
+8237.1.1 = {holder=300207}
+
+
+8258.1.1 = {
+holder=197 # Taken from the Lorch's by the Reynes and Tarbecks
+}
+8261.3.5 = {holder=300207} # Restored to them
+8263.1.1 = {holder=100207}
+8276.1.1 = {holder=1207} # Lorent Lorch, landed Knight
+8299.6.1={ holder=1207 }

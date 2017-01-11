@@ -1,0 +1,36 @@
+1000.1.1={	
+	law = succ_primogeniture
+	de_jure_liege = d_masseys_hook
+	liege = d_masseys_hook
+}
+6546.1.1 = {
+	holder = 150049 #Togarion Bar Emmon
+}
+6558.1.1 = { holder = 0 liege="e_stormlands" }
+
+7950.1.1 = { holder = 152049 }
+7988.1.1 = { holder = 153049 }
+7995.1.1 = { holder=3000049 } # Robin Bar Emmon (nc)
+7998.2.27={
+	liege="d_dragonstone"
+	#de_jure_liege = d_dragonstone
+	de_jure_liege = 0
+}
+8031.1.1 = { holder=3002049 } # Rorge Bar Emmon (nc)
+8049.1.1 = { holder=3007049 } # Alliser Bar Emmon (nc)
+8075.1.1 = { holder=3009049 } # Rorge Bar Emmon (nc)
+8109.1.1 = { holder=3012049 } # Osmund Bar Emmon (nc)
+8124.1.1 = { holder=3014049 } # Clarence Bar Emmon (nc)
+8188.1.1 = { holder=3016049 } # Leonette Bar Emmon (nc)
+8200.1.1 = { holder=3019049 } # Robin Bar Emmon (nc)
+8235.1.1 = { holder=3021049 } # Ardrian Bar Emmon (nc)
+8236.1.1 = { 
+	#liege=0 
+	holder=60000057 # Daemon III Blackfyre
+}
+8236.3.2 = { 
+	holder=3021049 # Ardrian Bar Emmon (nc)
+}
+8269.1.1 = { holder=3027049 } # Devan Bar Emmon (nc)
+8277.1.1 = { holder=3028049 } # Guncer Bar Emmon (nc)
+8296.1.1 = { holder=3029049 } # Duran Bar Emmon (C)

@@ -1,0 +1,56 @@
+1.1.1={law=succ_primogeniture 
+	law=cognatic_succession
+	liege="e_reach"}
+	
+22.1.1={holder=60800237} # John the Oak (C)
+75.1.1={holder=0}	
+7880.1.1={holder=60130237} # Alder (nc)
+7907.1.1={holder=60120237} # Filbert (nc)
+7988.1.1={holder=60110237} # Aspen (nc)
+7990.1.1={holder=60000237} # Linden (nc)
+7994.1.1={holder=0 liege = 0 } # Osgrey prominence
+
+8012.1.1={
+	holder=24237
+	law=succ_primogeniture 
+	law=cognatic_succession
+	liege="k_reach"
+}
+8045.1.1={
+	holder=23237
+}
+8076.1.1={
+	holder=21237
+}
+8102.1.1={
+	holder=20237
+}
+8129.1.1={
+	holder=16237
+}
+8164.1.1={
+	holder=15237
+}
+8178.1.1={
+	holder=14237
+}
+8195.3.7={
+	liege = 0
+}
+8196.1.1={
+	liege="k_reach"
+}
+8196.1.1={
+	holder=11237
+}
+8235.1.1={
+	holder=10237
+}
+8272.1.1={
+	holder=237
+}
+
+
+
+
+

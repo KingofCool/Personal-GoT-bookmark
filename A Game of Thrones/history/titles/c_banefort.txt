@@ -1,0 +1,23 @@
+#c_banefort
+100.1.1={	
+	liege="k_banefortTK"
+}
+
+235.1.1 = { holder = 152200 } #King Morgon (C)
+258.1.1 = { holder = 0 liege="d_the_crag" }
+
+7926.1.1 = { holder = 154200 }
+7972.1.1 = { holder = 155200 }
+7990.1.1 = { holder=325200 } # Sebaston (nc)
+8000.6.6 = { holder=321200 } # Sarya (nc)
+8067.1.1 = { holder=318200 } # Willem (nc)
+8088.1.1 = { holder=314200 } # Sebaston (nc)
+8104.1.1 = { holder=313200 } # Gareth (nc)
+8126.1.1 = { holder=310200 } # Quenten (nc)
+8129.1.1 = { holder=306200 } # Jaime (nc)
+8181.1.1 = { holder=305200 } # Quenten (nc)
+8196.1.1 = { holder=301200 } # Jaime (nc)
+8203.1.1 = { holder=327200 } # Gerion (nc)
+8221.1.1 = { holder=331200 } # Sebaston (nc)
+8260.1.1 = { holder=12200 } # Symond (nc)
+8276.1.1 = { holder=200 } # Quenten (c)

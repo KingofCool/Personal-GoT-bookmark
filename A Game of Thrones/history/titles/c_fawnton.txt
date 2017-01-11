@@ -1,0 +1,20 @@
+#NOTE: The holder of this title has the House Cafferen dynasty tracker set in roberts_rebellion_events
+7000.1.1={ liege="d_summerhall" }
+
+7985.1.1 = { holder = 300310 } # Steffon Cafferen(nc)
+8000.2.15={ holder = 301310 } # Eldon Cafferen (nc)
+8012.8.1 = { holder = 303310 } # Gowen Cafferen (nc)
+8061.1.1 = { holder = 304310 } # Bryen Cafferen (nc)
+8128.1.1 = { holder = 306310 } # Robert Cafferen (nc)
+8129.1.1 = { holder = 307310 } # Harben Cafferen (nc)
+8160.1.1 = { holder = 308310 } # Steffon Cafferen (nc)
+8170.1.1 = { holder = 309310 } # Aemon Cafferen (nc)
+8180.1.1 = {liege="k_stormlands"}
+8200.1.1 = { holder = 310310 } # Lester Cafferen (nc)
+8208.1.1 = { holder = 311310 } # Steffen Cafferen (nc)
+8236.1.1 = { holder = 312310 } # Harben Cafferen (nc)
+8274.1.1 = { holder = 310 } # Bryen Cafferen (C)
+8283.1.1={ 
+	holder = 100310  # Barth Cafferen (nc)
+}
+8299.7.1 = { liege = 0 }

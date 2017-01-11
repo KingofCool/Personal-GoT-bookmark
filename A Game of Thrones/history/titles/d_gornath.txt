@@ -1,0 +1,13 @@
+7921.1.1 = { 
+	holder = 10156822 #Last King of Gornath
+} 
+7948.1.1 = {
+	holder = 0
+	effect = {
+		dead_target = {
+			limit = { character = 10156822 }
+			set_government_type = feudal_government #so its shown in history correctly
+			remove_trait = dead_target
+		}
+	}
+} 

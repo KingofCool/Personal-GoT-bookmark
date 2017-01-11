@@ -1,0 +1,27 @@
+# 176 - oxcross
+
+# County Title
+title = c_oxcross
+
+# Settlements
+max_settlements = 3
+b_oxcross = castle
+b_oxcrosscastletwo = city
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_oxcross = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_oxcross = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_oxcross = ca_asoiaf_westerland_basevalue_3}
+
+
+6000.1.1 = {b_oxcrosscastletwo = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_oxcrosscastletwo = ct_asoiaf_westerland_basevalue_2}
+
+8070.1.1 = { #Jaehaerys constructs road network
+	b_oxcross = ca_river_road
+}

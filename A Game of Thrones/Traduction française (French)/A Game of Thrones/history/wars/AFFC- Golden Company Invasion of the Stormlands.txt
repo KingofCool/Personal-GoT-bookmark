@@ -1,0 +1,19 @@
+name = "Invasion des Terres de l'Orage par Aegon"
+
+casus_belli={
+	casus_belli=claim_stormlands_ACOK
+	actor=125009 #Young Griff
+	recipient=4317
+	landed_title=k_stormlands
+	date=8300.3.1
+}
+
+8300.3.1 = {
+	add_defender = 4317 #Stannis
+	add_attacker = 125009 #Young Griff
+	add_attacker = 88241 #Harry Strickland	
+}
+
+
+
+                                                                                                                                                                                                                                                                                                                                   

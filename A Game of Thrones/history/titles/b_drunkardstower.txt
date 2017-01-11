@@ -1,0 +1,7 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="c_moatcailin"
+}
+
+8256.6.14={
+	holder=45000153
+}

@@ -1,0 +1,42 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="c_coldmoat"
+}
+7957.1.1={
+	holder=88296 #osgrey of leafy lake
+}
+8010.1.1={
+	holder=88297
+}
+8055.1.1={
+	holder=88290 #webbers
+}
+8072.1.1={
+	holder=88289
+}
+8103.1.1={
+	holder=88288
+}
+8134.1.1={
+	holder=2238
+}
+8165.1.1={
+	holder=1238
+}
+8190.1.1={
+	holder=88197 #conklyns
+}
+8220.1.1={
+	holder=88198
+}
+8265.1.1={
+	holder=88199
+}
+8293.1.1={
+	holder=88201
+}
+
+
+
+
+
+

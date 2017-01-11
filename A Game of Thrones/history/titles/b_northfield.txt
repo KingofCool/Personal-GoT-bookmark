@@ -1,0 +1,17 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="c_redwater"
+}
+8165.1.1 = { holder=1001425 } # Owen (nc)
+8196.1.1 = { holder=1021425 } # Randyll (nc)
+8250.1.1 = { holder=1051425 } # Gunthor (nc)
+8271.1.1={
+	holder=88237
+}
+
+
+
+
+
+
+
+

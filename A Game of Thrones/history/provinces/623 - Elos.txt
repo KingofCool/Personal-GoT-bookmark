@@ -1,0 +1,25 @@
+# 623 - Elos
+
+# County Title
+title = c_elos
+
+# Settlements
+max_settlements = 3
+
+b_elos = city
+b_elos_castle = castle
+b_elos_temple = temple
+
+# Misc
+culture = eastern_valyrian
+religion = valyrian
+
+# History
+6000.1.1 = {
+	b_elos = ct_asoiaf_ghiscari_basevalue_1
+	b_elos = ct_asoiaf_ghiscari_basevalue_2
+	b_elos = ct_asoiaf_ghiscari_basevalue_3
+
+	b_elos_castle = ca_asoiaf_ghiscari_basevalue_1
+	b_elos_castle = ca_asoiaf_ghiscari_basevalue_2
+}

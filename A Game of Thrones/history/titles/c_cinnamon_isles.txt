@@ -1,0 +1,17 @@
+600.1.1={
+	liege="d_zabhad"
+}
+
+7995.1.1 = { holder=100055937 } # Alim (nc)
+8036.1.1 = { holder=100155937 } # Nizam (nc)
+8042.1.1 = { holder=100255937 } # Is'mail (nc)
+8076.1.1 = { holder=100355937 } # Isa (nc)
+8118.1.1 = { holder=100755937 } # Faruk (nc)
+8132.1.1 = { holder=101155937 } # Murad (nc)
+8158.1.1 = { holder=101255937 } # Mirza (nc)
+8186.1.1 = { holder=101955937 } # Jaleel (nc)
+8187.1.1 = { holder=102055937 } # Uways (nc)
+8237.1.1 = { holder=102255937 } # Sadiq (nc)
+8254.1.1 = { holder=102755937 } # Jalil (nc)
+8299.1.1 = { holder=102855937 } # Akin (nc)
+

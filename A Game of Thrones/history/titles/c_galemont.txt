@@ -1,0 +1,15 @@
+202.1.1 = {liege="d_shipbreaker"}
+
+7994.1.1 = { holder=300361 } # Durran Swygert (nc)
+8004.1.1 = { holder=301361 } # Joffrey Swygert (nc)
+8024.1.1 = { holder=303361 } # Lyonel Swygert (nc)
+8062.1.1 = { holder=306361 } # Gawen Swygert (nc)
+8083.1.1 = { holder=308361 } # Ronnet Swygert (nc)
+8119.1.1 = { holder=309361 } # Raymund Swygert (nc)
+8139.1.1 = { holder=310361 } # Simon Swygert (nc)
+8154.1.1 = { holder=313361 } # Byron Swygert (nc)
+8176.1.1 = { holder=315361 } # Arstan Swygert (nc)
+8221.1.1 = { holder=318361 } # Endrew Swygert (nc)
+8241.1.1 = { holder=319361 } # Elinor Swygert (nc)
+8260.1.1 = { holder=322361 } # Gunthor Swygert (nc)
+8299.7.1 = { liege = 0 }

@@ -1,0 +1,15 @@
+202.1.1 = {liege="d_wendwater"}
+
+7994.1.1 = { holder=300312 } # Barristan (nc)
+8007.1.1 = { holder=303312 } # Balon (nc)
+8016.1.1 = { holder=304312 } # Bonifer (nc)
+8043.1.1 = { holder=305312 } # Brynden (nc)
+8073.1.1 = { holder=306312 } # Barristan (nc)
+8082.1.1 = { holder=307312 } # Benfrey (nc)
+8130.1.1 = { holder=308312 } # Bowen (nc)
+8160.1.1 = { holder=309312 } # Brynden (nc)
+8186.1.1 = { holder=310312 } # Balon (nc)
+8188.1.1 = { holder=311312 } # Brynden (nc)
+8210.1.1 = { holder=312312 } # Belwyn (nc)
+8240.1.1 = { holder=313312 } # Barristan (nc)
+8283.1.1 = { holder=314312 } # Byron (nc)

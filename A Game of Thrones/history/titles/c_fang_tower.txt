@@ -1,0 +1,27 @@
+#c_fang_tower
+900.1.1={
+	liege="d_casterly_rock"
+}
+	
+	
+7983.1.1 = { holder=3252161 } # Presford (nc) Parren's
+8000.6.6 = { holder=3292161 } # Perros (nc)
+8039.1.1 = { holder=3322161 } # Tygett (nc)
+8057.1.1 = { holder=3342161 } # Tiona (nc)
+8096.1.1 = { holder=3392161 } # Janna (nc)
+8097.1.1 = { holder=3402161 } # Perros (nc)
+8129.1.1 = { holder=3422161 } # Theomore (nc)
+8165.1.1 = { holder=3472161 } # Sallei (nc)
+8170.1.1 = { holder=3482161 } # Dorna (nc)
+8186.1.1 = { holder=3542161 } # Loren (nc)
+8212.9.17 = {
+holder=102190 # Gerold Lannister
+}
+8243.1.1 = {
+holder=1190	# Tytos Lannister
+}
+8261.1.8 = { holder=200230 } # Kennos (sc) Clegane's
+#NOTE: The holder of this title has the House Clegane dynasty tracker set in roberts_rebellion_events from this date
+8262.1.1 = { holder=230 } # Arnaud (sc)
+8287.1.1 = { holder=1230 } # Gregor (c)
+8300.3.1 = { holder=9230 } # Lyvia (c)

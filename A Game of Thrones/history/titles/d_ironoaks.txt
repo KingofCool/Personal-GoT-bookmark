@@ -1,0 +1,31 @@
+6000.1.1={
+	liege="e_vale"
+	law = succ_primogeniture
+}
+
+7992.1.1 = { holder=3000182 } # Robar (nc)
+7999.1.1={ 
+	liege="k_vale"
+} 
+8022.1.1 = { holder=3001182 } # Osgood (nc)
+8043.1.1 = { holder=3006182 } # Hugh (nc)
+8086.1.1 = { holder=3008182 } # Ronnel (nc)
+8107.1.1 = { holder=3012182 } # Jasper (nc)
+8135.1.1 = { holder=3013182 } # Lyonel (nc)
+8179.1.1 = { holder=3015182 } # Gwayne (nc)
+# 8195.3.7={
+	# liege = 0
+# }
+# 8196.1.1={
+	# liege = "k_vale"
+# }
+
+8204.1.1 = { 
+	holder=94019
+}
+8256.1.1={
+	holder=94020
+}
+8257.1.1={
+	holder=94021
+}

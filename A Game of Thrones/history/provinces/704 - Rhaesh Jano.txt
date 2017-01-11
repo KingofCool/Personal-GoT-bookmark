@@ -1,0 +1,18 @@
+
+# County Title
+title = c_rhaesh_jano
+
+# Settlements
+max_settlements = 4
+
+b_rhaesh_jano = tribal
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+# History
+6000.1.1 = {
+	#b_rhaesh_jano = ca_asoiaf_khalasar_0
+	#b_rhaesh_jano = ca_asoiaf_khalasar_1
+}

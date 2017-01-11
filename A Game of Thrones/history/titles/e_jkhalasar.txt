@@ -1,0 +1,17 @@
+1066.1.1={
+	historical_nomad = yes
+	law = slavery_2
+}
+5030.1.1 = {
+	holder = 100607399 #Gharak
+}
+5049.1.1 = {
+	holder = 0
+}
+7163.1.1 = {
+	holder = 101607399 #Zhea
+}
+7175.1.1 = {
+	holder = 0
+}
+

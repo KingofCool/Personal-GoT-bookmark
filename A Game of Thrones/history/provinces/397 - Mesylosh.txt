@@ -1,0 +1,30 @@
+# 397 - Mesylosh
+
+# County Title
+title = c_mesylosh
+
+# Settlements
+max_settlements = 3
+
+b_mesylosh = city
+b_mesylosh_castle = castle
+b_mesylosh_temple = temple
+
+# Misc
+culture = lysene
+religion = rhllor
+
+# History
+6000.1.1 = {
+	b_mesylosh = ct_asoiaf_essos_basevalue_1
+	b_mesylosh = ct_asoiaf_essos_basevalue_2
+	b_mesylosh = ct_asoiaf_essos_basevalue_3
+	b_mesylosh = ct_asoiaf_essos_basevalue_4
+	
+	b_mesylosh_castle = ca_asoiaf_essos_basevalue_1
+	b_mesylosh_castle = ca_asoiaf_essos_basevalue_2
+
+}
+
+8259.1.1={ capital = b_mesylosh_castle } #Ninepenny king
+8260.11.11 = { capital = b_mesylosh }

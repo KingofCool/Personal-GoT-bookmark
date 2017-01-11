@@ -1,0 +1,32 @@
+# 366 - Little Tyrosh
+
+# County Title
+title = c_littletyrosh
+
+# Settlements
+max_settlements = 3
+
+b_littletyrosh = city
+b_littletyrosh_castle = castle
+b_littletyrosh_temple = temple
+
+# Misc
+culture = tyroshi
+religion = trios
+
+# History
+6000.1.1 = {
+	b_littletyrosh = ct_asoiaf_essos_basevalue_1
+	b_littletyrosh = ct_asoiaf_essos_basevalue_2
+	b_littletyrosh = ct_asoiaf_essos_basevalue_3
+	b_littletyrosh = ct_asoiaf_essos_basevalue_4
+	
+	b_littletyrosh = ct_asoiaf_smallshipyard
+	
+	b_littletyrosh_castle = ca_asoiaf_essos_basevalue_1
+	b_littletyrosh_castle = ca_asoiaf_essos_basevalue_2
+	b_littletyrosh_castle = ca_asoiaf_essos_basevalue_3
+	
+	trade_post = b_tumitis
+
+}

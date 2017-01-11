@@ -1,0 +1,31 @@
+# 348 - Spotswood
+
+# County Title
+title = c_spotswood
+
+# Settlements
+max_settlements = 4
+b_spotswood = castle
+b_olivegrove = city
+b_greystoke = castle
+#b_thornford = city
+#b_whitecliff = castle
+
+# Misc
+culture = salt_dornish
+religion = the_seven
+terrain = forest
+
+
+6000.1.1 = {
+
+	b_spotswood = ca_asoiaf_dorne_basevalue_1
+	b_spotswood = ca_asoiaf_dorne_basevalue_2
+
+	b_olivegrove = ct_asoiaf_dorne_basevalue_1
+	b_olivegrove = ct_asoiaf_dorne_basevalue_2
+
+	b_greystoke = ca_asoiaf_dorne_basevalue_1
+
+
+}

@@ -1,0 +1,21 @@
+900.1.1={
+	liege="d_pyke"
+	law=succ_primogeniture law=cognatic_succession
+}
+7993.1.1 = { holder=300064 } # Yohn (nc)
+8030.1.1 = { holder=300264 } # Harren (nc)
+8065.1.1 = { holder=300664 } # Ambrode (nc)
+8073.1.1 = { holder=300764 } # Sigfry (nc)
+8096.1.1 = { holder=300964 } # Adrack (nc)
+8132.1.1 = { holder=301364 } # Urrigon (nc)
+8145.1.1 = { holder=301664 } # Germund (nc)
+8183.1.1 = { holder=301864 } # Urek (nc)
+8195.1.1 = { holder=302364 } # Alyn (nc)
+8205.1.1 = { holder=302664 } # Cadwyl (nc)
+8256.1.1 = { holder=9064 }
+8281.1.1 = {	
+	holder=64
+}
+8299.12.1={
+	holder=7064 #germund
+}

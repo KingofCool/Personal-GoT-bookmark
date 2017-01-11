@@ -1,0 +1,16 @@
+8213.1.1={
+	liege="k_beyond_wall"
+}
+8226.9.9={
+	liege="0"
+}
+8280.1.1={
+	holder=174345
+}
+8298.1.1={
+	liege="k_beyond_wall"
+}
+8300.1.1={
+	liege="d_lower_frostfangs"
+	holder=157001
+}

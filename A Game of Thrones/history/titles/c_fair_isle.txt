@@ -1,0 +1,60 @@
+#c_fair_isle
+5390.1.1 = {
+	holder=150194 #Gylbert farman (C)
+}
+5415.1.1 = {
+	holder=0
+}
+6736.1.1 = {
+	holder=152194
+}
+6770.1.1 = {
+	liege=e_westerlands #conquered
+}
+6778.1.1 = {
+	holder=0
+}
+
+7955.1.1={
+	liege="d_kayce"
+	holder=155194
+}
+7982.1.1 = {
+	holder=156194
+}
+7995.1.1 = {	
+	holder=310194
+}
+8039.1.1 = {	
+	holder=309194
+}
+8065.1.1 = {	
+	holder=308194
+}
+8088.1.1 = {	
+	holder=307194
+}
+8104.1.1 = {	
+	holder=306194
+}
+8130.1.1 = {
+	holder=305194
+}
+8161.1.1 = {	
+	holder=304194
+}
+8199.1.1 = {	
+	holder=302194
+}
+8211.1.1 = {	
+	holder=301194
+}
+8251.1.1 = {	
+	holder=300194
+}	
+8262.1.1 = {	
+	holder=194
+}
+8295.1.1 = {	
+	holder=2194 #Sebaston
+}

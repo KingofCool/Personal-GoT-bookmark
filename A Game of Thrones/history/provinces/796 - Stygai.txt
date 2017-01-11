@@ -1,0 +1,25 @@
+# 796 - Stygai
+
+# County Title
+title = c_stygai
+
+# Settlements
+max_settlements = 3
+
+b_stygai = temple
+b_stygai_castle = castle
+
+# Misc
+culture = asshai
+religion = shadowbinders
+
+# History
+6000.1.1 = {
+
+	b_stygai_castle = ca_asoiaf_asshai_basevalue_1
+	b_stygai_castle = ca_asoiaf_asshai_basevalue_2
+	b_stygai_castle = ca_asoiaf_asshai_basevalue_3
+
+
+}
+	

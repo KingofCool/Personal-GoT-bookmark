@@ -1,0 +1,20 @@
+#House Ojokulu
+7996.1.1 = { 
+	holder=100304027 
+	liege=d_golden_head
+	law = succ_seniority
+	law = cognatic_succession
+} # Chibundo (nc)
+8045.1.1 = { holder=102304027 } # Konde (nc)
+8085.1.1 = { holder=107304027 } # Bapato (nc)
+8100.1.1 = { holder=109304027 } # Jarado (nc)
+8129.1.1 = { holder=112304027 } # Koroxhar (nc)
+8137.1.1 = { holder=114304027 } # Xhelimo (nc)
+8174.1.1 = { holder=119304027 } # Abrafo (nc)
+8197.1.1 = { holder=120304027 } # Konde (nc)
+8212.1.1 = { holder=121304027 } # Isodo (nc)
+8225.1.1 = { holder=123304027 } # Punuxharo (nc)
+8254.1.1 = { holder=125304027 } # Isodo (nc)
+8271.1.1 = { holder=128304027 } # Paro (nc)
+
+

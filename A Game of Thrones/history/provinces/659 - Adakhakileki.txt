@@ -1,0 +1,23 @@
+# 659 - Adakhakileki
+
+# County Title
+title = c_adakhakileki
+
+# Settlements
+max_settlements = 4
+
+b_adakhakileki = tribal
+b_adakhakileki2 = city
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+# History
+6000.1.1 = {
+	b_adakhakileki2 = ct_asoiaf_eastern_basevalue_1
+	b_adakhakileki2 = ct_asoiaf_eastern_basevalue_2
+	b_adakhakileki2 = ct_asoiaf_eastern_basevalue_3
+	b_adakhakileki2 = ct_asoiaf_eastern_basevalue_4
+	b_adakhakileki2 = ct_asoiaf_eastern_basevalue_5
+}

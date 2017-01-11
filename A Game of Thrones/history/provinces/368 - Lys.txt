@@ -1,0 +1,60 @@
+# 368 - Lys
+
+# County Title
+title = c_lys
+
+# Settlements
+max_settlements = 7
+
+b_lys = city
+b_lyseneharbor = city
+b_pleasuregardens = city
+b_redtemplelys = temple
+b_tear_tower = castle
+b_numys = castle
+b_lentorys = castle
+
+# Misc
+culture = lysene
+religion = weeping_lady
+
+# History
+6000.1.1 = {
+	b_lys = ct_asoiaf_essos_basevalue_1
+	b_lys = ct_asoiaf_essos_basevalue_2
+	b_lys = ct_asoiaf_essos_basevalue_3
+	b_lys = ct_asoiaf_essos_basevalue_4
+	b_lys = ct_asoiaf_essos_basevalue_5
+	b_lys = ct_asoiaf_essos_basevalue_6
+	b_lys = ct_asoiaf_essosshipyard
+	
+	#trade_post = b_zoranos
+}
+
+6000.1.1 = {
+	b_lyseneharbor = ct_asoiaf_essos_basevalue_1
+	b_lyseneharbor = ct_asoiaf_essos_basevalue_2
+	b_lyseneharbor = ct_asoiaf_essos_basevalue_3
+	b_lyseneharbor = ct_asoiaf_essos_basevalue_4
+	b_lyseneharbor = ct_asoiaf_essos_basevalue_5
+	b_lyseneharbor = ct_asoiaf_essosshipyard
+}
+
+6000.1.1 = {
+	b_pleasuregardens = ct_asoiaf_essos_basevalue_1
+	b_pleasuregardens = ct_asoiaf_essos_basevalue_2
+	b_pleasuregardens = ct_asoiaf_essos_basevalue_3
+	b_pleasuregardens = ct_asoiaf_essosshipyard
+	
+	b_tear_tower = ca_asoiaf_essos_basevalue_1
+	b_tear_tower = ca_asoiaf_essos_basevalue_2
+	b_tear_tower = ca_asoiaf_essos_basevalue_3
+	
+	b_numys = ca_asoiaf_essos_basevalue_1
+	b_numys = ca_asoiaf_essos_basevalue_2
+	b_numys = ca_asoiaf_essos_basevalue_3
+	
+	b_lentorys = ca_asoiaf_essos_basevalue_1
+	b_lentorys = ca_asoiaf_essos_basevalue_2
+	b_lentorys = ca_asoiaf_essos_basevalue_3
+}

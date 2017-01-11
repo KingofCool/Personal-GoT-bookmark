@@ -1,0 +1,31 @@
+# 115 - Shoreham
+
+# County Title
+title = c_shoreham
+
+# Settlements
+max_settlements = 3
+b_shoreham = castle
+b_frogpool = city
+
+# Misc
+culture = riverlander
+religion = the_seven
+
+# History
+
+
+6000.1.1 = {
+
+b_shoreham = ca_asoiaf_river_basevalue_1
+b_shoreham = ca_asoiaf_river_basevalue_2
+#b_shoreham = ca_asoiaf_river_basevalue_3
+
+
+b_frogpool = ct_asoiaf_river_basevalue_1
+
+}
+8070.1.1 = { #Jaehaerys constructs road network
+	b_shoreham = ca_kingsroad
+}
+

@@ -1,0 +1,90 @@
+202.1.1=
+{
+	liege="e_stormlands"
+	law = succ_primogeniture
+	law = cognatic_succession
+}
+7680.1.4 = {
+     holder = 3501544 #Arlan III
+}
+7701.1.1={
+     holder = 3511544 #Arlan IV
+}
+7719.1.1={
+     holder = 3061544 #Anrec
+}	 
+7757.1.1 = {
+     holder = 3051544 #Arcon
+}	
+7760.1.1 = {
+     holder = 3041544 #Durran
+}	
+7803.1.1 = {
+     holder = 3031544 #Alrec
+}	
+7840.1.1 = {
+     holder = 3021544 #Durran
+}	
+7887.1.1 = {
+     holder = 3011544 #Angron
+}	 
+7921.1.1 = { 
+     holder = 3001544 #Durran
+}
+7925.1.1={
+	holder = 3002544 #Angron
+}
+7932.1.1={
+	holder = 31544 #Arrec (C)
+}
+7945.1.1 = {
+	holder = 21544 #Arlan V(C)
+}
+7955.1.1={
+	holder = 1544 # Argilac the Arrogant (C)
+}
+7998.2.27={
+	liege = k_stormlands
+	holder=1317 #Orys Baratheon rumoured half-brother of Aegon the Conqueror.
+}
+8038.4.3={
+	holder=11317 #Davos Baratheon
+}
+8044.1.1={
+	holder=12317 #Robar Baratheon
+}
+8097.1.1={
+	holder=13317 #Boremund Baratheon
+}
+8127.9.1={
+	holder=14317 #Borros Baratheon
+}
+8131.1.1={
+	holder=29317 #Davos Baratheon
+}
+8146.1.1={
+	holder=15317 #Corwen Baratheon
+}
+8168.1.1={
+	holder=16317 #Arion Baratheon
+}
+8210.1.1={
+	holder=17317 #Axel Baratheon
+}
+8226.1.1 = {
+	holder=20317 #“Lyonel” Baratheon
+}
+8250.1.1 = {
+   holder=60010317 #Ormund Baratheon
+ } 
+8259.11.10={
+	holder=3317 #Steffon Baratheon
+}
+8278.1.1={
+	holder=317 #Robert Baratheon
+}
+8284.1.1={
+	holder = 1019110 #Davos Seaworth
+	liege="d_dragonstone"
+}
+

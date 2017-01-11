@@ -1,0 +1,182 @@
+#c_tolqolarth
+123456 = {
+	name = " "
+	
+	religion="ruins"
+	culture="ruin"	
+	
+	7900.1.1 = {
+		birth="7900.1.1"
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				death = yes
+			}	
+			if = {
+				limit = { is_ruler = yes }
+				add_trait = ruin
+				set_defacto_liege = THIS
+				character_event = { id = unoccupied.101 }	
+				create_character = {
+					name = ""
+					religion="ruins"
+					culture="ruin"	
+					dynasty=none
+					attributes = {
+						martial = 0
+						diplomacy = 0
+						intrigue = 0
+						stewardship = 0
+						learning = 0
+					}
+					trait = ruin
+				}
+				new_character = {
+					b_toqolarth = { gain_title = PREV }
+				}
+				create_character = {
+					name = ""
+					religion="ruins"
+					culture="ruin"	
+					dynasty=none
+					attributes = {
+						martial = 0
+						diplomacy = 0
+						intrigue = 0
+						stewardship = 0
+						learning = 0
+					}
+					trait = ruin
+				}
+				new_character = {
+					b_toqolarth_temple = { gain_title = PREV }
+				}
+			}	
+		}
+	}
+}
+#c_ny_sar
+123457 = {
+	name = " "
+	
+	religion="ruins"
+	culture="ruin"	
+	
+	7300.1.1 = {
+		birth="7300.1.1"
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				death = yes
+			}	
+			if = {
+				limit = { is_ruler = yes }
+				add_trait = ruin
+				set_defacto_liege = THIS
+				c_ny_sar = { location = { set_province_flag = ca_colony_6 } }
+				character_event = { id = unoccupied.101 }	
+				
+				create_character = {
+					name = ""
+					religion="ruins"
+					culture="ruin"	
+					dynasty=none
+					attributes = {
+						martial = 0
+						diplomacy = 0
+						intrigue = 0
+						stewardship = 0
+						learning = 0
+					}
+					trait = ruin
+				}
+				new_character = {
+					b_ny_sar = { gain_title = PREV }
+				}
+				create_character = {
+					name = ""
+					religion="ruins"
+					culture="ruin"	
+					dynasty=none
+					attributes = {
+						martial = 0
+						diplomacy = 0
+						intrigue = 0
+						stewardship = 0
+						learning = 0
+					}
+					trait = ruin
+				}
+				new_character = {
+					b_ny_sartemple = { gain_title = PREV }
+				}
+			}	
+		}
+	}
+}
+#c_summerhall
+123458 = {
+	name = " "
+	
+	religion="ruins"
+	culture="ruin"	
+	
+	8259.1.1 = {
+		birth="8259.1.1"
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				death = yes
+			}	
+			if = {
+				limit = { is_ruler = yes }
+				add_trait = ruin
+				set_defacto_liege = THIS
+				c_summerhall = { location = { set_province_flag = ca_colony_3 } }
+				character_event = { id = unoccupied.101 }	
+			}	
+		}
+	}
+}
+#c_oldstones
+123459 = {
+	name = " "
+	
+	religion="ruins"
+	culture="ruin"	
+	
+	6670.1.1 = {
+		birth="6670.1.1"
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				death = yes
+			}	
+			if = {
+				limit = { is_ruler = yes }
+				add_trait = ruin
+				set_defacto_liege = THIS
+				c_oldstones = {  location = { set_province_flag = ca_colony_5 } }
+				character_event = { id = unoccupied.101 }	
+				
+				create_character = {
+					name = ""
+					religion="ruins"
+					culture="ruin"	
+					dynasty=none
+					attributes = {
+						martial = 0
+						diplomacy = 0
+						intrigue = 0
+						stewardship = 0
+						learning = 0
+					}
+					trait = ruin
+				}
+				new_character = {
+					b_pitford = { gain_title = PREV }
+				}
+			}	
+		}
+	}
+}

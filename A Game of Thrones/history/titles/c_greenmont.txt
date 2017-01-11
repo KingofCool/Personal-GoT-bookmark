@@ -1,0 +1,17 @@
+#c_greenmont
+900.1.1={
+	liege="d_crakehall"
+}
+7945.1.1 = { holder=152222 } # Polliver (nc)
+7975.1.1 = { holder=153222 } # Damon (nc)
+7996.1.1 = { holder=300222 } # Manford (nc)
+8039.1.1 = { holder=303222 } # Gerion (nc)
+8058.1.1 = { holder=307222 } # Garrison (nc)
+8094.1.1 = { holder=311222 } # Quenton (nc)
+8132.1.1 = { holder=313222 } # Genna (nc)
+8161.1.1 = { holder=315222 } # Lewys (nc)
+8170.1.1 = { holder=316222 } # Ormond (nc)
+8186.1.1 = { holder=319222 } # Manfryd (nc)
+8233.1.1 = { holder=321222 } # Roland (nc)	
+8270.1.1 = {holder=222}
+8293.1.1 = {holder=4222 } #Manfryd - canon

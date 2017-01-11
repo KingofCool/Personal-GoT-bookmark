@@ -1,0 +1,20 @@
+6200.1.1={
+	liege="e_vale"
+	law = succ_primogeniture
+}
+7994.1.1 = { holder=3000180 } # Kyle (nc)
+7999.1.1={ 
+	liege="k_vale"
+} 
+8037.1.1 = { holder=3001180 } # Hugo (nc)
+8058.1.1 = { holder=3004180 } # Alyx (nc)
+8085.1.1 = { holder=3010180 } # Jason (nc)
+8137.1.1 = { holder=3012180 } # Tommard (nc)
+8143.1.1 = { holder=3015180 } # Dennett (nc)
+8153.1.1 = { holder=3017180 } # Donnel (nc)
+8197.1.1 = { holder=3018180 } # Hibald (nc)
+8246.1.1 = { holder=3019180 } # Manfred (nc)
+8264.1.1 = { holder=3024180 } # Elmar (nc)
+8270.1.1={
+	holder = 94081 	#Lord Jorah Wydman
+}

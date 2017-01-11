@@ -1,0 +1,14 @@
+202.1.1 = { liege="d_red_watch" }
+
+7994.1.1 = { holder=3000311 } # Michael Horpe (nc)
+8007.1.1 = { holder=3002311 } # Beric Horpe (nc)
+8043.1.1 = { holder=3006311 } # Eldon Horpe (nc)
+8061.1.1 = { holder=3007311 } # Elyn Horpe (nc)
+8097.1.1 = { holder=3008311 } # Eldon Horpe (nc)
+8120.1.1 = { holder=3011311 } # Gowen Horpe (nc)
+8150.1.1 = { holder=3013311 } # Alyn Horpe (nc)
+8173.1.1 = { holder=3018311 } # Stannis Horpe (nc)
+8183.1.1 = { holder=3021311 } # Alesander Horpe (nc)
+8211.1.1 = { holder=3022311 } # Galladon Horpe (nc)
+8256.1.1 = { holder=3023311 } # Guyard Horpe (nc)
+8274.1.1 = { holder=3024311 } # Clifford Horpe (nc)

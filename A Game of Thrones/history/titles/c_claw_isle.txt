@@ -1,0 +1,23 @@
+800.1.1 = {
+	liege="d_dragonstone"
+	effect = { #Celtigar wealth
+		holder_scope = { wealth = 400 }
+	}
+}
+
+7900.1.1 = { holder=60400050} # Taelon Celtigar (nc)
+7957.1.1 = { holder=60300050} # Tristeon Celtigar (nc)
+7968.1.1 = { holder=60100050} # Baelon Celtigar (nc)
+7980.1.1 = { holder=3000050 } # Crispian Celtigar (C)
+8006.1.1 = { holder=3002050 } # Dontos Celtigar (nc)
+8017.1.1 = { holder=3004050 } # Edwell Celtigar (nc)
+8060.1.1 = { holder=3009050 } # Daella Celtigar (nc)
+8082.1.1 = { holder=3011050 } # Dontos Celtigar (nc)
+8114.1.1 = { holder=3013050 } # Bartimos Celtigar (C)
+8131.1.1 = { holder=3014050 } # Clement Celtigar (SC)
+8167.1.1 = { holder=3020050 } # Amrell Celtigar (nc)
+8187.1.1 = { holder=3021050 } # Annos Celtigar (nc)
+8188.1.1 = { holder=3023050 } # Dontos Celtigar (nc)
+8248.1.1 = { holder=3031050 } # Orys Celtigar (nc)
+8280.1.1 = { holder=2033050 } # Ardrian Celtigar (C)
+8299.7.1 = { liege = 0 }

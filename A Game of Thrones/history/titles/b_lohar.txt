@@ -1,0 +1,24 @@
+900.1.1={ 
+	liege="k_lys"
+	holding_dynasty = 300523 # Lohar
+}
+
+7970.1.1 = { holder=150300523 } # Maelys (nc)
+8018.1.1 = { holder=100300523 } # Beqqo (nc)
+8080.1.1 = { holder=102300523 } # Allaquo (nc)
+8086.1.1 = { holder=103300523 } # Pynto (nc)
+8113.1.1 = { holder=106300523 } # Sharako (canon)
+8130.1.1 = { holder=111300523 } # Tregar (nc)
+8160.1.1 = { holder=110300523 } # Mellario (nc)
+8167.1.1 = { holder=112300523 } # Illyrio (nc)
+8208.1.1 = { holder=114300523 } # Tycho (nc)
+8232.1.1 = { holder=118300523 } # Tregar (nc)
+8244.1.1 = { holder=121300523 } # Gyleno (nc)
+8259.1.1={ liege="d_lys" } #Ninepenny king
+8259.12.31 = { liege="k_lys" } 
+8277.1.1 = { holder=122300523 } # Illyrio (nc)
+
+
+
+
+

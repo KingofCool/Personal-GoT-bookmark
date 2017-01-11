@@ -1,0 +1,24 @@
+4000.1.1 = {
+	active = yes
+	liege = k_the_most_devout
+	law = succ_open_elective
+}
+8043.1.1={
+	holder=333000652 # Wat the Hewer
+}
+8043.4.3={
+	holder=333000653 # Ser Harys Hill
+}
+8044.1.1={
+	holder=1754362 #Joffrey Doggett
+}
+8058.1.1={ #Supressed, disbanded by Jaehaerys I
+	holder=0
+	liege = 0
+	active = no
+}
+8300.3.1={ #cersei
+	active = yes
+	liege = k_the_most_devout
+	law = succ_open_elective
+}

@@ -1,0 +1,18 @@
+600.1.1={
+	liege="k_myr"
+}
+7983.1.1 = { holder=150300516 } # Belequo (nc)
+8023.1.1 = { holder=100300525 } # Gylono (nc)
+8042.1.1 = { holder=101300525 } # Pynto (nc)
+8082.1.1 = { holder=102300700 } # Noho (nc)
+8084.1.1 = { holder=103300700 } #### Craghas Crabfeeder
+8108.11.11 = { holder=106174355 } # Terro (nc)
+8135.1.1 = { holder=113300534 } # Daario (nc)
+8147.1.1 = { holder=108300700 } # Ezzelyno (nc)
+8166.1.1 = { holder=110300525 } # Ordello (nc)
+8196.1.1 = { holder=117300534 } # Ferrego (nc)
+8207.1.1 = { holder=121300534 } # Pynto (nc)
+8235.1.1 = { holder=121174355 } # Beqqo (nc)
+8258.1.1 = { holder=120300525 } # Gyloro (nc)
+8285.1.1 = { holder=125300700 } # Roro (nc)
+8293.1.1 = { holder=121300525 } # Terro (nc)

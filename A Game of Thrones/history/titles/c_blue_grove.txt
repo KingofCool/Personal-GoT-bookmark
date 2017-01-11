@@ -1,0 +1,14 @@
+202.1.1 = { liege="d_rainwood" }
+
+7994.1.1 = { holder=300328 } # Colen Kellington Kellington (nc)
+8008.1.1 = { holder=301328 } # Cortney Kellington (nc)
+8022.1.1 = { holder=302328 } # Criston Kellington (nc)
+8063.1.1 = { holder=303328 } # Quentyn Kellington (nc)
+8098.1.1 = { holder=305328 } # Casper Kellington (nc)
+8137.1.1 = { holder=306328 } # Klifford Kellington (nc)
+8181.1.1 = { holder=308328 } # Cortney Kellington (nc)
+8204.1.1 = { holder=311328 } # Kressen Kellington (nc)
+8241.1.1 = { holder=312328 } # Quellon Kellington (nc)
+8259.1.1 = { holder=314328 } # Colen Kellington (nc)
+8283.1.1 = { holder=315328 } # Kerric Kellington (nc)
+8299.1.1 = { liege="k_stormlands" }

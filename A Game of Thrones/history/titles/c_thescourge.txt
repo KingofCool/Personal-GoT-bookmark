@@ -1,0 +1,25 @@
+7000.1.1={
+	liege="d_ghosthills"
+	law = true_cognatic_succession
+}
+
+7881.1.1 = { holder=6000010 } # Dalyn (nc)
+7949.1.1 = { holder=6010010 } # Edric (nc)
+7964.1.1 = { holder=6020010 } # Alyssa (nc)
+7982.1.1 = { holder=6030010 } # Darryn (nc)
+8010.1.1 = { holder=6040010 } # Symond (nc)
+8012.1.1 = { holder=60110 } # Sylva (nc)
+8038.1.1 = { holder=60210 } # Elinor (nc)
+8058.1.1 = { holder=60310 } # Lythene (nc)
+8086.1.1 = { holder=60610 } # Lythene (nc)
+8096.1.1 = { holder=60910 } # Franklyn (nc)
+8105.1.1 = { holder=61110 } # Mors (nc)
+8106.1.1 = { holder=61210 } # Caleotte (nc)
+8107.1.1 = { holder=61010 } # Elyana (nc)
+8139.1.1 = { holder=61510 } # Dorea (nc)
+8163.1.1 = { holder=61000810 } # Beldecar (nc)
+8196.1.1 = { holder=61001010 } # Trebor (nc)
+8211.1.1 = { holder=61001110 } # Harmen (nc)
+8227.1.1 = { holder=61001510 } # Daeron (nc)
+8262.1.1 = { holder=61001710 } # Cletus (nc)
+8274.1.1={ holder=10 } # Trebor (c)

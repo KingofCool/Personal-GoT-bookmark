@@ -1,0 +1,23 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="d_tumbleton"
+}
+7969.1.1 = { holder=30001428 } # Robert (nc)
+8006.1.1 = { holder=30011428 } # Anslem (nc)
+8020.1.1 = { holder=30041428 } # Elwood (nc)
+8049.1.1 = { holder=30081428 } # Amelryc (nc)
+8073.1.1 = { holder=30091428 } # Edwyn (nc)
+8093.1.1 = { holder=30101428 } # Titus (nc)
+8123.1.1 = { holder=30151428 } # Hectyr (nc)
+8176.1.1 = { holder=30231428 } # Pelleas (nc)
+8192.1.1 = { holder=30241428 } # Quentyn (nc)
+###footlys####given to footlys after stricklands flee across narrow sea(non canon story)
+8196.6.6 = { holder=3020248 } # Gormon (nc) 
+8210.1.1 = { holder=3021248 } # Runceford (nc)
+8244.1.1 = { holder=3026248 } # Hosman (nc)
+8270.1.1={
+	holder=248 #Dontos (nc)
+}
+
+
+
+

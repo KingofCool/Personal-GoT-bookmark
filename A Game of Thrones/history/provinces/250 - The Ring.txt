@@ -1,0 +1,35 @@
+
+
+# County Title
+title = c_the_ring
+
+# Settlements
+max_settlements = 5
+b_the_ring = castle
+b_roxbridge   = city
+b_the_ring_sept = temple
+b_coltishall = castle
+
+#b_barleycross = city
+
+
+
+
+# Misc
+culture = reachman
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_the_ring = ca_asoiaf_reach_basevalue_1
+	b_the_ring = ca_asoiaf_reach_basevalue_2
+	b_the_ring = ca_asoiaf_reach_basevalue_3
+}
+6000.1.1 = {
+	b_roxbridge = ct_asoiaf_reach_basevalue_1
+
+}
+6000.1.1 = {
+	b_coltishall = ca_asoiaf_reach_basevalue_1
+	b_coltishall = ca_asoiaf_reach_basevalue_2
+}

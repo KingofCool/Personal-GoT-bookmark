@@ -1,0 +1,23 @@
+# 38 - King's Grove
+
+# County Title
+title = c_kingsgrove
+
+# Settlements
+max_settlements = 3
+b_tumbledown_tower = castle
+b_brierscroft = city
+#b_harclayhall = castle
+			
+# Misc
+culture = northman
+religion = old_gods
+
+terrain = forest
+
+# History
+
+6000.1.1 = {
+	b_brierscroft = ct_asoiaf_north_basevalue_1
+	b_brierscroft = ct_asoiaf_north_basevalue_2
+}

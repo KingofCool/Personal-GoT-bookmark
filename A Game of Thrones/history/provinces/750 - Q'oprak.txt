@@ -1,0 +1,22 @@
+# 750 - Q'oprak
+
+# County Title
+title = c_qoprak
+
+# Settlements
+max_settlements = 2
+
+b_qoprak = castle
+b_qopraktown = city
+
+# Misc
+culture = basilisk_islander
+religion = corsair
+
+# History
+6000.1.1 = {
+	b_qoprak = ca_asoiaf_pirateshipyard
+	
+	b_qopraktown = ct_asoiaf_summerisland_basevalue_1
+	b_qopraktown = ct_asoiaf_summerisland_basevalue_2
+}

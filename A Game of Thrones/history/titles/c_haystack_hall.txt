@@ -1,0 +1,14 @@
+202.1.1 = { liege="d_tarth" }
+
+7994.1.1 = { holder = 300318 } # Stannis Errol (nc)
+8009.1.1 = { holder = 301318 } # Stewys Errol (nc)
+8072.1.1 = { holder = 303318 } # Tryston Errol (nc)
+8080.1.1 = { holder = 304318 } # Ormund Errol (nc)
+8109.1.1 = { holder = 306318 } # Tryston Errol (nc)
+8134.1.1 = { holder = 307318 } # Tommen Errol (nc)
+8167.1.1 = { holder = 308318 } # Terrence Errol (nc)
+8202.1.1 = { holder = 309318 } # Simon Errol (nc)
+8228.1.1 = { holder = 310318 } # Terrence Errol (nc)
+8253.1.1 = { holder = 311318 } # Stewys Errol (nc)
+8269.1.1 = { holder = 318 } # Shyra Errol (C)
+8299.3.1 = { holder = 2318 } # Sebastion Errol (C)

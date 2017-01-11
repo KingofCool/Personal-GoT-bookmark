@@ -1,0 +1,17 @@
+600.1.1={
+	liege="d_asabhad"
+}
+
+7995.1.1 = { holder=100069165 } # Abdullah (nc)
+8032.1.1 = { holder=100169165 } # Ghalib (nc)
+8041.1.1 = { holder=100269165 } # Fadl (nc)
+8053.1.1 = { holder=100869165 } # Is'mail (nc)
+8112.1.1 = { holder=100969165 } # Youkhanna (nc)
+8130.1.1 = { holder=101269165 } # Khaireddin (nc)
+8145.1.1 = { holder=101369165 } # Muslihiddin (nc)
+8175.1.1 = { holder=101669165 } # Jibril (nc)
+8193.1.1 = { holder=101769165 } # Gafur (nc)
+8251.1.1 = { holder=101869165 } # Yahya (nc)
+8272.1.1 = { holder=102069165 } # Muzaffaraddin (nc)
+8291.1.1 = { holder=102469165 } # Yusuf (nc)
+

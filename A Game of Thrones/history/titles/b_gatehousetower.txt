@@ -1,0 +1,16 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="c_moatcailin"
+}
+
+7979.1.1 = { holder=11450 } # Rickon (nc)
+8009.1.1 = { holder=21450 } # Robett (nc)
+8028.1.1 = { holder=61450 } # Pate (nc)
+8061.1.1 = { holder=71450 } # Aethan (nc)
+8103.1.1 = { holder=101450 } # Hother (nc)
+8116.1.1 = { holder=121450 } # Perra (nc)
+8133.1.1 = { holder=131450 } # Jyana (nc)
+8191.1.1 = { holder=151450 } # Eyron (nc)
+8228.1.1 = { holder=161450 } # Erena (nc)
+8260.1.1 = { holder=191450 } # Jonnel (nc)
+8287.1.1 = { holder=211450 } # Mallador (nc)
+8297.1.1 = { holder=241450 } # Beron (nc)

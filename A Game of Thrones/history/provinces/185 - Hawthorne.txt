@@ -1,0 +1,37 @@
+# 185 - hawthorn (Formerly Payne Hall)
+
+# County Title
+title = c_hawthorn
+
+# Settlements
+max_settlements = 5
+b_hawthorn = castle
+b_hawthorntown = city
+b_hawthorntowntwo = castle
+b_hawthornsept = city
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_hawthorn = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_hawthorn = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_hawthorn = ca_asoiaf_westerland_basevalue_3}
+#6000.1.1 = {b_hawthorn = ca_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_hawthorntown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_hawthorntown = ct_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_hawthorntown = ct_asoiaf_westerland_basevalue_3}
+6000.1.1 = {b_hawthorntown = ct_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_hawthorntowntwo = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_hawthorntowntwo = ca_asoiaf_westerland_basevalue_2}
+
+6000.1.1 = {b_hawthornsept = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_hawthornsept = ct_asoiaf_westerland_basevalue_2}
+
+8070.1.1 = { #Jaehaerys constructs road network
+	b_hawthorn = ca_oceanroad
+}

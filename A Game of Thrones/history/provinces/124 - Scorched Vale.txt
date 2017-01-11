@@ -1,0 +1,20 @@
+# 124 - Scorched Vale
+
+# County Title
+title = c_scorched_vale
+
+# Settlements
+max_settlements = 3
+b_blackholm = castle
+#b_alchebarge = city
+#b_darkcroft = castle
+
+# Misc
+culture = moon_clansman
+religion = the_seven
+
+#History
+
+6000.1.1 = {
+	b_blackholm = ca_asoiaf_vale_basevalue_1
+}

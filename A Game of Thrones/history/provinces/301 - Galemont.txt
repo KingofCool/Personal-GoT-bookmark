@@ -1,0 +1,19 @@
+# 301 - Galemont - Duchy of Shipbreaker's Bay
+
+# County Title
+title = c_galemont
+
+# Settlements
+max_settlements = 3
+
+b_galemont_fort = castle 	# NON CANON - County Seat
+b_galemont_sept = temple		# NON CANON 
+
+# Misc
+culture = stormlander
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_galemont_fort = ca_asoiaf_storm_basevalue_1
+}

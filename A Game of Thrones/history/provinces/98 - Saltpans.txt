@@ -1,0 +1,31 @@
+# 98 - Saltpans
+
+# County Title
+title = c_saltpans
+
+# Settlements
+max_settlements = 5
+b_saltpansholdfast = castle
+b_saltpans = city
+b_quietisle = temple
+b_hawick = castle
+
+#Misc
+culture = riverlander
+religion = the_seven
+
+# History
+
+6000.1.1 = {
+
+b_saltpansholdfast = ca_asoiaf_river_basevalue_1
+b_saltpansholdfast = ca_asoiaf_river_basevalue_2
+
+b_saltpans = ct_asoiaf_river_basevalue_1
+b_saltpans = ct_asoiaf_river_basevalue_2
+b_saltpans = ct_asoiaf_river_basevalue_3
+
+
+b_hawick = ca_asoiaf_river_basevalue_1
+
+}

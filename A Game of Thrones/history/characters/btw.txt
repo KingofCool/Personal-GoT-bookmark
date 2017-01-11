@@ -1,0 +1,982 @@
+# Audax Validator EnableCommentMetadata
+# Audax Validator "!" Ignore_2001
+
+174344 = {
+	name="Styr"
+	dynasty=174344
+	properties="gl0ehk"
+
+	martial = 8
+	
+	religion="thenn_rel"
+	culture="thenn"
+
+	father=112344
+	
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	
+	8252.1.1 = {birth="8252.1.1"}
+	8266.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8299.11.11 = {death="8299.11.11"}
+}
+
+274344 = {
+	name="Sigorn"
+	dynasty=174344
+	
+	religion="thenn_rel"
+	culture="thenn"
+
+	martial = 6
+	
+	add_trait="patient"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	
+	father=174344
+	
+	8272.1.1 = {birth="8272.1.1"}
+	8286.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8300.3.1 = {
+		employer=1002059 #jon
+		dynasty=1174344 # House Thenn
+		add_spouse=5089 #Alys Karstark
+		effect = { 
+			character_event = { id = feast_for_crows.31 days = 1 } #Thenn choice event
+		}
+	}
+}
+
+174345 = {
+	name="Tormund"
+	dynasty=174345
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+  	dna="ailgi0dag00"
+ 	properties="ddajbk00000"
+
+	martial = 8
+	
+	add_trait="strong"
+	add_trait="drunkard"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	
+	8252.1.1 = {birth="8252.1.1"}
+	8266.1.1 = {
+		add_trait="skilled_warrior"
+	}
+	8279.1.1 = {give_nickname = nick_giantsbane}
+	8300.3.1 = { employer = 1002059 } #Jon
+}
+274345 = {
+	name="Toregg"
+	dynasty=174345
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="patient"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="tall"
+	
+	father=174345
+	
+	8272.1.1 = {birth="8272.1.1"}
+	8286.1.1 = {
+		add_trait="trained_warrior"
+		give_nickname = nick_the_tall
+	}
+}
+374345 = {
+	name="Torwynd"
+	dynasty=174345
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="patient"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	
+	father=174345
+	
+	8274.1.1 = {birth="8274.1.1"}
+	8288.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8300.2.10 = {
+		death="8300.2.10"
+	}
+}
+474345 = {
+	name="Dryn"
+	dynasty=174345
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="patient"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	
+	father=174345
+	
+	8275.1.1 = {birth="8275.1.1"}
+	8289.1.1 = {
+		add_trait="trained_warrior"
+	}
+}
+574345 = {
+	name="Dormund"
+	dynasty=174345
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="patient"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	
+	father=174345
+	
+	8277.1.1 = {birth="8277.1.1"}
+	8291.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8300.2.10 = {
+		death = {
+			death_reason = death_battle
+			killer = 2000311 #Richard Horpe
+		}
+	}
+}
+574346 = {
+	name="Munda"
+	dynasty=174345
+	female = yes
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="patient"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	
+	father=174345
+	
+	8278.1.1 = {birth="8278.1.1"}
+	8292.1.1 = {
+		add_trait="trained_warrior"
+	}
+}
+574347 = {
+	name="Halgor"
+	dynasty=174346
+
+	martial=6
+
+	dna="blaak0kjg00"
+ 	properties="djjkg00000"
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+		
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="deceitful"
+	
+	8259.1.1 = {birth="8259.1.1"}
+	8263.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8279.1.1 = {give_nickname = nick_rattleshirt}
+}
+574348 = {
+	name="Jarl"
+	
+	dna="behhf0dhg00"
+ 	properties="ch0qck0000"
+
+	martial=7
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	employer=157004
+	
+	add_trait="brave"
+	add_trait="diligent"
+	add_trait="tough_soldier"
+	
+	8273.1.1 = {birth="8273.1.1"}
+	8286.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8299.11.11 = {death="8299.11.11"}
+}
+574349 = {
+	name="Ygritte"
+	female=yes
+
+	dna="babba0fad00"
+ 	properties="ce0a0k0000"
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	employer=157004
+	
+	add_trait="underhanded_rogue"
+	#add_trait="fair"
+	add_trait="diligent"
+	add_trait="lustful"
+	add_trait="brave"
+	add_trait="zealous"
+	
+	8280.1.1 = {birth="8280.1.1"}
+	8294.1.1 = {
+		add_trait="trained_warrior"
+	}
+	8299.1.1 = {
+		add_lover = 1002059
+	} 
+	8299.11.11 = {death="8299.11.11"}
+}
+574800 = {	
+ 	name="Gerrick"
+	dynasty = 174348	
+	dna="cakefzeedaz"
+	properties="ce0dck"
+
+	martial = 8
+	diplomacy = 5
+	intrigue = 9
+	stewardship = 4
+	learning = 5
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+		
+	add_trait="tough_soldier"
+	add_trait="brave"
+	add_trait="envious"
+	add_trait="wroth"
+	add_trait="proud"
+	add_trait="ambitious"
+	add_trait="authoritative"
+
+	father=521359
+
+	8256.1.1 = { birth="8256.1.1"}	
+	8272.1.1 = { 
+		add_trait=trained_warrior
+	}
+	8300.1.1 = {
+		dynasty=1174345 # House Redbeard
+	}	
+}
+574801 = {
+	name="Gerris"
+	dynasty=174348
+	female = yes
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="tough_soldier"
+	
+	father=574800
+	
+	8274.1.1 = {birth="8274.1.1"}
+	8290.1.1 = { 
+		add_trait=trained_warrior
+	}
+	8300.1.1 = {
+		dynasty=1174345 # House Redbeard
+	}	
+}
+574802 = {
+	name="Gerreck"
+	dynasty=174348
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="tough_soldier"
+	
+	father=574800
+	
+	8275.1.1 = {birth="8275.1.1"}
+	8291.1.1 = { 
+		add_trait=trained_warrior
+	}
+	8300.1.1 = {
+		dynasty=1174345 # House Redbeard
+	}	
+}
+574803 = {
+	name="Gerra"
+	dynasty=174348
+	female = yes
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="tough_soldier"
+	
+	father=574800
+	
+	8278.1.1 = {birth="8278.1.1"}
+	8294.1.1 = { 
+		add_trait=trained_warrior
+	}
+	8300.1.1 = {
+		dynasty=1174345 # House Redbeard
+	}	
+}
+5748030 = {
+	name="Grisel"
+	dynasty=174348
+	female = yes
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="tough_soldier"
+	
+	father=574800
+	
+	8279.1.1 = {birth="8279.1.1"}
+	8295.1.1 = { 
+		add_trait=trained_warrior
+	}
+	8300.1.1 = {
+		dynasty=1174345 # House Redbeard
+	}	
+}
+
+174347 = {
+	name = "Mance"
+	dynasty = 174347
+	dna="amcihogjeaw"
+	properties="0e00h"
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	employer=121000
+
+	martial=10
+	
+	add_trait="grey_eminence"
+	add_trait="quick"
+	add_trait="strong"
+	add_trait="poet"
+	add_trait="gregarious"
+	add_trait="proud"
+	add_trait="ambitious"
+	add_trait="inspiring_leader"
+	add_trait="trickster"
+	
+	8256.1.1 = {
+		birth = "8256.1.1"
+		add_trait = "nightswatch"	
+	}
+	
+	8267.1.1 = {
+		add_trait = "poor_warrior"
+	}
+	
+	8273.1.1 = {
+		remove_trait = "poor_warrior"
+		add_trait = "trained_warrior"
+	}
+	8282.1.1 = {
+		remove_trait="trained_warrior"
+		add_trait="skilled_warrior"
+	}
+	8288.1.1 = {
+		remove_trait="skilled_warrior"
+		add_trait="master_warrior"
+	}
+	8292.1.1 = {
+		remove_trait = "nightswatch"
+		add_trait = "deserter"
+		add_trait = "wildling"
+		employer=0
+	}
+
+	8295.1.1 = {add_spouse=57000} #Dalla
+	
+	8299.2.1 = {
+		raise_levies = {
+			location = 3 #Northern Frostfangs
+			force_mult = 1
+		}
+		effect = {
+			if = {	
+				limit = {
+					NOT = { year = 8300 }
+					NOT = { month = 10 }		
+				}
+				set_character_flag = giants_hired
+				spawn_unit = {
+					province = 3 #Northern Frostfangs
+					scaled_by_biggest_garrison = 2
+					owner = ROOT
+					leader = 174347 #Tormund Giantsbane
+					troops = {
+						archers = { 5 5 }
+						heavy_infantry = { 15 15 }
+						light_infantry = { 45 45 }	
+						light_cavalry = { 2 2 }							
+					}
+					attrition = 1.0
+				}
+			}	
+		}
+	}
+	8299.11.1 = {
+		raise_levies = {
+			dismiss = yes
+			location = 3 #Northern Frostfangs
+			force_mult = 1
+		}
+		effect = {
+			clr_character_flag = giants_hired
+		}
+	}
+	8300.3.1 = {
+		employer=4317
+		add_claim=k_beyond_wall
+		effect = {
+			set_character_flag = captured_in_battle
+			k_stormlands = {
+				holder_scope = {
+					ROOT = { imprison = PREV }
+				}
+			}
+		}
+	}
+}
+57000 = {
+	name="Dalla"
+	female=yes
+	father=57002
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	dna="adbgc0igab0"
+	properties="ee0egkbebcb"
+	
+	diplomacy = 17
+	
+	add_trait="fair"
+	add_trait="brave"
+	
+	8279.1.1 = {birth="8279.1.1"}
+	8300.3.1 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+57001 = {
+	name="Val"
+	female=yes
+	father=57002
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling" 
+		
+	dna="ajkfdyjefbi"
+	properties="ae0bq"
+	
+	diplomacy = 9
+	martial = 8
+	stewardship = 9
+	intrigue = 7
+	learning = 6
+	
+	add_trait="fair"
+	add_trait="brave"
+	add_trait="wildling"
+	add_trait="diligent"
+	add_trait="proud"
+	add_trait="honest"
+	
+	8279.1.1 = {
+		birth="8279.1.1"
+		effect = { 
+			set_graphical_culture="valeman" #to get the right portrait
+		}
+		employer = 119559122 # Get her out of the Vale
+	}
+	8292.1.1 = {
+		add_trait=trained_warrior
+		add_trait="charismatic_negotiator"
+	}
+	8300.3.1 = {
+		employer=4317
+		effect = {
+			set_character_flag = captured_in_battle
+			set_character_flag = val_wildling
+			k_stormlands = {
+				holder_scope = {
+					ROOT = { imprison = PREV }
+				}
+			}
+		}
+	}
+}
+57050 = {
+	name="Aemon"
+	dynasty = 174347
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	father=174347
+	mother=57000
+	employer=4317
+	
+	add_trait = "wildling"
+	add_trait = "strong"
+
+	8300.3.1 = {
+		birth="8300.3.1"
+		add_claim=k_beyond_wall
+		effect = {
+			set_character_flag = captured_in_battle
+			k_stormlands = {
+				holder_scope = {
+					ROOT = { imprison = PREV }
+				}
+			}
+		}
+	}
+}
+57002 = {
+	name="Jarl" #non cannon
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	8256.1.1 = {birth="8256.1.1"}
+	8295.3.11 = {death="8295.3.11"}
+}
+57003 = {
+	name="Harma"
+	female=yes
+	father=570003
+	
+	martial=7
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="trained_warrior"
+	add_trait="deceitful"
+	
+	employer=157001
+	give_nickname = nick_the_dogshead
+	
+	8270.1.1 = {birth="8270.1.1"}
+	8299.11.11 = {death="8299.11.11"}
+	8299.11.11 = {employer=174347}
+}
+57004 = {
+	name="Halleck"
+	father=570003
+	
+	martial=7
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="trained_warrior"
+	add_trait="deceitful"
+
+	employer=157001
+	
+	
+	8272.1.1 = {birth="8272.1.1"}
+	8299.11.11 = {employer=174347}
+	8300.1.1 = {employer=174345}
+}
+570003 = {
+	name="Hallis"
+	
+	martial=7
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"	
+	
+	8252.1.1 = {birth="8252.1.1"}
+	8274.11.11 = {death="8274.11.11"}
+}
+###Varamyr and children
+157000 = {
+	name = "Varamyr"
+	dynasty = 174349
+	dna="bkbhfwjhegx"
+	properties="cn0eik"
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	martial=1
+		
+	add_trait="proud"
+	add_trait = "wildling"
+	add_trait="ambitious"
+	
+	8256.1.1 = {
+		birth = "8256.1.1"	
+	}
+	8272.1.1 = {
+		give_nickname = nick_sixskins
+		add_trait="trained_warrior"
+		add_trait="tough_soldier"
+		add_trait="shadowcat"
+		add_trait="snowbear"
+		add_trait="wolf"
+		add_trait="direwolf"
+	}
+	8299.10.10 = {
+		add_trait = eagle #takes orell's eagle
+	}
+	8300.3.1 = {
+		remove_trait = eagle #burned by mellisandre
+	}
+}
+
+101174349 = {
+	name = "Vayon"
+	dynasty = 174349
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	add_trait = "wildling"
+	
+	father = 157000
+	
+	8289.1.1 = {
+		birth = "8289.1.1"	
+	}
+	8300.3.1 = {
+		effect = {
+			d_nightswatch = { holder_scope = { ROOT = { move_character = PREV } } }
+		}
+	}
+}
+##
+157001 = {
+	name="Gendel"
+	dynasty=174353
+
+	martial=6
+
+	dna="chaf00b0fe0" 
+	properties="0e0000"
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+		
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="trained_warrior"
+	add_trait="deceitful"
+	
+
+	8259.1.1 = {birth="8259.1.1"}
+	8279.1.1 = {give_nickname = nick_the_weeper}
+}
+157002 = {	
+ 	name="Devyn"
+	dynasty = 174352	
+
+	martial = 8
+	diplomacy = 5
+	intrigue = 9
+	stewardship = 4
+	learning = 5
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+		
+	add_trait="tough_soldier"
+	add_trait="brave"
+	add_trait="diligent"
+	add_trait="proud"
+	
+
+	8256.1.1 = { birth="8256.1.1"}
+	8279.1.1 = {give_nickname = nick_sealskinner}
+	8300.1.1 = {employer=174345}	
+}
+157003 = {	
+ 	name="Morna"
+	dynasty = 174350
+	female = yes
+	dna="clfddfgbgaz"
+	properties="cl0ddk"	
+
+	martial = 8
+	diplomacy = 5
+	intrigue = 9
+	stewardship = 4
+	learning = 5
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+		
+	#add_trait="mystic"
+	add_trait="authoritative"
+	add_trait="proud"
+	
+
+	8256.1.1 = { birth="8256.1.1"}
+	8279.1.1 = {give_nickname = nick_white_mask}	
+}
+157004 = {
+	name="Alfyn"
+	dynasty = 174351
+
+	martial=6
+
+	dna="bljkejkagau"
+	properties="cj0dcd"
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+		
+	add_trait="cruel"
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="trained_warrior"
+	add_trait="deceitful"
+	
+
+	8259.1.1 = {birth="8259.1.1"}
+	8279.1.1 = {give_nickname = nick_crowkiller}
+	8297.11.11 = {death="8297.11.11"}
+}
+157005 = {
+	name="Ryk"
+
+	dna="behhf0dhg00"
+ 	properties="ch0qck"
+
+	martial=7
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="brave"
+	add_trait="diligent"
+	add_trait="tough_soldier"
+	add_trait="trained_warrior"
+	
+	8273.1.1 = {birth="8273.1.1"}
+	8280.11.11 = {employer=174345}
+	8282.1.1 = {give_nickname = nick_longspear}
+	8299.6.1 = {add_spouse=574346 }
+	8300.1.1 = {employer=174345}
+}
+157006 = {
+	name="Borroq"
+
+	martial=3
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="brave"
+	add_trait="tough_soldier"
+	add_trait="boar"
+	
+	8260.1.1 = {birth="8260.1.1"}
+	8280.11.11 = {employer=174345}
+}
+157007 = {
+	name="Orell"
+
+	martial=4
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="brave"
+	add_trait="tough_soldier"
+	add_trait="eagle"
+	
+	8265.1.1 = {birth="8265.1.1"}
+	8280.11.11 = {employer=574347}
+	8299.10.10 = {
+		death = {
+			death_reason = death_duel
+			killer = 1002059
+		}
+	}
+}
+157008 = {
+	name="Kyleg"
+	dynasty=174402
+
+	martial=6
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="trained_warrior"
+	
+
+	8259.1.1 = {birth="8259.1.1"}
+	8300.1.1 = {employer=174345}
+}
+157009 = {
+	name="Soren"
+	dynasty=174403
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+
+	martial = 8
+
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="skilled_warrior"
+	
+	8252.1.1 = {birth="8252.1.1"}
+	8279.1.1 = {give_nickname = nick_shieldbreaker}
+	8300.1.1 = {employer=174345}
+}
+157010 = {
+	name="Harle"
+
+	martial=4
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="brave"
+	add_trait="tough_soldier"
+	
+	8265.1.1 = {birth="8265.1.1"}
+	8279.1.1 = {give_nickname = nick_the_handsome}
+	8280.11.11 = {employer=157009}
+	8300.1.1 = {employer=174345}
+}
+157011 = {
+	name="Harle"
+
+	martial=4
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+	
+	add_trait="brave"
+	add_trait="tough_soldier"
+	
+	8266.1.1 = {birth="8266.1.1"}
+	8279.1.1 = {give_nickname = nick_the_huntsman}
+	8280.11.11 = {employer=157009}
+	8300.1.1 = {employer=174345}
+}
+174404 = {
+	name="Walrus"
+	dynasty=174404
+	
+	religion="beyond_wall_old_gods"
+	culture="frozen_shore"
+
+	martial = 8
+
+	add_trait="proud"
+	add_trait="tough_soldier"
+	add_trait="skilled_warrior"
+	
+	8252.1.1 = {birth="8252.1.1"}
+	8279.1.1 = {give_nickname = nick_the_great}
+	8300.1.1 = {employer=174345}
+}
+157013 = {
+	name="Mag"
+	dynasty=6660010
+	
+	religion="beyond_wall_old_gods"
+	culture="giant"
+
+	martial = 8
+
+	add_trait="giant"
+	add_trait="strong"
+	add_trait="tall"
+	
+	8247.1.1 = {birth="8247.1.1"}
+	8279.1.1 = {give_nickname = nick_the_mighty}
+	8299.11.11 = {
+		death = {
+			death_reason = death_duel
+			killer = 121003
+		}
+	}
+}
+157014 = {
+	name="Wun"
+	dynasty=6660011
+	
+	religion="beyond_wall_old_gods"
+	culture="giant"
+
+	martial = 8
+
+	add_trait="giant"
+	add_trait="strong"
+	add_trait="tall"
+	
+	8264.1.1 = {birth="8264.1.1"}
+	8298.11.11 = {employer=174347}
+	8300.3.1 = {employer=174345}
+}
+157015 = {	
+ 	name="Mother Mole"
+	dynasty = 4500016
+	female = yes	
+
+	diplomacy = 5
+	intrigue = 9
+	stewardship = 4
+	learning = 5
+	
+	religion="beyond_wall_old_gods"
+	culture="wildling"
+		
+	add_trait="greensight"
+	add_trait="mystic"
+	add_trait="authoritative"
+	add_trait="proud"
+	
+
+	8243.1.1 = { birth="8243.1.1"}	
+}

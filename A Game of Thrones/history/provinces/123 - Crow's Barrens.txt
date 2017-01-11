@@ -1,0 +1,21 @@
+# 123 - Crow's Barrens
+
+# County Title
+title = c_crows_barrens
+
+# Settlements
+max_settlements = 3
+b_stonekyme = castle
+#b_potterby = city
+#b_rockle = city
+
+# Misc
+culture = moon_clansman
+religion = the_seven
+
+#History
+
+6000.1.1 = {
+	b_stonekyme = ca_asoiaf_vale_basevalue_1
+	b_stonekyme = ca_asoiaf_vale_basevalue_2
+}

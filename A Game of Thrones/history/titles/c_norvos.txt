@@ -1,0 +1,16 @@
+7955.1.1 = { 
+	holder=88000500 # Areo (nc)
+	law = slavery_2
+	law = centralization_2 
+} 
+8025.1.1 = { holder=88000501 } # Ferrego (nc)
+8031.1.1 = { holder=88000502 } # Luco (nc)
+8045.1.1 = { holder=88000503 } # Beqqo (nc)
+8100.1.1 = { holder=88000504 } # Areo (nc)
+8125.1.1 = { holder=88000505 } # Lotho (nc)
+8163.1.1 = { holder=88000506 } # Moredo (nc)
+8193.1.1 = { holder=88000507 } # Luco (nc)
+8221.1.1 = { holder=88000508 } # Meralyn (nc)
+8240.1.1 = { holder=88000509 } # Groleo (nc)
+8253.1.1 = { holder=88000510 } # Ordello (nc)
+8285.1.1 = { holder=88000511 } # Allaquo (nc)

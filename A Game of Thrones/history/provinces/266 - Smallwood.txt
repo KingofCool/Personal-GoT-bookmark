@@ -1,0 +1,29 @@
+
+
+# County Title
+title = c_smallwood 
+
+# Settlements
+max_settlements = 3
+b_lordsmane = castle
+b_cobble_cover = city
+
+#b_pondersbridge = castle
+
+
+
+# Misc
+culture = reachman
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_lordsmane = ca_asoiaf_reach_basevalue_1
+	b_lordsmane  = ca_asoiaf_reach_basevalue_2
+	b_lordsmane  = ca_asoiaf_reach_basevalue_3
+}
+6000.1.1 = {
+	b_cobble_cover = ct_asoiaf_reach_basevalue_1
+	b_cobble_cover = ct_asoiaf_reach_basevalue_2
+
+}

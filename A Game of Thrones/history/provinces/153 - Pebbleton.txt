@@ -1,0 +1,33 @@
+# 153 - Pebbleton
+
+# County Title
+title = c_pebbleton
+
+# Settlements
+max_settlements = 4
+b_pebbleton = castle
+b_fishbourne = castle
+b_herringby = city
+
+#b_sproutside
+
+
+# Misc
+culture = ironborn
+religion = drowned_god
+
+#History
+
+6000.1.1 = {b_pebbleton = ca_asoiaf_ironislands_basevalue_1}
+6000.1.1 = {b_pebbleton = ca_asoiaf_ironislands_basevalue_2}
+6000.1.1 = {b_pebbleton = ca_asoiaf_ironislands_basevalue_3}
+6000.1.1 = {b_pebbleton = ca_asoiaf_ironislands_basevalue_4}
+
+6000.1.1 = {b_fishbourne = ca_asoiaf_ironislands_basevalue_1}
+6000.1.1 = {b_fishbourne = ca_asoiaf_ironislands_basevalue_2}
+6000.1.1 = {b_fishbourne = ca_asoiaf_ironislands_basevalue_3}
+6000.1.1 = {b_fishbourne = ca_asoiaf_ironislands_basevalue_4}
+
+6000.1.1 = {b_herringby = ct_asoiaf_ironislands_basevalue_1}
+6000.1.1 = {b_herringby = ct_asoiaf_ironislands_basevalue_2}
+6000.1.1 = {b_herringby = ct_asoiaf_ironislands_basevalue_3}

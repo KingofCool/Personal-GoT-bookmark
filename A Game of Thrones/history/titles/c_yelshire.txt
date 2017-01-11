@@ -1,0 +1,27 @@
+900.1.1 = { liege="d_cockleswhent" } 
+
+
+7900.1.1 = { holder=65000298 } # Regis (nc)
+7930.1.1 = { holder=65100298 } # Galadon (nc)
+7967.1.1 = { holder=3000298 } # Mern (nc)
+7984.1.1 = { holder=65200298 } # Gareth (nc)
+7988.1.1 = { holder=3000298 } # Mern (nc)
+7998.6.6 = { holder=3001298 } # Tania (nc)
+8017.1.1 = { holder=3004298 } # Mathis (nc)
+8065.1.1 = { holder=3008298 } # Morm (nc)
+8080.1.1 = { holder=3010298 } # Martyn (nc)
+8124.1.1 = { holder=3011298 } # Arryn (nc)
+8146.1.1 = { holder=3015298 } # Franklyn (nc)
+8170.1.1 = { holder=3019298 } # Horas (nc)
+8194.1.1 = { holder=3022298 } # Gormon (nc)
+#8196 Gormon Peake loses castle after balckfyre rebellion, house yelshire takes over
+8196.1.1 = { holder=3017257 } # Amelryc (nc)
+8205.1.1 = { holder=3020257 } # Mathis (nc)
+8209.1.1 = { holder=3022257 } # Gerold (nc)
+8235.1.1 = { holder=3025257 } # Mark (nc)
+8282.1.1={
+	holder=257
+}
+
+
+

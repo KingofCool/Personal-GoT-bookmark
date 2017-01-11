@@ -1,0 +1,58 @@
+600.1.1={
+	law = succ_turkish_succession
+	law = agnatic_succession
+}
+7995.1.1 = { holder=100982370 } # Lysono (nc)
+8024.1.1 = { 
+	holder=101982370 # Salassor
+	liege="d_northern_stepstones"
+} 
+8029.1.1 = { 
+	liege = 0
+}
+
+8070.1.1 = { holder=105982370 } # Collio (nc)
+8096.6.1={
+	liege="d_northern_stepstones"
+}
+8109.1.1={
+	liege="k_stepstones"
+}
+8115.1.1 = { holder=106982370 } # Tregar (nc)
+8116.1.1={
+	liege="0"
+}
+
+8132.1.1 = {
+	liege="k_stepstones"
+}
+
+
+8138.1.1 = { holder=110982370 } # Sulleham (nc)
+8140.1.1 = {
+	liege="0"
+}
+8155.1.1 = { holder=100513 } #Black Pearl of Braavos
+8157.1.1={
+	liege= "k_stepstones"
+}
+8160.11.11={
+	liege="0"
+}
+8163.1.1 = { holder=110982370 } # Sulleham (nc)
+
+8167.1.1 = { holder=111982370 } # Gyleno (nc)
+8180.1.1 = { holder=112982370 } # Lysono (nc)
+8219.1.1 = { holder=114982370 } # Noho (nc)
+8250.1.1 = { holder=115982370 } # Ordello (nc)
+8253.1.1 = { holder=118982370 } # Samarro Saan(C)
+8258.1.1={
+	liege = d_northern_stepstones
+}
+8260.1.1={
+	liege="0"
+}
+8280.1.1 = { holder=119982370 } # Salladhor Saan
+8284.1.1 = { 
+	liege = d_northern_stepstones
+}

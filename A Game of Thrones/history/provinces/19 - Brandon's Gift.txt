@@ -1,0 +1,16 @@
+# County Title
+title = c_brandons_gift
+
+# Settlements
+max_settlements = 3
+b_moles_town = city
+
+# Misc
+culture = northman
+religion = old_gods
+
+#History
+90.1.1 = {
+	b_moles_town = ct_asoiaf_north_basevalue_1
+	b_moles_town = ct_asoiaf_north_basevalue_2
+}	

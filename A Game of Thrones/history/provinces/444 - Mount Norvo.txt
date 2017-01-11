@@ -1,0 +1,23 @@
+# 444 - Mount Norvo
+
+# County Title
+title = c_mountnorvo
+
+# Settlements
+max_settlements = 3
+
+b_mountnorvocastle = castle
+b_mountnorvo = city
+b_mountnorvotemple = temple
+
+# Misc
+culture = norvosi
+religion = bearded_priests
+
+# History
+6000.1.1 = {
+	b_mountnorvo = ct_asoiaf_essos_basevalue_1
+	b_mountnorvo = ct_asoiaf_essos_basevalue_2
+
+	b_mountnorvocastle = ca_asoiaf_essos_basevalue_1
+}

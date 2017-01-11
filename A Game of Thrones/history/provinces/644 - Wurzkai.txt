@@ -1,0 +1,21 @@
+
+# County Title
+title = c_wurzkai
+
+# Settlements
+max_settlements = 4
+
+b_wurzkai = tribal
+b_wurzkai2 = city
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+# History
+6000.1.1 = {
+	b_wurzkai2 = ct_asoiaf_ghiscari_basevalue_1
+	b_wurzkai2 = ct_asoiaf_ghiscari_basevalue_2
+	b_wurzkai2 = ct_asoiaf_ghiscari_basevalue_3
+	b_wurzkai2 = ct_asoiaf_ghiscari_basevalue_4
+}

@@ -1,0 +1,51 @@
+6000.1.1={
+	liege="d_blackwood"
+	law = succ_primogeniture
+}
+7933.1.1 = {  
+	liege="e_riverlands"
+	holder=11366 # Harwyn Hoare
+} 
+7956.1.1 = { holder=11466 } # Harrock
+7960.1.1 = { holder=11566 } # Harren (C)
+
+7991.1.1={
+	liege="d_blackwood"
+	holder=24134
+}
+8009.1.1={
+	holder=23134
+}
+8030.1.1={
+	holder=22134
+}
+8037.1.1={
+	holder=21134
+}
+8076.1.1={
+	holder=19134
+}
+8095.1.1={
+	holder=18134
+}
+8118.1.1={
+	holder=17134
+}
+8137.1.1={
+	holder=16134
+}
+8148.1.1={
+	holder=15134
+}
+8183.1.1={
+	holder=14134
+}
+8207.1.1={
+	holder=13134
+}
+8237.1.1={
+	holder=12134
+}
+8259.1.1={
+	holder=134
+}

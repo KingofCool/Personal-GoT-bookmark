@@ -1,0 +1,26 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="c_longtable"
+}
+7980.1.1 = { holder=6000249 } # Kyle (nc) Inchfield
+8007.1.1 = { holder=60100249 } # Leyton (nc)
+8038.1.1 = { holder=60202249 } # Lucas (nc)
+8061.1.1 = { holder=60204249 } # Tommen (nc)
+8080.1.1 = { holder=60206249 } # Samwell (nc)
+8089.1.1 = { holder=60209249 } # Owen (nc)
+8136.1.1 = { holder=60212249 } # Bertram (nc)
+8137.1.1 = { holder=60214249 } # Hosman (nc)
+8184.1.1 = { holder=60216249 } # Owain (nc)
+8199.1.1 = { holder=60224249 } # Lorent (nc)
+8220.1.1 = { holder=88274 } # Leo (nc)
+8276.1.1 = { holder=249 } # Leyton (nc)
+8283.1.1={
+	holder=88048 # Inchfield given Lordship
+	liege="c_holyhall"
+}
+8290.1.1={
+	holder=242
+}
+
+
+
+

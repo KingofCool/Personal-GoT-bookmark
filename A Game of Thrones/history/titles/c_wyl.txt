@@ -1,0 +1,18 @@
+7000.1.1={
+	liege="d_stoneway"
+	law = true_cognatic_succession
+}
+
+7990.1.1 = { holder=65019 } # Edwyle (nc)
+8012.1.1 = { holder=65119 } # Aryon (nc)
+8053.1.1 = { holder=65419 } # Colin (nc)
+8075.1.1 = { holder=65619 } # Tremond (nc)
+8107.1.1 = { holder=65819 } # Alaric (nc)
+8139.1.1 = { holder=651019 } # Gulian (nc)
+8157.1.1 = { holder=651619 } # Arthur (nc)
+8158.1.1 = { holder=651819 } # Olyvar (nc)
+8160.1.1 = { holder=651919 } # Ederyn (nc)
+8199.1.1 = { holder=652019 } # Sylva (nc)
+8223.1.1 = { holder=652319 } # Willam (nc)
+8227.1.1 = { holder=652519 } # Armen (nc)
+8248.1.1 = {  holder=19 } # Edmynd (nc)

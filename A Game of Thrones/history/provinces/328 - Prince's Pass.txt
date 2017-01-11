@@ -1,0 +1,30 @@
+# 328 -  Princes Pass
+
+# County Title
+title = c_princespass
+
+# Settlements
+max_settlements = 4
+b_towerofjoy = castle
+b_tattershall = castle
+b_ortench = city
+#b_reachgate = city
+#b_broadarch = city
+
+
+# Misc
+culture = stone_dornish
+religion = the_seven
+terrain = mountain
+
+6000.1.1 = {
+	b_towerofjoy = ca_asoiaf_dorne_basevalue_1
+}
+
+6000.1.1 = {
+	b_tattershall = ca_asoiaf_dorne_basevalue_1
+}
+
+6000.1.1 = {
+	b_ortench = ct_asoiaf_dorne_basevalue_1
+}

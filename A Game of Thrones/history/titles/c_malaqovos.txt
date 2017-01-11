@@ -1,0 +1,14 @@
+900.1.1={ 	liege="k_braavos"}
+
+7995.1.1 = { holder=100300005 } # Terro (nc)
+8028.1.1 = { holder=101300005 } # Allaquo (nc)
+8056.1.1 = { holder=106300005 } # Gyleno (nc)
+8084.1.1 = { holder=113300005 } # Tycho (nc)
+8107.1.1 = { holder=117300005 } # Roggo (nc)
+8131.1.1 = { holder=119300005 } # Ezzelyno (nc)
+8147.1.1 = { holder=126300005 } # Meralyn (nc)
+8158.1.1 = { holder=127300005 } # Terro (nc)
+8224.1.1 = { holder=130300005 } # Moredo (nc)
+8250.1.1 = { holder=134300005 } # Ezzelyno (nc)
+8266.1.1 = { holder=135300005 } # Roggo (nc)
+8297.1.1 = { holder=138300005 } # Tagganaro (nc)

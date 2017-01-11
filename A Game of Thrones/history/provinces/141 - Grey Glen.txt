@@ -1,0 +1,28 @@
+# 141 - Grey Glen
+
+# County Title
+title = c_grey_glen
+
+# Settlements
+max_settlements = 4
+b_grey_glen = castle
+b_greypool = city
+b_greymund = city
+
+# Misc
+culture = valeman
+religion = the_seven
+
+#History
+
+6000.1.1 = {
+	b_grey_glen = ca_asoiaf_vale_basevalue_1
+	b_grey_glen = ca_asoiaf_vale_basevalue_2
+	b_grey_glen = ca_asoiaf_vale_basevalue_3
+	
+	b_greypool = ct_asoiaf_vale_basevalue_1
+	b_greypool = ct_asoiaf_vale_basevalue_2
+	
+	b_greymund = ct_asoiaf_vale_basevalue_1
+	b_greymund = ct_asoiaf_vale_basevalue_2
+}

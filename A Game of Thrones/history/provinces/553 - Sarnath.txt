@@ -1,0 +1,44 @@
+# 553 Vaes Kweho/Sarnath
+
+# County Title
+title = c_sarnath
+
+# Settlements
+max_settlements = 6
+
+b_sarnath = castle
+b_sarnath2 = city
+b_sarnath3 = temple
+
+# Misc
+culture = sarnorian
+religion = gods_sarnor
+
+terrain = valyrianroad
+
+# History
+6000.1.1 = {
+	b_sarnath = ca_asoiaf_sarnor_basevalue_1
+	b_sarnath = ca_asoiaf_sarnor_basevalue_2
+	b_sarnath = ca_asoiaf_sarnor_basevalue_3
+	b_sarnath = ca_asoiaf_sarnor_basevalue_4
+	b_sarnath = ca_asoiaf_sarnor_basevalue_5
+	b_sarnath = ca_asoiaf_sarnor_basevalue_6
+	
+	b_sarnath2 = ct_asoiaf_sarnor_basevalue_1
+	b_sarnath2 = ct_asoiaf_sarnor_basevalue_2
+	b_sarnath2 = ct_asoiaf_sarnor_basevalue_3
+	b_sarnath2 = ct_asoiaf_sarnor_basevalue_4
+	b_sarnath2 = ct_asoiaf_sarnor_basevalue_5
+	b_sarnath2 = ct_asoiaf_sarnor_basevalue_6
+}
+7975.1.1 = {
+	culture = dothraki
+	religion = dothraki_pagan
+	remove_settlement = b_sarnath
+	#remove_settlement = b_sarnath2
+	remove_settlement = b_sarnath3
+	
+	b_sarnath1 = tribal
+	capital = b_sarnath1
+}

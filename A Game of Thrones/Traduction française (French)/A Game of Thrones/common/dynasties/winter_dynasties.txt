@@ -1,0 +1,13 @@
+# Others catch-all
+66000666 = {
+	name = "le Marcheur Blanc"
+	culture = white_walker
+}
+66000667 = {
+	name = "Marcheur"
+	culture = white_walker
+}
+66000668 = {
+	name = "Hiver"
+	culture = winter_wasteland
+}

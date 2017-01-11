@@ -1,0 +1,40 @@
+6000.1.1={
+	liege="c_barrowton"
+	law = succ_primogeniture
+}
+7987.1.1={
+	holder = 21069
+}
+8018.1.1={
+	holder = 20069
+}
+8024.1.1={
+	holder = 19069
+}
+8050.1.1={
+	holder = 18069
+}
+8071.1.1={
+	holder = 17069
+}
+8095.1.1={
+	holder = 16069
+}
+8111.1.1={
+	holder = 15069
+}
+8133.1.1={
+	holder = 14069
+}
+8178.1.1={
+	holder = 12069
+}
+8218.1.1={
+	holder = 22069
+}
+8267.1.1={
+	holder = 10169
+}
+8268.1.1={
+	holder = 69 # Harwood Stout
+}

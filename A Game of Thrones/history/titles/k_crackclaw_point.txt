@@ -1,0 +1,6 @@
+1.1.1={
+	law = succ_primogeniture
+	law = cognatic_succession
+	law = first_night_1
+}
+8060.1.1={ law = first_night_0 } #First Night abolished

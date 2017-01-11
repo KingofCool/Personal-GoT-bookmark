@@ -1,0 +1,27 @@
+# 612 - Slaver's Road
+
+# County Title
+title = c_slaversroad
+
+# Settlements
+max_settlements = 3
+
+b_slaversroad = city
+b_slaversroadcastle = castle
+b_slaversroadtemple = temple
+
+# Misc
+culture = astapori
+religion = harpy
+
+# History
+6000.1.1 = {
+	b_slaversroad = ct_asoiaf_ghiscari_basevalue_1
+	b_slaversroad = ct_asoiaf_ghiscari_basevalue_2
+	
+	b_slaversroadcastle = ca_asoiaf_ghiscari_basevalue_1
+	b_slaversroadcastle = ca_asoiaf_ghiscari_basevalue_2
+	
+	trade_post = b_nakloz
+
+}

@@ -1,0 +1,39 @@
+# 184 - Tendring
+
+# County Title
+title = c_tendring
+
+# Settlements
+max_settlements = 5
+b_tendring = castle
+b_tendringtownone = city
+b_tendringtowntwo = castle
+b_tendringsepttwo = city
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_tendring = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_tendring = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_tendring = ca_asoiaf_westerland_basevalue_3}
+#6000.1.1 = {b_tendring = ca_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_tendringtownone = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_tendringtownone = ct_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_tendringtownone = ct_asoiaf_westerland_basevalue_3}
+#6000.1.1 = {b_tendringtownone = ct_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_tendringtowntwo = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_tendringtowntwo = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_tendringtowntwo = ca_asoiaf_westerland_basevalue_3}
+#6000.1.1 = {b_tendringtowntwo = ct_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_tendringsepttwo = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_tendringsepttwo = ct_asoiaf_westerland_basevalue_2}
+
+8070.1.1 = { #Jaehaerys constructs road network
+	b_tendring = ca_goldroad
+}

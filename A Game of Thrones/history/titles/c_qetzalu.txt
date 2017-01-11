@@ -1,0 +1,19 @@
+#House Solaju
+7992.1.1 = { 
+	holder=100304031 
+	liege=d_omburu
+	law = succ_seniority
+	law = cognatic_succession
+} # Simbhar (nc)
+8036.1.1 = { holder=104304031 } # Punuxharo (nc)
+8086.1.1 = { holder=107304031 } # Xhoan (nc)
+8102.1.1 = { holder=108304031 } # Sango (nc)
+8108.1.1 = { holder=110304031 } # Quhuru (nc)
+8135.1.1 = { holder=113304031 } # Rudo (nc)
+8167.1.1 = { holder=115304031 } # Qaro (nc)
+8169.1.1 = { holder=117304031 } # Nyadundo (nc)
+8195.1.1 = { holder=120304031 } # Odingaxho (nc)
+8241.1.1 = { holder=123304031 } # Qaro (nc)
+8242.1.1 = { holder=124304031 } # Siboxhoan (nc)
+8289.1.1 = { holder=131304031 } # Makhan (nc)
+

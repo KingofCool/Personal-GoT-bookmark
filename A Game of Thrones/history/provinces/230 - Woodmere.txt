@@ -1,0 +1,36 @@
+# 230 - Woodmere
+
+# County Title
+title = c_woodmere
+
+# Settlements
+max_settlements = 3
+b_woodmere = castle
+b_crystalmere = city
+
+#b_rockley = castle
+#b_esterhill = city
+
+
+# Misc
+culture = stormlander
+religion = the_seven
+
+
+# History
+
+
+1066.1.1 = {
+
+	b_woodmere = ca_asoiaf_crown_basevalue_1
+	b_woodmere = ca_asoiaf_crown_basevalue_2
+	b_woodmere = ca_asoiaf_crown_basevalue_3
+
+
+	b_crystalmere = ct_asoiaf_crown_basevalue_1
+	b_crystalmere = ct_asoiaf_crown_basevalue_2
+
+}
+8070.1.1 = { #Jaehaerys constructs road network
+	b_woodmere = ca_kingsroad
+}

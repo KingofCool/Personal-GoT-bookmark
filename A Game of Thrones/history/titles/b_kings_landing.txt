@@ -1,0 +1,47 @@
+8000.1.1 = {
+	liege="c_kings_landing"
+	law = succ_appointment
+	effect = {
+		set_title_flag = military_command
+		holder_scope = {
+			if = {
+				limit = { primary_title = { title = PREVPREV } }
+				set_government_type = military_command_government 
+				PREV = { succession = appointment }
+				recalc_succession = yes
+				give_minor_title = title_commander_gold_cloaks
+			}
+		}
+	}
+}
+8105.1.1 = {
+	holder=779496 #Daemon Targaryen
+}
+8106.1.1={
+	holder = 0
+}
+8120.1.1={
+	holder = 30509006 #Luthor Largent
+}
+8130.2.1={
+	holder = 0
+}
+
+8275.1.1={
+	holder = 77103 #Manly Stokeworth
+}
+8283.6.1={
+	holder = 200353 #Janos Slynt
+}
+8299.2.1={
+	holder = 2033045 #Jacelyn Bywater
+}
+8299.7.1 ={
+	holder = 1212 #Addam Marbrand
+}
+8300.1.1 ={
+	holder = 202352 #Osfryd Kettleback
+}
+
+
+

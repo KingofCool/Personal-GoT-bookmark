@@ -1,0 +1,21 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="d_highgarden"
+}
+7969.1.1 = { holder=3000240 } # Edwyd (nc)
+8001.1.1 = { holder=3001240 } # Owen (nc)
+8058.1.1 = { holder=3006240 } # Hosman (nc)
+8066.1.1 = { holder=3007240 } # Rycherd (nc)
+8079.1.1 = { holder=3009240 } # Owain (nc)
+8097.1.1 = { holder=3016240 } # Leyton (nc)
+8131.1.1 = { holder=3019240 } # Paxter (nc)
+8140.1.1 = { holder=3021240 } # Harrold (nc)
+8175.1.1 = { holder=3024240 } # Desmond (nc)
+8193.1.1 = { holder=3026240 } # Cleyton (nc)
+8231.1.1 = { holder=3030240 } # Mathis (nc)
+8255.1.1 = { holder=3031240 } # Luthor (nc)
+8265.1.1={
+	holder=240
+}
+
+
+

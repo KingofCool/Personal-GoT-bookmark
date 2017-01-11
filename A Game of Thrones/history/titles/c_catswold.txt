@@ -1,0 +1,25 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="d_northmarch"
+}
+7993.1.1 = { holder=60001471 } # Josua (nc)
+8010.1.1 = { holder=60021471 } # Wyman (nc)
+8012.1.1={
+	liege="d_ocean_road" #Osgreys fall in prominence
+}
+8048.1.1 = { holder=60051471 } # Anslem (nc)
+8071.1.1 = { holder=60091471 } # Alester (nc)
+8096.1.1 = { holder=60131471 } # Tanton (nc)
+8144.1.1 = { holder=60141471 } # Reynard (nc)
+8164.1.1 = { holder=60191471 } # Amelryc (nc)
+8180.1.1 = { holder=60211471 } # Arryk (nc)
+8222.1.1 = { holder=60241471 } # Cliffyrd (nc)
+8249.1.1 = { holder=60261471 } # Martyn (nc)
+
+8274.1.1={
+	holder=88057
+}
+
+
+
+
+

@@ -1,0 +1,31 @@
+# 109 - Maidenpool
+
+# County Title
+title = c_maidenpool
+
+# Settlements
+max_settlements = 5
+
+b_maidenpoolcastle = castle
+b_maidenpool = city
+b_maidenpool_sept = temple
+b_marblelake = city
+
+culture = riverlander
+religion = the_seven
+
+# History
+
+6000.1.1 = {
+
+b_maidenpoolcastle = ca_asoiaf_river_basevalue_1
+b_maidenpoolcastle = ca_asoiaf_river_basevalue_2
+b_maidenpoolcastle = ca_asoiaf_river_basevalue_3
+
+b_maidenpool = ct_asoiaf_river_basevalue_1
+b_maidenpool = ct_asoiaf_river_basevalue_2
+b_maidenpool = ct_asoiaf_river_basevalue_3
+b_maidenpool = ct_asoiaf_river_basevalue_4
+
+b_marblelake = ct_asoiaf_river_basevalue_1
+}

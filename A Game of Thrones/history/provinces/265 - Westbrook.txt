@@ -1,0 +1,31 @@
+
+
+# County Title
+title = c_westbrook 
+
+# Settlements
+max_settlements = 3
+b_westbrook = castle
+b_greenbarr = city
+
+#b_smithshill = castle
+#b_faircove = city
+
+# Misc
+culture = reachman
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_westbrook = ca_asoiaf_reach_basevalue_1
+	b_westbrook  = ca_asoiaf_reach_basevalue_2
+	b_westbrook  = ca_asoiaf_reach_basevalue_3
+}
+6000.1.1 = {
+	b_greenbarr = ct_asoiaf_reach_basevalue_1
+	b_greenbarr = ct_asoiaf_reach_basevalue_2
+
+}
+8070.1.1 = { #Jaehaerys constructs road network
+	b_westbrook = ca_oceanroad
+}

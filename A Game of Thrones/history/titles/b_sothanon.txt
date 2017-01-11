@@ -1,0 +1,18 @@
+900.1.1={ 
+	liege="d_thirteen"
+	holding_dynasty = 350011
+}
+
+7996.1.1 = { holder=150350011 } # Xaro (nc)
+8004.1.1 = { holder=100350011 } # Sybassion (nc)
+8062.1.1 = { holder=101350011 } # Sybassion (nc)
+8085.1.1 = { holder=104350011 } # Belicho (nc)
+8105.1.1 = { holder=108350011 } # Sallor (nc)
+8118.1.1 = { holder=109350011 } # Ognos (nc)
+8161.1.1 = { holder=114350011 } # Wullon (nc)
+8199.1.1 = { holder=118350011 } # Wullon (nc)
+8205.1.1 = { holder=123350011 } # Sallor (nc)
+8224.1.1 = { holder=124350011 } # Saathos (nc)
+8282.1.1 = { holder=130350011 } # Belicho (nc)
+
+

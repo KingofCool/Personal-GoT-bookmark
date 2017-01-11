@@ -1,0 +1,27 @@
+
+
+# County Title
+title = c_yelshire
+
+# Settlements
+max_settlements = 3
+b_kine_moor = castle
+b_cawthorne = castle
+#b_wickersley = city
+
+
+# Misc
+culture = reachman
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_kine_moor = ca_asoiaf_reach_basevalue_1
+	b_kine_moor  = ca_asoiaf_reach_basevalue_2
+	b_kine_moor  = ca_asoiaf_reach_basevalue_3
+}
+6000.1.1 = {
+	b_cawthorne = ca_asoiaf_reach_basevalue_1
+	b_cawthorne = ca_asoiaf_reach_basevalue_2
+
+}

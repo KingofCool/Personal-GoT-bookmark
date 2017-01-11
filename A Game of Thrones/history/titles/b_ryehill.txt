@@ -1,0 +1,43 @@
+7899.1.1={ holder=60400209} # Bryce Moreland
+7912.1.1={ holder=60600209} # Criston Moreland
+7923.1.1={ holder=60500209} # Kennoth Moreland
+7928.1.1={ holder=60300209} # Prestor Moreland
+7952.1.1={ holder=60800209} # Jaime Moreland
+7991.1.1={ holder=60900209} # Lynden Moreland
+8012.1.1={ holder=61300209} # Dorna Moreland
+8019.1.7={ holder=61400209} # Carinda Moreland
+8045.1.1={ holder=14209} # Sandor Moreland
+
+8052.1.1={
+	holder=14209
+}
+8064.1.1={
+	holder=15209
+}
+8070.1.1={
+	holder=16209
+}
+8112.1.1={
+	holder=17209
+}
+8147.1.1={
+	holder=18209
+}
+8162.1.1={
+	holder=19209
+}
+8178.1.1={
+	holder=20209
+}
+8196.1.1={
+	holder=21209
+}
+8218.1.1={
+	holder=22209
+}
+8243.1.1={
+	holder=23209
+}
+8273.1.1={
+	holder=100209 # Robin Moreland (C)
+}

@@ -1,0 +1,13 @@
+202.1.1 = { liege="d_red_watch" }
+
+7994.1.1 = { holder=301305 } # Gowen Lonmouth (nc)
+8025.1.1 = { holder=302305 } # Rickard Lonmouth (nc)
+8037.1.1 = { holder=303305 } # Bryen Lonmouth (nc)
+8080.1.1 = { holder=304305 } # Sebastion Lonmouth (nc)
+8102.1.1 = { holder=306305 } # Simon Lonmouth (nc)
+8158.1.1 = { holder=309305 } # Bryce Lonmouth (nc)
+8178.1.1 = { holder=310305 } # Alaric Lonmouth (nc)
+8208.1.1 = { holder=312305 } # Humfrey Lonmouth (nc)
+8231.1.1 = { holder=313305 } # Casper Lonmouth (nc)
+8263.1.1 = { holder=314305 } # Gunthor Lonmouth (nc)
+8290.1.1 = { holder=200305 } # Richard Lonmouth (C)

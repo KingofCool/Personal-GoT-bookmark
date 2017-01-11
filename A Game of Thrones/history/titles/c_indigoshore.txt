@@ -1,0 +1,18 @@
+#House Anuxho
+7986.1.1 = { 
+	holder=100304018 
+	liege=d_indigo_straits
+	law = succ_seniority
+	law = cognatic_succession
+} # Olujondo (nc)
+8005.1.1 = { holder=101304018 } # Manahuru (nc)
+8010.1.1 = { holder=102304018 } # Dubaku (nc)
+8031.1.1 = { holder=105304018 } # Dubaku (nc)
+8033.1.1 = { holder=107304018 } # Manahuru (nc)
+8096.1.1 = { holder=114304018 } # Doshuru (nc)
+8133.1.1 = { holder=116304018 } # Tatenda (nc)
+8179.1.1 = { holder=117304018 } # Isodo (nc)
+8201.1.1 = { holder=120304018 } # Xhal (nc)
+8222.1.1 = { holder=127304018 } # Isingodo (nc)
+8262.1.1 = { holder=130304018 } # Siboxhoan (nc)
+8284.1.1 = { holder=131304018 } # Xhakan (nc)

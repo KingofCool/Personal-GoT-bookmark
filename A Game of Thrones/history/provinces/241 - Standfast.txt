@@ -1,0 +1,21 @@
+
+
+# County Title
+title = c_standfast
+
+# Settlements
+max_settlements = 3
+b_standfast = castle
+
+#b_leafy_lake  = city
+#b_wats_wood   = city
+
+
+# Misc
+culture = reachman
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_standfast = ca_asoiaf_reach_basevalue_1
+}

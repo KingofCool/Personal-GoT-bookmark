@@ -1,0 +1,16 @@
+# 40 - Stony Shore
+
+# County Title
+title = c_stonyshore
+
+# Settlements
+max_settlements = 2
+b_reaverswatch = castle
+#b_anglerage = city
+
+# Misc
+culture = northman
+religion = old_gods
+
+# History
+

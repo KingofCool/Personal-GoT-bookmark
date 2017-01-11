@@ -1,0 +1,16 @@
+900.1.1={ 
+	liege="d_spicers"
+	holding_dynasty = 350007
+}
+7996.1.1 = { holder=100350007 } # Wendello (nc)
+8054.1.1 = { holder=102350007 } # Egon (nc)
+8096.1.1 = { holder=103350007 } # Wendello (nc)
+8109.1.1 = { holder=106350007 } # Gorys (nc)
+8146.1.1 = { holder=109350007 } # Nyessos (nc)
+8172.1.1 = { holder=111350007 } # Wullon (nc)
+8208.1.1 = { holder=114350007 } # Belicho (nc)
+8237.1.1 = { holder=115350007 } # Vogarro (nc)
+8246.1.1 = { holder=119350007 } # Xaro (nc)
+8256.1.1 = { holder=124350007 } # Meralyn (nc)
+
+

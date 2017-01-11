@@ -1,0 +1,19 @@
+202.1.1 = {liege="e_stormlands"}
+
+
+7970.1.1 = { holder=300273 } # Rolland Peasebury (nc)
+7998.2.27={
+	liege = k_stormlands
+}
+8008.1.1 = { holder=301273 } # Petyr Peasebury (nc)
+8029.1.1 = { holder=302273 } # Renly Peasebury (nc)
+8074.1.1 = { holder=303273 } # Patrek Peasebury (nc)
+8098.1.1 = { holder=304273 } # Rolland Peasebury (nc)
+8112.1.1 = { holder=305273 } # Robin Peasebury (nc)
+8138.1.1 = { holder=307273 } # Raymund Peasebury (nc)
+8154.1.1 = { holder=308273 } # Renfred Peasebury (nc)
+8195.1.1 = { holder=309273 } # Rickard Peasebury (nc)
+8249.1.1 = { holder=310273 } # Ronnet Peasebury (nc)
+8250.1.1 = { holder=311273 } # Rolland Peasebury (nc)
+8289.1.1 = { holder=200273 } # Robin Peasebury (C)
+8299.7.1 = { liege="k_stormlands" }

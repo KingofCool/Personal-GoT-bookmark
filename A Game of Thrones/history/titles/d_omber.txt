@@ -1,0 +1,15 @@
+#Daevan
+7986.1.1 = { 
+	holder=10051800 # Balavant (nc)
+	law = succ_primogeniture
+} 
+8019.1.1 = { holder=10151800 } # Yogesh (nc)
+8022.1.1 = { holder=10451800 } # Taresh (nc)
+8063.1.1 = { holder=10851800 } # Etash (nc)
+8110.1.1 = { holder=11351800 } # Harith (nc)
+8126.1.1 = { holder=11551800 } # Ekavir (nc)
+8164.1.1 = { holder=11651800 } # Harihar (nc)
+8198.1.1 = { holder=12351800 } # Manish (nc)
+8213.1.1 = { holder=12751800 } # Ishwar (nc)
+8259.1.1 = { holder=12951800 } # Avilash (nc)
+8275.1.1 = { holder=13151800 } # Ganesh (nc)

@@ -1,0 +1,36 @@
+# 170 - Maunhill
+
+# County Title
+title = c_maunhill
+
+# Settlements
+max_settlements = 5
+b_maunhill = castle
+b_maunhilltown = city
+#b_maunhillsept = temple
+b_maunhilltowntwo = castle
+b_maunhilltownthree = city
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_maunhill = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_maunhill = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_maunhill = ca_asoiaf_westerland_basevalue_3}
+#6000.1.1 = {b_maunhill = ca_asoiaf_westerland_basevalue_4}
+6000.1.1 = {b_maunhill = ca_silvermine}
+
+6000.1.1 = {b_maunhilltown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_maunhilltown = ct_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_maunhilltown = ct_asoiaf_westerland_basevalue_3}
+#6000.1.1 = {b_maunhilltown = ct_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_maunhilltowntwo = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_maunhilltowntwo = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_maunhilltowntwo = ca_asoiaf_westerland_basevalue_3}
+
+6000.1.1 = {b_maunhilltownthree = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_maunhilltownthree = ct_asoiaf_westerland_basevalue_2}

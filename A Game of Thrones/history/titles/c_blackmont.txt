@@ -1,0 +1,35 @@
+7278.1.1 = {
+	liege="k_blackmontTK"
+	law = succ_primogeniture
+	law = true_cognatic_succession
+	
+	holder = 150018 #Benedict
+}
+7305.1.1 = { #Conqeuered by Martells
+	liege="e_dorne"
+	holder = 0
+}
+7931.1.1 = { holder = 152018 }
+7952.1.1 = { holder = 153018 }
+7994.1.1 = { holder=60018 } # Timeon (nc)
+8019.1.1 = { holder=60218 } # Frynne (nc)
+8043.1.1 = { holder=60818 } # Castos (nc)
+8098.1.1 = { holder=61018 } # Willam (nc)
+8127.1.1 = { holder=61318 } # Tremond (nc)
+8128.1.1 = { holder=61618 } # Archibald (nc)
+8129.1.1 = { holder=61418 } # Perros (nc)
+
+# 8157.8.7 = {liege=d_redmountains} #Dornish Conquest
+# 8160.1.4 = {liege=e_dorne} #Dornish Rebellion
+
+8176.1.1 = { holder=62218 } # Allar (nc)
+
+8187.6.1 = {liege=k_dorne}
+
+8213.6.19 = { holder=62718 } # Garin (nc)
+
+8214.4.8 = { law = true_cognatic_succession }
+	
+8237.1.1 = { holder=62818 } # Emberlei (nc)
+8249.1.1 = { holder=63018 } # Daemon (nc)
+8272.4.2 = { holder=18 } # Larra (C)

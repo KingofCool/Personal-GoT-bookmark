@@ -1,0 +1,835 @@
+#House Adiur#
+10032901 = {
+	name="Sumalika"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	7955.1.1 = {birth="7955.1.1"}
+	7971.1.1 = {add_trait=trained_warrior}
+	7973.1.1 = {add_spouse=40032901}
+	8028.1.1 = {death="8028.1.1"}
+}
+40032901 = {
+	name="Quaithe"
+	female=yes
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	7955.1.1 = {birth="7955.1.1"}
+	8028.1.1 = {death="8028.1.1"}
+}
+10132901 = {
+	name="Urnammu"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=10032901
+	mother=40032901
+
+	7976.1.1 = {birth="7976.1.1"}
+	7992.1.1 = {add_trait=trained_warrior}
+	7994.1.1 = {add_spouse=40132901}
+	8017.1.1 = {death="8017.1.1"}
+}
+40132901 = {
+	name="Belessa"
+	female=yes
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	7976.1.1 = {birth="7976.1.1"}
+	8017.1.1 = {death="8017.1.1"}
+}
+10232901 = {
+	name="Quazur"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=10032901
+	mother=40032901
+
+	7978.1.1 = {birth="7978.1.1"}
+	7994.1.1 = {add_trait=poor_warrior}
+	8030.1.1 = {death="8030.1.1"}
+}
+10332901 = {
+	name="Taram"	# not a lord
+	female=yes
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=10032901
+	mother=40032901
+
+	7979.1.1 = {birth="7979.1.1"}
+	8011.1.1 = {death="8011.1.1"}
+}
+10432901 = {
+	name="Sapurtum"	# not a lord
+	female=yes
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=10132901
+	mother=40132901
+
+	7995.1.1 = {birth="7995.1.1"}
+	8078.1.1 = {death="8078.1.1"}
+}
+10532901 = {
+	name="Awil"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=10132901
+	mother=40132901
+
+	7997.1.1 = {birth="7997.1.1"}
+	8013.1.1 = {add_trait=poor_warrior}
+	8015.1.1 = {add_spouse=40532901}
+	8043.1.1 = {death="8043.1.1"}
+}
+40532901 = {
+	name="Aya"
+	female=yes
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	7997.1.1 = {birth="7997.1.1"}
+	8043.1.1 = {death="8043.1.1"}
+}
+10632901 = {
+	name="Munawirtum"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=10132901
+	mother=40132901
+
+	7998.1.1 = {birth="7998.1.1"}
+	8014.1.1 = {add_trait=poor_warrior}
+	8062.1.1 = {death="8062.1.1"}
+}
+10732901 = {
+	name="Dadanum"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=10532901
+	mother=40532901
+
+	8021.1.1 = {birth="8021.1.1"}
+	8037.1.1 = {add_trait=trained_warrior}
+	8039.1.1 = {add_spouse=40732901}
+	8054.1.1 = {death = {death_reason = death_murder}}
+}
+40732901 = {
+	name="Aya"
+	female=yes
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	8021.1.1 = {birth="8021.1.1"}
+	8054.1.1 = {death="8054.1.1"}
+}
+10832901 = {
+	name="Ishtup"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=10532901
+	mother=40532901
+
+	8022.1.1 = {birth="8022.1.1"}
+	8038.1.1 = {add_trait=skilled_warrior}
+	8040.1.1 = {add_spouse=40832901}
+	8071.1.1 = {death="8071.1.1"}
+}
+40832901 = {
+	name="Gemethega"
+	female=yes
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	8022.1.1 = {birth="8022.1.1"}
+	8071.1.1 = {death="8071.1.1"}
+}
+10932901 = {
+	name="Bikku"	# not a lord
+	female=yes
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=10532901
+	mother=40532901
+
+	8025.1.1 = {birth="8025.1.1"}
+	8061.1.1 = {death="8061.1.1"}
+}
+11032901 = {
+	name="Enheduana"	# not a lord
+	female=yes
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=10532901
+	mother=40532901
+
+	8028.1.1 = {birth="8028.1.1"}
+	8070.1.1 = {death="8070.1.1"}
+}
+11132901 = {
+	name="Mamagal"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=10732901
+	mother=40732901
+
+	8048.1.1 = {birth="8048.1.1"}
+	8064.1.1 = {add_trait=poor_warrior}
+	8066.1.1 = {add_spouse=41132901}
+	8114.1.1 = {death="8114.1.1"}
+}
+41132901 = {
+	name="Ishtare"
+	female=yes
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	8048.1.1 = {birth="8048.1.1"}
+	8114.1.1 = {death="8114.1.1"}
+}
+11232901 = {
+	name="Nammu"	# not a lord
+	female=yes
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=10832901
+	mother=40832901
+
+	8047.1.1 = {birth="8047.1.1"}
+	8089.1.1 = {death = {death_reason = death_accident}}
+}
+11332901 = {
+	name="Bunuth"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=10832901
+	mother=40832901
+
+	8050.1.1 = {birth="8050.1.1"}
+	8066.1.1 = {add_trait=trained_warrior}
+	8102.1.1 = {death="8102.1.1"}
+}
+11432901 = {
+	name="Tehuth"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=10832901
+	mother=40832901
+
+	8053.1.1 = {birth="8053.1.1"}
+	8069.1.1 = {add_trait=trained_warrior}
+	8106.1.1 = {death="8106.1.1"}
+}
+11532901 = {
+	name="Damuzi"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=11132901
+	mother=41132901
+
+	8079.1.1 = {birth="8079.1.1"}
+	8095.1.1 = {add_trait=trained_warrior}
+	8097.1.1 = {add_spouse=41532901}
+	8133.1.1 = {death="8133.1.1"}
+}
+41532901 = {
+	name="Daqqartum"
+	female=yes
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	8079.1.1 = {birth="8079.1.1"}
+	8133.1.1 = {death="8133.1.1"}
+}
+11632901 = {
+	name="Ubaruth"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=11132901
+	mother=41132901
+
+	8081.1.1 = {birth="8081.1.1"}
+	8097.1.1 = {add_trait=trained_warrior}
+	8151.1.1 = {death="8151.1.1"}
+}
+11732901 = {
+	name="Dadazig"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=11132901
+	mother=41132901
+
+	8082.1.1 = {birth="8082.1.1"}
+	8098.1.1 = {add_trait=poor_warrior}
+	8147.1.1 = {death="8147.1.1"}
+}
+11832901 = {
+	name="Quaithe"	# not a lord
+	female=yes
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=11532901
+	mother=41532901
+
+	8102.1.1 = {birth="8102.1.1"}
+	8151.1.1 = {death="8151.1.1"}
+}
+11932901 = {
+	name="Qasmath"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=11532901
+	mother=41532901
+
+	8104.1.1 = {birth="8104.1.1"}
+	8120.1.1 = {add_trait=skilled_warrior}
+	8122.1.1 = {add_spouse=41932901}
+	8147.1.1 = {death="8147.1.1"}
+}
+41932901 = {
+	name="Aya"
+	female=yes
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	8104.1.1 = {birth="8104.1.1"}
+	8147.1.1 = {death="8147.1.1"}
+}
+12032901 = {
+	name="Shepsin"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=11532901
+	mother=41532901
+
+	8107.1.1 = {birth="8107.1.1"}
+	8123.1.1 = {add_trait=trained_warrior}
+	8125.1.1 = {add_spouse=42032901}
+	8148.1.1 = {death="8148.1.1"}
+}
+42032901 = {
+	name="Daqqartum"
+	female=yes
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	8107.1.1 = {birth="8107.1.1"}
+	8148.1.1 = {death="8148.1.1"}
+}
+12132901 = {
+	name="Samuqan"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=11932901
+	mother=41932901
+
+	8131.1.1 = {birth="8131.1.1"}
+	8147.1.1 = {add_trait=poor_warrior}
+	8149.1.1 = {add_spouse=42132901}
+	8176.1.1 = {death="8176.1.1"}
+}
+42132901 = {
+	name="Ahassuth"
+	female=yes
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	8131.1.1 = {birth="8131.1.1"}
+	8176.1.1 = {death="8176.1.1"}
+}
+12232901 = {
+	name="Kithar"	# not a lord
+	female=yes
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=11932901
+	mother=41932901
+
+	8132.1.1 = {birth="8132.1.1"}
+	8189.1.1 = {death="8189.1.1"}
+}
+12332901 = {
+	name="Bau"	# not a lord
+	female=yes
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=12032901
+	mother=42032901
+
+	8135.1.1 = {birth="8135.1.1"}
+	8169.1.1 = {death="8169.1.1"}
+}
+12432901 = {
+	name="Erethkiga"	# not a lord
+	female=yes
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=12032901
+	mother=42032901
+
+	8137.1.1 = {birth="8137.1.1"}
+	8165.1.1 = {death="8165.1.1"}
+}
+12532901 = {
+	name="Utu"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=12032901
+	mother=42032901
+
+	8139.1.1 = {birth="8139.1.1"}
+	8155.1.1 = {add_trait=poor_warrior}
+	8157.1.1 = {add_spouse=42532901}
+	8215.1.1 = {death = {death_reason = death_accident}}
+}
+42532901 = {
+	name="Gemithe"
+	female=yes
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	8139.1.1 = {birth="8139.1.1"}
+	8215.1.1 = {death="8215.1.1"}
+}
+12632901 = {
+	name="Hunhal"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=12032901
+	mother=42032901
+
+	8141.1.1 = {birth="8141.1.1"}
+	8157.1.1 = {add_trait=poor_warrior}
+	8198.1.1 = {death="8198.1.1"}
+}
+12732901 = {
+	name="Humbab"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=12532901
+	mother=42532901
+
+	8164.1.1 = {birth="8164.1.1"}
+	8180.1.1 = {add_trait=skilled_warrior}
+	8182.1.1 = {add_spouse=42732901}
+	8205.1.1 = {death = {death_reason = death_accident}}
+}
+42732901 = {
+	name="Nindukugga"
+	female=yes
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	8164.1.1 = {birth="8164.1.1"}
+	8205.1.1 = {death="8205.1.1"}
+}
+12832901 = {
+	name="Ninsun"	# not a lord
+	female=yes
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=12532901
+	mother=42532901
+
+	8167.1.1 = {birth="8167.1.1"}
+	8221.1.1 = {death="8221.1.1"}
+}
+12932901 = {
+	name="Ibnatum"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=12732901
+	mother=42732901
+
+	8184.1.1 = {birth="8184.1.1"}
+	8200.1.1 = {add_trait=trained_warrior}
+	8202.1.1 = {add_spouse=42932901}
+	8240.1.1 = {death="8240.1.1"}
+}
+42932901 = {
+	name="Erethe"
+	female=yes
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	8184.1.1 = {birth="8184.1.1"}
+	8240.1.1 = {death="8240.1.1"}
+}
+13032901 = {
+	name="Quazur"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=12732901
+	mother=42732901
+
+	8187.1.1 = {birth="8187.1.1"}
+	8203.1.1 = {add_trait=skilled_warrior}
+	8238.1.1 = {death="8238.1.1"}
+}
+13132901 = {
+	name="Ishtup"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=12732901
+	mother=42732901
+
+	8189.1.1 = {birth="8189.1.1"}
+	8205.1.1 = {add_trait=poor_warrior}
+	8232.1.1 = {death="8232.1.1"}
+}
+13232901 = {
+	name="Ahassuth"	# not a lord
+	female=yes
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=12732901
+	mother=42732901
+
+	8190.1.1 = {birth="8190.1.1"}
+	8226.1.1 = {death="8226.1.1"}
+}
+13332901 = {
+	name="Qasmath"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=12932901
+	mother=42932901
+
+	8212.1.1 = {birth="8212.1.1"}
+	8228.1.1 = {add_trait=poor_warrior}
+	8230.1.1 = {add_spouse=43332901}
+	8273.1.1 = {death="8273.1.1"}
+}
+43332901 = {
+	name="Ninsun"
+	female=yes
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	8212.1.1 = {birth="8212.1.1"}
+	8273.1.1 = {death="8273.1.1"}
+}
+13432901 = {
+	name="Murrim"	# not a lord
+	female=yes
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=12932901
+	mother=42932901
+
+	8214.1.1 = {birth="8214.1.1"}
+	8255.1.1 = {death="8255.1.1"}
+}
+13532901 = {
+	name="Nammu"	# not a lord
+	female=yes
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=13332901
+	mother=43332901
+
+	8230.1.1 = {birth="8230.1.1"}
+	8269.1.1 = {death="8269.1.1"}
+}
+13632901 = {
+	name="Bunuth"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=13332901
+	mother=43332901
+
+	8233.1.1 = {birth="8233.1.1"}
+	8249.1.1 = {add_trait=skilled_warrior}
+	8251.1.1 = {add_spouse=43632901}
+	8274.1.1 = {death="8274.1.1"}
+}
+43632901 = {
+	name="Erethkiga"
+	female=yes
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	8233.1.1 = {birth="8233.1.1"}
+	8274.1.1 = {death="8274.1.1"}
+}
+13732901 = {
+	name="Enlil"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=13332901
+	mother=43332901
+
+	8234.1.1 = {birth="8234.1.1"}
+	8250.1.1 = {add_trait=poor_warrior}
+	8291.1.1 = {death="8291.1.1"}
+}
+13832901 = {
+	name="Nanna"	# not a lord
+	female=yes
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=13332901
+	mother=43332901
+
+	8235.1.1 = {birth="8235.1.1"}
+	8288.1.1 = {death="8288.1.1"}
+}
+13932901 = {
+	name="Yatum"	# a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=13632901
+	mother=43632901
+
+	8258.1.1 = {birth="8258.1.1"}
+	8274.1.1 = {add_trait=poor_warrior}
+	8276.1.1 = {add_spouse=43932901}
+}
+43932901 = {
+	name="Erethe"
+	female=yes
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	8258.1.1 = {birth="8258.1.1"}
+}
+14032901 = {
+	name="Quaithe"	# not a lord
+	female=yes
+	dynasty=32901
+	
+	martial = 2
+	stewardship = 3
+	intrigue = 7
+	learning = 8
+	diplomacy = 7
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=13632901
+	mother=43632901
+	
+	add_trait = elusive_shadow
+	
+	8259.1.1 = {birth="8259.1.1"}
+	8279.1.1 = {
+		add_trait = shadowbinder
+		add_trait = mystic
+		effect = {
+			k_asshai = { holder_scope = { ROOT = { move_character = PREV } } }
+		}
+	}
+}
+14132901 = {
+	name="Bunuth"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=13632901
+	mother=43632901
+
+	8262.1.1 = {birth="8262.1.1"}
+	8278.1.1 = {add_trait=trained_warrior}
+	8280.1.1 = {add_spouse=44132901}
+}
+44132901 = {
+	name="Nammu"
+	female=yes
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	8262.1.1 = {birth="8262.1.1"}
+}
+14232901 = {
+	name="Mushtal"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=13932901
+	mother=43932901
+
+	8279.1.1 = {birth="8279.1.1"}
+	8295.1.1 = {add_trait=trained_warrior}
+}
+14332901 = {
+	name="Gemethega"	# not a lord
+	female=yes
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=14132901
+	mother=44132901
+
+	8294.1.1 = {birth="8294.1.1"}
+}
+14432901 = {
+	name="Nintuda"	# not a lord
+	female=yes
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=14132901
+	mother=44132901
+
+	8296.1.1 = {birth="8296.1.1"}
+}
+14532901 = {
+	name="Munawirtum"	# not a lord
+	dynasty=32901
+
+	religion="shadowbinders"
+	culture="asshai"
+
+	father=14132901
+	mother=44132901
+
+	8299.1.1 = {birth="8299.1.1"}
+	8315.1.1 = {add_trait=trained_warrior}
+}

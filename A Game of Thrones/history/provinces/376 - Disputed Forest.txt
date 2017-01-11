@@ -1,0 +1,32 @@
+# 376 - Disputed Forest
+
+# County Title
+title = c_disputedforest
+
+# Settlements
+max_settlements = 3
+
+b_disputedforest = city
+b_disputedforest_castle = castle
+b_disputedforest_temple = temple
+
+# Misc
+culture = lysene
+religion = weeping_lady
+
+# History
+6000.1.1 = {
+	b_disputedforest = ct_asoiaf_essos_basevalue_1
+	b_disputedforest = ct_asoiaf_essos_basevalue_2
+	b_disputedforest = ct_asoiaf_essos_basevalue_3
+	b_disputedforest = ct_asoiaf_essos_basevalue_4
+	
+	b_disputedforest_castle = ca_asoiaf_essos_basevalue_1
+	b_disputedforest_castle = ca_asoiaf_essos_basevalue_2
+	b_disputedforest_castle = ca_asoiaf_essos_basevalue_3
+	
+	#trade_post = b_saan
+
+}
+8259.1.1={ capital = b_disputedforest_castle } #Ninepenny king
+8259.12.31 = { capital = b_disputedforest } 

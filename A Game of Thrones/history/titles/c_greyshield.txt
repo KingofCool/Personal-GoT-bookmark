@@ -1,0 +1,25 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="e_reach"
+}
+7993.1.1 = { holder=3000275 } # Tanton (nc)
+7998.6.6={
+	liege="k_reach"
+}
+8042.1.1 = { holder=3001275 } # Fredrec (nc)
+8063.1.1 = { holder=3002275 } # Raymon (nc)
+8097.1.1 = { holder=3004275 } # Mark (nc)
+8118.1.1 = { holder=3005275 } # Elyas (nc)
+8141.1.1 = { holder=3009275 } # Willas (nc)
+8172.1.1 = { holder=3012275 } # Dontos (nc)
+8173.1.1 = { holder=3015275 } # Gauter (nc)
+8199.1.1 = { holder=3018275 } # Theodore (nc)
+8205.1.1 = { holder=3016275 } # Kyle (nc)
+8217.1.1 = { holder=3019275 } # Quenton (nc)
+8238.1.1 = { holder=3025275 } # Tommen (nc)
+8292.1.1={
+	holder=275
+}
+
+
+
+

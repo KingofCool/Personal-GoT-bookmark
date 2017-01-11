@@ -1,0 +1,22 @@
+#House Dako
+7989.1.1 = { 
+	holder=100304017 
+	liege=d_sweet_lotus_vale
+	law = succ_seniority
+	law = cognatic_succession
+} # Delmabhar (nc)
+8006.1.1 = { holder=101304017 } # Xhakan (nc)
+8029.1.1 = { holder=103304017 } # Rudo (nc)
+8046.1.1 = { holder=106304017 } # Bujiba (nc)
+8074.1.1 = { holder=108304017 } # Thabo (nc)
+8101.1.1 = { holder=110304017 } # Xhal (nc)
+8122.1.1 = { holder=113304017 } # Oluhuru (nc)
+8158.1.1 = { holder=118304017 } # Gatubhar (nc)
+8202.1.1 = { holder=119304017 } # Koroxhar (nc)
+8214.1.1 = { holder=124304017 } # Gwalahuru (nc)
+8240.1.1 = { holder=126304017 } # Jalahuru (nc)
+8252.1.1 = { holder=129304017 } # Xhakan (nc)
+8280.1.1 = { holder=131304017 } # Makhan (nc)
+
+
+

@@ -1,0 +1,25 @@
+7600.1.1={
+	liege="e_westerlands"
+	law = succ_primogeniture
+}
+7995.1.1 = { holder=6000026 } # Jothos (nc)
+7998.7.6={
+	liege="d_blackwater_rush"
+}
+8010.1.1 = { holder=6000326 } # Lucos (nc)
+8039.1.1 = { holder=6000926 } # Boros (nc)
+8053.1.1 = { holder=6001326 } # Osmund (nc)
+8107.1.1 = { holder=6001526 } # Ollidor (nc)
+8123.1.1 = { holder=6002126 } # Allar (nc)
+8133.1.1 = { holder=6002526 } # Mortimer (nc)
+8184.1.1 = { holder=6002626 } # Anguy (nc)
+8192.1.1 = { holder=6003426 } # Bryen (nc)
+8222.1.1 = { holder=6004026 } # Ardrian (nc)
+8227.1.1 = { holder=6004226 } # Robin (nc)
+8268.1.1 = { holder=6004426 } # Justin (nc)
+8284.1.1={
+	holder = 1026 	#Lothar Mallery
+}
+8298.1.1 = {
+	holder = 10126 	#Tristifer Mallery
+}

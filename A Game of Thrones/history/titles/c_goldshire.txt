@@ -1,0 +1,18 @@
+#c_goldshire
+900.1.1={
+	liege="d_sarsfield"
+}
+7994.1.1 = { holder=300214 } # Florian (nc)
+8000.6.6 = { holder=301214 } # Shirei (nc)
+8011.1.1 = { holder=302214 } # Rosamund (nc)
+8041.1.1 = { holder=303214 } # Florian (nc)
+8059.1.1 = { holder=307214 } # Damon (nc)
+8098.1.1 = { holder=311214 } # Ossifer (nc)
+8102.1.1 = { holder=315214 } # Garth (nc)
+8146.1.1 = { holder=316214 } # Kevan (nc)
+8180.1.1 = { holder=318214 } # Reginald (nc)
+8196.1.1 = { holder=322214 } # Garford (nc)
+8197.1.1 = { holder=323214 } # Damion (nc)
+8208.1.1 = { holder=324214 } # Dunsen (nc)
+8241.1.1 = { holder=326214 } # Leo (nc)
+8277.1.1 = {holder=214}

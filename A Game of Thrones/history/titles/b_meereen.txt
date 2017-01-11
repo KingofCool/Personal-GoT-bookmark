@@ -1,0 +1,24 @@
+900.1.1={ 
+	liege="c_meereen"
+}
+7995.1.1 = { holder=150360003 } # Hizdhar (nc)
+8016.1.1 = { holder=100360003 } # Hizdhar (nc)
+8047.1.1 = { holder=100360004 } # Grazdan (nc)
+8053.1.1 = { holder=101360008 } # Gorhaz (nc)
+8087.1.1 = { holder=103360004 } # Grazdan (nc)
+8105.1.1 = { holder=104360007 } # Hizdhar (nc)
+8112.1.1 = { holder=111360003 } # Hizdhar (nc)
+8124.1.1 = { holder=112360004 } # Marghaz (nc)
+8166.1.1 = { holder=118360003 } # Kraznys (nc)
+8179.1.1 = { holder=120360003 } # Hizdhar (nc)
+8212.1.1 = { holder=123360004 } # Paezhar (nc)
+8229.1.1 = { holder=123360008 } # Mazdhak (nc)
+8233.1.1 = { holder=119360007 } # Mazdhan (nc)
+8238.1.1 = { holder=126360008 } # Marghaz (nc)
+8249.1.1 = { holder=128360004 } # Gorzhak (nc)
+8287.1.1={
+	holder=16571013 # Hizdhar
+}
+
+
+

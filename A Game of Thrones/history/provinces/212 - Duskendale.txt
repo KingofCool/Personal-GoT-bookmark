@@ -1,0 +1,36 @@
+# 212 - Duskendale
+
+# County Title
+title = c_duskendale
+
+# Settlements
+max_settlements = 5
+b_dun_fort = castle
+b_duskendale = city
+b_dusk_sept = temple
+b_woodhollow = castle
+
+#b_newedge = castle
+#b_highley = city
+#b_woodhollow = castle
+
+#Misc
+culture = riverlander
+religion = the_seven
+
+# History
+1066.1.1 = {
+
+	b_dun_fort = ca_asoiaf_crown_basevalue_1
+	b_dun_fort = ca_asoiaf_crown_basevalue_2
+	b_dun_fort = ca_asoiaf_crown_basevalue_3
+	b_dun_fort = ca_asoiaf_crown_basevalue_4
+
+
+	b_duskendale = ct_asoiaf_crown_basevalue_1
+	b_duskendale = ct_asoiaf_crown_basevalue_2
+	b_duskendale = ct_asoiaf_crown_basevalue_3
+	b_duskendale = ct_asoiaf_crown_basevalue_4
+
+
+}

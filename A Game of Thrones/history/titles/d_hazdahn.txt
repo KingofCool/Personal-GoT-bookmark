@@ -1,0 +1,9 @@
+7000.1.1 = {
+	liege = k_hazdahn
+}
+7975.1.1 = { holder=10069190 } # Maezon (nc)
+8010.1.1 = { holder=10269190 } # Skahaz (nc)
+8015.1.1 = {
+	liege = 0
+	holder = 0
+}

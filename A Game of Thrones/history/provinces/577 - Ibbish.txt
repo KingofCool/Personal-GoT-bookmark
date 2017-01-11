@@ -1,0 +1,26 @@
+# 577 Vaes Aresak/Ibbish
+
+# County Title
+title = c_ibbish
+
+# Settlements
+max_settlements = 5
+
+b_ibbish = tribal
+b_ibbish2 = city
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+terrain = forest
+
+# History
+6000.1.1 = {
+	b_ibbish2 = ct_asoiaf_ibben_basevalue_1
+	b_ibbish2 = ct_asoiaf_ibben_basevalue_2
+	b_ibbish2 = ct_asoiaf_ibben_basevalue_3
+	b_ibbish2 = ct_asoiaf_ibben_basevalue_4
+	b_ibbish2 = ct_asoiaf_ibben_basevalue_5
+	b_ibbish2 = ct_asoiaf_ibben_basevalue_6
+}

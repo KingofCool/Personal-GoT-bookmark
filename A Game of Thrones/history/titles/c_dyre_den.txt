@@ -1,0 +1,20 @@
+7600.1.1={
+	#liege="e_stormlands"
+	law = succ_primogeniture
+}
+7920.1.1={
+	#liege="e_iron_isles" #maybe independent
+}
+7994.1.1 = { holder=3000042 } # Godry Brune (nc)
+7998.2.1={
+	liege="e_iron_throne"
+}
+8024.1.1 = { holder=3001042 } # Perkin Brune (nc)
+8070.1.1 = { holder=3009042 } # Gwayne Brune (nc)
+8078.1.1 = { holder=3013042 } # Belis Brune (nc)
+8103.1.1 = { holder=3017042 } # Hubard Brune (nc)
+8150.1.1 = { holder=3022042 } # Bryen Brune (nc)
+8197.1.1 = { holder=3025042 } # Boros Brune (nc)
+8211.1.1 = { holder=3028042 } # Rolland Brune (nc)
+8231.1.1 = { holder=2029042 } # Eustace Brune (C)
+#8299.1.4 = {liege=0} # Join Stannis during the Wot5k

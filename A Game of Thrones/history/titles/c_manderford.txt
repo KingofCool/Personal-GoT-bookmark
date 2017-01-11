@@ -1,0 +1,96 @@
+3.1.1={
+	holder=88151 #Garth Greenhand
+	law = succ_primogeniture
+	law = cognatic_succession
+	law = centralization_1
+	law = investiture_law_2
+	law = first_night_1
+	liege = d_highgarden
+}
+80.1.1={holder=65101524} # Garth II # Post Long Night
+98.1.1={holder=65201524} # Gwayne I
+110.1.1={holder=65301524} # Gareth I
+123.1.1={holder=65401524} # Gordan I Grey-Eyes
+167.1.1={holder=59501524} # Mervyn I
+180.1.1={holder=59901524} # Perceon I
+210.1.1={holder=56101524} # Perceon II
+
+230.1.1={holder=0}
+
+2550.1.1={holder=68901524} # Garth III the Great # Old-Gods era
+2602.1.1={holder=65501524} # Gareth II
+2604.1.1={holder=65601524} # Gyles I the Woe
+2632.1.1={holder=65701524} # Garland I
+2645.1.1={holder=59601524} # Mervyn II
+2650.1.1={holder=65801524} # John I
+2660.1.1={holder=65901524} # Garland II
+2705.1.1={holder=67001524} # Gwayne II
+2720.1.1={holder=67101524} # Gwayne III
+2760.1.1={holder=67201524} # John II the Tall
+2780.1.1={holder=67301524} # Garth IV
+2790.1.1={holder=67401524} # Garth V the Hammer
+2798.1.1={holder=67501524} # Mern I
+2860.1.1={holder=65001524} # Garse I
+2880.1.1={holder=64001524} # Garse II
+2901.1.1={holder=67601524} # Garth VI the Morningstar
+
+6397.1.1={holder=67701524} # Garth VII the Goldenhand
+6483.1.1={holder=63001524} # Garse III
+6500.1.1={holder=59801524} # Gareth III
+6503.1.1={holder=68201524} # Garth VIII
+6506.1.1={holder=68001524} # Gareth IV
+6530.1.1={holder=68101524} # Mern II the Mason
+6580.1.1={holder=68301524} # Mern III the Madling
+6590.1.1={holder=68401524} # Garth IX
+6604.1.1={holder=68501524} # Merle the Meek
+6612.1.1={holder=68701524} # Gwayne V the Andal 
+
+
+ 
+6620.1.1={holder=61000253} # Alester Tyrell # Tyrell first era
+6655.1.1={holder=63000253} # Gareth Tyrell
+6682.1.1={holder=64000253} # Leo Tyrell
+
+6700.1.1={holder=0} #
+
+7250.1.1={holder=66000253} # Leon Tyrell
+7308.1.1={holder=67000253} # Osmund Tyrell
+7345.1.1={holder=68000253} # Robert Tyrell
+7371.1.1={holder=69000253} # Lorent Tyrell
+
+
+7401.1.1={holder=0} #
+
+7820.1.1 = { holder=61200253 } # Alester (nc)
+7860.1.1 = { holder=61300253 } # Artys (nc)
+7889.1.1 = { holder=61400253 } # Lyonel (nc)
+7916.1.1 = { holder=61600253 } # Gareth (nc)
+7942.1.1 = { holder=61800253 } # Robert (nc)
+7984.1.1 = { holder=62200253 } # Osmund (nc)
+7988.1.1 = { holder=60000253 } # Gyles Tyrell 	
+7989.1.1 = { holder=16253 } #Harlen Tyrell
+8001.1.1 = { holder=60100253 } # Allen Tyrell
+
+8014.1.1 = { holder=62003260 } # Byren (nc) # Ball era
+8028.1.1 = { holder=62009260 } # Gwayne (nc)
+8042.1.1 = { holder=62010260 } # Garth (nc)
+8083.1.1 = { holder=62013260 } # Glendon (nc)
+8128.1.1 = { holder=62014260 } # Grydion (nc)
+8154.1.1 = { holder=62015260 } # Merle (nc)
+8155.1.1={
+	holder=88184 # Arthur Ball
+}
+8196.1.1={
+	holder=88067 #Leo Tyrell # Tyrell second era
+}
+8215.1.1={
+	holder=88000  #Denys Tyrell
+}
+8247.1.1={
+	holder=253 #Luthor Tyrell
+}
+8265.1.1={
+	holder=1253 #Mace Tyrell
+}
+
+

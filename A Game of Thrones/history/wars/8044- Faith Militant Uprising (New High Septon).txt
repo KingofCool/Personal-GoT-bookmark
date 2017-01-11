@@ -1,0 +1,21 @@
+name = "Faith Militant Uprising"
+
+casus_belli={
+	casus_belli=overthrow_ruler_no_calls
+	actor=1002777
+	recipient=77005
+	landed_title=e_iron_throne
+	date=8044.5.10
+}
+
+8044.5.10 = {
+	add_defender = 77005 #Maegor Targaryen
+	add_attacker = 1002777 # High Septon
+}
+8048.10.1 = {
+	rem_defender = 77005 #Maegor Targaryen
+	rem_attacker = 1002777 # High Septon	
+}
+
+
+                                                                                                                                                                                                                                                                                                                                   

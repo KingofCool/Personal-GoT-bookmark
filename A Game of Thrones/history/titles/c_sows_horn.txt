@@ -1,0 +1,17 @@
+800.1.1={
+	liege="d_rosby"
+	law = succ_primogeniture
+}
+7988.1.1 = { holder=6000031 } # Sefton (nc)
+8016.1.1 = { holder=6000131 } # Ollidor (nc)
+8025.1.1 = { holder=6000431 } # Bronn (nc)
+8073.1.1 = { holder=6000631 } # Osfryd (nc)
+8083.1.1 = { holder=6000931 } # Lothar (nc)
+8108.1.1 = { holder=6001531 } # Dontos (nc)
+8159.1.1 = { holder=6001631 } # Balman (nc)
+8191.1.1 = { holder=6002031 } # Lucifer (nc)
+8219.1.1 = { holder=6002331 } # Perkin (nc)
+8262.1.1 = { holder=6002831 } # Simon (nc)
+8290.1.1={
+	holder = 31 	#Roger Hogg
+}

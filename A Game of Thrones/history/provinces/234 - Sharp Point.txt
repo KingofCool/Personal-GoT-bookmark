@@ -1,0 +1,32 @@
+# 234 - Sharp Point
+
+# County Title
+title = c_sharp_point
+
+# Settlements
+max_settlements = 4
+b_sharp_point= castle
+b_west_point = city
+b_sharp_point_sept = temple
+
+#b_waycastle = castle
+#b_valcrest = city
+
+
+# Misc
+culture = stormlander
+religion = the_seven
+
+# History
+
+1066.1.1 = {
+
+	b_sharp_point= ca_asoiaf_crown_basevalue_1
+	b_sharp_point= ca_asoiaf_crown_basevalue_2
+	b_sharp_point= ca_asoiaf_crown_basevalue_3
+
+
+	b_west_point = ct_asoiaf_crown_basevalue_1
+	b_west_point = ct_asoiaf_crown_basevalue_2
+
+}

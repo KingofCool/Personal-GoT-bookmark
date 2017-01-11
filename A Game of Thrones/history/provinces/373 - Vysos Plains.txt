@@ -1,0 +1,27 @@
+# 386 - Vysos Plains
+
+# County Title
+title = c_vysosplains
+
+# Settlements
+max_settlements = 3
+
+b_vysosplains = city
+b_vysosplains_castle = castle
+b_vysosplains_temple = temple
+
+# Misc
+culture = tyroshi
+religion = trios
+
+# History
+6000.1.1 = {
+	b_vysosplains = ct_asoiaf_essos_basevalue_1
+	b_vysosplains = ct_asoiaf_essos_basevalue_2
+	b_vysosplains = ct_asoiaf_essos_basevalue_3
+
+	b_vysosplains_castle = ca_asoiaf_essos_basevalue_1
+	b_vysosplains_castle = ca_asoiaf_essos_basevalue_2
+	b_vysosplains_castle = ca_asoiaf_essos_basevalue_3
+
+}

@@ -1,0 +1,40 @@
+#d_greenfield (Renamed Cornfield)
+900.1.1={ liege = "e_westerlands" }
+7990.1.1 = {	
+	holder=311228
+}
+7998.6.6 = {	
+	holder=310228
+}
+7998.7.6 = {
+	liege="k_westerlands"
+}
+8039.5.8 = {	
+	holder=309228
+}
+8077.1.1 = {	
+	holder=308228
+}
+8106.1.1 = {	
+	holder=307228
+}
+8130.1.1 = {	
+	holder=306228
+}
+8145.1.1 = {	
+	holder=305228
+}
+8154.1.1 = {	
+	holder=304228
+}
+8194.1.1 = {	
+	holder=303228
+}
+8195.3.7={
+	liege = 0
+}
+#Swyfts lose lordship after blackfyre rebellion (assumption)
+8196.1.1={
+	liege = 0
+	holder = 0
+}

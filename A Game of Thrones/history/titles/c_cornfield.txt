@@ -1,0 +1,44 @@
+#c_cornfield
+900.1.1={
+	liege="d_cornfield"
+}
+7990.1.1 = {	
+	holder=311228
+}
+7998.6.6 = {	
+	holder=310228
+}
+8039.5.8 = {	
+	holder=309228
+}
+8077.1.1 = {	
+	holder=308228
+}
+8106.1.1 = {	
+	holder=307228
+}
+8130.1.1 = {	
+	holder=306228
+}
+8145.1.1 = {	
+	holder=305228
+}
+8154.1.1 = {	
+	holder=304228
+}
+8194.1.1 = {	
+	holder=303228
+}
+#Swyfts lose lordship after blackfyre rebellion (assumption)
+8196.1.1={
+	liege="k_westerlands"
+}
+8216.1.1 = {	
+	holder=205228
+}
+8232.1.1 = {	
+	holder=302228
+}
+8260.1.1 = {	
+	holder=228
+}

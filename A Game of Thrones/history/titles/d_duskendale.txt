@@ -1,0 +1,29 @@
+7600.1.1={
+	liege="e_riverlands"
+	law = succ_primogeniture
+}
+7956.1.1 = { holder=6000364 } # Jarmen (nc)
+7980.1.1 = { holder=6002364 } # Triston (nc)
+7998.2.1={
+	liege="e_iron_throne"
+}
+
+7998.2.1={ holder=6007364 } # Steffon (nc)
+8021.1.1 = { holder=6009364 } # Robin (nc)
+8035.1.1 = { holder=6012364 } # Florian (nc)
+8057.1.1 = { holder=6019364 } # Ulmer (nc)
+8100.1.1 = { holder=6022364 } # Dale (nc)
+8129.10.1 = { holder=6025364 } # Jaremy (nc)
+8154.1.1 = { holder=6029364 } # Monford (nc)
+8189.1.1 = { holder=6035364 } # Allar (nc)
+8199.1.1 = { holder=6038364 } # Will (nc)
+8208.1.1 = { holder=6044364 } # Lucifer (nc)
+8255.1.1 = { holder=6045364 } # Alyn
+8272.1.1 = { holder=6049364 } # Denys, Lord at the Defiance
+
+8276.10.1={
+	holder = 36 	#Dylan Rykker
+}
+8277.1.1={
+	holder = 2036 	#Renfred Rykker
+}

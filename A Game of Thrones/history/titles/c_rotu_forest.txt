@@ -1,0 +1,22 @@
+#House Rotumu
+7990.1.1 = { 
+	holder=100304029 
+	liege=d_red_flower_vale
+	law = succ_seniority
+	law = cognatic_succession
+} # Isodo (nc)
+8035.1.1 = { holder=102304029 } # Gwalahuru (nc)
+8061.1.1 = { holder=108304029 } # Ratemo (nc)
+8093.1.1 = { holder=109304029 } # Kwasya (nc)
+8125.1.1 = { holder=111304029 } # Sango (nc)
+8127.1.1 = { holder=112304029 } # Jaramogo (nc)
+8167.1.1 = { holder=115304029 } # Konde (nc)
+8210.1.1 = { holder=116304029 } # Jiradhar (nc)
+8219.1.1 = { holder=119304029 } # Abrafo (nc)
+8276.1.1 = { holder=126304029 } # Chibundo (nc)
+8284.1.1 = { 
+	holder=125304000 # Jalabhar Xho
+} 
+8289.6.1 = { 
+	holder=134304029 # Dubaku the Bastard
+} 

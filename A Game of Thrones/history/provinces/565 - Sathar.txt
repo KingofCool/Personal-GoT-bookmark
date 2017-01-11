@@ -1,0 +1,23 @@
+# 565 Yalli Qamayi/Sathar
+
+# County Title
+title = c_sathar
+
+# Settlements
+max_settlements = 5
+
+b_sathar = tribal
+b_sathar1 = city
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+# History
+6000.1.1 = {
+	b_sathar1 = ct_asoiaf_sarnor_basevalue_1
+	b_sathar1 = ct_asoiaf_sarnor_basevalue_2
+	b_sathar1 = ct_asoiaf_sarnor_basevalue_3
+	b_sathar1 = ct_asoiaf_sarnor_basevalue_4
+	b_sathar1 = ct_asoiaf_sarnor_basevalue_5
+}

@@ -1,0 +1,17 @@
+5000.1.1={
+	law = succ_primogeniture
+	liege = k_pentos
+}
+7985.1.1 = { holder=100174900 } # Marwyn (nc)
+8023.1.1 = { holder=101174900 } # Uthor (nc)
+8065.1.1 = { holder=105174900 } # Pate (nc)
+8076.1.1 = { holder=107174900 } # Symond (nc)
+8097.1.1 = { holder=108174900 } # Osgood (nc)
+8101.1.1 = { holder=109174900 } # Robar (nc)
+8118.1.1 = { holder=110174900 } # Denys (nc)
+8126.1.1 = { holder=111174900 } # Benedar (nc)
+8172.1.1 = { holder=119174900 } # Robar (nc)
+8194.1.1 = { holder=120174900 } # Lothor (nc)
+8217.1.1 = { holder=123174900 } # Elys (nc)
+8241.1.1 = { holder=124174900 } # Jasper (nc)
+8289.1.1 = { holder=131174900 } # Ballabar (nc)

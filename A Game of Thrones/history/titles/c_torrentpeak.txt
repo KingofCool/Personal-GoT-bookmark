@@ -1,0 +1,24 @@
+#NOTE: The holder of this title has the House Ambrose dynasty tracker set in roberts_rebellion_events
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="d_oldtown"
+}
+7992.1.1 = { holder=6000297 } # Samwell (nc)
+8018.1.1 = { holder=6002297 } # Emmon (nc)
+8039.1.1 = { holder=6007297 } # Theodore (nc)
+8070.1.1 = { holder=6010297 } # Moryn (nc)
+8080.1.1 = { holder=6011297 } # Florian (nc)
+8100.1.1 = { holder=6014297 } # Marq (C)
+8130.5.8 = { holder=6015297 } # Bryan (nc)
+8179.1.1 = { holder=6021297 } # Fredrec (nc)
+8195.1.1 = { holder=6025297 } # Elyas (nc)
+8207.1.1 = { holder=6027297 } # Tristram (nc)
+8223.1.1 = { holder=6030297 } # Arryn (nc)
+8248.1.1 = { holder=6034297 } # Harrold (nc)
+
+8274.1.1={
+	holder=297
+}
+
+
+
+

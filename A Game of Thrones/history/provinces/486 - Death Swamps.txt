@@ -1,0 +1,17 @@
+
+
+# County Title
+title = c_death_swamps
+
+# Settlements
+max_settlements = 1
+
+b_death_swamps = tribal
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+# History
+6000.1.1 = {
+}

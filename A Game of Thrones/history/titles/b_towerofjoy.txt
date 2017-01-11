@@ -1,0 +1,15 @@
+800.1.1={
+	liege="d_dragonstone"
+}
+8260.1.1={
+	holder = 77039 	#Rhaegar Targaryen
+}
+
+8284.1.1={
+	liege="d_princespass"
+}
+
+8284.1.1={
+	holder = 14 	#Franklyn Fowler
+}
+

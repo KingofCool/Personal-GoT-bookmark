@@ -1,0 +1,20 @@
+# 72 - Cape Kraken
+
+# County Title
+title = c_capekraken
+
+# Settlements
+max_settlements = 2
+b_greencliffe = castle
+#b_ringrock = city
+
+# Misc
+culture = northman
+religion = old_gods
+
+# History
+
+6000.1.1 = {
+	b_greencliffe = ca_asoiaf_north_basevalue_1
+	b_greencliffe = ca_asoiaf_north_basevalue_2
+}

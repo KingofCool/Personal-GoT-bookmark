@@ -1,0 +1,29 @@
+# 1132 - Moreland
+# County Title
+title = c_moreland
+
+# Settlements
+max_settlements = 4
+b_moreland_keep = castle
+b_moreland = city
+b_ryehill = castle
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_moreland_keep = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_moreland_keep = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_moreland_keep = ca_asoiaf_westerland_basevalue_3}
+
+6000.1.1 = {b_moreland = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_moreland = ct_asoiaf_westerland_basevalue_2}
+
+6000.1.1 = {b_ryehill = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_ryehill = ca_asoiaf_westerland_basevalue_2}
+
+8070.1.1 = { #Jaehaerys constructs road network
+	b_moreland_keep = ca_goldroad
+}

@@ -1,0 +1,38 @@
+# 174 - Golden Tooth
+
+# County Title
+title = c_golden_tooth
+
+# Settlements
+max_settlements = 5
+b_golden_tooth = castle
+b_golden_toothcastle = castle
+b_golden_toothtown = city
+b_golden_toothsept = temple
+
+# Misc
+culture = westerman
+religion = the_seven
+
+terrain = mountainpass
+
+#History
+
+6000.1.1 = {b_golden_tooth = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_golden_tooth = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_golden_tooth = ca_asoiaf_westerland_basevalue_3}
+6000.1.1 = {b_golden_tooth = ca_asoiaf_westerland_basevalue_4}
+6000.1.1 = {b_golden_tooth = ca_asoiaf_westerland_basevalue_5}
+6000.1.1 = {b_golden_tooth = ca_goldmine}
+
+6000.1.1 = {b_golden_toothcastle = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_golden_toothcastle = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_golden_toothcastle = ca_asoiaf_westerland_basevalue_3}
+6000.1.1 = {b_golden_toothcastle = ca_goldmine}
+
+6000.1.1 = {b_golden_toothtown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_golden_toothtown = ct_asoiaf_westerland_basevalue_2}
+
+8070.1.1 = { #Jaehaerys constructs road network
+	b_golden_tooth = ca_river_road
+}

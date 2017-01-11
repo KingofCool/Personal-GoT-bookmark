@@ -1,0 +1,14 @@
+202.1.1 = {liege="d_cape_wrath"}
+
+7994.1.1 = { holder=300325 } # Narbert Tudbury (nc)
+8031.1.1 = { holder=301325 } # Criston Tudbury (nc)
+8062.1.1 = { holder=303325 } # Bryce Tudbury (nc)
+8091.1.1 = { holder=306325 } # Grance Tudbury (nc)
+8127.1.1 = { holder=309325 } # Simon Tudbury (nc)
+8144.1.1 = { holder=313325 } # Cedrik Tudbury (nc)
+8147.1.1 = { holder=314325 } # Gowen Tudbury (nc)
+8202.1.1 = { holder=318325 } # Galladon Tudbury (nc)
+8209.1.1 = { holder=319325 } # Brus Tudbury (nc)
+8247.1.1 = { holder=323325 } # Myles Tudbury (nc)
+8271.1.1 = { holder=324325 } # Thurgood Tudbury (nc)
+8294.1.1 = { holder=327325 } # Michael Tudbury (nc)

@@ -1,0 +1,29 @@
+# 114 - Atranta
+
+# County Title
+title = c_atranta
+
+# Settlements
+max_settlements = 3
+b_atranta = castle
+b_tumblersfalls = city
+
+# Misc
+culture = riverlander
+religion = the_seven
+
+# History
+
+
+6000.1.1 = {
+
+b_atranta = ca_asoiaf_river_basevalue_1
+b_atranta = ca_asoiaf_river_basevalue_2
+b_atranta = ca_asoiaf_river_basevalue_3
+b_atranta = ca_asoiaf_river_basevalue_4
+
+b_tumblersfalls = ct_asoiaf_river_basevalue_1
+b_tumblersfalls = ct_asoiaf_river_basevalue_2
+b_tumblersfalls = ct_asoiaf_river_basevalue_3
+
+}

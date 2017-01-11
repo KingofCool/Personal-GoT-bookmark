@@ -1,0 +1,37 @@
+# 354 - Riverspring
+
+# County Title
+title = c_riverspring
+
+# Settlements
+max_settlements = 5
+b_riverspring = castle
+b_riverspring_sept = temple
+b_halton = city
+b_sowerby = city
+
+
+# Misc
+culture = westerman
+religion = the_seven
+
+
+6000.1.1 = {
+	b_riverspring = ca_asoiaf_westerland_basevalue_1
+	b_riverspring = ca_asoiaf_westerland_basevalue_2
+	b_riverspring = ca_asoiaf_westerland_basevalue_3
+}
+
+6000.1.1 = {
+	b_halton = ct_asoiaf_westerland_basevalue_1
+	b_halton = ct_asoiaf_westerland_basevalue_2
+}
+
+6000.1.1 = {
+	b_sowerby = ct_asoiaf_westerland_basevalue_1
+	b_sowerby = ct_asoiaf_westerland_basevalue_2
+}
+
+8298.1.1 = {
+	religion = rhllor
+}

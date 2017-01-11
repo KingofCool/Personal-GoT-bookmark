@@ -1,0 +1,17 @@
+# 538 - Valley of Essaria
+
+# County Title
+title = c_valley_essaria
+
+# Settlements
+max_settlements = 3
+
+b_valley_essaria = tribal
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+# History
+6000.1.1 = {
+}

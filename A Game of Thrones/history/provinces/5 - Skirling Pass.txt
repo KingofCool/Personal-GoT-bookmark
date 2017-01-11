@@ -1,0 +1,19 @@
+# 5 - Skirling Pass
+
+# County Title
+title = c_skirling_pass
+
+# Settlements
+max_settlements = 3
+b_skirling_watch = castle
+#b_keening_arch = temple
+#b_deepvalley = city
+
+# Misc
+culture = wildling
+religion = beyond_wall_old_gods
+
+#History
+6000.1.1={
+	b_skirling_watch = ca_wildling_barracks
+}

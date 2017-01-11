@@ -1,0 +1,11 @@
+7953.1.1 = { 
+	holder = 100600209 #Khal Onqo
+	liege = k_ifeqevron
+	historical_nomad = yes
+} 
+7959.1.1 = {
+	holder = 102600209 #Khal Dhako
+} 
+7998.1.1 = {
+	holder = 0
+} 

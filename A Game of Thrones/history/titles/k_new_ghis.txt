@@ -1,0 +1,29 @@
+3020.1.1 = {
+	holder = 199360025 #Grazdan the Great
+}
+3068.1.1 = {
+	holder = 0
+}
+7980.1.1={
+	holder=150360025
+	law = succ_primogeniture
+	law = cognatic_succession
+	law = centralization_2
+	law = slavery_2
+	law = privilege_vassal_king
+	effect = {
+		add_law = privilege_vassal_king
+	}
+}
+8023.1.1 = { holder=100360025 } # Grazdan (nc)
+8041.1.1 = { holder=101360025 } # Skahaz (nc)
+8097.1.1 = { holder=104360025 } # Barkhaz (nc)
+8112.1.1 = { holder=108360025 } # Marghaz (nc)
+8120.1.1 = { holder=112360025 } # Grazdan (nc)
+8141.1.1 = { holder=114360025 } # Yezzan (nc)
+8164.1.1 = { holder=117360025 } # Gazdhor (nc)
+8179.1.1 = { holder=122360025 } # Marghaz (nc)
+8231.1.1 = { holder=124360025 } # Grazdan (nc)
+8251.1.1 = { holder=126360025 } # Maezon (nc)
+8277.1.1 = { holder=130360025 } # Grazdan (nc)
+

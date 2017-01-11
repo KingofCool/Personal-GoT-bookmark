@@ -1,0 +1,42 @@
+#NOTE: The holder of this title has the House Westerling dynasty tracker set in roberts_rebellion_events
+#c_the_crag
+900.1.1={
+	liege="d_the_crag"
+}
+
+7996.1.1 = {
+holder=21199
+}
+8034.1.1 = {
+holder=20199
+}
+8058.1.1 = {
+holder=19199
+}
+8077.1.1 = {
+holder=18199
+}
+8098.1.1 = {
+holder=17199
+}
+8128.1.1 = {
+holder=16199
+}
+8133.6.1 = {
+holder=15199
+}
+8176.1.1 = {
+holder=14199
+}
+8196.2.5 = {
+holder=12199
+}
+8211.1.1 = {
+holder=11199
+}
+8254.1.1 = {
+holder=10199
+}
+8273.1.1 = {	
+holder=199
+}

@@ -1,0 +1,22 @@
+# 754 - Isle of Vines
+
+# County Title
+title = c_isleofvines
+
+# Settlements
+max_settlements = 2
+
+b_isleofvines = castle
+b_isleofvinestown = city
+
+# Misc
+culture = basilisk_islander
+religion = corsair
+
+# History
+6000.1.1 = {
+	b_isleofvines = ca_asoiaf_pirateshipyard
+	
+	b_isleofvinestown = ct_asoiaf_summerisland_basevalue_1
+	b_isleofvinestown = ct_asoiaf_summerisland_basevalue_2
+}

@@ -1,0 +1,20 @@
+# 42 - Withered Heath
+
+# County Title
+title = c_witheredheath
+
+# Settlements
+max_settlements = 2
+b_skysmeet = castle
+#b_wetrocks = city
+
+# Misc
+culture = northman
+religion = old_gods
+
+# History
+
+6000.1.1 = {
+	b_skysmeet = ca_asoiaf_north_basevalue_1
+	#b_skysmeet = ca_asoiaf_north_basevalue_2
+}

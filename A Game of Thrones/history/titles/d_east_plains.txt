@@ -1,0 +1,16 @@
+7974.1.1 = { 
+	holder=100607304 
+	historical_nomad = yes
+} # Ehsan (nc)
+8005.1.1 = { holder=101607304 } # Qader (nc)
+8027.1.1 = { holder=103607304 } # Qudratu (nc)
+8039.1.1 = { holder=106607304 } # Jakan (nc)
+8083.1.1 = { holder=109607304 } # Rasoul (nc)
+8109.1.1 = { holder=112607304 } # Tarakai (nc)
+8149.1.1 = { holder=115607304 } # Ramez (nc)
+8177.1.1 = { holder=118607304 } # Aarak (nc)
+8179.1.1 = { holder=120607304 } # Tarakai (nc)
+8224.1.1 = { holder=122607304 } # Inzir (nc)
+8250.1.1 = { holder=123607304 } # Jakan (nc)
+8275.1.1 = { holder=124607304 } # Sadaf (nc)
+8291.1.1 = { holder=126607304 } # Janan (nc)

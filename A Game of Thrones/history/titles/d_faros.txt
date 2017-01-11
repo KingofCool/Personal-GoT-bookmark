@@ -1,0 +1,18 @@
+600.1.1={
+	law = succ_primogeniture
+	law = agnatic_succession
+}
+7994.1.1 = { holder=10559326 } # Qadir (nc)
+8017.1.1 = { holder=12559326 } # Shujah (nc)
+8050.1.1 = { holder=15559326 } # Jaleel (nc)
+8061.1.1 = { holder=18559326 } # Muzaffaraddin (nc)
+8094.1.1 = { holder=20559326 } # Abdullah (nc)
+8130.1.1 = { holder=24559326 } # Sadiq (nc)
+8155.1.1 = { holder=29559326 } # Bakr (nc)
+8162.1.1 = { holder=31559326 } # Ali_Ali (nc)
+8201.1.1 = { holder=32559326 } # Alim (nc)
+8251.1.1 = { holder=36559326 } # Khalil (nc)
+8253.1.1 = { holder=37559326 } # Wahab (nc)
+8287.1.1 = { holder=40559326 } # Halil (nc)
+
+

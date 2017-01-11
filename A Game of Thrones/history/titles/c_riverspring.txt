@@ -1,0 +1,45 @@
+900.1.1={
+	liege="d_goldroad" # Made them the vassals of House peckledon rather than direct vassals of Tywin. It ruined the Lannister-Peckledon relationship.
+}
+7987.1.1={
+	holder=3122159
+}
+7998.6.6={
+	holder=3092159
+}
+8040.6.17={
+	holder=3082159
+}
+8065.1.1={
+	holder=3072159
+}
+8098.1.1={
+	holder=3062159
+}
+8119.1.1={
+	holder=3052159
+}
+8138.1.1={
+	holder=3032159
+}
+8159.5.11={
+	holder=3022159
+}
+8211.1.1={
+	holder=3012159
+}
+8226.1.1={
+	holder=3002159
+}
+8256.1.1={
+	holder=72159
+}
+8277.1.1={
+	holder=2159
+}
+8297.1.1={
+	holder=22159
+}
+8298.1.1={
+	holder=62159
+}

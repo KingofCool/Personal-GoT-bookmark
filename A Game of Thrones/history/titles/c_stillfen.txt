@@ -1,0 +1,40 @@
+7600.1.1={
+	liege="e_riverlands"
+	law = succ_primogeniture
+}
+7988.1.1={
+	holder=14131
+}
+7998.2.1={
+	liege="k_riverlands"
+}
+8005.1.1={
+	holder=13131
+}
+8012.1.1={
+	holder=12131
+}
+8055.1.1={
+	holder=11131
+}
+8064.1.1={
+	holder=15131
+}
+8114.1.1={
+	holder=8131
+}
+8122.1.1={
+	holder=7131
+}
+8166.1.1={
+	holder=6131
+}
+8181.1.1={
+	holder=5131
+}
+8222.1.1={
+	holder=4131
+}
+8271.1.1={
+	holder=131
+}

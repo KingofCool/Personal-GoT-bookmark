@@ -1,0 +1,24 @@
+900.1.1={ 
+	liege="c_norvos"
+}
+7955.1.1 = { holder=100300561 } # Gyloro (nc)
+8003.1.1 = { holder=100300531 } # Ezzelyno (nc)
+8018.1.1 = { holder=100300522 } # Roggo (nc)
+8021.1.1 = { holder=104300561 } # Myrmello (nc)
+8030.1.1 = { holder=108300561 } # Meralyn (nc)
+8060.1.1 = { holder=111300561 } # Syrio (nc)
+8089.1.1 = { holder=107300562 } # Narbo (nc)
+8091.1.1 = { holder=110300562 } # Allaquo (nc)
+8097.1.1 = { holder=113300531 } # Daario (nc)
+8110.1.1 = { holder=116300531 } # Tagganaro (nc)
+8129.1.1 = { holder=118300531 } # Yorko (nc)
+8142.1.1 = { holder=122300531 } # Gyleno (nc)
+8179.1.1 = { holder=124300563 } # Narbo (nc)
+8191.1.1 = { holder=129300522 } # Myrmello (nc)
+8231.1.1 = { holder=127300563 } # Orbelo (nc)
+8244.1.1 = { holder=132300531 } # Cossomo (nc)
+8274.1.1 = { holder=134300531 } # Gyloro (nc)
+8297.1.1 = { holder=135300561 } # Tormo (nc)
+8299.1.1 = { holder=138300561 } # Luco (nc)
+
+

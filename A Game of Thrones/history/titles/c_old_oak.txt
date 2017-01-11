@@ -1,0 +1,49 @@
+#NOTE: The holder of this title has the House Oakheart dynasty tracker set in roberts_rebellion_events
+1.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="d_northmarch"
+}
+22.1.1={holder=60800237} # John the Oak (C)
+75.1.1={holder=0}
+7880.1.1={holder=60130237} # Alder (nc)
+7907.1.1={holder=60120237} # Filbert (nc)
+7988.1.1={holder=60110237} # Aspen (nc)
+7988.2.1={holder=60000237} # Linden (nc)
+
+8003.1.1={
+	holder=24237
+}
+8012.1.1={
+	liege="d_ocean_road" #Osgreys fall in prominence
+}
+8012.8.1 = {
+	holder=23237
+}
+8076.1.1={
+	holder=21237
+}
+8102.1.1={
+	holder=20237
+}
+8129.1.1={
+	holder=16237
+}
+8164.1.1={
+	holder=15237
+}
+8178.1.1={
+	holder=14237
+}
+8196.1.1={
+	holder=11237
+}
+8235.1.1={
+	holder=10237
+}
+8272.1.1={
+	holder=237
+}
+
+
+
+
+

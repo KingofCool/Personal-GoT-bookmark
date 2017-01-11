@@ -1,0 +1,22 @@
+# 749 - Death Isle
+
+# County Title
+title = c_deathisle
+
+# Settlements
+max_settlements = 2
+
+b_deathisle = castle
+b_deathisletown = city
+
+# Misc
+culture = basilisk_islander
+religion = corsair
+
+# History
+6000.1.1 = {
+	b_deathisle = ca_asoiaf_pirateshipyard
+	
+	b_deathisletown = ct_asoiaf_summerisland_basevalue_1
+	b_deathisletown = ct_asoiaf_summerisland_basevalue_2
+}

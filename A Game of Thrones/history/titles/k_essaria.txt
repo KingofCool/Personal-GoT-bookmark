@@ -1,0 +1,7 @@
+5000.1.1 = {
+	historical_nomad = yes
+	law = slavery_2
+}
+7985.1.1 = { holder = 100600210 } #Khal temmo
+7999.1.1 = { holder = 0 }
+8290.1.1 = { holder=101600206 } #Zekko Canon

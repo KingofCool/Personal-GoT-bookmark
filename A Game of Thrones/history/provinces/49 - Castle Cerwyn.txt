@@ -1,0 +1,29 @@
+# 49 - Castle Cerwyn
+
+# County Title
+title = c_castlecerwyn
+
+# Settlements
+max_settlements = 2
+b_castlecerwyn = castle
+b_theeagletower = castle
+
+# Misc
+culture = northman
+religion = old_gods
+
+# History
+
+6000.1.1 = {
+	b_castlecerwyn = ca_asoiaf_north_basevalue_1
+	b_castlecerwyn = ca_asoiaf_north_basevalue_2
+	b_castlecerwyn = ca_asoiaf_north_basevalue_3
+}
+
+7000.1.1 = {
+    b_theeagletower = ca_asoiaf_north_basevalue_1
+	b_theeagletower = ca_asoiaf_north_basevalue_2
+}	
+8070.1.1 = { #Jaehaerys constructs road network
+	b_castlecerwyn = ca_kingsroad
+}

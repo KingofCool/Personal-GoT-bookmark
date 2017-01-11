@@ -1,0 +1,28 @@
+
+
+# County Title
+title = c_norcross
+
+# Settlements
+max_settlements = 4
+b_rush_hall = castle
+b_norcross = city
+
+#b_paston = city
+#b_watch_hill = castle
+
+
+
+# Misc
+culture = reachman
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_rush_hall = ca_asoiaf_reach_basevalue_1
+}
+6000.1.1 = {
+	b_norcross = ct_asoiaf_reach_basevalue_1
+	b_norcross = ct_asoiaf_reach_basevalue_2
+
+}

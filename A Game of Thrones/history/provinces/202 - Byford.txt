@@ -1,0 +1,34 @@
+# 202 - Byford
+
+# County Title
+title = c_byford
+
+# Settlements
+max_settlements = 4
+b_byford = castle
+b_alagon = city
+b_byford_sept = temple
+
+#b_eridell = castle
+#b_janacre = city
+
+# Misc
+culture=riverlander
+religion = the_seven
+
+# History
+
+1066.1.1 = {
+
+	b_byford = ca_asoiaf_crown_basevalue_1
+	b_byford = ca_asoiaf_crown_basevalue_2
+	b_byford = ca_asoiaf_crown_basevalue_3
+
+
+	b_alagon = ct_asoiaf_crown_basevalue_1
+	b_alagon = ct_asoiaf_crown_basevalue_2
+
+}
+8070.1.1 = { #Jaehaerys constructs road network
+	b_byford = ca_goldroad
+}

@@ -1,0 +1,21 @@
+#House Banho
+7964.1.1 = { 
+	holder=100304014 
+	liege=d_red_flower_vale
+	law = succ_seniority
+	law = cognatic_succession
+} # Manahuru (nc)
+8002.1.1 = { holder=102304014 } # Udo (nc)
+8026.1.1 = { holder=105304014 } # Delmabhar (nc)
+8053.1.1 = { holder=107304014 } # Isingodo (nc)
+8072.1.1 = { holder=112304014 } # Chibundo (nc)
+8083.1.1 = { holder=113304014 } # Lusaxharo (nc)
+8110.1.1 = { holder=118304014 } # Sango (nc)
+8134.1.1 = { holder=120304014 } # Makhan (nc)
+8150.1.1 = { holder=122304014 } # Chibundo (nc)
+8178.1.1 = { holder=125304014 } # Anyim (nc)
+8221.1.1 = { holder=127304014 } # Chibundo (nc)
+8245.1.1 = { holder=131304014 } # Isingodo (nc)
+8257.1.1 = { holder=132304014 } # Makhan (nc)
+8272.1.1 = { holder=134304014 } # Bapato (nc)
+

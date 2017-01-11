@@ -1,0 +1,15 @@
+600.1.1={
+	law = succ_primogeniture
+	law = agnatic_succession
+}
+7985.1.1 = { holder=100570110 } # Doniphos (nc)
+8026.1.1 = { holder=101570110 } # Aelix (nc)
+8030.1.1 = { holder=102570110 } # Alios (nc)
+8062.1.1 = { holder=106570110 } # Matarys (nc)
+8087.1.1 = { holder=110570110 } # Vaeron (nc)
+8109.1.1 = { holder=113570110 } # Aenar (nc)
+8131.1.1 = { holder=114570110 } # Daegar (nc)
+8157.1.1 = { holder=116570110 } # Qoherys (nc)
+8204.1.1 = { holder=120570110 } # Vaekar (nc)
+8226.1.1 = { holder=126570110 } # Parquello (nc)
+8260.1.1 = { holder=127570110 } # Qavo (nc)

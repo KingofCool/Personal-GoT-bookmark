@@ -1,0 +1,17 @@
+7000.1.1 = {
+	liege = d_norvos
+}
+7974.1.1 = { holder=100300522 } # Roggo (nc)
+8021.1.1 = { holder=101300522 } # Gyloro (nc)
+8026.1.1 = { holder=103300522 } # Terro (nc)
+8072.1.1 = { holder=105300522 } # Byan (nc)
+8092.1.1 = { holder=106300522 } # Ordello (nc)
+8095.1.1 = { holder=107300522 } # Ollo (nc)
+8107.1.1 = { holder=116300522 } # Terro (nc)
+8123.1.1 = { holder=119300522 } # Byan (nc)
+8169.1.1 = { holder=123300522 } # Moreo (nc)
+8177.1.1 = { holder=127300522 } # Noho (nc)
+8178.1.1 = { holder=129300522 } # Myrmello (nc)
+8231.1.1 = { holder=130300522 } # Lotho (nc)
+8245.1.1 = { holder=134300522 } # Ternesio (nc)
+8277.1.1 = { holder=139300522 } # Moredo (nc)

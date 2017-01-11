@@ -1,0 +1,22 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="c_duskendale"
+}
+8055.1.1 = { holder=100174804 } # Jon (nc)
+8075.1.1 = { holder=101174804 } # Otho (nc)
+8088.1.1 = { holder=102174804 } # Raymun (nc)
+8128.1.1 = { holder=103174804 } # Alyx (nc)
+8141.1.1 = { holder=105174804 } # Ronel (nc)
+8146.6.1 = { holder=106174804 } # Ellery (nc)
+8188.1.1 = { holder=107174804 } # Clarence (nc)
+8228.1.1 = { holder=108174804 } # Melwys (nc)
+8248.1.1 = { holder=109174804 } # Tytos (nc)
+8260.1.1 = { holder=110174804 } # Ryger (nc)
+8286.1.1 = { holder=111174804 } # Willis (nc)
+
+
+
+
+
+
+
+

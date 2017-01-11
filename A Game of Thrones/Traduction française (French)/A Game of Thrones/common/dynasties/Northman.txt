@@ -1,0 +1,730 @@
+800800 = {
+	name = Loupes
+	culture = northman
+}
+800801 = {
+	name = Orland
+	culture = northman
+}
+800802 = {
+	name = Algris
+	culture = northman
+}
+800803 = {
+	name = Grisfur
+	culture = northman
+}
+800804 = {
+	name = Holham
+	culture = northman
+}
+800805 = {
+	name = Thelly
+	culture = northman
+}
+800806 = {
+	name = Ryeporte
+	culture = northman
+}
+800807 = {
+	name = Hooton
+	culture = northman
+}
+800808 = {
+	name = Colwyn
+	culture = northman
+}
+800809 = {
+	name = Loom
+	culture = northman
+}
+800810 = {
+	name = Flinn
+	culture = northman
+}
+800811 = {
+	name = Gorrey
+	culture = northman
+}
+800812 = {
+	name = Glacemarche
+	culture = northman
+}
+800813 = {
+	name = Farrows
+	culture = northman
+}
+800814 = {
+	name = Linden
+	culture = northman
+}
+800815 = {
+	name = Gristir
+	culture = northman
+}
+800816 = {
+	name = Bordon
+	culture = northman
+}
+800817 = {
+	name = Pall
+	culture = northman
+}
+800818 = {
+	name = Peale
+	culture = northman
+}
+800819 = {
+	name = Rossell
+	culture = northman
+}
+800820 = {
+	name = Weale
+	culture = northman
+}
+800821 = {
+	name = Kedge
+	culture = northman
+}
+800822 = {
+	name = Sables
+	culture = northman
+}
+800823 = {
+	name = Nobley
+	culture = northman
+}
+800824 = {
+	name = Printemps
+	culture = northman
+}
+800825 = {
+	name = Terres
+	culture = northman
+}
+800826 = {
+	name = Corbarbre
+	culture = northman
+}
+800827 = {
+	name = Hatcher
+	culture = northman
+}
+800828 = {
+	name = Grisecastel
+	culture = northman
+}
+800829 = {
+	name = Tertrebourg
+	culture = northman
+}
+800830 = {
+	name = Osbryn
+	culture = northman
+}
+800831 = {
+	name = Graunce
+	culture = northman
+}
+800832 = {
+	name = Petits
+	culture = northman
+}
+800833 = {
+	name = Ryder
+	culture = northman
+}
+800834 = {
+	name = Verbois
+	culture = northman
+}
+800835 = {
+	name = Tours
+	culture = northman
+}
+800836 = {
+	name = Ambre
+	culture = northman
+}
+800837 = {
+	name = Gel
+	culture = northman
+}
+800838 = {
+	name = Degore
+	culture = northman
+}
+800839 = {
+	name = Boisfrêne
+	culture = northman
+}
+800840 = {
+	name = Holt
+	culture = northman
+}
+800841 = {
+	name = Long
+	culture = northman
+}
+800842 = {
+	name = Bonshommes
+	culture = northman
+}
+
+59 = {
+	name="Stark"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 41
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+63859 = {
+	name="Greystark"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 54
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	used_for_random = no
+	can_appear = no
+}
+60 = {
+	name="Cassel"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+61 = {
+	name="Cerwyn"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+62 = {
+	name="Glover"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 10
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+63 = {
+	name="Prinksett"
+	culture = northman
+}
+65 = {
+	name="Garrew"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 45
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+
+68 = {
+	name="Ryswell"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 30
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+69 = {
+	name="Stout"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 33
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+70 = {
+	name="Whitehill"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 38
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+71 = {
+	name="Ardoise"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 31
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+
+76 = {
+	name = "Hayes"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 46
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+
+79 = {
+	name="Dustin"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+81 = {
+	name="Puits"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 37
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+82 = {
+	name="Woolfield"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 39
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+83 = {
+	name="Corbois"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 12
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+84 = {
+	name="Flint"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+85 = {
+	name="Overton"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 27
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+86 = {
+	name="Mollen"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 23
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+87 = {
+	name="Bolton"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+88 = {
+	name="Locke"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 19
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+89 = {
+	name="Karstark"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 14
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+90 = {
+	name="Batelier"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 36
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+91 = {
+	name="Piéléger"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 18
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+93 = {
+	name="Omble"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 35
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+94 = {
+	name="Lac"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 16
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+95 = {
+	name="Poole"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 28
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+101 = {
+	name="Tallhart"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 34
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+102 = {
+	name="Mormont"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 24
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+
+350 = {
+	name="Ferronnier"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 13
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+351 = {
+	name="Cardon"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1443 = {
+	name="Forestier"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 44
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1444 = {
+	name="Bosc"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 48
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1445 = {
+	name="Branche"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 43
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1446 = {
+	name="Souche"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 42
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+
+1452 = {
+	name="Draupaud"
+	culture = northman
+}
+1872 = {
+	name="Tuttle"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 55
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1559 = {
+	name="Stark-Targaryen"
+	culture = northman
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 56
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	used_for_random = no
+	can_appear = no
+}

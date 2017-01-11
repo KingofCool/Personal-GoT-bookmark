@@ -1,0 +1,34 @@
+# 228 - Greensward
+
+# County Title
+title = c_greensward
+
+# Settlements
+max_settlements = 3
+b_greensward = castle
+b_belhedge = city
+
+#b_mormead = city
+#b_corcourt = castle
+
+
+# Misc
+culture = stormlander
+religion = the_seven
+
+# History
+
+1066.1.1 = {
+
+	b_greensward = ca_asoiaf_crown_basevalue_1
+	b_greensward = ca_asoiaf_crown_basevalue_2
+	b_greensward = ca_asoiaf_crown_basevalue_3
+
+
+	b_belhedge = ct_asoiaf_crown_basevalue_1
+	b_belhedge = ct_asoiaf_crown_basevalue_2
+
+}
+8070.1.1 = { #Jaehaerys constructs road network
+	b_greensward = ca_roseroad
+}

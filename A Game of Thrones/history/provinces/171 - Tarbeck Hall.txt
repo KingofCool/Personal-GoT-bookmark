@@ -1,0 +1,30 @@
+# 171 - tarbeck_hall
+
+# County Title
+title = c_tarbeck_hall
+
+# Settlements
+max_settlements = 4
+b_tarbeck_hall = castle
+b_tarbeck_halltown = city
+b_bramhope = castle
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {
+	b_tarbeck_hall = ca_asoiaf_westerland_basevalue_1
+	b_tarbeck_hall = ca_asoiaf_westerland_basevalue_2
+	b_tarbeck_hall = ca_asoiaf_westerland_basevalue_3
+
+	b_bramhope = ca_asoiaf_westerland_basevalue_1
+	b_bramhope = ca_asoiaf_westerland_basevalue_2
+}
+
+6000.1.1 = {b_tarbeck_halltown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_tarbeck_halltown = ct_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_tarbeck_halltown = ct_asoiaf_westerland_basevalue_3}
+#6000.1.1 = {b_tarbeck_halltown = ct_asoiaf_westerland_basevalue_4}

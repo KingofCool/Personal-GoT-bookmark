@@ -1,0 +1,36 @@
+# 333 - Skyreach
+
+# County Title
+title = c_skyreach
+
+# Settlements
+max_settlements = 5
+b_skyreach = castle
+b_redmile = city
+b_princespass_sept = temple
+b_blackpool = city
+#b_strawmarket = city
+#b_falconhand = castle
+
+# Misc
+culture = stone_dornish
+religion = the_seven
+terrain = mountain
+
+
+
+6000.1.1 = {
+	b_skyreach = ca_asoiaf_dorne_basevalue_1
+	b_skyreach = ca_asoiaf_dorne_basevalue_2
+	b_skyreach = ca_asoiaf_dorne_basevalue_3
+}
+
+6000.1.1 = {
+	b_redmile = ct_asoiaf_dorne_basevalue_1
+	b_redmile = ct_asoiaf_dorne_basevalue_2
+	b_redmile = ct_asoiaf_dorne_basevalue_3
+}
+
+6000.1.1 = {
+	b_blackpool = ct_asoiaf_dorne_basevalue_1
+}

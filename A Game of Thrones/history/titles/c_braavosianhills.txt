@@ -1,0 +1,15 @@
+600.1.1={	liege="k_braavos"}
+7926.1.1 = { holder=152300004 } #  (nc)7970.1.1 = { holder=153300004 } # (nc)
+7989.1.1 = { holder=100300004 } # Ternesio (nc)
+8032.1.1 = { holder=101300004 } # Denyo (nc)
+8043.1.1 = { holder=104300004 } # Tagganaro (nc)
+8061.1.1 = { holder=105300004 } # Ferrego (nc)
+8079.1.1 = { holder=108300004 } # Denyo (nc)
+8103.1.1 = { holder=112300004 } # Roggo (nc)
+8140.1.1 = { holder=115300004 } # Terro (nc)
+8156.1.1 = { holder=118300004 } # Lotharo (C)
+8170.1.1 = { holder=120300004 } # Tormo (nc)
+8207.1.1 = { holder=123300004 } # Cossomo (nc)
+8221.1.1 = { holder=127300004 } # Gyleno (nc)
+8236.1.1 = { holder=130300004 } # Narbo (nc)
+8254.1.1 = { holder=134300004 } # Cossomo (nc)

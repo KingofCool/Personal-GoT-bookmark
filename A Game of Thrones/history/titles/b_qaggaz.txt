@@ -1,0 +1,19 @@
+900.1.1={ 
+	liege="k_yunkai"
+	holding_dynasty = 360023 # Qaggaz
+}
+
+7995.1.1 = { holder=150360023 } # Grazdhan (nc)
+8012.1.1 = { holder=100360023 } # Grazdan (nc)
+8036.1.1 = { holder=102360023 } # Marghaz (nc)
+8070.1.1 = { holder=106360023 } # Maezon (nc)
+8113.1.1 = { holder=110360023 } # Gazdhor (nc)
+8146.1.1 = { holder=112360023 } # Morghaz (nc)
+8158.1.1 = { holder=116360023 } # Yurkhaz (nc)
+8200.1.1 = { holder=121360023 } # Prendahl (nc)
+8203.1.1 = { holder=122360023 } # Azzak (nc)
+8221.1.1 = { holder=125360023 } # Kraznys (nc)
+8264.1.1 = { holder=126360023 } # Grazdhar (nc)
+8289.1.1={
+	holder=6571004 # Yezzan
+}

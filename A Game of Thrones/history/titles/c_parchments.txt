@@ -1,0 +1,15 @@
+202.1.1 = {liege="d_tarth"}
+
+7970.1.1 = { holder=300320 } # Criston Penrose (nc)
+8004.1.1 = { holder=301320 } # Humfrey Penrose (nc)
+8034.1.1 = { holder=305320 } # Brus Penrose (nc)
+8065.1.1 = { holder=306320 } # Joffrey Penrose (nc)
+8080.1.1 = { holder=307320 } # Arstan Penrose (nc)
+8085.1.1 = { holder=308320 } # Cortnay Penrose (nc)
+8119.1.1 = { holder=309320 } # Alesander Penrose (nc)
+8129.1.1 = { holder=312320 } # Durran Penrose (nc)
+8163.1.1 = { holder=313320 } # Ronald Penrose (nc)
+8173.1.1 = { holder=200320 } # Ronnel Penrose (C)
+8195.1.1 = { holder=204320 } # Robin Penrose (C)
+8221.1.1 = { holder=314320 } # Davos Penrose (nc)
+8262.1.1 = { holder=205320 } # Steffon Penrose (C)

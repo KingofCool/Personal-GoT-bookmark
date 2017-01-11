@@ -1,0 +1,24 @@
+# 396 - Drelyia
+
+# County Title
+title = c_drelyia
+
+# Settlements
+max_settlements = 3
+
+b_drelyia_castle = castle
+b_drelyia = city
+b_drelyia_temple = temple
+
+# Misc
+culture = myrman
+religion = rhllor
+
+# History
+6000.1.1 = {
+	b_drelyia_castle = ca_asoiaf_essos_basevalue_1
+	b_drelyia_castle = ca_asoiaf_essos_basevalue_2
+	
+	b_drelyia = ct_asoiaf_essos_basevalue_1
+	b_drelyia = ct_asoiaf_essos_basevalue_2
+}

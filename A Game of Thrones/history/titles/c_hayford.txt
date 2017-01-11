@@ -1,0 +1,26 @@
+7600.1.1={
+	liege="e_riverlands"
+	law = succ_primogeniture
+}
+7984.1.1 = { holder=6000032 } # Balman (nc)
+7998.2.1={
+	liege="d_kings_landing"
+}
+8023.1.1 = { holder=6000132 } # Danos (nc)
+8056.1.1 = { holder=6000532 } # Allard (nc)
+8114.1.1 = { holder=6000632 } # Lucos (nc)
+8130.1.1 = { holder=6000832 } # Danos (nc)
+8157.1.1 = { holder=6000932 } # Davos (nc)
+8164.1.1 = { holder=6001032 } # Clayton (C)
+8196.6.1 = { holder=6001432 } # Monford (nc)
+8211.1.1 = { holder=6001732 } # Perkin (nc)
+8232.1.1 = { holder=6001932 } # Triston (nc)
+8233.1.1 = { holder=6002032 } # Duram (nc)
+8269.1.1 = { holder=6002432 } # Perkin (nc)
+
+8291.1.1={
+	holder = 32 	#Loghain Hayford
+}
+8300.1.1={
+	holder = 932 	#Ermesande Hayford
+}

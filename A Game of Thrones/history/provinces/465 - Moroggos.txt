@@ -1,0 +1,24 @@
+# 465 - Morrogos
+
+# County Title
+title = c_morrogos
+
+# Settlements
+max_settlements = 3
+
+b_morrogoscastle = castle
+b_morrogos = city
+b_morrogostemple = temple
+
+# Misc
+culture = braavosi
+religion = moonsingers
+
+# History
+6000.1.1 = {
+	b_morrogos = ct_asoiaf_essos_basevalue_1
+	b_morrogos = ct_asoiaf_essos_basevalue_2
+
+	b_morrogoscastle = ca_asoiaf_essos_basevalue_1
+	b_morrogoscastle = ca_asoiaf_essos_basevalue_2
+}

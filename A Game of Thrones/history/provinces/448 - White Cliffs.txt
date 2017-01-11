@@ -1,0 +1,22 @@
+# 448 - White Cliffs
+
+# County Title
+title = c_whitecliffs
+
+# Settlements
+max_settlements = 3
+
+b_whitecliffs = city
+b_whitecliffscastle = castle
+b_whitecliffstemple = temple
+
+# Misc
+culture = lorathi
+religion = gods_lorath
+
+# History
+6000.1.1 = {
+	b_whitecliffs = ct_asoiaf_essos_basevalue_1
+	
+	b_whitecliffscastle = ca_asoiaf_essos_basevalue_1
+}

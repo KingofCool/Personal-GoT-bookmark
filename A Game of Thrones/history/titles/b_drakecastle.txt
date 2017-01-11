@@ -1,0 +1,15 @@
+800.1.1={
+    liege="c_rosby"
+       law = succ_primogeniture
+}
+
+7978.1.1 = { holder=60174413 } # Alyn (nc)
+8012.1.1 = { holder=43174413 } # Arryk (nc)
+8030.1.1 = { holder=46174413 } # Jon (nc)
+8073.1.1 = { holder=48174413 } # Justyn (nc)
+8099.1.1 = { holder=51174413 } # Erryk (nc)
+8131.1.1 = { holder=50174413 } # Alyn (nc)
+8144.1.1 = { holder=72174413 } # Willard (nc)
+8167.1.1 = { holder=74174413 } # Erryk (nc)
+8210.1.1 = { holder=77174413 } # Lucos (nc)
+8215.1.1 = { holder=79174413 } # Arryk (nc) # Last of his line

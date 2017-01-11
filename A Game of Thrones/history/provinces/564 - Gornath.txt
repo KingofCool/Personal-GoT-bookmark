@@ -1,0 +1,41 @@
+# 564 Vaes Leqse/Gornath
+
+# County Title
+title = c_gornath
+
+# Settlements
+max_settlements = 4
+
+b_gornath = castle
+b_gornath2 = city
+b_gornath3 = temple
+
+# Misc
+culture = sarnorian
+religion = gods_sarnor
+
+# History
+6000.1.1 = {
+	b_gornath = ca_asoiaf_sarnor_basevalue_1
+	b_gornath = ca_asoiaf_sarnor_basevalue_2
+	b_gornath = ca_asoiaf_sarnor_basevalue_3
+	b_gornath = ca_asoiaf_sarnor_basevalue_4
+	b_gornath = ca_asoiaf_sarnor_basevalue_5
+	
+	b_gornath2 = ct_asoiaf_sarnor_basevalue_1
+	b_gornath2 = ct_asoiaf_sarnor_basevalue_2
+	b_gornath2 = ct_asoiaf_sarnor_basevalue_3
+	b_gornath2 = ct_asoiaf_sarnor_basevalue_4
+	b_gornath2 = ct_asoiaf_sarnor_basevalue_5
+	b_gornath2 = ct_asoiaf_sarnor_basevalue_6
+}
+7948.1.1 = {
+	culture = dothraki
+	religion = dothraki_pagan
+	remove_settlement = b_gornath
+	#remove_settlement = b_gornath2
+	remove_settlement = b_gornath3
+	
+	b_gornath1 = tribal
+	capital = b_gornath1
+}

@@ -1,0 +1,19 @@
+600.1.1={
+	liege="k_meereen"
+}
+7995.1.1 = { holder=150360008 } # Skahaz (nc)
+8027.1.1 = { holder=100360008 } # Reznak (nc)
+8045.1.1 = { holder=101360008 } # Gorhaz (nc)
+8087.1.1 = { holder=105360008 } # Grazdan (nc)
+8128.1.1 = { holder=109360008 } # Reznak (nc)
+8145.1.1 = { holder=116360008 } # Gorzhak (nc)
+8171.1.1 = { holder=120360008 } # Haznak (nc)
+8204.1.1 = { holder=123360008 } # Mazdhak (nc)
+8233.1.1 = { holder=126360008 } # Marghaz (nc)
+8249.1.1 = { holder=129360008 } # Grazdan (nc)
+8279.1.1={
+	holder=16571012 # Reznak
+}
+8300.1.1={
+	liege="d_meereen"
+}

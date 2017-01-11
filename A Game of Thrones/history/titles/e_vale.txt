@@ -1,0 +1,45 @@
+2500.1.1={
+	law = succ_primogeniture
+	law = cognatic_succession
+	law = centralization_1
+	law = investiture_law_2
+	law = first_night_1
+}
+
+6537.1.1 = { holder=557187 } # Robar II Royce
+
+6539.1.1 = { holder=900178 }	#Artys I Arryn
+6563.1.1 = { holder=5060178 }	#Osric I
+6575.1.1 = { holder=5560178 }	#Alester I
+6586.1.1 = { holder=5061178 }	#Roland I
+6602.1.1 = { holder=550178 }	#Mathos I
+6616.1.1 = { holder=551178 }	#Osric II
+6634.1.1 = { holder=552178 }	#Roland II
+6639.1.1 = { holder=553178 }	#Robin
+
+6652.1.1 = { holder=557178 }	#Hugh
+6683.1.1 = { holder=559178 }	#Hugo
+6710.1.1 = { holder=560178 }	#Alester II
+6735.1.1 = { holder=561178 }	#Mathos II
+6761.1.1 = { holder=5161178 }	#Ronnel
+
+6789.1.1 = { holder=0 }
+
+
+7081.1.1 = { holder=554178 }	#Osric III
+7132.1.1 = { holder=555178 }	#Osric IV
+7146.1.1 = { holder=556178 }	#Osric V
+7167.1.1 = { holder=562178 }	#Osgood
+7220.1.1 = { holder=563178 }	#Oswin
+7229.1.1 = { holder=564178 }	#Oswell I
+
+
+7247.1.1 = { holder=0 }
+
+7910.1.1={ holder=214178 }	#Artys III
+7965.1.1={ holder=213178 }	#Oswell II
+7990.1.1={ holder=211178 }	#Robar
+7995.1.1={ holder=210178 }  #Ronnel Arryn - The Arryn that bent the knee. Last person to wear the Falcon Crown.
+7999.1.1 = { holder=0 }
+8058.1.1={ law = investiture_law_1 } #Conciliation
+8060.1.1={ law = first_night_0 } #First Night abolished

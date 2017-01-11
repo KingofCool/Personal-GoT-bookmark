@@ -1,0 +1,25 @@
+600.1.1={
+	liege="k_pentos"
+}
+7964.1.1 = { holder=100300012 } # Yorko (nc)
+8006.1.1 = { holder=100300526 } # Gyleno (nc)
+8015.1.1 = { holder=101300526 } # Jaqen (nc)
+8054.1.1 = { holder=102174360 } # Narbo (nc)
+8057.1.1 = { holder=104174366 } # Denyo (nc)
+8089.1.1 = { holder=109174360 } # Izembaro (nc)
+8094.1.1 = { holder=110174360 } # Ezzelyno (nc)
+8109.1.1 = { holder=112300012 } # Izembaro (nc)
+8128.1.1 = { holder=114300012 } # Denyo (nc)
+8130.1.1 = { holder=119300526 } # Izembaro (nc)
+8143.1.1 = { holder=114174366 } # Lotho (nc)
+8171.1.1 = { holder=116174366 } # Gyloro (nc)
+8175.1.1 = { holder=121174360 } # Izembaro (nc)
+8198.1.1 = { holder=125174366 } # Brusco (nc)
+8200.1.1 = { holder=126174356 } # Daario (nc)
+8212.1.1 = { holder=128174356 } # Noho (nc)
+8217.1.1 = { holder=130300012 } # Ordello (nc)
+8231.1.1 = { holder=132300012 } # Meralyn (nc)
+8240.1.1 = { holder=126174366 } # Ternesio (nc)
+8258.1.1 = { holder=129174366 } # Terro (nc)
+8285.1.1 = { holder=134174356 } # Ternesio (nc)
+8290.1.1={ holder=600000040 } # Illyrio

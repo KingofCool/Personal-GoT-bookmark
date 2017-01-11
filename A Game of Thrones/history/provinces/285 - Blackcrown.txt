@@ -1,0 +1,34 @@
+
+
+# County Title
+title = c_blackcrown
+
+# Settlements
+max_settlements = 5
+b_blackcrown = castle
+b_bullshead = city
+b_blackcrown_sept = temple
+b_seamer = city
+
+
+
+# Misc
+culture = reachman
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_blackcrown = ca_asoiaf_reach_basevalue_1
+	b_blackcrown = ca_asoiaf_reach_basevalue_2
+	b_blackcrown = ca_asoiaf_reach_basevalue_3
+}
+6000.1.1 = {
+	b_bullshead = ct_asoiaf_reach_basevalue_1
+	b_bullshead = ct_asoiaf_reach_basevalue_2
+
+
+}
+6000.1.1 = {
+	b_seamer = ct_asoiaf_reach_basevalue_1
+}
+

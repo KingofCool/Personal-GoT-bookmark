@@ -1,0 +1,23 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="c_cider_hall"
+}
+8162.1.1={
+	holder=88227
+}
+8219.1.1={
+	holder=88228
+}
+8235.1.1={
+	holder=88229
+}
+8273.1.1={
+	holder=88230
+}
+
+
+
+
+
+
+
+

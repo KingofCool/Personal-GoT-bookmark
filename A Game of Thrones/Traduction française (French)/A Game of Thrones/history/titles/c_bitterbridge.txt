@@ -1,0 +1,46 @@
+#NOTE: The holder of this title has the House Caswell dynasty tracker set in roberts_rebellion_events
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="e_reach"
+	name = c_stonebridge
+	effect = {
+		if = {
+			limit = { NOT = { year = 8050 } }
+			location = { set_name = "Pont-de-Pierre" }
+		}	
+	}
+}
+
+7956.1.1 = { holder=3000264 } # Robert (nc)
+7998.6.6={
+	liege="k_reach"
+}
+7999.1.1 = { holder=3001264 } # Mervyn (nc)
+8013.1.1 = { holder=3004264 } # Orton (nc)
+8042.1.1 = { holder=3008264 } # Lorent (nc)
+8050.1.1={ #Acquires current name after battle there
+	reset_name = yes 
+} 
+8068.1.1 = { holder=3011264 } # Mark (nc)
+8110.1.1 = { holder=3014264 } # Delena (nc)
+8129.11.2={ holder=3016264 } # Dontos (nc)
+8151.1.1 = { holder=3017264 } # Dickon (nc)
+
+8188.1.1={
+	holder=88294 #Armon (nc)
+}
+8207.1.1={
+	holder=88293 #Joffrey 
+}
+8242.1.1={
+	holder=88292 #Mathis (nc) 
+}
+8267.1.1={
+	holder=88036 #Desmind (nc)
+}
+8293.1.1={
+	holder=88037 #Lorent
+}
+
+
+
+

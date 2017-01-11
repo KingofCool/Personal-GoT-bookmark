@@ -1,0 +1,34 @@
+# 446 - Lorathi Shore
+
+# County Title
+title = c_lorathishore
+
+# Settlements
+max_settlements = 3
+
+b_lorathi_shore = city
+b_lorathi_shorecastle = castle
+b_lorathi_shoretemple = temple
+
+# Misc
+culture = lorathi
+religion = gods_lorath
+
+terrain = forest
+
+# History
+6000.1.1 = {
+	b_lorathi_shore = ct_asoiaf_essos_basevalue_1
+	b_lorathi_shore = ct_asoiaf_essos_basevalue_2
+	b_lorathi_shore = ct_asoiaf_essos_basevalue_3
+	b_lorathi_shore = ct_lorathi_maze
+
+	b_lorathi_shorecastle = ca_asoiaf_essos_basevalue_1
+	b_lorathi_shorecastle = ca_asoiaf_essos_basevalue_2
+	b_lorathi_shorecastle = ca_asoiaf_essos_basevalue_3
+	b_lorathi_shorecastle = ca_lorathi_maze
+	
+	b_lorathi_shoretemple = tp_lorathi_maze
+	
+	trade_post = b_lathtis
+}

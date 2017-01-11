@@ -1,0 +1,21 @@
+name = "Invasion du Nord par le Peuple Libre"
+
+casus_belli={
+	casus_belli=AGOT_invasion
+	actor=21359
+	recipient=77031
+	landed_title=e_iron_throne
+	date=8226.1.1
+}
+
+8226.1.1 = {
+	add_defender = 77031 #Maekar Targaryen
+	#add_defender = 20959 #Willam Stark
+	add_attacker = 21359 #Raymun Redbeard	
+}
+
+8226.9.9 = {
+	rem_attacker = 21359 #Raymun Redbeard
+	#rem_defender = 20959 #Willam Stark
+	rem_defender = 77031 #Maekar Targaryen
+}                                                                                                                                                                                                                                                                                                                

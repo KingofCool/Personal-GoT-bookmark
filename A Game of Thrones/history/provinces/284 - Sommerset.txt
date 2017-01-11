@@ -1,0 +1,28 @@
+
+
+# County Title
+title = c_sommerset
+
+# Settlements
+max_settlements = 3
+b_sommerset = castle
+b_butcombe = city
+#b_roadwater = castle
+
+# Misc
+culture = reachman
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_sommerset = ca_asoiaf_reach_basevalue_1
+	b_sommerset  = ca_asoiaf_reach_basevalue_2
+	b_sommerset  = ca_asoiaf_reach_basevalue_3
+}
+6000.1.1 = {
+	b_butcombe = ct_asoiaf_reach_basevalue_1
+
+}
+8070.1.1 = { #Jaehaerys constructs road network
+	b_sommerset = ca_roseroad
+}

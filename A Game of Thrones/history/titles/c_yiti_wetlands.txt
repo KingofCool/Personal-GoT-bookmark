@@ -1,0 +1,19 @@
+600.1.1={
+	liege="d_linqi_jungle"
+}
+7995.1.1 = { holder=10069113 } # Yusuf (nc)
+8024.1.1 = { holder=10169113 } # Sadiq (nc)
+8035.1.1 = { holder=10469113 } # Mirza (nc)
+8049.1.1 = { holder=10769113 } # Burhanaddin (nc)
+8084.1.1 = { holder=11069113 } # Muzaffaraddin (nc)
+8088.1.1 = { holder=11169113 } # Hasan_Hasan (nc)
+8120.1.1 = { holder=11469113 } # Uways (nc)
+8164.1.1 = { holder=11669113 } # Shamir (nc)
+8178.1.1 = { holder=12069113 } # Yahya (nc)
+8194.1.1 = { holder=12469113 } # Hussayn (nc)
+8205.1.1 = { holder=12769113 } # Mukhtar (nc)
+8220.1.1 = { holder=13069113 } # Yahya (nc)
+8237.1.1 = { holder=13369113 } # Sami (nc)
+8287.1.1 = { holder=13569113 } # Khaireddin (nc)
+
+

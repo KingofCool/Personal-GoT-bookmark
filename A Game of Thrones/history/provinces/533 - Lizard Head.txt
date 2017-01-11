@@ -1,0 +1,20 @@
+# County Title
+title = c_lizard_head
+
+# Settlements
+max_settlements = 3
+b_iguanulo = castle
+b_lizardhole = city
+
+# Misc
+culture = summer_islander
+religion = summer_rel
+
+#History
+7000.1.1 = {
+	b_iguanulo = ca_asoiaf_summerisland_basevalue_1
+
+	b_lizardhole = ct_asoiaf_summerisland_basevalue_1
+	b_lizardhole = ct_asoiaf_summerisland_basevalue_2
+	
+}

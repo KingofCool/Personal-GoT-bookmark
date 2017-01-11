@@ -1,0 +1,24 @@
+# 614 - Worm River
+
+# County Title
+title = c_wormriver
+
+# Settlements
+max_settlements = 3
+
+b_wormriver = city
+b_wormrivercastle = castle
+b_wormrivertemple = temple
+
+# Misc
+culture = astapori
+religion = harpy
+
+6000.1.1 = {
+	b_wormriver = ct_asoiaf_ghiscari_basevalue_1
+	b_wormriver = ct_asoiaf_ghiscari_basevalue_2
+	b_wormriver = ct_asoiaf_ghiscari_basevalue_3
+	
+	b_wormrivercastle = ca_asoiaf_ghiscari_basevalue_1
+	b_wormrivercastle = ca_asoiaf_ghiscari_basevalue_2
+}

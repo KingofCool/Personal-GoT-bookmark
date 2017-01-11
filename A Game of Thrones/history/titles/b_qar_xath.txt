@@ -1,0 +1,18 @@
+900.1.1={ 
+	liege="d_spicers"
+	holding_dynasty = 350006
+}
+7996.1.1 = { holder=100350006 } # Sybassion (nc)
+8045.1.1 = { holder=101350006 } # Wullon (nc)
+8076.1.1 = { holder=107350006 } # Surindos (nc)
+8107.1.1 = { holder=110350006 } # Wullon (nc)
+8139.1.1 = { holder=111350006 } # Semython (nc)
+8153.1.1 = { holder=115350006 } # Sallor (nc)
+8191.1.1 = { holder=117350006 } # Gorys (nc)
+8209.1.1 = { holder=121350006 } # Gathril (nc)
+8216.1.1 = { holder=122350006 } # Navathos (nc)
+8235.1.1 = { holder=124350006 } # Urrathon (nc)
+8258.1.1 = { holder=129350006 } # Wendello (nc)
+8299.1.1 = { holder=133350006 } # Gorys (nc)
+
+

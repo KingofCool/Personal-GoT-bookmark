@@ -1,0 +1,22 @@
+# 743 - Skull Island
+
+# County Title
+title = c_skullisland
+
+# Settlements
+max_settlements = 2
+
+b_skullisland = castle
+b_skullislandtown = city
+
+# Misc
+culture = basilisk_islander
+religion = corsair
+
+# History
+6000.1.1 = {
+	b_skullisland = ca_asoiaf_pirateshipyard
+	
+	b_skullislandtown = ct_asoiaf_summerisland_basevalue_1
+	b_skullislandtown = ct_asoiaf_summerisland_basevalue_2
+}

@@ -1,0 +1,20 @@
+7240.1.1={
+	liege="d_ghosthills"
+	law = true_cognatic_succession
+}
+
+7960.1.1 = { holder=35004 } # Castos (nc)
+7996.1.1 = { holder=35014 } # Cassana (nc)
+8007.1.1 = { holder=35024 } # Allar (nc)
+8012.1.1 = { holder=35074 } # Lewyn (nc)
+8051.1.1 = { holder=35114 } # Nymerios (nc)
+8080.1.1 = { holder=35124 } # Harmen (nc)
+8108.1.1 = { holder=35174 } # Doran (nc)
+8121.1.1 = { holder=35204 } # Marya (nc)
+8144.1.1 = { holder=35214 } # Ryon (nc)
+8160.7.4 = { holder=35224 } # Lythene (nc)
+8170.1.1 = { holder=35234 } # Liane (nc)
+8218.1.1 = { holder=35274 } # Lythene (nc)
+8254.1.1 = { holder=35294 } # Aron (nc)
+8259.2.8 = { holder=35334 } # Armen (nc)
+8279.3.2 = { holder=1004 } # Nymeria (c)

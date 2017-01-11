@@ -1,0 +1,29 @@
+# 134 - Darkmoor
+
+# County Title
+title = c_darkmoor
+
+# Settlements
+max_settlements = 3
+b_burning_heath = castle
+b_darkmoor = city
+#b_timmeton = city
+
+# Misc
+culture = moon_clansman
+religion = the_seven
+
+#History
+
+6000.1.1 = {
+	b_burning_heath = ca_asoiaf_vale_basevalue_1
+	b_burning_heath = ca_asoiaf_vale_basevalue_2
+	b_burning_heath = ca_asoiaf_vale_basevalue_3
+	
+	b_darkmoor = ct_asoiaf_vale_basevalue_1
+	b_darkmoor = ct_asoiaf_vale_basevalue_2
+	b_darkmoor = ct_asoiaf_vale_basevalue_3
+}
+8070.1.1 = { #Jaehaerys constructs road network
+	b_burning_heath = ca_high_road
+}

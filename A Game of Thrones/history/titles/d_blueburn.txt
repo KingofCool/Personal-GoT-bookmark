@@ -1,0 +1,32 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="e_reach"
+}
+7964.1.1 = { holder=3000270 } # Androw (nc)
+7998.6.6={
+	liege="k_reach"
+}
+8000.1.1 = { holder=3001270 } # Canther (nc)
+8016.1.1 = { holder=3006270 } # Luthor (nc)
+8041.1.1 = { holder=3008270 } # Desmond (nc)
+8082.1.1 = { holder=3009270 } # Raymon (nc)
+8088.1.1 = { holder=3016270 } # Theodore (nc)
+8096.1.1 = { holder=3014270 } # Leonette (nc)
+8143.1.1 = { holder=3017270 } # Alerie (nc)
+8145.1.1 = { holder=3020270 } # Edgerran (nc)
+8176.1.1 = { holder=3024270 } # Eustace (nc)
+8193.1.1 = { holder=3026270 } # Omer (nc)
+8223.1.1 = { holder=3031270 } # Tristram (nc)
+
+8248.1.1={
+	holder=88031 #Medwick (nc)
+}
+8295.10.10={
+	holder=1270 #Elwood
+}
+8299.7.1={
+	liege = 0
+}
+
+
+
+

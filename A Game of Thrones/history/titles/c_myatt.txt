@@ -1,0 +1,16 @@
+#c_myatt
+900.1.1={
+	liege="d_silverhill"
+}
+7990.1.1 = { holder=300215 } # Robert (nc)
+8028.1.1 = { holder=302215 } # Garrison (nc)
+8066.1.1 = { holder=307215 } # Lyle (nc)
+8087.1.1 = { holder=309215 } # Jon (nc)
+8116.1.1 = { holder=310215 } # Polliver (nc)
+8122.1.1 = { holder=313215 } # Damion (nc)
+8141.1.1 = { holder=320215 } # Antario (nc)
+8182.1.1 = { holder=323215 } # Dennis (nc)
+8211.1.1 = { holder=324215 } # Terrence (nc)
+8244.1.1 = { holder=327215 } # Antario (nc)
+8259.1.1 = { holder=329215 } # Gawen (nc)
+8270.1.1 = {holder=215}

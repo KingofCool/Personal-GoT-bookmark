@@ -1,0 +1,18 @@
+# 121 - Pebble
+
+# County Title
+title = c_pebble
+
+# Settlements
+max_settlements = 1
+b_pebb = castle
+
+# Misc
+culture = valeman
+religion = the_seven
+
+#History
+
+6000.1.1 = {
+	b_pebb = ca_asoiaf_vale_basevalue_1
+}

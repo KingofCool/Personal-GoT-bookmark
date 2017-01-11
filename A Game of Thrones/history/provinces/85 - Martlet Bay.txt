@@ -1,0 +1,33 @@
+# 85 - Martlet Bay
+
+# County Title
+title = c_martletbay
+
+# Settlements
+max_settlements = 4
+
+b_martletnest = castle
+b_martlethill = city
+b_silversprings = city
+
+# Misc
+culture = riverlander
+religion = the_seven
+
+# History
+
+6000.1.1 = {
+
+b_martletnest = ca_asoiaf_river_basevalue_1
+b_martletnest = ca_asoiaf_river_basevalue_2
+b_martletnest = ca_asoiaf_river_basevalue_3
+#b_martletnest = ca_asoiaf_river_basevalue_4
+
+
+b_martlethill = ct_asoiaf_river_basevalue_1
+b_martlethill = ct_asoiaf_river_basevalue_2
+
+b_silversprings = ct_asoiaf_river_basevalue_1
+b_silversprings = ct_asoiaf_river_basevalue_2
+
+}

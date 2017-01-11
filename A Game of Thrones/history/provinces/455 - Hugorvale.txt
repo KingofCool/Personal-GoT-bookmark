@@ -1,0 +1,25 @@
+# 455 - Hugorvale
+
+# County Title
+title = c_hugorvale
+
+# Settlements
+max_settlements = 3
+
+b_hugorvale1 = castle
+b_hugorvale2 = city
+b_hugorvale3 = temple
+
+# Misc
+culture = norvosi
+religion = bearded_priests
+
+terrain = valyrianroad
+
+# History
+6000.1.1 = {
+	b_hugorvale1 = ca_asoiaf_essos_basevalue_1
+	b_hugorvale1 = ca_asoiaf_essos_basevalue_2
+	
+	b_hugorvale2 = ct_asoiaf_essos_basevalue_1
+}

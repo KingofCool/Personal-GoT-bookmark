@@ -1,0 +1,29 @@
+# 172 - Thurrock
+
+# County Title
+title = c_thurrock
+
+# Settlements
+max_settlements = 4
+b_thurrock = castle
+b_thurrocktown = city
+#b_thurrocktowntwo = city
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_thurrock = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_thurrock = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_thurrock = ca_asoiaf_westerland_basevalue_3}
+#6000.1.1 = {b_thurrock = ca_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_thurrocktown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_thurrocktown = ct_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_thurrocktown = ct_asoiaf_westerland_basevalue_3}
+
+#6000.1.1 = {b_thurrocktowntwo = ct_asoiaf_westerland_basevalue_1}
+#6000.1.1 = {b_thurrocktowntwo = ct_asoiaf_westerland_basevalue_2}
+#6000.1.1 = {b_thurrocktowntwo = ct_asoiaf_westerland_basevalue_3}

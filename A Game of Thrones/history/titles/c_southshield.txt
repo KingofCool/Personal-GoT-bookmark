@@ -1,0 +1,26 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="e_reach"
+}
+7985.1.1 = { holder=3000276 } # Renly (nc)
+7998.6.6={
+	liege="k_reach"
+}
+8000.6.6 = { holder=3001276 } # Cliffyrd (nc)
+8067.1.1 = { holder=3006276 } # Leyton (nc)
+8080.1.1 = { holder=3008276 } # Tommen (nc)
+8097.1.1 = { holder=3009276 } # Imry (nc)
+8127.1.1 = { holder=3015276 } # Jeffroy (sc)
+8146.1.1 = { holder=3019276 } # Justyn (sc)
+8193.1.1 = { holder=3022276 } # Audrik(sc)
+8207.1.1 = { holder=3023276 } # Anslem (nc)
+8256.1.1 = { holder=3025276 } # Dontos (nc)
+8261.1.1={
+	holder=88047 #Samwell (nc)
+}
+8274.1.1={
+	holder=276 #Osbert # (C)
+}
+
+
+
+

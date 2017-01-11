@@ -1,0 +1,56 @@
+7994.1.1={
+	holder=100344
+	law = succ_turkish_succession
+	law = agnatic_succession
+}
+8009.1.1={
+	holder=102344
+}
+8037.1.1={
+	holder=103344
+}
+8052.1.1={
+	holder=104344
+}
+8086.1.1={
+	holder=105344
+}
+8107.1.1={
+	holder=106344
+}
+8141.1.1={
+	holder=107344
+}
+8162.1.1={
+	holder=108344
+}
+8168.1.1={
+	holder=109344
+}
+8208.1.1={
+	holder=110344
+}
+8213.1.1={
+	liege="k_beyond_wall"
+}
+8226.9.9={
+	liege="0"
+}
+8228.1.1={
+	holder=111344
+}
+8255.1.1={
+	holder=112344
+}
+8276.1.1={
+	holder=174344
+}
+8298.1.1={
+	liege="k_beyond_wall"
+}
+8299.11.11={
+	holder=274344
+}
+8300.1.1={
+	holder=999000666
+}

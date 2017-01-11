@@ -1,0 +1,16 @@
+202.1.1 = {liege="d_wendwater"}
+
+
+
+7994.1.1 = { holder=300322 } # Dermot Rogers (nc)
+8014.1.1 = { holder=301322 } # Cortnay Rogers (nc)
+8029.1.1 = { holder=302322 } # Matthos Rogers (nc)
+8046.1.1 = { holder=304322 } # Alaric Rogers (nc)
+8063.1.1 = { holder=305322 } # Dermot Rogers (nc)
+8104.1.1 = { holder=306322 } # Alaric Rogers (nc)
+8137.1.1 = { holder=308322 } # Tymos Rogers (nc)
+8153.1.9 = { holder=309322 } # Arson "Storm" Rogers (sc)
+8167.1.1 = { holder=315322 } # Endron Rogers (nc)
+8188.1.1 = { holder=30010322 } # Byrce Rogers (nc)
+8225.1.1 = { holder=322322 } # Benedict Rogers
+8283.1.1 = { holder=328322 } # Alaric Rogers (nc)

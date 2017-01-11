@@ -1,0 +1,15 @@
+600.1.1={
+	liege="k_qarth"
+}
+
+7995.1.1 = { holder=100069162 } # Doniphos (nc)
+8036.1.1 = { holder=100169162 } # Meralyn (nc)
+8050.1.1 = { holder=100569162 } # Sybassion (nc)
+8076.1.1 = { holder=100669162 } # Pyat (nc)
+8092.1.1 = { holder=101369162 } # Doniphos (nc)
+8153.1.1 = { holder=101569162 } # Vogarro (nc)
+8160.1.1 = { holder=101769162 } # Pyat (nc)
+8163.1.1 = { holder=101869162 } # Nyessos (nc)
+8191.1.1 = { holder=102569162 } # Regon (nc)
+8239.1.1 = { holder=102969162 } # Methyso (nc)
+8266.1.1 = { holder=103169162 } # Surindos (nc)

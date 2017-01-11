@@ -1,0 +1,19 @@
+# 128 - Midlor Point
+
+# County Title
+title = c_midlor_point
+
+# Settlements
+max_settlements = 2
+b_baelskeep = castle
+#b_midlor_town = city
+
+# Misc
+culture = valeman
+religion = the_seven
+
+#History
+
+6000.1.1 = {
+	b_baelskeep = ca_asoiaf_vale_basevalue_1
+}

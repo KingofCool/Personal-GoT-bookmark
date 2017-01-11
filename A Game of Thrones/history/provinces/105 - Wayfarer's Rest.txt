@@ -1,0 +1,35 @@
+# 105 - Wayfarer's Rest
+
+# County Title
+title = c_wayfarersrest
+
+# Settlements
+max_settlements = 4
+b_wayfarersrest = castle
+b_wayfarersrest2 = city
+b_wayfarersrest3 = city
+
+# Misc
+culture = riverlander
+religion = the_seven
+
+# History
+
+6000.1.1 = {
+
+
+b_wayfarersrest = ca_asoiaf_river_basevalue_1
+b_wayfarersrest = ca_asoiaf_river_basevalue_2
+b_wayfarersrest = ca_asoiaf_river_basevalue_3
+b_wayfarersrest = ca_asoiaf_river_basevalue_4
+
+b_wayfarersrest2 = ct_asoiaf_river_basevalue_1
+b_wayfarersrest2 = ct_asoiaf_river_basevalue_2
+b_wayfarersrest2 = ct_asoiaf_river_basevalue_3
+
+
+b_wayfarersrest3 = ct_asoiaf_river_basevalue_1
+b_wayfarersrest3 = ct_asoiaf_river_basevalue_2
+
+
+}

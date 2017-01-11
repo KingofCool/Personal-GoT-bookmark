@@ -1,0 +1,23 @@
+# 561 Vaes Athjikhari/Sallosh
+
+# County Title
+title = c_sallosh
+
+# Settlements
+max_settlements = 5
+
+b_sallosh = tribal
+b_sallosh1 = city
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+# History
+6000.1.1 = {
+	b_sallosh1 = ct_asoiaf_sarnor_basevalue_1
+	b_sallosh1 = ct_asoiaf_sarnor_basevalue_2
+	b_sallosh1 = ct_asoiaf_sarnor_basevalue_3
+	b_sallosh1 = ct_asoiaf_sarnor_basevalue_4
+	b_sallosh1 = ct_asoiaf_sarnor_basevalue_5
+}

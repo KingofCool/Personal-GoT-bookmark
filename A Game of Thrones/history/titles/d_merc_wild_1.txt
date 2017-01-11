@@ -1,0 +1,3 @@
+8280.1.1={
+	holder=574347 # Rattleshirt
+}

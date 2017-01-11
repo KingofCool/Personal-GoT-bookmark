@@ -1,0 +1,22 @@
+7600.1.1={
+	#liege="e_stormlands"
+	law = succ_primogeniture
+}
+7920.1.1={
+	#liege="e_iron_isles"
+}
+7960.1.1 = { holder=60001197 } # Ferret (nc)
+7998.2.1={
+	liege="e_iron_throne"
+}
+8010.1.1 = { holder=60011197 } # Gendry (nc)
+8032.1.1 = { holder=60101197 } # Duncan (nc)
+8037.1.1 = { holder=60111197 } # Gyles (nc)
+8080.1.1 = { holder=60121197 } # Clayton (nc)
+8102.1.1 = { holder=60191197 } # Triston (nc)
+8109.1.1 = { holder=60211197 } # Jaremy (nc)
+8160.1.1 = { holder=60221197 } # Belgrave (nc)
+8181.1.1 = { holder=60291197 } # Devan (nc)
+8203.1.1 = { holder=60311197 } # Clarence (nc)
+8240.1.1 = { holder=60331197 } # Wallace (nc)
+8269.1.1 = { holder=60361197 } # Lucifer (nc)

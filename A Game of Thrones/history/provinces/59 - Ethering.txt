@@ -1,0 +1,22 @@
+# 59 - Ethering
+
+# County Title
+title = c_ethering
+
+# Settlements
+max_settlements = 3
+b_ethersfort = castle
+#b_etherington = city
+#b_ethersgrove = temple
+
+# Misc
+culture = northman
+religion = old_gods
+
+# History
+
+6000.1.1 = {
+	b_ethersfort = ca_asoiaf_north_basevalue_1
+	b_ethersfort = ca_asoiaf_north_basevalue_2
+	#b_ethersfort = ca_asoiaf_north_basevalue_3
+}

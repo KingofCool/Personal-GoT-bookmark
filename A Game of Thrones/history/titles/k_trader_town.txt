@@ -1,0 +1,23 @@
+600.1.1={
+	liege="e_yi_ti"
+	law = succ_primogeniture
+	law = agnatic_succession
+	law = privilege_vassal_king
+	effect = {
+		add_law = privilege_vassal_king
+	}
+}
+7995.1.1 = { holder=10069166 } # Wahab (nc)
+8031.1.1 = { holder=10169166 } # Jabir (nc)
+8058.1.1 = { holder=10569166 } # Mukhtar (nc)
+8080.1.1 = { holder=10769166 } # Abdullah (nc)
+8131.1.1 = { holder=11069166 } # Halil (nc)
+8136.1.1 = { holder=11169166 } # Khaireddin (nc)
+8185.1.1 = { holder=11369166 } # Ubayd (nc)
+8191.1.1 = { holder=11769166 } # Hussayn (nc)
+8210.1.1 = { holder=11969166 } # Qawurd (nc)
+8265.1.1 = { holder=12269166 } # Azam (nc)
+8276.1.1 = { holder=12769166 } # Jalil (nc)
+8279.1.1 = { holder=13069166 } # Nizam (nc)
+
+

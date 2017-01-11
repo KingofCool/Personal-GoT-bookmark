@@ -1,0 +1,22 @@
+800.1.1={
+	liege="k_the_most_devout"
+}
+7990.1.1={
+	holder = 1000777
+}
+8022.1.1={
+	holder = 1001777 #hightower
+}
+8044.1.1={
+	holder = 1002777
+}
+8095.1.1 = { holder=1010777 } # a (nc)
+8102.1.1 = { holder=1011777 } # a (nc)
+8122.1.1 = { holder=1012777 } # a (nc)
+8158.1.1={
+	holder = 1003777
+}
+8165.1.1={
+	liege="c_oldtown"
+	holder= 0  
+}

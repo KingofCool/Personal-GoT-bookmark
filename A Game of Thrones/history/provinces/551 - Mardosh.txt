@@ -1,0 +1,23 @@
+# 551 - Mardosh
+
+# County Title
+title = c_mardosh
+
+# Settlements
+max_settlements = 4
+
+b_mardosh = tribal
+b_mardosh1 = city
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+# History
+6000.1.1 = {
+	b_mardosh1 = ct_asoiaf_sarnor_basevalue_1
+	b_mardosh1 = ct_asoiaf_sarnor_basevalue_2
+	b_mardosh1 = ct_asoiaf_sarnor_basevalue_3
+	b_mardosh1 = ct_asoiaf_sarnor_basevalue_4
+	b_mardosh1 = ct_asoiaf_sarnor_basevalue_5
+}

@@ -1,0 +1,19 @@
+#NOTE: The holder of this title has the House Dondarrion dynasty tracker set in roberts_rebellion_events
+202.1.1 = { liege="e_stormlands" }
+
+7994.1.1 = { holder = 300303 } # Alaric Dondarrion (nc)
+7998.2.27={
+	liege = k_stormlands
+}
+8006.1.1 = { holder = 301303 } # Donnel Dondarrion (nc)
+8043.1.1 = { holder = 302303 } # Harbert Dondarrion (nc)
+8069.1.1 = { holder = 303303 } # Galladon Dondarrion (nc)
+8086.1.1 = { holder = 304303 } # Maric Dondarrion (nc)
+8107.1.1 = { holder = 306303 } # Rickard Dondarrion (nc)
+8160.1.1 = { holder = 307303 } # Devan Dondarrion (nc)
+8176.1.1 = { holder = 200303 } # Lyonel Dondarrion (C)
+8212.1.1 = { holder = 201303 } # Manfred Dondarrion (C)
+8241.1.1 = { holder = 310303 } # Gulian Dondarrion (nc)
+8271.1.1 = { holder = 303 } # Edric Dondarrion (nc)
+8296.1.1 = { holder = 1303 } # Beric Dondarrion (C)
+8298.10.28={ holder = 2303 } 

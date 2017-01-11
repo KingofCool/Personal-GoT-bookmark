@@ -1,0 +1,27 @@
+
+
+# County Title
+title = c_dunnsbridge
+
+# Settlements
+max_settlements = 4
+b_mouthswatch = castle
+b_dunnsbridge = city
+#b_mandercross = city
+#b_rosemill = castle
+
+
+
+# Misc
+culture = reachman
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_mouthswatch  = ca_asoiaf_reach_basevalue_1
+}
+6000.1.1 = {
+	b_dunnsbridge = ct_asoiaf_reach_basevalue_1
+	b_dunnsbridge = ct_asoiaf_reach_basevalue_2
+
+}

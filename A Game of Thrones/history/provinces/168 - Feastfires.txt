@@ -1,0 +1,20 @@
+# 168 - Feastfires
+
+# County Title
+title = c_feastfires
+
+# Settlements
+max_settlements = 2
+b_feastfires = castle
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_feastfires = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_feastfires = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_feastfires = ca_asoiaf_westerland_basevalue_3}
+6000.1.1 = {b_feastfires = ca_asoiaf_westerland_basevalue_4}
+#6000.1.1 = {b_feastfires = ca_asoiaf_westerland_basevalue_5}

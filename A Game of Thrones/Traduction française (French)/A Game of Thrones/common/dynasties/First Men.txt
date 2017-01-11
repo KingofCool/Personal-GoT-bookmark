@@ -1,0 +1,46 @@
+#Vale
+881800 = {
+	name = Conque
+	culture = old_first_man
+}
+881801 = {
+	name = Clairpierre
+	culture = old_first_man
+}
+#Dornish
+881802 = {
+	name = Wade
+	culture = old_first_man
+}
+881803 = {
+	name = Conquet
+	culture = old_first_man
+}
+881804 = {
+	name = Holt
+	culture = old_first_man
+}
+881805 = {
+	name = Brook
+	culture = old_first_man
+}
+881806 = {
+	name = Carène
+	culture = old_first_man
+}
+881807 = {
+	name = Lacq
+	culture = old_first_man
+}
+881808 = {
+	name = Montbrun
+	culture = old_first_man
+}
+881809 = {
+	name = Roncier
+	culture = old_first_man
+}
+881810 = {
+	name = l'Etoile du Soir
+	culture = old_first_man
+}

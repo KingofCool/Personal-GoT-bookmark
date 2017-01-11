@@ -1,0 +1,18 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="c_kings_landing"
+}
+
+8001.1.1 = { holder=60001007 } # Triston (nc)
+8008.1.1 = { holder=60021007 } # Lothor (nc)
+8021.1.1 = { holder=60051007 } # Malcolm (nc)
+8042.1.1 = { holder=60081007 } # Allar (nc)
+8067.1.1 = { holder=60121007 } # Clarence (nc)
+8087.1.1 = { holder=60131007 } # Monford (nc)
+8108.1.1 = { holder=60181007 } # Gwayne (nc)
+8232.1.1={
+	holder=450000
+}
+
+
+
+

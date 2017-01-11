@@ -1,0 +1,17 @@
+600.1.1={
+	liege="d_faros"
+}
+
+7995.1.1 = { holder=100069164 } # Isa (nc)
+8032.1.1 = { holder=100169164 } # Uways (nc)
+8035.1.1 = { holder=100669164 } # Mirza (nc)
+8058.1.1 = { holder=101069164 } # Fadl (nc)
+8099.1.1 = { holder=101169164 } # Jibril (nc)
+8106.1.1 = { holder=101469164 } # Jalil (nc)
+8121.1.1 = { holder=102169164 } # Akin (nc)
+8170.1.1 = { holder=102369164 } # Qadir (nc)
+8179.1.1 = { holder=102469164 } # Husam (nc)
+8222.1.1 = { holder=102869164 } # Najib (nc)
+8231.1.1 = { holder=103269164 } # Aghlab (nc)
+8278.1.1 = { holder=103769164 } # Fadl (nc)
+

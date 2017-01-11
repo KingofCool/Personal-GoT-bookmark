@@ -1,0 +1,13 @@
+202.1.1 = {liege="d_cape_wrath"}
+
+7980.1.1 = { holder=300327 } # Endrew Mertyns (nc)
+8004.1.1 = { holder=301327 } # Galladon Mertyns (nc)
+8057.1.1 = { holder=302327 } # Barristan Mertyns (nc)
+8074.1.1 = { holder=303327 } # Jon Mertyns (nc)
+8091.1.1 = { holder=304327 } # Balon Mertyns (nc)
+8100.1.1 = { holder=305327 } # Arstan Mertyns (nc)
+8129.1.1 = { holder=306327 } # Andrew Mertyns (nc)
+8176.1.1 = { holder=307327 } # Endrew Mertyns (nc)
+8219.1.1 = { holder=309327 } # Brus Mertyns (nc)
+8266.1.1 = { holder=310327 } # Renly Mertyns (nc)
+8283.1.1 = { holder=311327 } # Herbert Mertyns (nc)

@@ -1,0 +1,22 @@
+# 159 - Stonetree
+
+# County Title
+title = c_stonetree
+
+# Settlements
+max_settlements = 2
+b_stonetree = castle
+
+#b_grey_cove
+
+
+# Misc
+culture = ironborn
+religion = drowned_god
+
+#History
+
+6000.1.1 = {b_stonetree = ca_asoiaf_ironislands_basevalue_1}
+6000.1.1 = {b_stonetree = ca_asoiaf_ironislands_basevalue_2}
+6000.1.1 = {b_stonetree = ca_asoiaf_ironislands_basevalue_3}
+6000.1.1 = {b_stonetree = ca_asoiaf_ironislands_basevalue_4}

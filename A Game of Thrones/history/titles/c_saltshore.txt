@@ -1,0 +1,23 @@
+
+7240.1.1={
+	liege="e_dorne"
+	law = true_cognatic_succession
+	law = succ_primogeniture
+}
+
+7994.1.1 = { holder=35007 } # Tremos (nc)
+8047.1.1 = { holder=35017 } # Quentyn (nc)
+8066.1.1 = { holder=35057 } # Alyse (nc)
+8069.1.1 = { holder=35067 } # Tremond (nc)
+8094.1.1 = { holder=35117 } # Arthur (nc)
+8137.1.1 = { holder=35127 } # Cerenna (nc)
+8143.1.1 = { holder=35167 } # Allyria (nc)
+
+# 8157.8.7 = {liege=d_vaith} #Dornish Conquest
+# 8160.1.4 = {liege=e_dorne} #Dornish Rebellion
+8187.6.1 = {liege="k_dorne"}
+
+8196.1.1 = { holder=35187 } # Daemon (nc)
+8241.1.1 = { holder=35217 } # Cerenna (nc)
+8244.1.1 = { holder=35257 } # Quentyn (nc)
+8245.1.1 = { holder=7 } # Tremond (c)

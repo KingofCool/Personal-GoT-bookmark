@@ -1,0 +1,19 @@
+7600.1.1={
+	liege="d_kingswood"
+	law = succ_primogeniture
+}
+7994.1.1 = { holder=3000022 } # Jaremy Blount (nc)
+7998.2.27 = {
+	liege="d_kingswood"
+}
+8001.1.1 = { holder=3002022 } # Barre Blount (nc)
+8041.1.1 = { holder=3003022 } # Oswell Blount (nc)
+8075.1.1 = { holder=3008022 } # Ollidor Blount (nc)
+8107.1.1 = { holder=3010022 } # Bennard Blount (nc)
+8138.1.1 = { holder=3012022 } # Boros Blount (nc)
+8167.1.1 = { holder=3014022 } # Balman Blount (nc)
+8216.1.1 = { holder=3015022 } # Duram Blount (nc)
+8229.1.1 = { holder=3020022 } # Arianne Blount (nc)
+8263.1.1 = { holder=3023022 } # Gyles Blount (nc)
+8266.1.1 = { holder=3022022 } # Cyrenna Blount (nc)
+8281.1.1 = { holder=2025022 } # Clayton Blount (nc)

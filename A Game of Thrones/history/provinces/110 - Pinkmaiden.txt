@@ -1,0 +1,34 @@
+# 110 - Pinkmaiden
+
+# County Title
+title = c_pinkmaiden
+
+# Settlements
+max_settlements = 6
+b_pinkmaidencastle = castle
+b_pinkmaidensept = temple
+b_broadfield = city
+b_ferrybridge = city
+b_brockhall= castle
+
+# Misc
+culture = riverlander
+religion = the_seven
+
+# History
+
+6000.1.1 = {
+
+b_pinkmaidencastle = ca_asoiaf_river_basevalue_1
+b_pinkmaidencastle = ca_asoiaf_river_basevalue_2
+b_pinkmaidencastle = ca_asoiaf_river_basevalue_3
+b_pinkmaidencastle = ca_asoiaf_river_basevalue_4
+
+b_broadfield = ct_asoiaf_river_basevalue_1
+b_broadfield = ct_asoiaf_river_basevalue_2
+b_broadfield = ct_asoiaf_river_basevalue_3
+
+b_ferrybridge = ct_asoiaf_river_basevalue_1
+
+b_brockhall = ca_asoiaf_river_basevalue_1
+}

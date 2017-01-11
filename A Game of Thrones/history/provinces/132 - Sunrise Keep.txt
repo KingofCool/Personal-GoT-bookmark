@@ -1,0 +1,27 @@
+# 132 - Sunset Keep
+
+# County Title
+title = c_sunset_keep
+
+# Settlements
+max_settlements = 4
+b_sunset_keep = castle
+b_moor_green = city
+b_sunset_keep_sept = temple
+#b_clifston = city
+
+# Misc
+culture = valeman
+religion = the_seven
+
+#History
+
+6000.1.1 = {
+	b_sunset_keep = ca_asoiaf_vale_basevalue_1
+	b_sunset_keep = ca_asoiaf_vale_basevalue_2
+	b_sunset_keep = ca_asoiaf_vale_basevalue_3
+	b_sunset_keep = ca_asoiaf_vale_basevalue_4
+	
+	b_moor_green = ct_asoiaf_vale_basevalue_1
+	b_moor_green = ct_asoiaf_vale_basevalue_2
+}

@@ -1,0 +1,29 @@
+# 344 - The Scourge
+
+# County Title
+title = c_thescourge
+
+# Settlements
+max_settlements = 4
+b_sunburst = castle
+b_cronetower = castle
+b_scourgeford = city
+#b_maidentower = castle
+#b_mothertower = castle
+
+# Misc
+culture = sand_dornish
+religion = the_seven
+terrain = desert
+
+6000.1.1 = {
+
+	b_sunburst = ca_asoiaf_dorne_basevalue_1
+	b_sunburst = ca_asoiaf_dorne_basevalue_2
+
+	b_cronetower = ca_asoiaf_dorne_basevalue_1
+
+	b_scourgeford = ct_asoiaf_dorne_basevalue_1
+
+
+}

@@ -1,0 +1,17 @@
+#c_drox_castle
+900.1.1={
+	liege="d_goldroad"
+}
+7992.1.1 = { holder=300198 } # Addison (nc)
+8013.1.1 = { holder=301198 } # Lester (nc)
+8020.1.1 = { holder=302198 } # Preston (nc)
+8036.1.1 = { holder=304198 } # Florian (nc)
+8077.1.1 = { holder=306198 } # Dunaver (nc)
+8087.1.1 = { holder=309198 } # Damon (nc)
+8111.1.1 = { holder=310198 } # Gerion (nc)
+8129.1.1 = { holder=311198 } # Jaime (nc)
+8179.1.1 = { holder=314198 } # Polliver (nc)
+8189.1.1 = { holder=319198 } # Dunsen (nc)
+8224.1.1 = { holder=321198 } # Lester (nc)
+8263.1.1 = { holder=323198 } # Tyford (nc)
+8282.1.1 = {holder=198}

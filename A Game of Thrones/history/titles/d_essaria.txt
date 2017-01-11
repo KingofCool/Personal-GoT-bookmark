@@ -1,0 +1,6 @@
+7985.1.1 = { holder = 100600210 liege = k_essaria } #Khal temmo
+7999.1.1 = { holder = 0 liege = 0 }
+8290.1.1 = { holder=101600206 liege = k_essaria } #Zekko Canon
+
+
+

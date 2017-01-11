@@ -1,0 +1,16 @@
+7000.1.1 = {liege="d_summerhall"}
+
+7994.1.1 = { holder=301304 } # Gulian Trant (nc)
+8029.1.1 = { holder=305304 } # Sebastion Trant (nc)
+8037.1.1 = { holder=311304 } # Pearse Trant (nc)
+8074.1.1 = { holder=312304 } # Florian Trant (nc)
+8089.1.1 = { holder=315304 } # Barristan Trant (nc)
+8124.1.1 = { holder=320304 } # Jon Trant (nc)
+8158.1.1 = { holder=324304 } # Rickard Trant (nc)
+8180.1.1 = {liege="k_stormlands"}
+8190.1.1 = { holder=327304 } # Bonifer Trant (nc)
+8215.1.1 = { holder=328304 } # Raymund Trant (nc)
+8251.1.1 = { holder=332304 } # Eldon Trant (nc)
+8277.1.1 = { holder=336304 } # Beric Trant (nc)
+8283.1.1 = { holder=342304 } # Goodwin Trant (nc)
+8299.7.1 = { liege = 0 }

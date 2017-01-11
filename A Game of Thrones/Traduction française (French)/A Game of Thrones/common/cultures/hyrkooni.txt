@@ -1,0 +1,236 @@
+hyrkoon_group = {
+	graphical_cultures = { mesoamericangfx } # portraits, units
+
+	hyrkooni = {
+		graphical_cultures = { bonemountainsgfx }
+		
+		color = { 0.95 0.35 0.3 } 
+		
+		male_names = {
+			Hyrkoon
+			
+			Aaro Ahvo Armas Auvo Antto Aslak Aulis
+			Dyrvid
+			Eero Elmeri Esko
+			Hyrkko Hyrno Hannu
+			Ikka Isko Iyvari
+			Jyri Jyrki Jarkko Juha Jouko
+			Kalevoon Kain Kari Kyosti
+			Lynnart
+			Markku Mykoon Myikku
+			Nyilo Nyyrikki
+			Oiva Orvo
+			Pyrkoon Pekko Pyrkko Panu
+			Ryku Raimo Raitis
+			Sakari Soini Saku Santtu
+			Taito Tero Tuukka Touko Tarvo
+			Usko Uljas
+			Veikko Voitto Valto
+		}
+		female_names = {
+			Aava Aulikki Aura Annukka Arja Aynikki Ayri
+			Elviira Esteri Eyni Eeva Eerika Erja
+			Fynni
+			Hylkka Hyrlli Hellevi Hyrnna Hyrkka
+			Inka Iyta Inkeri
+			Janika Jutta
+			Kyllikki Kyrtta Kynerva Kyira Kylli
+			Lyyti Lumikki Laimi Loviisa
+			Myrva Marjukka Maija Maila Minea Myrka
+			Nelli Naima Noora
+			Orvokki Onyrva 
+			Pyrkka Pilvi Pirja
+			Rauna Rykka Rytva Raisa
+			Sylvi Syrkka Syrpa Saima Sari Soila Suvi
+			Tyrtta Taava Tekla Tari
+		}
+		from_dynasty_prefix = "de "
+		
+		# Chance de male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance de female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+	
+	kayakayanayan = {
+		graphical_cultures = { bonemountainsgfx }
+		
+		color = { 0.95 0.35 0.3 } 
+		
+		male_names = {
+			Hyrkoon
+			
+			Aaro Ahvo Armas Auvo Antto Aslak Aulis
+			Dyrvid
+			Eero Elmeri Esko
+			Hyrkko Hyrno Hannu
+			Ikka Isko Iyvari
+			Jyri Jyrki Jarkko Juha Jouko
+			Kalevoon Kain Kari Kyosti
+			Lynnart
+			Markku Mykoon Myikku
+			Nyilo Nyyrikki
+			Oiva Orvo
+			Pyrkoon Pekko Pyrkko Panu
+			Ryku Raimo Raitis
+			Sakari Soini Saku Santtu
+			Taito Tero Tuukka Touko Tarvo
+			Usko Uljas
+			Veikko Voitto Valto
+		}
+		female_names = {
+			Aava Aulikki Aura Annukka Arja Aynikki Ayri
+			Elviira Esteri Eyni Eeva Eerika Erja
+			Fynni
+			Hylkka Hyrlli Hellevi Hyrnna Hyrkka
+			Inka Iyta Inkeri
+			Janika Jutta
+			Kyllikki Kyrtta Kynerva Kyira Kylli
+			Lyyti Lumikki Laimi Loviisa
+			Myrva Marjukka Maija Maila Minea Myrka
+			Nelli Naima Noora
+			Orvokki Onyrva 
+			Pyrkka Pilvi Pirja
+			Rauna Rykka Rytva Raisa
+			Sylvi Syrkka Syrpa Saima Sari Soila Suvi
+			Tyrtta Taava Tekla Tari
+		}
+		from_dynasty_prefix = "de "
+		
+		# Chance de male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance de female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+	
+	samyrianan = {
+		graphical_cultures = { bonemountainsgfx }
+		
+		color = { 0.9 0.55 0.34 } 
+		
+		male_names = {
+			Hyrkoon
+			
+			Aaro Ahvo Armas Auvo Antto Aslak Aulis
+			Dyrvid
+			Eero Elmeri Esko
+			Hyrkko Hyrno Hannu
+			Ikka Isko Iyvari
+			Jyri Jyrki Jarkko Juha Jouko
+			Kalevoon Kain Kari Kyosti
+			Lynnart
+			Markku Mykoon Myikku
+			Nyilo Nyyrikki
+			Oiva Orvo
+			Pyrkoon Pekko Pyrkko Panu
+			Ryku Raimo Raitis
+			Sakari Soini Saku Santtu
+			Taito Tero Tuukka Touko Tarvo
+			Usko Uljas
+			Veikko Voitto Valto
+		}
+		female_names = {
+			Aava Aulikki Aura Annukka Arja Aynikki Ayri
+			Elviira Esteri Eyni Eeva Eerika Erja
+			Fynni
+			Hylkka Hyrlli Hellevi Hyrnna Hyrkka
+			Inka Iyta Inkeri
+			Janika Jutta
+			Kyllikki Kyrtta Kynerva Kyira Kylli
+			Lyyti Lumikki Laimi Loviisa
+			Myrva Marjukka Maija Maila Minea Myrka
+			Nelli Naima Noora
+			Orvokki Onyrva 
+			Pyrkka Pilvi Pirja
+			Rauna Rykka Rytva Raisa
+			Sylvi Syrkka Syrpa Saima Sari Soila Suvi
+			Tyrtta Taava Tekla Tari
+		}
+		from_dynasty_prefix = "de "
+		
+		# Chance de male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance de female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+	
+	bayasabhadi = {
+		graphical_cultures = { bonemountainsgfx }
+		
+		color = { 0.87 0.75 0.38 } 
+		
+		male_names = {
+			Hyrkoon
+			
+			Aaro Ahvo Armas Auvo Antto Aslak Aulis
+			Dyrvid
+			Eero Elmeri Esko
+			Hyrkko Hyrno Hannu
+			Ikka Isko Iyvari
+			Jyri Jyrki Jarkko Juha Jouko
+			Kalevoon Kain Kari Kyosti
+			Lynnart
+			Markku Mykoon Myikku
+			Nyilo Nyyrikki
+			Oiva Orvo
+			Pyrkoon Pekko Pyrkko Panu
+			Ryku Raimo Raitis
+			Sakari Soini Saku Santtu
+			Taito Tero Tuukka Touko Tarvo
+			Usko Uljas
+			Veikko Voitto Valto
+		}
+		female_names = {
+			Aava Aulikki Aura Annukka Arja Aynikki Ayri
+			Elviira Esteri Eyni Eeva Eerika Erja
+			Fynni
+			Hylkka Hyrlli Hellevi Hyrnna Hyrkka
+			Inka Iyta Inkeri
+			Janika Jutta
+			Kyllikki Kyrtta Kynerva Kyira Kylli
+			Lyyti Lumikki Laimi Loviisa
+			Myrva Marjukka Maija Maila Minea Myrka
+			Nelli Naima Noora
+			Orvokki Onyrva 
+			Pyrkka Pilvi Pirja
+			Rauna Rykka Rytva Raisa
+			Sylvi Syrkka Syrpa Saima Sari Soila Suvi
+			Tyrtta Taava Tekla Tari
+		}
+		from_dynasty_prefix = "de "
+		
+		# Chance de male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance de female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+}
+

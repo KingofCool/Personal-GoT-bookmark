@@ -1,0 +1,34 @@
+# 1133 - Lorassyon
+
+# County Title
+title = c_lorassyon
+
+# Settlements
+max_settlements = 3
+
+b_lorassyon = castle
+b_lorassyon_city = city
+b_lorassyon_temple = temple
+
+# Misc
+culture = lorathi
+religion = gods_lorath
+
+# History
+6000.1.1 = {
+	b_lorassyon_city = ct_asoiaf_essos_basevalue_1
+	b_lorassyon_city = ct_asoiaf_essos_basevalue_2
+	b_lorassyon_city = ct_asoiaf_essos_basevalue_3
+	
+	b_lorassyon_city = ct_lorathi_maze
+}
+6000.1.1 = {
+	b_lorassyon = ca_asoiaf_essos_basevalue_1
+	b_lorassyon = ca_asoiaf_essos_basevalue_2
+	b_lorassyon = ca_asoiaf_essos_basevalue_3
+	
+	b_lorassyon = ca_lorathi_maze
+	
+	b_lorassyon_temple = tp_lorathi_maze
+}
+7355.1.1={ capital = b_lorassyon_city }

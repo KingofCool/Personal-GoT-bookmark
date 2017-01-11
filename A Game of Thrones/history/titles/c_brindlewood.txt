@@ -1,0 +1,19 @@
+800.1.1={
+	liege="d_duskendale"
+	law = succ_primogeniture
+}
+7985.1.1 = { holder=6000033 } # Donnel (nc)
+8030.1.1 = { holder=6000133 } # Janos (nc)
+8046.1.1 = { holder=6000333 } # Gendry (nc)
+8064.1.1 = { holder=6000433 } # Qarlton (nc)
+8102.1.1 = { holder=6000933 } # Dobber (nc)
+8108.1.1 = { holder=6001233 } # Jothos (nc)
+8143.1.1 = { holder=6001333 } # Rolland (nc)
+8179.1.1 = { holder=6001633 } # Duncan (nc)
+8196.1.1 = { holder=6001833 } # Clayton (nc)
+8225.1.1 = { holder=6001933 } # Donyse (nc)
+8244.1.1 = { holder=6002433 } # Boros (nc)
+8259.1.1 = { holder=6002733 } # Jarmen (nc)
+8282.1.1={
+	holder = 33 	#Elwood Harte
+}

@@ -1,0 +1,24 @@
+900.1.1={ 
+	liege="k_lys"
+	holding_dynasty = 55999 #Rogare
+}
+
+7970.1.1 = { holder=150300539 } # Nyessos (nc)
+8029.1.1 = { holder=100300539 } # Doniphos (nc)
+8075.1.1 = { holder=104300539 } # Orbelo (nc)
+8077.1.1 = { holder=106300539 } # Oro (nc)
+8115.1.1 = { holder=107300539 } # Gyleno (nc)
+8125.1.1 = { holder=108300539 } # Lysandro (C)
+8140.1.1 = { holder=110300539 } # Lysaro (C)
+8145.1.1 = { holder=112300539 } # Moredo (C)
+8165.1.1 = { holder=114300539 } # Orbelo (nc)
+8209.1.1 = { holder=119300539 } # Moreo (nc)
+8233.1.1 = { holder=120300539 } # Gyleno (nc)
+8252.1.1 = { holder=123300539 } # Orbelo (nc)
+8259.1.1={ liege="d_lys" } #Ninepenny king
+8260.1.1 = { holder=125300539 } # Byan (nc)
+8260.11.11 = { liege="k_lys" } 
+
+
+
+

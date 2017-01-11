@@ -1,0 +1,28 @@
+# 458 - Andal Coast
+
+# County Title
+title = c_andal_coast
+
+# Settlements
+max_settlements = 3
+
+b_andal_coast2 = castle
+b_andal_coast1 = city
+b_andal_coast3 = temple
+
+# Misc
+culture = braavosi
+religion = moonsingers
+
+terrain = plains
+
+# History
+6000.1.1 = {
+	b_andal_coast1 = ct_asoiaf_essos_basevalue_1
+	b_andal_coast1 = ct_asoiaf_essos_basevalue_2
+	b_andal_coast1 = ct_asoiaf_essos_basevalue_3
+	
+	b_andal_coast2 = ca_asoiaf_essos_basevalue_1
+	b_andal_coast2 = ca_asoiaf_essos_basevalue_2
+	b_andal_coast2 = ca_asoiaf_essos_basevalue_3
+}

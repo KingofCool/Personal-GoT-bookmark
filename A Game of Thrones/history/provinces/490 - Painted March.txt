@@ -1,0 +1,17 @@
+
+
+# County Title
+title = c_painted_march
+
+# Settlements
+max_settlements = 3
+
+b_painted_march = tribal
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+# History
+6000.1.1 = {
+}

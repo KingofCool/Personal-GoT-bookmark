@@ -1,0 +1,18 @@
+# 26 - Seal Shore
+
+# County Title
+title = c_sealshore
+
+# Settlements
+max_settlements = 2
+b_fisherhall = castle
+#b_wintrackpost = castle
+
+# Misc
+culture = northman
+religion = old_gods
+
+# History
+6000.1.1 = {
+	b_fisherhall = ca_asoiaf_north_basevalue_1
+}

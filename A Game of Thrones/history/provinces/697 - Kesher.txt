@@ -1,0 +1,17 @@
+# 697 - Rhaesh Hranna
+
+# County Title
+title = c_fields_sarnath
+
+# Settlements
+max_settlements = 3
+
+b_fields_sarnath = tribal
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+# History
+8298.10.10 = {
+}

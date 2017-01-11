@@ -1,0 +1,16 @@
+#c_thurrock
+900.1.1={liege="d_ashemark"}
+
+7980.1.1 = { holder=300218 } # Sebaston (nc)
+8000.6.6 = { holder=301218 } # Tyrion (nc)
+8023.1.1 = { holder=303218 } # Roland (nc)
+8062.1.1 = { holder=304218 } # Martyn (nc)
+8076.1.1 = { holder=305218 } # Dunaver (nc)
+8080.1.1 = { holder=306218 } # Daven (nc)
+8115.1.1 = { holder=310218 } # Mendel (nc)
+#8158.1.1 = { holder=312218 } # Humfrey (nc)
+8158.1.1 = { holder=315218 } # Roland (nc)
+8214.1.1 = { holder=320218 } # Harwyn (nc)
+8215.1.1 = { holder=321218 } # Damon (nc)
+8233.1.1 = { holder=323218 } # Raynald (nc)
+8259.2.8 = {holder=218}

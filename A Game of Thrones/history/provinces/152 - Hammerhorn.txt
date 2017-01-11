@@ -1,0 +1,34 @@
+# 152 - Hammerhorn
+
+# County Title
+title = c_hammerhorn
+
+# Settlements
+max_settlements = 3
+b_hammerhorn = castle
+b_hardstone_hill = castle
+b_galleywood = castle
+
+#b_hornhaven
+
+# Misc
+culture = ironborn
+religion = drowned_god
+
+#History
+
+6000.1.1 = {b_hammerhorn = ca_asoiaf_ironislands_basevalue_1}
+6000.1.1 = {b_hammerhorn = ca_asoiaf_ironislands_basevalue_2}
+6000.1.1 = {b_hammerhorn = ca_asoiaf_ironislands_basevalue_3}
+6000.1.1 = {b_hammerhorn = ca_asoiaf_ironislands_basevalue_4}
+6000.1.1 = {b_hammerhorn = ca_asoiaf_ironislands_basevalue_5}
+
+6000.1.1 = {b_hardstone_hill = ca_asoiaf_ironislands_basevalue_1}
+6000.1.1 = {b_hardstone_hill = ca_asoiaf_ironislands_basevalue_2}
+6000.1.1 = {b_hardstone_hill = ca_asoiaf_ironislands_basevalue_3}
+6000.1.1 = {b_hardstone_hill = ca_asoiaf_ironislands_basevalue_4}
+
+6000.1.1 = {b_galleywood = ca_asoiaf_ironislands_basevalue_1}
+6000.1.1 = {b_galleywood = ca_asoiaf_ironislands_basevalue_2}
+6000.1.1 = {b_galleywood = ca_asoiaf_ironislands_basevalue_3}
+6000.1.1 = {b_galleywood = ca_asoiaf_ironislands_basevalue_4}

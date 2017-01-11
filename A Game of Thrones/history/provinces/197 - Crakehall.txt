@@ -1,0 +1,42 @@
+# 197 - Crakehall
+
+# County Title
+title = c_crakehall
+
+# Settlement
+max_settlements = 6
+b_crakehall = castle
+b_crakehalltown = city
+b_crakehallsept = temple
+b_crakehalltowntwo = castle
+b_crakehalltownthree = city
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_crakehall = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_crakehall = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_crakehall = ca_asoiaf_westerland_basevalue_3}
+6000.1.1 = {b_crakehall = ca_asoiaf_westerland_basevalue_4}
+
+
+6000.1.1 = {b_crakehalltown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_crakehalltown = ct_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_crakehalltown = ct_asoiaf_westerland_basevalue_3}
+#6000.1.1 = {b_crakehalltown = ct_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_crakehalltowntwo = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_crakehalltowntwo = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_crakehalltowntwo = ca_asoiaf_westerland_basevalue_3}
+
+6000.1.1 = {b_crakehalltownthree = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_crakehalltownthree = ct_asoiaf_westerland_basevalue_2}
+
+8070.1.1 = { #Jaehaerys constructs road network
+	b_crakehall = ca_oceanroad
+}
+
+8260.5.4 = { b_crakehall = ca_asoiaf_westerland_basevalue_5}

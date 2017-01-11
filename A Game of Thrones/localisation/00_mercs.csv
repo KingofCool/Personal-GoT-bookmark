@@ -1,0 +1,98 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+d_merc_inf_1;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_merc_inf_2;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_merc_inf_3;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_merc_inf_4;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_merc_inf_5;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_merc_inf_6;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_merc_inf_7;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_merc_inf_8;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_merc_inf_9;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_merc_inf_10;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_merc_inf_11;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_merc_inf_12;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_merc_inf_13;Ironborn Raiders;Razzieurs Fer-nés;;;Incursores del Hierro;;;;;;;;;x
+d_merc_dornishspears_1;Dornish Spearmen;Piquiers Dorniens;;;Piqueros dornienses;;;;;;;;;x
+d_merc_dornishspears_2;Dornish Spearmen;Piquiers Dorniens;;;Piqueros dornienses;;;;;;;;;x
+d_merc_dornishspears_3;Dornish Spearmen;Piquiers Dorniens;;;Piqueros dornienses;;;;;;;;;x
+d_merc_dornishspears_4;Dornish Spearmen;Piquiers Dorniens;;;Piqueros dornienses;;;;;;;;;x
+d_merc_dornishspears_5;Dornish Spearmen;Piquiers Dorniens;;;Piqueros dornienses;;;;;;;;;x
+d_merc_dornishspears_6;Dornish Spearmen;Piquiers Dorniens;;;Piqueros dornienses;;;;;;;;;x
+d_merc_hedgeknight_1;Hedgeknights;Chevaliers Errants;;;Caballeros errantes;;;;;;;;;x
+d_merc_hedgeknight_2;Hedgeknights;Chevaliers Errants;;;Caballeros errantes;;;;;;;;;x
+d_merc_hedgeknight_3;Hedgeknights;Chevaliers Errants;;;Caballeros errantes;;;;;;;;;x
+d_merc_hedgeknight_4;Hedgeknights;Chevaliers Errants;;;Caballeros errantes;;;;;;;;;x
+d_merc_hedgeknight_5;Hedgeknights;Chevaliers Errants;;;Caballeros errantes;;;;;;;;;x
+d_merc_hedgeknight_6;Hedgeknights;Chevaliers Errants;;;Caballeros errantes;;;;;;;;;x
+d_merc_hedgeknight_7;Hedgeknights;Chevaliers Errants;;;Caballeros errantes;;;;;;;;;x
+d_merc_hedgeknight_8;Hedgeknights;Chevaliers Errants;;;Caballeros errantes;;;;;;;;;x
+d_merc_hedgeknight_9;Hedgeknights;Chevaliers Errants;;;Caballeros errantes;;;;;;;;;x
+d_merc_hedgeknight_10;Hedgeknights;Chevaliers Errants;;;Caballeros errantes;;;;;;;;;x
+d_merc_fleet_1;Sellsail Fleet;Flotte Mercenaire;;;Infantería mercenaria;;;;;;;;;x
+d_merc_fleet_2;Sellsail Fleet;Flotte Mercenaire;;;Infantería mercenaria;;;;;;;;;x
+d_merc_fleet_3;Sellsail Fleet;Flotte Mercenaire;;;Infantería mercenaria;;;;;;;;;x
+d_merc_fleet_4;Sellsail Fleet;Flotte Mercenaire;;;Infantería mercenaria;;;;;;;;;x
+d_merc_fleet_5;Sellsail Fleet;Flotte Mercenaire;;;Infantería mercenaria;;;;;;;;;x
+d_merc_fleet_6;Sellsail Fleet;Flotte Mercenaire;;;Infantería mercenaria;;;;;;;;;x
+d_merc_fleet_7;Sellsail Fleet;Flotte Mercenaire;;;Infantería mercenaria;;;;;;;;;x
+d_merc_fleet_8;Sellsail Fleet;Flotte Mercenaire;;;Infantería mercenaria;;;;;;;;;x
+d_merc_fleet_9;Sellsail Fleet;Flotte Mercenaire;;;Infantería mercenaria;;;;;;;;;x
+d_merc_fleet_10;Sellsail Fleet;Flotte Mercenaire;;;Infantería mercenaria;;;;;;;;;x
+CAPTAINGENERAL;Captain-General;Capitaine Général;;;Capitán General;;;;;;;;;x
+d_golden_company;The Golden Company;La Compagnie Dorée;;;La Compañía Dorada;;;;;;;;;x
+employ_golden_company;Try to Employ The Golden Company;Tenter d'engager la Compagnie Dorée;;;Intentar reclutar a la Compañía Dorada;;;;;;;;;x
+employ_golden_company_desc;Send your Master of Laws across the Narrow Sea to treat with the Golden Company and attempt to hire them. The Golden Company is reported to have at least §Y10000§! men and cost over §Y900§! dragons to hire.;Envoyer votre Maître des Lois de l'autre côté du Détroit pour tenter d'engager la Compagnie Dorée. Il est dit que la Compagnie Dorée compte au moins §Y10000§! hommes et qu'il faut débourser près de §Y900§! dragons pour l'engager.;;;Enviar al Jefe de las Leyes al otro lado del mar Angosto para intentar contratar a la Compañía Dorada. Se dice que cuentan con al menos §Y10000§! hombres y que habrá que desembolsar más de §Y900§! dragones para contratarlos.;;;;;;;;;x
+TOOLTIPfree_cities.2;[Root.job_chancellor.GetBestName] will attempt to hire the Golden Company across the Narrow Sea;[Root.job_chancellor.GetBestName] va tenter d'engager la Compagnie Dorée de l'autre côté du Détroit ;;;[Root.job_chancellor.GetBestName] va a intentar contratar a la Compañía Dorada al otro lado del mar Angosto. ;;;;;;;;;x
+EVTDESCfree_cities.2;[From.GetFirstName] [From.GetOnlyDynastyName] wishes to hire the mighty Golden Company;[From.GetFirstName] [From.GetOnlyDynastyName] souhaite engager la puissante Compagnie Dorée ;;;[From.GetFirstName] [From.GetOnlyDynastyName] desea contratar a la poderosa Compañía Dorada.;;;;;;;;;x
+EVTOPTAfree_cities.2;As long as I get suitable reward;Tant que je reçois une juste récompense;;;Siempre y cuando reciba una justa recompensa.;;;;;;;;;x
+EVTOPTBfree_cities.2;Yes, it could be profitable;Oui, cela pourrait être profitable;;;Sí, podría ser beneficioso.;;;;;;;;;x
+EVTOPTCfree_cities.2;I don't think so;Je ne pense pas;;;No lo creo;;;;;;;;;x
+EVTDESCfree_cities.3;[Root.GetTitle] [Root.GetFirstName] [Root.GetOnlyDynastyName], Your proposal that we should fight in your employ is a tempting one. If I were to gain suitable personal reward I think we can agree. \n\n Regards,\n[From.GetFirstName] [From.GetOnlyDynastyName];[Root.GetTitle] [Root.GetFirstName] [Root.GetOnlyDynastyName], votre proposition nous invitant à nous battre pour vous est tentante. Si je venais à recevoir une récompense appropriée, je pense que nous pourrions tomber d'accord. \n\n Cordialement,\n[From.GetFirstName] [From.GetOnlyDynastyName];;;[Root.GetTitle] [Root.GetFirstName] [Root.GetOnlyDynastyName], su propuesta de invitación para luchar en tu nombre es tentadora. Si recibiésemos una recompensa apropiada, creo que podríamos llegar a un acuerdo. \n\n Cordialmente,\n[From.GetFirstName] [From.GetOnlyDynastyName];;;;;;;;;x
+TOOLTIPGOLDENCOMPANY500;[From.GetFirstName] [From.GetOnlyDynastyName] will be given §Y500§! dragons from your treasury\n;[From.GetFirstName] [From.GetOnlyDynastyName] va donner §Y500§! dragons provenant de votre trésorerie\n;;;[From.GetFirstName] [From.GetOnlyDynastyName] se pagarán §Y500§! dragones de vuestra tesorería\n;;;;;;;;;x
+TOOLTIPGOLDENCOMPANY400;[From.GetFirstName] [From.GetOnlyDynastyName] will be given §Y400§! dragons from your treasury\n;[From.GetFirstName] [From.GetOnlyDynastyName] va donner §Y400§! dragons provenant de votre trésorerie\n;;;[From.GetFirstName] [From.GetOnlyDynastyName] se pagarán §Y400§! dragones de vuestra tesorería\n;;;;;;;;;x
+TOOLTIPGOLDENCOMPANY300;[From.GetFirstName] [From.GetOnlyDynastyName] will be given §Y300§! dragons from your treasury\n;[From.GetFirstName] [From.GetOnlyDynastyName] va donner §Y300§! dragons provenant de votre trésorerie\n;;;[From.GetFirstName] [From.GetOnlyDynastyName] se pagarán §Y300§! dragones de vuestra tesorería\n;;;;;;;;;x
+TOOLTIPGOLDENCOMPANY200;[From.GetFirstName] [From.GetOnlyDynastyName] will be given §Y200§! dragons from your treasury\n;[From.GetFirstName] [From.GetOnlyDynastyName] va donner §Y200§! dragons provenant de votre trésorerie\n;;;[From.GetFirstName] [From.GetOnlyDynastyName] se pagarán §Y200§! dragones de vuestra tesorería\n;;;;;;;;;x
+TOOLTIPGOLDENCOMPANY100;[From.GetFirstName] [From.GetOnlyDynastyName] will be given §Y100§! dragons from your treasury\n;[From.GetFirstName] [From.GetOnlyDynastyName] va donner §Y100§! dragons provenant de votre trésorerie\n;;;[From.GetFirstName] [From.GetOnlyDynastyName] se pagarán §Y100§! dragones de vuestra tesorería\n;;;;;;;;;x
+TOOLTIPCANHIREGOLDENCOMPANY;You will be able to hire the Golden Company for a fee of §Y900§! dragons from the mercenary pool\n;Vous pourrez engager la Compagnie Dorée pour §Y900§! dragons depuis la fenêtre mercenaire\n;;;Puedes contratar la Compañía Dorada por  §Y900§! dragones desde la ventana de mercenarios\n;;;;;;;;;x
+EVTOPTAfree_cities.3;I will have to pay him;Je devrai le payer;;;Pagaré.;;;;;;;;;x
+EVTOPTBfree_cities.3;Greedy Bastard! I refuse;Avide bâtard ! Je refuse;;;Bastardo codicioso! Me niego;;;;;;;;;x
+EVTDESCfree_cities.4;[Root.GetTitle] [Root.GetFirstName] [Root.GetOnlyDynastyName], Your proposal that we should fight in your employ seems it could be most profitable for us. We will henceforth be in your employ. \n\n Regards,\n[From.GetFirstName] [From.GetOnlyDynastyName];[Root.GetTitle] [Root.GetFirstName] [Root.GetOnlyDynastyName], votre proposition nous invitant à nous battre pour vous nous semble des plus profitables. Nos épées sont désormais vôtres. \n\n Cordialement,\n[From.GetFirstName] [From.GetOnlyDynastyName];;;[Root.GetTitle] [Root.GetFirstName] [Root.GetOnlyDynastyName], su propuesta de invitación para luchar en tu nombre nos parece muy provechosa. Nuestras espadas son suyas. \n\n Cordialmente,\n[From.GetFirstName] ;;;;;;;;;x
+EVTOPTAfree_cities.4;This should sway the war;Voilà qui devrait changer le cours de la guerre;;;Esto debería cambiar el curso de la guerra.;;;;;;;;;x
+EVTOPTBfree_cities.4;Actually I change my mind;En fait, j'ai changé d'avis;;;De hecho, he cambiado de opinión.;;;;;;;;;x
+EVTDESCfree_cities.5;[Root.GetTitle] [Root.GetFirstName] [Root.GetOnlyDynastyName], I am afraid I don't see what we can gain by fighting for you in your wars. We will wait for better employment. \n\n Regards,\n[From.GetFirstName] [From.GetOnlyDynastyName];[Root.GetTitle] [Root.GetFirstName] [Root.GetOnlyDynastyName], j'ai bien peur que nous ne tirerions aucun profits en nous battant pour vous. Nous nous réservons pour un meilleur employeur. \n\n Cordialement,\n[From.GetFirstName] [From.GetOnlyDynastyName];;;[Root.GetTitle] [Root.GetFirstName] [Root.GetOnlyDynastyName], Me temo que no sacaríamos ningún provecho de luchar junto a vos. Nos reservaremos para un mejor contrato. \n\n Cordialmente,\n[From.GetFirstName] ;;;;;;;;;x
+EVTOPTBfree_cities.5;His loss;Tant pis pour lui;;;Ellos se lo pierden.;;;;;;;;;x
+EVTDESCfree_cities.6;The Golden Company is no longer in our employ, we will have to treat with them to gain their swords again.;Le contrat qui liait à la Compagnie Dorée à notre service est arrivé à son terme, il nous faudra traiter à nouveau avec elle pour engager ses épées.;;;El contrato que unía a la Compañía Dorada a nuestro servicio ha llegado a su término, será necesario volver a negociar con ellos para contratar sus servicios.;;;;;;;;;x
+EVTDESCfree_cities.7;[Root.GetTitle] [Root.GetFirstName] [Root.GetOnlyDynastyName], I am afraid our company is currently unavailable to fight for you, perhaps we can reach agreement in the future.\n\n Regards,\n[From.GetFirstName] [From.GetOnlyDynastyName];[Root.GetTitle] [Root.GetFirstName] [Root.GetOnlyDynastyName], j'ai bien peur que notre compagnie ne puisse actuellement se battre pour vous, mais peut-être pourrons-nous travailler ensemble dans le futur.\n\n Cordialement,\n[From.GetFirstName] [From.GetOnlyDynastyName];;;[Root.GetTitle] [Root.GetFirstName] [Root.GetOnlyDynastyName], me temo que nuestra compañía no puede luchar por vos en este momento, pero podríamos trabajar juntos en el futuro.\n\n Cordialmente,\n[From.GetFirstName] ;;;;;;;;;x
+k_golden_company;The Golden Company;La Compagnie Dorée;;;La Compañía Dorada;;;;;;;;;x
+d_brave_companions;Brave Companions;Les Braves Compaings;;;Compañía Audaz;;;;;;;;;x
+d_bright_banners;Bright Banners;Les Vives Bannières;;;Banderas Luminosas;;;;;;;;;x
+d_company_of_the_cat;Company of the Cat;La Compagnie du Chat;;;Compañía del Gato;;;;;;;;;x
+d_gallant_men;Gallant Men;Les Galants Hommes;;;Hombres Galantes;;;;;;;;;x
+d_iron_shields;Iron Shields;Les Rondaches de Fer;;;Escudos de Hierro;;;;;;;;;x
+d_long_lances;Long Lances;Les Longues Lances;;;Lanzas Largas;;;;;;;;;x
+d_maidens_men;Maiden's Men;Les Hommes de la Pucelle;;;Hombres de la Doncella;;;;;;;;;x
+d_ragged_standard;Ragged Standard;L’Étendard en Loque;;;Estandartes Andrajosos;;;;;;;;;x
+d_second_sons;Second Sons;Les Puînés;;;Segundos Hijos;;;;;;;;;x
+d_stormcrows;Stormcrows;Les Corbeaux Tornades;;;Cuervos de Tormenta;;;;;;;;;x
+d_windblown;Windblown;Les Erre-au-Vent;;;Hijos del Viento;;;;;;;;;x
+d_e_merc_inf_1;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_e_merc_inf_2;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_e_merc_inf_3;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_e_merc_inf_4;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_e_merc_inf_5;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_e_merc_inf_6;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_e_merc_inf_7;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_e_merc_inf_8;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_e_merc_inf_9;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_e_merc_inf_10;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_e_merc_inf_11;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_e_merc_inf_12;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_e_merc_inf_13;Sellsword Infantry;Reîtres;;;Infantería mercenaria;;;;;;;;;x
+d_merc_hyrkoonispears_1;Hyrkooni Spearmen;Piquiers Hyrkooni;;;Piqueros Hyrkooni;;;;;;;;;x
+d_merc_hyrkoonispears_2;Hyrkooni Spearmen;Piquiers Hyrkooni;;;Piqueros Hyrkooni;;;;;;;;;x
+d_merc_hyrkoonispears_3;Hyrkooni Spearmen;Piquiers Hyrkooni;;;Piqueros Hyrkooni;;;;;;;;;x
+d_merc_hyrkoonispears_4;Hyrkooni Spearmen;Piquiers Hyrkooni;;;Piqueros Hyrkooni;;;;;;;;;x
+d_merc_hyrkoonispears_5;Hyrkooni Spearmen;Piquiers Hyrkooni;;;Piqueros Hyrkooni;;;;;;;;;x
+d_merc_hyrkoonispears_6;Hyrkooni Spearmen;Piquiers Hyrkooni;;;Piqueros Hyrkooni;;;;;;;;;x
+d_stormbreakers;Stormbreakers;Briseurs d'orage;;;Rompetormentas;;;;;;;;;x
+d_company_of_the_rose;Company of the Rose;Compagnie de la Rose;;;Compañía de la Rosa;;;;;;;;;x

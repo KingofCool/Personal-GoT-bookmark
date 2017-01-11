@@ -1,0 +1,23 @@
+# 306 - Summerhall - Duchy of Summerhall (swapped Fawton 312)
+
+# County Title
+title = c_summerhall
+
+# Settlements
+max_settlements = 2
+
+b_summerhall = castle 	# Canon - County Seat
+
+# Misc
+culture = stormlander
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_summerhall = ca_asoiaf_storm_basevalue_1
+	b_summerhall = ca_asoiaf_storm_basevalue_2
+	b_summerhall = ca_asoiaf_storm_basevalue_3
+}
+8198.1.1 = {
+	b_summerhall = ca_summerhall
+}

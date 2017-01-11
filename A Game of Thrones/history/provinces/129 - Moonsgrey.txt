@@ -1,0 +1,23 @@
+# 129 - Moonsgrey
+
+# County Title
+title = c_moonsgrey
+
+# Settlements
+max_settlements = 3
+b_renwick = castle
+b_menaskham = city
+#b_horcrag = castle
+
+# Misc
+culture = valeman
+religion = the_seven
+
+#History
+
+6000.1.1 = {
+	b_renwick = ca_asoiaf_vale_basevalue_1
+	b_renwick = ca_asoiaf_vale_basevalue_2
+	
+	b_menaskham = ct_asoiaf_vale_basevalue_1
+}

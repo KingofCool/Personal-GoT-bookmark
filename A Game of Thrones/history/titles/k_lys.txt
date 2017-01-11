@@ -1,0 +1,42 @@
+7987.1.1={
+	holder=150300546
+	law = slavery_2
+	law = centralization_2	
+}
+7995.1.1 = {
+	#liege = e_new_valyria 
+	effect = { set_variable = { which = "de_facto_empire" value = 11 } } #New Valyria
+}
+7997.1.1 = { 
+	liege = 0 
+	effect = { set_variable = { which = "de_facto_empire" value = 0 } }
+}
+8036.1.1 = { holder=100300523 } # Beqqo (nc)
+8080.1.1 = { holder=102300523 } # Allaquo (nc)
+8086.1.1 = { holder=107300540 } # Syrio (nc)
+8096.6.1 = {
+	liege=e_three_daughters
+	de_jure_liege = e_three_daughters
+	law = republic_alliance_member
+}
+8098.1.1 = { holder=106300539 } # Oro (nc)
+8115.1.1 = { holder=106300546 } # Cossoma (nc)
+8129.1.1 = { holder=106300523 } # Sharako (canon)
+8130.1.1 = { holder=108300539 } # Lysandro Rogare(C)
+8131.1.1 = {
+	liege=0
+	de_jure_liege = e_new_valyria
+	law = republic_law_0
+}
+8140.1.1 = { holder=110300539 } # Lysaro Rogare(C)
+8145.1.1 = { holder=111300523 } # Tregar (nc)
+8160.1.1 = { holder=114300539 } # Orbelo (nc)
+8209.1.1 = { holder=10231386 } # Collio (nc)
+8221.1.1 = { holder=10271386 } # Roro (nc)
+8234.1.1 = { holder=118300546 } # Izembaro (nc)
+8249.1.1 = { holder=124300540 } # Brusco (nc)
+8254.1.1 = { holder=121300523 } # Gyleno (nc)
+
+8277.1.1={
+	holder=88108 #Tregar Ormollen
+}

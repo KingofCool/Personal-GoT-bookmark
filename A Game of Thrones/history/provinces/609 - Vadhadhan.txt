@@ -1,0 +1,26 @@
+# 609 - Yunkish Hills
+
+# County Title
+title = c_yunkishhills
+
+# Settlements
+max_settlements = 3
+
+b_yunkishhills = city
+b_yunkishhillscastle = castle
+b_yunkishhillstemple = temple
+
+# Misc
+culture = yunkaii
+religion = harpy
+
+6000.1.1 = {
+	b_yunkishhills = ct_asoiaf_ghiscari_basevalue_1
+	b_yunkishhills = ct_asoiaf_ghiscari_basevalue_2
+	b_yunkishhills = ct_asoiaf_ghiscari_basevalue_3
+	
+	b_yunkishhillscastle = ca_asoiaf_ghiscari_basevalue_1
+	b_yunkishhillscastle = ca_asoiaf_ghiscari_basevalue_2
+	
+
+}

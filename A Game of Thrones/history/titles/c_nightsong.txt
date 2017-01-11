@@ -1,0 +1,20 @@
+202.1.1 = { liege="e_stormlands"}
+
+
+7994.1.1 = { holder = 300301 } # Lyonel Caron (nc)
+7998.2.27={
+	liege = k_stormlands
+}
+8003.1.1 = { holder = 301301 } # Symon Caron (nc)
+8027.1.1 = { holder = 302301 } # Rolland Caron (nc)
+8053.1.1 = { holder = 303301 } # Byron Caron (nc)
+8084.1.1 = { holder = 304301 } # Bryce Caron (nc)
+8110.1.1 = { holder = 305301 } # Balon Caron (nc)
+8142.1.1 = { holder = 306301 } # Lyonel Caron (nc)
+8174.1.1 = { holder = 307301 } # Barrystan Caron (nc)
+8187.1.1 = { holder = 308301 } # Pearse Caron (C)
+8226.1.1 = { holder = 309301 } # Balon Caron (nc)
+8246.1.1 = { holder = 310301 } # Casper Caron (nc)
+8262.1.1 = { holder = 301 } # Bryen Caron (C)
+8289.1.1 = { holder = 1301 } # Bryce Caron (C)
+8299.7.1 = { holder = 251204 } # Phillip Foote

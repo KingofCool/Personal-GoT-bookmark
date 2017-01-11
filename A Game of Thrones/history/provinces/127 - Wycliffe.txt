@@ -1,0 +1,21 @@
+# 127 - Wycliffe
+
+# County Title
+title = c_wycliffe
+
+# Settlements
+max_settlements = 2
+b_scarle_keep = castle
+#b_wycliffe = city
+
+# Misc
+culture = valeman
+religion = the_seven
+
+#History
+
+6000.1.1 = {
+	b_scarle_keep = ca_asoiaf_vale_basevalue_1
+	b_scarle_keep = ca_asoiaf_vale_basevalue_2
+	b_scarle_keep = ca_asoiaf_vale_basevalue_3
+}

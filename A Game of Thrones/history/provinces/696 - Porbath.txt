@@ -1,0 +1,17 @@
+# 696 - Vaes Ejakh
+
+# County Title
+title = c_vaes_ejakh
+
+# Settlements
+max_settlements = 3
+
+b_vaes_ejakh = tribal
+
+# Misc
+culture = dothraki
+religion = dothraki_pagan
+
+# History
+6000.1.1 = {
+}

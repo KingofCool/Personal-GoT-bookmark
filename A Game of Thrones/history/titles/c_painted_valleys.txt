@@ -1,0 +1,15 @@
+600.1.1={
+	liege="d_mantarys"
+}
+7995.1.1 = { holder=10070116 } # Malaquo (nc)
+8027.1.1 = { holder=10470116 } # Doniphos (nc)
+8060.1.1 = { holder=10670116 } # Haerys (nc)
+8079.1.1 = { holder=10770116 } # Methyso (nc)
+8108.1.1 = { holder=11170116 } # Jaekar (nc)
+8128.1.1 = { holder=11370116 } # Nyessos (nc)
+8139.1.1 = { holder=11570116 } # Parquello (nc)
+8181.1.1 = { holder=11670116 } # Orys (nc)
+8213.1.1 = { holder=12070116 } # Belicho (nc)
+8225.1.1 = { holder=12270116 } # Matarys (nc)
+8274.1.1 = { holder=12770116 } # Colloquo (nc)
+8293.1.1 = { holder=12970116 } # Malaquo (nc)

@@ -1,0 +1,28 @@
+# 157 - Volmark
+
+# County Title
+title = c_volmark
+
+# Settlements
+max_settlements = 3
+b_volmark = castle
+b_shield_row = castle
+
+#b_great_harbour
+
+
+
+# Misc
+culture = ironborn
+religion = drowned_god
+
+#History
+
+6000.1.1 = {b_volmark = ca_asoiaf_ironislands_basevalue_1}
+6000.1.1 = {b_volmark = ca_asoiaf_ironislands_basevalue_2}
+6000.1.1 = {b_volmark = ca_asoiaf_ironislands_basevalue_3}
+6000.1.1 = {b_volmark = ca_asoiaf_ironislands_basevalue_4}
+
+6000.1.1 = {b_shield_row = ca_asoiaf_ironislands_basevalue_1}
+6000.1.1 = {b_shield_row = ca_asoiaf_ironislands_basevalue_2}
+6000.1.1 = {b_shield_row = ca_asoiaf_ironislands_basevalue_3}

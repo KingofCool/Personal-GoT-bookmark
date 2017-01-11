@@ -1,0 +1,31 @@
+# 102 - Branstone
+
+# County Title
+title = c_branstone
+
+# Settlements
+max_settlements = 3
+b_branstoneholdfast = castle
+b_branstone = city
+
+# Misc
+culture = riverlander
+religion = the_seven
+
+# History
+
+6000.1.1 = {
+
+b_branstoneholdfast = ca_asoiaf_river_basevalue_1
+b_branstoneholdfast = ca_asoiaf_river_basevalue_2
+
+
+b_branstone = ct_asoiaf_river_basevalue_1
+b_branstone = ct_asoiaf_river_basevalue_2
+b_branstone = ct_asoiaf_river_basevalue_3
+
+
+}
+8070.1.1 = { #Jaehaerys constructs road network
+	b_branstoneholdfast = ca_river_road
+}

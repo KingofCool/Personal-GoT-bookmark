@@ -1,0 +1,30 @@
+
+
+# County Title
+title = c_catswold
+
+# Settlements
+max_settlements = 3
+b_the_brandyhouse = castle
+b_brandybottom  = city
+
+#b_chicklade   = city
+
+
+# Misc
+culture = reachman
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_the_brandyhouse = ca_asoiaf_reach_basevalue_1
+	b_the_brandyhouse = ca_asoiaf_reach_basevalue_2
+}
+6000.1.1 = {
+	b_brandybottom = ct_asoiaf_reach_basevalue_1
+	b_brandybottom = ct_asoiaf_reach_basevalue_2
+	b_brandybottom = ct_asoiaf_reach_basevalue_3
+}
+8070.1.1 = { #Jaehaerys constructs road network
+	b_the_brandyhouse = ca_oceanroad
+}

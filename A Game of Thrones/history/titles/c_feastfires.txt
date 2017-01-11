@@ -1,0 +1,49 @@
+#c_feastfires
+#NOTE: The holder of this title has the House Prester dynasty tracker set in roberts_rebellion_events
+900.1.1={
+	liege="d_kayce"
+}
+
+
+7990.1.1 = {	
+	holder=312196
+}
+8049.1.1 = {	
+	holder=311196
+}
+8056.1.1 = {	
+	holder=310196
+}
+8087.1.1 = {	
+	holder=309196
+}
+8109.1.1 = {	
+	holder=308196
+}
+8129.4.9 = {	
+	holder=307196
+}
+8176.1.1 = {	
+	holder=306196
+}
+8194.1.1 = {	
+	holder=305196
+}
+8210.1.1 = {	
+	holder=304196
+}
+8237.1.1 = {	
+	holder=303196
+}
+8259.11.1 = { # Reynes of Castamere
+	liege="k_westerlands"
+}
+8261.3.5 = {		
+	liege="d_kayce"
+}
+8267.1.1 = {	
+	holder=300196
+}
+8272.1.1 = {	
+	holder=196
+}

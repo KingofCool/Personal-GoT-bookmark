@@ -1,0 +1,32 @@
+7886.1.1 = {
+	holder = 50012300 #Emperor Aurion
+}
+7887.1.1 = {
+	holder = 0
+}
+
+7965.1.1 = {
+	holder=100300567 # Daario (nc)
+	law = slavery_1
+	law = centralization_2
+}
+8007.1.1 = { holder=100300564 } # Meralyn (nc)
+8008.1.1 = { holder=101300564 } # Tagganaro (nc)
+8046.1.1 = { holder=101300520 } # Beqqo (nc)
+8049.1.1 = { holder=105300520 } # Luco (nc)
+8078.1.1 = { holder=105300564 } # Collio (nc)
+8082.1.1 = { holder=108300564 } # Tagganaro (nc)
+8104.1.1 = { holder=109300520 } # Byan (nc)
+8110.1.1 = { holder=113300529 } # Ternesio (nc)
+8133.1.1 = { holder=117300520 } # Beqqo (nc)
+8153.1.1 = { holder=119300520 } # Moreo (nc)
+8164.1.1 = { holder=116300529 } # Vargo (nc)
+8174.1.1 = { holder=124300565 } # Ordello (nc)
+8185.1.1 = { holder=129300565 } # Moredo (nc)
+8218.1.1 = { holder=131300565 } # Tobho (nc)
+8224.1.1 = { holder=125300520 } # Joss (nc)
+8227.1.1 = { holder=128300520 } # Myrmello (nc)
+8230.1.1 = { holder=130300520 } # Brusco (nc)
+8241.1.1 = { holder=132300520 } # Collio (nc)
+8275.1.1 = { holder=133300564 } # Tagganaro (nc)
+8294.1.1 = { holder=134300564 } # Groleo (nc)

@@ -1,0 +1,34 @@
+
+
+# County Title
+title = c_appleton
+
+# Settlements
+max_settlements = 4
+b_the_greygate = castle
+b_appleton   = city
+b_flatford = city
+
+#b_landwade = city
+
+
+
+
+# Misc
+culture = reachman
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_the_greygate = ca_asoiaf_reach_basevalue_1
+	b_the_greygate = ca_asoiaf_reach_basevalue_2
+	b_the_greygate = ca_asoiaf_reach_basevalue_3
+}
+6000.1.1 = {
+	b_appleton = ct_asoiaf_reach_basevalue_1
+	b_appleton = ct_asoiaf_reach_basevalue_2
+
+}
+6000.1.1 = {
+	b_flatford = ct_asoiaf_reach_basevalue_1
+}

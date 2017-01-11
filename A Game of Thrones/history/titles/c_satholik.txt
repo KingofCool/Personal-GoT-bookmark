@@ -1,0 +1,17 @@
+600.1.1={
+	liege="k_qohor"
+}
+
+7995.1.1 = { holder=100069131 } # Daario (nc)
+8031.1.1 = { holder=100169131 } # Areo (nc)
+8051.1.1 = { holder=100469131 } # Ferrego (nc)
+8082.1.1 = { holder=100969131 } # Ordello (nc)
+8109.1.1 = { holder=101269131 } # Moredo (nc)
+8140.1.1 = { holder=101469131 } # Oro (nc)
+8141.1.1 = { holder=101669131 } # Syrio (nc)
+8163.1.1 = { holder=102069131 } # Beqqo (nc)
+8210.1.1 = { holder=102369131 } # Ollo (nc)
+8211.1.1 = { holder=102869131 } # Tregar (nc)
+8243.1.1 = { holder=103169131 } # Ordello (nc)
+8282.1.1 = { holder=103369131 } # Lotho (nc)
+8296.1.1 = { holder=103469131 } # Cossomo (nc)

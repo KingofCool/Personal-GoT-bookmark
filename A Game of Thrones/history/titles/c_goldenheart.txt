@@ -1,0 +1,20 @@
+#House Biabaku
+7970.1.1 = { 
+	holder=100304015 
+	liege=d_golden_head
+	law = succ_seniority
+	law = cognatic_succession
+} # Doshuru (nc)
+8008.1.1 = { holder=103304015 } # Oluhuru (nc)
+8035.1.1 = { holder=106304015 } # Udo (nc)
+8072.1.1 = { holder=114304015 } # Xhal (nc)
+8117.1.1 = { holder=115304015 } # Oluhuru (nc)
+8155.1.1 = { holder=117304015 } # Isingodo (nc)
+8168.1.1 = { holder=118304015 } # Odingaxho (nc)
+8196.1.1 = { holder=120304015 } # Tal (nc)
+8203.1.1 = { holder=121304015 } # Orengo (nc)
+8213.1.1 = { holder=127304015 } # Xhondo (nc)
+8247.1.1 = { holder=129304015 } # Bapato (nc)
+8274.1.1 = { holder=132304015 } # Tal (nc)
+8284.1.1 = { holder=134304015 } # Chibundo (nc)
+

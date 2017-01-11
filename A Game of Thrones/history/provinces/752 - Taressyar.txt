@@ -1,0 +1,21 @@
+# 752 - Taressyar
+
+# County Title
+title = c_taressyar
+# Settlements
+max_settlements = 2
+
+b_taressyar = castle
+b_taressyartown = city
+
+# Misc
+culture = basilisk_islander
+religion = corsair
+
+# History
+6000.1.1 = {
+	b_taressyar = ca_asoiaf_pirateshipyard
+	
+	b_taressyartown = ct_asoiaf_summerisland_basevalue_1
+	b_taressyartown = ct_asoiaf_summerisland_basevalue_2
+}

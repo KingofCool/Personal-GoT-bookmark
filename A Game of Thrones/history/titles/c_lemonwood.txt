@@ -1,0 +1,18 @@
+7240.1.1={
+	liege="d_brokenarm"
+	law = true_cognatic_succession
+}
+
+7991.1.1 = { holder=35006 } # Manfrey (nc)
+8002.1.1 = { holder=35016 } # Donyse (nc)
+8035.1.1 = { holder=35046 } # Alaric (nc)
+8062.1.1 = { holder=35076 } # Larra (nc)
+8102.1.1 = { holder=35106 } # Donyse (nc)
+8129.1.1 = { holder=35116 } # Trebor (nc)
+8157.1.1 = { holder=35136 } # Allar (nc)
+8179.1.1 = { holder=35176 } # Maron (nc)
+8197.1.1 = { holder=35186 } # Deziel (nc)
+8226.1.1 = { holder=35236 } # Myriah (nc)
+8240.1.1 = { holder=35286 } # Timeon (nc)
+8259.2.9 = { holder=2006 } # Mynia (nc)
+8291.4.5 = { holder=6 } # Deziel (c)

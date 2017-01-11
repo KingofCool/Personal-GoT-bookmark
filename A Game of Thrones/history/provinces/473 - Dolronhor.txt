@@ -1,0 +1,24 @@
+# 473 - Dolronhor
+
+# County Title
+title = c_dolronhor
+
+# Settlements
+max_settlements = 3
+
+b_dolronhor_castle = castle
+b_dolronhor = city
+b_dolronhor_temple = temple
+
+# Misc
+culture = norvosi
+religion = bearded_priests
+
+# History
+6000.1.1 = {
+	b_dolronhor = ct_asoiaf_essos_basevalue_1
+	b_dolronhor = ct_asoiaf_essos_basevalue_2
+
+	b_dolronhor_castle = ca_asoiaf_essos_basevalue_1
+
+}

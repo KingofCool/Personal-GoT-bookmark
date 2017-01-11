@@ -1,0 +1,24 @@
+7600.1.1={
+	liege="d_kingswood"
+	law = succ_primogeniture
+}
+7995.1.1 = { holder=6000021 } # Jothos (nc)
+7998.2.27 = {
+	liege="d_kingswood"
+}
+8006.1.1 = { holder=6000221 } # Duncan (nc)
+8032.1.1 = { holder=6000621 } # Rupert (nc)
+8076.1.1 = { holder=6000821 } # Gilbert (nc)
+8077.1.1 = { holder=6000921 } # Sefton (nc)
+8128.1.1 = { holder=6001221 } # Rorge (nc)
+8138.1.1 = { holder=6001321 } # Jaremy (nc)
+8179.1.1 = { holder=6001521 } # Qarlton (nc)
+8215.1.1 = { holder=6001621 } # Sefton (nc)
+
+8257.1.1={
+	holder = 77150 	#Follard
+}
+8290.1.1={
+	holder = 77152 	#Follard
+}
+8299.1.4 = { liege=0 }

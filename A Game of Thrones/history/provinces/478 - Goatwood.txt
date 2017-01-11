@@ -1,0 +1,28 @@
+# 478 - Goatwood
+
+# County Title
+title = c_goatwood
+
+# Settlements
+max_settlements = 3
+
+b_goatwood = city
+b_goatwood_castle = castle
+b_goatwood_temple = temple
+
+# Misc
+culture = qohorik
+religion = black_goat
+
+terrain = forest
+
+# History
+6000.1.1 = {
+	b_goatwood = ct_asoiaf_essos_basevalue_1
+	b_goatwood = ct_asoiaf_essos_basevalue_2
+	b_goatwood = ct_asoiaf_essos_basevalue_3
+	
+	b_goatwood_castle = ca_asoiaf_essos_basevalue_1
+	b_goatwood_castle = ca_asoiaf_essos_basevalue_2
+
+}

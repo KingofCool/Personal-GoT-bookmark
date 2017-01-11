@@ -1,0 +1,28 @@
+900.1.1={ 
+	liege="c_the_citadel"
+}
+8156.1.1={
+	holder=90129 #Oriel Allyrion
+}
+8193.1.1 = {
+	holder=88765002 #Haereg
+}
+8221.1.1 = {
+	holder=88765003 #Hake
+}
+8249.1.1 = {
+	holder=88765004 #Harmune
+}
+8278.1.1={
+	holder=88129 #Ryam
+}
+8292.1.1={
+	holder=88124 #Norren
+}
+8298.1.1={
+	holder=88130 #Theobald
+}
+
+
+
+

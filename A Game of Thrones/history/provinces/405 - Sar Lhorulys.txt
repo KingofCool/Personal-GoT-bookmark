@@ -1,0 +1,21 @@
+# 405 - Sar Lhorulys
+
+# County Title
+title = c_sar_lhorulys
+
+# Settlements
+max_settlements = 3
+
+b_sar_lhorulys = city
+b_sar_lhorulyscastle = castle
+b_sar_lhorulystemple = temple
+
+# Misc
+culture = myrman
+religion = rhllor
+
+# History
+6000.1.1 = {
+	b_sar_lhorulys = ct_asoiaf_essos_basevalue_1
+	b_sar_lhorulys = ct_asoiaf_essos_basevalue_2
+}

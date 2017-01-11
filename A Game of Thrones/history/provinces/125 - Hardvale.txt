@@ -1,0 +1,29 @@
+# 125 - Bite Coast
+
+# County Title
+title = c_bite_coast
+
+# Settlements
+max_settlements = 4
+b_blackmund_tower = castle
+b_biteport = city
+b_biteport_sept = temple
+#b_darkcroft = city
+
+# Misc
+culture = valeman
+religion = the_seven
+
+terrain = plains
+
+#History
+
+6000.1.1 = {
+	b_blackmund_tower = ca_asoiaf_vale_basevalue_1
+	b_blackmund_tower = ca_asoiaf_vale_basevalue_2
+	b_blackmund_tower = ca_asoiaf_vale_basevalue_3
+	
+	b_biteport = ct_asoiaf_vale_basevalue_1
+	b_biteport = ct_asoiaf_vale_basevalue_2
+	b_biteport = ct_asoiaf_vale_basevalue_3
+}

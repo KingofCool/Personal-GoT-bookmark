@@ -1,0 +1,29 @@
+# 198 - Falwell
+
+# County Title
+title = c_falwell
+
+# Settlements
+max_settlements = 5
+b_falwell = castle
+b_falwelltown = city
+b_falwellsept = temple
+b_falwelltowntwo = city
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_falwell = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_falwell = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_falwell = ca_asoiaf_westerland_basevalue_3}
+
+6000.1.1 = {b_falwelltown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_falwelltown = ct_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_falwelltown = ct_asoiaf_westerland_basevalue_3}
+#6000.1.1 = {b_falwelltown = ct_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_falwelltowntwo = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_falwelltowntwo = ct_asoiaf_westerland_basevalue_2}

@@ -1,0 +1,30 @@
+
+
+# County Title
+title = c_starpike
+
+# Settlements
+max_settlements = 5
+b_starpike = castle
+b_knarsdale = castle
+b_starpike_sept = temple
+#b_bingfield = city
+#b_plenmeller = castle
+
+
+
+# Misc
+culture = reachman
+religion = the_seven
+
+# History
+6000.1.1 = {
+	b_starpike = ca_asoiaf_reach_basevalue_1
+	b_starpike  = ca_asoiaf_reach_basevalue_2
+	b_starpike  = ca_asoiaf_reach_basevalue_3
+}
+6000.1.1 = {
+	b_knarsdale = ca_asoiaf_reach_basevalue_1
+	b_knarsdale = ca_asoiaf_reach_basevalue_2
+
+}

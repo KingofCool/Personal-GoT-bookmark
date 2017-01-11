@@ -1,0 +1,24 @@
+# 637 - Meereenese Hills
+
+# County Title
+title = c_meereenesehills
+
+# Settlements
+max_settlements = 3
+
+b_meereenesehills = city
+b_meereenesehillscastle = castle
+b_meereenesehillstemple = temple
+
+# Misc
+culture = meereenese
+religion = harpy
+
+6000.1.1 = {
+	b_meereenesehills = ct_asoiaf_ghiscari_basevalue_1
+	b_meereenesehills = ct_asoiaf_ghiscari_basevalue_2
+	b_meereenesehills = ct_asoiaf_ghiscari_basevalue_3
+	
+	b_meereenesehillscastle = ca_asoiaf_ghiscari_basevalue_1
+	b_meereenesehillscastle = ca_asoiaf_ghiscari_basevalue_2	
+}	

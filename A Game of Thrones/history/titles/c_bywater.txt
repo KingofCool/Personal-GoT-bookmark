@@ -1,0 +1,19 @@
+7600.1.1={
+	liege="e_stormlands"
+	law = succ_primogeniture
+}
+7994.1.1 = { holder=3001045 } # Arianne Bywater (nc)
+7998.2.27 = {
+	liege="e_iron_throne"
+}
+8025.1.1 = { holder=3003045 } # Symon Bywater (nc)
+8063.1.1 = { holder=3007045 } # Danos Bywater (nc)
+8072.1.1 = { holder=3009045 } # Mortimer Bywater (nc)
+8109.1.1 = { holder=3012045 } # Myrcella Bywater (nc)
+8112.1.1 = { holder=3014045 } # Dale Bywater (nc)
+8153.1.1 = { holder=3015045 } # Gyles Bywater (nc)
+8160.1.1 = { holder=3017045 } # Pate Bywater (nc)
+8213.1.1 = { holder=3018045 } # Clarence Bywater (nc)
+8269.1.1 = { holder=3023045 } # Belis Bywater (nc)
+8271.1.1 = { holder=3027045 } # Dontos Bywater (nc)
+8295.1.1 = { holder=3029045 } # Gilbert Bywater (nc)

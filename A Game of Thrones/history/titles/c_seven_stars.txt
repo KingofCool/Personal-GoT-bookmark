@@ -1,0 +1,15 @@
+5000.1.1={
+	law = succ_primogeniture
+	liege = k_pentos
+}
+7977.1.1 = { holder=100174909 } # Lothor (nc)
+8015.1.1 = { holder=101174909 } # Ballabar (nc)
+8035.1.1 = { holder=105174909 } # Vardis (nc)
+8060.1.1 = { holder=112174909 } # Ballabar (nc)
+8118.1.1 = { holder=117174909 } # Serwyn (nc)
+8127.1.1 = { holder=120174909 } # Umfred (nc)
+8134.1.1 = { holder=127174909 } # Serwyn (nc)
+8167.1.1 = { holder=128174909 } # Royce (nc)
+8199.1.1 = { holder=133174909 } # Tim (nc)
+8268.1.1 = { holder=136174909 } # Donnel (nc)
+8282.1.1 = { holder=138174909 } # Donnel (nc)

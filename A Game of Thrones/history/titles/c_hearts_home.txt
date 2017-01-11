@@ -1,0 +1,31 @@
+6000.1.1={
+	liege="e_vale"
+	law = succ_primogeniture
+}
+
+6479.1.1={ holder = 550176 } #Corwyn Corbray
+6492.1.1 = { holder = 5551176 } #Gawayne Corbray
+6523.1.1 = { holder = 551176 } #Qyle Corbray
+6538.6.6 = { holder=552176 } # Jaimie
+6570.1.1 = { holder = 0 }
+7878.1.1 = { holder=3100176 } # Elbert (nc)
+7940.1.1 = { holder=3201176 } # Hugh (nc)
+7994.1.1 = { holder=200176 } # Alaric (nc)
+7999.1.1={ 
+	liege="k_vale"
+} 
+8018.1.1 = { holder=201176 } # Waymar (nc)
+8054.1.1 = { holder=204176 } # Bryen (nc)
+8063.1.1 = { holder=210176 } # Eddison (nc)
+8092.1.1 = { holder=211176 } # Eon (nc)
+8145.1.1 = { holder=212176 } # Donnel (nc)
+8154.1.1 = { holder=214176 } # Elys (nc)
+8192.1.1 = { holder=218176 } # Elbert (nc)
+8204.1.1 = { holder=220176 } # Walace (nc)
+8227.1.1 = { holder=221176 } # Lyn (nc)
+8252.1.1={
+	holder=94048
+}
+8283.1.1={
+	holder=94049
+}

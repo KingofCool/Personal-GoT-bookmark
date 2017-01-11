@@ -1,0 +1,27 @@
+7600.1.1={
+	liege="e_reach"
+	law = succ_primogeniture
+}
+7994.1.1 = { holder=3000025 } # Alliser Chelsted (nc)
+7998.2.27 = {
+	liege="d_kings_landing"
+}
+8044.1.1 = { holder=3006025 } # Alla Chelsted (nc)
+8078.1.1 = { holder=3008025 } # Gendry Chelsted (nc)
+8107.1.1 = { holder=3009025 } # Guncer Chelsted (nc)
+8117.1.1 = { holder=3014025 } # Bronn Chelsted (nc)
+8130.1.1 = { holder=3018025 } # Anguy Chelsted (nc)
+8136.1.1 = { holder=3019025 } # Jaremy Chelsted (nc)
+
+8185.1.1={
+	holder = 77024 		#Daemon Blackfyre, given tract of land by King Daeron
+}
+8195.3.7 = {
+	#given to iron throne upon start of the blackfyre rebellion (see 77024)
+}
+
+8196.6.1 = { holder=3022025 } # Humfrey Chelsted (nc) #back to Chlested
+8243.1.1 = { holder=3024025 } # Elwood Chelsted (nc)
+8270.1.1 = { holder=3027025 } # Pate Chelsted (nc)
+8274.1.1 = { holder=2029025 } # Qarlton Chelsted (C)
+8284.1.1 = { holder=3034025 } # Malliard Chelsted (nc)

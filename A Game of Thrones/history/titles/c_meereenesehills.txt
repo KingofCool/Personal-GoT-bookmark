@@ -1,0 +1,17 @@
+600.1.1={
+	liege="k_meereen"
+}
+7995.1.1 = { holder=150360003 } # Hizdhar (nc)
+8016.1.1 = { holder=100360003 } # Hizdhar (nc)
+8047.1.1 = { holder=102360003 } # Hizdhar (nc)
+8090.1.1 = { holder=105360003 } # Grazdan (nc)
+8106.1.1 = { holder=111360003 } # Hizdhar (nc)
+8124.1.1 = { holder=114360003 } # Hizdhar (nc)
+8160.1.1 = { holder=118360003 } # Kraznys (nc)
+8179.1.1 = { holder=120360003 } # Hizdhar (nc)
+8212.1.1 = { holder=122360003 } # Hizdhario (nc)
+8238.1.1 = { holder=124360003 } # Moredo (nc)
+8250.1.1 = { holder=129360003 } # Barkhaz (nc)
+8286.1.1={
+	holder=16571013 # Hizdhar
+}

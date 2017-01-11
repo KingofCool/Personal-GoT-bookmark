@@ -1,0 +1,18 @@
+900.1.1={
+	liege="e_vale"
+}
+#breakstone
+7948.1.1 = { holder=100801047 } # Eon (nc)
+7980.1.1 = { holder=102801047 } # Eustace (nc)
+7999.1.1={ 
+	liege="k_vale"
+} 
+8031.1.1 = { holder=106801047 } # Osgood (nc)
+8052.1.1 = { holder=108801047 } # Artys (nc)
+8086.1.1 = { holder=112801047 } # Serwyn (nc)
+8120.1.1 = { holder=118801047 } # Bryen (nc)
+8144.1.1 = { holder=123801047 } # Robar (nc)
+8201.1.1 = { holder=125801047 } # Florian (nc)
+8209.1.1 = { holder=128801047 } # Byron (nc)
+8244.1.1 = { holder=134801047 } # Rolley (nc)
+8269.1.1 = { holder=137801047 } # Petyr (nc)

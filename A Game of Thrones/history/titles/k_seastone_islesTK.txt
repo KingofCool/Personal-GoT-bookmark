@@ -1,0 +1,36 @@
+1.1.1={
+	law = succ_primogeniture
+	law = agnatic_succession
+	law = centralization_1
+	law = slavery_3
+	law = first_night_1
+}
+4039.1.1 = { holder = 500174420 } #Urras  Greyiron
+4064.1.1 = { holder = 501174420 } #Erich I Greyiron
+4078.1.1 = { holder = 502174420 } #Theon I Greyiron (NC)
+4115.1.1 = { holder = 0 }
+4131.1.1 = { holder = 503174420 } #Balon I Greyiron (NC)
+4156.1.1 = { holder = 0 }
+
+4667.1.1 = { holder = 504174420 } #Urrathon I Greyiron (NC)
+4678.1.1 = { holder = 505174420 } #Urrathon II Greyiron (NC)
+4700.1.1 = { holder = 0 }
+
+4760.1.1 = { holder = 506174420 } #Urragon I Greyiron (NC)
+4780.1.1 = { holder = 0 }
+
+5281.1.1 = { holder = 507174420 } #Balon III Greyiron (NC)
+5299.1.1 = { holder = 508174420 } #Erich III Greyiron (NC)
+5338.1.1 = { holder = 509174420 } #Rognar I Greyiron (NC)
+5352.1.1 = { holder = 510174420 } #Erich IV Greyiron (NC)
+5400.1.1 = { holder = 511174420 } #Urrathon III Greyiron (NC)
+5409.1.1 = { holder = 0 }
+
+6136.1.1 = { holder = 524174420 } #Urragon II Greyiron (NC)
+6145.1.1 = { holder = 512174420 } #Urragon III Greyiron
+6209.1.1 = { holder = 513174420 } #Torgon  Greyiron
+6251.1.1 = { holder = 517174420 } #Urragon IV Greyiron
+6303.1.1 = { 
+	holder = 520174420  #Urron  Greyiron
+} 
+6325.1.1 = { holder = 0 }

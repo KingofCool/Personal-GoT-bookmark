@@ -1,0 +1,12 @@
+900.1.1={ law=succ_primogeniture law=cognatic_succession
+	liege="c_bitterbridge"
+}
+8270.1.1={
+	holder=2268
+}
+
+
+
+
+
+

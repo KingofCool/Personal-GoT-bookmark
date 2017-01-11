@@ -1,0 +1,31 @@
+# 169 - Kayce
+
+# County Title
+title = c_kayce
+
+# Settlements
+max_settlements = 5
+b_kayce = castle
+b_kaycetowntwo = city
+b_kaycesept = temple
+b_kaycetown = city
+
+
+# Misc
+culture = westerman
+religion = the_seven
+
+#History
+
+6000.1.1 = {b_kayce = ca_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_kayce = ca_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_kayce = ca_asoiaf_westerland_basevalue_3}
+6000.1.1 = {b_kayce = ca_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_kaycetown = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_kaycetown = ct_asoiaf_westerland_basevalue_2}
+#6000.1.1 = {b_kaycetown = ct_asoiaf_westerland_basevalue_4}
+
+6000.1.1 = {b_kaycetowntwo = ct_asoiaf_westerland_basevalue_1}
+6000.1.1 = {b_kaycetowntwo = ct_asoiaf_westerland_basevalue_2}
+6000.1.1 = {b_kaycetowntwo = ct_asoiaf_westerland_basevalue_3}

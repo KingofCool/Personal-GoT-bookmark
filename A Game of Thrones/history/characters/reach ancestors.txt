@@ -10892,6 +10892,9 @@
 	mother=4021248
 
 	8233.1.1 = {birth="8233.1.1"}
+	8304.1.1={
+		death = yes
+	}	
 }
 4026248 = {
 	name="Fruella"
@@ -10915,6 +10918,9 @@
 	mother=4026248
 
 	8247.1.1 = {birth="8247.1.1"}
+	8306.1.1={
+		death = yes
+	}	
 }
 3031248 = {
 	name="Lynesse"	# Hosman's daughter, not a lord
@@ -13865,6 +13871,9 @@
 	mother=4031289
 
 	8252.1.1 = {birth="8252.1.1"}
+	8308.1.1={
+		death = yes
+	}	
 }
 4036289 = {
 	name="Juliya"
@@ -15529,6 +15538,7 @@
 
 	8231.1.1 = {birth="8231.1.1"}
 	8247.1.1 = {add_trait=knight add_trait=skilled_warrior}
+	8302.1.1 = {death=yes}	
 }
 4031292 = {
 	name="Tania"
@@ -18193,6 +18203,9 @@
 	mother=4029298
 
 	8245.1.1 = {birth="8245.1.1"}
+	8306.1.1={
+		death = yes
+	}		
 }
 3031298 = {
 	name="Talbert"	# Mace's son, a lord
@@ -39592,6 +39605,7 @@
 	8230.1.1 = {birth="8230.1.1"}
 	8246.1.1 = {add_trait=knight add_trait=trained_warrior}
 	8248.1.1 = {add_spouse=432280}
+	8304.1.1 = { death = yes }	
 }
 432280 = {
 	name="Alla"

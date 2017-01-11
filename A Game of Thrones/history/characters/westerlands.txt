@@ -71,6 +71,7 @@
 				remove_building = ca_asoiaf_westerland_basevalue_4
 			}
 			set_variable = { which = fear_actions value = 60 } #massacred Reynes
+			
 		}
 	}
 	8262.1.1={ #becomes hand of the king
@@ -445,6 +446,9 @@
 			}
 		}	
 	}
+	8303.1.1={
+		death=yes
+	}
 }
 ###The Kingslayer###
 3190 = {		
@@ -600,6 +604,9 @@
 	8299.12.7 = {
 		remove_trait=oathkeeper #gives Oathkeeper to Brienne
 	}
+	8303.1.1={
+		death=yes
+		}
 }
 ###The Imp###
 5190 = {		
@@ -720,21 +727,116 @@
 		remove_spouse = 6059 #sansa
 		add_trait="kinslayer"
 		add_trait="excommunicated"
-		effect = {
-			k_pentos = {
-				holder_scope = { reverse_banish = ROOT }
-			}
-			any_dynasty_member = {
-				limit = {
-					is_close_relative = ROOT
-					is_alive = yes
-				}
-				opinion = {
-					who = ROOT
-					modifier = opinion_vengeance
-				}
-			}
-		}
+	}
+8303.1.1 = {
+		add_spouse = 12400102
+		remove_trait="excommunicated"
+	}
+}
+9959932 = {		
+	name="Jon"	
+	dynasty=190
+	dna="ammdh0bbfe0" 	
+	religion="the_seven"	
+	culture="westerman"
+		
+	add_trait="genius"
+	add_trait="fair"
+
+	father = 5190	
+	mother = 12400102
+	
+	8306.1.1 = {
+		birth = yes
+	}
+}
+9959933 = {		
+	name="Missandei"
+	female=yes	
+	dynasty=190
+	dna="ammdh0bbfe0" 
+	properties="0d0000"	
+	religion="the_seven"	
+	culture="westerman"
+		
+	add_trait="strong"
+	add_trait="tall"
+
+	father = 5190	
+	mother = 12400102
+	
+	8308.1.1 = {
+		birth = yes
+	}
+}
+9959934 = {		
+	name="Myrcella"
+	female=yes	
+	dynasty=190
+	dna="ammdh0bbfe0" 
+	properties="0e0000"	
+	religion="the_seven"	
+	culture="westerman"
+		
+	add_trait="fair"
+
+	father = 5190	
+	mother = 12400102
+	
+	8310.1.1 = {
+		birth = yes
+	}
+}
+9959935 = {		
+	name="Tyrion"	
+	dynasty=190
+	
+	religion="the_seven"	
+	culture="westerman"
+		
+	add_trait="dwarf"
+	add_trait="genius"
+
+	father = 5190	
+	mother = 12400102
+	
+	8312.1.1 = {
+		birth = yes
+	}
+}
+9959936 = {		
+	name="Joanna"
+	female=yes	
+	dynasty=190
+	dna="cdkdg0cbfe0" 	
+	properties="0a0000"	
+	religion="the_seven"	
+	culture="westerman"
+		
+	add_trait="genius"
+	add_trait="strong"	
+
+	father = 5190	
+	mother = 12400102
+	
+	8314.1.1 = {
+		birth = yes
+	}
+}
+9959937 = {		
+	name="Kevan"	
+	dynasty=190
+	dna="cdlch0abfe0" 	
+	religion="the_seven"	
+	culture="westerman"
+		
+	add_trait="tall"
+
+	father = 5190	
+	mother = 12400102
+	
+	8315.1.1 = {
+		birth = yes
 	}
 }
 ##Tywin's SIblings##
@@ -759,6 +861,9 @@
 	}
 	8300.2.9={
 		employer=4190 #Cersei
+	}
+	8306.1.1={
+		death = yes
 	}
 }
 #Tywins Brother, THE Kevan###
@@ -1023,6 +1128,9 @@
 			}	
 		}
 	}
+	8303.1.1={
+		death=yes
+	}
 }	
 #2nd son
 3189 = {		
@@ -1122,6 +1230,9 @@
 			}
 		}	
 	} #Amerei Frey	
+	8303.1.1={
+		death=yes
+	}
 }
 #daughter
 4189 = {		
@@ -1229,6 +1340,9 @@
 	8300.2.9={
 		employer=4190 #Cersei
 	}
+	8308.1.1={
+		death = yes
+	}	
 }
 231190 = {		
 	name="Damon"	#by Alys Stackspear
@@ -1354,6 +1468,9 @@
 	8300.2.9={
 		employer=4190 #Cersei
 	}
+	8311.1.1={
+		death=yes
+	}	
 }
 234190 = {		
 	name="Marissa"	#unnamed daughter
@@ -1375,6 +1492,9 @@
 	8300.2.9={
 		employer=4190 #Cersei
 	}
+	8319.1.1={
+		death=yes
+	}	
 }
 235190 = {		
 	name="Tybolt"	#unnamed son
@@ -1399,6 +1519,9 @@
 	8300.2.9={
 		employer=4190 #Cersei
 	}
+	8307.1.1={
+		death=yes
+	}	
 }
 ##Issue of Damon## XI
 2227 = {		
@@ -1428,6 +1551,9 @@
 	}	
 	8300.2.9={
 		employer=4190 #Cersei
+	}	
+	8326.1.1={
+		death = yes
 	}	
 }
 ##Issue of Stafford## XI
@@ -1569,6 +1695,7 @@
 	8300.2.9={
 		employer=4190 #Cersei
 	}
+	8313.1.1 = {death=yes}	
 }
 3517190 = {
 	name="Tyran"	# a lord
@@ -1591,6 +1718,9 @@
 	8257.1.1 = {birth="8257.1.1"}
 	8273.1.1 = {add_trait=trained_warrior add_trait="knight" }
 	8275.1.1 = {add_spouse=5212}
+	8306.1.1 = {
+		death = yes
+	}
 }
 3519190 = {
 	name="Theomore"	# not a lord
@@ -1642,6 +1772,58 @@
 
 	8283.1.1 = {birth="8283.1.1"}
 	8299.1.1 = {add_trait=poor_warrior}
+	8302.1.1 = {add_spouse=6232}	
+}
+109190 = {
+	name="Lancel"	# not a lord
+	dynasty=190
+
+	religion="the_seven"
+	culture="westerman"
+
+	father=3521190
+	mother=6232
+
+	8304.1.1 = {birth=yes}
+	8322.1.1 = {add_trait=trained_warrior}
+}
+109191 = {
+	name="Tytos"	# not a lord
+	dynasty=190
+
+	religion="the_seven"
+	culture="westerman"
+
+	father=3521190
+	mother=6232
+
+	8306.1.1 = {birth=yes}
+	8308.1.1 = {death=yes}	
+}
+109192 = {
+	name="Rosamund"	# not a lord
+	dynasty=190
+	female=yes
+	religion="the_seven"
+	culture="westerman"
+
+	father=3521190
+	mother=6232
+
+	8308.1.1 = {birth=yes}
+}
+109193 = {
+	name="Tyran"	# not a lord
+	dynasty=190
+
+	religion="the_seven"
+	culture="westerman"
+
+	father=3521190
+	mother=6232
+
+	8310.1.1 = {birth=yes}
+	8329.1.1 = {add_trait=trained_warrior}
 }
 3522190 = {
 	name="Terrence"	# not a lord
@@ -1703,6 +1885,9 @@
 	add_trait="proud"
 
 	8257.1.1 = {birth="8257.1.1"}
+	8319.1.1={
+		death=yes
+	}	
 }
 ###Household
 2000190 = {
@@ -1977,7 +2162,37 @@
 	father = 1230
 	mother = 100230
 	
-	8281.1.1 = {birth="8281.1.1"}	
+	8281.1.1 = {birth="8281.1.1"}
+	8302.1.1 = {add_spouse = 2204}	
+}
+99230 = {		
+	name="Sandor"	
+	dynasty=230	
+	
+	religion="the_seven"	
+	culture="westerman"
+	
+	add_trait="strong"
+	add_trait="tall"	
+
+	father = 2204
+	mother = 9230
+	
+	8305.1.1 = {birth=yes}	
+}
+99231 = {		
+	name="Ceilya"	
+	dynasty=230	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"
+	
+	add_trait="strong"
+
+	father = 2204
+	mother = 9230
+	
+	8307.1.1 = {birth=yes}	
 }
 ###################
 ####House Broom####
@@ -1995,6 +2210,9 @@
 
 	8252.1.1 = {birth="8252.1.1"}
 	8268.1.1 = {add_spouse = 5191}	
+	8306.1.1={
+		death=yes
+	}	
 }
 5191 = {		
 	name="Olyva"
@@ -2005,7 +2223,10 @@
 	religion="the_seven"	
 	culture="westerman"
 
-	8252.1.1 = {birth="8252.1.1"}	
+	8252.1.1 = {birth="8252.1.1"}
+	8306.1.1={
+		death=yes
+	}	
 }
 ###Willems daughter; Mentioned only by name###
 2191 = {		
@@ -2029,7 +2250,64 @@
 	
 	father=191
 	
-	8277.1.1 = {birth="8277.1.1"}	
+	8277.1.1 = {birth="8277.1.1"}
+	8302.1.1 = {add_spouse = 12208}
+}
+96191 = {		
+	name="Willem"
+	dynasty=191	
+	
+	religion="the_seven"	
+	culture="westerman"
+	
+	father=6191
+	mother=12208	
+	
+	8304.1.1 = {birth=yes}
+	8322.1.1 = {
+		add_trait="skilled_warrior"	
+		add_trait="knight"
+	}	
+}
+96192 = {		
+	name="Benedict"
+	dynasty=191	
+	
+	religion="the_seven"	
+	culture="westerman"
+	
+	father=6191
+	mother=12208	
+	
+	8306.1.1 = {birth=yes}
+	8324.1.1 = {
+		add_trait="skilled_warrior"	
+		add_trait="knight"
+	}	
+}
+96193 = {		
+	name="Olyva"
+	dynasty=191	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"
+	
+	father=6191
+	mother=12208	
+	
+	8309.1.1 = {birth=yes}	
+}
+96194 = {		
+	name="Orielle"
+	dynasty=191	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"
+	
+	father=6191
+	mother=12208	
+	
+	8312.1.1 = {birth=yes}	
 }
 ###Master of arms at casterly rock, I made him Willems brother###
 1191 = {		
@@ -2060,6 +2338,9 @@
 			remove_title = job_priest
 			give_job_title = job_marshal 
 		}
+	}
+	8310.1.1={
+		death=yes
 	}	
 }
 ###None Canon founder###
@@ -2126,7 +2407,10 @@
 	            add_trait="tough_soldier" 
 				add_trait="brave" 
 				add_trait="trained_warrior"}
-	8282.2.15 = {add_spouse=1229}			
+	8282.2.15 = {add_spouse=1229}
+	8329.1.1={
+		death=yes
+	}		
 }
 1222 = {
 	name="Hugh"
@@ -2270,6 +2554,9 @@
 		add_trait=trained_warrior
 	}
 	8274.1.1 = {add_spouse = 9208}
+	8308.1.1={
+		death=yes
+	}		
 }
 9208 = {		
 	name="Sansa" # Taubert's wife.	
@@ -2279,7 +2566,10 @@
 	religion="the_seven"	
 	culture="westerman"	
 	
-	8259.1.1 = {birth="8259.1.1"}	
+	8259.1.1 = {birth="8259.1.1"}
+	8308.1.1={
+		death=yes
+	}		
 }
 ###Taubert's children###
 11208 = {		
@@ -2296,6 +2586,9 @@
 	8285.1.1 = {add_trait="squire"}
 	8291.1.1 = {remove_trait="squire" add_trait="knight"}
 	8291.5.9 = {add_spouse=3222} # Maid of House Yew
+	8324.1.1={
+		death=yes
+	}		
 }
 12208 = {		
 	name="Orielle" # Taubert's daughter.
@@ -2378,6 +2671,9 @@
 	
 	8259.1.1 = {birth="8259.1.1"}
 	8280.1.1 = {add_spouse=431208}
+	8321.1.1={
+		death=yes
+	}	
 }
 431208 = {		
 	name="Preston" 
@@ -2463,6 +2759,9 @@
 	8300.1.2 = {
 		employer = 7316 
 	}
+	8310.1.1={
+		death=yes
+	}	
 }
 ###Martyn's children - Current heir###
 17208 = {		
@@ -2476,6 +2775,67 @@
 	father=11208
 	
 	8292.4.21 = {birth="8292.4.21"}
+	8310.1.1={
+		add_trait="skilled_tactician"
+		add_trait="master_warrior"
+		add_trait="knight"
+	}	
+	8310.1.1 = {add_spouse=3523190}		
+}
+37208 = {		
+	name="Olivia"	
+	dynasty=208
+	female=yes
+	dna="ddzak0tcfxd"	
+	religion="the_seven"	
+	culture="westerman"
+
+	mother=3523190
+	father=17208
+	
+	8313.1.1 = { birth = yes }	
+}
+37209 = {		
+	name="Podrick"	
+	dynasty=208
+	dna="ddfabmdsg0d"
+	religion="the_seven"	
+	culture="westerman"
+	add_trait="strong"
+	add_trait="quick"
+	mother=3523190
+	father=17208
+	
+	8315.1.1 = { birth = yes }	
+	8330.1.1={
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}		
+}
+37210 = {		
+	name="Martyn"	
+	dynasty=208
+	dna="ddzak0tcfxd"
+	religion="the_seven"	
+	culture="westerman"
+
+	mother=3523190
+	father=17208
+	
+	8318.1.1 = { birth = yes }			
+}
+37211 = {		
+	name="Myrcella"	
+	dynasty=208
+	female=yes
+	dna="ddfabmdsg0d"	
+	religion="the_seven"	
+	culture="westerman"
+
+	mother=3523190
+	father=17208
+	
+	8320.1.1 = { birth = yes }	
 }
 18208 = {		
 	name="Robert"	
@@ -2627,6 +2987,12 @@
 	8296.3.9 = {add_trait="honest" add_trait="diligent" add_trait="squire"}	
 	8298.1.1 = {add_trait="poor_warrior" add_trait="brave" guardian=5190 employer=9316  }
 	8299.7.1 = {add_trait="tough_soldier" remove_trait="poor_warrior" add_trait="trained_warrior"} # At the Blackwater.
+	8306.1.1 = {
+		add_trait="kingsguard"
+	}
+	8306.1.1 = {
+		employer=6253
+	}	
 }	
 #####################
 ####House Falwell#### # Updated \Chrisjm89/
@@ -2645,6 +3011,9 @@
 	8247.1.1 = {birth="8247.1.1"}
 	8263.1.1 = {add_spouse = 3229}
 	8263.1.7 = {add_trait="knight" add_trait="poor_warrior"}
+	8311.1.1={
+		death=yes
+	}	
 }
 3229 = {		
 	name="Rylena" # was originally named Joffrey like her husband. Facepalm for whoever did this :P \Chrisjm89
@@ -2655,7 +3024,10 @@
 	religion="the_seven"	
 	culture="westerman"
 	
-	8247.1.1 = {birth="8247.1.1"}	
+	8247.1.1 = {birth="8247.1.1"}
+	8311.1.1={
+		death=yes
+	}	
 }
 ###Children###
 2229 = {		
@@ -2672,6 +3044,9 @@
 	8276.1.1 = {add_trait="squire"}
 	8282.1.1 = {remove_trait="squire" add_trait="knight" add_trait="poor_warrior"}
 	8282.3.10 = {add_spouse=2232} # Greenfield maid
+	8328.1.1={
+		death=yes
+	}	
 }				
 1229 = {		
 	name="Richela"	
@@ -2773,6 +3148,7 @@
 	culture="westerman"	
 	
 	8222.1.1 = {birth="8222.1.1"}	
+	8303.1.1 = { death = yes }	
 }
 ###Sumner's father###
 10227 = {		
@@ -2803,6 +3179,7 @@
 	
 	8240.1.1 = {birth="8240.1.1"}
 	8260.1.1 = {add_spouse=14227}	
+	8306.1.1 = { death = yes }		
 }
 14227 = {		
 	name="Bellena" # Roland's wife.
@@ -2813,7 +3190,8 @@
 	religion="the_seven"	
 	culture="westerman"	
 	
-	8241.1.1 = {birth="8241.1.1"}	
+	8241.1.1 = {birth="8241.1.1"}
+	8306.1.1 = { death = yes }		
 }
 ###Sumner's younger son Burton with his children###
 17227 = {		
@@ -2842,7 +3220,10 @@
 	culture="westerman"	
 	
 	
-	8247.1.1 = {birth="8247.1.1"}	
+	8247.1.1 = {birth="8247.1.1"}
+	8314.1.1={
+		death=yes
+	}	
 }
 ###Damions Wife a Crakehall###
 1227 = {		
@@ -2856,7 +3237,10 @@
 	father=227
 	mother=11227
 
-	8253.1.1 = {birth="8253.1.1"}	
+	8253.1.1 = {birth="8253.1.1"}
+	8312.1.1={
+		death=yes
+	}	
 }
 15227 = {		
 	name="Bellena" # Burton's daughter.
@@ -2904,7 +3288,8 @@
 	mother=14227
 	
 	8257.1.1 = {birth="8257.1.1"}
-	8275.1.1 = {add_spouse=19227}	
+	8275.1.1 = {add_spouse=19227}
+	8319.1.1 = { death = yes }		
 }
 19227 = {		
 	name="Janei" # Tybolt's wife so he doesn't get a free wife.
@@ -2916,6 +3301,7 @@
 	culture="westerman"	
 	
 	8256.1.1 = {birth="8256.1.1"}	
+	8319.1.1 = { death = yes }		
 }
 8227 = {		
 	name="Lyle"	#Strongboar, Roland's secondborn.
@@ -2926,8 +3312,10 @@
 	religion="the_seven"	
 	culture="westerman"
 	
+
 	add_trait="strong"	
-		
+	
+	
 	father=7227
 	mother=14227	
 	
@@ -2937,6 +3325,7 @@
 			   add_trait="trained_warrior"
 	           give_nickname = nick_strongboar}
 	8277.1.1 = {add_spouse = 12227}
+	8316.1.1 = { death = yes }	
 }
 12227 = {		
 	name="Zoe" # Strongboar's wife.
@@ -2947,7 +3336,8 @@
 	religion="the_seven"	
 	culture="westerman"	
 	
-	8260.1.1 = {birth="8260.1.1"}	
+	8260.1.1 = {birth="8260.1.1"}
+	8316.1.1 = { death = yes }	
 }
 13227 = {		
 	name="Theodore" # Strongboar's son.
@@ -2987,11 +3377,75 @@
 	
 	
 	father=16227
-	mother=19227
+	mother=19227		
 	
-		
+	8276.1.1 = {birth="8276.1.1"}
+	8302.1.1 = {add_spouse = 5222}	
+}
+66227 = {		
+	name="Roland"
+	dynasty=227	
 	
-	8276.1.1 = {birth="8276.1.1"}	
+	religion="the_seven"	
+	culture="westerman"	
+	
+	
+	father=6227
+	mother=5222		
+	
+	8304.1.1 = {birth=yes}
+}
+66228 = {		
+	name="Lyle"
+	dynasty=227	
+	
+	religion="the_seven"	
+	culture="westerman"	
+	
+	
+	father=6227
+	mother=5222		
+	
+	8306.1.1 = {birth=yes}
+}
+66229 = {		
+	name="Shiera"
+	dynasty=227	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"	
+	
+	
+	father=6227
+	mother=5222		
+	
+	8308.1.1 = {birth=yes}
+}
+66230 = {		
+	name="Harys"
+	dynasty=227	
+	
+	religion="the_seven"	
+	culture="westerman"	
+	
+	
+	father=6227
+	mother=5222		
+	
+	8310.1.1 = {birth=yes}
+}
+66231 = {		
+	name="Dorna"
+	dynasty=227	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"	
+	
+	
+	father=6227
+	mother=5222		
+	
+	8311.1.1 = {birth=yes}
 }
 ###################
 ####House Swyft#### # Updated \Chrisjm89/
@@ -3053,6 +3507,7 @@
 		}
 	}
 	8299.1.1 = {employer=9316}
+	8316.1.1 = { death = yes }	
 }
 10228 = {		
 	name="Heloise"
@@ -3064,7 +3519,8 @@
 	culture="westerman"
 	
 	
-	8241.1.1 = {birth="8241.1.1"}	
+	8241.1.1 = {birth="8241.1.1"}
+	8316.1.1 = { death = yes }	
 }
 2228 = {		
 	name="Steffon" ###Helped to take Riverrun###
@@ -3084,7 +3540,35 @@
 	8276.1.1 = {add_trait="knight"
 	            add_trait="tough_soldier"}
 	8281.1.1 = {add_spouse = 2221} # Maid of House Serrett
+	8313.1.1 = { death = yes }		
 }	
+22280 = {		
+	name="Harys"
+	dynasty=228	
+	
+	martial = 8	
+	
+	religion="the_seven"	
+	culture="westerman"		
+	
+	father = 2228
+	mother= 2221	
+	
+	8302.1.1 = {birth=yes}	
+}
+22281 = {		
+	name="Dorna"
+	dynasty=228	
+	female=yes
+	
+	religion="the_seven"	
+	culture="westerman"		
+	
+	father = 2228
+	mother= 2221	
+	
+	8303.1.1 = {birth=yes}	
+}
 3228 = {		
 	name="Dorna"	###Kevans wife, a Swyft###
 	female=yes	
@@ -3102,7 +3586,8 @@
 	father = 228
 	mother=10228	
 
-	8261.1.1 = {birth="8261.1.1"}	
+	8261.1.1 = {birth="8261.1.1"}
+	8315.1.1 = { death = yes }		
 }	
 1228 = {		
 	name="Shierle"	# Married Melwyn Sarsfield.
@@ -3115,7 +3600,8 @@
 	father = 228
 	mother=10228	
 	
-	8262.1.1 = {birth="8262.1.1"}	
+	8262.1.1 = {birth="8262.1.1"}
+	8321.1.1 = { death = yes }	
 }
 
 ###Steffons daughter###
@@ -3191,6 +3677,9 @@
 	culture="westerman"
 	
 	8257.1.1 = {birth="8257.1.1"}
+	8325.1.1={
+		death = yes
+	}	
 }
 ###Sons###
 1223 = {		
@@ -3276,6 +3765,9 @@
 	8300.6.1 = {
 		effect = { prisoner = no }
 	}
+	8307.1.1={
+		death=yes
+	}	
 }
 3232 = {		
 	name="Erren" # Married Lord of House Yew
@@ -3289,7 +3781,10 @@
 	religion="the_seven"	
 	culture="westerman"
 	
-    8252.1.1 = {birth="8252.1.1"}	
+    8252.1.1 = {birth="8252.1.1"}
+	8327.1.1={
+		death=yes
+	}	
 }
 ###Sons###
 1232 = {		
@@ -3342,6 +3837,9 @@
 	8278.1.1 = {add_trait="squire"}
 	8283.1.1 = {remove_trait="squire" add_trait="knight" add_trait="trained_warrior"}
 	8283.4.18 = {add_spouse=2231} # Turnberry maid
+	8322.1.1={
+		death=yes
+	}	
 }
 ###Daughter###		
 2232 = {		
@@ -3398,9 +3896,57 @@
 	father=4232
 	mother=2231	
 
-	8285.7.3 = {birth="8285.7.3"}	
+	8285.7.3 = {birth="8285.7.3"}
+	8313.1.1 = {add_spouse=19208}
 }
+77232 = {		
+	name="Preston"	
+	dynasty=232	
+	
+	religion="the_seven"	
+	culture="westerman"	
 
+	father=7232
+	mother=19208
+
+	8315.1.1 = {birth=yes}
+}
+77233 = {		
+	name="Erren"	
+	dynasty=232	
+	
+	religion="the_seven"	
+	culture="westerman"	
+
+	father=7232
+	mother=19208
+
+	8317.1.1 = {birth=yes}
+}
+77234 = {		
+	name="Pia"	
+	dynasty=232	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"	
+
+	father=7232
+	mother=19208
+
+	8319.1.1 = {birth=yes}
+}
+77235 = {		
+	name="Joy"	
+	dynasty=232	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"	
+
+	father=7232
+	mother=19208
+
+	8322.1.1 = {birth=yes}
+}
 ###################
 ####House Myatt#### # Updated \Chrisjm89/
 ###################
@@ -3417,6 +3963,9 @@
 	8266.1.1 = {birth="8266.1.1"}
 	8282.1.1 = {add_spouse=1221} # Serrett maid Jeyne
 	8282.2.1 = {add_trait="knight" add_trait="poor_warrior"}
+	8329.1.1={
+		death=yes
+	}	
 }
 
 ###Children###
@@ -3433,6 +3982,57 @@
 	8283.1.1 = {birth="8283.1.1"}
 	8293.1.1 = {add_trait="squire"}
 	8299.1.1 = {remove_trait="squire" add_trait="knight" add_trait="poor_warrior"}
+	8304.1.1 = {add_spouse=7222}
+}
+92215 = {		
+	name="Glavian"	
+	dynasty=215	
+
+	religion="the_seven"	
+	culture="westerman"
+
+	father=2215
+	mother=7222
+
+	8307.1.1 = {birth=yes}
+	8325.1.1 = {add_trait="knight" add_trait="trained_warrior"}
+}
+92216 = {		
+	name="Klarina"	
+	dynasty=215	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"
+
+	father=2215
+	mother=7222
+
+	8309.1.1 = {birth=yes}
+}
+92217 = {		
+	name="Errena"	
+	dynasty=215	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"
+
+	father=2215
+	mother=7222
+
+	8312.1.1 = {birth=yes}
+}
+92218 = {		
+	name="Harys"	
+	dynasty=215	
+
+	religion="the_seven"	
+	culture="westerman"
+
+	father=2215
+	mother=7222
+
+	8315.1.1 = {birth=yes}
+	8330.1.1 = {add_trait="squire" add_trait="trained_warrior"}
 }
 3215 = {		
 	name="Mybella"	
@@ -3464,7 +4064,10 @@
 
 	8245.1.1 = {birth="8245.1.1"}
 	8261.1.1 = {add_trait="knight" add_trait="trained_warrior"}
-	8262.1.1 = {add_spouse = 3221}	
+	8262.1.1 = {add_spouse = 3221}
+	8306.1.1={
+		death=yes
+	}	
 }
 3221 = {		
 	name="Lobella"
@@ -3475,7 +4078,10 @@
 	religion="the_seven"	
 	culture="westerman"		
 
-	8245.1.1 = {birth="8245.1.1"}	
+	8245.1.1 = {birth="8245.1.1"}
+	8306.1.1={
+		death=yes
+	}	
 }
 ###Children###
 1221 = {		
@@ -3489,7 +4095,10 @@
 	father=221
 	mother=3221	
 	
-	8263.1.1 = {birth="8263.1.1"}	
+	8263.1.1 = {birth="8263.1.1"}
+	8329.1.1={
+		death=yes
+	}	
 }			
 9221 = {		
 	name="Jonthor"	
@@ -3504,6 +4113,58 @@
 	8274.1.1 = {birth="8274.1.1"}
 	8284.1.1 = {add_trait="squire"}
 	8290.1.1 = {remove_trait="squire" add_trait="knight" add_trait="poor_warrior"}
+	8303.1.1 = {add_spouse = 2191}	
+	8305.1.1 = {remove_trait="poor_warrior" add_trait="trained_warrior"}		
+}
+79221 = {		
+	name="Lobella"	
+	dynasty=221	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"		
+	
+	father = 9221
+	mother=2191
+	
+	8305.1.1 = {birth=yes}		
+}
+79222 = {		
+	name="Justyn"	
+	dynasty=221	
+
+	religion="the_seven"	
+	culture="westerman"		
+	
+	father = 9221
+	mother=2191
+	
+	8308.1.1 = {birth=yes}
+	8326.1.1 = {add_trait="knight" add_trait="skilled_warrior"}	
+}
+79223 = {		
+	name="Lysana"	
+	dynasty=221	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"		
+	
+	father = 9221
+	mother=2191
+	
+	8311.1.1 = {birth=yes}		
+}
+79224 = {		
+	name="Martyn"	
+	dynasty=221	
+
+	religion="the_seven"	
+	culture="westerman"		
+	
+	father = 9221
+	mother=2191
+	
+	8313.1.1 = {birth=yes}
+	8330.1.1 = {add_trait="knight" add_trait="skilled_warrior"}	
 }		
 2221 = {		
 	name="Lysana" # Maried to heir of House Swyft
@@ -3541,6 +4202,7 @@
 	            add_trait="poor_warrior"
 				add_trait="charismatic_negotiator"}
 	8258.1.1 = {add_spouse = 4231}
+	8304.1.1 = { death = yes }	
 }
 4231 = {		
 	name="Gloria"
@@ -3551,7 +4213,8 @@
 	religion="the_seven"	
 	culture="westerman"	
 	
-	8241.1.1 = {birth="8241.1.1"}	
+	8241.1.1 = {birth="8241.1.1"}
+	8304.1.1 = { death = yes }		
 }			
 ###The Children###	
 1231 = {		
@@ -3567,7 +4230,47 @@
 	8261.1.1 = {birth="8261.1.1"}
 	8271.1.1 = {add_trait="squire"}
 	8277.1.1 = {remove_trait="squire" add_trait="knight" add_trait="trained_warrior"}
-}				
+	8301.1.1 = {add_spouse = 3215}	
+	8326.1.1 = { death = yes }		
+}
+22231 = {		
+	name="Lysana"
+	dynasty=231	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"
+	
+	father= 1231
+	mother= 3215	
+	
+	8302.11.1 = {birth=yes}
+}	
+33231 = {		
+	name="Lorimer"
+	dynasty=231	
+	
+	religion="the_seven"	
+	culture="westerman"
+	
+	father= 1231
+	mother= 3215	
+	
+	8304.1.1 = {birth=yes}
+	8322.1.1 = { add_trait="knight" add_trait="trained_warrior"}
+}
+44231 = {		
+	name="Enrick"
+	dynasty=231	
+	
+	religion="the_seven"	
+	culture="westerman"
+	
+	father= 1231
+	mother= 3215	
+	
+	8306.1.1 = {birth=yes}
+	8325.1.1 = { add_trait="knight" add_trait="trained_warrior"}
+}					
 2231 = {		
 	name="Leysia" # Married heir of House Greenfield	
 	female=yes	
@@ -3579,7 +4282,8 @@
 	father= 231
 	mother= 4231		
 	
-	8260.1.1 = {birth="8260.1.1"}	
+	8260.1.1 = {birth="8260.1.1"}
+	8328.1.1={ death=yes }		
 }			
 3231 = {		
 	name="Joanna" # Married heir of House Peckledon
@@ -3592,7 +4296,8 @@
 	father=231
 	mother=4231	
 	
-	8264.1.1 = {birth="8264.1.1"}	
+	8264.1.1 = {birth="8264.1.1"}
+	8327.1.1={ death=yes }		
 }
 6231 = {		
 	name="Lorimer" 	
@@ -3763,6 +4468,66 @@
 	8299.7.1 = {
 		effect = { prisoner = no }
 	}
+	8301.1.1 = {
+		add_spouse=2198
+	}	
+	8317.1.1 = {death=yes}	
+}
+11216 = {	
+	name="Joy"
+	dynasty=216	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"
+	
+	father=1216	
+	mother=2198
+	
+	8302.1.1 = {birth=yes}		
+}
+22216 = {	
+	name="Robert"
+	dynasty=216	
+
+	religion="the_seven"	
+	culture="westerman"
+	
+	father=1216	
+	mother=2198
+	
+	8304.1.1 = {birth=yes}
+	8321.1.1 = {
+		add_trait=knight
+		add_trait=trained_warrior
+	}	
+}
+33216 = {	
+	name="Flement"
+	dynasty=216	
+
+	religion="the_seven"	
+	culture="westerman"
+	
+	father=1216	
+	mother=2198
+	
+	8306.1.1 = {birth=yes}
+	8325.1.1 = {
+		add_trait=knight
+		add_trait=trained_warrior
+	}	
+}
+44216 = {	
+	name="Elyssa"
+	dynasty=216	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"
+	
+	father=1216	
+	mother=2198
+	
+	8307.1.1 = {birth=yes}		
 }
 2216 = {		
 	name="Robert" # Second son. This guy dies in 299 not 281. \Chrisjm89/
@@ -3881,6 +4646,7 @@
 
 	8236.1.1 = {birth="8236.1.1"}
 	8252.1.1 = {add_spouse = 4217}
+	8307.1.1 = { death = yes } 
 }
 4217 = {		
 	name="Marketa"
@@ -3891,7 +4657,8 @@
 	religion="the_seven"	
 	culture="westerman"	
 
-	8236.1.1 = {birth="8236.1.1"}	
+	8236.1.1 = {birth="8236.1.1"}
+	8307.1.1 = { death = yes } 	
 }		
 ###Daughters###
 9217 = {		
@@ -3925,6 +4692,9 @@
 	8257.1.1 = {birth="8257.1.1"}
 	8273.1.1 = {add_trait="knight" add_trait="poor_warrior"}
 	8278.3.2 = {add_spouse=333215} # Myatt Maid
+	8318.1.1={
+		death=yes
+	}	
 }
 ###Daughters###	
 1198 = {		
@@ -3969,6 +4739,44 @@
 	8298.1.2 = {add_spouse=2218} # Ferren maid
 	8298.3.5 = { remove_trait="squire" add_trait="knight" add_trait="poor_warrior"}
 }
+97198 = {	
+	name="Halman"		
+	dynasty=198	
+	
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=4198
+	mother=2218
+	
+	8302.1.1 = {birth=yes}
+	8321.1.1 = { add_trait="knight" add_trait="master_warrior"}
+}
+97199 = {	
+	name="Elyssa"		
+	dynasty=198	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=4198
+	mother=2218
+	
+	8304.1.1 = {birth=yes}
+}
+97200 = {	
+	name="Tywin"		
+	dynasty=198	
+	
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=4198
+	mother=2218
+	
+	8306.1.1 = {birth=yes}
+	8325.1.1 = { add_trait="knight" add_trait="trained_warrior"}
+}
 ###Grandchild###
 5198 = {	
 	name="Ellena"	
@@ -4001,6 +4809,9 @@
 	8257.1.1 = {birth="8257.1.1"}
 	8273.1.1 = {add_trait="knight" add_trait="trained_warrior"}
 	8273.1.4 = {add_spouse = 3218}
+	8311.1.1={
+		death=yes
+	}	
 }
 3218 = {
 	name="Bella"
@@ -4011,7 +4822,10 @@
 	religion="the_seven"	
 	culture="westerman"	
 	
-	8257.1.1 = {birth="8257.1.1"}	
+	8257.1.1 = {birth="8257.1.1"}
+	8311.1.1={
+		death=yes
+	}	
 }		
 ###Children###	
 1218 = {		
@@ -4073,7 +4887,9 @@
 	8250.1.1 = {birth="8250.1.1"}
 	8266.1.1 = {add_spouse=3219}
 	8266.1.6 = {add_trait="knight"}
-	
+	8312.1.1={
+		death=yes
+	}	
 }
 3219 = {		
 	name="Elia"
@@ -4084,7 +4900,10 @@
 	religion="the_seven"	
 	culture="westerman"
 	
-	8250.1.1 = {birth="8250.1.1"}	
+	8250.1.1 = {birth="8250.1.1"}
+	8312.1.1={
+		death=yes
+	}	
 }
 ###Daughter###		
 2219 = {		
@@ -4115,6 +4934,9 @@
 	8277.1.1 = {add_trait="squire"}
 	8283.5.3 = {remove_trait="squire" add_trait="knight" add_trait="poor_warrior"}
 	8283.7.9 = {add_spouse=3231} # Turnberry maid
+	8328.1.1={
+		death=yes
+	}	
 }
 5219 = {		
 	name="Beric" 
@@ -4160,14 +4982,84 @@
 				}	
 			}	
 		}
-	} 
+	}
+	8304.1.1 = {add_spouse=7199}	
+}
+66219 = {		
+	name="Jeyne"
+	dynasty=219	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=6219
+	mother=7199	
+	
+	8306.1.1 = {birth=yes}	
+}
+66220 = {		
+	name="Montfory"
+	dynasty=219	
+
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=6219
+	mother=7199	
+	
+	8308.1.1 = {birth=yes}
+	8326.1.1 = {
+		add_trait="knight"	
+		add_trait="brave"
+	    add_trait="skilled_warrior"
+	}	
+}
+66221 = {		
+	name="Rosamund"
+	dynasty=219	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=6219
+	mother=7199	
+	
+	8310.1.1 = {birth=yes}	
+}
+66222 = {		
+	name="Hendry"
+	dynasty=219	
+
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=6219
+	mother=7199	
+	
+	8313.1.1 = {birth=yes}
+	8330.1.1 = {
+		add_trait="knight"	
+	    add_trait="trained_warrior"
+	}	
+}
+66223 = {		
+	name="Jyanna"
+	dynasty=219	
+	female=yes	
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=6219
+	mother=7199	
+	
+	8316.1.1 = {birth=yes}	
 }
 ###Montfory's daughter###
 7219 = {		
 	name="Jyanna" 
 	dynasty=219	
 	female = yes
-	
+	dna="idxqezssaji" 	
 	religion="the_seven"	
 	culture="westerman"	
 	
@@ -4193,6 +5085,9 @@
 	8247.1.1 = {birth="8247.1.1"}
 	8263.1.1 = {add_spouse = 2220}
 	8263.2.9 = {add_trait="knight" add_trait="trained_warrior"}
+	8310.1.1={
+		death=yes
+	}	
 }
 2220 = {		
 	name="Lyabella"
@@ -4204,6 +5099,9 @@
 	culture="westerman"	
 	
 	8247.1.1 = {birth="8247.1.1"}
+	8310.1.1={
+		death=yes
+	}	
 }			
 ###The Son###	
 1220 = {		
@@ -4220,6 +5118,9 @@
 	8274.1.1 = {add_trait="squire"}
 	8280.1.1 = {remove_trait="squire" add_trait="knight" add_trait="trained_warrior"}
 	8289.1.1 = {add_spouse=2219} # Peckleton maid.
+	8327.1.1={
+		death=yes
+	}	
 }
 3220 = {		
 	name="Lothar"	
@@ -4325,6 +5226,9 @@
 	culture="westerman"	
 	
 	8250.1.1 = {birth="8250.1.1"}
+	8311.1.1={
+		death = yes
+	}	
 }
 ###Daughters###		
 4213 = {		
@@ -4338,8 +5242,56 @@
 	father=213	
 	mother=3213
 	
-	8275.1.1 = {birth="8275.1.1"}	
-}	
+	8275.1.1 = {birth="8275.1.1"}
+	8302.1.1 = {
+		add_matrilineal_spouse=3522190
+	}	
+}
+86213 = {		
+	name="Myranda"
+	female=yes	
+	dynasty=213	
+	
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=3522190	
+	mother=4213
+	
+	8304.1.1 = {birth=yes}	
+}
+86214 = {		
+	name="Tyran"
+	dynasty=213	
+	
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=3522190	
+	mother=4213
+	
+	8306.1.1 = {birth=yes}
+	8324.1.1 = {
+		add_trait=knight
+		add_trait=trained_warrior
+	}	
+}
+86215 = {		
+	name="Tyrion"
+	dynasty=213	
+	
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=3522190	
+	mother=4213
+	
+	8308.1.1 = {birth=yes}
+	8326.1.1 = {
+		add_trait=knight
+		add_trait=trained_warrior
+	}	
+}		
 ###Sister of Leo###
 1213 = {
 	name="Leonella"	#Married a Frey
@@ -4365,7 +5317,10 @@
 	father=300213	
 	mother=200213
 	
-	8252.1.1 = {birth="8252.1.1"}	
+	8252.1.1 = {birth="8252.1.1"}
+	8323.1.1={
+		death = yes
+	}	
 }
 251213 = {
 	name="Lyonel"	
@@ -4382,6 +5337,9 @@
 		add_trait=trained_warrior
 		add_trait=knight
 	}
+	8317.1.1={
+		death=yes
+	}	
 }
 ###################
 ####House Vikary### # Updated \Chrisjm89/
@@ -4400,6 +5358,9 @@
 	8254.1.1 = {birth="8254.1.1"}
 	8270.1.1 = {add_spouse = 5203}
 	8272.1.1 = {add_trait="knight" add_trait="trained_warrior"}
+	8312.1.1={
+		death=yes
+	}	
 }
 5203 = {		
 	name="Alisce"
@@ -4410,7 +5371,10 @@
 	religion="the_seven"	
 	culture="westerman"	
 	
-	8254.1.1 = {birth="8254.1.1"}	
+	8254.1.1 = {birth="8254.1.1"}
+	8312.1.1={
+		death=yes
+	}	
 }
 ###Children###
 4203 = {		
@@ -4426,7 +5390,58 @@
 	8279.1.1 = {birth="8279.1.1"}
 	8290.1.1 = {add_trait="squire"}
 	8295.1.1 = {remove_trait="squire" add_trait="knight" add_trait="skilled_warrior"}
-}		
+	8302.1.1 = {add_spouse = 1198}	
+}	
+94203 = {		
+	name="Leysia"		
+	dynasty=203	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=4203
+	mother=1198	
+	
+	8304.1.1 = {birth=yes}	
+}
+94204 = {		
+	name="Lymond"		
+	dynasty=203	
+
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=4203
+	mother=1198	
+	
+	8307.1.1 = {birth=yes}
+	8325.1.1 = { add_trait="knight" add_trait="skilled_warrior" }	
+}
+94205 = {		
+	name="Garth"		
+	dynasty=203	
+
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=4203
+	mother=1198	
+	
+	8309.1.1 = {birth=yes}
+	8328.1.1 = { add_trait="knight" add_trait="trained_warrior" }	
+}	
+94206 = {		
+	name="Alisce"		
+	dynasty=203	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=4203
+	mother=1198	
+	
+	8312.1.1 = {birth=yes}	
+}	
 2203 = {		
 	name="Adela"	
 	female=yes	
@@ -4497,6 +5512,7 @@
 	8299.11.5 = {
 		effect = { prisoner = no }
 	}
+	8317.1.1={ death=yes }	
 }
 3201 = {		
 	name="Muriella"
@@ -4508,6 +5524,7 @@
 	culture="westerman"	
 	
 	8259.1.1 = {birth="8259.1.1"}	
+	8317.1.1={ death=yes }	
 }
 ###Daughters###
 2201 = {		
@@ -4521,8 +5538,57 @@
 	father = 201
 	mother=3201	
 	
-	8281.1.1 = {birth="8281.1.1"}	
-}				
+	8281.1.1 = {birth="8281.1.1"}
+	8302.1.1 = {add_spouse = 151192}	
+}
+92201 = {		
+	name="Regenard"		
+	dynasty=201	
+	
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father = 151192
+	mother=2201	
+	
+	8304.1.1 = {birth=yes}	
+}	
+92202 = {		
+	name="Samwell"		
+	dynasty=201	
+	
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father = 151192
+	mother=2201	
+	
+	8306.1.1 = {birth=yes}	
+}
+92203 = {		
+	name="Lunete"		
+	dynasty=201	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father = 151192
+	mother=2201	
+	
+	8308.1.1 = {birth=yes}	
+}
+92204 = {		
+	name="Muriella"		
+	dynasty=201	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father = 151192
+	mother=2201	
+	
+	8311.1.1 = {birth=yes}	
+}			
 1201 = {		
 	name="Lunete"	
 	female=yes	
@@ -4597,6 +5663,9 @@
 				
 		}
 	}
+	8316.1.1={
+		death=yes
+	}	
 }
 
 ###Daughter, Married Robb###
@@ -4625,7 +5694,6 @@
 	8283.1.1 = {birth="8283.1.1"}	
 	8299.11.5 = {
 		employer=199
-		add_trait="widowed"
 	}
 }
 ###Son###
@@ -4652,7 +5720,70 @@
 		add_trait = squire
 		guardian = 2059
 	}
-}		
+	8307.1.1 = {
+		remove_trait = squire
+		add_trait = knight
+	}	
+	8308.1.1 = {
+		add_spouse = 11190
+	}	
+}	
+77199 = {		
+	name="Raynald"	
+	dynasty=199	
+	
+	religion="the_seven"	
+	culture="westerman"
+
+	father = 3199	
+	mother = 11190
+	
+	8309.1.1 = {birth=yes}	
+	8327.1.1 = {
+		add_trait = trained_warrior	
+		add_trait = knight
+	}		
+}
+77200 = {		
+	name="Gawen"	
+	dynasty=199	
+	
+	religion="the_seven"	
+	culture="westerman"
+
+	father = 3199	
+	mother = 11190
+	
+	8311.1.1 = {birth=yes}	
+	8330.1.1 = {
+		add_trait = trained_warrior	
+		add_trait = knight
+	}		
+}
+77201 = {		
+	name="Eleyna"	
+	dynasty=199	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"
+
+	father = 3199	
+	mother = 11190
+	
+	8314.1.1 = {birth=yes}			
+}
+77202 = {		
+	name="Joy"	
+	dynasty=199	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"
+
+	father = 3199	
+	mother = 11190
+	
+	8316.1.1 = {birth=yes}			
+}	
 ###Son###
 4199 = {		
 	name="Raynald"	
@@ -4731,6 +5862,9 @@
 			prisoner = no
 		}
 	}
+	8319.1.1={
+		death=yes
+	}	
 }
 10200 = {		
 	name="Fenice"
@@ -4754,6 +5888,36 @@
 	mother=10200
 
 	8281.1.1 = {birth="8281.1.1"}
+	8302.1.1 = {add_spouse = 1203}	
+	8328.1.1={
+		death=yes
+	}	
+}
+111204 = {		
+	name="Tybolt"	
+	dynasty=200	
+	
+	religion="the_seven"	
+	culture="westerman"
+	
+	father=11200
+	mother=1203
+
+	8311.1.1 = {birth=yes}
+	8330.1.1 = { add_trait="knight" }	
+}
+111205 = {		
+	name="Quenten"	
+	dynasty=200	
+	
+	religion="the_seven"	
+	culture="westerman"
+	
+	father=11200
+	mother=1203
+
+	8312.1.1 = {birth=yes}
+	8330.1.1 = { add_trait="knight" }	
 }
 ###Floater wife of someone###
 4202 = {		
@@ -4768,6 +5932,9 @@
 	mother=13200
 	
 	8261.1.1 = {birth="8261.1.1"}	
+	8320.1.1={
+		death=yes
+	}	
 }
 12200 = {		
 	name="Symond"	
@@ -4810,7 +5977,10 @@
 	father=329193
 	mother=419193
 	
-	8241.1.1 = {birth="8241.1.1"}	
+	8241.1.1 = {birth="8241.1.1"}
+	8308.1.1 = {
+		death = yes
+	}	
 }
 2193 = {		
 	name="Tanton"	
@@ -4819,7 +5989,10 @@
 	culture="westerman"
 	
 	8241.1.1 = {birth="8241.1.1"}
-	8257.1.1 = {add_spouse = 193}	
+	8257.1.1 = {add_spouse = 193}
+	8308.1.1 = {
+		death = yes
+	}	
 }			
 ###Daughter###
 1193 = {		
@@ -4833,7 +6006,8 @@
 	mother=193
 	father=2193
 	
-	8262.1.1 = {birth="8262.1.1"}	
+	8262.1.1 = {birth="8262.1.1"}
+	8319.1.1 = { death = yes }	
 }
 ###Hamell Sons###
 3193 = {		
@@ -4850,6 +6024,36 @@
 	8269.1.1 = {add_trait="squire"}
 	8275.1.1 = {remove_trait="squire"
 	            add_trait="knight"}
+	8301.1.1 = {add_spouse = 1195}	
+	8316.1.1 = { death = yes }		
+}
+319299 = {		
+	name="Elianor"	
+	dynasty=193	
+	female=yes
+	
+	religion="the_seven"	
+	culture="westerman"
+	
+	mother=1195
+	father=3193
+	
+	8303.1.1 = {birth=yes}
+}
+319300 = {		
+	name="Tyrin"	
+	dynasty=193	
+	
+	religion="the_seven"	
+	culture="westerman"
+	
+	mother=1195
+	father=3193
+	
+	8302.1.1 = {birth=yes}
+	8310.1.1 = {add_trait="squire"}
+	8322.1.1 = {remove_trait="squire"
+	            add_trait="knight"}	
 }
 4193 = {		
 	name="Tyrin"	
@@ -4865,6 +6069,21 @@
 	8278.1.1 = {add_trait="squire"}
 	8284.1.1 = {remove_trait="squire"
 	            add_trait="knight"}
+	8322.1.1 = { death = yes }				
+}
+319301 = {		
+	name="Tanton"	
+	dynasty=193	
+	
+	religion="the_seven"	
+	culture="westerman"
+	
+	father=4193
+	
+	8302.1.1 = {birth=yes}
+	8310.1.1 = {add_trait="squire"}
+	8322.1.1 = {remove_trait="squire"
+	            add_trait="knight"}	
 }
 ####################
 ####House Kenning###
@@ -4882,6 +6101,9 @@
 	
 	8260.1.1 = {birth="8260.1.1"}
 	8276.1.1 = {add_spouse = 2195}	
+	8323.1.1={
+		death=yes
+	}	
 }
 2195 = {		
 	name="Elia"
@@ -4892,7 +6114,10 @@
 	religion="the_seven"	
 	culture="westerman"	
 	
-	8260.1.1 = {birth="8260.1.1"}	
+	8260.1.1 = {birth="8260.1.1"}
+	8323.1.1={
+		death=yes
+	}	
 }
 ###Daughter###
 1195 = {		
@@ -4919,7 +6144,44 @@
 	father=195
 	mother=2195
 	
-	8277.1.1 = {birth="8277.1.1"}	
+	8277.1.1 = {birth="8277.1.1"}
+	8302.1.1 = {add_spouse = 2233}		
+}
+93195 = {		
+	name="Gareth"	
+	dynasty=195	
+	
+	religion="the_seven"	
+	culture="westerman"
+	
+	father=3195
+	mother=2233
+	
+	8304.1.1 = {birth=yes}	
+}
+93196 = {		
+	name="Terrence"	
+	dynasty=195	
+	
+	religion="the_seven"	
+	culture="westerman"
+	
+	father=3195
+	mother=2233
+	
+	8307.1.1 = {birth=yes}	
+}
+93197 = {		
+	name="Elia"	
+	dynasty=195	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"
+	
+	father=3195
+	mother=2233
+	
+	8309.1.1 = {birth=yes}	
 }
 ####################
 ####House Prester###
@@ -4939,7 +6201,10 @@
 	culture="westerman"
 	
 	8261.1.1 = {birth="8261.1.1"}
-	8277.1.1 = {add_spouse = 2196}	
+	8277.1.1 = {add_spouse = 2196}
+	8323.1.1={
+		death = yes
+	}	
 }
 2196 = {		
 	name="Liane"	
@@ -4950,7 +6215,10 @@
 	religion="the_seven"	
 	culture="westerman"
 	
-	8261.1.1 = {birth="8261.1.1"}	
+	8261.1.1 = {birth="8261.1.1"}
+	8323.1.1={
+		death = yes
+	}	
 }
 ### The cousin and heir ###	
 	
@@ -5032,7 +6300,52 @@
 	religion="the_seven"	
 	culture="westerman"
 	
-	8279.1.1 = {birth="8279.1.1"}	
+	8279.1.1 = {birth="8279.1.1"}
+	8302.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+	8302.1.1 = {add_spouse=2188}	
+}
+91196 = {		
+	name="Forley" # Forley's son.
+	dynasty=196
+	
+	mother=2188
+	father=11196
+	
+	religion="the_seven"	
+	culture="westerman"
+	
+	8304.1.1 = {birth=yes}
+	8323.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}		
+}
+91197 = {		
+	name="Muriella"
+	dynasty=196
+	female=yes
+	mother=2188
+	father=11196
+	
+	religion="the_seven"	
+	culture="westerman"
+	
+	8306.1.1 = {birth=yes}		
+}
+91198 = {		
+	name="Klarina"
+	dynasty=196
+	female=yes
+	mother=2188
+	father=11196
+	
+	religion="the_seven"	
+	culture="westerman"
+	
+	8309.1.1 = {birth=yes}		
 }
 
 ####################
@@ -5063,6 +6376,9 @@
 	culture="westerman"
 
 	8242.1.1 = {birth="8242.1.1"}	
+	8310.1.1={
+		death = yes
+	}	
 }
 ###Children###
 1194 = {		
@@ -5092,6 +6408,60 @@
 
 	8268.1.1 = {birth="8268.1.1"}	
 	8284.1.1 = {add_trait="knight" add_trait="poor_warrior"}
+	8302.1.1 = {add_spouse = 5232}
+	8325.1.1={
+		death = yes
+	}	
+}
+92194 = {		
+	name="Damion"		
+	dynasty=194	
+
+	religion="the_seven"	
+	culture="westerman"	
+
+	father = 2194
+	mother = 5232	
+
+	8303.1.1 = {birth=yes}	
+	8322.1.1 = {add_trait="knight" add_trait="trained_warrior"}
+}
+92195 = {		
+	name="Arnaud"		
+	dynasty=194	
+
+	religion="the_seven"	
+	culture="westerman"	
+
+	father = 2194
+	mother = 5232	
+
+	8305.1.1 = {birth=yes}	
+	8324.1.1 = {add_trait="knight" add_trait="trained_warrior"}
+}
+92196 = {		
+	name="Perriane"		
+	dynasty=194	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"	
+
+	father = 2194
+	mother = 5232	
+
+	8307.1.1 = {birth=yes}	
+}
+92197 = {		
+	name="Jeyne"		
+	dynasty=194	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"	
+
+	father = 2194
+	mother = 5232	
+
+	8309.1.1 = {birth=yes}	
 }
 #####################
 ####House Marbrand###
@@ -5113,6 +6483,9 @@
 		add_trait = knight
 		add_trait = trained_warrior
 	}
+	8307.1.1={
+		death = yes
+	}	
 }
 		
 ###Children###
@@ -5166,6 +6539,9 @@
 	8300.2.9={
 		employer = 7316
 	}
+	8321.1.1={
+		death = yes
+	}	
 }	
 451212 = {
 	name="Perriane"
@@ -5175,6 +6551,9 @@
 	culture="westerman"
 
 	8262.1.1 = { birth="8262.1.1"}	
+	8321.1.1={
+		death = yes
+	}	
 }
 2212 = {		
 	name="Darlessa"	###Tygets Wife, a Marbrand###
@@ -5219,6 +6598,69 @@
 	8297.1.1 = {
 		add_trait = "poor_warrior"		
 	}	
+	8304.1.1 = {
+		add_trait = "knight"		
+		add_trait = "skilled_warrior"		
+	}	
+	8304.1.1 = {
+		add_spouse = 2199
+	}	
+}
+150512 = {		
+	name="Addam"		
+	dynasty=212	
+	
+	religion="the_seven"	
+	culture="westerman"	
+	add_trait = "fair"	
+	father=150212
+	mother=2199
+	
+	8307.1.1 = { birth=yes}	
+	8325.1.1 = {
+		add_trait = "knight"		
+		add_trait = "skilled_warrior"		
+	}		
+}
+150513 = {		
+	name="Darlessa"		
+	dynasty=212	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"	
+	add_trait = "quick"		
+	father=150212
+	mother=2199
+	
+	8309.1.1 = { birth=yes}			
+}
+150514 = {		
+	name="Jeyne"		
+	dynasty=212	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"	
+	add_trait = "strong"		
+	father=150212
+	mother=2199
+	
+	8311.1.1 = { birth=yes}			
+}
+150515 = {		
+	name="Damon"		
+	dynasty=212	
+	
+	religion="the_seven"	
+	culture="westerman"	
+	add_trait = "tall"	
+	father=150212
+	mother=2199
+	
+	8313.1.1 = { birth=yes}	
+	8330.1.1 = {
+		add_trait = "knight"		
+		add_trait = "skilled_warrior"		
+	}		
 }	
 151212 = {		
 	name="Damon"		
@@ -5266,6 +6708,7 @@
 	8235.1.1 = {birth="8235.1.1"}
 	8251.1.1 = {add_trait="knight" add_trait="trained_warrior"}
 	8257.1.1 = {add_spouse = 2205}
+	8308.1.1 = { death = yes }
 }
 2205 = {		
 	name="Lietta"
@@ -5277,6 +6720,7 @@
 	culture="westerman"
 	
 	8235.1.1 = {birth="8235.1.1"}	
+	8308.1.1 = { death = yes }
 }
 ###Son###
 1205 = {		
@@ -5303,7 +6747,41 @@
 	8278.1.1 = {add_trait="tough_soldier"
 	            add_trait="skilled_warrior"
                 add_trait="knight"}
-	8280.1.1 = {add_spouse=4204} # Married to a maid of House Foote		
+	8280.1.1 = {add_spouse=4204} # Married to a maid of House Foote	
+	8321.1.1 = { death = yes }	
+}
+22205 = {		
+	name="Doryn"		
+	dynasty=205
+
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=1205
+	mother=4204
+	
+	8302.1.1 = {birth=yes}
+	8316.1.1 = {add_trait="brave"
+	            add_trait="fair"
+	            add_trait="diligent"}
+	8318.1.1 = {add_trait="tough_soldier"
+	            add_trait="skilled_warrior"
+                add_trait="knight"}
+}
+33205 = {		
+	name="Isabea"		
+	dynasty=205
+	female=yes
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=1205
+	mother=4204
+	
+	8304.1.1 = {birth=yes}
+	8321.1.1 = {add_trait="brave"
+	            add_trait="quick"
+	            add_trait="diligent"}
 }
 ######################
 ####House Sarsfield### # Updated, \Chrisjm89/
@@ -5326,6 +6804,9 @@
 		add_trait = knight
 		add_trait = trained_warrior
 	}
+	8320.1.1={
+		death=yes
+	}	
 }
 #4233 = {
 #	name="Mya" # Null and void. Melwyn Sarsfield is married to Shierle Swyft. \Chrisjm89/
@@ -5354,6 +6835,65 @@
 		add_trait = knight
 		add_trait = trained_warrior
 	}
+	8302.1.1 = {
+		add_spouse=1201
+	}		
+}
+87233 = {
+	name="Isabea"
+	dynasty=233
+	female=yes
+	religion="the_seven"
+	culture="westerman"
+	
+	father=1233
+	mother=1201
+	
+	8305.1.1 = {birth=yes}	
+}
+87234 = {
+	name="Melwyn"
+	dynasty=233
+
+	religion="the_seven"
+	culture="westerman"
+	
+	father=1233
+	mother=1201
+	
+	8307.1.1 = {birth=yes}
+	8326.1.1 = {
+		add_trait = knight
+		add_trait = trained_warrior
+	}		
+}
+87235 = {
+	name="Donnel"
+	dynasty=233
+
+	religion="the_seven"
+	culture="westerman"
+	
+	father=1233
+	mother=1201
+	
+	8310.1.1 = {birth=yes}
+	8330.1.1 = {
+		add_trait = knight
+		add_trait = trained_warrior
+	}		
+}
+87236 = {
+	name="Edyth"
+	dynasty=233
+	female=yes
+	religion="the_seven"
+	culture="westerman"
+	
+	father=1233
+	mother=1201
+	
+	8313.1.1 = {birth=yes}	
 }
 2233 = {
 	name="Lilianne"
@@ -5424,7 +6964,10 @@
 	
 	8234.1.1 = {birth="8234.1.1"}
 	8250.1.1 = {add_trait="knight" add_trait="trained_warrior"}
-	8250.2.1 = {add_spouse = 5204}		
+	8250.2.1 = {add_spouse = 5204}	
+	8302.1.1={
+		death = yes
+	}	
 }
 5204 = {		
 	name="Marianne"
@@ -5436,6 +6979,9 @@
 	culture="westerman"		
 
 	8234.1.1 = {birth="8234.1.1"}	
+	8302.1.1={
+		death = yes
+	}
 }
 ###Brother###
 332204 = {
@@ -5466,7 +7012,10 @@
 	father=204
 	mother=5204	
 	
-	8262.1.1 = {birth="8262.1.1"} # She was originally born in 282 far too young considering her mothers age.	
+	8262.1.1 = {birth="8262.1.1"} # She was originally born in 282 far too young considering her mothers age.
+	8320.1.1={
+		death = yes
+	}	
 }		
 2204 = {		
 	name="Ryon"	
@@ -5483,7 +7032,9 @@
 	8284.1.1 = {remove_trait="squire"
 	            add_trait="knight"
 				add_trait="poor_warrior"}
-	
+	8317.1.1={
+		death = yes
+	}	
 }		
 1204 = {		
 	name="Tuprin"	
@@ -5500,7 +7051,63 @@
 	8281.1.1 = {remove_trait="squire"
 	            add_trait="knight"
 				add_trait="trained_warrior"}
-}			
+	8302.1.1 = {add_spouse = 3212}	
+	8326.1.1={
+		death = yes
+	}	
+}
+91204 = {		
+	name="Shirei"	
+	dynasty=204	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=1204
+	mother=3212	
+	
+	8304.1.1 = {birth=yes}						
+}
+91205 = {		
+	name="Ryon"	
+	dynasty=204	
+
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=1204
+	mother=3212	
+	
+	8306.1.1 = {birth=yes}
+	8324.1.1 = {add_trait="knight"
+				add_trait="trained_warrior"}						
+}	
+91206 = {		
+	name="Donnel"	
+	dynasty=204	
+
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=1204
+	mother=3212	
+	
+	8309.1.1 = {birth=yes}
+	8328.1.1 = {add_trait="knight"
+				add_trait="trained_warrior"}						
+}
+91207 = {		
+	name="Anjela"	
+	dynasty=204	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=1204
+	mother=3212	
+	
+	8311.1.1 = {birth=yes}						
+}	
 3204 = {		
 	name="Anjela"	
 	female=yes	
@@ -5514,7 +7121,10 @@
 	father=204
 	mother=5204		
 	
-	8262.1.1 = {birth="8262.1.1"}	
+	8262.1.1 = {birth="8262.1.1"}
+	8317.1.1={
+		death = yes
+	}	
 }
 ###Philip Foote's line, Lord of The Marches
 250204 = {
@@ -5563,23 +7173,7 @@
 		add_trait=tough_soldier
 	}
 	8283.1.1 = {add_spouse=451204}
-	8299.7.1 = {
-		effect = {
-			set_defacto_liege = ROOT
-			set_character_flag = neutral
-			clr_character_flag = supporting_king
-			clr_character_flag = against_king
-			any_demesne_title = {
-				limit = { 
-					OR = {
-						tier = COUNT
-						tier = DUKE
-					}
-				}				
-				set_variable = { which = "de_facto_kingdom" value = 8 } #stormlands
-			}
-		}
-	}
+	8303.1.1 = {death=yes}	
 }
 451204 = {
 	name="Shirei"
@@ -5647,6 +7241,9 @@
 	8242.1.1 = {birth="8242.1.1"}
 	8258.1.1 = {add_spouse = 3214}
 	8258.1.2 = {add_trait="knight" add_trait="poor_warrior"}
+	8316.1.1={
+		death=yes
+	}	
 }
 3214 = {		
 	name="Janei"
@@ -5657,7 +7254,10 @@
 	religion="the_seven"	
 	culture="westerman"	
 	
-	8242.1.1 = {birth="8242.1.1"}	
+	8242.1.1 = {birth="8242.1.1"}
+	8316.1.1={
+		death=yes
+	}	
 }					
 ###Children###
 1214 = {		
@@ -5672,7 +7272,47 @@
 	
 	8262.1.1 = {birth="8262.1.1"}
 	8278.1.1 = {add_trait="knight" add_trait="trained_warrior"}
-}		
+	8301.1.1 = {add_spouse = 1210}	
+	8319.1.1={
+		death=yes
+	}	
+}
+33214 = {		
+	name="Rollam"		
+	dynasty=214	
+
+	religion="the_seven"	
+	culture="westerman"		
+	
+	father=1214
+	mother=1210
+	
+	8304.1.1 = {birth=yes}
+}
+44214 = {		
+	name="Janei"		
+	dynasty=214	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"		
+	
+	father=1214
+	mother=1210
+	
+	8306.1.1 = {birth=yes}
+}
+55214 = {		
+	name="Godwyn"		
+	dynasty=214	
+
+	religion="the_seven"	
+	culture="westerman"		
+	
+	father=1214
+	mother=1210
+	
+	8307.1.1 = {birth=yes}
+}				
 2214 = {		
 	name="Olivirana"	
 	female=yes	
@@ -5909,6 +7549,9 @@
 	8273.1.1 = {	
 		employer=199
 	}
+	8327.1.1={
+		death = yes
+	}	
 }
 3192 = {
 	name="Rolph" # Given Castamere for part in the Red Wedding
@@ -5946,6 +7589,9 @@
 	8299.11.5 = {
 		employer=0
 	}
+	8322.1.1={
+		death = yes
+	}		
 }
 ##Issue of Garlan##	
 151192 = {
@@ -5976,6 +7622,9 @@
 	8299.11.5 = {
 		employer=3192
 	}
+	8328.1.1={
+		death = yes
+	}	
 }
 #################
 ###House Lorch###
@@ -6065,6 +7714,9 @@
 	culture="westerman"
 	
 	8252.1.1 = {birth="8252.1.1"}
+	8320.1.1={
+		death=yes
+	}	
 }
 ###his Daughter###
 2207 = {
@@ -6099,6 +7751,9 @@
 	8269.1.1 = {add_trait="tough_soldier"
 	            add_trait="trained_warrior"
 	            add_trait="knight"}
+	8315.1.1={
+		death=yes
+	}				
 }
 ###Brothers wife###
 103207 = {
@@ -6112,6 +7767,9 @@
 	
 	8256.1.1 = {birth="8256.1.1"}
 	8274.1.1 = {add_spouse=1207}
+	8315.1.1={
+		death=yes
+	}	
 }
 ###Lorent's child### # So they don't die out quickly.
 104207 = {
@@ -6157,6 +7815,9 @@
 	8252.1.1 = {birth="8252.1.1"}
 	8268.1.1 = {add_trait="knight"}
 	8268.1.1 = {add_spouse = 21266}
+	8318.1.1={
+		death = yes
+	}	
 }
 60000266 = {		
 	name="Osmyn"
@@ -6172,6 +7833,9 @@
 	
 	8254.1.1 = {birth="8254.1.1"}
 	8270.1.1 = {add_trait="knight"}
+	8311.1.1={
+		death = yes
+	}	
 }
 21266 = {		
 	name="Agripa"
@@ -6182,7 +7846,10 @@
 	religion="the_seven"	
 	culture="westerman"
 	
-	8252.1.1 = {birth="8252.1.1"}	
+	8252.1.1 = {birth="8252.1.1"}
+	8319.1.1={
+		death = yes
+	}	
 }
 22266 = {		
 	name="Dennis" #He is a big man with a thick neck who is quick to anger and quick to forgive.
@@ -6211,6 +7878,60 @@
 		add_trait=knight
 		add_trait=trained_warrior
 	}
+	8302.1.1 = {add_spouse = 3233}	
+	8325.1.1={
+		death = yes
+	}	
+}
+93266 = {		
+	name="Osmyn"
+	dynasty=226	
+	
+	religion="the_seven"	
+	culture="westerman"
+	
+	father=22266
+	mother=3233
+	
+	add_trait=strong
+			
+	8305.1.1 = {birth=yes}
+	8324.1.1 = {
+		add_trait=knight
+		add_trait=trained_warrior
+	}	
+}
+93267 = {		
+	name="Tya"
+	dynasty=226	
+	female=yes
+	religion="the_seven"	
+	culture="westerman"
+	
+	father=22266
+	mother=3233
+	
+	add_trait=tall
+			
+	8307.1.1 = {birth=yes}	
+}
+93268 = {		
+	name="Harwyn"
+	dynasty=226	
+	
+	religion="the_seven"	
+	culture="westerman"
+	
+	father=22266
+	mother=3233
+	
+	add_trait=quick
+			
+	8310.1.1 = {birth=yes}
+	8329.1.1 = {
+		add_trait=knight
+		add_trait=trained_warrior
+	}	
 }
 23266 = {		
 	name="Peter"
@@ -6262,6 +7983,12 @@
 	    add_trait="master_warrior"
    	    give_nickname = nick_hardstone  # I've moved his 'nick' to when his older. I doubt he'll get us a Nickname at age seven. \Chrisjm89/
 	} 
+	8307.1.1 = {
+		add_trait="kingsguard"
+	}
+	8307.1.1 = {
+		employer=6253
+	}	
 }
 ###Plumms in Essos###
 602226 = {		
@@ -6365,6 +8092,12 @@
 	8300.3.1 = {	
 		employer=1002059 
 	}
+	8303.1.1 = {
+		employer=1296
+	}
+	8310.1.1={
+		death = yes
+	}	
 }
 22158 = {
 	name="Cerenna"
@@ -6594,6 +8327,37 @@
 	8260.1.1 = {birth="8260.1.1"} # made him older so succession is correct. His father can't be older than Raynard so Ryman can't be born in 256AL.
 	8276.1.1 = {add_trait="knight"
 	            add_trait = "tough_soldier"}
+	8301.1.1 = {add_spouse = 3202}
+	8310.1.1 = { death = yes }	
+}
+92159 = {
+	name="Raynald"
+	dynasty=2159
+
+	martial = 7
+	
+	father=62159
+	mother=3202
+	
+	religion="the_seven"
+	culture="westerman"
+	
+	8302.1.1 = {birth=yes}
+	8321.1.1 = {add_trait="knight"
+	            add_trait = "tough_soldier"}
+}
+93159 = {
+	name="Dorna"
+	dynasty=2159
+	female=yes
+	
+	father=62159
+	mother=3202
+	
+	religion="the_seven"
+	culture="westerman"
+	
+	8304.1.1 = {birth=yes}
 }
 ###
 ###House Bettley
@@ -6612,6 +8376,7 @@
 	8231.1.1 = {birth="8231.1.1"}
 	8247.1.1 = {add_trait="knight"}
 	8282.1.1 = {add_spouse = 5206}
+	8303.1.1 = { death = yes }
 }
 5206 = {
 	name="Serra"
@@ -6622,6 +8387,7 @@
 	
 	8231.1.1 = {birth="8231.1.1"}
 	8247.1.1 = {add_trait="naive_appeaser"}
+	8303.1.1 = { death = yes }
 }
 ###his Children###
 4206 = {
@@ -6648,6 +8414,55 @@
 	mother=5206
 	
 	8251.1.1 = {birth="8251.1.1"}
+	8314.1.1 = { death = yes }	
+}
+120693 = {
+	name="Bermond"
+	dynasty=206
+	
+	religion="the_seven"
+	culture="westerman"
+	
+	father=1206
+	
+	8279.1.1 = {birth=yes}
+	8302.1.1 = {add_spouse = 16208}	
+}
+120694 = {
+	name="Daven"
+	dynasty=206
+	
+	religion="the_seven"
+	culture="westerman"
+	
+	mother=4206
+	
+	8293.1.1 = {birth=yes}
+}
+120695 = {
+	name="Tywin"
+	dynasty=206
+	
+	religion="the_seven"
+	culture="westerman"
+	
+	father=120693
+	mother=16208	
+	
+	8305.1.1 = {birth=yes}
+}
+120696 = {
+	name="Ella"
+	dynasty=206
+	female=yes
+	
+	religion="the_seven"
+	culture="westerman"
+	
+	father=120693
+	mother=16208	
+	
+	8306.1.1 = {birth=yes}
 }
 2206 = {
 	name="Jon" #Beardless Jon
@@ -6661,6 +8476,9 @@
 	
 	8254.1.1 = {birth="8254.1.1"}
 	8270.1.1 = {add_trait="tough_soldier" add_trait="trained_warrior" add_trait="knight"}
+	8312.1.1={
+		death = yes
+	}	
 }
 3206 = {
 	name="Eudon"
@@ -6673,6 +8491,7 @@
 	mother=5206
 	
 	8260.1.1 = {birth="8260.1.1"}
+	8311.1.1 = { death = yes }		
 }
 ###
 ###House Clifton
@@ -6690,6 +8509,9 @@
 	8254.1.1 = {birth="8254.1.1"}
 	8272.1.1 = {add_trait="knight"}
 	8282.1.1 = {add_spouse = 1194}
+	8309.1.1={
+		death = yes
+	}	
 }
 14409 = {
 	name="Hugh" # Canon, one of Margaery's accused lovers.
@@ -6841,6 +8663,9 @@
 	
 	8247.1.1 = {birth="8247.1.1"}
 	8274.1.1 = {add_trait="knight"}
+	8305.1.1={
+		death = yes
+	}	
 }
 #######################
 ####House Stackspear###
@@ -6861,6 +8686,9 @@
 		add_trait=trained_warrior
 	}	
 	8279.1.1 = {add_spouse = 4202}
+	8313.1.1={
+		death=yes
+	}	
 }		
 ###Children###
 1202 = {		
@@ -6924,6 +8752,9 @@
 	8241.1.1 = {birth="8241.1.1"}
 	8257.1.1 = {add_trait=knight add_trait=poor_warrior}
 	8259.1.1 = {add_spouse=432802042}
+	8305.1.1={
+		death=yes
+	}	
 }
 432802042 = {
 	name="Lanna"
@@ -6933,6 +8764,9 @@
 	culture="westerman"
 
 	8241.1.1 = {birth="8241.1.1"}
+	8305.1.1={
+		death=yes
+	}	
 }
 133802042 = {
 	name="Jaime"	# not a lord
@@ -6947,6 +8781,9 @@
 	8243.1.1 = {birth="8243.1.1"}
 	8259.1.1 = {add_trait=knight add_trait=poor_warrior}
 	8261.1.1 = {add_spouse=433802042}
+	8308.1.1={
+		death=yes
+	}	
 }
 433802042 = {
 	name="Jocelyn"
@@ -6956,6 +8793,9 @@
 	culture="westerman"
 
 	8243.1.1 = {birth="8243.1.1"}
+	8308.1.1={
+		death=yes
+	}	
 }
 134802042 = {
 	name="Chiswyck"	# not a lord

@@ -1642,6 +1642,16 @@
 		effect = { 			
 			change_martial = 7
 		}
+	}
+	8306.1.1={
+		effect = { 			
+			change_martial = 15
+		}
+	}
+	8320.1.1={
+		effect = { 			
+			change_martial = 27
+		}
 	}	
 }
 77990027 = {
@@ -1682,6 +1692,40 @@
 		effect = { 			
 			change_martial = 4
 		}
+	}
+	8302.1.1={
+		effect = { 
+			set_character_flag = wild_dragon 			
+			character_event = { id = dragon.0 }
+			add_friend = 29577041
+			e_iron_throne = {
+				holder_scope = {					
+					ROOT = { move_character = PREV }
+				}	
+			}
+		}
+	}	
+	8306.1.1={
+		effect = { 			
+			change_martial = 12
+		}
+	}
+	8315.1.1={
+		effect = { 
+			set_character_flag = tamed_dragon 			
+			character_event = { id = dragon.0 }
+			add_friend = 29577041
+			e_iron_throne = {
+				holder_scope = {					
+					ROOT = { move_character = PREV }
+				}	
+			}
+		}
+	}
+	8320.1.1={
+		effect = { 			
+			change_martial = 22
+		}
 	}	
 }
 77990028 = {
@@ -1720,6 +1764,33 @@
 	8300.1.1={
 		effect = { 			
 			change_martial = 4
+		}
+	}
+	8302.1.1={
+		effect = { 
+			set_character_flag = tamed_dragon 			
+			character_event = { id = dragon.0 }
+			add_friend = 1002059
+			e_iron_throne = {
+				holder_scope = {					
+					ROOT = { move_character = PREV }
+				}	
+			}
+		}
+	}
+	8306.1.1={
+		effect = { 			
+			change_martial = 12
+		}
+	}
+	8320.1.1={
+		effect = { 			
+			change_martial = 22
+		}
+	}
+	8330.12.1={
+		effect = {
+			add_friend = 29577043
 		}
 	}	
 }

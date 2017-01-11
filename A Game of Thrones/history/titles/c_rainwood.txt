@@ -87,4 +87,8 @@
 	holder = 1019110 #Davos Seaworth
 	liege="d_dragonstone"
 }
+8303.1.1={
+	holder = 1089110
+	liege="k_stormlands"
+}
 

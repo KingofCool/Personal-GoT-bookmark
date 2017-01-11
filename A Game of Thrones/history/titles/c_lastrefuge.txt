@@ -31,3 +31,6 @@
 8300.2.1={
 	liege="k_stepstones"
 }
+8314.1.1={
+	holder = 77160
+}

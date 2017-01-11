@@ -17,3 +17,6 @@
 8269.1.1={
 	holder = 94083 	#Lord Manfryd Ruthermont
 }
+8311.1.1={
+	holder = 94120
+	}	

@@ -21,3 +21,9 @@
 	holder=1313  # Harwood Fell (C)
 }
 8299.7.1 = { liege="k_stormlands" }
+8301.1.1 = {
+	holder=101313
+}
+8320.1.1 = {
+	holder=191314
+}

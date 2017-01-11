@@ -16,3 +16,6 @@
 8223.1.1 = { holder=652319 } # Willam (nc)
 8227.1.1 = { holder=652519 } # Armen (nc)
 8248.1.1 = {  holder=19 } # Edmynd (nc)
+8302.1.1 = {  holder=1019 } # Lena (nc)
+8307.1.1 = {  holder=2019 } # Aryon (nc)
+8329.1.1 = {  holder=13019 }

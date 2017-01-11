@@ -14,3 +14,6 @@
 8244.1.1 = { holder=327215 } # Antario (nc)
 8259.1.1 = { holder=329215 } # Gawen (nc)
 8270.1.1 = {holder=215}
+8329.1.1={
+	holder=2215
+}

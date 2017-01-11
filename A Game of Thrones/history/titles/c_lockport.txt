@@ -12,3 +12,4 @@
 8211.1.1 = { holder=3022311 } # Galladon Horpe (nc)
 8256.1.1 = { holder=3023311 } # Guyard Horpe (nc)
 8274.1.1 = { holder=3024311 } # Clifford Horpe (nc)
+8322.1.1 = { holder=3026312 }

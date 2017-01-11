@@ -20,3 +20,7 @@
 8300.1.1 = { 
 	holder = 1019110 #Davos 
 }
+8303.1.1={
+	holder = 1089110
+	liege="k_stormlands"
+}

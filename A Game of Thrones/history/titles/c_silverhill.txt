@@ -16,3 +16,6 @@
 8213.1.1 = { holder=329221 } # Tywin (nc)
 8239.1.1 = { holder=333221 } # Chiswyck (nc)
 8266.1.1 = { holder=221 } # Justyn (nc)
+8306.1.1={
+	holder=9221
+}

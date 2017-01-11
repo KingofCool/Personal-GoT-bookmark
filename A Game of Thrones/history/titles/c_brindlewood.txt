@@ -17,3 +17,6 @@
 8282.1.1={
 	holder = 33 	#Elwood Harte
 }
+8320.1.1={
+	holder = 44033
+}

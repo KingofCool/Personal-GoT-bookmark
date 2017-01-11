@@ -56,3 +56,7 @@
 8300.2.1={
 	holder = 15052 #Aurane Waters
 }
+8314.1.1={
+	liege="k_stepstones"
+	holder = 77160
+}

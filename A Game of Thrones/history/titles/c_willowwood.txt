@@ -41,3 +41,4 @@
 8284.1.1={
 	liege="d_harrenhal"
 }
+8318.1.1 = { holder = 11152 }	

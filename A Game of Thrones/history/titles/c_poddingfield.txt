@@ -17,3 +17,4 @@
 8250.1.1 = { holder=311273 } # Rolland Peasebury (nc)
 8289.1.1 = { holder=200273 } # Robin Peasebury (C)
 8299.7.1 = { liege="k_stormlands" }
+8310.1.1 = { holder=312273 }	

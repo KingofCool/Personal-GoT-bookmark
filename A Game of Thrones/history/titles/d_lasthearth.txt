@@ -42,3 +42,6 @@ law = succ_primogeniture
 8291.1.1={
 	holder=3093
 }
+8303.1.1={
+	holder=95093
+}

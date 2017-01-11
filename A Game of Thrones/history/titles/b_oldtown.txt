@@ -16,6 +16,9 @@
 8270.1.1={
 	holder=88002 #Moryn Tyrell, Lord Commander City watch of oldtown
 }
+8307.1.1={
+	holder=0
+}
 
 
 

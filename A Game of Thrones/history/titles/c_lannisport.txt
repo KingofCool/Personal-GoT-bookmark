@@ -17,3 +17,4 @@
 8243.1.1 = { holder=3514190 } # Lambert (nc)
 8264.1.1 = { holder=3515190 } # Rollam (nc)
 8284.1.1 = { holder=3517190 } # Tyran (nc)
+8306.1.1 = { holder=3521190 }

@@ -42,6 +42,8 @@
 8300.1.1 ={
 	holder = 202352 #Osfryd Kettleback
 }
-
+#8303.1.1 ={
+#	holder = 0
+#}
 
 

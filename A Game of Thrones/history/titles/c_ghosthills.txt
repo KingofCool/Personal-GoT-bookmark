@@ -18,3 +18,4 @@
 8254.1.1 = { holder=35294 } # Aron (nc)
 8259.2.8 = { holder=35334 } # Armen (nc)
 8279.3.2 = { holder=1004 } # Nymeria (c)
+8313.1.1 = { holder=9004 }	

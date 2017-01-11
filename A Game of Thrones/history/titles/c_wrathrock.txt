@@ -11,3 +11,5 @@
 8209.1.1 = { holder=309326 } # Gulian (nc)
 8247.1.1 = { holder=310326 } # Goodwin (nc)
 8259.1.1 = { holder=326 } # Steffon (nc)
+8309.1.1 = { holder=1326 }
+8312.1.1 = { holder=2326 }

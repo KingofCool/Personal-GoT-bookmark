@@ -18,3 +18,7 @@
 	holder=125009 #Young Griff 
 	liege=0
 }
+8303.1.1={
+	holder=4316
+	liege="e_iron_throne"
+}

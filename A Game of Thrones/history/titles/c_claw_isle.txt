@@ -21,3 +21,7 @@
 8248.1.1 = { holder=3031050 } # Orys Celtigar (nc)
 8280.1.1 = { holder=2033050 } # Ardrian Celtigar (C)
 8299.7.1 = { liege = 0 }
+8303.1.1 ={
+	liege="d_dragonstone"
+}
+8314.1.1 = { holder=3036050 }

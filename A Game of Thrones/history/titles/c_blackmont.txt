@@ -33,3 +33,4 @@
 8237.1.1 = { holder=62818 } # Emberlei (nc)
 8249.1.1 = { holder=63018 } # Daemon (nc)
 8272.4.2 = { holder=18 } # Larra (C)
+8312.1.1 = { holder=1018 }	

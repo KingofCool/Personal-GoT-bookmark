@@ -13,3 +13,5 @@
 8235.1.1 = { holder=319205 } # Jyanna (nc)
 8244.1.1 = { holder=320205 } # Harwyn (nc)
 8259.2.8 = { holder=205 } # Doryn (nc)
+8308.1.1 = { holder=1205 }
+8321.1.1 = { holder=22205 }

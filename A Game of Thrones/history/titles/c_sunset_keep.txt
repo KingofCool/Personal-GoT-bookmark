@@ -29,3 +29,9 @@
 8251.1.1={
 	holder = 94082 	#Lord Cerwyn Donniger
 }
+8308.1.1={
+	holder = 941061
+}
+8319.1.1={
+	holder = 941062
+}

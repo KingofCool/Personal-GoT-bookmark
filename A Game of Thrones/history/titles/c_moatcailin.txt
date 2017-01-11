@@ -76,3 +76,9 @@
 	holder = 87 #roose bolton
 	liege="k_north"
 }
+8300.12.1={
+	holder = 1002059
+}
+8303.1.1={
+	holder = 9059
+}

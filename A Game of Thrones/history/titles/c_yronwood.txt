@@ -35,3 +35,4 @@
 8230.1.1 = { holder=32612 } # Edgar (c)
 8274.1.1 = { holder=6969112} # Ormond (c)
 8292.1.1 = {holder=12} # Anders (c)
+8318.1.1 = { holder=4012 }	

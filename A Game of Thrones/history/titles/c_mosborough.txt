@@ -23,5 +23,9 @@
 8281.1.1 = { holder=6003927 } # Alan (nc)
 
 8294.1.1={
+	liege="d_blackwater_rush"
 	holder = 27 	#Raynor Cressey
+}
+8318.1.1={
+	holder = 70027
 }

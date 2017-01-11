@@ -13,6 +13,7 @@
 8187.1.1 = { holder=126280 } # Malora (nc)
 8221.1.1 = { holder=127280 } # Dickon (nc)
 8246.1.1 = { holder=132280 } # Branston (nc)
+8304.1.1 = { holder=137280 }
 
 
 

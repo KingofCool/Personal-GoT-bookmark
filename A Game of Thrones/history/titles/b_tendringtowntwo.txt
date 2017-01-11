@@ -13,3 +13,6 @@
 8232.1.1 = { holder=127802042 } # Tommen (nc)
 8258.1.1 = { holder=130802042 } # Damion (nc)
 8285.1.1 = { holder=132802042 } # Kennos (nc)
+8305.1.1={
+	holder=134802042
+}

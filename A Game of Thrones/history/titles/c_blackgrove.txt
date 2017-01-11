@@ -28,3 +28,4 @@
 8299.8.1 = { holder=351443 } # Ethan (C)
 8300.1.1 = { holder=321443 } # Rodrik (C)
 8300.1.1 = { liege = k_north }
+8304.1.1 = { holder=371443 } # Ryon (C)

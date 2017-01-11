@@ -22,3 +22,7 @@
 8270.1.1 = { holder=2030028 } # Jaremy Chyttering (C)
 8299.1.4 = {liege=0} # Join Stannis during the Wot5k
 8299.7.1 = { holder=2031028 } # Lucos Chyttering (C)
+8303.1.1={
+	liege="d_blackwater_rush"
+}
+8308.1.1 = { holder=3035028 }

@@ -14,3 +14,4 @@
 8229.1.1 = { holder=326193 } # Damon (nc)
 8248.1.1 = { holder=328193 } # Dunsten (nc)
 8277.1.1 = { holder=331193 } # Tybolt (nc)
+8303.1.1 = { holder=332193 }

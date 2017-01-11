@@ -14,3 +14,7 @@
 	liege="d_lower_frostfangs"
 	holder=157001
 }
+8307.1.1={
+	liege="d_haunted_forest"
+	holder=174345
+}

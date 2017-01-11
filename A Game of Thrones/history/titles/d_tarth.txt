@@ -23,3 +23,7 @@
 8255.1.1 = { holder=331054 } # Willem Tarth (nc)
 8279.1.1 = { holder=201054 } # Selwyn Tarth (C)
 8299.7.2 = { liege=0 }
+8303.1.1={
+	liege="k_stormlands"
+}
+8303.1.1 = { holder=206054 }

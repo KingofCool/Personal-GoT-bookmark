@@ -18,3 +18,5 @@
 8199.5.8 = {holder=301212} # Quenton (NC)
 8240.1.1 = {holder=300212} # Denys (C)	
 8260.1.18 = {holder=212} # Damon (C)
+8307.1.1 = {holder=1212}
+8321.1.1 = {holder=150212}

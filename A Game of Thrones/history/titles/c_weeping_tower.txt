@@ -20,3 +20,4 @@
 8272.1.1 = { holder=131805046 } # Dermot (nc)
 8295.1.1 = { holder=135805046 } # Richard (nc)
 8299.7.1 = { liege="k_stormlands" }
+8312.1.1 = { holder=141805046 } # Richard (nc)

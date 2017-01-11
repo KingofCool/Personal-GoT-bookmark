@@ -25,3 +25,4 @@
 8259.1.1 = {holder = 56}		# Gerold Hightower
 8284.1.1 = {holder = 201302}	# Barristan Selmy
 8299.1.1 = {holder = 3190}		# Jaime Lannister
+8303.1.1 = {holder = 6253}	# Loras

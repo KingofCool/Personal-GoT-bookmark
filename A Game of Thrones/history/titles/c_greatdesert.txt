@@ -27,3 +27,6 @@
 8243.1.1 = { holder=63613 } # Daemon (nc)
 8259.2.17 = { holder=9013 } # Boran (nc)
 8276.2.12 = { holder=13 } # Harman (C)
+8310.1.1 = { holder=2013 }
+8325.1.1 = { holder=10013 }
+8329.1.1 = { holder=11013 }

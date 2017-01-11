@@ -18,3 +18,4 @@
 8211.1.1 = { holder=3028042 } # Rolland Brune (nc)
 8231.1.1 = { holder=2029042 } # Eustace Brune (C)
 #8299.1.4 = {liege=0} # Join Stannis during the Wot5k
+8301.1.1 = { holder=3034042 } # Barre Brune

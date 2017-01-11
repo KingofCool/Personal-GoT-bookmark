@@ -23,3 +23,5 @@
 8227.1.1 = { holder=61001510 } # Daeron (nc)
 8262.1.1 = { holder=61001710 } # Cletus (nc)
 8274.1.1={ holder=10 } # Trebor (c)
+8313.1.1 = { holder=1010 }	
+8314.1.1 = { holder=2010 }

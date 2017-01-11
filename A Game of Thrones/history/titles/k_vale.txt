@@ -54,3 +54,7 @@
 	holder=94003 #robert
 }
 8299.1.1={ liege=0 }
+8303.1.1={ liege="e_iron_throne" }
+8303.1.1={
+	holder=500184
+}

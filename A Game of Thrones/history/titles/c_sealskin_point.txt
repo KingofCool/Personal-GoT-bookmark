@@ -13,3 +13,4 @@
 8239.1.1 = { holder=3024114 } # Harl (nc)
 8257.1.1 = { holder=3025114 } # Eerl (nc)
 8273.1.1 = { holder=114 } # Triston (c)
+8317.1.1 = { holder=1114 }	

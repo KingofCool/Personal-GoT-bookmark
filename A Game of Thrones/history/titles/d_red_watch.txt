@@ -15,3 +15,8 @@
 8231.1.1 = { holder=320306 } # Bryen Swann (nc)
 8240.1.1 = { holder=204306 } # Gulian Swann (C)
 8299.1.1 = { liege=0 } # ACOK
+8303.1.1={
+	liege="k_stormlands"
+}
+8304.1.1 = { holder=206306 }
+8317.1.1 = { holder=206307 }

@@ -65,4 +65,8 @@ holder=190 # Tywin
 8299.11.5 = {
 holder=3192 #Rolph Spicer
 }
+#Tyrion
+8303.1.1 = {
+holder=5190
+}
 

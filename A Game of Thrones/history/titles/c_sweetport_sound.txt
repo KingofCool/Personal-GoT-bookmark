@@ -24,3 +24,7 @@
 8299.7.1 = { 
 	holder=1051 #Guncer's Brother
 }
+8303.1.1 ={
+	liege="d_dragonstone"
+}
+8319.1.1={ holder = 3051 }

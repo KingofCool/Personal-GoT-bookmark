@@ -111,3 +111,12 @@ liege = "e_iron_throne"
 8299.11.3 = {
 	holder=2107 #Euron
 }
+8303.1.1={
+	liege="e_iron_throne"
+}
+8303.1.1 = {
+	holder=7107
+}
+8326.1.1 = {
+	holder=29577071
+}

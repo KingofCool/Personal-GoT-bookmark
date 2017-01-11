@@ -50,3 +50,7 @@
 	liege="0"
 }
 8289.1.1 = { holder=10021639 } # Gyleno (nc)
+8314.1.1={
+	liege="k_stepstones"
+	holder = 77160
+}

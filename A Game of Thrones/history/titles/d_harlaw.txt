@@ -48,3 +48,9 @@
 8299.3.4 = {
 	liege="e_iron_isles"
 }
+8303.1.1 = {
+	liege="k_iron_isles"
+}
+8313.1.1 = { holder=5122 }
+8317.1.1 = { holder=101122 }
+8324.1.1 = { holder=24122 }	

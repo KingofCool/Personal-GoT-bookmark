@@ -99,3 +99,7 @@
 	#liege = "e_iron_throne"
 	law = succ_primogeniture
 }
+8303.1.1={
+	holder = 4316
+	liege="e_iron_throne"
+}

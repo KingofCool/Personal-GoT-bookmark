@@ -20,3 +20,6 @@
 8299.12.12={
 	holder=600000060 # Cleon the Butcher King
 }
+8303.1.1={
+	holder=132360003
+}

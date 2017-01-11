@@ -29,3 +29,6 @@
 	law = treaty_breach_1
 	holder=77041 # Daenerys
 }
+8303.1.1={
+	holder=132360003
+}

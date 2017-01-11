@@ -32,3 +32,6 @@
 8266.1.1={
 	holder = 29 	#Bayle Rollingford
 }
+8320.1.1={
+	holder = 10129
+}

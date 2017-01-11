@@ -14,3 +14,8 @@
 8244.1.1 = { holder=330 } # Tancred Estermont (nc)
 8299.7.1 = { liege = 0 }
 8300.1.4 = { holder=2330 } # Eldon Estermont (C)
+8302.1.1={
+	liege = k_stormlands
+}
+8302.1.1 = { holder=4330 }
+8311.1.1 = { holder=1004330 }

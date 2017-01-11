@@ -27,3 +27,6 @@
 	law = treaty_breach_1
 	holder=600000060 # Cleon the Butcher King
 }
+8303.1.1={
+	holder=132360003
+}

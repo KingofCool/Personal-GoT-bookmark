@@ -33,3 +33,12 @@ law=succ_primogeniture law=cognatic_succession
 8299.3.4 = {
 	liege="e_iron_isles"
 }
+8303.1.1={
+	liege="k_iron_isles"
+}
+8303.1.1 = {	
+	holder=1121
+}
+8314.1.1 = {	
+	holder=112100
+}

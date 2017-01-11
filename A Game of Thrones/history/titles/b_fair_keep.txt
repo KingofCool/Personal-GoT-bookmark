@@ -41,3 +41,6 @@
 8277.1.1={
 	holder=4409 # Gareth Clifton
 }
+8305.1.1={
+	holder=24409
+}

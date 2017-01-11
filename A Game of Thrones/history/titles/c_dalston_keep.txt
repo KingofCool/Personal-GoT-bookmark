@@ -23,3 +23,6 @@
 8275.1.1={
 	holder = 77158	#Mathos Gaunt
 }
+8304.1.1={
+	holder = 10123
+}

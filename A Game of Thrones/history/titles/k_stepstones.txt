@@ -34,3 +34,16 @@
 8300.2.1={
 	holder = 15052 #Aurane Waters	
 }
+8314.1.1={
+	liege="e_iron_throne"
+	holder = 77160
+}
+8314.1.1 = {
+	effect = { 
+		set_variable = { which = "lord_paramount_status" value = 1 }
+		holder_scope = { set_government_type = feudal_government_LP }
+	}
+	law = succ_primogeniture
+	law = agnatic_succession
+	law = slavery_0
+}

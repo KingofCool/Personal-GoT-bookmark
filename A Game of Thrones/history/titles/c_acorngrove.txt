@@ -17,3 +17,4 @@ liege="d_wolfswood"
 8277.1.1={
 	holder=10001445 #Benjicot
 }
+8313.1.1 = { holder=10011445 }

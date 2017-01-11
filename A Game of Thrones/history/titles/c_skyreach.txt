@@ -30,3 +30,4 @@
 8237.1.1 = { holder=62214 } # Garin (nc)
 8254.1.1 = { holder=63014 } # Gerold (nc)
 8261.1.1 = { holder=14 } # Franklyn (C)
+8311.1.1 = { holder=1014 }	

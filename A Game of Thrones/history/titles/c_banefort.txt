@@ -21,3 +21,5 @@
 8221.1.1 = { holder=331200 } # Sebaston (nc)
 8260.1.1 = { holder=12200 } # Symond (nc)
 8276.1.1 = { holder=200 } # Quenten (c)
+8319.1.1 = { holder=11200 }
+8328.1.1 = { holder=111204 }

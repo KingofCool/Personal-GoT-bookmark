@@ -18,3 +18,4 @@
 	holder = 100310  # Barth Cafferen (nc)
 }
 8299.7.1 = { liege = 0 }
+8303.1.1 = {liege="k_stormlands"}

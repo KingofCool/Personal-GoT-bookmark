@@ -22,3 +22,6 @@
 8276.1.1={
 	holder = 30 	#Denly Thorne
 }
+8320.1.1={
+	holder = 100031
+}

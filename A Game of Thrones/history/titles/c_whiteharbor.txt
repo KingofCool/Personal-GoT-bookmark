@@ -59,3 +59,9 @@
 8260.1.1={
 	holder = 80 # The Boss Lord Lamprey
 }
+8307.1.1={
+	holder = 1080
+}
+8318.1.1={
+	holder = 771080
+}

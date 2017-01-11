@@ -53,3 +53,6 @@
 	#holder=5159 #lysa regent
 	holder=94003 #robert
 }
+8303.1.1={
+	holder=500184
+}

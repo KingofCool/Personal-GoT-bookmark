@@ -13,3 +13,4 @@
 8210.1.1 = { holder=312312 } # Belwyn (nc)
 8240.1.1 = { holder=313312 } # Barristan (nc)
 8283.1.1 = { holder=314312 } # Byron (nc)
+8308.1.1 = { holder=315312 }

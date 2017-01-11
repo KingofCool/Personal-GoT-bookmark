@@ -21,3 +21,5 @@
 8241.1.1 = { holder=35217 } # Cerenna (nc)
 8244.1.1 = { holder=35257 } # Quentyn (nc)
 8245.1.1 = { holder=7 } # Tremond (c)
+8312.1.1 = { holder=1007 }
+8320.1.1 = { holder=5007 }	

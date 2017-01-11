@@ -18,3 +18,4 @@
 8262.1.1 = { holder = 301 } # Bryen Caron (C)
 8289.1.1 = { holder = 1301 } # Bryce Caron (C)
 8299.7.1 = { holder = 251204 } # Phillip Foote
+8303.1.1 = { holder = 6316 }

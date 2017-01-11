@@ -75,5 +75,11 @@
 8238.5.5={
 	holder=285 # Leyton Hightower
 }
+8302.1.1={
+	holder=1285 # Baelor Hightower
+}
+8308.1.1={
+	holder=6285
+}
 
 

@@ -58,4 +58,8 @@
 8300.4.1 = {
 	holder=9190 #Martyn
 }
+8303.1.1={
+	liege="k_riverlands"
+	holder=125137
+}
 

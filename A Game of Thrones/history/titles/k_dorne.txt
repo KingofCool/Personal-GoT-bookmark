@@ -111,3 +111,10 @@
 8301.1.1={
 	#liege="e_iron_throne"
 }
+8303.1.1={
+	holder=4001
+	liege="e_iron_throne"
+}
+8326.1.1={
+	holder=29577063
+}

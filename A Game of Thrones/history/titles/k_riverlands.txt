@@ -97,3 +97,7 @@
 	holder=94043 #Littlefinger
 	law = succ_primogeniture
 }
+8303.1.1={
+	holder=6059
+	liege="e_iron_throne"
+}

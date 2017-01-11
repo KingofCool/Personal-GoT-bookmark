@@ -127,4 +127,11 @@
 	effect = { 
 		holder_scope = { set_global_flag = age_of_dragons }
 	}
+}
+8303.1.1 ={
+	liege="d_dragonstone"
+	holder = 1002059
+}
+8330.12.1={
+	holder=29577043
 }	

@@ -4,3 +4,4 @@
 8300.4.15 = {
 	holder=149 #surrendered to brackens
 }
+8310.1.1 = { holder = 2149 }	

@@ -83,3 +83,7 @@
 	holder=94043 #Littlefinger
 	liege=k_vale
 }
+8303.1.1={
+	holder=6059
+	liege="k_riverlands"
+}

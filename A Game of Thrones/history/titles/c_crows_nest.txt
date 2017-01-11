@@ -11,3 +11,4 @@
 8222.1.1 = { holder=309321 } # Lyonel Morrigen (nc)
 8278.1.1 = { holder=310321 } # Ronnet Morrigen (nc)
 8283.1.1 = { holder=201321 } # Lester Morrigen (C)
+8310.1.1 = { holder=202321 }

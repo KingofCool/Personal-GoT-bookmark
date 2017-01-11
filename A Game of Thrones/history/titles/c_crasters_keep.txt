@@ -12,4 +12,8 @@
 8299.5.5 = {
 	holder=121411 # Dirk
 }
+8307.1.1={
+	liege="d_haunted_forest"
+	holder=174345
+}
 

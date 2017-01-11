@@ -17,3 +17,4 @@
 8219.1.1 = { holder=10221874 } # Ryam (nc)
 8244.1.1 = { holder=10231874 } # Byren (nc)
 8262.1.1 = { holder=10271874 } # Wendell (nc)
+8305.1.1 = { holder=10401874 }

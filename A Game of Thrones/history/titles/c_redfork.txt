@@ -102,3 +102,7 @@
 # 8300.4.15 = {
 	# holder=27 #Walder Frey
 # }
+8303.1.1={ liege="k_riverlands" }
+8303.1.1={
+	holder=6059
+}

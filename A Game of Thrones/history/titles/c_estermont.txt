@@ -11,3 +11,5 @@
 8196.1.1 = { holder=200330 } # Gunthor Estermont (C)
 8244.1.1 = { holder=330 } # Tancred Estermont (nc)
 8300.1.4 = { holder=2330 } # Eldon Estermont (C)
+8302.1.1 = { holder=4330 }
+8311.1.1 = { holder=1004330 }

@@ -13,3 +13,8 @@
 8241.1.1 = { holder=319361 } # Elinor Swygert (nc)
 8260.1.1 = { holder=322361 } # Gunthor Swygert (nc)
 8299.7.1 = { liege = 0 }
+8303.1.1={
+liege="d_shipbreaker"
+}
+8303.1.1 = { holder=325361 }
+8312.1.1 = { holder=329361 }

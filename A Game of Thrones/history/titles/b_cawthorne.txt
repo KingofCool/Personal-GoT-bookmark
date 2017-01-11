@@ -23,6 +23,9 @@
 8225.1.1 = { holder=119269 } # Garlan (nc)
 8269.1.1 = { holder=122269 } # Leyton (nc)
 8272.1.1 = { holder=126269 } # Olymer (nc)
+8316.1.1={
+	holder=129269
+}
 
 
 

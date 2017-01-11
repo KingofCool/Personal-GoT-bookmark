@@ -19,3 +19,5 @@
 8210.1.1 = { holder=35245 } # Gerold (nc)
 8241.1.1 = { holder=35275 } # Maron (nc)
 8262.2.12 = { holder=5 } # Myriah (nc)
+8306.1.1 = { holder=1005 }	
+8323.1.1 = { holder=5005 }	

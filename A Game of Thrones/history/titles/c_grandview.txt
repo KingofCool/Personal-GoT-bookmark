@@ -18,3 +18,5 @@
 	liege="k_stormlands"
 	holder=308  # Hugh (C)
 }
+8303.1.1 = { holder=103308 }
+8321.1.1 = { holder=107308 }

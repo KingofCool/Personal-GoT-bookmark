@@ -14,3 +14,5 @@
 8277.1.1 = { holder=336304 } # Beric Trant (nc)
 8283.1.1 = { holder=342304 } # Goodwin Trant (nc)
 8299.7.1 = { liege = 0 }
+8303.1.1 = {liege="k_stormlands"}
+8320.1.1 = { holder=347304 }	

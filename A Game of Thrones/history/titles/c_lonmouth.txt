@@ -11,3 +11,4 @@
 8231.1.1 = { holder=313305 } # Casper Lonmouth (nc)
 8263.1.1 = { holder=314305 } # Gunthor Lonmouth (nc)
 8290.1.1 = { holder=200305 } # Richard Lonmouth (C)
+8327.1.1 = { holder=299305 }

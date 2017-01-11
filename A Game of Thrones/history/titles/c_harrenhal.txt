@@ -69,3 +69,6 @@
 8299.11.5 = {
 	holder=94043 #Littlefinger
 }
+8303.1.1 = {
+	holder=6059
+}

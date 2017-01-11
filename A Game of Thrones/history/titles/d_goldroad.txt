@@ -22,3 +22,5 @@
 8200.1.1 = { holder=328208 } # Rolder (nc)	
 8225.1.1 = { holder=5208 } # Pollen (nc)
 8259.2.8 = { holder=208 } # Taubert (nc)
+8308.1.1 = { holder=11208 }
+8324.1.1 = { holder=17208 }

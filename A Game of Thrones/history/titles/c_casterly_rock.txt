@@ -88,3 +88,6 @@ holder=190 # Tywin
 8300.2.9={
 holder=4190 #Cersei
 }
+8303.1.1={
+	holder=8316
+}

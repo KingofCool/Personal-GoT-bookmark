@@ -17,3 +17,4 @@
 8237.1.1 = { holder=3002003 } # Gerold (nc)
 8240.5.2 = { holder=3002103 } # Arron(nc)
 8285.1.1 = { holder=3 } # Deryn (nc)
+8315.1.1 = { holder=1003 }	

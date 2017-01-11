@@ -21,6 +21,12 @@
 8234.1.1 = {	
 	holder=15122 #Sigfryd Silverhair
 }
+8302.1.1 = {	
+	holder=5001122
+}
+8311.1.1 = {	
+	holder=5005122
+}
 
 
 

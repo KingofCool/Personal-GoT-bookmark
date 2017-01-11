@@ -16,3 +16,4 @@
 8232.1.1 = {holder=2158} # Daven (c)
 8280.1.1 = {holder=12158} # Mors (c)
 8284.1.1 = {holder=45000156} #  Graymarch
+8302.1.1 = {holder=45000159} #  Graymarch

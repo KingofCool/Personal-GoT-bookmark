@@ -17,3 +17,7 @@
 8300.1.1={
 	holder=999000666
 }
+8307.1.1={
+	liege="d_haunted_forest"
+	holder=174345
+}

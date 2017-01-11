@@ -20,3 +20,5 @@
 8236.1.1 = { holder=62815 } # Allar (nc)
 8259.2.8 = { holder=5015 } # Qymors (nc)
 8259.2.9 = { holder=15 } # Quentyn (C)
+8306.1.1 = { holder=1015 }
+8319.1.1 = { holder=6015 }	

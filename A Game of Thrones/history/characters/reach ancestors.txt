@@ -13801,6 +13801,7 @@
 	mother=4031289
 
 	8241.1.1 = {birth="8241.1.1"}
+	8303.1.1 = {death=yes}	
 }
 3036289 = {
 	name="Lorens"	# Luthor's son, not a lord
@@ -13848,6 +13849,9 @@
 	mother=4031289
 
 	8249.1.1 = {birth="8249.1.1"}
+	8313.1.1={
+		death = yes
+	}	
 }
 3039289 = {
 	name="Mina"	# Luthor's daughter, not a lord
@@ -22699,6 +22703,9 @@
 	8231.1.1 = {birth="8231.1.1"}
 	8247.1.1 = {add_trait=knight add_trait=trained_warrior}
 	8249.1.1 = {add_spouse=4031255}
+	8301.1.1={
+		death = yes
+	}	
 }
 4031255 = {
 	name="Lynesse"
@@ -22752,6 +22759,7 @@
 	mother=4031255
 
 	8260.1.1 = {birth="8260.1.1"}
+	8316.1.1 = { death = yes }	
 }
 3035255 = {
 	name="Jon"	# not a lord
@@ -25776,6 +25784,7 @@
 	8242.1.1 = {birth="8242.1.1"}
 	8258.1.1 = {add_trait=trained_warrior}
 	8260.1.1 = {add_spouse=4028278}
+	8309.1.1 = {death = yes}	
 }
 4028278 = {
 	name="Freya"
@@ -25812,6 +25821,7 @@
 
 	8246.1.1 = {birth="8246.1.1"}
 	8262.1.1 = {add_trait=poor_warrior}
+	8314.1.1 = {death = yes}	
 }
 3031278 = {
 	name="Ector"	# not a lord
@@ -39591,6 +39601,7 @@
 	culture="reachman"
 
 	8230.1.1 = {birth="8230.1.1"}
+	8304.1.1 = { death = yes }	
 }
 133280 = {
 	name="Olene"	# not a lord

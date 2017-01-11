@@ -8048,33 +8048,6 @@
 	8151.1.1 = {birth="8151.1.1"}
 	8196.1.5 = {death= {death_reason = death_battle}}
 }
-5150137 = {
-	name="Patrek" #LC of Night's Watch (nc)
-	dynasty=137
-	
-	martial = 5
-	diplomacy = 6
-	intrigue = 10
-	stewardship = 6
-	learning = 4
-	
-	religion="the_seven"
-	culture="riverlander"
-	
-	father=106137 # Desmond Darry
-	mother=27159 # Malene Tully
-	
-	8153.1.1 = {birth="8153.1.1"}
-	8169.1.1 = {
-		add_trait = knight
-		add_trait = skilled_warrior
-		add_trait = tough_soldier
-	}
-	8172.1.1 = {
-		add_trait = nightswatch
-	}
-	8206.1.1 = { death = yes }
-}
 5650137 = {
 	name="Amyra" #
 	dynasty=137
@@ -12304,6 +12277,9 @@
 		add_trait=nightswatch
 		employer=1002059 #Jon Snow
 	}
+	8303.1.1 = {
+		employer=1296
+	}
 }
 
 14152 = {
@@ -14066,15 +14042,15 @@
 	culture="riverlander"
 
 	father=154174399
-	
-	add_trait="tough_soldier"
 
+	add_trait="tough_soldier"
+	
 	8243.1.1 = {birth="8243.1.1"}
 	8259.1.1 = {add_trait=knight add_trait=skilled_warrior}
 	8282.1.1 = {
 		employer=307 # Myles Toyne
 		give_nickname = nick_the_old
-	} 
+	}
 	8286.1.1 = {death="8286.1.1"}
 }
 159174399 = {
@@ -16796,6 +16772,7 @@
 	8269.1.1 = {birth="8269.1.1"}
 	8285.1.1 = {add_trait=knight add_trait=skilled_warrior}
 	8287.1.1 = {add_spouse=431178452}
+	8323.1.1 = {death=yes}	
 }
 431178452 = {
 	name="Liane"
@@ -16806,6 +16783,7 @@
 
 	8269.1.1 = {birth="8269.1.1"}
 	8285.1.1 = {add_trait=poor_warrior}
+	8323.1.1 = {death=yes}		
 }
 132178452 = {
 	name="Minisa"	# not a lord
@@ -17847,7 +17825,7 @@
 	8111.1.1 = {death="8111.1.1"}
 }
 114178454 = {
-	name="Benfrey"	# a lord
+	name="Benfrey"	# not a lord
 	dynasty=178454
 
 	religion="the_seven"

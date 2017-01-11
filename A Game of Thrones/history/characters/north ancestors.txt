@@ -2015,7 +2015,7 @@
 	
 	add_trait=twin
 
-	8216.1.2 = {birth="8216.1.2"}
+	8216.1.1 = {birth="8216.1.1"}
 	8231.1.1 = {
 		add_trait=trained_warrior
 	}
@@ -11382,6 +11382,7 @@
 	8286.1.1 = {
 		effect = { d_barrowlands = { add_claim = ROOT } }
 	}
+	8323.1.1 = { death = yes }	
 }
 475679 = {
 	name="Eddara"
@@ -11391,6 +11392,7 @@
 	culture="northman"
 
 	8261.1.1 = {birth="8261.1.1"}
+	8323.1.1 = { death = yes }	
 }
 175779 = {
 	name="Galbart"	# not a lord
@@ -11407,6 +11409,45 @@
 		employer = 2068
 	}
 	8295.1.1 = {add_trait=trained_warrior}
+	8304.1.1 = {add_spouse=341443}	
+}
+188779 = {
+	name="Medger"	# not a lord
+	dynasty=79
+
+	religion="old_gods"
+	culture="northman"
+
+	father=175779
+	mother=341443
+
+	8306.1.1 = {birth=yes}
+	8324.1.1 = {add_trait=trained_warrior}	
+}
+188780 = {
+	name="Talia"	# not a lord
+	dynasty=79
+	female=yes
+	religion="old_gods"
+	culture="northman"
+
+	father=175779
+	mother=341443
+
+	8308.1.1 = {birth=yes}
+}
+188781 = {
+	name="Torrhen"	# not a lord
+	dynasty=79
+
+	religion="old_gods"
+	culture="northman"
+
+	father=175779
+	mother=341443
+
+	8311.1.1 = {birth=yes}
+	8330.1.1 = {add_trait=skilled_warrior}	
 }
 175879 = {
 	name="Darlessa"	# not a lord
@@ -11446,6 +11487,7 @@
 	8284.1.1 = {
 		employer = 2068
 	}
+	8306.1.1 = { death = yes }	
 }
 176079 = {
 	name="Torrhen"	# not a lord
@@ -11521,6 +11563,7 @@
 	8296.1.1 = {
 		effect = { d_barrowlands = { add_weak_claim = ROOT } }
 	}
+	8314.1.1 = {death = yes}	
 }
 176379 = {
 	name="Palla"	# not a lord
@@ -15756,7 +15799,7 @@
 	mother=5320059
 	
 	martial=13
-	
+
 	7530.1.1 = {birth="7530.1.1"}
 	7546.1.1 = {add_trait=skilled_warrior}
 	7548.1.1 = {add_spouse=50099059}
@@ -15911,9 +15954,9 @@
 
 	father=100959
 	mother=500959
-	
-	add_trait=assign_mission_target #cadet dynasty tracker, karstark. cadet flags added in c_karhold
 
+	add_trait=assign_mission_target #cadet dynasty tracker, karstark. cadet flags added in c_karhold
+	
 	7619.1.1 = {birth="7619.1.1"}
 	7635.1.1 = {add_trait=skilled_warrior}
 	7637.1.1 = {add_spouse=514089}
@@ -15944,7 +15987,7 @@
 	mother=514089
 	
 	add_trait = assign_mission_target #cadet dynasty tracker
-	
+
 	7639.1.1 = {birth="7639.1.1"}
 	7655.1.1 = {add_trait=poor_warrior}
 	7657.1.1 = {add_spouse=514189}

@@ -3287,6 +3287,7 @@
 		add_trait=silent_sister
 		add_trait=disfigured_AGOT
 	}
+	8308.1.1 = { death = yes }	
 }
 23225 = {		
 	name="Cyrelle" # Named after Gerold's niece, who some suspect, he murdered.
@@ -3304,6 +3305,7 @@
 		add_trait=silent_sister
 		add_trait=disfigured_AGOT
 	}
+	8311.1.1 = { death = yes }		
 }
 ##Issue of Lucas##
 225 = {		
@@ -5338,6 +5340,7 @@
 
 	8220.1.1 = {birth="8220.1.1"}
 	8238.1.1 = {add_spouse=328193}
+	8280.1.1 = { death = yes }
 }
 419193 = {
 	name="Sarra"	# 
@@ -5390,6 +5393,9 @@
 
 	8242.1.1 = {birth="8242.1.1"}
 	8258.1.1 = {add_trait="knight"}
+	8303.1.1 = {	
+		death = yes
+	}	
 }
 418193 = {
 	name="Pia"	# 
@@ -5400,6 +5406,9 @@
 
 	8243.1.1 = {birth="8243.1.1"}
 	8261.1.1 = {add_spouse=331193}
+	8303.1.1 = {	
+		death = yes
+	}		
 }
 332193 = {
 	name="Tywin"	# Tybolt's son, not a lord
@@ -5948,7 +5957,10 @@
 	8229.1.1 = {birth="8229.1.1"} # he was a knight at the time of the sack. Must be older. 
     8245.1.1 = {
 	add_trait="knight"
-	}	
+	}
+	8302.1.1={
+	death = yes
+}	
 }
 #################
 ###House Lorch###
@@ -13107,6 +13119,7 @@
 	mother=414203
 
 	8238.1.1 = {birth="8238.1.1"}
+	8305.1.1 = {death=yes}	
 }
 317203 = {
 	name="Damion"	# a lord

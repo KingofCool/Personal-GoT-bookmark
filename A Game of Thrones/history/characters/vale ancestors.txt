@@ -1658,9 +1658,9 @@
 	
 	father=204178 # Jonothor Arryn
 	mother=91190 # Lira Lannister
-	
-	
 
+	
+	
 	8162.1.1 = {birth="8162.1.1"}
 	8178.1.1 = {add_trait=knight add_trait=trained_warrior}
 	8178.1.1 = { add_trait = assign_mission_target } #cadet dynasty tracker, gulltown. cadet flags added in b_titans_town
@@ -7066,6 +7066,7 @@
 		
 	8248.1.1 = {birth="8248.1.1"}
 	8272.9.9 = { effect = { add_weak_claim = k_north } }
+	8309.1.1 = { death = yes }		
 }
 594089= {
 	name="Serra"
@@ -7080,6 +7081,7 @@
 		
 	8250.1.1 = {birth="8250.1.1"}
 	8272.9.9 = { effect = { add_weak_claim = k_north } }
+	8312.1.1 = { death = yes }		
 }
 694089= {
 	name="Sarya"
@@ -8669,6 +8671,7 @@
 	8246.1.1 = {birth="8246.1.1"}
 	8262.1.1 = {add_trait=knight add_trait=skilled_warrior}
 	8270.1.1 = {add_spouse=794089}
+	8314.1.1 = { death = yes }		
 }
 5000182 = {
 	name="Donnel"	# not a lord
@@ -17585,6 +17588,7 @@
 
 	8242.1.1 = {birth="8242.1.1"}
 	8258.1.1 = {add_trait=knight add_trait=skilled_warrior}
+	8307.1.1 = { death = yes }	
 }
 139185 = {
 	name="Carolei"	# not a lord

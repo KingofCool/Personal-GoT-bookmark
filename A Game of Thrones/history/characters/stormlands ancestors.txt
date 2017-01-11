@@ -1985,7 +1985,7 @@
 				}
 			}	
 		}
-	}
+	}	
 	7987.1.1 = {add_trait="gregarious"}
 	7991.1.1 =  {add_trait="authoritative"}	
 	7994.1.1 = {add_trait="skilled_tactician"
@@ -1999,7 +1999,7 @@
 	7998.2.28= {
 		add_spouse=11544
 		dynasty=317
-		remove_trait="bastard"
+		remove_trait="bastard"		
 		add_trait="legit_bastard"
 		remove_trait=assign_mission_target #no longer cadet house
 		effect = { 
@@ -2452,7 +2452,7 @@
 
 	8116.1.1 = {birth="8116.1.1"}
 	8135.1.1 = {
-		death = { death_reason = death_childbirth }
+		death="8135.1.1"
 	}
 }
 31317 = {
@@ -2700,10 +2700,10 @@
 				}
 			}
 		}
-	}	
-	8200.1.1 = {
-		add_trait = assign_mission_target #cadet dynasty tracker, wensington. cadet flags added in b_childrens_fist
 	}
+	8200.1.1={
+		add_trait = assign_mission_target #cadet dynasty tracker, wensington. cadet flags added in b_childrens_fist
+	}	
 	8210.1.1={
 		# Died in the Great Spring Sickness 
 		add_trait="has_bubonic_plague"
@@ -12047,6 +12047,7 @@
 	mother=432304
 
 	8242.1.1 = {birth="8242.1.1"}
+	8309.1.1 = { death = yes }	
 }
 
 ###
@@ -12533,6 +12534,7 @@
 	mother=423325
 
 	8250.1.1 = {birth="8250.1.1"}
+	8312.1.1 = {death=yes}	
 }
 326325 = {
 	name="Belandra"	# Myles's daughter, not a lord
@@ -12546,6 +12548,7 @@
 	mother=423325
 
 	8252.1.1 = {birth="8252.1.1"}
+	8307.1.1 = {death=yes}	
 }
 
 ###
@@ -13553,6 +13556,9 @@
 	mother=319361
 
 	8235.1.1 = {birth="8235.1.1"}
+	8310.1.1={
+		death = yes
+	}
 }
 
 ###

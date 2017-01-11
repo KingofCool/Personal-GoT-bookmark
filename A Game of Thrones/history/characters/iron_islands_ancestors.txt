@@ -5556,6 +5556,9 @@
 
 	8232.1.1 = {birth="8232.1.1"}
 	8248.1.1 = {add_trait=trained_warrior}
+	8303.1.1={
+		death = yes
+	}
 }
 3028119 = {
 	name="Lucimore"	# not a lord
@@ -5569,6 +5572,7 @@
 
 	8259.1.1 = {birth="8259.1.1"}
 	8275.1.1 = {add_trait=skilled_warrior}
+	8313.1.1 = { death = yes }		
 }
 3029119 = {
 	name="Alannys"	# not a lord
@@ -12742,6 +12746,7 @@
 
 	8238.1.1 = {birth="8238.1.1"}
 	8254.1.1 = {add_trait=poor_warrior}
+	8305.1.1 = { death = yes}	
 }
 ################
 ###House Codd###

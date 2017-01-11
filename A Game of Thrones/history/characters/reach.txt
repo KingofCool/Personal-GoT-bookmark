@@ -347,6 +347,9 @@
 			} 
 		}
 	}
+	8303.1.1={
+		death = yes
+	}
 }
 3253 = {
 	name="Janna"
@@ -368,6 +371,9 @@
 	8276.1.1={
 		add_spouse=261 #Jon Fossoway
 	}
+	8323.1.1={
+		death = yes
+	}
 }
 2253 = {
 	name="Mina"
@@ -387,6 +393,9 @@
 	8277.1.1={
 		add_spouse=1288  #Paxter Redwyne
 	}
+	8320.1.1={
+		death = yes
+	}	
 }                           
 4253 = {
 	name="Willas"
@@ -426,6 +435,9 @@
 		add_trait="hunter"
 		add_trait="falconer"
 		remove_trait="master_warrior"
+	}
+	8303.1.1={
+		death = yes
 	}
 } 
 5253 = {
@@ -486,6 +498,9 @@
 		effect = {
 			set_character_flag = brightwater_keep_promised
 		}
+	}
+	8303.1.1={
+		death = yes
 	}	
 } 
 6253 = {
@@ -553,6 +568,9 @@
 		add_trait="kingsguard"
 		employer=3190
 	}
+	8303.1.1 = {
+		employer=102
+	}
 }
 
 7253 = {
@@ -589,9 +607,32 @@
 	}
 	8297.1.1={		
 		add_trait="fashionable"
+		add_trait= shrewd
 		add_trait="falconer"
+		add_trait="chaste"
+		remove_trait="ambitious"
+		fertility = 1.5
+		remove_trait="lustful"
 	}
 	#marriages set by husbands
+	8303.1.1 = { 
+		effect = { #Her co-wives
+			add_friend = 6059
+			add_friend = 7059
+			add_friend = 77041
+			add_friend = 4316
+			add_friend = 4001
+			add_friend = 8316
+			add_friend = 7107
+			add_friend = 206054
+			add_friend = 1126
+			add_friend = 6102
+			add_friend = 3034050
+			add_friend = 9017
+			add_friend = 88091
+			add_friend = 155174371
+		}
+	}
 }
 ###minor tyrells
 88001 = {
@@ -612,6 +653,7 @@
 	}
 	8279.1.1 = {give_nickname = nick_the_gross
 	}
+	8306.1.1 = { death = yes }
 }
 88002 = {
 	name="Moryn" #Lord Commander of the City Watch of Oldtown 
@@ -635,6 +677,9 @@
 	8252.1.1={
 		add_trait="knight"
 	}
+	8307.1.1={
+		death = yes
+	}
 }
 100253 = {
 	name="Leonette" #Uncanon Wife
@@ -647,6 +692,9 @@
 	
 	8233.1.1={
 		birth="8233.1.1"
+	}
+	8307.1.1={
+		death = yes
 	}
 }
 88083 = {
@@ -678,6 +726,9 @@
 	8298.1.1={
 		employer=88130
 	}
+	8308.1.1={
+		death = yes
+	}
 }
 88003 = {
 	name="Garse" #bastard son of garth
@@ -698,6 +749,9 @@
 	8270.1.1={
 		add_trait="trained_warrior"
 	}
+	8319.1.1={
+		death = yes
+	}	
 }
 88004 = {
 	name="Garrett" #bastard son of garth
@@ -718,6 +772,9 @@
 	8273.1.1={
 		add_trait="trained_warrior"
 	}
+	8321.1.1={
+		death = yes
+	}	
 }
 88006 = {
 	name="Luthor" #son of moryn
@@ -777,6 +834,9 @@
 		add_spouse=2276
 		add_trait="knight"
 	}
+	8303.1.1={
+		employer=7253
+	}	
 }
 88009 = {
 	name="Olene" 
@@ -847,6 +907,9 @@
 		add_trait="squire"
 		add_trait="poor_warrior"
 	}
+	8303.1.1={
+		employer=7253
+	}	
 }
 
 #Cadet Branch of Victor
@@ -916,6 +979,9 @@
 	8296.1.1={
 		employer=1284
 	}
+	8327.1.1={
+		death = yes
+	}	
 }
 88072 = {
 	name="Leo" #
@@ -935,6 +1001,9 @@
 		add_spouse=6282 #Alys Beesbury
 		add_trait="knight"
 	}
+	8303.1.1={
+		employer=7253
+	}	
 }
 88093 = {
 	name="Lyonel" #
@@ -946,6 +1015,9 @@
 	8285.1.1={
 		birth="8285.1.1"
 	}
+	8303.1.1={
+		employer=7253
+	}	
 }
 88073 = {
 	name="Alla" #
@@ -971,6 +1043,9 @@
 	8289.1.1={
 		birth="8289.1.1"
 	}
+	8303.1.1={
+		employer=7253
+	}	
 }
 88075 = {
 	name="Lorent" #
@@ -982,6 +1057,9 @@
 	8290.1.1={
 		birth="8290.1.1"
 	}
+	8303.1.1={
+		employer=7253
+	}	
 }
 88076 = {
 	name="Leona" #
@@ -1102,6 +1180,24 @@
 	8281.1.1={
 		birth="8281.1.1"
 	}
+	8303.1.1 = { 
+		effect = { #Her co-wives
+			add_friend = 6059
+			add_friend = 7059
+			add_friend = 7253
+			add_friend = 4316
+			add_friend = 4001
+			add_friend = 8316
+			add_friend = 7107
+			add_friend = 206054
+			add_friend = 1126
+			add_friend = 6102
+			add_friend = 3034050
+			add_friend = 9017
+			add_friend = 77041
+			add_friend = 155174371
+		}
+	}
 }
 #Courtiers
 1050253 = {
@@ -1139,6 +1235,9 @@
 		add_trait = lunatic
 		add_trait = blinded
 	}
+	8304.1.1={
+		death = yes
+	}
 }
 
 ###Redwynes           
@@ -1172,6 +1271,9 @@
 		add_trait="cynical"
 		give_nickname = nick_the_queen_of_thorns
 	}
+	8308.1.1={
+		death = yes
+	}
 }
 1288 = {
 	name="Paxter" #Lord of the Arbor
@@ -1198,29 +1300,9 @@
 	8277.1.1={
 		add_spouse=2253  #Mina Tyrell
 	}
-	8299.2.11 = {
-		effect = {
-			if = {						
-				limit = {
-					NOT = { year = 8300 }
-					NOT = { month = 3 }
-				}
-				set_character_flag = neutral
-				clr_character_flag = supporting_king
-				clr_character_flag = against_king
-				any_demesne_title = {
-					limit = { 
-						OR = {
-							tier = COUNT
-							tier = DUKE
-						}
-					}				
-					set_variable = { which = "de_facto_kingdom" value = 6 } #reach
-				}
-				set_defacto_liege = ROOT
-			}
-		}
-	}
+	8313.1.1={
+		death = yes
+	}	
 }
 2288 = {
 	name="Horas" 
@@ -1248,30 +1330,6 @@
 		add_trait="knight"
 		add_trait="trained_warrior"
 	}
-	8299.2.11 = { #ACoK
-		effect = {
-			e_iron_throne = { #Imprisoned
-				holder_scope = {
-					ROOT = {
-						imprison = PREV
-						remove_character_modifier = the_dungeon
-						set_character_flag = captured_in_battle
-						add_character_modifier = { 
-							name = house_arrest
-							duration = -1
-						}
-					}
-				}
-			}	
-		}
-	}	
-	8299.7.1={
-		employer=9316
-	}
-	8299.7.1={
-		add_trait="wounded" #wounded at blackwater
-	}
-	8300.1.2 = { employer = 7316 } #Tommen I "Baratheon"
 }
 3288 = {
 	name="Hobber" 
@@ -1289,8 +1347,8 @@
 	add_trait="tough_soldier"
 	add_trait="twin"
 	add_trait="gregarious"
-	8280.1.2={
-		birth="8280.1.2"
+	8280.1.1={
+		birth="8280.1.1"
 	}
 	8295.1.1={
 		add_trait="trained_warrior"
@@ -1320,6 +1378,76 @@
 		effect = { prisoner = no }
 	}
 	#8281.1.1 = { give_nickname = nick_slobber }
+	8303.1.1={
+		add_spouse=3248
+	}	
+}
+36288 = {
+	name="Olenna" 
+	dynasty=288 #Redwyne
+	female=yes
+	dna="dclmbdicdbx"
+	properties="ce0eik"	
+
+	religion="the_seven"
+	culture="reachman"
+	father= 3288
+	mother= 3248
+
+	8305.1.1={
+		birth=yes
+	}
+}
+36289 = {
+	name="Horas" 
+	dynasty=288 #Redwyne
+	dna="aclmcdicdbx"
+	properties="cd0ehk"		
+	religion="the_seven"
+	culture="reachman"
+	
+	father= 3288
+	mother= 3248
+
+	8307.1.1={
+		birth=yes
+	}
+	8325.1.1={
+		add_trait="knight"	
+		add_trait="skilled_warrior"
+	}	
+}
+36290 = {
+	name="Paxter" 
+	dynasty=288 #Redwyne
+
+	religion="the_seven"
+	culture="reachman"
+	
+	father= 3288
+	mother= 3248
+
+	8310.1.1={
+		birth=yes
+	}
+	8328.1.1={
+		add_trait="knight"	
+		add_trait="master_warrior"
+	}	
+}
+36291 = {
+	name="Margaery" 
+	dynasty=288 #Redwyne
+	female=yes
+
+	religion="the_seven"
+	culture="reachman"
+	father= 3288
+	mother= 3248
+
+	8312.1.1={
+		birth=yes
+	}
 }
 4288 = {
 	name="Desmera" 
@@ -1382,6 +1510,9 @@
 	8274.1.1={
 		add_spouse=88033  #Mathis Rowan
 	}
+	8322.1.1={
+		death = yes
+	}	
 }
 88098 = {
 	name="Humfrey" #random
@@ -1612,6 +1743,9 @@
 		add_trait="incapable"
 		add_trait="mystic"
 	}
+	8302.1.1={
+		death = yes
+	}
 }
 88242 = {
 	name="Mychella" #Uncanon Wife 1
@@ -1730,6 +1864,12 @@
 	}
 	8281.1.1 = {give_nickname = nick_brightsmile
 	}
+	8302.1.1={
+		add_trait = vigilance
+	}
+	8308.1.1={
+		death = yes
+	}	
 }
 5285 = {
 	name="Malora"
@@ -1752,6 +1892,9 @@
 	}
 	8281.1.1 = {give_nickname = nick_the_mad_maid
 	}
+	8323.1.1={
+		death = yes
+	}	
 }                       
 2285 = {
 	name="Alerie"
@@ -1775,6 +1918,9 @@
 	8276.1.1={
 		add_spouse=1253 #Mace Tyrell
 	}
+	8328.1.1={
+		death = yes
+	}
 }  
 3285 = {
 	name="Alysanne"
@@ -1790,6 +1936,9 @@
 	8280.1.1={
 		add_spouse=297 #Arthur Ambrose
 	}
+	8330.1.1={
+		death = yes
+	}	
 }  
 4285 = {
 	name="Denyse"
@@ -1825,6 +1974,55 @@
 		add_trait="knight"
 		add_trait="trained_warrior"
 	}
+	8301.1.1={
+		add_spouse=88020
+	}	
+	8308.1.1={
+		add_trait = vigilance
+	}	
+}
+62850 = {
+	name="Baelor"
+	dynasty=285 #Hightower
+	religion="the_seven"
+	culture="reachman"
+	father=6285
+	mother=88020
+	8302.1.1={
+		birth=yes
+	}
+	8320.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+62851 = {
+	name="Leyton"
+	dynasty=285 #Hightower
+	religion="the_seven"
+	culture="reachman"
+	father=6285
+	mother=88020
+	8304.1.1={
+		birth=yes
+	}
+	8321.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+62852 = {
+	name="Talla"
+	dynasty=285 #Hightower
+	female=yes
+	martial=6
+	religion="the_seven"
+	culture="reachman"
+	father=6285
+	mother=88020
+	8306.1.1={
+		birth=yes
+	}	
 }
 7285 = {
 	name="Gunthor" #
@@ -1995,6 +2193,9 @@
 	8279.1.1={
 		add_spouse=2281 #Melessan Florent
 	}
+	8316.1.1={
+		death=yes
+	}	
 }
 1296 = {
 	name="Samwell" #
@@ -2096,6 +2297,62 @@
 	}
 	8299.9.1 = { #battle of Duskendale
 		add_spouse = 8138 #Eleanor Mootoon
+	}
+	8316.1.1={ add_trait="heartsbane" }	
+}
+22960 = {
+	name="Samwell" #
+	dynasty=296 #Tarly
+	religion="the_seven"
+	culture="reachman"
+	father=2296
+	mother=8138
+	8303.1.1={
+		birth=yes
+	}
+	8322.1.1={
+		add_trait="trained_warrior"
+		add_trait="squire"
+	}
+}
+22961 = {
+	name="Loras" #
+	dynasty=296 #Tarly
+	religion="the_seven"
+	culture="reachman"
+	father=2296
+	mother=8138
+	8305.1.1={
+		birth=yes
+	}
+	8324.1.1={
+		add_trait="trained_warrior"
+		add_trait="squire"
+	}
+}
+22962 = {
+	name="Lynesse" #
+	dynasty=296 #Tarly
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=2296
+	mother=8138
+	8307.1.1={
+		birth=yes
+	}
+}
+22963 = {
+	name="Selyse" #
+	dynasty=296 #Tarly
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	add_trait="fair"	
+	father=2296
+	mother=8138
+	8309.1.1={
+		birth=yes
 	}
 }
 #Relative mentioned in Tv show
@@ -2289,6 +2546,9 @@
 	8300.3.1={
 		add_spouse=574801 #Gerris Redbeard
 	}
+	8304.1.1={
+		death = yes
+	}
 }
 5281 = {
 	name="Ryam" #
@@ -2319,6 +2579,9 @@
 	8237.1.1={
 		birth="8237.1.1"
 	}
+	8311.1.1={
+		death = yes
+	}
 } 
 88022 = {
 	name="Rylene" #
@@ -2335,7 +2598,9 @@
 	8257.1.1={
 		add_spouse=4234  #Rycherd Crane
 	}
-
+	8309.1.1={
+		death = yes
+	}
 } 
 9281 = {
 	name="Colin" #
@@ -2356,6 +2621,9 @@
 		add_trait="knight"
 		add_trait="trained_warrior"
 	}
+	8308.1.1={
+		death = yes
+	}
 }
 102281 = {
 	name="Serianna"
@@ -2366,6 +2634,9 @@
 	8242.1.1={
 		birth="8242.1.1"
 	}
+	8303.1.1={
+		death = yes
+	}	
 } 
 2281 = {
 	name="Melessa" 
@@ -2381,6 +2652,9 @@
 	8279.1.1={
 		add_spouse=296 #Randyll Tarly
 	}
+	8317.1.1={
+		death = yes
+	}	
 } 
 3281 = {
 	name="Rhea" 
@@ -2395,6 +2669,9 @@
 	}
 	8271.1.1={
 		add_spouse=285  #Leyton Hightower
+	}
+	8322.1.1={
+		death = yes
 	}
 }
 1281 = {
@@ -2411,40 +2688,79 @@
 		add_trait=knight
 		add_trait=poor_warrior
 	}
-	8300.3.1 = {
-		effect = {
-			add_weak_claim = k_reach
-			set_defacto_liege = ROOT
-			clr_character_flag = neutral
-			set_character_flag = against_king
-			set_character_flag = against_loyal_liege
-			any_demesne_title = {
-				limit = { 
-					OR = {
-						tier = COUNT
-						tier = DUKE
-					}
-				}				
-				set_variable = { which = "de_facto_kingdom" value = 6 } #reach
-			}
-			k_stormlands = {
-				holder_scope = { 
-					reverse_opinion = {
-						modifier = opinion_with_rebel_leader
-						who = ROOT
-						years = 100
-					}
-				}
-			}
-		}
-		raise_levies = {
-			location = 221 #Dragonstone
-			force_mult = 1
-		}
-	}
+	8301.1.1={
+		add_spouse=88019
+	}	
+	8327.1.1={
+		death = yes
+	}	
 }   
-                       
-
+61281 = {
+	name="Axell" #
+	dynasty=281 #Florent
+	religion="the_seven"
+	culture="reachman"
+	father=1281
+	mother=88019 
+	8304.1.1={
+		birth=yes
+	}
+	8323.1.1={
+		add_trait=knight
+		add_trait=trained_warrior
+	}	
+} 
+62281 = {
+	name="Melessa" #
+	dynasty=281 #Florent
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=1281
+	mother=88019 
+	8306.1.1={
+		birth=yes
+	}	
+}
+63281 = {
+	name="Erren" #
+	dynasty=281 #Florent
+	religion="the_seven"
+	culture="reachman"
+	father=1281
+	mother=88019 
+	8308.1.1={
+		birth=yes
+	}
+	8325.1.1={
+		add_trait=knight
+		add_trait=trained_warrior
+	}	
+}  
+64281 = {
+	name="Rhea" #
+	dynasty=281 #Florent
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=1281
+	mother=88019 
+	8309.1.1={
+		birth=yes
+	}	
+} 
+66281 = {
+	name="Delena" #
+	dynasty=281 #Florent
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=1281
+	mother=88019 
+	8311.1.1={
+		birth=yes
+	}	
+}                
 6281 = {
 	name="Selyse" 
 	dynasty=281 #Florent
@@ -2472,6 +2788,9 @@
 	}
 	8295.1.1={
 		effect = { religion="rhllor" }
+	}
+	8323.1.1={
+		death = yes
 	}
 }
 88084 = {
@@ -2504,6 +2823,9 @@
 				}
 			}
 		}
+	}
+	8303.1.1={
+		death = yes
 	}
 }
 7281 = {
@@ -2655,6 +2977,9 @@
 	8274.1.1={
 		add_spouse=88102
 	}
+	8314.1.1={
+		death = yes
+	}	
 }
 88102 = {
 	name="Fruella" #random Lord of Ashford
@@ -2667,6 +2992,9 @@
 	8274.1.1={
 		add_spouse=88028
 	}
+	8314.1.1={
+		death = yes
+	}	
 }
 88103 = {
 	name="Russell" #random Lord of Ashford
@@ -2681,6 +3009,77 @@
 	8292.1.1={
 		add_trait="knight"
 	}
+	8301.1.1={
+		add_spouse=220128
+	}	
+}
+99103 = {
+	name="Rhonda"
+	dynasty=265 #Ashford
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=88103
+	mother=220128
+	8304.1.1={
+		birth=yes
+	}	
+}
+99104 = {
+	name="Leo"
+	dynasty=265 #Ashford
+
+	religion="the_seven"
+	culture="reachman"
+	father=88103
+	mother=220128
+	8307.1.1={
+		birth=yes
+	}	
+	8326.1.1={
+		add_trait="master_warrior"	
+		add_trait="knight"
+	}	
+}
+99105 = {
+	name="Denys"
+	dynasty=265 #Ashford
+
+	religion="the_seven"
+	culture="reachman"
+	father=88103
+	mother=220128
+	8309.1.1={
+		birth=yes
+	}	
+	8327.1.1={
+		add_trait="trained_warrior"	
+		add_trait="knight"
+	}	
+}
+99106 = {
+	name="Margaery"
+	dynasty=265 #Ashford
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=88103
+	mother=220128
+	8311.1.1={
+		birth=yes
+	}	
+}
+99107 = {
+	name="Juliya"
+	dynasty=265 #Ashford
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=88103
+	mother=220128
+	8314.1.1={
+		birth=yes
+	}	
 }
 88104 = {
 	name="Delena" #random Lord of Ashford
@@ -2759,48 +3158,62 @@
 		add_trait="knight"
 		add_trait="trained_warrior"
 	}
-	8299.3.3 = {
-		raise_levies = {
-			location = 301 #Galemont
-			force_mult = 1
-		}
-		effect = {
-			set_defacto_liege = THIS
-			set_character_flag = against_king
-			set_character_flag = against_loyal_liege
-			any_demesne_title = {
-				limit = { 
-					OR = {
-						tier = COUNT
-						tier = DUKE
-					}
-				}				
-				set_variable = { which = "de_facto_kingdom" value = 6 } #reach
-			}
-			k_stormlands = {
-				holder_scope = { 
-					reverse_opinion = {
-						modifier = opinion_with_rebel_leader
-						who = ROOT
-						years = 100
-					}
-					ROOT = { join_attacker_wars = PREV }
-				}
-			}
-		}
-	}
-	8299.7.2 = {
-		raise_levies = {
-			dismiss = yes
-			location = 301 #Galemont
-			force_mult = 1
-		}
-		raise_levies = {
-			location = 221 #Dragonstone
-			force_mult = 1
-		}
-	}
-}  
+	8302.1.1 = {
+		add_spouse = 88091
+	}	
+} 
+93270 = {
+	name="Megga"
+	dynasty=270 #Meadows
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+
+	father=1270
+	mother=88091
+	8305.1.1={
+		birth=yes
+	}	
+} 
+93271 = {
+	name="Medwick"
+	dynasty=270 #Meadows
+
+	religion="the_seven"
+	culture="reachman"
+
+	father=1270
+	mother=88091
+	8308.1.1={
+		birth=yes
+	}	
+}
+93272 = {
+	name="Fredrec"
+	dynasty=270 #Meadows
+
+	religion="the_seven"
+	culture="reachman"
+
+	father=1270
+	mother=88091
+	8310.1.1={
+		birth=yes
+	}	
+}
+93273 = {
+	name="Cymoril"
+	dynasty=270 #Meadows
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+
+	father=1270
+	mother=88091
+	8313.1.1={
+		birth=yes
+	}	
+}
 ###Footly
 248 = {
 	name="Dontos" #Lord of Tumbleton
@@ -2817,6 +3230,9 @@
 		add_spouse = 100248
 		add_trait="knight"
 	}
+	8316.1.1={
+		death = yes
+	}	
 }
 100248 = {
 	name="Megga" #Uncanon Wife
@@ -2827,6 +3243,9 @@
 	8252.1.1={
 		birth="8252.1.1"
 	}
+	8316.1.1={
+		death = yes
+	}	
 }
 1248 = {
 	name="Fredrec" #
@@ -2841,7 +3260,64 @@
 	8291.1.1 = {
 		add_trait="knight"
 	}
-}  
+	8302.1.1 = {
+		add_spouse = 88270
+	}	
+}
+22245 = {
+	name="Dontos" #
+	dynasty=248 #Footly
+	religion="the_seven"
+	culture="reachman"
+	father=1248
+	mother=88270
+	8306.1.1={
+		birth=yes
+	}
+	8325.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}	
+} 
+22246 = {
+	name="Mace" #
+	dynasty=248 #Footly
+	religion="the_seven"
+	culture="reachman"
+	father=1248
+	mother=88270
+	8309.1.1={
+		birth=yes
+	}
+	8327.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}	
+}
+22247 = {
+	name="Freya" #
+	dynasty=248 #Footly
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=1248
+	mother=88270
+	8311.1.1={
+		birth=yes
+	}	
+}
+22248 = {
+	name="Talla" #
+	dynasty=248 #Footly
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=1248
+	mother=88270
+	8314.1.1={
+		birth=yes
+	}	
+}
 2248 = {
 	name="Freya" #
 	dynasty=248 #Footly
@@ -2896,6 +3372,9 @@
 	8237.1.1={
 		birth="8237.1.1"
 	}
+	8310.1.1={
+		death=yes
+	}
 }
 88033 = {
 	name="Mathis" #
@@ -2927,6 +3406,9 @@
 	8290.1.1={
 		capital = c_goldengrove
 	}
+	8319.1.1={
+		death = yes
+	}	
 }
 250 = {
 	name="Oswald" #
@@ -2938,6 +3420,80 @@
 	8276.1.1={
 		birth="8276.1.1"
 	}
+	8302.1.1={
+		add_spouse=2248
+	}		
+}
+99250 = {
+	name="Estalia" #
+	dynasty=250 #Rowan
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=250
+	mother=2248
+	8304.1.1={
+		birth=yes
+	}		
+}
+99251 = {
+	name="Emmon" #
+	dynasty=250 #Rowan
+
+	religion="the_seven"
+	culture="reachman"
+	father=250
+	mother=2248
+	8307.1.1={
+		birth=yes
+	}
+	8309.1.1={
+		death=yes
+	}	
+}
+99252 = {
+	name="Mathis" #
+	dynasty=250 #Rowan
+
+	religion="the_seven"
+	culture="reachman"
+	father=250
+	mother=2248
+	8310.1.1={
+		birth=yes
+	}
+	8328.1.1 = {
+		add_trait="knight"
+		add_trait="master_warrior"
+	}	
+}
+99253 = {
+	name="Freya" #
+	dynasty=250 #Rowan
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=250
+	mother=2248
+	8312.1.1={
+		birth=yes
+	}		
+}
+99254 = {
+	name="Horras" #
+	dynasty=250 #Rowan
+
+	religion="the_seven"
+	culture="reachman"
+	father=250
+	mother=2248
+	8314.1.1={
+		birth=yes
+	}
+	8330.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
 }
 88034 = {
 	name="Irena" #
@@ -2991,6 +3547,9 @@
 	8277.1.1={
 		add_trait = "widowed"
 	}
+	8306.1.1={
+		death = yes
+	}
 }
 100237 = {
 	name="Atys" #Random
@@ -3026,6 +3585,9 @@
 		add_trait="knight"
 		add_trait="poor_warrior"
 	}
+	8313.1.1={
+		death = yes
+	}
 }
 3237 = {
 	name="Edgerran" #
@@ -3041,6 +3603,54 @@
 		add_trait="knight"
 		add_trait="trained_warrior"
 	}
+	8301.1.1 = {
+		add_spouse = 10196
+	}
+	8320.1.1={
+		death = yes
+	}	
+}
+32370 = {
+	name="Arys"
+	dynasty=237 #Oakheart
+	religion="the_seven"
+	culture="reachman"
+	father=3237
+	mother=10196
+	8302.1.1={
+		birth=yes
+	}
+	8321.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}		
+}
+32371 = {
+	name="Malora"
+	dynasty=237 #Oakheart
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=3237
+	mother=10196
+	8304.1.1={
+		birth=yes
+	}		
+}
+32372 = {
+	name="Mace"
+	dynasty=237 #Oakheart
+	religion="the_seven"
+	culture="reachman"
+	father=3237
+	mother=10196
+	8305.1.1={
+		birth=yes
+	}
+	8323.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}		
 }
 1237 = {
 	name="Arys" 
@@ -3108,6 +3718,9 @@
 	8267.1.1={
 		birth="8267.1.1"
 	}
+	8329.1.1={
+		death = yes
+	}	
 }
 ###Caswells 
 88294 = {
@@ -3236,7 +3849,7 @@
 	culture="reachman"
 	8275.1.1={
 		birth="8275.1.1"
-	}
+	}	
 } 
 ###Issue of Desmond###
 501264 = {
@@ -3252,6 +3865,9 @@
 	8263.1.1={
 		birth="8263.1.1"
 	}
+	8330.1.1={
+		death = yes
+	}	
 }
 502264 = {
 	name="Leonette" #
@@ -3266,6 +3882,9 @@
 	8267.1.1={
 		birth="8267.1.1"
 	}
+	8324.1.1={
+		death = yes
+	}	
 }
 503264 = {
 	name="Elinor" #
@@ -3318,6 +3937,9 @@
 		add_trait="knight"
 		add_trait="poor_warrior"
 	}
+	8330.1.1={
+		death = yes
+	}	
 }  
 ###Issue of Lorent###
 88038 = {
@@ -3344,6 +3966,22 @@
 		birth="8294.1.1"
 	}
 } 
+88440 = {
+	name="Denys" #random
+	dynasty=264 #Caswell
+	
+	religion="the_seven"
+	culture="reachman"
+	father=88037
+	mother=100264
+	8303.1.1={
+		birth=yes
+	}
+	8322.1.1 = {
+		add_trait="knight"
+		add_trait="skilled_warrior"
+	}	
+}
 ###Merryweathers
 263 = {
 	name="Owen" #
@@ -3443,6 +4081,9 @@
 	8300.7.1 = { 
 		employer = 1263 #Leaves after cersei's imprisonment
 	} 
+	8321.1.1={
+		death = yes
+	}	
 } 
 88041 = {
 	name="Taena" #
@@ -3474,6 +4115,9 @@
 	8300.7.1 = { 
 		employer = 1263 #Leaves after cersei's imprisonment
 	} 
+	8328.1.1={
+		death = yes
+	}	
 } 
 2263 = {
 	name="Russell" #
@@ -3485,7 +4129,53 @@
 	8294.1.1={
 		birth="8294.1.1"
 	}
+	8310.1.1={
+		add_spouse=88076 
+	}
+	8310.1.1 = {
+		add_trait="trained_warrior"	
+		add_trait="knight"
+	}	
 } 
+22263 = {
+	name="Orton" #
+	dynasty=263 #Merryweather
+	religion="the_seven"
+	culture="reachman"
+	father=2263
+	mother=88076
+	8313.1.1={
+		birth=yes
+	}
+	8330.1.1 = {
+		add_trait="trained_warrior"		
+		add_trait="knight"
+	}	
+}
+22264 = {
+	name="Olene" #
+	dynasty=263 #Merryweather
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=2263
+	mother=88076
+	8316.1.1={
+		birth=yes
+	}	
+}
+22265 = {
+	name="Leona" #
+	dynasty=263 #Merryweather
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=2263
+	mother=88076
+	8319.1.1={
+		birth=yes
+	}	
+}
 ###Hutcheson
 5291 = {
 	name="Emmon" #
@@ -3588,6 +4278,9 @@
 	8263.1.1={
 		birth="8263.1.1"
 	}
+	8303.1.1={
+		employer=7253
+	}	
 } 
 ###Cuys
 289 = {
@@ -3604,6 +4297,9 @@
 		add_spouse = 100289
 		add_trait="knight"
 	}
+	8309.1.1={
+		death = yes
+	}	
 }
 100289 = {
 	name="Megga"
@@ -3614,6 +4310,9 @@
 	8245.1.1={
 		birth="8245.1.1"
 	}
+	8309.1.1={
+		death = yes
+	}	
 
 } 
 3289 = {
@@ -3630,7 +4329,52 @@
 		add_trait="poor_warrior"
 		add_trait="knight"
 	}
-} 
+	8301.1.1 = {
+		add_spouse = 4279
+	}
+	8322.1.1={
+		death = yes
+	}	
+}
+93289 = {
+	name="Branston" #
+	dynasty=289 #Cuy
+	religion="the_seven"
+	culture="reachman"
+	father=3289
+	mother=4279
+	8303.1.1={
+		birth=yes
+	}
+	8322.1.1 = {
+		add_trait="skilled_warrior"
+		add_trait="knight"
+	}
+}
+93290 = {
+	name="Elinor" #
+	dynasty=289 #Cuy
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=3289
+	mother=4279
+	8305.1.1={
+		birth=yes
+	}
+}
+93291 = {
+	name="Tania" #
+	dynasty=289 #Cuy
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=3289
+	mother=4279
+	8307.1.1={
+		birth=yes
+	}
+}     
 1289 = {
 	name="Emmon" ##renly's rainbowguard
 	dynasty=289 #Cuy
@@ -3731,7 +4475,55 @@
 	8279.1.1 = {
 		add_trait="knight"
 	}
+	8301.1.1 = {
+		add_spouse = 3254
+	}
+	8319.1.1={
+		death=yes
+	}	
 } 
+81287 = {
+	name="Dafny" #
+	dynasty=287 #Costayne
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=287
+	mother=3254
+	8303.1.1={
+		birth=yes
+	}
+}
+81288 = {
+	name="Victor" #
+	dynasty=287 #Costayne
+
+	religion="the_seven"
+	culture="reachman"
+	father=287
+	mother=3254
+	8306.1.1={
+		birth=yes
+	}
+	8324.1.1 = {
+		add_trait="knight"
+	}	
+}
+81289 = {
+	name="Imry" #
+	dynasty=287 #Costayne
+
+	religion="the_seven"
+	culture="reachman"
+	father=287
+	mother=3254
+	8308.1.1={
+		birth=yes
+	}
+	8326.1.1 = {
+		add_trait="knight"
+	}	
+}
 88101 = {
 	name="Hosman" #
 	dynasty=287 #Costayne
@@ -3745,6 +4537,9 @@
 	8281.1.1 = {
 		add_spouse = 101287
 	}
+	8324.1.1={
+		death=yes
+	}		
 }
 101287 = {
 	name="Tetrisia"
@@ -3755,6 +4550,9 @@
 	8265.1.1={
 		birth="8265.1.1"
 	}
+	8324.1.1={
+		death=yes
+	}		
 } 
 1287 = {
 	name="Aerion" #
@@ -3767,6 +4565,18 @@
 		birth="8281.1.1"
 	}
 } 
+111287 = {
+	name="Lenna" #
+	dynasty=287 #Costayne
+	female=yes
+	father=88101
+	mother=101287
+	religion="the_seven"
+	culture="reachman"
+	8302.1.1={
+		birth=yes
+	}
+}
 2287 = {
 	name="Aemon" #
 	dynasty=287 #Costayne
@@ -3786,6 +4596,9 @@
 	8280.1.1={
 		employer=1253
 	}
+	8303.1.1={
+		employer=7253
+	}	
 } 
 ###Hunt
 2292 = {
@@ -3833,6 +4646,9 @@
 		add_spouse = 101292
 		add_trait="knight"
 	}
+	8326.1.1={
+		death = yes
+	}	
 }
 101292 = {
 	name="Lillia" #
@@ -3843,6 +4659,9 @@
 	8261.1.1={
 		birth="8261.1.1"
 	}
+	8326.1.1={
+		death = yes
+	}	
 }
 3292 = {
 	name="Moryn" #
@@ -3879,6 +4698,66 @@
 	8279.1.1={
 		birth="8279.1.1"
 	}
+	8303.1.1 = {
+		add_spouse = 1278
+		add_trait="knight"
+	}	
+}
+41292 = {
+	name="Rylene" #
+	dynasty=292 #Hunt
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	add_trait="fair"	
+	father=1292
+	mother=1278
+	8305.1.1={
+		birth=yes
+	}	
+}
+41293 = {
+	name="Rhonda" #
+	dynasty=292 #Hunt
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	add_trait="fair"	
+	father=1292
+	mother=1278
+	8308.1.1={
+		birth=yes
+	}	
+}
+41294 = {
+	name="Morm" #
+	dynasty=292 #Hunt
+
+	religion="the_seven"
+	culture="reachman"
+	add_trait="fair"
+	father=1292
+	mother=1278
+	8310.1.1={
+		birth=yes
+	}
+	8329.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}	
+}
+41295 = {
+	name="Talla" #
+	dynasty=292 #Hunt
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	add_trait="fair"	
+	father=1292
+	mother=1278
+	8313.1.1={
+		birth=yes
+	}	
 }
 88042 = {
 	name="Alyn" #
@@ -3930,6 +4809,9 @@
 		add_trait="knight"
 		add_trait="poor_warrior"
 	}
+	8316.1.1={
+		death = yes
+	}	
 }
 100290 = {
 	name="Malora" #
@@ -3940,6 +4822,9 @@
 	8255.1.1={
 		birth="8255.1.1"
 	}
+	8316.1.1={
+		death = yes
+	}	
 }
 1290 = {
 	name="Mark" #
@@ -4095,6 +4980,56 @@
 		add_trait="knight"
 		add_trait="trained_warrior"
 	}
+	8302.1.1 = {add_spouse=2289}
+	8313.1.1 = {death=yes}	
+}
+37295 = {
+	name="Ambrose" #
+	dynasty=295 #Oldflowers
+	religion="the_seven"
+	culture="reachman"
+	
+	father=295
+	mother=2289
+	
+	8303.1.1={
+		birth=yes
+	}
+	8322.1.1={
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+37296 = {
+	name="Helyna" #
+	dynasty=295 #Oldflowers
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	
+	father=295
+	mother=2289
+	
+	8305.1.1={
+		birth=yes
+	}	
+}
+37297 = {
+	name="Anslem" #
+	dynasty=295 #Oldflowers
+	religion="the_seven"
+	culture="reachman"
+	
+	father=295
+	mother=2289
+	
+	8307.1.1={
+		birth=yes
+	}
+	8326.1.1={
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
 }
 333295 = {
 	name="Helyna"	# not a lord
@@ -4174,6 +5109,9 @@
 		add_spouse = 112282
 		add_trait="knight"
 	}
+	8311.1.1={
+		death = yes
+	}	
 }
 112282 = {
 	name="Larra"
@@ -4184,6 +5122,9 @@
 	8246.1.1={
 		birth="8246.1.1"
 	}
+	8311.1.1={
+		death = yes
+	}	
 }
 2282 = {
 	name="Bertram" #
@@ -4203,6 +5144,9 @@
 		add_trait="knight"
 		add_trait="poor_warrior"
 	}
+	8316.1.1={
+		death = yes
+	}	
 }
 111282 = {
 	name="Betha"
@@ -4213,6 +5157,9 @@
 	8240.1.1={
 		birth="8240.1.1"
 	}
+	8311.1.1={
+		death = yes
+	}	
 }
 3282 = {
 	name="Hugh" #
@@ -4235,6 +5182,59 @@
 		add_trait="knight"
 		remove_trait="squire"
 	}
+	8302.1.1 = {
+		add_spouse = 1254
+	}
+	8327.1.1={
+		death = yes
+	}	
+}
+103282 = {
+	name="Alyce" #
+	dynasty=282 #Beesbury
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=3282
+	mother=1254
+
+	8304.1.1={
+		birth=yes
+	}	
+}
+103283 = {
+	name="Warryn" #
+	dynasty=282 #Beesbury
+
+	religion="the_seven"
+	culture="reachman"
+	father=3282
+	mother=1254
+
+	8307.1.1={
+		birth=yes
+	}
+	8325.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}	
+}
+103284 = {
+	name="Ben" #
+	dynasty=282 #Beesbury
+
+	religion="the_seven"
+	culture="reachman"
+	father=3282
+	mother=1254
+
+	8309.1.1={
+		birth=yes
+	}
+	8328.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}	
 }
 6282 = {
 	name="Alys" #
@@ -4277,6 +5277,9 @@
 		add_spouse = 100283
 		add_trait="knight"
 	}
+	8314.1.1={
+		death = yes
+	}	
 }
 100283 = {
 	name="Loredana" #random wife
@@ -4287,6 +5290,9 @@
 	8250.1.1={
 		birth="8250.1.1"
 	}
+	8314.1.1={
+		death = yes
+	}	
 }
 283 = {
 	name="Leo" #
@@ -4311,6 +5317,48 @@
 	8295.1.1={
 		add_spouse=88009 #Olene Tyrell
 	}
+	8330.1.1={
+		death = yes
+	}	
+}
+99283 = {
+	name="Luthor" #
+	dynasty=283 #Blackbar
+	religion="the_seven"
+	culture="reachman"
+	father=283
+	mother=88009	
+	8303.1.1={
+		birth=yes
+	}
+	8322.1.1 = {
+		add_trait="skilled_warrior"
+		add_trait="knight"
+	}
+}
+99284 = {
+	name="Lucia" #
+	dynasty=283 #Blackbar
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=283
+	mother=88009	
+	8305.1.1={
+		birth=yes
+	}
+}
+99285 = {
+	name="Loredana" #
+	dynasty=283 #Blackbar
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=283
+	mother=88009	
+	8308.1.1={
+		birth=yes
+	}
 }
 ###Sloanes
 259 = {
@@ -4329,6 +5377,9 @@
 		add_spouse = 1000259
 		add_trait="knight"
 	}
+	8314.1.1={
+		death = yes
+	}	
 }
 1000259 = {
 	name="Livian" #
@@ -4339,6 +5390,9 @@
 	8250.1.1={
 		birth="8250.1.1"
 	}
+	8314.1.1={
+		death = yes
+	}	
 }
 1259 = {
 	name="Pelleas" #
@@ -4354,6 +5408,56 @@
 		add_trait="poor_warrior"
 		add_trait="knight"
 	}
+	8303.1.1 = {
+		add_spouse = 1275
+	}
+	8327.1.1={
+		death = yes
+	}	
+}
+71259 = {
+	name="Esme" #
+	dynasty=259 #Sloane
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=1259
+	mother=1275
+	8306.1.1={
+		birth=yes
+	}	
+}
+71260 = {
+	name="Medwick" #
+	dynasty=259 #Sloane
+
+	religion="the_seven"
+	culture="reachman"
+	father=1259
+	mother=1275
+	8308.1.1={
+		birth=yes
+	}	
+	8327.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}	
+}
+71261 = {
+	name="Tristram" #
+	dynasty=259 #Sloane
+
+	religion="the_seven"
+	culture="reachman"
+	father=1259
+	mother=1275
+	8311.1.1={
+		birth=yes
+	}	
+	8330.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}	
 }
 2259 = {
 	name="Lucia" #
@@ -4393,6 +5497,7 @@
 	8252.1.1 = {birth="8252.1.1"}
 	8268.1.1 = {add_trait=knight add_trait=trained_warrior}
 	8270.1.1 = {add_spouse=4026259}
+	8311.1.1 = { death = yes }	
 }
 4026259 = {
 	name="Olene"
@@ -4402,6 +5507,7 @@
 	culture="reachman"
 
 	8252.1.1 = {birth="8252.1.1"}
+	8311.1.1 = { death = yes }	
 }
 3027259 = {
 	name="Malora"	# not a lord
@@ -4494,6 +5600,39 @@
 		add_trait="poor_warrior"
 		add_trait="knight"
 	}
+	8328.1.1={
+		death=yes
+	}	
+}
+93298 = {
+	name="Mervyn" #
+	dynasty=298 #Peake
+	religion="the_seven"
+	culture="reachman"
+	father=1298
+	mother=3003190
+	8302.1.1={
+		birth=yes
+	}
+	8321.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}	
+}
+93299 = {
+	name="Talbert" #
+	dynasty=298 #Peake
+	religion="the_seven"
+	culture="reachman"
+	father=1298
+	mother=3003190
+	8304.1.1={
+		birth=yes
+	}
+	8323.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}	
 }
 6298 = {
 	name="Laswell"	# Talbert's son, a lord
@@ -4576,6 +5715,9 @@
 		add_spouse = 100257
 		add_trait="knight"
 	}
+	8322.1.1={
+		death=yes
+	}	
 }
 100257 = {
 	name="Irya"
@@ -4586,6 +5728,9 @@
 	8260.1.1={
 		birth="8260.1.1"
 	}
+	8324.1.1={
+		death=yes
+	}	
 }
 2257 = {
 	name="Alyce" #
@@ -4598,6 +5743,9 @@
 	8280.1.1={
 		birth="8280.1.1"
 	}
+	8319.1.1={
+		death=yes
+	}	
 }
 #Lord's Siblings
 3028257 = {
@@ -4612,6 +5760,9 @@
 	mother=4025257
 
 	8262.1.1 = {birth="8262.1.1"}
+	8315.1.1={
+		death=yes
+	}	
 }
 3029257 = {
 	name="Edwyd"	# not a lord
@@ -4626,6 +5777,9 @@
 	8263.1.1 = {birth="8263.1.1"}
 	8279.1.1 = {add_trait=knight add_trait=trained_warrior}
 	8281.1.1 = {add_spouse=4029257}
+	8328.1.1={
+		death=yes
+	}	
 }
 4029257 = {
 	name="Rhea"
@@ -4635,6 +5789,9 @@
 	culture="reachman"
 
 	8263.1.1 = {birth="8263.1.1"}
+	8328.1.1={
+		death=yes
+	}	
 }
 3030257 = {
 	name="Garrett"	# not a lord
@@ -4647,7 +5804,45 @@
 	mother=4029257
 
 	8295.1.1 = {birth="8295.1.1"}
+	8312.1.1 = {add_spouse=88039}	
 	8314.1.1 = {add_trait=poor_warrior}
+}
+3131257 = {
+	name="Owain"	# not a lord
+	dynasty=257
+
+	religion="the_seven"
+	culture="reachman"
+
+	father=3030257
+	mother=88039
+
+	8316.1.1 = {birth=yes}
+	8328.1.1 = {add_trait=squire}
+}
+3131258 = {
+	name="Rhea"
+	dynasty=257
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+
+	father=3030257
+	mother=88039
+
+	8319.1.1 = {birth=yes}
+}
+3131259 = {
+	name="Alyn"	# not a lord
+	dynasty=257
+
+	religion="the_seven"
+	culture="reachman"
+
+	father=3030257
+	mother=88039
+
+	8322.1.1 = {birth=yes}
 }
 ###Cockshaws
 1271 = {
@@ -4730,6 +5925,9 @@
 		add_trait="knight"
 		add_trait="poor_warrior"
 	}
+	8313.1.1={
+		death = yes
+	}	
 }
 101271 = {
 	name="Zoe"
@@ -4740,6 +5938,9 @@
 	8245.1.1={
 		birth="8245.1.1"
 	}
+	8313.1.1={
+		death = yes
+	}	
 }
 2271 = {
 	name="Lysana" #
@@ -4797,6 +5998,9 @@
 		add_spouse = 100255
 		add_trait="knight"
 	}
+	8301.1.1={
+		death = yes
+	}
 }
 100255 = {
 	name="Estalia"
@@ -4806,6 +6010,9 @@
 	culture="reachman"	
 	8227.1.1={
 		birth="8227.1.1"
+	}
+	8301.1.1={
+		death = yes
 	}
 }
 1255 = {
@@ -4818,6 +6025,9 @@
 	mother=100255	
 	8259.1.1={
 		birth="8259.1.1"
+	}
+	8321.1.1={
+		death = yes
 	}
 }
 2255 = {
@@ -4835,6 +6045,9 @@
 		add_trait="knight"
 		add_trait="poor_warrior"
 	}
+	8320.1.1={
+		death = yes
+	}	
 }
 101255 = {
 	name="Mynna"
@@ -4845,6 +6058,9 @@
 	8261.1.1={
 		birth="8261.1.1"
 	}
+	8320.1.1={
+		death = yes
+	}	
 }
 3255 = {
 	name="Valiete" #
@@ -4872,6 +6088,62 @@
 		add_trait="knight"
 		add_trait="poor_warrior"
 	}
+	8302.1.1 = {
+		add_spouse = 88058
+	}	
+}
+44255 = {
+	name="Anslem" #
+	dynasty=255 #Middlebury
+	religion="the_seven"
+	culture="reachman"
+	father=4255
+	mother=88058
+	8304.1.1={
+		birth=yes
+	}
+	8307.1.1={
+		death = yes
+	}
+}
+44256 = {
+	name="Margaery" #
+	dynasty=255 #Middlebury
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=4255
+	mother=88058
+	8306.1.1={
+		birth=yes
+	}	
+}
+44257 = {
+	name="Canther" #
+	dynasty=255 #Middlebury
+	religion="the_seven"
+	culture="reachman"
+	father=4255
+	mother=88058
+	8309.1.1={
+		birth=yes
+	}
+	8327.1.1 = {
+		add_trait="knight"
+		add_trait="skilled_warrior"
+	}	
+}
+44258 = {
+	name="Lia" #
+	dynasty=255 #Middlebury
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=4255
+	mother=88058
+	8311.1.1={
+		birth=yes
+	}	
 }
 88085 = {
 	name="Estalia" #
@@ -4901,6 +6173,9 @@
 		add_trait="knight"
 		add_trait="poor_warrior"
 	}
+	8310.1.1={
+		death = yes
+	}	
 }
 100293 = {
 	name="Fruella"
@@ -4911,6 +6186,9 @@
 	8245.1.1={
 		birth="8245.1.1"
 	}
+	8310.1.1={
+		death = yes
+	}	
 }
 1293 = {
 	name="Igon" 
@@ -4933,6 +6211,9 @@
 	8295.1.1={
 		employer=1253 #Captain of Guard at Highgarden
 	}
+	8303.1.1={
+		employer=7253
+	}	
 }
 2293 = {
 	name="Irya" 
@@ -4960,6 +6241,65 @@
 		add_trait="knight"
 		add_trait="poor_warrior"
 	}
+	8302.1.1 = {
+		add_spouse = 2259
+	}	
+	8328.1.1={
+		death = yes
+	}	
+}
+83293 = {
+	name="Livian" 
+	dynasty=293 #Vyrwel
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=3293
+	mother=2259	
+	8305.1.1={
+		birth=yes
+	}	
+}
+83294 = {
+	name="Igon" 
+	dynasty=293 #Vyrwel
+	religion="the_seven"
+	culture="reachman"
+	father=3293
+	mother=2259	
+	8307.1.1={
+		birth=yes
+	}
+	8326.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+83295 = {
+	name="Pelleas" 
+	dynasty=293 #Vyrwel
+	religion="the_seven"
+	culture="reachman"
+	father=3293
+	mother=2259	
+	8310.1.1={
+		birth=yes
+	}
+	8315.1.1={
+		death = yes
+	}	
+}
+83296 = {
+	name="Alla" 
+	dynasty=293 #Vyrwel
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=3293
+	mother=2259	
+	8312.1.1={
+		birth=yes
+	}	
 }
 #Lord's Brother
 3031293 = {
@@ -4975,6 +6315,9 @@
 	8247.1.1 = {birth="8247.1.1"}
 	8263.1.1 = {add_trait=knight add_trait=trained_warrior}
 	8265.1.1 = {add_spouse=4031293}
+	8308.1.1={
+		death = yes
+	}	
 }
 4031293 = {
 	name="Alla"
@@ -4984,6 +6327,9 @@
 	culture="reachman"
 
 	8247.1.1 = {birth="8247.1.1"}
+	8308.1.1={
+		death = yes
+	}	
 }
 3032293 = {
 	name="Kyle"	# not a lord
@@ -5039,6 +6385,9 @@
 		add_spouse = 100254
 		add_trait="knight"
 	}
+	8317.1.1={
+		death = yes
+	}	
 }
 100254 = {
 	name="Leora" #
@@ -5049,6 +6398,9 @@
 	8252.1.1={
 		birth="8252.1.1"
 	}
+	8317.1.1={
+		death = yes
+	}	
 }
 1254 = {
 	name="Alyce" ##Margaery retinue
@@ -5075,6 +6427,54 @@
 	8293.1.1 = {
 		add_trait="poor_warrior"
 	}
+	8302.1.1 = {
+		add_spouse = 2236
+		add_trait="knight"
+	}	
+}
+72254 = {
+	name="Melessa" 
+	dynasty=254 #Dunn
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=2254
+	mother=2236
+	8305.1.1={
+		birth=yes
+	}	
+}
+72255 = {
+	name="Eustace" 
+	dynasty=254 #Dunn
+
+	religion="the_seven"
+	culture="reachman"
+	father=2254
+	mother=2236
+	8307.1.1={
+		birth=yes
+	}
+	8326.1.1 = {
+		add_trait="skilled_warrior"
+		add_trait="knight"
+	}	
+}
+72256 = {
+	name="Leo" 
+	dynasty=254 #Dunn
+
+	religion="the_seven"
+	culture="reachman"
+	father=2254
+	mother=2236
+	8310.1.1={
+		birth=yes
+	}
+	8329.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}	
 }
 3254 = {
 	name="Victoria" #Margaery retinue
@@ -5102,6 +6502,7 @@
 	8255.1.1 = {birth="8255.1.1"}
 	8271.1.1 = {add_trait=knight add_trait=poor_warrior}
 	8273.1.1 = {add_spouse=4029254}
+	8318.1.1 = { death = yes }	
 }
 4029254 = {
 	name="Desmera"
@@ -5111,6 +6512,7 @@
 	culture="reachman"
 
 	8255.1.1 = {birth="8255.1.1"}
+	8318.1.1 = { death = yes }		
 }
 3030254 = {
 	name="Margaery"	# not a lord
@@ -5124,6 +6526,7 @@
 	mother=4028254
 
 	8258.1.1 = {birth="8258.1.1"}
+	8310.1.1 = { death = yes }		
 }
 3031254 = {
 	name="Harrold"	# not a lord
@@ -5168,6 +6571,9 @@
 		add_spouse = 100279
 		add_trait="knight"
 	}
+	8306.1.1 = {
+		death = yes
+	}		
 }
 100279 = {
 	name="Onna" #
@@ -5178,6 +6584,9 @@
 	8243.1.1={
 		birth="8243.1.1"
 	}
+	8306.1.1 = {
+		death = yes
+	}		
 }
 279 = {
 	name="Hosman" 
@@ -5247,6 +6656,9 @@
 
 	8274.1.1 = {birth="8274.1.1"}
 	8290.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8303.1.1={
+		employer=7253
+	}	
 }
 ###Fossoways of Cider Hall- 261
 262 = {
@@ -5305,6 +6717,9 @@
 			force_mult = 1
 		}
 	}
+	8307.1.1 = {
+		death = yes
+	}	
 }
 100262 = {
 	name="Esme"
@@ -5315,6 +6730,9 @@
 	8245.1.1={
 		birth="8245.1.1"
 	}
+	8306.1.1 = {
+		death = yes
+	}	
 }
 150262 = {
 	name="Delena" #sister for meadows connection
@@ -5326,6 +6744,9 @@
 	8247.1.1={
 		birth="8247.1.1"
 	}
+	8324.1.1={
+		death = yes
+	}	
 }
 88030 = {
 	name="Bryan" #
@@ -5366,6 +6787,58 @@
 		add_trait="knight"
 		add_trait="trained_warrior"
 	}
+	8301.1.1 = {
+		add_spouse = 1249
+	}
+	8329.1.1={
+		death = yes
+	}	
+}
+88886 = {
+	name="Edwyd" #
+	dynasty=261 #Fossoway
+
+	religion="the_seven"
+	culture="reachman"
+
+	father=88086
+	mother=1249
+	
+	8303.1.1={
+		birth=yes
+	}
+	8322.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+88887 = {
+	name="Esme" #
+	dynasty=261 #Fossoway
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+
+	father=88086
+	mother=1249
+	
+	8306.1.1={
+		birth=yes
+	}	
+}
+88888 = {
+	name="Delena" #
+	dynasty=261 #Fossoway
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+
+	father=88086
+	mother=1249
+	
+	8309.1.1={
+		birth=yes
+	}	
 }
 88087 = {
 	name="Edwyd" #
@@ -5494,6 +6967,9 @@
 	8239.1.1={
 		birth="8239.1.1"
 	}
+	8319.1.1={
+		death = yes
+	}
 }
 261 = {
 	name="Jon" 
@@ -5562,6 +7038,9 @@
 			force_mult = 1
 		}
 	}
+	8310.1.1={
+		death = yes
+	}	
 }
 88088 = {
 	name="Arlan" 
@@ -5577,6 +7056,68 @@
 		add_trait="knight"
 		add_trait="trained_warrior"
 	}
+	8302.1.1 = {
+		add_spouse = 88104
+	}	
+	8325.1.1={
+		death=yes
+	}	
+}
+89088 = {
+	name="Lysa" 
+	dynasty=262 #Fossoway
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=88088
+	mother=88104
+	8304.1.1={
+		birth=yes
+	}	
+}
+89089 = {
+	name="Duncan" 
+	dynasty=262 #Fossoway
+
+	religion="the_seven"
+	culture="reachman"
+	father=88088
+	mother=88104
+	8307.1.1={
+		birth=yes
+	}
+	8326.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+89090 = {
+	name="Horas" 
+	dynasty=262 #Fossoway
+
+	religion="the_seven"
+	culture="reachman"
+	father=88088
+	mother=88104
+	8309.1.1={
+		birth=yes
+	}
+	8328.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+89091 = {
+	name="Jeanna" 
+	dynasty=262 #Fossoway
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=88088
+	mother=88104
+	8311.1.1={
+		birth=yes
+	}	
 }
 4261 = {
 	name="Jeyne" 
@@ -5664,6 +7205,9 @@
 		add_trait="poor_warrior"
 		employer=1253
 	}
+	8303.1.1={
+		employer=7253
+	}	
 }
 88266 = {
 	name="Lucantine" 
@@ -5681,6 +7225,9 @@
 		add_trait="poor_warrior"
 		employer=1253
 	}
+	8303.1.1={
+		employer=7253
+	}	
 }
 ###Westbroook
 240 = {
@@ -5699,6 +7246,9 @@
 		add_spouse = 100240
 		add_trait="knight"
 	}
+	8308.1.1={
+		death = yes
+	}
 }
 100240 = {
 	name="Beony" 
@@ -5708,6 +7258,9 @@
 	culture="reachman"
 	8236.1.1={
 		birth="8236.1.1"
+	}
+	8308.1.1={
+		death = yes
 	}
 }
 1240 = {
@@ -5728,6 +7281,9 @@
 	8290.1.1 = {
 		add_spouse = 4033240
 	}
+	8324.1.1={
+		death = yes
+	}	
 }
 4033240 = {
 	name="Malora"
@@ -5737,6 +7293,9 @@
 	culture="reachman"
 
 	8266.1.1 = {birth="8266.1.1"}
+	8324.1.1={
+		death = yes
+	}	
 }
 2240 = {
 	name="Simeon" 
@@ -5774,6 +7333,54 @@
 	8292.1.1={
 		birth="8292.1.1"
 	}
+	8310.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+		
+	}
+	8310.1.1 = {
+		add_spouse = 88038
+	}	
+}
+85240 = {
+	name="Turgon" 
+	dynasty=240 #Westbrook
+	religion="the_seven"
+	culture="reachman"
+	father=5240
+	mother=88038
+	8313.1.1={
+		birth=yes
+	}
+	8330.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+		
+	}	
+}
+85241 = {
+	name="Alla" 
+	dynasty=240 #Westbrook
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=5240
+	mother=88038
+	8315.1.1={
+		birth=yes
+	}	
+}
+85242 = {
+	name="Tania" 
+	dynasty=240 #Westbrook
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=5240
+	mother=88038
+	8316.1.1={
+		birth=yes
+	}	
 }
 6240 = {
 	name="Edwyn" 
@@ -5915,6 +7522,9 @@
 		add_spouse = 101276
 		add_trait="knight"
 	}
+	8315.1.1={
+		death = yes
+	}	
 }
 101276 = {
 	name="Ellena"
@@ -5925,6 +7535,9 @@
 	8249.1.1={
 		birth="8249.1.1"
 	}
+	8315.1.1={
+		death = yes
+	}	
 }
 2276 = {
 	name="Lia" 
@@ -5940,6 +7553,9 @@
 	8285.1.1={
 		add_spouse=8252   #Theodore Tyrell
 	}
+	8330.1.1={
+		death = yes
+	}	
 }
 1276 = {
 	name="Talbert" #
@@ -6071,6 +7687,9 @@
 	8265.1.1={
 		birth="8265.1.1"
 	}
+	8329.1.1={
+		death = yes
+	}	
 }   
 3278 = {
 	name="Lia" #
@@ -6154,6 +7773,9 @@
 	8281.1.1={
 		add_spouse=2278
 	}
+	8329.1.1={
+		death = yes
+	}	
 } 
 88269 = {
 	name="Helyna" #
@@ -6167,7 +7789,81 @@
 		birth="8282.1.1"
 		employer=278
 	}
-} 
+	8304.1.1={
+		add_spouse=4252
+	}	
+}
+222269 = {
+	name="Harrold" #
+	dynasty=278 #Hewett
+
+	religion="the_seven"
+	culture="reachman"
+	father=4252
+	mother=88269
+	8307.1.1={
+		birth=yes
+	}
+	8326.1.1={
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}	
+}
+222270 = {
+	name="Ector" #
+	dynasty=278 #Hewett
+
+	religion="the_seven"
+	culture="reachman"
+	father=4252
+	mother=88269
+	8309.1.1={
+		birth=yes
+	}
+	8328.1.1={
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}	
+}
+222271 = {
+	name="Juliya" #
+	dynasty=278 #Hewett
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=4252
+	mother=88269
+	8312.1.1={
+		birth=yes
+	}	
+	8318.1.1={
+		death = yes
+	}	
+}
+222272 = {
+	name="Desmera" #
+	dynasty=278 #Hewett
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=4252
+	mother=88269
+	8314.1.1={
+		birth=yes
+	}	
+}
+222273 = {
+	name="Olene" #
+	dynasty=278 #Hewett
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=4252
+	mother=88269
+	8316.1.1={
+		birth=yes
+	}	
+}   
 88270 = {
 	name="Esme" #
 	dynasty=278 #Hewett
@@ -6209,6 +7905,9 @@
 	8300.3.1 = {	
 		employer=1002059 
 	}
+	8303.1.1 = {
+		employer=1296
+	}
 }
 ###Grimm
 275 = {
@@ -6235,6 +7934,9 @@
 			}
 		}
 	}
+	8314.1.1={
+		death = yes
+	}	
 }
 100275 = {
 	name="Elyn" 
@@ -6245,6 +7947,9 @@
 	8260.1.1={
 		birth="8260.1.1"
 	}
+	8314.1.1={
+		death = yes
+	}	
 }
 1275 = {
 	name="Esme" 
@@ -6307,6 +8012,9 @@
 	8242.1.1={
 		birth="8242.1.1"
 	}
+	8310.1.1={
+		death = yes
+	}	
 }
 1277 = {
 	name="Gauter" 
@@ -6356,6 +8064,9 @@
 		add_trait="knight"
 		add_trait="poor_warrior"
 	}
+	8318.1.1={
+		death = yes
+	}	
 }
 1267 = {
 	name="Ector" 
@@ -6366,6 +8077,96 @@
 	8285.1.1={
 		birth="8285.1.1"
 	}
+	8302.1.1 = {
+		add_spouse = 1266
+		add_trait = trained_warrior
+		add_trait = knight		
+	}	
+}
+91267 = {
+	name="Willas" 
+	dynasty=267 #Hastwyck
+	religion="the_seven"
+	culture="reachman"
+	father=1267
+	mother=1266
+	8304.1.1={
+		birth=yes
+	}
+	8323.1.1 = {
+		add_trait = trained_warrior
+		add_trait = knight		
+	}	
+}
+91268 = {
+	name="Franklyn" 
+	dynasty=267 #Hastwyck
+	religion="the_seven"
+	culture="reachman"
+	father=1267
+	mother=1266
+	8306.1.1={
+		birth=yes
+	}
+	8307.1.1={
+		death = yes
+	}
+}
+91269 = {
+	name="Taena" 
+	dynasty=267 #Hastwyck
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=1267
+	mother=1266
+	8308.1.1={
+		birth=yes
+	}	
+	8312.1.1={
+		death = yes
+	}	
+}
+91270 = {
+	name="Erren" 
+	dynasty=267 #Hastwyck
+	religion="the_seven"
+	culture="reachman"
+	father=1267
+	mother=1266
+	8310.1.1={
+		birth=yes
+	}
+	8316.1.1={
+		death = yes
+	}	
+}
+91271 = {
+	name="Irena" 
+	dynasty=267 #Hastwyck
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=1267
+	mother=1266
+	8312.1.1={
+		birth=yes
+	}		
+}
+91272 = {
+	name="Lucas" 
+	dynasty=267 #Hastwyck
+	religion="the_seven"
+	culture="reachman"
+	father=1267
+	mother=1266
+	8314.1.1={
+		birth=yes
+	}
+	8330.1.1 = {
+		add_trait = trained_warrior
+		add_trait = knight		
+	}	
 }
 2267 = {
 	name="Irena" 
@@ -6396,6 +8197,9 @@
 		add_trait = trained_warrior
 		add_trait = knight
 	}
+	8314.1.1={
+		death = yes
+	}	
 }
 100266 = {
 	name="Valiete" 
@@ -6406,6 +8210,9 @@
 	8256.1.1={
 		birth="8256.1.1"
 	}
+	8314.1.1={
+		death = yes
+	}	
 }
 1266 = {
 	name="Melian" 
@@ -6433,6 +8240,51 @@
 		add_trait="knight"
 		add_trait="poor_warrior"
 	}
+	8304.1.1 = {
+		add_spouse = 2267
+	}	
+}
+92266 = {
+	name="Gerold" 
+	dynasty=266 #Appleton
+	religion="the_seven"
+	culture="reachman"
+	father=2266
+	mother=2267
+	8307.1.1={
+		birth=yes
+	}
+	8326.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+92267 = {
+	name="Garlan" 
+	dynasty=266 #Appleton
+	religion="the_seven"
+	culture="reachman"
+	father=2266
+	mother=2267
+	8310.1.1={
+		birth=yes
+	}
+	8329.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+92268 = {
+	name="Valiete" 
+	dynasty=266 #Appleton
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=2266
+	mother=2267
+	8313.1.1={
+		birth=yes
+	}	
 }
 3266 = {
 	name="Hoel" 
@@ -6489,6 +8341,37 @@
 	mother=100242
 	8276.1.1={
 		birth="8276.1.1"
+	}
+	8302.1.1 = {
+		add_spouse = 88081
+	}	
+}
+98242 = {
+	name="Fredrec" 
+	dynasty=242 #Graceford
+	
+	religion="the_seven"
+	culture="reachman"
+	father=88081
+	mother=242
+	8305.1.1={
+		birth=yes
+	}
+	8324.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}	
+}
+98243 = {
+	name="Mina" 
+	dynasty=242 #Graceford
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=88081
+	mother=242
+	8307.1.1={
+		birth=yes
 	}
 }
 1242 = {
@@ -6595,6 +8478,9 @@
 	8265.1.1={
 		employer=1253 
 	}
+	8307.1.1 = {
+		death = yes
+	}		
 }
 88275 = {
 	name="Delena" 
@@ -6604,6 +8490,9 @@
 	8248.1.1={
 		birth="8248.1.1"
 	}
+	8307.1.1 = {
+		death = yes
+	}		
 }
 88049 = {
 	name="Owen" 
@@ -6622,6 +8511,69 @@
 		add_trait="knight"
 		add_trait="trained_warrior"
 	}
+	8302.1.1={
+		add_spouse=88085
+	}	
+}
+89049 = {
+	name="Lucas" 
+	dynasty=249 #Inchfield
+
+	religion="the_seven"
+	culture="reachman"
+
+	father=88049
+	mother=88085
+	8305.1.1={
+		birth=yes
+	}
+	8324.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+89050 = {
+	name="Alerie" 
+	dynasty=249 #Inchfield
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+
+	father=88049
+	mother=88085
+	8308.1.1={
+		birth=yes
+	}	
+}
+89051 = {
+	name="Hobber" 
+	dynasty=249 #Inchfield
+
+	religion="the_seven"
+	culture="reachman"
+
+	father=88049
+	mother=88085
+	8310.1.1={
+		birth=yes
+	}
+	8329.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+89051 = {
+	name="Elise" 
+	dynasty=249 #Inchfield
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+
+	father=88049
+	mother=88085
+	8312.1.1={
+		birth=yes
+	}	
 }
 1249 = {
 	name="Lucia" 
@@ -6660,6 +8612,9 @@
 		add_spouse=3268
 		add_trait="knight"
 	}
+	8328.1.1={
+		death = yes
+	}	
 }
 3268 = {
 	name="Melessa" 
@@ -6669,6 +8624,9 @@
 	8256.1.1={
 		birth="8256.1.1"
 	}
+	8328.1.1={
+		death = yes
+	}	
 }
 268 = {
 	name="Beryl" 
@@ -6730,6 +8688,9 @@
 		add_trait="knight"
 		add_trait="poor_warrior"
 	}
+	8317.1.1={
+		death = yes
+	}	
 }
 100294 = {
 	name="Olminia" 
@@ -6740,6 +8701,9 @@
 	8252.1.1={
 		birth="8252.1.1"
 	}
+	8317.1.1={
+		death = yes
+	}	
 }
 1294 = {
 	name="Deanna" 
@@ -6831,6 +8795,9 @@
 	8263.1.1={
 		birth="8263.1.1"
 	}
+	8328.1.1={
+		death = yes
+	}	
 }
 1299 = {
 	name="Steffon" 
@@ -6841,6 +8808,47 @@
 	8290.1.1={
 		birth="8290.1.1"
 	}
+	8311.1.1 = {
+		add_spouse = 1242
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+71299 = {
+	name="Esme" 
+	dynasty=299 #Leygood
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=1299
+	mother=1242	
+	8315.1.1={
+		birth=yes
+	}	
+}
+71300 = {
+	name="Larra" 
+	dynasty=299 #Leygood
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=1299
+	mother=1242	
+	8317.1.1={
+		birth=yes
+	}	
+}
+71301 = {
+	name="Olyvar" 
+	dynasty=299 #Leygood
+
+	religion="the_seven"
+	culture="reachman"
+	father=1299
+	mother=1242	
+	8320.1.1={
+		birth=yes
+	}	
 }
 ###Roxton
 247 = {
@@ -6861,6 +8869,9 @@
 		add_trait="poor_warrior"
 	}
 	8274.1.1 = { add_trait = orphan_maker }
+	8311.1.1={
+		death = yes
+	}	
 }
 100247 = {
 	name="Lyanne" 
@@ -6871,6 +8882,9 @@
 	8254.1.1={
 		birth="8254.1.1"
 	}
+	8311.1.1={
+		death = yes
+	}	
 }
 1247 = {
 	name="Michal" 
@@ -6886,6 +8900,54 @@
 		add_trait="knight"
 		add_trait="poor_warrior"
 	}
+	8302.1.1 = {
+		add_spouse = 88034
+	}	
+	8311.1.1={
+		add_trait = orphan_maker
+	}	
+}
+31247 = {
+	name="Petyr" 
+	dynasty=247 #Roxton
+	religion="the_seven"
+	culture="reachman"
+	father=1247
+	mother=88034
+	8306.1.1={
+		birth=yes
+	}
+	8325.1.1 = {
+		add_trait="knight"
+		add_trait="master_warrior"
+	}	
+}
+31248 = {
+	name="Beony" 
+	dynasty=247 #Roxton
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=1247
+	mother=88034
+	8309.1.1={
+		birth=yes
+	}	
+}
+31249 = {
+	name="Theodore" 
+	dynasty=247 #Roxton
+	religion="the_seven"
+	culture="reachman"
+	father=1247
+	mother=88034
+	8311.1.1={
+		birth=yes
+	}
+	8330.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
 }
 2247 = {
 	name="Cymoril" 
@@ -6916,6 +8978,9 @@
 		add_spouse = 100256
 		add_trait="knight"
 	}
+	8308.1.1={
+		death = yes
+	}	
 }
 100256 = {
 	name="Lidia" 
@@ -6926,6 +8991,9 @@
 	8240.1.1={
 		birth="8240.1.1"
 	}
+	8308.1.1={
+		death = yes
+	}	
 }
 1256 = {
 	name="Jenevie" 
@@ -6979,6 +9047,9 @@
 		add_spouse = 100245
 		add_trait="knight"
 	}
+	8311.1.1={
+		death = yes
+	}	
 }
 100245 = {
 	name="Lenna" 
@@ -6989,6 +9060,9 @@
 	8249.1.1={
 		birth="8249.1.1"
 	}
+	8311.1.1={
+		death = yes
+	}	
 }
 1245 = {
 	name="Janos" 
@@ -7075,6 +9149,9 @@
 		add_spouse = 101252
 		add_trait="knight"
 	}
+	8316.1.1={
+		death = yes
+	}	
 }
 101252 = {
 	name="Desmera" 
@@ -7085,6 +9162,9 @@
 	8245.1.1={
 		birth="8245.1.1"
 	}
+	8316.1.1={
+		death = yes
+	}	
 }
 2252 = {
 	name="Amelryc" 
@@ -7100,6 +9180,54 @@
 		add_trait="poor_warrior"
 		add_trait="knight"
 	}
+	8302.1.1 = {
+		add_spouse = 88267
+	}
+	8330.1.1={
+		death = yes
+	}	
+}
+52252 = {
+	name="Holgor" 
+	dynasty=252 #Kidwell
+	religion="the_seven"
+	culture="reachman"
+	father=2252
+	mother=88267
+	8306.1.1={
+		birth=yes
+	}
+	8325.1.1 = {
+		add_trait="skilled_warrior"
+		add_trait="knight"
+	}	
+}
+52253 = {
+	name="Lorent" 
+	dynasty=252 #Kidwell
+	religion="the_seven"
+	culture="reachman"
+	father=2252
+	mother=88267
+	8308.1.1={
+		birth=yes
+	}
+	8327.1.1 = {
+		add_trait="skilled_warrior"
+		add_trait="knight"
+	}	
+}
+52254 = {
+	name="Falia" 
+	dynasty=252 #Kidwell
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=2252
+	mother=88267
+	8311.1.1={
+		birth=yes
+	}	
 }
 3252 = {
 	name="Catelyn" 
@@ -7145,6 +9273,7 @@
 		add_spouse = 100246
 		add_trait="knight"
 	}
+	8305.1.1 = { death = yes }	
 }
 100246 = {
 	name="Elinor" 
@@ -7155,6 +9284,7 @@
 	8237.1.1={
 		birth="8237.1.1"
 	}
+	8305.1.1 = { death = yes }		
 }
 1246 = {
 	name="Torben" 
@@ -7170,6 +9300,10 @@
 		add_trait="poor_warrior"
 		add_trait="knight"
 	}
+	8301.1.1 = {
+		add_spouse = 3252
+	}
+	8317.1.1 = { death = yes }		
 }
 2246 = {
 	name="Estalia" 
@@ -7181,6 +9315,17 @@
 	8290.1.1={
 		birth="8290.1.1"
 	}
+}	
+22460 = {
+	name="Rolf" 
+	dynasty=246 #Shermer
+	religion="the_seven"
+	culture="reachman"
+	father=1246
+	mother=3252	
+	8303.1.1={
+		birth="yes"
+	}	
 }
 ###Wythers
 88279= {
@@ -7230,6 +9375,9 @@
 		add_spouse = 100244
 		add_trait="knight"
 	}
+	8309.1.1={
+		death = yes
+	}	
 }
 100244 = {
 	name="Rhonda" 
@@ -7240,6 +9388,9 @@
 	8248.1.1={
 		birth="8248.1.1"
 	}
+	8309.1.1={
+		death = yes
+	}	
 }
 1244 = {
 	name="Willam" 
@@ -7257,6 +9408,71 @@
 		add_trait="knight"
 		employer=1253 #margaery captain of guards
 	}
+	8303.1.1={
+		employer=7253
+		add_spouse = 5278
+	}	
+	8322.1.1={
+		death = yes
+	}	
+}
+41244 = {
+	name="Randyll" 
+	dynasty=244 #Wythers
+	religion="the_seven"
+	culture="reachman"
+
+	father=1244
+	mother=5278
+	8305.1.1={
+		birth=yes
+	}
+	8324.1.1 = {
+		add_trait="skilled_warrior"
+		add_trait="knight"
+	}	
+}
+41245 = {
+	name="Paxter" 
+	dynasty=244 #Wythers
+	religion="the_seven"
+	culture="reachman"
+
+	father=1244
+	mother=5278
+	8307.1.1={
+		birth=yes
+	}
+	8326.1.1 = {
+		add_trait="skilled_warrior"
+		add_trait="knight"
+	}	
+}
+41246 = {
+	name="Eleanor" 
+	dynasty=244 #Wythers
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+
+	father=1244
+	mother=5278
+	8309.1.1={
+		birth=yes
+	}	
+}
+41247 = {
+	name="Janna" 
+	dynasty=244 #Wythers
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+
+	father=1244
+	mother=5278
+	8311.1.1={
+		birth=yes
+	}	
 }
 2244 = {
 	name="Peregryn" 
@@ -7652,6 +9868,7 @@
 		add_trait="knight"
 		add_trait="poor_warrior"
 	}
+	8306.1.1 = { death = yes }	
 }
 88090 = {
 	name="Raymon" 
@@ -7663,6 +9880,7 @@
 	8255.1.1={
 		birth="8255.1.1"
 	}
+	8317.1.1 = { death = yes }	
 }
 88055 = {
 	name="Arthur" 
@@ -7701,6 +9919,7 @@
 		add_spouse = 1001471
 		add_trait="knight"
 	}
+	8309.1.1 = { death = yes }	
 }
 1001471 = {
 	name="Margaery" 
@@ -7711,6 +9930,7 @@
 	8254.1.1={
 		birth="8254.1.1"
 	}
+	8309.1.1 = { death = yes }	
 }
 88058 = {
 	name="Elinor" 
@@ -7752,6 +9972,9 @@
 		add_spouse = 100236
 		add_trait="knight"
 	}
+	8317.1.1={
+		death = yes
+	}	
 }
 100236 = {
 	name="Ariela" 
@@ -7762,6 +9985,9 @@
 	8256.1.1={
 		birth="8256.1.1"
 	}
+	8317.1.1={
+		death = yes
+	}	
 }
 1236 = {
 	name="Jhaeira" 
@@ -7774,6 +10000,56 @@
 	8275.1.1={
 		birth="8275.1.1"
 	}
+	8302.1.1 = {
+		add_spouse = 3266
+	}
+	8325.1.1={
+		death = yes
+	}		
+}
+91236 = {
+	name="Owain" 
+	dynasty=236 #Durwell
+
+	religion="the_seven"
+	culture="reachman"
+	father=3266
+	mother=1236
+	8304.1.1={
+		birth=yes
+	}
+	8323.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}	
+}
+91237 = {
+	name="Lucas" 
+	dynasty=236 #Durwell
+
+	religion="the_seven"
+	culture="reachman"
+	father=3266
+	mother=1236
+	8306.1.1={
+		birth=yes
+	}
+	8325.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}	
+}
+91238 = {
+	name="Ariela" 
+	dynasty=236 #Durwell
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=3266
+	mother=1236
+	8308.1.1={
+		birth=yes
+	}	
 }
 2236 = {
 	name="Joanna" 
@@ -7801,6 +10077,7 @@
 	8240.1.1={birth="8240.1.1"}
 	8256.1.1 = {add_spouse = 100238}
 	8257.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8313.1.1={ death = yes }	
 }
 60200238 = {
 	name="Wyland" 
@@ -7814,6 +10091,7 @@
 	
 	8243.1.1={birth="8243.1.1"}
 	8259.1.1 = {add_trait=knight add_trait=trained_warrior add_trait=content}
+	8313.1.1={ death = yes }		
 }
 100238 = {
 	name="Alla" 
@@ -7824,6 +10102,7 @@
 	8240.1.1={
 		birth="8240.1.1"
 	}
+	8313.1.1={ death = yes }		
 }
 88063 = {
 	name="Reynard" 
@@ -7837,6 +10116,35 @@
 	}
 	8281.1.1 = {
 		add_trait="knight"
+	}
+	8302.1.1 = {add_spouse = 5234 add_trait=trained_warrior}
+	8329.1.1={ death = yes }	
+}
+88363 = {
+	name="Orton" 
+	dynasty=238 #Webber
+	religion="the_seven"
+	culture="reachman"
+	father=88063
+	mother=5234
+	8304.1.1={
+		birth=yes
+	}
+	8323.1.1 = {
+		add_trait="knight"
+		add_trait=trained_warrior		
+	}
+}
+88364 = {
+	name="Melara" 
+	dynasty=238 #Webber
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=88063
+	mother=5234
+	8306.1.1={
+		birth=yes
 	}
 }
 88064 = {
@@ -7884,6 +10192,9 @@
 	8245.1.1={
 		birth="8245.1.1"
 	}
+	8314.1.1={
+		death = yes
+	}	
 }
 243 = {
 	name="Wyman" 
@@ -7944,6 +10255,9 @@
 		add_trait="knight"
 		add_trait="trained_warrior"
 	}
+	8301.1.1 = {
+		death = yes
+	}
 }
 100234 = {
 	name="Mina" 
@@ -7953,6 +10267,9 @@
 	culture="reachman"
 	8218.1.1={
 		birth="8218.1.1"
+	}
+	8301.1.1 = {
+		death = yes
 	}
 }
 3234 = {
@@ -7975,6 +10292,9 @@
 	8247.1.1={
 		add_spouse=281  #Alester Florent
 	}
+	8306.1.1={
+		death = yes
+	}
 }
 1234 = {
 	name="Vortimer" 
@@ -7996,6 +10316,9 @@
 	8265.1.1={
 		employer=1253 #master arms highgarden
 	}
+	8302.1.1 = {
+		death = yes
+	}
 }
 101234 = {
 	name="Olivia" 
@@ -8009,6 +10332,9 @@
 	}
 	8265.1.1={
 		employer=1253 #Husband is master arms highgarden
+	}
+	8302.1.1 = {
+		death = yes
 	}
 }
 4234 = {
@@ -8027,6 +10353,9 @@
 	}
 	8257.1.1={
 		add_spouse=88022  #Rylene Florent
+	}
+	8303.1.1 = {
+		death = yes
 	}
 }
 2234 = {
@@ -8059,15 +10388,73 @@
 	}
 	8299.3.4 = {
 		employer=4317
-		effect = {
-			set_character_flag = captured_in_battle
-			k_reach = {
-				holder_scope = {
-					ROOT = { imprison = PREV }
-				}
-			}
-		}
 	}
+	8301.1.1={
+		add_spouse=2249
+	}
+	8327.1.1 = {
+		death = yes
+	}	
+}
+72234 = {
+	name="Joanna"
+	dynasty=234 #Crane
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=2234
+	mother=2249
+
+	8303.1.1={
+		birth=yes
+	}	
+}
+72235 = {
+	name="Meredyth"
+	dynasty=234 #Crane
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=2234
+	mother=2249
+
+	8305.1.1={
+		birth=yes
+	}	
+}
+72236 = {
+	name="Vortimer"
+	dynasty=234 #Crane
+
+	religion="the_seven"
+	culture="reachman"
+	father=2234
+	mother=2249
+
+	8307.1.1={
+		birth=yes
+	}
+	8326.1.1 = {
+		add_trait="knight"
+		add_trait="skilled_warrior"
+	}	
+}
+72237 = {
+	name="Loras"
+	dynasty=234 #Crane
+
+	religion="the_seven"
+	culture="reachman"
+	father=2234
+	mother=2249
+
+	8309.1.1={
+		birth=yes
+	}
+	8329.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
 }
 5234 = {
 	name="Meredyth" ##Maergary retinue
@@ -8084,6 +10471,9 @@
 		birth="8271.1.1"
 		employer=1253 #master arms highgarden
 	}
+	8303.1.1={
+		employer=7253
+	}	
 }
 ###Varner
 258 = {
@@ -8147,6 +10537,9 @@
 			force_mult = 1
 		}
 	}
+	8310.1.1={
+		death = yes
+	}	
 }
 100258 = {
 	name="Selyse" 
@@ -8157,6 +10550,9 @@
 	8245.1.1={
 		birth="8245.1.1"
 	}
+	8310.1.1={
+		death = yes
+	}	
 }
 1258 = {
 	name="Titus" 
@@ -8172,6 +10568,54 @@
 		add_trait="knight"
 		add_trait="trained_warrior"
 	}
+	8302.1.1 = {
+		add_spouse = 2247
+	}
+	8326.1.1={
+		death = yes
+	}	
+}
+81258 = {
+	name="Steffon" 
+	dynasty=258 #Varner
+	religion="the_seven"
+	culture="reachman"
+	father=1258
+	mother=2247
+	8304.1.1={
+		birth=yes
+	}
+	8323.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+81259 = {
+	name="Selyse" 
+	dynasty=258 #Varner
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=1258
+	mother=2247
+	8306.1.1={
+		birth=yes
+	}
+}
+81260 = {
+	name="Cymoril" 
+	dynasty=258 #Varner
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=1258
+	mother=2247
+	8308.1.1={
+		birth=yes
+	}
+	8315.1.1={
+		death = yes
+	}	
 }
 2258 = {
 	name="Fredrec" 
@@ -8249,6 +10693,9 @@
 			force_mult = 1
 		}
 	}
+	8314.1.1={
+		death = yes
+	}	
 }
 100272 = {
 	name="Bethany" 
@@ -8259,6 +10706,9 @@
 	8260.1.1={
 		birth="8260.1.1"
 	}
+	8314.1.1={
+		death = yes
+	}	
 }
 4272 = {
 	name="Josua" 
@@ -8308,6 +10758,7 @@
 		add_spouse=3285 #Alysanne Hightower
 		add_trait="knight"
 	}
+	8316.1.1 = { death = yes }	
 }
 1297 = {
 	name="Alyn" #
@@ -8330,6 +10781,79 @@
 		add_spouse=88011 #Elinor Tyrell
 		add_trait="skilled_warrior"
 		remove_trait="trained_warrior"
+	}
+}
+91297 = {
+	name="Arthur" #
+	dynasty=297 #Ambrose
+
+	religion="the_seven"
+	culture="reachman"
+	father=1297
+	mother=88011
+	add_trait="quick"
+	8302.1.1={
+		birth=yes
+	}
+	8321.1.1={
+		add_trait="knight"
+		add_trait="skilled_warrior"
+	}
+}
+91298 = {
+	name="Elinor" #
+	dynasty=297 #Ambrose
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=1297
+	mother=88011
+	add_trait="fair"
+	8305.1.1={
+		birth=yes
+	}
+}
+91299 = {
+	name="Alla" #
+	dynasty=297 #Ambrose
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=1297
+	mother=88011
+	add_trait="quick"
+	8307.1.1={
+		birth=yes
+	}
+}
+91300 = {
+	name="Russell" #
+	dynasty=297 #Ambrose
+
+	religion="the_seven"
+	culture="reachman"
+	father=1297
+	mother=88011
+	add_trait="strong"
+	8310.1.1={
+		birth=yes
+	}
+	8329.1.1={
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}
+}
+91301 = {
+	name="Megga" #
+	dynasty=297 #Ambrose
+	female=yes
+	religion="the_seven"
+	culture="reachman"
+	father=1297
+	mother=88011
+	add_trait="quick"
+	8307.1.1={
+		birth=yes
 	}
 }
 ###Misc
@@ -8357,6 +10881,9 @@
 	8298.1.1={
 		employer=88130
 	}
+	8326.1.1={
+		death=yes
+	}	
 }
 88112 = {
 	name="Benedict" #
@@ -8378,6 +10905,9 @@
 	8298.1.1={
 		employer=88130
 	}
+	8330.1.1={
+		death=yes
+	}	
 }
 88113 = {
 	name="Castos" #
@@ -8403,6 +10933,9 @@
 	8298.1.1={
 		employer=88130
 	}
+	8317.1.1={
+		death=yes
+	}	
 }
 88115 = {
 	name="Cetheres" #
@@ -8428,6 +10961,9 @@
 	8298.1.1={
 		employer=88130
 	}
+	8321.1.1={
+		death=yes
+	}	
 }
 88116 = {
 	name="Ebrose" #
@@ -8454,6 +10990,9 @@
 	8298.1.1={
 		employer=88130
 	}
+	8322.1.1={
+		death=yes
+	}	
 }
 88117 = {
 	name="Erreck" #
@@ -8499,6 +11038,9 @@
 	8298.1.1={
 		employer=88130
 	}
+	8316.1.1={
+		death=yes
+	}	
 }
 88119 = {
 	name="Garizon" #
@@ -8527,6 +11069,9 @@
 	8298.1.1={
 		employer=88130
 	}
+	8323.1.1={
+		death=yes
+	}	
 }
 88120 = {
 	name="Guyne" #
@@ -8555,6 +11100,9 @@
 	8298.1.1={
 		employer=88130
 	}
+	8322.1.1={
+		death=yes
+	}	
 }
 88121 = {
 	name="Harodon" #
@@ -8580,6 +11128,9 @@
 	8298.1.1={
 		employer=88130
 	}
+	8310.1.1={
+		death = yes
+	}	
 }
 88122 = {
 	name="Marwyn" #
@@ -8607,6 +11158,9 @@
 	8298.1.1={
 		employer=88130
 	}
+	8311.1.1={
+		death=yes
+	}	
 }
 88123 = {
 	name="Mollos" #
@@ -8632,6 +11186,9 @@
 	8298.1.1={
 		employer=88130
 	}
+	8317.1.1={
+		death=yes
+	}	
 }
 88124 = {
 	name="Norren" #
@@ -8657,6 +11214,9 @@
 	8298.1.1={
 		employer=88130
 	}
+	8317.1.1={
+		death=yes
+	}	
 }	
 88125 = {
 	name="Nymos" #
@@ -8682,6 +11242,9 @@
 	8298.1.1={
 		employer=88130
 	}
+	8315.1.1={
+		death=yes
+	}	
 }
 88126 = {
 	name="Ocley" #
@@ -8707,6 +11270,9 @@
 	8298.1.1={
 		employer=88130
 	}
+	8314.1.1={
+		death=yes
+	}	
 }
 88127 = {
 	name="Perestan" #
@@ -8732,6 +11298,9 @@
 	8298.1.1={
 		employer=88130
 	}
+	8328.1.1={
+		death=yes
+	}	
 }
 88128 = {
 	name="Rigny" #
@@ -8758,6 +11327,9 @@
 	8298.1.1={
 		employer=88130
 	}
+	8309.1.1={
+		death=yes
+	}	
 }
 88129 = {
 	name="Ryam" #
@@ -8829,6 +11401,9 @@
 	8298.1.1={
 		employer=88130
 	}
+	8303.1.1={
+		death=yes
+	}	
 }
 88132 = {
 	name="Walgrave" #
@@ -8857,6 +11432,9 @@
 	8298.1.1={
 		employer=88130
 	}
+	8305.1.1={
+		death = yes
+	}		
 }
 88133 = {
 	name="Willifer" #
@@ -9033,6 +11611,9 @@
 		add_trait="maester"
 		effect = { set_character_flag = serving_with_lord }
 	}
+	8303.1.1={
+		employer=7253
+	}	
 }  
 88291= {
 	name="Lysana" 
@@ -9163,6 +11744,9 @@
 		add_trait="knight"
 		add_trait="poor_warrior"
 	}
+	8318.1.1={
+		death=yes
+	}	
 }
 88176 = {
 	name="Desmera" 
@@ -9174,6 +11758,9 @@
 	8254.1.1={
 		birth="8254.1.1"
 	}
+	8318.1.1={
+		death=yes
+	}	
 }
 88177 = {
 	name="Martyn" #
@@ -9227,6 +11814,9 @@
 		add_trait="knight"
 		add_trait="poor_warrior"
 	}
+	8317.1.1={
+		death = yes
+	}	
 }
 88180 = {
 	name="Selyse" 
@@ -9238,6 +11828,9 @@
 	8252.1.1={
 		birth="8252.1.1"
 	}
+	8317.1.1={
+		death = yes
+	}	
 }
 88181 = {
 	name="Emmon" #
@@ -9616,6 +12209,9 @@
 	8263.1.1={
 		add_spouse=278
 	}
+	8309.1.1={
+		death = yes
+	}	
 }
 88193 = {
 	name="Erryk" #non-canon
@@ -9635,6 +12231,7 @@
 	8278.1.1={
 		add_spouse=88194
 	}
+	8306.1.1 = { death = yes }	
 }
 88194 = {
 	name="Janna" #non-canon
@@ -9655,6 +12252,7 @@
 	8290.1.1={
 		employer=88193
 	}
+	8306.1.1 = { death = yes }	
 }
 88195 = {
 	name="Tanton" #non-canon
@@ -9770,6 +12368,7 @@
 	8271.1.1={
 		add_spouse=88202
 	}
+	8315.1.1 = { death = yes }	
 }
 88202 = {
 	name="Petrola" #non-canon
@@ -9787,6 +12386,7 @@
 	8293.1.1={
 		employer=88201
 	}
+	8315.1.1 = { death = yes }	
 }
 88203 = {
 	name="Cliffyrd" #non-canon
@@ -9848,6 +12448,9 @@
 		add_spouse = 88207
 		add_trait="knight"
 	}
+	8311.1.1={
+		death=yes
+	}	
 }
 88207 = {
 	name="Taena" 
@@ -9859,6 +12462,9 @@
 	8258.1.1={
 		birth="8258.1.1"
 	}
+	8311.1.1={
+		death=yes
+	}	
 }
 88208 = {
 	name="Loras" #
@@ -9910,6 +12516,9 @@
 		add_spouse = 88212
 		add_trait="knight"
 	}
+	8313.1.1={
+		death = yes
+	}	
 }
 88212 = {
 	name="Megga" 
@@ -9921,6 +12530,9 @@
 	8252.1.1={
 		birth="8252.1.1"
 	}
+	8313.1.1={
+		death = yes
+	}	
 }
 88213 = {
 	name="Petyr" #
@@ -10061,6 +12673,9 @@
 	8267.1.1={
 		add_spouse=88006
 	}
+	8317.1.1={
+		death = yes
+	}	
 }
 126269 = {
 	name="Olymer"	# a lord
@@ -10075,6 +12690,9 @@
 	8252.1.1 = {birth="8252.1.1"}
 	8268.1.1 = {add_trait=knight add_trait=poor_warrior}
 	8270.1.1 = {add_spouse=426269}
+	8316.1.1={
+		death = yes
+	}	
 }
 426269 = {
 	name="Arwyn"
@@ -10097,6 +12715,7 @@
 	mother=422269
 
 	8255.1.1 = {birth="8255.1.1"}
+	8310.1.1 = {death = yes}	
 }
 128269 = {
 	name="Lorent"	# not a lord
@@ -10110,6 +12729,7 @@
 
 	8257.1.1 = {birth="8257.1.1"}
 	8273.1.1 = {add_trait=poor_warrior}
+	8319.1.1 = {death = yes}	
 }
 129269 = {
 	name="Tania"	# not a lord
@@ -10150,6 +12770,9 @@
 		add_spouse = 88224
 		add_trait="knight"
 	}
+	8318.1.1={
+		death = yes
+	}	
 }
 88224 = {
 	name="Delena" 
@@ -10161,6 +12784,9 @@
 	8252.1.1={
 		birth="8252.1.1"
 	}
+	8318.1.1={
+		death = yes
+	}		
 }
 88225 = {
 	name="Pelleas" #
@@ -10252,6 +12878,9 @@
 		add_spouse=88231
 		add_trait="knight"
 	}
+	8302.1.1={
+		death = yes
+	}
 }
 88231 = {
 	name="Juliya" #non-canon
@@ -10262,6 +12891,9 @@
 	employer=88228
 	8227.1.1={
 		birth="8227.1.1"
+	}
+	8302.1.1={
+		death = yes
 	}
 }
 88232 = {
@@ -10278,6 +12910,9 @@
 	8272.1.1={
 		add_spouse=88233
 	}
+	8302.1.1={
+		death = yes
+	}
 }
 88233 = {
 	name="Ariela" #non-canon
@@ -10287,6 +12922,9 @@
 	employer=88229
 	8250.1.1={
 		birth="8250.1.1"
+	}
+	8302.1.1={
+		death = yes
 	}
 }
 88234 = {
@@ -10478,6 +13116,7 @@
 		add_spouse = 88224
 		add_trait="knight"
 	}
+	8316.1.1 = { death = yes }	
 }
 88238 = {
 	name="Margaery" 
@@ -10489,6 +13128,7 @@
 	8255.1.1={
 		birth="8255.1.1"
 	}
+	8316.1.1 = { death = yes }	
 }
 88239 = {
 	name="Fredrec" #

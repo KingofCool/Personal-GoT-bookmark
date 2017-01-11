@@ -1181,7 +1181,7 @@
 
 
 150360003 = {
-	name="Zharaq"	# famous citizen
+	name="Zharaq"# famous citizen
 	dynasty=360003
 	
 	stewardship = 6
@@ -1403,7 +1403,7 @@
 111360003 = {
 	name="Mazdhan"	# famous citizen
 	dynasty=360003
-	
+
 	stewardship = 5
 	martial = 2
 	diplomacy = 4
@@ -1465,9 +1465,9 @@
 	8141.1.1 = {death="8141.1.1"}
 }
 114360003 = {
-	name="Hazrak"	# famous citizen
+	name="Hazrak"# famous citizen
 	dynasty=360003
-	
+
 	stewardship = 7
 	martial = 3
 	diplomacy = 6
@@ -2459,6 +2459,9 @@
 	
 	8287.1.1 = { birth="8287.1.1" }
 	8300.1.1 = { employer=77041 }
+	8303.1.1={
+		employer=132360003
+	}
 }
 131360004 = {
 	name="Qezza" #canon
@@ -2473,6 +2476,9 @@
 	
 	8289.1.1 = { birth="8289.1.1" }
 	8300.1.1 = { employer=77041 }
+	8303.1.1={
+		employer=132360003
+	}
 }
 127360004 = {
 	name="Grazdan"	# a lord
@@ -2527,6 +2533,9 @@
 				b_graces = { holder_scope = { ROOT = { move_character = PREV } } }
 			}
 		}	
+	}
+	8302.1.1 = {
+		death = yes
 	}
 }
 128360004 = {
@@ -3247,6 +3256,9 @@
 	8300.1.1 = {
 		employer=77041
 	}
+	8303.1.1={
+		employer=132360003
+	}
 }
 133360007 = {
 	name="Selezzqa" #random daughter of zo pahls cause its no fully female house
@@ -3963,6 +3975,9 @@
 	8288.1.1 = { birth="8288.1.1" }
 	
 	8300.1.1 = { employer = 77041 }
+	8303.1.1={
+		employer=132360003
+	}
 }
 109360016 = {
 	name="Haznak"
@@ -4115,6 +4130,9 @@
 	
 	8292.1.1 = {birth="8292.1.1"} 
 	8300.1.1 = { employer = 77041 }
+	8303.1.1={
+		employer=132360003
+	}
 }
 #### Merreq house
 
@@ -4256,6 +4274,9 @@
 
 	8293.1.1 = { birth="8293.1.1" }
 	8300.1.1 = { employer = 77041 }
+	8303.1.1={
+		employer=132360003
+	}
 }
 107360005 = {
 	name="Ghazdor" #little hostage boy
@@ -4269,6 +4290,9 @@
 	employer = 102360005
 	8294.1.1 = { birth="8294.1.1" }
 	8300.1.1 = { employer = 77041 }
+	8303.1.1={
+		employer=132360003
+	}
 }
 
 ### House Quazzar
@@ -4348,6 +4372,9 @@
 	8270.1.1 = { birth="8270.1.1"}
 	
 	8300.1.1 = { employer = 77041 }
+	8303.1.1={
+		employer=132360003
+	}
 }
 105360010 = {
 	name="Tellezzara"
@@ -4419,6 +4446,9 @@
 	8291.1.1 = { birth="8291.1.1"}
 	
 	8300.1.1 = { employer = 77041 }
+	8303.1.1={
+		employer=132360003
+	}
 }	
 
 ### House Hazkar
@@ -4502,6 +4532,9 @@
 	8286.1.1 = { birth="8286.1.1" }
 	
 	8300.1.1 = { employer=77041 }
+	8303.1.1={
+		employer=132360003
+	}
 }
 106360011 = {
 	name="Ellezzara"
@@ -4515,6 +4548,9 @@
 	employer = 101360011
 	8291.1.1 = { birth="8291.1.1" }
 	8300.1.1 = { employer=77041 }
+	8303.1.1={
+		employer=132360003
+	}
 }
 103360011 = {
 	name="Hazzea"
@@ -4595,6 +4631,9 @@
 	employer=101360014
 	8290.1.1 = { birth="8290.1.1" }
 	8300.1.1 = { employer=77041 }
+	8303.1.1={
+		employer=132360003
+	}
 }
 104360014 = {
 	name="Tezza"
@@ -4610,6 +4649,9 @@
 	employer=101360014
 	8291.1.1 = { birth="8291.1.1" }
 	8300.1.1 = { employer=77041 }
+	8303.1.1={
+		employer=132360003
+	}
 }
 ### House Ghazeen
 
@@ -4680,6 +4722,9 @@
 	employer=101360030
 	8292.1.1 = { birth="8292.1.1" }
 	8300.1.1 = { employer = 77041 }
+	8303.1.1={
+		employer=132360003
+	}
 }
 ### house Yherizan
 101360006 = {
@@ -4763,6 +4808,9 @@
 	employer=101360006
 	8291.1.1 = { birth="8291.1.1" }
 	8300.1.1 = { employer=77041 }
+	8303.1.1={
+		employer=132360003
+	}
 }
 106360006 = {
 	name="Hizdahr"
@@ -4776,6 +4824,9 @@
 	employer=101360006
 	8290.1.1 = { birth="8290.1.1" }
 	8300.1.1 = { employer=77041 }
+	8303.1.1={
+		employer=132360003
+	}
 }
 107360006 = {
 	name="Gorzhak"
@@ -4871,6 +4922,9 @@
 	
 	8292.1.1 = { birth="8292.1.1" }
 	8300.1.1 = { employer=77041 }
+	8303.1.1={
+		employer=132360003
+	}
 }
 
 ### House Dhazak #mentioned ONCE in books. Confirmed at least one child
@@ -4939,6 +4993,9 @@
 	
 	8291.1.1 = { birth="8291.1.1" }
 	8300.1.1 = { employer=77041 }
+	8303.1.1={
+		employer=132360003
+	}
 }
 109360029 = {
 	name="Tommen"

@@ -751,6 +751,9 @@
 			}	
 		}
 	}
+	8303.1.1 = {
+		death = yes
+	}
 }
 6300101 = { #father to avoid culling
 	name = "Aggo"
@@ -801,6 +804,15 @@
 				}
 			}	
 		}
+	}
+	8303.1.1 = {
+		add_trait="kingsguard"
+	}
+	8303.1.1 = {
+		employer=6253
+	}
+	8307.1.1 = {
+		death = yes
 	}
 }
 7300101 = { #father to avoid culling
@@ -855,6 +867,15 @@
 				}
 			}	
 		}
+	}
+	8303.1.1 = {
+		add_trait="kingsguard"
+	}
+	8303.1.1 = {
+		employer=6253
+	}
+	8306.1.1={
+		death = yes
 	}
 }
 8300101 = { #father to avoid culling
@@ -1050,6 +1071,9 @@
 	8299.6.1={ #Dany
 		employer = 77041
 	}
+	8303.1.1={
+		employer=132360003
+	}
 }
 12300102 = { #father to avoid culling
 	name = "Bharbo"
@@ -1169,9 +1193,6 @@
 			}	
 		}
 	}
-	8300.1.1 = { 
-		guardian=77041
-	}
 }
 12400151 = { #father to avoid culling
 	name = "Eskender"
@@ -1246,6 +1267,9 @@
 	8300.5.1 = { 
 		remove_trait = squire
 		add_trait = knight
+	}
+	8303.1.1={
+		employer=132360003
 	}
 }
 12400152 = { #father to avoid culling
@@ -1334,6 +1358,9 @@
 		remove_trait = squire
 		add_trait = knight
 	}
+	8303.1.1={
+		employer=132360003
+	}
 }
 12400153 = { #father to avoid culling
 	name = "Virsallo"
@@ -1416,6 +1443,9 @@
 				}
 			}	
 		}
+	}
+	8303.1.1={
+		employer=132360003
 	}
 }
 12400154 = { #father to avoid culling

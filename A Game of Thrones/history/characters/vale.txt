@@ -374,6 +374,9 @@
 			add_weak_claim = k_riverlands
 		}		
 	}
+	8303.1.1={
+		death=yes
+		}
 }
 ###Jon Arryn's sister### AKA WAYNWOOD BRANCH
 ########################
@@ -513,7 +516,7 @@
 	8297.1.1={
 		employer=94003 #robert
 	}
-
+	8308.1.1 = { death = yes }
 }
 ##Branch for denys Arryn
 8500178 = {
@@ -678,7 +681,8 @@
 				ROOT = { set_dynasty_flag = cadet_house_@PREV }
 			}
 			c_8000178 = { #founder
-				c_the_eyrie = { holder_scope = { set_dynasty_flag = owned_cadet_house_@PREVPREV } }
+				c_the_eyrie = { holder_scope = { set_dynasty_flag =
+				owned_cadet_house_@PREVPREV } }
 			}
 		}
 	}
@@ -813,6 +817,7 @@
 	8278.1.1 = { employer=8008178 } 
 	8279.1.1 = {add_trait=trained_warrior}
 	8281.1.1 = {add_spouse=8019178}
+	8313.1.1 = { death = yes }	
 }
 8019178 = {
 	name="Ryella"	# not a lord
@@ -826,6 +831,7 @@
 	8263.1.1 = {birth="8263.1.1"}
 	8268.1.1 = { employer=8006178 } 
 	8278.1.1 = { employer=8008178 } 
+	8316.1.1 = { death = yes }		
 }
 8009178 = {
 	name="Triston"	# not a lord
@@ -843,6 +849,7 @@
 	8268.1.1 = { employer=8006178 } 
 	8278.1.1 = { employer=8008178 } 
 	8280.1.1 = {add_trait=poor_warrior}
+	8311.1.1 = { death = yes }		
 }
 8010178 = {
 	name="Perra"	# not a lord
@@ -859,7 +866,8 @@
 
 	8264.1.1 = {birth="8264.1.1"}
 	8268.1.1 = { employer=8006178 } 
-	8278.1.1 = { employer=8008178 } 
+	8278.1.1 = { employer=8008178 }
+	8319.1.1 = { death = yes }		
 }
 8011178 = {
 	name="Amerei"	# not a lord
@@ -986,6 +994,7 @@
 	8268.1.1 = { employer=8006178 } 
 	8278.1.1 = { employer=8008178 } 
 	8290.1.1 = { prestige = 50 wealth = 300 }
+	8321.1.1 = { death = yes }		
 }
 8018178 = {
 	name="Jorelle"	
@@ -1000,6 +1009,7 @@
 
 	8269.1.1 = {birth="8269.1.1"}
 	8278.1.1 = { employer=8008178 } 
+	8322.1.1 = { death = yes }		
 }
 ###
 ###House Harding
@@ -1026,6 +1036,7 @@
 		employer=94021
 	}
 	8282.1.1 = { add_spouse=94018 }
+	8318.1.1 = { death = yes }		
 }
 94027 = {
 	name="Harrold" #Harry the Heir, ward of Lady Waynwood
@@ -1081,6 +1092,9 @@
 	# 8300.10.1 = {
 		# add_spouse=6059 #sansa
 	# }
+	8303.1.1={
+		death=yes
+		}
 }
 #Lovers/Bastard daughter
 500184 = {
@@ -1100,6 +1114,33 @@
 
 	8298.6.1 = {
 		birth="8298.6.1"
+	}
+	8303.1.1 = {
+		remove_trait=bastard 
+		add_trait=legit_bastard
+		effect = { remove_nickname = yes }
+		dynasty=178
+		guardian = 1002059
+		educator = 1002059
+	}
+	8303.1.1 = { 
+		effect = { #Her co-wives
+			add_friend = 6059
+			add_friend = 7059
+			add_friend = 7253
+			add_friend = 4316
+			add_friend = 4001
+			add_friend = 8316
+			add_friend = 7107
+			add_friend = 206054
+			add_friend = 1126
+			add_friend = 6102
+			add_friend = 3034050
+			add_friend = 9017
+			add_friend = 88091
+			add_friend = 500184
+			add_friend = 155174371
+		}
 	}
 }
 475178 = {
@@ -1147,6 +1188,7 @@
 		add_trait=trained_warrior
 	}
 	8299.1.1 = { add_spouse = 475178 }
+	8330.1.1 = { death = yes }		
 }
 477178 = {
 	name="Saffron" #mother of second unborn bastard
@@ -1221,6 +1263,7 @@
 	8279.1.1 = {
 		add_spouse=435184
 	}
+	8315.1.1 = { death = yes }		
 }
 435184 = {
 	name="Eglantine"
@@ -1230,6 +1273,7 @@
 	culture="valeman"
 
 	8259.1.1 = {birth="8259.1.1"}
+	8315.1.1 = { death = yes }		
 }
 502184 = {
 	name="Kyle" 
@@ -1252,6 +1296,7 @@
 			add_friend = 1128 #Jeffory mallister
 		}
 	}
+	8320.1.1 = { death = yes }		
 }
 503184 = {
 	name="Edmund" 
@@ -1423,6 +1468,9 @@
 		}
 	}
 	8285.1.1 = { add_trait=widowed }
+	8310.1.1={
+		death = yes
+	}	
 }
 9182 = {
 	name="Norbet"
@@ -1448,6 +1496,7 @@
 	mother=3182
 	
 	8255.1.1 = { birth="8255.1.1"}
+	8311.1.1 = { death = yes }		
 }
 ###Issue of Elys###
 94010 = {
@@ -1527,6 +1576,7 @@
 	
 	8260.1.1 = {birth="8260.1.1"}
 	8280.1.1 = { add_trait="silent_sister" }
+	8318.1.1 = { death = yes }		
 }
 #Lost bastard child#
 1050182 = {
@@ -1559,6 +1609,7 @@
 		add_trait=scarred
 		add_trait=septa
 	} 
+	8320.1.1 = { death = yes }		
 }
 94016 = {
 	name="Meredyth" #Alys Arryn & Elys Waynwood's daughter 7
@@ -1636,6 +1687,7 @@
 		add_trait="trained_warrior"
 		add_trait="knight"
 	}
+	8324.1.1 = { death = yes }		
 }
 450182 = {
 	name="Deana"
@@ -1659,6 +1711,7 @@
 	father=9182
 	
 	8265.1.1 = {birth="8265.1.1"}
+	8321.1.1 = { death = yes }		
 }
 176182 = {
 	name="Myranda"
@@ -1784,6 +1837,7 @@
 	8260.1.1 = {birth="8260.1.1"}
 	8276.1.1 = {add_trait=trained_warrior}
 	8278.1.1 = {add_spouse=40363}
+	8319.1.1 = { death = yes }		
 }
 40363 = {
 	name="Alys"
@@ -1793,6 +1847,7 @@
 	culture="sisterman"
 
 	8260.1.1 = {birth="8260.1.1"}
+	8319.1.1 = { death = yes }		
 }
 #Triston's seven sons (they all want to be knights)#
 11363 = {
@@ -1957,6 +2012,7 @@
 	8265.1.1 = {
 		add_spouse=450165
 	}
+	8310.1.1 = { death = yes }		
 }
 450165 = {
 	name="Jorelle"
@@ -1968,6 +2024,7 @@
 	add_trait="naive_appeaser"
 	
 	8245.1.1 = {birth="8245.1.1"}
+	8310.1.1 = { death = yes }		
 }
 #Children
 150165 = {
@@ -1987,6 +2044,7 @@
 	8282.1.1 = {
 		add_matrilineal_spouse=451165
 	}
+	8321.1.1 = { death = yes }		
 }
 451165 = {
 	name="Humfrey"
@@ -1995,6 +2053,7 @@
 	culture="sisterman"
 
 	8260.1.1 = {birth="8260.1.1"}
+	8320.1.1 = { death = yes }		
 }
 151165 = {
 	name="Umfred"
@@ -2073,6 +2132,7 @@
 		add_spouse=452165
 	}
 	8292.1.1 = {death="8292.1.1"}
+	8309.1.1 = { death = yes }		
 }
 452165 = {
 	name="Morya"
@@ -2084,6 +2144,7 @@
 	add_trait="naive_appeaser"
 	
 	8248.1.1 = {birth="8248.1.1"}
+	8309.1.1 = { death = yes }		
 }
 156165 = {
 	name="Othor"
@@ -2115,6 +2176,7 @@
 	
 	8259.1.1 = {birth="8259.1.1"}
 	8276.1.1 = {add_spouse=94093}
+	8312.1.1 = { death = yes }		
 }
 94093 = {
 	name="Laudine" #Wife
@@ -2126,6 +2188,7 @@
 	add_trait=the_mark
 	
 	8260.1.1 = {birth="8260.1.1"}
+	8312.1.1 = { death = yes }		
 }
 94094 = {
 	name="Humfrey" #Son 1
@@ -2187,6 +2250,7 @@
 	
 	8254.1.1 = {birth="8254.1.1"}
 	8269.1.1 = {add_spouse=94096}	
+	8313.1.1 = { death = yes }		
 }
 94096 = {
 	name="Enide" #Wife
@@ -2195,6 +2259,7 @@
 	culture="sisterman"
 	
 	8253.1.1 = {birth="8253.1.1"}
+	8313.1.1 = { death = yes }		
 }
 9409002 = {
 	name="Sarya"
@@ -2258,7 +2323,8 @@
 	mother=4025167
 	
 	8246.1.1 = {birth="8246.1.1"}
-	8267.1.1 = {add_spouse=94099}	
+	8267.1.1 = {add_spouse=94099}
+	8314.1.1 = { death = yes }		
 }
 94099 = {
 	name="Eremberga" #Wife
@@ -2267,6 +2333,7 @@
 	culture="valeman"
 	
 	8252.1.1 = {birth="8252.1.1"}
+	8314.1.1 = { death = yes }		
 }
 94100 = {
 	name="Stevron" #Son 1
@@ -2340,6 +2407,7 @@
 	
 	8254.1.1 = {birth="8254.1.1"}
 	8281.1.1 = {add_spouse=94016}
+	8310.1.1 = { death = yes }		
 }
 9409007 = {
 	name="Osfryd" #made up to prevent the house dying out.
@@ -2352,6 +2420,7 @@
 	
 	8257.1.1 = {birth="8257.1.1"}
 	8280.1.1 = {add_spouse=941081}
+	8321.1.1 = { death = yes }		
 }
 9409008 = {
 	name="Lyman"
@@ -2388,6 +2457,7 @@
 	
 	8250.1.1 = {birth="8250.1.1"}
 	8278.1.1 = {add_spouse=94102}
+	8312.1.1 = { death = yes }		
 }
 94102 = {
 	name="Irinna" #Wife
@@ -2396,6 +2466,7 @@
 	culture="valeman"
 	
 	8250.1.1 = {birth="8250.1.1"}
+	8312.1.1 = { death = yes }		
 }
 94103 = {
 	name="Podrick"
@@ -2408,6 +2479,7 @@
 	
 	8268.1.1 = {birth="8268.1.1"}
 	8285.1.1 = {add_spouse=9409002}
+	8324.1.1 = { death = yes }		
 }
 94104 = {
 	name="Ysilla"
@@ -2420,6 +2492,7 @@
 	mother=94102
 	
 	8271.1.1 = {birth="8271.1.1"}
+	8326.1.1 = { death = yes }		
 }
 9409029 = {
 	name="Barbrey"
@@ -2467,7 +2540,8 @@
 	mother=4031173
 
 	8241.1.1 = {birth="8241.1.1"}
-	8256.1.1 = {add_spouse=941051}	
+	8256.1.1 = {add_spouse=941051}
+	8308.1.1 = { death = yes }	
 }
 941051 = {
 	name="Melessa" #Wife
@@ -2476,6 +2550,7 @@
 	culture="valeman"
 	
 	8239.1.1 = {birth="8239.1.1"}
+	8308.1.1 = { death = yes }		
 }
 941061 = {
 	name="Walcher"
@@ -2487,6 +2562,27 @@
 	mother=941051
 	
 	8256.1.1 = {birth="8256.1.1"}
+	8319.1.1 = { death = yes }		
+}
+941062 = {
+	name="Jon"
+	dynasty=173
+	religion="the_seven"
+	culture="valeman"
+	
+	father=941061
+	
+	8303.1.1 = {birth=yes}
+}
+941063 = {
+	name="Cerwyn"
+	dynasty=173
+	religion="the_seven"
+	culture="valeman"
+	
+	father=941061
+	
+	8305.1.1 = {birth=yes}
 }
 941071 = {
 	name="Belis"
@@ -2498,6 +2594,7 @@
 	mother=941051
 	
 	8259.1.1 = {birth="8259.1.1"}
+	8322.1.1 = { death = yes }	
 }
 941081 = {
 	name="Lyra"
@@ -2510,6 +2607,7 @@
 	mother=941051
 	
 	8263.1.1 = {birth="8263.1.1"}
+	8329.1.1 = { death = yes }	
 }
 ###Baelish###
 94042 = {
@@ -2642,6 +2740,9 @@
 			clr_character_flag = against_king
 		}
 	}
+	8303.1.1={
+		death=yes
+	}
 }
 
 #Littlefinger's houshold
@@ -2687,6 +2788,7 @@
 	8300.1.1 = { 
 		employer=94043 #Petyr Baelish
 	}
+	8328.1.1 = { death = yes }	
 }
 251171 = { 
 	name="Byron"
@@ -2710,6 +2812,7 @@
 		give_nickname = nick_the_beautiful
 		employer=94043 #Petyr Baelish
 	}
+	8323.1.1 = { death = yes }	
 }
 252171 = { 
 	name="Morgarth"
@@ -2734,6 +2837,7 @@
 	8300.1.1 = { 
 		employer=94043 #Petyr Baelish
 	}
+	8330.1.1 = { death = yes }	
 }
 ################
 ###Northweald###
@@ -2749,7 +2853,8 @@
 	mother=4036169
 	
 	8259.1.1 = {birth="8259.1.1"}
-	8277.1.1 = {add_spouse=94106}	
+	8277.1.1 = {add_spouse=94106}
+	8313.1.1 = { death = yes }	
 }
 94106 = {
 	name="Miraym" #Wife
@@ -2758,6 +2863,7 @@
 	culture="valeman"
 	
 	8266.1.1 = {birth="8266.1.1"}
+	8318.1.1 = { death = yes }	
 }
 94107 = {
 	name="Falena"
@@ -2770,6 +2876,7 @@
 	mother=94106
 	
 	8279.1.1 = {birth="8279.1.1"}
+	8322.1.1 = { death = yes }	
 }
 94108 = {
 	name="Ben"
@@ -2823,6 +2930,7 @@
 	8259.1.1 = {birth="8259.1.1"}
 	8285.1.1 = {add_spouse = 94122}
 	8288.1.1 = {add_spouse = 9409004}
+	8320.1.1 = { death = yes }	
 }
 9409011 = {
 	name="Leona"
@@ -2850,6 +2958,7 @@
 		add_trait=knight
 		add_trait=trained_warrior
 	}
+	8314.1.1 = { death = yes }	
 }
 94046 = {
 	name="Terrance" #Heir of Snakewood
@@ -2912,6 +3021,7 @@
 	
 	8251.1.1 = {birth="8251.1.1"}
 	8273.1.1 = {add_spouse=94109}
+	8309.1.1 = { death = yes }	
 }
 94109 = {
 	name="Gwenna" #Wife
@@ -2920,6 +3030,7 @@
 	culture="valeman"
 	
 	8255.1.1 = {birth="8255.1.1"}
+	8309.1.1 = { death = yes }	
 }
 94110 = {
 	name="Paxter"
@@ -2987,7 +3098,7 @@
 	culture="valeman"
 	
 	8232.1.1 = {birth="8232.1.1"}
-	8284.1.1 = {death="8284.1.1"} #Eon is a suitor for Lysa in books
+	8284.1.1 = { death = yes }	
 }
 94053 = {
 	name="Gilwood" #Young Lord of Longbow Hall, fond of wine.
@@ -3008,6 +3119,7 @@
 	8290.1.1 = {
 		give_nickname = nick_the_young
 	}
+	8304.1.1 = { death = yes }	
 }
 94054 = {
 	name="Eustace" #Second Son of Longbow Hall
@@ -3026,6 +3138,7 @@
 	8280.1.1 = {
 		add_spouse = 450177
 	}
+	8312.1.1 = { death = yes }	
 }
 450177 = {
 	name="Jonella"
@@ -3037,6 +3150,7 @@
 	culture="valeman"
 	
 	8255.1.1 = {birth="8255.1.1"}
+	8312.1.1 = { death = yes }	
 }
 94055 = {
 	name="Harlan" #3rd son of Longbow Hall, killed his father
@@ -3148,6 +3262,7 @@
 	
 	8253.1.1 = {birth="8253.1.1"}
 	8269.1.1 = {add_spouse=94112}
+	8306.1.1 = { death=yes }	
 }
 94112 = {
 	name="Alda" #Wife
@@ -3156,6 +3271,7 @@
 	culture="valeman"
 	
 	8248.1.1 = {birth="8248.1.1"}
+	8306.1.1 = { death=yes }		
 }
 94113 = {
 	name="Horas"
@@ -3213,7 +3329,10 @@
 	mother=4027170
 
 	8244.1.1 = {birth="8244.1.1"}
-	8259.1.1 = {add_spouse=94115}	
+	8259.1.1 = {add_spouse=94115}
+	8312.1.1={
+		death = yes
+	}		
 }
 94115 = {
 	name="Leona" #Wife
@@ -3222,6 +3341,9 @@
 	culture="valeman"
 	
 	8245.1.1 = {birth="8245.1.1"}
+	8312.1.1={
+		death = yes
+	}		
 }
 94116 = {
 	name="Owen"
@@ -3234,6 +3356,7 @@
 	
 	8262.1.1 = {birth="8262.1.1"}
 	#8291.1.1 = {add_spouse=9409011}
+	8319.1.1 = { death=yes }		
 }
 9409016 = {
 	name="Uthor"
@@ -3306,6 +3429,9 @@
 		add_trait="skilled_warrior"
 	}
 	8279.1.1 = {give_nickname = nick_bronze_yohn}
+	8311.1.1={
+		death = yes
+	}	
 }
 51879 = {
 	name="Yonella"
@@ -3317,7 +3443,9 @@
 	culture="valeman"
 	
 	8240.1.1 = {birth="8240.1.1"}
-	8295.1.1 = { death = yes } #Yohn is a suitor for Lysa in books
+	8295.1.1={
+		death = yes
+	}	
 }
 ##Issue of Yohn##
 94069 = {
@@ -3340,6 +3468,68 @@
 		add_trait="trained_warrior"
 		add_trait="knight"
 	}
+	8308.1.1 = { add_spouse = 88073 }		
+}
+194069 = {
+	name="Yohn"
+	dynasty=187
+	religion="the_seven"
+	culture="valeman"
+	
+	father=94069
+	mother=88073
+		
+	add_trait="strong"
+	add_trait="fair"
+		
+	8310.1.1 = {birth=yes}
+	8329.1.1 = {
+		add_trait="tough_soldier"
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}		
+}
+195069 = {
+	name="Ysilla"
+	dynasty=187
+	female=yes
+	religion="the_seven"
+	culture="valeman"
+	
+	father=94069
+	mother=88073
+		
+	add_trait="strong"
+	add_trait="fair"
+		
+	8312.1.1 = {birth=yes}		
+}
+196069 = {
+	name="Vivyen"
+	dynasty=187
+	female=yes
+	religion="the_seven"
+	culture="valeman"
+	
+	father=94069
+	mother=88073
+		
+	add_trait="fair"
+		
+	8315.1.1 = {birth=yes}		
+}
+197069 = {
+	name="Robar"
+	dynasty=187
+	religion="the_seven"
+	culture="valeman"
+	
+	father=94069
+	mother=88073
+		
+	add_trait="quick"
+		
+	8317.1.1 = {birth=yes}	
 }
 94073 = {
 	name="Vivyen" #unnamed in canon, daughter of Lord Yohn of Runestone
@@ -3460,7 +3650,7 @@
 	8277.1.1={
 		employer=94068 #Bronze Yohn
 	}
-
+	8303.1.1 = { death = yes }	
 }
 2001187 = {
 	name="Lucos" 
@@ -3483,6 +3673,7 @@
 	8277.1.1={
 		employer=94068 #Bronze Yohn
 	}
+	8310.1.1 = { death = yes }	
 
 }
 2002187 = {
@@ -3509,6 +3700,7 @@
 	8282.1.1 = {
 		add_trait = "knight"
 	} 	
+	8311.1.1 = { death = yes }	
 }
 ###Gates of the Moon Royce###
 94074 = {
@@ -3544,6 +3736,7 @@
 	8270.1.1 = { employer=94002 }	#Jon Arryn
 	8297.1.1={ employer=94003 } #robert
 	8300.3.1={ employer = 0 }
+	8308.1.1 = { death = yes }	
 }
 475187 = {
 	name="Marianne"	# not a lord
@@ -3554,6 +3747,7 @@
 
 	8253.1.1 = {birth="8253.1.1"}
 	8290.1.1 = {death="8290.1.1"}
+	8308.1.1 = { death = yes }	
 }
 #Children
 94075 = {
@@ -3619,6 +3813,7 @@
 	father=394089
 		
 	8268.1.1 = {birth="8268.1.1"}
+	8322.1.1 = { death = yes }	
 }
 ###House Grafton###
 94064 = {
@@ -3683,6 +3878,7 @@
 	culture="valeman"
 	
 	8228.1.1 = {birth="8228.1.1"}
+	8303.1.1 = { death = yes }	
 }
 9409019 = {
 	name="Marwyn"
@@ -3709,6 +3905,7 @@
 	culture="valeman"
 	
 	8246.1.1 = {birth="8246.1.1"}
+	8310.1.1 = { death = yes }	
 }
 94065 = {
 	name="Gerold" #Lord of Gulltown in the books
@@ -3729,6 +3926,7 @@
 	8264.1.1 = {birth="8264.1.1"}
 	8280.1.1 = {add_trait="knight" add_trait=poor_warrior}
 	8282.1.1 = {add_spouse = 3186}
+	8320.1.1 = { death = yes }	
 }
 3186 = {
 	name="Annara"
@@ -3740,6 +3938,7 @@
 	culture="valeman"
 	
 	8266.1.1 = {birth="8266.1.1"}
+	8320.1.1 = { death = yes }	
 }
 94066 = {
 	name="Randyll" #unnamed in canon, son of Gerold Lord of Gulltown
@@ -3814,6 +4013,9 @@
 	
 	8242.1.1 = {birth="8242.1.1"}
 	8266.1.1 = {add_spouse=94118}
+	8311.1.1={
+		death = yes
+	}	
 }
 94118 = {
 	name="Brynda" #Wife
@@ -3822,6 +4024,9 @@
 	culture="valeman"
 	
 	8248.1.1 = {birth="8248.1.1"}
+	8311.1.1={
+		death = yes
+	}		
 }
 94119 = {
 	name="Eddison"
@@ -3918,6 +4123,7 @@
 	8272.1.1 = {add_spouse = 42183}
 	8278.1.1 = {add_spouse = 43183}
 	8291.1.1 = { remove_trait="trained_warrior" }
+	8309.1.1 = { death = yes }	
 }
 2183 = {
 	name="Zhoe" #wife 1
@@ -3953,7 +4159,7 @@
 	culture="valeman"
 	
 	8251.1.1 = {birth="8251.1.1"}
-	8297.1.1 = { death = yes } #Horton is a suitor for Lysa in books
+	8297.1.1 = { death = yes }		
 }
 94059 = {
 	name="Jasper" #Heir of Redfort
@@ -4071,6 +4277,7 @@
 		add_trait="trained_warrior"
 		add_trait="knight"
 	}
+	8319.1.1 = { death = yes }	
 }
 30189 = {
 	name="Adela"
@@ -4082,6 +4289,7 @@
 	culture="valeman"
 
 	8266.1.1 = {birth="8266.1.1"}
+	8319.1.1 = { death = yes }	
 }
 940771 = {
 	name="Clifford"
@@ -4121,6 +4329,7 @@
 		add_trait="trained_warrior"
 		add_trait="knight"
 	}
+	8311.1.1 = { death = yes }	
 }
 500189 = {
 	name="Alanah"
@@ -4132,6 +4341,7 @@
 	culture="valeman"
 	
 	8255.1.1 = {birth="8255.1.1"}
+	8311.1.1 = { death = yes }	
 }
 940772 = {
 	name="Edmund"
@@ -4229,6 +4439,7 @@
 				add_trait="knight"	
 	}
 	8269.1.1 = {add_spouse=694089} #Sarya Royce, Daughter to a Stark Woman
+	8304.1.1 = { death = yes }	
 }
 
 94122 = {
@@ -4258,6 +4469,7 @@
 	8266.1.1 = {birth="8266.1.1"}
 	8282.1.1 = {add_trait="knight"}
 	8287.1.1 = {add_spouse="94104"}
+	8319.1.1 = { death = yes }	
 }
 9409026 = {
 	name="Harrold"
@@ -4334,6 +4546,10 @@
 		add_spouse = 2001176	#Marriage arranged by Littlefinger.
 		effect = { wealth = 400 prestige = -200 }		#Receives a significant dowry for marrying a commoner.
 	}
+	8315.1.1 = {
+		add_trait="ladyforlorn"
+	}	
+	8321.1.1 = { death = yes }		
 }
 2000176 = {
 	name="Carolei" #Unnamed first wife of Lord Lyonel.
@@ -4360,8 +4576,40 @@
 		birth="8284.3.1"
 		effect = { fertility = 0.25 }
 	}
+	8318.1.1 = { death = yes }	
 }
+2001175 = {
+	name="Daveth"
+	dynasty=176
 
+	religion="the_seven"
+	culture="valeman"
+	
+	father=94049
+	mother=2001176
+	
+	8301.6.1 = {birth=yes }
+	8320.1.1 = { 
+		add_trait="skilled_warrior" 
+		add_trait="knight" 
+	}
+	8321.1.1 = {
+		add_trait="ladyforlorn"
+	}
+}
+2001174 = {
+	name="Borena"
+	dynasty=176
+	female=yes
+
+	religion="the_seven"
+	culture="valeman"
+	
+	father=94049
+	mother=2001176
+	
+	8303.1.1 = {birth=yes }
+}
 94050 = {
 	name="Lyn" #Brother of Lyonel Lord of Heart's Home
 	dynasty=176
@@ -4393,6 +4641,7 @@
 		add_trait="ladyforlorn"
 		employer=94049
 	}
+	8315.1.1 = { death = yes }		
 }
 94051 = {
 	name="Lucas" #Youngest Corbray brother
@@ -4405,8 +4654,38 @@
 	mother=2176
 	
 	8265.1.1 = {birth="8265.1.1"}
+	8300.6.1 = {add_spouse = 177182}	
+	8324.1.1 = { death = yes }	
 }
+2001173 = {
+	name="Wallace"
+	dynasty=176
 
+	religion="the_seven"
+	culture="valeman"
+	
+	father=94051
+	mother=177182
+	
+	8302.1.1 = {birth=yes }
+	8320.1.1 = { 
+		add_trait="skilled_warrior" 
+		add_trait="knight" 
+	}
+}
+2001172 = {
+	name="Celina"
+	dynasty=176
+	female=yes
+
+	religion="the_seven"
+	culture="valeman"
+	
+	father=94051
+	mother=177182
+	
+	8304.1.1 = {birth=yes }
+}
 2002176 = {
 	name="Wallace" #the rich Gulltown merchant.
 	
@@ -4439,6 +4718,7 @@
 	
 	8252.1.1 = {birth="8252.1.1"}
 	8268.1.1 = {add_spouse = 4162}
+	8310.1.1 = { death = yes }	
 }
 4162 = {
 	name="Felicia"
@@ -4450,6 +4730,7 @@
 	culture="valeman"
 	
 	8252.1.1 = {birth="8252.1.1"}
+	8310.1.1 = { death = yes }	
 }
 5162 = {
 	name="Arbury"
@@ -4551,6 +4832,7 @@
 	}
 	8294.1.1 = {employer=336 }
 	8300.3.1 = {employer=1002059 }
+	8303.1.1 = { death = yes }	
 	
 }
 ################
@@ -4575,6 +4857,7 @@
 	
 	8242.1.1 = {birth="8242.1.1"}
 	8258.1.1 = {add_spouse = 101161}
+	8310.1.1 = { death = yes}	
 }
 101161 = {
 	name="Arsinde"
@@ -4586,6 +4869,7 @@
 	culture="valeman"
 	
 	8242.1.1 = {birth="8242.1.1"}
+	8310.1.1 = { death = yes}		
 }
 102161 = {
 	name="Celina"
@@ -4635,6 +4919,7 @@
 		add_trait="knight"
 	}
 	8262.1.1 = {employer=94002}
+	8314.1.1 = { death = yes }
 }
 94030 = {
 	name="Sylvia" #Elbert Arryn's mother
@@ -4647,6 +4932,7 @@
 	mother=100161
 	
 	8230.1.1 = {birth="8230.1.1"}
+	8308.1.1 = { death = yes }
 }
 94091 = {
 	name="Colin" #Linking all father.
@@ -4685,6 +4971,7 @@
 	
 	8249.1.1 = {birth="8249.1.1"}
 	8265.1.1 = {add_spouse = 101175}
+	8311.1.1 = { death = yes }	
 }
 101175 = {
 	name="Lorenna"
@@ -4696,6 +4983,7 @@
 	culture="valeman"
 	
 	8249.1.1 = {birth="8249.1.1"}
+	8311.1.1 = { death = yes }	
 }
 102175 = {
 	name="Lorenna"
@@ -4883,6 +5171,7 @@
 		add_trait="knight"
 		add_spouse=494057
 	}
+	8316.1.1 = {death = yes}	
 }
 494057 = {
 	name="Daena"
@@ -4899,6 +5188,7 @@
 		add_trait = "temperate" 
 		add_trait = "just"
 	}
+	8316.1.1 = {death = yes}	
 }
 694057= {
 	name="Triston" # Grandson of Jon
@@ -4945,6 +5235,7 @@
 	mother=294057
 	
 	8261.1.1 = {birth="8261.1.1"}
+	8324.1.1 = {death = yes}	
 }
 
 194057 = {
@@ -4960,6 +5251,9 @@
 	8236.1.1 = {birth="8236.1.1"}
 	8252.1.1 = {add_trait="knight"}
 	8255.1.1 = {add_spouse=294057}
+	8307.1.1={
+		death = yes
+	}
 }
 294057 = {
 	name="Janei"
@@ -4969,6 +5263,9 @@
 	culture="valeman"
 	
 	8239.1.1 = {birth="8239.1.1"}
+	8307.1.1={
+		death = yes
+	}
 }
 	
 ####Unlanded people####
@@ -4997,6 +5294,7 @@
 	
 	
 	8244.1.1 = {birth="8244.1.1"}
+	8310.1.1 = {death = yes}	
 }
 ##Issue of Aynald##
 94063 = {
@@ -5111,6 +5409,7 @@
 	8235.1.1 = {birth="8235.1.1"}
 	8251.1.1 = {add_trait=knight add_trait=trained_warrior}
 	8253.1.1 = {add_spouse=437801047}
+	8305.1.1 = {death = yes}
 }
 437801047 = {
 	name="Sarya"
@@ -5120,6 +5419,7 @@
 	culture="valeman"
 
 	8235.1.1 = {birth="8235.1.1"}
+	8305.1.1 = {death = yes}
 }
 138801047 = {
 	name="Benedar"	# not a lord
@@ -5173,6 +5473,7 @@
 	8258.1.1 = {birth="8258.1.1"}
 	8274.1.1 = {add_trait=poor_warrior}
 	8276.1.1 = {add_spouse=440801047}
+	8321.1.1={ death=yes }		
 }
 440801047 = {
 	name="Carolei"
@@ -5182,6 +5483,7 @@
 	culture="valeman"
 
 	8258.1.1 = {birth="8258.1.1"}
+	8324.1.1={ death=yes }		
 }
 141801047 = {
 	name="Sarra"	# not a lord
@@ -5195,6 +5497,7 @@
 	mother=437801047
 
 	8260.1.1 = {birth="8260.1.1"}
+	8325.1.1={ death=yes }		
 }
 142801047 = {
 	name="Morgarth"	# not a lord
@@ -5261,6 +5564,7 @@
 		add_spouse=210000
 		add_trait="trained_warrior"
 	}
+	8317.1.1 = { death = yes }	
 }
 210000= {
 	name="Hilary"
@@ -5278,6 +5582,7 @@
 	
 	8251.1.1 = {birth="8251.1.1"}
 	8272.1.1= {add_spouse=110000}
+	8317.1.1 = { death = yes }	
 }
 310000 = {
 	name="Bryton"

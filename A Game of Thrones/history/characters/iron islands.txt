@@ -427,6 +427,9 @@
 			character_event = { id = feast_for_crows.160 } #end siege in shield islands
 		}	
 	}
+	8303.1.1={
+		death=yes
+		}
 }
 3107 = {
 	name="Victarion"	
@@ -533,6 +536,9 @@
 			add_trait = sympathy_drowned_god
 		}
 	}
+	8302.1.1={
+		death=yes
+		}
 }
 40013107 = { #1st wife
 	name="Frenya"
@@ -720,6 +726,7 @@
 			}
 		}
 	}
+	8310.1.1 = { death=yes }	
 }
 #by his 3rd wife
 10107 = {
@@ -852,93 +859,31 @@
 	8289.1.1 = { 
 		remove_trait="poor_warrior"
 		add_trait="trained_warrior" 
-		effect = {
-			if = {
-				limit = { NOT = { father = { ai = no } } }
-				add_character_modifier = { #To stop marriage
-					name = child
-					duration = 2300
-					hidden = yes
-				}
-			}	
-		}
 	}	
-	8294.1.1 = {
-		effect = {
-			add_character_modifier = {
-				name = small_flagship
-				duration = 9125
-			}
-			hidden_tooltip = {
-				e_rebels = {
-					holder_scope = {
-						create_character = {
-							dynasty = none
-							name = "Black Wind"
-							culture = ROOT
-							religion = ROOT
-						}
-						new_character = {
-							add_trait = dead_target
-							ROOT = { set_character_flag = flagship_name_@PREV }
-							death = yes
-						}
-					}
-				}
-			}
+	8303.1.1 = {
+		add_trait="chaste"
+		add_trait="familyperson"
+		fertility = 1.5
+	}
+	8303.1.1 = { 
+		effect = { #Her co-wives
+			add_friend = 6059
+			add_friend = 7059
+			add_friend = 7253
+			add_friend = 4316
+			add_friend = 4001
+			add_friend = 8316
+			add_friend = 77041
+			add_friend = 206054
+			add_friend = 1126
+			add_friend = 6102
+			add_friend = 3034050
+			add_friend = 9017
+			add_friend = 88091
+			add_friend = 155174371
 		}
 	}
-	8299.7.2 = {	
-		effect = {
-			if = {
-				limit = { NOT = { year = 8300 } }
-				spawn_unit = {
-					province = 35
-					home = 35
-					scaled_by_biggest_garrison = 1.5
-					troops = {
-						archers = { 10 10 }
-						heavy_infantry = { 10 10 }
-						light_infantry = { 20 20 }							
-					}
-					attrition = 1.0
-				}
-				character_event = { id = feast_for_crows.160 } #end siege
-			}
-		}	
-	}
-	8299.11.5 = {
-		employer=4317
-		effect = { 
-			prisoner = yes
-			hidden_tooltip = {
-				remove_character_modifier = the_dungeon
-				add_character_modifier = { 
-					name = house_arrest
-					duration = -1
-				}
-			}
-		}
-	}
-	8300.1.1 = {
-		add_spouse=205081092 #Erik Ironmaker, wed in Asha's absence
-		#Game moves her back to Pyke after the marriage, so here we go again...
-		effect = { 
-			k_stormlands = {
-				holder_scope = {
-					reverse_banish = ROOT
-				}
-			}
-			prisoner = yes
-			hidden_tooltip = {
-				remove_character_modifier = the_dungeon
-				add_character_modifier = { 
-					name = house_arrest
-					duration = -1
-				}
-			}
-		}
-	}
+	8326.1.1 = { death = yes}	
 }
 8107 = {
 	name="Theon"	
@@ -1047,6 +992,9 @@
 				}
 			}
 		}
+	}
+	8303.1.1 = {
+		death=yes
 	}
 }
 ###Victarion's Children###
@@ -1169,6 +1117,7 @@
 	8299.11.3 = {
 		employer=2107 
 	}
+	8319.1.1 = {death=yes}	
 }
 203107 = {
 	name="Tarle"
@@ -1189,6 +1138,7 @@
 	8299.11.3 = {
 		employer=2107 
 	}
+	8311.1.1 = {death=yes}	
 }
 204107 = {
 	name="Nute"
@@ -1208,6 +1158,7 @@
 	8299.11.3 = {
 		employer=2107 
 	}
+	8323.1.1 = {death=yes}	
 }
 
 ##################
@@ -1280,6 +1231,7 @@
 	mother=4109
 
 	8251.1.1 = {birth="8251.1.1"}
+	8316.1.1 = {death=yes}	
 }	
 ###His Father###
 9064 = {		
@@ -1355,6 +1307,7 @@
 			}
 		}
 	}
+	8315.1.1 = { death=yes }	
 }
 10064 = {		
 	name="Lucimore"	
@@ -1368,6 +1321,7 @@
 	
 	8253.1.1 = {birth="8253.1.1"}	
 	8269.1.1 = { add_trait=trained_warrior }
+	8309.1.1 = { death=yes }		
 }
 8064 = {		
 	name="Sargon"	
@@ -1383,6 +1337,7 @@
 	
 	8254.1.1 = {birth="8254.1.1"}	
 	8270.1.1 = { add_trait=poor_warrior }
+	8311.1.1 = { death=yes }		
 }
 ###His Children###
 1064 = {		
@@ -1455,7 +1410,7 @@
 					}	
 				}
 			}
-		}	
+		}		
 	}
 	8287.1.1 = {
 		employer=3028118 #sent to blacktyde after found with asha
@@ -1466,6 +1421,7 @@
 		add_claim=c_lordsport
 		add_claim=b_lordsport
 	}
+	8327.1.1 = { death=yes }		
 }
 3064 = {		
 	name="Symond"	
@@ -1483,6 +1439,7 @@
 		add_claim=c_lordsport
 		add_claim=b_lordsport
 	}
+	8330.1.1 = { death=yes }		
 }		
 4064 = {		
 	name="Harlon"	
@@ -1500,6 +1457,7 @@
 		add_claim=c_lordsport
 		add_claim=b_lordsport
 	}
+	8328.1.1 = { death=yes }		
 }
 5064 = {		
 	name="Vickon"		
@@ -1552,6 +1510,7 @@
 	8299.12.1={
 		employer=7064 
 	}
+	8311.1.1 = { death=yes }		
 }
 12064 = {		
 	name="Balon"	
@@ -2006,6 +1965,7 @@
 	8231.1.1 = { add_trait="trained_warrior" }	
 	8235.1.1 = {add_spouse = 109122}	
 	8279.1.1 = {give_nickname = nick_silverhair}
+	8302.1.1 = { death = yes }
 }
 109122 = {	
 	name="Barbrey"	
@@ -2017,6 +1977,7 @@
 	culture="ironborn"
 
 	8215.1.1 = {birth="8215.1.1"}
+	8302.1.1 = { death = yes }
 }
 ##Issue of Sigrin
 3122 = {
@@ -2096,7 +2057,8 @@
 	religion="drowned_god"	
 	culture="ironborn"
 
-	8243.1.1 = {birth="8243.1.1"}	
+	8243.1.1 = {birth="8243.1.1"}
+	8310.1.1 = { death = yes }		
 }
 ##Issue of Sigfryd
 10001122 = {		
@@ -2118,6 +2080,7 @@
 	8289.6.1 = {
 		add_trait = widowed
 	}
+	8311.1.1 = { death = yes }	
 }
 105122 = {	
 	name="Bennarion"	
@@ -2150,6 +2113,7 @@
 	8252.1.1 = {birth="8252.1.1"}
 	8289.1.1={ add_trait = depressed }
 	8299.11.3={ add_trait=widowed }
+	8313.1.1 = { death = yes }		
 }
 ###The Lord###
 122 = {		
@@ -2204,7 +2168,8 @@
 			}
 		}
 	}
-	8289.1.1 = { add_trait=widowed }	
+	8289.1.1 = { add_trait=widowed }
+	8313.1.1 = { death=yes }		
 }
 ###The dead Wife###
 1001122 = {		
@@ -2297,7 +2262,8 @@
 		effect = {
 			character_event = { id = feast_for_crows.160 } #end siege in shield islands
 		}
-	}	
+	}
+	8317.1.1 = { death=yes }		
 }
 ##issue of Harmund
 4122 = {	
@@ -2326,7 +2292,7 @@
 		add_trait="trained_warrior"
 		add_spouse=106122
 	}
-	
+	8318.1.1 = { death=yes }		
 }
 106122 = {	
 	name="Jorelle"	
@@ -2337,7 +2303,8 @@
 	religion="drowned_god"	
 	culture="ironborn"
 
-	8263.1.1 = {birth="8263.1.1"}	
+	8263.1.1 = {birth="8263.1.1"}
+	8317.1.1 = { death=yes }		
 }
 101122 = {		
 	name="Boremund"	#
@@ -2362,6 +2329,10 @@
 		add_trait="trained_warrior"
 		add_spouse=107122
 	}
+	8317.1.1 = {
+		add_trait="nightfall"
+	}	
+	8324.1.1 = { death=yes }		
 }	
 107122 = {	
 	name="Harra"	
@@ -2372,7 +2343,8 @@
 	religion="drowned_god"	
 	culture="ironborn"
 
-	8263.1.1 = {birth="8263.1.1"}	
+	8263.1.1 = {birth="8263.1.1"}
+	8324.1.1 = { death=yes }		
 }
 ##issue of Harmund
 11122 = {	
@@ -2408,6 +2380,9 @@
 	8297.1.1 = {
 		add_trait="trained_warrior"
 	}
+	8324.1.1 = {
+		add_trait="nightfall"
+	}		
 }
 12122 = {	
 	name="Torgon"	
@@ -2451,6 +2426,7 @@
 	employer=15122
 
 	8244.1.1 = {birth="8244.1.1"}
+	8310.1.1 = { death = yes }
 }
 5001122 = {
 	name="Sigrin"	# not a lord
@@ -2466,6 +2442,7 @@
 	8247.1.1 = {birth="8247.1.1"}
 	8263.1.1 = {add_trait=trained_warrior}
 	8265.1.1 = {add_spouse=4001122}
+	8311.1.1 = { death = yes }
 }
 4001122 = {
 	name="Morna"
@@ -2477,6 +2454,7 @@
 	culture="ironborn"
 
 	8247.1.1 = {birth="8247.1.1"}
+	8311.1.1 = { death = yes }
 }
 5002122 = {
 	name="Ygon"	# not a lord
@@ -2552,6 +2530,7 @@
 	employer=15122
 
 	8250.1.1 = {birth="8250.1.1"}
+	8316.1.1 = { death = yes }	
 }
 5005122 = {
 	name="Ralf"	# not a lord
@@ -2580,6 +2559,7 @@
 	employer=15122
 
 	8258.1.1 = {birth="8258.1.1"}
+	8315.1.1 = { death = yes }		
 }
 5007122 = {
 	name="Gevin"	# not a lord, theon raider
@@ -2614,6 +2594,7 @@
 
 	8262.1.1 = {birth="8262.1.1"}
 	8278.1.1 = {add_trait=skilled_warrior}
+	8319.1.1 = { death = yes }	
 }
 5009122 = {
 	name="Dykk"	# not a lord
@@ -2680,6 +2661,7 @@
 	8256.1.1 = {birth="8256.1.1"}
 	8272.1.1 = {add_trait=trained_warrior}
 	8274.1.1 = {add_spouse=1113}
+	8314.1.1 = { death = yes }	
 }
 ###His Wife###
 1113 = {		
@@ -2694,6 +2676,7 @@
 	mother=4001113
 	
 	8262.1.1 = {birth="8262.1.1"}	
+	8314.1.1 = { death = yes }	
 }
 142116 = {
 	name="Wulfe"	# not a lord
@@ -2708,6 +2691,7 @@
 	8260.1.1 = {birth="8260.1.1"}
 	8276.1.1 = {add_trait=poor_warrior}
 	8278.1.1 = {add_spouse=442116}
+	8310.1.1 = { death = yes }	
 }
 442116 = {
 	name="Frynne"
@@ -2717,6 +2701,7 @@
 	culture="ironborn"
 
 	8260.1.1 = {birth="8260.1.1"}
+	8310.1.1 = { death = yes }	
 }
 143116 = {
 	name="Ralf"	# not a lord
@@ -2804,6 +2789,7 @@
 
 	8242.1.1 = {birth="8242.1.1"}
 	8258.1.1 = {add_spouse = 11120}
+	8308.1.1 = { death = yes }		
 }
 11120 = {		
 	name="Rosalynd"
@@ -2814,7 +2800,8 @@
 	religion="drowned_god"	
 	culture="ironborn"
 
-	8242.1.1 = {birth="8242.1.1"}	
+	8242.1.1 = {birth="8242.1.1"}
+	8308.1.1 = { death = yes }	
 }
 ###His Children###
 1120 = {		
@@ -2829,7 +2816,47 @@
 	mother=11120
 
 	8259.1.1 = {birth="8259.1.1"}	
-}		
+	8301.1.1 = {add_spouse = 144116}
+	8324.1.1 = { death = yes }		
+}
+112000 = {		
+	name="Sigfry"	
+
+	dynasty=120	
+	
+	religion="drowned_god"	
+	culture="ironborn"	
+
+	father=1120
+	mother=144116
+
+	8302.1.1 = {birth=yes}		
+}
+112001 = {		
+	name="Rosalynd"	
+	female=yes
+	dynasty=120	
+	
+	religion="drowned_god"	
+	culture="ironborn"	
+
+	father=1120
+	mother=144116
+
+	8304.1.1 = {birth=yes}		
+}
+112002 = {		
+	name="Mikken"	
+	dynasty=120	
+	
+	religion="drowned_god"	
+	culture="ironborn"	
+
+	father=1120
+	mother=144116
+
+	8305.1.1 = {birth=yes}		
+}			
 2120 = {		
 	name="Bythia"	
 	female=yes	
@@ -2842,6 +2869,7 @@
 	mother=11120	
 	
 	8261.1.1 = {birth="8261.1.1"}	
+	8323.1.1 = { death = yes }		
 }
 ###Founder###
 9120 = {		
@@ -2930,6 +2958,7 @@
 		}
 	}
 	8279.1.1 = {give_nickname = nick_bonehand}
+	8303.1.1 = { death = yes }
 }
 3121 = {		
 	name="Stoja"
@@ -2943,6 +2972,7 @@
 		add_trait="naive_appeaser"
 		add_trait="proud"
 	}
+	8303.1.1 = { death = yes }
 }
 ###His Children###
 1121 = {		
@@ -2966,6 +2996,46 @@
 		add_trait="misguided_warrior"	
 		add_trait="lustful"	
 	}
+	8301.1.1 = {add_spouse = 203112}	
+	8303.1.1 = { add_trait="redrain" }
+	8314.1.1 = { death = yes }	
+}
+112100 = {		
+	name="Dunstan"	
+	dynasty=121	
+	
+	religion="drowned_god"	
+	culture="ironborn"	
+	
+	father = 1121
+	mother=203112
+
+	8302.1.1 = {birth=yes}	
+	8314.1.1 = { add_trait="redrain" }	
+}
+112101 = {		
+	name="Meldred"	
+	dynasty=121	
+	
+	religion="drowned_god"	
+	culture="ironborn"	
+	
+	father = 1121
+	mother=203112
+
+	8304.1.1 = {birth=yes}	
+}
+112102 = {		
+	name="Rynhilde"	
+	dynasty=121	
+	
+	religion="drowned_god"	
+	culture="ironborn"	
+	
+	father = 1121
+	mother=203112
+
+	8305.1.1 = {birth=yes}	
 }
 2121 = {		
 	name="Donnel"	
@@ -3011,6 +3081,7 @@
 			character_event = { id = feast_for_crows.160 } #end siege in shield islands
 		}
 	}
+	8322.1.1 = { death = yes }	
 }
 ##################
 ###House Merlyn###
@@ -3035,6 +3106,7 @@
 	8262.1.1 = {birth="8262.1.1"}
 	8277.1.1 = {add_trait="tough_soldier"}
 	8280.1.1 = {add_spouse = 3110}
+	8317.1.1 = { death = yes }	
 }
 3110 = {		
 	name="Mlada"
@@ -3047,6 +3119,7 @@
 
 	8262.1.1 = {birth="8262.1.1"}
 	8277.1.1 = {add_trait="naive_appeaser"}
+	8317.1.1 = { death = yes }	
 }
 ###Children###		
 1110 = {		
@@ -3102,6 +3175,7 @@
 
 	8250.1.1 = {birth="8250.1.1"}
 	8266.1.1 = {add_spouse = 90112}	
+	8314.1.1 = { death = yes }	
 }
 90112 = {		
 	name="Nessa"	
@@ -3114,6 +3188,7 @@
 	culture="ironborn"	
 
 	8250.1.1 = {birth="8250.1.1"}	
+	8314.1.1 = { death = yes }		
 }
 ##############
 ###Children###
@@ -3131,6 +3206,7 @@
 	mother=90112	
 
 	8268.1.1 = {birth="8268.1.1"}	
+	8320.1.1 = { death = yes }	
 }	
 2112 = {		
 	name="Gwin"	
@@ -3145,7 +3221,8 @@
 	father=112
 	mother=90112	
 	
-	8266.1.1 = {birth="8266.1.1"}	
+	8266.1.1 = {birth="8266.1.1"}
+	8311.1.1 = { death = yes }	
 }
 ###The Ten Unnamed Daughters###
 6112 = {		
@@ -3159,7 +3236,8 @@
 	father=112
 	mother=90112	
 	
-	8267.1.1 = {birth="8267.1.1"}	
+	8267.1.1 = {birth="8267.1.1"}
+	8318.1.1 = { death = yes }	
 }
 7112 = {		
 	name="Olivia"	
@@ -3173,6 +3251,7 @@
 	mother=90112	
 	
 	8268.1.1 = {birth="8268.1.1"}	
+	8327.1.1 = { death = yes }	
 }
 8112 = {		
 	name="Triselda"	
@@ -3185,7 +3264,8 @@
 	father=112
 	mother=90112	
 	
-	8269.1.1 = {birth="8269.1.1"}	
+	8269.1.1 = {birth="8269.1.1"}
+	8326.1.1 = { death = yes }	
 }
 9112 = {		
 	name="Gormona"	
@@ -3198,7 +3278,8 @@
 	father=112
 	mother=90112	
 	
-	8270.1.1 = {birth="8270.1.1"}	
+	8270.1.1 = {birth="8270.1.1"}
+	8318.1.1 = { death = yes }	
 }
 10112 = {		
 	name="Wilma"	
@@ -3331,7 +3412,7 @@
 	8272.1.1 = { 
 		add_spouse=201112
 	}
-	
+	8315.1.1 = { death = yes }	
 }
 201112 = {		
 	name="Megga"	
@@ -3341,7 +3422,8 @@
 	culture="ironborn"
 	employer=200112
 
-	8256.1.1 = {birth="8256.1.1"}	
+	8256.1.1 = {birth="8256.1.1"}
+	8315.1.1 = { death = yes }	
 }
 202112 = {		
 	name="Norjen"	
@@ -3411,6 +3493,7 @@
 	employer=116
 	
 	8235.1.1 = { birth="8235.1.1"}
+	8307.1.1 = { death = yes }	
 }
 302112 = {		
 	name="Sigfryd"	
@@ -3425,6 +3508,7 @@
 	
 	8253.1.1 = { birth="8253.1.1"}
 	8273.1.1 = { add_spouse=304112 }
+	8311.1.1 = { death = yes }	
 }
 304112 = {		
 	name="Ingrid"	
@@ -3436,6 +3520,7 @@
 	employer=116
 	
 	8257.1.1 = { birth="8257.1.1"}
+	8311.1.1 = { death = yes }	
 }
 305112 = {		
 	name="Manfryd"	
@@ -3462,6 +3547,7 @@
 	employer=116
 	
 	8257.1.1 = { birth="8257.1.1"}
+	8319.1.1 = { death = yes }	
 }
 #####################################
 ###House Goodbrother of Corpse Lake###
@@ -3478,7 +3564,8 @@
 	mother=901112
 	
 	8255.1.1 = {birth="8255.1.1"}
-	8274.1.1 = {add_spouse = 401112}	
+	8274.1.1 = {add_spouse = 401112}
+	8310.1.1 = { death = yes }	
 }
 401112 = {		
 	name="Erika"	
@@ -3489,6 +3576,7 @@
 	employer=400112
 
 	8257.1.1 = { birth="8257.1.1"}
+	8310.1.1 = { death = yes }	
 }
 445112 = {		
 	name="Pruella"	
@@ -3557,6 +3645,7 @@
 	employer=502112
 
 	8233.1.1 = { birth="8233.1.1"}
+	8309.1.1 = { death = yes }	
 }
 502112 = {		
 	name="Andrik"	
@@ -3570,6 +3659,7 @@
 	
 	8254.1.1 = { birth="8254.1.1"}
 	8270.1.1 = { add_spouse=504112 }
+	8308.1.1 = { death = yes }	
 }
 504112 = {		
 	name="Ingrid"	
@@ -3581,6 +3671,7 @@
 	employer=502112
 
 	8250.1.1 = { birth="8250.1.1"}
+	8308.1.1 = { death = yes }	
 }
 505112 = {		
 	name="Urzen"	
@@ -3624,7 +3715,8 @@
 	mother=901112
 	
 	8259.1.1 = {birth="8259.1.1"}
-	8277.1.1 = {add_spouse = 601112}	
+	8277.1.1 = {add_spouse = 601112}
+	8312.1.1 = { death = yes }	
 }
 601112 = {		
 	name="Urriga"	
@@ -3634,6 +3726,7 @@
 	culture="ironborn"
 
 	8261.1.1 = { birth="8261.1.1"}
+	8312.1.1 = { death = yes }	
 }
 602112 = {		
 	name="Steffar"	
@@ -3689,6 +3782,7 @@
 	8255.1.1 = {birth="8255.1.1"}
 	8271.1.1 = {add_spouse = 5114}	
 	8271.1.1 = {add_trait=poor_warrior}
+	8317.1.1 = { death = yes }	
 }
 5114 = {		
 	name="Asha"
@@ -3700,7 +3794,8 @@
 	religion="drowned_god"	
 	culture="ironborn"	
 	
-	8255.1.1 = {birth="8255.1.1"}	
+	8255.1.1 = {birth="8255.1.1"}
+	8317.1.1 = { death = yes }	
 }
 ###Children###	
 1114 = {		
@@ -3770,6 +3865,7 @@
 
 	8241.1.1 = {birth="8241.1.1"}
 	8257.1.1 = { add_trait=trained_warrior}
+	8309.1.1 = { death = yes }	
 }
 40258114 = {
 	name="Asha"
@@ -3780,6 +3876,7 @@
 
 	8241.1.1 = {birth="8241.1.1"}
 	8259.1.1 = {add_spouse=30258114}
+	8309.1.1 = { death = yes }	
 }
 30268114 = {
 	name="Gyles"	# 
@@ -3894,6 +3991,7 @@
 		add_trait="blinded_age"
 		give_nickname = nick_the_blind
 	}
+	8311.1.1 = { death = yes }	
 }
 2118 = {		
 	name="Mhaegen"	
@@ -3905,7 +4003,8 @@
 	religion="drowned_god"	
 	culture="ironborn"		
 	
-	8261.1.1 = {birth="8261.1.1"}	
+	8261.1.1 = {birth="8261.1.1"}
+	8318.1.1 = { death = yes }		
 }
 ###Son###
 1118 = {		
@@ -3962,6 +4061,7 @@
 	8225.1.1 = {birth="8225.1.1"}
 	8241.1.1 = {add_trait=skilled_warrior}
 	8243.1.1 = {add_spouse=4000113}
+	8302.1.1 = { death = yes }
 }
 4000113 = {
 	name="Roelle"
@@ -3972,6 +4072,7 @@
 
 	8225.1.1 = {birth="8225.1.1"}
 	8272.1.1 = {death="8272.1.1"}
+	8302.1.1 = { death = yes }
 }
 113 = {		
 	name="Steffarion"	
@@ -3986,6 +4087,7 @@
 	8244.1.1 = {birth="8244.1.1"}	
 	8260.1.1 = {add_trait=trained_warrior}
 	8270.1.1 = {add_spouse=4001113}
+	8302.1.1 = { death = yes }
 }
 3001113 = {
 	name="Selyse"	# Cromm's daughter, not,a lord
@@ -4009,6 +4111,7 @@
 	culture="ironborn"
 
 	8243.1.1 = {birth="8243.1.1"}
+	8302.1.1 = { death = yes }
 }
 3002113 = {
 	name="Tristifer"	# Steffarion's son
@@ -4050,6 +4153,37 @@
 	8299.11.3 = {
 		employer=2107 #Euron
 	}
+	8311.1.1 = { death = yes }	
+}
+1501130 = {		
+	name="Balon"	
+	dynasty=113	
+	
+	martial = 6
+	
+	religion="drowned_god"	
+	culture="ironborn"	
+	
+	father=150113
+	
+	add_trait = tough_soldier
+	
+	8283.1.1 = {birth=yes}	
+}
+1501131 = {		
+	name="Cromm"	
+	dynasty=113	
+	
+	martial = 6
+	
+	religion="drowned_god"	
+	culture="ironborn"	
+	
+	father=1501130
+	
+	add_trait = tough_soldier
+	
+	8314.1.1 = {birth=yes}	
 }
 ####################
 ######Low Born######
@@ -4129,6 +4263,7 @@
 	8299.11.3 = {
 		employer=2107 
 	}
+	8311.1.1 = { death = yes }		
 }
 ####################
 ######Ironmaker######
@@ -4179,6 +4314,9 @@
 	8299.11.3 = {
 		employer=2107 
 		add_spouse=7107 #Asha
+	}
+	8303.1.1 = {
+		death=yes
 	}
 }
 205082092 = {
@@ -4307,6 +4445,7 @@
 
 	8255.1.1 = {birth="8255.1.1"}
 	8273.1.1 = { add_spouse=1067 }
+	8318.1.1 = { death = yes }		
 
 }
 7067 = {
@@ -4343,6 +4482,7 @@
 	
 
 	8257.1.1 = {birth="8257.1.1"}
+	8320.1.1 = { death = yes }		
 
 }
 2067 = {
@@ -4462,6 +4602,7 @@
 	
 	8263.1.1 = {birth="8263.1.1"}
 	8288.1.1 = { add_spouse=5117 }
+	8321.1.1 = { death = yes }		
 }
 5117 = {
 	name="Brella"
@@ -4472,7 +4613,8 @@
 	
 
 	8270.1.1 = {birth="8270.1.1"}
-	8294.1.1 = { employer=4117 }	
+	8294.1.1 = { employer=4117 }
+	8321.1.1 = { death = yes }		
 }
 6117 = {
 	name="Meldred"	  
@@ -4568,6 +4710,7 @@
 	8252.1.1 = {birth="8252.1.1"}
 	8268.1.1 = {add_trait=trained_warrior}
 	8270.1.1 = {add_spouse=4002115}
+	8310.1.1 = { death = yes }		
 }
 3003115 = {
 	name="Jonella"	# Balon's daughter, not a lord
@@ -4581,6 +4724,7 @@
 	mother=4000115
 
 	8255.1.1 = {birth="8255.1.1"}
+	8309.1.1 = { death = yes }		
 }
 3008115 = {
 	name="Ralf"	# Balon's son, not a lord
@@ -4780,6 +4924,7 @@
 	mother=4000108
 
 	8245.1.1 = {birth="8245.1.1"}
+	8308.1.1 = { death = yes }		
 }
 3002108 = {
 	name="Theon"	# Victarion's son, a lord
@@ -4794,6 +4939,7 @@
 	8248.1.1 = {birth="8248.1.1"}
 	8264.1.1 = {add_trait=trained_warrior}
 	8266.1.1 = {add_spouse=4002108}
+	8307.1.1 = { death = yes }		
 }
 4002108 = {
 	name="Frynne"
@@ -4906,6 +5052,7 @@
 
 	8242.1.1 = {birth="8242.1.1"}
 	8258.1.1 = {add_trait=trained_warrior}
+	8309.1.1 = { death = yes }		
 }
 4002123 = {
 	name="Falyse"
@@ -4984,6 +5131,7 @@
 	8269.1.1 = {birth="8269.1.1"}
 	8285.1.1 = {add_trait=poor_warrior}
 	8287.1.1 = {add_spouse=428174419}
+	8322.1.1 = { death = yes }		
 }
 428174419 = {
 	name="Beony"
@@ -4993,6 +5141,7 @@
 	culture="ironborn"
 
 	8269.1.1 = {birth="8269.1.1"}
+	8322.1.1 = { death = yes }		
 }
 129174419 = {
 	name="Tom"	# not a lord
@@ -5010,6 +5159,7 @@
 
 	8270.1.1 = {birth="8270.1.1"}
 	8286.1.1 = {add_trait=trained_warrior}
+	8328.1.1 = { death = yes }		
 }
 130174419 = {
 	name="Aladale"	# not a lord
@@ -5140,6 +5290,7 @@
 	8299.11.3 = {
 		employer=2107 #Euron
 	}	
+	8311.1.1 = { death = yes }	
 }
 127174421 = {
 	name="Baelor"	# not a lord
@@ -5169,6 +5320,7 @@
 	culture="ironborn"
 
 	8260.1.1 = {birth="8260.1.1"}
+	8310.1.1 = { death = yes }	
 }
 128174421 = {
 	name="Burton"	# not a lord

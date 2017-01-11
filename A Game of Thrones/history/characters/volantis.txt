@@ -1096,6 +1096,10 @@
 	mother=452174371
 
 	8279.1.1 = {birth="8279.1.1"}
+	8303.1.1 = {
+		fertility = 1.5
+		add_trait="chaste"
+	}
 }
 156174371 = {
 	name="Qavo"	# not a lord

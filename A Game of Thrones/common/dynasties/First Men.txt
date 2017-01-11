@@ -1,0 +1,46 @@
+#Vale
+881800 = {
+	name = Shell
+	culture = old_first_man
+}
+881801 = {
+	name = Brightstone
+	culture = old_first_man
+}
+#Dornish
+881802 = {
+	name = Wade
+	culture = old_first_man
+}
+881803 = {
+	name = Shell
+	culture = old_first_man
+}
+881804 = {
+	name = Holt
+	culture = old_first_man
+}
+881805 = {
+	name = Brook
+	culture = old_first_man
+}
+881806 = {
+	name = Hull
+	culture = old_first_man
+}
+881807 = {
+	name = Lake
+	culture = old_first_man
+}
+881808 = {
+	name = Brownhill
+	culture = old_first_man
+}
+881809 = {
+	name = Briar
+	culture = old_first_man
+}
+881810 = {
+	name = Evenstar
+	culture = old_first_man
+}

@@ -1,0 +1,141 @@
+#########Valyrian Steel Mod
+valyrian_steel = {
+	monthly_character_prestige = 0.25
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+	ruler_designer_cost = 15
+}
+dawn = {
+	monthly_character_prestige = 0.5
+	customizer = no
+	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+ice = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+longclaw = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+blackfyre = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+lightbringer = {
+	martial = 1
+	monthly_character_prestige = 0.5
+	
+	customizer = no
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger
+}
+brightroar = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+longclaw_snow = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+heartsbane = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+nightfall = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+darksister = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger  
+}
+ladyforlorn = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger  
+}
+redrain = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+vigilance = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger  
+}
+orphan_maker = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+#crabspincer in zz_traits
+#widowswail in zz_traits
+#strangers_mercy in zz_traits
+# house_stark = { customizer = no }
+# house_targaryen = { customizer = no}
+# house_arryn = { customizer = no }
+# house_lannister = { customizer = no}
+# house_baratheon = { customizer = no }
+# house_martell = { customizer = no }
+# house_tyrell = { customizer = no }
+# house_tully = { customizer = no }
+# house_greyjoy = { customizer = no }
+# house_manderly = { customizer = no }
+# house_florent = { customizer = no }
+# house_frey = { customizer = no }
+# house_hightower = { customizer = no }
+# house_connington = { customizer = no }
+# house_oakheart = { customizer = no }
+# house_fossoway = { customizer = no }
+# house_crakehall = { customizer = no }
+# house_clegane = { customizer = no }
+# house_redwyne = { customizer = no }
+# house_mormont = { customizer = no }
+# house_estermont = { customizer = no }
+# house_swann = { customizer = no }
+# house_blackwood = { customizer = no }
+# house_bracken = { customizer = no }
+###
+# house_cerwyn = { customizer = no }
+# house_goodbrother = { customizer = no }
+# house_harlaw = { customizer = no }
+# house_saltcliffe = { customizer = no }
+# house_mallister = { customizer = no }
+# house_mooton = { customizer = no }
+# house_vypren = { customizer = no }
+# house_whent = { customizer = no }
+# house_belmore = { customizer = no }
+# house_hunter = { customizer = no }
+# house_bar_emmon = { customizer = no }
+# house_stokeworth = { customizer = no }
+# house_brax = { customizer = no }
+# house_lydden = { customizer = no }
+# house_westerling = { customizer = no }
+# house_prester = { customizer = no }
+# house_serrett = { customizer = no }
+# house_cafferen = { customizer = no }
+# house_dondarrion = { customizer = no }
+# house_ambrose = { customizer = no }
+# house_caswell = { customizer = no }
+# house_beesbury = { customizer = no }
+# house_mullendore = { customizer = no }
+# house_webber = { customizer = no }
+# house_varner = { customizer = no }
+# house_gargalen = { customizer = no }
+# house_blackmont = { customizer = no }
+# house_qorgyle = { customizer = no }
+# house_vaith = { customizer = no }
+# house_tarly = { customizer = no }
+# house_farwynd = { customizer = no }
+house_seaworth = { customizer = no cached = yes }
+high_valyrian = { customizer = no }
+#house_blackfyre = { customizer = no }

@@ -1,0 +1,3177 @@
+#########################################################
+#
+# Landless Character Adventures for The Old Gods DLC
+# ( TOG.1200 to TOG.1499)
+#
+#
+#########################################################
+
+# Written by Henrik Fåhraeus
+
+namespace = TOG
+
+# AGOT Landless Adventurer Master Event
+character_event = {
+	id = TOG.1299
+	desc = OK
+	picture = GFX_evt_crusaders
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	hide_window = yes # Only fires for unplayable landless characters
+	
+	min_age = 16
+	max_age = 50
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		NOT = {
+			has_game_rule = {
+				name = adventurers
+				value = none
+			}
+		}
+		OR = {
+			has_dlc = "The Old Gods"
+			has_dlc = "Horse Lords"
+		}			
+		is_ruler = no
+		NOT = { # Somewhat clunky way of checking that the character does not stand to inherit any titles
+			any_heir_title = {
+				always = yes
+			}
+		}
+		
+		OR = {
+			trait = chosen_by_rhllor
+			AND = {
+				trait = dragon_rider
+				any_friend = { trait = dragon martial = 20 }
+			}	
+			has_character_flag = demon_child_non_pagan
+			AND = {
+				culture = ironborn
+				OR = {
+					is_female = no
+					trait = ambitious
+				}
+				diplomacy = 7
+				OR = {
+					martial = 9
+					prestige = 750
+					trait = master_warrior
+				}
+				OR = {
+					father_even_if_dead = { higher_tier_than = BARON }
+					mother_even_if_dead = { higher_tier_than = BARON }
+					liege = { is_close_relative = ROOT }
+				}
+			}
+			AND = { #Yi Ti Warlords
+				culture = yi_ti
+				is_female = no
+				martial = 10
+				OR = {
+					has_job_title = job_marshal
+					has_minor_title = title_commander
+				}
+				liege = { 
+					NOT = { tier = BARON }
+					capital_scope = { region = world_yi_ti }
+					crownlaw_title = { 
+						OR = {
+							has_law = centralization_0 
+							has_law = centralization_1
+						}	
+					} 
+				}
+			}
+			AND = { #Claimant
+				any_claim = {
+					has_holder = yes
+					NOT = { title = k_the_most_devout }
+					NOT = { title = d_kingsguard }
+					OR = {
+						tier = KING
+						holder_scope = { tier = PREV }
+					}
+				}
+				OR = {
+					is_female = no
+					culture_group = dornish
+					trait = ambitious								
+				}
+				diplomacy = 7
+				OR = {
+					martial = 9
+					prestige = 500
+					trait = master_warrior
+					wealth = 300
+				}
+			}
+		}
+
+		
+		is_ill = no
+		NOT = { trait = infirm }
+		NOT = { trait = content }
+		NOT = { trait = craven }
+		
+		can_press_claims_trigger = yes
+		NOT = { trait = wikid }
+		NOT = { trait = on_reaving }
+		
+		OR = {
+			NOT = { religion = nath_pagan }
+			trait = cynical
+		}
+		
+		NOT = { #Remain loyal to liege during conflict
+			liege = {
+				war = yes
+				OR = {
+					is_close_relative = ROOT
+					is_married = ROOT
+					reverse_opinion = { who = ROOT value = 50 }
+				}
+				reverse_opinion = { who = ROOT value = 5 }			
+			}
+		}
+		
+		NOT = { #Is not already planning an adventure against someone
+			any_claim = {
+				has_holder = yes
+				NOT = { title = k_the_most_devout }
+				NOT = { title = d_kingsguard }
+				OR = {
+					tier = KING
+					holder_scope = { tier = PREV }
+				}
+				holder_scope = {
+					demesne_size = 1
+					OR = {
+						independent = yes # Only do this vs independent rulers or Kings
+						tier = KING
+					}
+					OR = { #Cannot attack vassals made 'independent' via mega war
+						higher_tier_than = DUKE
+						primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+					}
+					reverse_has_opinion_modifier = { who = ROOT modifier = opinion_claimant_adventure_target }
+					NOT = { regent = { character = ROOT } }
+				}
+			}
+		}
+		
+		#NOT = { has_character_modifier = planning_claimant_adventure }
+	}
+	
+	weight_multiplier = {
+		factor = 1 #years = 100
+		
+		modifier = {
+			factor = 0.05
+			has_game_rule = {
+				name = adventurers
+				value = rare
+			}
+		}
+		modifier = {
+			factor = 2
+			culture = yi_ti
+			OR = {
+				has_job_title = job_marshal
+				has_minor_title = title_commander
+			}		
+			liege = { 
+				capital_scope = { region = world_yi_ti }
+				crownlaw_title = { has_law = centralization_0 } 
+			}			
+		}
+		modifier = {
+			factor = 2
+			any_claim = {
+				has_holder = yes
+				NOT = { title = k_the_most_devout }
+				NOT = { title = d_kingsguard }
+				OR = {
+					tier = KING
+					holder_scope = { tier = PREV }
+				}
+				holder_scope = {
+					NAND = {
+						government = nomadic_government
+						OR = {
+							clan_title = { title = PREVPREV }
+							primary_title = { title = PREVPREV }
+						}
+					}
+				}	
+			}	
+		}
+		modifier = {
+			factor = 0.33
+			has_minor_title = title_regent	
+			liege = { higher_tier_than = COUNT }
+		}
+		modifier = { #Important position
+			factor = 0.33
+			liege = { reverse_opinion = { who = ROOT value = 20 } }
+			OR = {
+				is_councillor = yes
+				is_voter = yes
+				liege = { is_married = ROOT }
+			}			
+		}
+		modifier = {
+			factor = 20
+			has_character_modifier = planning_claimant_adventure
+		}
+		modifier = {
+			factor = 2
+			trait = dragon_rider
+			any_friend = { trait = dragon martial = 60 }
+		}
+		modifier = {
+			factor = 3.5
+			trait = ambitious
+		}
+		modifier = {
+			factor = 10
+			has_character_flag = demon_child_non_pagan
+		}
+		modifier = {
+			factor = 2
+			trait = envious
+		}
+		modifier = {
+			factor = 2
+			has_character_flag = flag_denied_title
+		}
+		modifier = {
+			factor = 1.33
+			diplomacy = 12
+		}
+		modifier = {
+			factor = 1.33
+			martial = 12
+		}
+		modifier = {
+			factor = 1.33
+			diplomacy = 15
+		}
+		modifier = {
+			factor = 1.33
+			martial = 15
+		}
+		modifier = {
+			factor = 1.33
+			wealth = 300
+		}
+		modifier = {
+			factor = 1.33
+			wealth = 500
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				trait = skilled_warrior
+				trait = master_warrior
+			}	
+		}
+		modifier = {
+			factor = 2
+			trait = brave
+		}
+		modifier = {
+			factor = 1.5
+			trait = proud
+		}
+		modifier = {
+			factor = 1.5
+			trait = ruthless
+		}
+		modifier = {
+			factor = 1.5
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.33
+			trait = slothful
+		}
+		modifier = {
+			factor = 0.33
+			trait = humble
+		}
+		modifier = {
+			factor = 0.33
+			trait = kind
+		}
+	}
+	
+	immediate = {	
+		##Claimant Adventure
+		if = {
+			limit = { has_dlc = "The Old Gods" }			
+			random_claim = {
+				limit = {
+					has_holder = yes
+					NOT = { title = k_the_most_devout }
+					NOT = { title = d_kingsguard }
+					OR = {
+						tier = KING
+						holder_scope = { tier = PREV }
+					}
+					holder_scope = {
+						demesne_size = 1
+						OR = {
+							independent = yes # Only do this vs independent rulers or Kings
+							tier = KING
+						}	
+						OR = {
+							is_merchant_republic = no
+							NOT = {
+								capital_holding = {
+									de_jure_liege_or_above = PREVPREV
+								}
+							}
+						}
+						NAND = {
+							government = nomadic_government
+							OR = {
+								clan_title = { title = PREVPREV }
+								primary_title = { title = PREVPREV }
+							}
+						}
+						NOT = { culture_group = unoccupied_group } #Cannot attack a ruin
+						OR = { #To target nightswatch pretender must also be black brother
+							ROOT = { trait = nightswatch }
+							NOT = { trait = nightswatch }
+						}	
+						OR = { #Cannot attack vassals made 'independent' via mega war
+							higher_tier_than = DUKE
+							primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+						}	
+						
+						##AI Target Logic##
+						NOT = { reverse_opinion = { who = ROOT value = 40 } } #Don't target people they like
+						NAND = { #Have to dislike close family to attack them
+							reverse_opinion = { who = ROOT value = -15 } 
+							OR = {
+								is_married = ROOT
+								any_child = { character = ROOT }
+								is_child_of = ROOT
+							}
+						}
+						NAND = { #Have to not like other close relatives or be ambitious/ruthless
+							is_close_relative = ROOT
+							reverse_opinion = { who = ROOT value = 15 } 
+							ROOT = {
+								NOR = {
+									trait = ambitious
+									trait = ruthless
+								}
+							}
+						}
+						NAND = { #Some characters will not attack older siblings
+							sibling = ROOT
+							is_older_than = ROOT
+							OR = {
+								PREV = { has_law = true_cognatic_succession } 
+								AND = {
+									is_female = no
+									PREV = { 
+										OR = {
+											has_law = agnatic_succession 
+											has_law = cognatic_succession 
+										}	
+									}
+								}
+								AND = {
+									is_female = yes
+									PREV = { 
+										OR = {
+											has_law = enatic_succession
+											has_law = enatic_cognatic_succession
+										}	
+									}
+								}
+							}
+							reverse_opinion = { who = ROOT value = -39 } 
+							ROOT = {
+								OR = {
+									trait = just
+									trait = honorable
+									trait = honest
+								}
+							}
+						}
+						OR = { #If Dragon rider, ROOT has to have competitive dragon or be an idiot
+							NOT = { trait = dragon_rider } 
+							NOT = { any_friend = { trait = dragon martial = 40 } }
+							OR = {
+								ROOT = {
+									OR = {
+										trait = lunatic
+										trait = wroth
+										NOT = { learning = 3 }
+									}
+								}
+								any_friend = {
+									trait = dragon
+									ROOT = {	
+										trait = dragon_rider
+										any_friend = {
+											trait = dragon
+											NOT = { trait = maimed_dragon }
+											OR = {
+												martial = 60
+												martial = PREVPREV
+												NOT = { age_diff = { who = PREVPREV years = 30 } }
+											}
+										}
+									}
+								}
+							}	
+						}
+						PREV = { #My Spouse Is Already fighting for this title
+							NOT = { 
+								any_war = {
+									attacker = {
+										is_married = ROOT
+										reverse_opinion = { who = ROOT value = -39 }
+									}
+								}
+							}
+						}	
+						NOT = { regent = { character = ROOT } } #I am regent
+						###
+						
+						NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_claimant_adventure_target } }					
+					}
+				}
+				
+				holder_scope = {
+					reverse_opinion = {
+						who = ROOT
+						modifier = opinion_claimant_adventure_target
+					}
+					if = { #Adventurer goes somewhere else if target is a liege
+						limit = { is_vassal_or_below = ROOT }
+						ROOT = { set_character_flag = vassal_of_adventure_target }
+						random_playable_ruler = {
+							limit = {			
+								demesne_size = 1
+								OR = {
+									higher_tier_than = DUKE
+									culture_group = ROOT
+								}
+								is_within_diplo_range = ROOT
+								NOT = { same_realm = ROOT }
+								
+								NOT = { trait = nightswatch }
+								NOT = { culture_group = unoccupied_group }
+								OR = {
+									NOT = { trait = wildling }
+									ROOT = { trait = wildling }
+								}	
+								OR = {
+									NOT = { culture = old_andal }
+									higher_tier_than = DUKE
+									ROOT = { culture = old_andal }
+								}
+								OR = {
+									NOT = { culture = rhoynar }
+									higher_tier_than = DUKE
+									ROOT = { culture = rhoynar }
+								}	
+								OR = {
+									NOT = { trait = pirate }
+									ROOT = { trait = pirate }
+								}					
+								capital_scope = { port = yes }								
+							}
+							ROOT = { move_character = PREV }
+						}
+					}
+					character_event = {
+						id = TOG.1201 # Warn the target
+					}
+				}
+				ROOT = {
+					set_character_flag = planning_claimant_adventure
+					add_character_modifier = {
+						name = planning_claimant_adventure
+						hidden = yes
+						duration = -1
+					}
+					end_inaccessibility_effect = yes #removes in hiding or in_seclusion
+					# character_event = {
+						# id = TOG.1202 # Fire the attack
+						# days = 730
+					# }
+				}
+				break = yes
+			}			
+		}
+		##Yi Ti warlord goes rogue
+		if = {
+			limit = { 
+				culture = yi_ti
+				is_female = no
+				martial = 10
+				OR = {
+					has_job_title = job_marshal
+					has_minor_title = title_commander
+				}
+				liege = { 
+					NOT = { tier = BARON }
+					capital_scope = { region = world_yi_ti }
+					crownlaw_title = { 
+						OR = {
+							has_law = centralization_0 
+							has_law = centralization_1
+						}	
+					} 
+				}
+			}
+			if = {
+				limit = { liege = { tier = COUNT } }
+				liege = { liege = { ROOT = { move_character = PREV } } }
+			}
+			liege = {
+				save_event_target_as = previous_liege
+				capital_scope = {
+					save_event_target_as = liege_capital
+				}
+				random_vassal = {
+					limit = {
+						# Will not attack own allies
+						NOT = { is_allied_with = ROOT }
+						NOT = { has_non_aggression_pact_with = ROOT }
+						NOT = { reverse_opinion = { who = ROOT value = 40 } } #Don't target people they like
+						
+						NOT = { trait = nightswatch }
+						NOT = { trait = kingsguard }
+						NOT = { primary_title = { title = k_the_most_devout } }
+						NOT = { culture_group = unoccupied_group }
+						
+						higher_tier_than = BARON
+					}
+					
+					random_realm_province = {					
+						ROOT = {
+							end_inaccessibility_effect = yes #removes in hiding or in_seclusion
+							wealth = 100
+		
+							if = {
+								limit = { liege = { tier = DUKE } }
+								create_title = {
+									tier = COUNT
+									landless = yes
+									temporary = yes
+									culture = ROOT
+									name = "CLAIMANT_ADVENTURE"
+									holder = ROOT
+								}
+							}	
+							if = {
+								limit = { liege = { higher_tier_than = DUKE } }
+								create_title = {
+									tier = DUKE
+									landless = yes
+									temporary = yes
+									culture = ROOT
+									name = "CLAIMANT_ADVENTURE"
+									holder = ROOT
+								}
+							}
+							
+							set_defacto_liege = PREVPREVPREV								
+							set_character_flag = duchy_adventurer
+							set_character_flag = special_marshal
+							
+							spawn_unit = {
+								province = event_target:liege_capital
+								home = event_target:liege_capital
+								owner = THIS
+								leader = THIS
+								match_character = PREVPREVPREV
+								match_mult = 0.1
+								match_min = 500
+								match_max = 5000
+								attrition = 0.25
+								earmark = duchy_adventure
+							}
+							spawn_unit = {
+								province = event_target:liege_capital
+								home = event_target:liege_capital
+								owner = THIS
+								match_character = PREVPREVPREV
+								match_mult = 0.1
+								match_min = 500
+								match_max = 5000
+								attrition = 0.25
+								earmark = duchy_adventure
+							}
+							spawn_unit = {
+								province = event_target:liege_capital
+								home = event_target:liege_capital
+								owner = THIS
+								match_character = PREVPREVPREV
+								match_mult = 0.1
+								match_min = 500
+								match_max = 5000
+								attrition = 0.25
+								earmark = duchy_adventure
+							}
+							war = {
+								target = PREVPREV
+								casus_belli = duchy_adventure
+								thirdparty_title = PREV
+								tier = DUKE
+							}
+							# Create some decent commander characters
+							create_random_soldier = {
+								random_traits = yes
+								dynasty = none
+								religion = event_target:liege_capital
+								culture = event_target:liege_capital
+								female = no
+								age = 30
+								trait = trained_warrior
+							}
+							create_random_soldier = {
+								random_traits = yes
+								dynasty = none
+								religion = event_target:liege_capital
+								culture = event_target:liege_capital
+								female = no
+								age = 25
+								trait = trained_warrior
+							}
+							character_event = { id = TOG.1378 days = 1 } #Acquire companions
+						}
+						PREV = {
+							character_event = {
+								id = essos.107
+							}
+						}
+					}
+					break = yes
+				}
+			}	
+		}	
+		## An ambitious character with no inheritance begins to plan an adventure for a foreign title (looter version)
+		if = {
+			limit = { 
+				has_dlc = "Horse Lords"
+				culture = ironborn
+				# OR = {
+					# AND = {
+						# any_liege = {
+							# government = nomadic_government
+						# }
+						# culture_group = altaic
+					# }
+					# religion = norse_pagan
+					# religion = norse_pagan_reformed
+				# }
+				#is_allowed_to_loot = yes
+				OR = {
+					trait = chosen_by_rhllor
+					trait = dragon_rider
+					has_character_flag = demon_child_non_pagan
+					AND = {
+						diplomacy = 7
+						OR = {
+							martial = 9
+							prestige = 750
+							trait = master_warrior
+						}
+						OR = {
+							is_female = no
+							trait = ambitious
+						}
+					}
+				}
+				OR = {
+					father_even_if_dead = { higher_tier_than = BARON }
+					mother_even_if_dead = { higher_tier_than = BARON }
+					liege = { is_close_relative = ROOT }
+				}
+				#Loyal wife
+				NAND = {
+					is_female = yes
+					NOT = { trait = lunatic }
+					OR = {
+						NOT = { trait = ambitious }
+						trait = honorable
+					}
+					liege = { 
+						is_married = ROOT
+						reverse_opinion = { who = ROOT value = 20 }
+					}	
+				}
+			}
+			end_inaccessibility_effect = yes #removes in hiding or in_seclusion
+			add_trait = adventurer
+			liege = {
+				save_event_target_as = previous_liege
+				character_event = {
+					id = HL.101
+					days = 1
+				}
+				capital_scope = {
+					save_event_target_as = target_province
+					ROOT = {					
+						create_title = {
+							tier = DUKE
+							landless = yes
+							adventurer = yes
+							culture = ROOT
+							name = "CLAIMANT_ADVENTURE"
+							holder = ROOT
+						}
+						set_defacto_liege = THIS
+						set_character_flag = raiding_adventurer
+						set_character_flag = special_marshal
+						if = {
+							limit = {
+								event_target:previous_liege = {
+									government = nomadic_government
+								}
+							}
+							ROOT = { set_government_type = tribal_government }
+							character_event = { id = HL.105 } #create troops steppe
+						}
+						if = {
+							limit = {
+								event_target:previous_liege = {
+									NOT = { government = nomadic_government }
+								}
+							}
+							character_event = { id = HL.102 } #create troops vikings
+						}
+						if = { #Failsafe
+							limit = {
+								NOT = { event_target:previous_liege = { always = yes } }
+							}
+							character_event = { id = HL.102 } #create troops vikings
+						}
+						character_event = { id = TOG.1378 days = 1 } #Acquire companions
+						create_random_soldier = {
+							random_traits = yes
+							dynasty = none
+							religion = ROOT
+							culture = ROOT
+							female = no
+							age = 30
+						}
+						new_character = {
+							random_list = {
+								3 = { add_trait = master_warrior }
+								30 = { add_trait = skilled_warrior }
+								52 = { add_trait = trained_warrior }
+								15 = { add_trait = poor_warrior }
+							}
+							remove_trait = inbred
+							remove_trait = imbecile
+							remove_trait = slow
+							remove_trait = infirm
+							remove_trait = incapable
+							remove_trait = dwarf
+							remove_trait = hunchback
+							remove_trait = clubfooted
+							remove_trait = weak
+							remove_trait = leper
+							remove_trait = possessed
+							remove_trait = ill
+							remove_trait = pneumonic
+							remove_trait = maimed
+						}
+						create_random_soldier = {
+							random_traits = yes
+							dynasty = none
+							religion = ROOT
+							culture = ROOT
+							female = no
+							age = 25
+						}
+						new_character = {
+							random_list = {
+								3 = { add_trait = master_warrior }
+								30 = { add_trait = skilled_warrior }
+								52 = { add_trait = trained_warrior }
+								15 = { add_trait = poor_warrior }
+							}
+							remove_trait = inbred
+							remove_trait = imbecile
+							remove_trait = slow
+							remove_trait = infirm
+							remove_trait = incapable
+							remove_trait = dwarf
+							remove_trait = hunchback
+							remove_trait = clubfooted
+							remove_trait = weak
+							remove_trait = leper
+							remove_trait = possessed
+							remove_trait = ill
+							remove_trait = pneumonic
+							remove_trait = maimed
+						}
+						if  = {
+							limit = {
+								is_seafarer = yes
+							}
+							
+							# Create a fleet, just to be sure
+							spawn_fleet = {
+								province = closest # closest sea zone
+								owner = ROOT
+								disband_on_peace = yes
+								troops =
+								{
+									galleys = { 110 110 }
+								}
+							}
+						}
+					}
+				}
+			}
+			character_event = { id = HL.110 days = 1095 } # Ping to see if he's ready to settle, repeating every 3 years.
+			break = yes
+		}	
+		## An ambitious character with no inheritance begins to plan an adventure for a foreign title
+		if = {
+			limit = { 
+				has_dlc = "The Old Gods" 
+				OR = {
+					AND = {
+						diplomacy = 7
+						OR = {
+							martial = 9
+							prestige = 750
+							trait = master_warrior
+						}
+						OR = {
+							is_female = no
+							trait = ambitious
+						}
+						culture = ironborn
+					}	
+					AND = {
+						diplomacy = 7
+						trait = dragon_rider
+						any_friend = { trait = dragon martial = 20 }
+					}	
+					trait = chosen_by_rhllor
+					has_character_flag = demon_child_non_pagan
+				}
+				OR = {
+					trait = dragon_rider
+					trait = chosen_by_rhllor
+					father_even_if_dead = { higher_tier_than = BARON }
+					mother_even_if_dead = { higher_tier_than = BARON }
+					liege = { is_close_relative = ROOT }
+				}
+				
+				#Loyal wife
+				NAND = {
+					is_female = yes
+					NOT = { trait = lunatic }
+					OR = {
+						NOT = { trait = ambitious }
+						trait = honorable
+					}
+					liege = { 
+						is_married = ROOT
+						reverse_opinion = { who = ROOT value = 20 }
+					}	
+				}
+			}
+			random_independent_ruler = {
+				limit = {
+					# Will not attack own allies
+					NOT = { is_allied_with = ROOT }
+					NOT = { has_non_aggression_pact_with = ROOT }
+					NOT = { reverse_opinion = { who = ROOT value = 40 } } #Don't target people they like
+					
+					NOT = { trait = nightswatch }
+					NOT = { trait = kingsguard }
+					NOT = { primary_title = { title = k_the_most_devout } }
+					NOT = { culture_group = unoccupied_group }
+					
+					is_landed = yes
+					NOT = { primary_title = { controls_religion = yes } }
+					independent = yes
+					
+					OR = { #Cannot attack vassals made 'independent' via mega war
+						tier = EMPEROR
+						primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+					}
+					NOT = { is_vassal_or_below = ROOT }
+					any_realm_province = {
+						OR = {
+							AND = {
+								port = yes
+								ROOT = { 
+									OR = {
+										trait = dragon_rider
+										culture = ironborn 
+									}	
+								}
+								NOT = {
+									distance = {
+										who = ROOT
+										value = 900
+									}
+								}
+								NOT = { #Rhoyne is not practical
+									OR = {
+										region = world_qohor
+										region = world_norvos
+										region = world_rhoynar
+									}
+								}
+							}
+							any_neighbor_province = { owner = { same_realm = ROOT } }
+						}
+					}
+					OR = { #If Dragon rider, ROOT has to have competitive dragon or be an idiot
+						NOT = { trait = dragon_rider } 
+						NOT = { any_friend = { trait = dragon martial = 40 } }
+						OR = {
+							ROOT = {
+								OR = {
+									trait = lunatic
+									trait = wroth
+									NOT = { learning = 3 }
+								}
+							}
+							any_friend = {
+								trait = dragon
+								ROOT = {	
+									trait = dragon_rider
+									any_friend = {
+										trait = dragon
+										NOT = { trait = maimed_dragon }
+										OR = {
+											martial = 60
+											martial = PREVPREV
+											NOT = { age_diff = { who = PREVPREV years = 30 } }
+										}
+									}
+								}
+							}
+						}	
+					}
+				}
+				
+				random_realm_province = {
+					limit = {
+						OR = {
+							AND = {
+								port = yes
+								ROOT = { 
+									OR = {
+										trait = dragon_rider
+										culture = ironborn 
+									}	
+								}
+								NOT = {
+									distance = {
+										who = ROOT
+										value = 900
+									}
+								}
+								NOT = { #Rhoyne is not practical
+									OR = {
+										region = world_qohor
+										region = world_norvos
+										region = world_rhoynar
+									}
+								}
+							}
+							any_neighbor_province = { owner = { same_realm = ROOT } }
+						}
+					}
+					
+					ROOT = {
+						opinion = {
+							who = PREVPREV
+							years = 3
+							modifier = opinion_duchy_adventure_target
+						}
+						add_character_modifier = {
+							name = planning_duchy_adventure
+							hidden = yes
+							days = 730
+						}
+						end_inaccessibility_effect = yes #removes in hiding or in_seclusion
+						character_event = {
+							id = TOG.1212 # Fire the attack
+							days = 730
+						}
+					}
+					PREV = {
+						character_event = {
+							id = TOG.1211 # Warn the target
+						}
+					}
+				}
+				break = yes
+			}			
+		}	
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+# # An ambitious landless claimant begins to plan an adventure for the title #MERGED WITH AGOT ADVENTURE EVENT
+# character_event = {
+	# id = TOG.1200
+	
+	# option = {
+		# name = OK
+	# }
+# }
+
+character_event = {
+	id = TOG.1201
+	desc = EVTDESC_TOG_1201
+	picture = GFX_evt_crusaders
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		opinion = {
+			who = FROM
+			modifier = opinion_targeted_by_adventurer
+			months = 24
+		}
+		hidden_tooltip = { #Ask various ruler for funds
+			FROM = { #ask liege first
+				liege = {
+					if = {
+						limit = {
+							NOT = { character = ROOT }
+							demesne_size = 1
+							NOT = { trait = kingsguard }
+							NOT = { trait = archmaester }
+							NOT = { culture_group = unoccupied_group }
+						}
+						letter_event = { id = TOG.1275 days = 15 }
+					}
+				}	
+			}
+			any_playable_ruler = { #Relatives and fellow vassals
+				limit = {
+					NOT = { character = ROOT }
+					NOT = { is_liege_of = FROM }
+					demesne_size = 1
+					NOT = { trait = kingsguard }
+					NOT = { trait = archmaester }
+					OR = {
+						is_close_relative = FROM
+						any_spouse = { is_close_relative = FROM }
+						is_married = FROM
+						any_friend = { character = FROM }
+						AND = {
+							tier = FROM
+							same_liege = FROM
+						}
+					}
+					is_within_diplo_range = FROM
+				}
+				letter_event = { id = TOG.1275 days = 90 random = 60 }
+			}
+			FROM = { #Unlanded relatives
+				any_dynasty_member = {
+					limit = {
+						NOT = { character = PREV }
+						is_ruler = no
+						NOT = { trait = kingsguard }
+						NOT = { trait = archmaester }
+						is_close_relative = PREV
+						is_within_diplo_range = PREV
+						wealth = 10
+						NOT = { has_character_modifier = planning_claimant_adventure }
+					}
+					letter_event = { id = TOG.1275 days = 80 random = 50 }
+				}
+			}	
+			any_independent_ruler = { #Nearby independent rulers
+				limit = {
+					NOT = { character = ROOT }
+					NOT = { is_liege_of = FROM }
+					demesne_size = 1
+					NOT = { trait = kingsguard }
+					NOT = { trait = archmaester }
+					NOT = { culture_group = unoccupied_group }
+					OR = {
+						ROOT = { trait = wildling }
+						NOT = { trait = wildling }
+					}
+					OR = {
+						ROOT = { trait = pirate }
+						NOT = { trait = pirate }
+					}					
+					NOT = {
+						distance = {
+							who = FROM
+							value = 600
+						}
+					}
+					NOT = {
+						OR = {
+							is_close_relative = FROM
+							any_spouse = { is_close_relative = FROM }
+							is_married = FROM
+							any_friend = { character = FROM }
+							AND = {
+								tier = FROM
+								same_liege = FROM
+							}
+						}
+					}	
+				}
+				letter_event = { id = TOG.1275 days = 85 random = 55 }
+			}		
+		}
+	}
+		
+	option = {
+		name = "EVTOPTA_TOG_1201"
+	}
+}
+#Adventurer asks for funding
+letter_event = {
+	id = TOG.1275
+	desc = EVTDESC_TOG_1275
+
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	trigger = { 
+		FROMFROM = { 
+			is_alive = yes 
+			war = no
+			prisoner = no
+			NOT = { trait = incapable }
+		} 
+		FROM = { is_ruler = yes }
+		NOT = { #I'm not going for the title myself
+			FROM = {
+				primary_title = {
+					any_war = {
+						attacker = { character = ROOT }
+					}
+				}
+			}
+		}
+	}
+		
+	option = {
+		name = "EVTOPTA_TOG_1275" #Yes
+		ai_chance = {
+			factor = 35				
+			modifier = {
+				factor = 10
+				is_friend = FROMFROM
+			}
+			modifier = {
+				factor = 0
+				is_friend = FROM
+			}		
+			modifier = {
+				factor = 0
+				is_rival = FROMFROM
+			}
+			modifier = {
+				factor = 10		
+				is_rival = FROM
+			}	
+			modifier = {
+				factor = 1.5
+				trait = charitable
+			}
+			modifier = {
+				factor = 1.5
+				trait = deceitful
+			}
+			modifier = {
+				factor = 1.5
+				trait = ruthless
+			}			
+			modifier = {
+				factor = 5	
+				OR = {				
+					is_married = FROMFROM
+					any_child = { character = FROMFROM }
+					father = { character = FROMFROM }
+					mother = { character = FROMFROM }
+					any_child = { any_child = { character = FROMFROM } } #grandchild
+				}
+			}
+			modifier = { #Alliance
+				factor = 3		
+				OR = {
+					is_allied_with = FROMFROM
+					has_non_aggression_pact_with = FROMFROM						
+				}
+			}	
+			modifier = {
+				factor = 1.5
+				religion = FROMFROM
+			}	
+			modifier = {
+				factor = 1.5
+				culture_group = FROMFROM
+			}	
+			modifier = {
+				factor = 1.5
+				NOT = { religion = FROM }
+			}	
+			modifier = {
+				factor = 1.5
+				NOT = { culture_group = FROM }
+			}			
+			modifier = {
+				factor = 1.5
+				opinion = { who = FROMFROM value = 19 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = FROMFROM value = 39 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = FROMFROM value = 59 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = FROMFROM value = 79 }
+			}
+			modifier = {
+				factor = 2
+				opinion = { who = FROMFROM value = 99 }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { opinion = { who = FROM value = -19 } }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { opinion = { who = FROM value = -39 } }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { opinion = { who = FROM value = -59 } }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { opinion = { who = FROM value = -79 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = FROM value = -99 } }
+			}
+			modifier = {
+				factor = 1.5
+				FROMFROM = { diplomacy = 12 }
+			}
+			modifier = {
+				factor = 1.5
+				FROMFROM = { diplomacy = 15 }
+			}
+			modifier = {
+				factor = 1.5
+				FROMFROM = { diplomacy = 18 }
+			}
+		}
+		if = {
+			limit = { is_ruler = yes }
+			if = {
+				limit = {
+					NOT = { monthly_income = 2.5 }
+					NOT = { wealth = 80 }	
+				}
+				wealth = -10
+				FROMFROM = { wealth = 10 }			
+			}
+			if = {
+				limit = {
+					OR = {
+						monthly_income = 2.5
+						wealth = 80
+					}	
+					NOT = { monthly_income = 5 }
+					NOT = { wealth = 160 }
+				}
+				wealth = -20
+				FROMFROM = { wealth = 20 }				
+			}
+			if = {
+				limit = {
+					OR = {
+						monthly_income = 5
+						wealth = 160
+					}
+					NOT = { monthly_income = 10 }
+					NOT = { wealth = 240 }
+				}
+				wealth = -40
+				FROMFROM = { wealth = 40 }				
+			}
+			if = {
+				limit = {
+					OR = {
+						monthly_income = 10
+						wealth = 240
+					}
+					NOT = { monthly_income = 15 }
+					NOT = { wealth = 320 }
+				}
+				wealth = -60
+				FROMFROM = { wealth = 60 }				
+			}
+			if = {
+				limit = {
+					OR = {
+						monthly_income = 15
+						wealth = 320
+					}
+					NOT = { monthly_income = 20 }
+					NOT = { wealth = 400 }
+				}
+				wealth = -80
+				FROMFROM = { wealth = 80 }				
+			}
+			if = {
+				limit = {
+					OR = {
+						monthly_income = 20
+						wealth = 400
+					}
+					NOT = { monthly_income = 25 }
+					NOT = { wealth = 500 }
+				}
+				wealth = -100
+				FROMFROM = { wealth = 100 }				
+			}
+			if = {
+				limit = { 
+					OR = {
+						monthly_income = 25
+						wealth = 500
+					}
+				}
+				wealth = -125
+				FROMFROM = { wealth = 125 }				
+			}
+		}
+		if = {
+			limit = { is_ruler = no }
+			if = {
+				limit = {
+					NOT = { wealth = 40 }
+				}
+				wealth = -10
+				FROMFROM = { wealth = 10 }			
+			}
+			if = {
+				limit = {
+					wealth = 40
+					NOT = { wealth = 80 }
+				}
+				wealth = -20
+				FROMFROM = { wealth = 20 }				
+			}
+			if = {
+				limit = {
+					wealth = 80
+					NOT = { wealth = 120 }
+				}
+				wealth = -40
+				FROMFROM = { wealth = 40 }				
+			}
+			if = {
+				limit = {
+					wealth = 120
+					NOT = { wealth = 160 }
+				}
+				wealth = -60
+				FROMFROM = { wealth = 60 }				
+			}
+			if = {
+				limit = {
+					wealth = 160
+					NOT = { wealth = 200 }
+				}
+				wealth = -80
+				FROMFROM = { wealth = 80 }				
+			}
+			if = {
+				limit = {
+					wealth = 200
+					NOT = { wealth = 250 }
+				}
+				wealth = -100
+				FROMFROM = { wealth = 100 }				
+			}
+			if = {
+				limit = { wealth = 250 }
+				wealth = -125
+				FROMFROM = { wealth = 125 }				
+			}
+		}	
+		reverse_opinion = {
+			who = FROMFROM
+			modifier = opinion_backed_adventure
+		}
+		reverse_opinion = {
+			modifier = in_non_aggression_pact
+			years = 5
+			who = FROMFROM
+		}
+		hidden_tooltip = {		
+			opinion = {
+				modifier = in_non_aggression_pact
+				years = 5
+				who = FROMFROM
+			}
+		}	
+		FROMFROM = { #If adventurer's liege is not backing them or ROOT is higher tier move adventurer to ROOT
+			if = { 
+				limit = {
+					ROOT = { 
+						is_ruler = yes
+						is_nomadic = no
+					}
+					liege = {
+						NOT = { character = ROOT }
+						OR = {
+							NOT = { reverse_has_opinion_modifier = { who = PREV modifier = opinion_backed_adventure } }
+							ROOT = { higher_tier_than = PREV }
+						}	
+					}
+				}
+				any_courtier = { #Move Family
+					limit = {
+						dynasty = PREV
+						NOT = { character = PREV }
+						is_ruler = no
+						OR = {
+							liege = { 
+								NOT = { 
+									OR = {
+										dynasty = PREV 
+										spouse = { character = PREVPREV }
+									}	
+								} 
+							}		
+							is_child_of = PREV
+							father = { is_child_of = PREVPREV }
+							mother = { is_child_of = PREVPREV }
+						}
+						NOT = { has_character_modifier = planning_claimant_adventure }
+					}
+					move_character = ROOT
+				}
+				move_character = ROOT
+			}
+		}	
+	}
+	option = {
+		name = "EVTOPTB_TOG_1275" #No
+		ai_chance = {
+			factor = 65
+			modifier = {
+				factor = 1.5
+				NOT = { wealth = 0 }
+			}	
+			modifier = {
+				factor = 1.5
+				trait = greedy
+			}
+			modifier = {
+				factor = 1.5
+				trait = honest
+			}
+			modifier = {
+				factor = 1.5
+				trait = honorable
+			}
+			modifier = {
+				factor = 5	
+				OR = {				
+					is_married = FROM
+					any_child = { character = FROM }
+					father = { character = FROM }
+					mother = { character = FROM }
+					any_child = { any_child = { character = FROM } } #grandchild
+				}
+			}
+			modifier = { #Alliance
+				factor = 3		
+				OR = {
+					is_allied_with = FROM
+					has_non_aggression_pact_with = FROM					
+				}
+			}		
+			modifier = {
+				factor = 1.5
+				religion = FROM
+			}	
+			modifier = {
+				factor = 1.5
+				culture_group = FROM
+			}	
+			modifier = {
+				factor = 1.5
+				NOT = { religion = FROMFROM }
+			}	
+			modifier = {
+				factor = 1.5
+				NOT = { culture_group = FROMFROM }
+			}			
+			modifier = {
+				factor = 1.5
+				opinion = { who = FROM value = 19 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = FROM value = 39 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = FROM value = 59 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = FROM value = 79 }
+			}
+			modifier = {
+				factor = 2.5
+				opinion = { who = FROM value = 99 }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { opinion = { who = FROMFROM value = -19 } }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { opinion = { who = FROMFROM value = -39 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = FROMFROM value = -59 } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { opinion = { who = FROMFROM value = -79 } }
+			}
+			modifier = {
+				factor = 2.5
+				NOT = { opinion = { who = FROMFROM value = -99 } }
+			}
+		}
+	}	
+}	
+
+# An ambitious landless claimant starts an adventure for the title
+character_event = {
+	id = TOG.1202
+	desc = OK
+	picture = GFX_evt_crusaders
+	border = GFX_event_normal_frame_war
+	
+	hide_window = yes # Only fires for unplayable landless characters
+	is_triggered_only = yes
+	
+	immediate = {
+		
+		#wealth = 500
+		
+		#Check can still actually target someone
+		if = {
+			limit = {
+				NAND = {
+					can_press_claims_trigger = yes	
+					any_claim = {
+						has_holder = yes
+						NOT = { title = k_the_most_devout }
+						NOT = { title = d_kingsguard }
+						OR = {
+							tier = KING
+							holder_scope = { tier = PREV }
+						}
+						holder_scope = {
+							reverse_has_opinion_modifier = {
+								who = ROOT
+								modifier = opinion_claimant_adventure_target
+							}
+							
+							demesne_size = 1
+							OR = {
+								independent = yes # Only do this vs independent rulers or Kings
+								tier = KING
+							}
+							OR = {
+								is_merchant_republic = no
+								NOT = {
+									capital_holding = {
+										de_jure_liege_or_above = PREVPREV
+									}
+								}
+							}
+							NAND = {
+								government = nomadic_government
+								OR = {
+									clan_title = { title = PREVPREV }
+									primary_title = { title = PREVPREV }
+								}
+							}
+							NOT = { culture_group = unoccupied_group } #Cannot attack a ruin
+							OR = { #To target nightswatch pretender must also be black brother
+								ROOT = { trait = nightswatch }
+								NOT = { trait = nightswatch }
+							}	
+							OR = { #Cannot attack vassals made 'independent' via mega war
+								higher_tier_than = DUKE
+								primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+							}	
+						}
+					}
+				}	
+			}
+			remove_character_modifier = planning_claimant_adventure
+			clr_character_flag = TOG.1202
+			break = yes
+		}
+		
+		liege = {
+			save_event_target_as = previous_liege
+			character_event = {
+				id = TOG.1203
+				days = 1
+			}
+		}
+		
+		any_courtier = { #Move Family
+			limit = {
+				dynasty = ROOT
+				NOT = { character = ROOT }
+				is_ruler = no
+				OR = {
+					liege = { 
+						NOT = { 
+							OR = {
+								dynasty = PREV 
+								spouse = { character = PREVPREV }
+							}	
+						} 
+					}		
+					is_child_of = ROOT
+					father = { is_child_of = ROOT }
+					mother = { is_child_of = ROOT }
+				}
+				NOT = { father = { is_liege_of = PREV } }
+				NOT = { mother = { is_liege_of = PREV } }
+				NOT = { has_character_modifier = planning_claimant_adventure }
+			}
+			set_character_flag = move_me
+		}
+		
+		if = { #If in an off-map location move them on-map
+			limit = {
+				NOT = { location = { always = yes } }
+			}		
+			random_playable_ruler = {
+				limit = {			
+					demesne_size = 1
+					OR = {
+						culture_group = ROOT
+						culture_group = free_cities #central location
+					}
+					capital_scope = { port = yes }
+					NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_claimant_adventure_target } }
+					NOT = { any_liege = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_claimant_adventure_target } } }
+					
+					NOT = { trait = nightswatch }
+					NOT = { culture_group = unoccupied_group }
+					OR = {
+						NOT = { trait = wildling }
+						ROOT = { trait = wildling }
+					}	
+					OR = {
+						NOT = { culture = old_andal }
+						higher_tier_than = DUKE
+						ROOT = { culture = old_andal }
+					}
+					OR = {
+						NOT = { culture = rhoynar }
+						higher_tier_than = DUKE
+						ROOT = { culture = rhoynar }
+					}	
+					OR = {
+						NOT = { trait = pirate }
+						ROOT = { trait = pirate }
+					}
+					OR = {
+						NOT = { is_nomadic = yes }
+						ROOT = { is_nomadic = yes }
+					}
+				}
+				ROOT = { move_character = PREV }
+			}		
+		}
+		
+		liege = {
+			capital_scope = {
+				ROOT = {
+					set_defacto_liege = ROOT
+					create_title = {
+						tier = DUKE
+						landless = yes
+						temporary = yes
+						culture = ROOT
+						name = "CLAIMANT_ADVENTURE"
+						holder = ROOT
+					}
+					set_character_flag = special_marshal
+					random_claim = {
+						limit = {
+							has_holder = yes
+							NOT = { title = k_the_most_devout }
+							NOT = { title = d_kingsguard }
+							OR = {
+								tier = KING
+								holder_scope = { tier = PREV }
+							}
+							holder_scope = {
+								reverse_has_opinion_modifier = {
+									who = ROOT
+									modifier = opinion_claimant_adventure_target
+								}
+								
+								demesne_size = 1
+								OR = {
+									independent = yes # Only do this vs independent rulers or Kings
+									tier = KING
+								}
+								OR = {
+									is_merchant_republic = no
+									NOT = {
+										capital_holding = {
+											de_jure_liege_or_above = PREVPREV
+										}
+									}
+								}
+								NAND = {
+									government = nomadic_government
+									OR = {
+										clan_title = { title = PREVPREV }
+										primary_title = { title = PREVPREV }
+									}
+								}
+								NOT = { culture_group = unoccupied_group } #Cannot attack a ruin
+								OR = { #To target nightswatch pretender must also be black brother
+									ROOT = { trait = nightswatch }
+									NOT = { trait = nightswatch }
+								}	
+								OR = { #Cannot attack vassals made 'independent' via mega war
+									higher_tier_than = DUKE
+									primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+								}
+							}
+						}
+						holder_scope = {
+							ROOT = {
+								set_character_flag = claimant_adventurer
+								character_event = { id = TOG.1378 days = 1 } #Acquire companions
+								#Base troops
+								random_list = {
+									34 = {
+										spawn_unit = {
+											province = PREVPREVPREVPREV
+											home = PREVPREVPREVPREV
+											owner = THIS
+											match_character = PREV
+											match_mult = 0.1
+											match_min = 100
+											match_max = 3400
+											attrition = 0.25
+											earmark = claimant_adventure
+										}
+										spawn_unit = {
+											province = PREVPREVPREVPREV
+											home = PREVPREVPREVPREV
+											owner = THIS
+											match_character = PREV
+											match_mult = 0.1
+											match_min = 100
+											match_max = 3400
+											attrition = 0.25
+											earmark = claimant_adventure
+										}
+										spawn_unit = {
+											province = PREVPREVPREVPREV
+											home = PREVPREVPREVPREV
+											owner = THIS
+											match_character = PREV
+											match_mult = 0.1
+											match_min = 100
+											match_max = 3400
+											attrition = 0.25
+											earmark = claimant_adventure
+										}
+									}
+									33 = {
+										spawn_unit = {
+											province = PREVPREVPREVPREV
+											home = PREVPREVPREVPREV
+											owner = THIS
+											match_character = PREV
+											match_mult = 0.066
+											match_min = 100
+											match_max = 3400
+											attrition = 0.25
+											earmark = claimant_adventure
+										}
+										spawn_unit = {
+											province = PREVPREVPREVPREV
+											home = PREVPREVPREVPREV
+											owner = THIS
+											match_character = PREV
+											match_mult = 0.066
+											match_min = 100
+											match_max = 3400
+											attrition = 0.25
+											earmark = claimant_adventure
+										}
+										spawn_unit = {
+											province = PREVPREVPREVPREV
+											home = PREVPREVPREVPREV
+											owner = THIS
+											match_character = PREV
+											match_mult = 0.066
+											match_min = 100
+											match_max = 3400
+											attrition = 0.25
+											earmark = claimant_adventure
+										}
+									}
+									33 = {
+										spawn_unit = {
+											province = PREVPREVPREVPREV
+											home = PREVPREVPREVPREV
+											owner = THIS
+											leader = THIS
+											match_character = PREV
+											match_mult = 0.05
+											match_min = 100
+											match_max = 3400
+											attrition = 0.25
+											earmark = claimant_adventure
+										}
+										spawn_unit = {
+											province = PREVPREVPREVPREV
+											home = PREVPREVPREVPREV
+											owner = THIS
+											match_character = PREV
+											match_mult = 0.05
+											match_min = 100
+											match_max = 3400
+											attrition = 0.25
+											earmark = claimant_adventure
+										}
+										spawn_unit = {
+											province = PREVPREVPREVPREV
+											home = PREVPREVPREVPREV
+											owner = THIS
+											match_character = PREV
+											match_mult = 0.05
+											match_min = 100
+											match_max = 3400
+											attrition = 0.25
+											earmark = claimant_adventure
+										}
+									}
+								}
+								#Troops bought with wealth (max 1000)
+								if = {
+									limit = { wealth = 1000 }
+									wealth = -50
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { wealth = 950 }
+									wealth = -50
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { wealth = 900 }
+									wealth = -50
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { wealth = 850 }
+									wealth = -50
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { wealth = 800 }
+									wealth = -50
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { wealth = 750 }
+									wealth = -50
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { wealth = 700 }
+									wealth = -50
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { wealth = 650 }
+									wealth = -50
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { wealth = 600 }
+									wealth = -50
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { wealth = 550 }
+									wealth = -50
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { wealth = 500 }
+									wealth = -50
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { wealth = 450 }
+									wealth = -50
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { wealth = 400 }
+									wealth = -50
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { wealth = 350 }
+									wealth = -50
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { wealth = 300 }
+									wealth = -50
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { wealth = 250 }
+									wealth = -50
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { wealth = 200 }
+									wealth = -50
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { wealth = 150 }
+									wealth = -50
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { wealth = 100 }
+									wealth = -50
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { wealth = 50 }
+									wealth = -50
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								#Respect/charisma troops
+								if = {
+									limit = { diplomacy = 12 }
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { diplomacy = 14 }
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { diplomacy = 16 }
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { diplomacy = 18 }
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { diplomacy = 20 }
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.03
+										match_min = 100
+										match_max = 1700
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { 
+										OR = {
+											trait = dragon_rider
+											trait = chosen_by_rhllor
+										}
+									}
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.12
+										match_min = 100
+										match_max = 6800
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+								if = {
+									limit = { 
+										diplomacy = 11
+										martial = 9
+										OR = {
+											trait = genius
+											trait = master_warrior
+											trait = authoritative
+											trait = inspiring_leader
+											trait = brilliant_strategist
+										}
+									}
+									spawn_unit = {
+										province = PREVPREVPREVPREV
+										home = PREVPREVPREVPREV
+										owner = THIS
+										match_character = PREV
+										match_mult = 0.12
+										match_min = 100
+										match_max = 6800
+										attrition = 0.25
+										earmark = claimant_adventure
+									}
+								}
+							}
+						}		
+					}
+				}
+			}
+		}
+		# I no longer have a valid claim on the target
+		if = {
+			limit = {
+				NOT = { has_character_flag = claimant_adventurer }
+			}
+			break = yes
+		}
+		
+		# Create some decent commander characters
+		if = {
+			limit = { NOT = { culture = high_valyrian } }
+			create_random_soldier = {
+				random_traits = yes
+				dynasty = none
+				religion = ROOT
+				culture = ROOT
+				female = no
+				age = 30
+				trait = trained_warrior
+			}
+			create_random_soldier = {
+				random_traits = yes
+				dynasty = none
+				religion = ROOT
+				culture = ROOT
+				female = no
+				age = 25
+				trait = trained_warrior
+			}
+			create_random_soldier = {
+				random_traits = yes
+				dynasty = none
+				religion = ROOT
+				culture = ROOT
+				female = no
+				age = 33
+				trait = trained_warrior
+			}
+			create_random_soldier = {
+				random_traits = yes
+				dynasty = none
+				religion = ROOT
+				culture = ROOT
+				female = no
+				age = 29
+				trait = trained_warrior
+			}
+		}	
+		if = {
+			limit = { culture = high_valyrian } 
+			create_random_soldier = {
+				random_traits = yes
+				dynasty = none
+				religion = ROOT
+				culture = random
+				female = no
+				age = 30
+				trait = trained_warrior
+			}
+			create_random_soldier = {
+				random_traits = yes
+				dynasty = none
+				religion = ROOT
+				culture = random
+				female = no
+				age = 25
+				trait = trained_warrior
+			}
+			create_random_soldier = {
+				random_traits = yes
+				dynasty = none
+				religion = ROOT
+				culture = random
+				female = no
+				age = 33
+				trait = trained_warrior
+			}
+			create_random_soldier = {
+				random_traits = yes
+				dynasty = none
+				religion = ROOT
+				culture = random
+				female = no
+				age = 29
+				trait = trained_warrior
+			}
+		}	
+		
+		#Move Family
+		any_dynasty_member = { 
+			limit = {
+				is_ruler = no
+				has_character_flag = move_me
+				NOT = { spouse = { is_ruler = yes } }
+			}
+			clr_character_flag = move_me
+			move_character = ROOT
+		}
+		
+		# Create a fleet, just to be sure
+		spawn_fleet = {
+			province = closest # closest sea zone
+			owner = ROOT
+			disband_on_peace = yes
+			troops =
+			{
+				galleys = { 250 250 }
+			}
+			earmark = claimant_adventure
+		}
+		
+		random_claim = {
+			limit = {
+				has_holder = yes
+				NOT = { title = k_the_most_devout }
+				NOT = { title = d_kingsguard }
+				OR = {
+					tier = KING
+					holder_scope = { tier = PREV }
+				}
+				holder_scope = {
+					reverse_has_opinion_modifier = {
+						who = ROOT
+						modifier = opinion_claimant_adventure_target
+					}
+					
+					demesne_size = 1
+					OR = {
+						independent = yes # Only do this vs independent rulers or Kings
+						tier = KING
+					}
+					OR = {
+						is_merchant_republic = no
+						NOT = {
+							capital_holding = {
+								de_jure_liege_or_above = PREVPREV
+							}
+						}
+					}
+					NAND = {
+						government = nomadic_government
+						OR = {
+							clan_title = { title = PREVPREV }
+							primary_title = { title = PREVPREV }
+						}
+					}
+					NOT = { culture_group = unoccupied_group } #Cannot attack a ruin
+					OR = { #To target nightswatch pretender must also be black brother
+						ROOT = { trait = nightswatch }
+						NOT = { trait = nightswatch }
+					}	
+					OR = { #Cannot attack vassals made 'independent' via mega war
+						higher_tier_than = DUKE
+						primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+					}
+				}
+			}
+						
+#			log = "TOG.1202: [Root.GetBestName] starts claim adventure for [This.GetName]"
+
+			holder_scope = {
+				if = {
+					limit = { independent = no }
+					liege = { ROOT = { set_defacto_liege = PREV } }
+				}				
+				reverse_war = {
+					target = ROOT
+					casus_belli = claim
+					thirdparty_title = PREV
+				}
+				reverse_remove_opinion = {
+					who = ROOT
+					modifier = opinion_claimant_adventure_target
+				}
+				random_vassal = { #Call in claimant faction if possible
+					limit = {
+						leads_faction = faction_claimant
+						supported_claimant = { character = ROOT }
+					}
+					letter_event = { id = TOG.1276 days = 2 }
+				} 
+			}
+			event_target:chronicle_player = {
+				if = {
+					limit = { 
+						is_close_relative = ROOT
+						NOT = { character = ROOT } 
+						NOT = { character = PREV } 
+					}
+					PREV = { save_event_target_as = adventure_title }
+					character_event = { id = CM.11506 }	
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+character_event = {
+	id = TOG.1203
+	desc = EVTDESC_TOG_1203
+	picture = GFX_evt_crusaders
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_ruler = yes } # The DoW worked and the adventurer has a temporary title
+	}
+	
+	immediate = {
+		any_liege = {
+			character_event = {
+				id = TOG.1204
+			}
+		}
+		FROM = {
+			remove_character_modifier = planning_claimant_adventure
+			clr_character_flag = planning_claimant_adventure
+			clr_character_flag = TOG.1202
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA_TOG_1203"
+	}
+}
+
+character_event = {
+	id = TOG.1204
+	desc = EVTDESC_TOG_1204
+	picture = GFX_evt_crusaders
+	border = GFX_event_normal_frame_war
+	
+	show_from_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_TOG_1203"
+	}
+}
+
+#Inform claimant faction leader claimant has launched invasion
+letter_event = {
+	id = TOG.1276
+	desc = EVTDESC_TOG_1276
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_TOG_1276" #Yes
+		ai_chance = { factor = 1 }
+		hidden_tooltip = { liege = { letter_event = { id = TOG.1278 days = 1 } } }
+		join_attacker_wars = FROM
+		any_faction_backer = {
+			faction = faction_claimant
+			tooltip = { }
+			hidden_tooltip = { letter_event = { id = TOG.1277 } }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB_TOG_1276" #No
+		ai_chance = { factor = 0 }
+	}
+}	
+#Inform faction member
+letter_event = {
+	id = TOG.1277
+	desc = EVTDESC_TOG_1277
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_TOG_1277"
+		join_attacker_wars = FROMFROM
+		FROM = { FROM = { tooltip = { } } }
+	}	
+}	
+#Inform target of faction joining in
+letter_event = {
+	id = TOG.1278
+	desc = EVTDESC_TOG_1278
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_TOG_1278" 
+		FROM = { FROM = { tooltip = { } } }
+	}	
+}	
+
+# #Inform Dothraki Khalasar
+# character_event = {
+	# id = TOG.120390
+	# desc = EVTDESC_TOG_120390
+	# picture = GFX_evt_crusaders
+	# border = GFX_event_normal_frame_war
+	
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = "EVTOPTA_TOG_120390"
+	# }
+# }
+
+# MERGED WITH AGOT ADVENTURE EVENT
+# # An ambitious character with no inheritance begins to plan an adventure for a foreign title
+# character_event = {
+	# id = TOG.1210
+	# desc = OK
+	# picture = GFX_evt_crusaders
+	# border = GFX_event_normal_frame_war
+	
+	# option = {
+		# name = OK
+	# }
+# }
+
+character_event = {
+	id = TOG.1211
+	desc = EVTDESC_TOG_1211
+	picture = GFX_evt_crusaders
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		opinion = {
+			who = FROM
+			modifier = opinion_targeted_by_adventurer
+			months = 24
+		}
+	}
+	
+	
+	option = {
+		name = "EVTOPTA_TOG_1211"
+	}
+}
+
+# An ambitious character with no inheritance starts an adventure for a foreign title
+# (Temporary title created and a war declared)
+character_event = {
+	id = TOG.1212
+	desc = OK
+	picture = GFX_evt_crusaders
+	border = GFX_event_normal_frame_war
+	
+	hide_window = yes # Only fires for unplayable landless characters
+	
+	is_triggered_only = yes
+	has_dlc = "The Old Gods"
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {		
+		is_ruler = no
+		NOT = {
+			any_heir_title = {
+				always = yes
+			}
+		}
+	}
+	
+	immediate = {	
+		liege = {
+			capital_scope = {
+				random_independent_ruler = {
+					limit = {
+						# Will not attack own allies
+						NOT = { is_allied_with = ROOT }
+						NOT = { has_non_aggression_pact_with = ROOT }
+						NOT = { reverse_opinion = { who = ROOT value = 40 } } #Don't target people they like
+						
+						NOT = { trait = nightswatch }
+						NOT = { trait = kingsguard }
+						NOT = { primary_title = { title = k_the_most_devout } }
+						NOT = { culture_group = unoccupied_group }
+						
+						is_landed = yes
+						independent = yes
+						NOT = { primary_title = { controls_religion = yes } }
+						
+						OR = { #Cannot attack vassals made 'independent' via mega war
+							tier = EMPEROR
+							primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+						}
+						NOT = { is_vassal_or_below = ROOT }
+						any_realm_province = {
+							duchy = { always = yes }
+							OR = {
+								AND = {
+									port = yes
+									ROOT = { 
+										OR = {
+											trait = dragon_rider
+											culture = ironborn 
+										}	
+									}
+									NOT = {
+										distance = {
+											who = ROOT
+											value = 900
+										}
+									}
+									NOT = { #Rhoyne is not practical
+										OR = {
+											region = world_qohor
+											region = world_norvos
+											region = world_rhoynar
+										}
+									}
+								}
+								any_neighbor_province = { owner = { same_realm = ROOT } }
+							}
+						}
+						reverse_has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_duchy_adventure_target
+						}
+					}
+					random_realm_province = {
+						limit = {
+							duchy = { always = yes }
+							OR = {
+								AND = {
+									port = yes
+									ROOT = { 
+										OR = {
+											trait = dragon_rider
+											culture = ironborn 
+										}	
+									}
+									NOT = {
+										distance = {
+											who = ROOT
+											value = 900
+										}
+									}
+									NOT = { #Rhoyne is not practical
+										OR = {
+											region = world_qohor
+											region = world_norvos
+											region = world_rhoynar
+										}
+									}
+								}
+								any_neighbor_province = { owner = { same_realm = ROOT } }
+							}
+						}
+						
+						ROOT = {
+							wealth = 500
+		
+							liege = {
+								save_event_target_as = previous_liege
+								character_event = {
+									id = TOG.1213
+									days = 1
+								}
+							}
+														
+							create_title = {
+								tier = DUKE
+								landless = yes
+								temporary = yes
+								culture = ROOT
+								name = "CLAIMANT_ADVENTURE"
+								holder = ROOT
+							}
+							set_defacto_liege = THIS
+							set_character_flag = duchy_adventurer
+							set_character_flag = special_marshal
+							character_event = { id = TOG.1378 days = 1 } #Acquire companions
+							spawn_unit = {
+								province = PREVPREVPREV
+								home = PREVPREVPREV
+								owner = THIS
+								leader = THIS
+								match_character = PREVPREV
+								match_mult = 0.15
+								match_min = 500
+								match_max = 5000
+								attrition = 0.25
+								earmark = duchy_adventure
+							}
+							spawn_unit = {
+								province = PREVPREVPREV
+								home = PREVPREVPREV
+								owner = THIS
+								match_character = PREVPREV
+								match_mult = 0.15
+								match_min = 500
+								match_max = 5000
+								attrition = 0.25
+								earmark = duchy_adventure
+							}
+							spawn_unit = {
+								province = PREVPREVPREV
+								home = PREVPREVPREV
+								owner = THIS
+								match_character = PREVPREV
+								match_mult = 0.15
+								match_min = 500
+								match_max = 5000
+								attrition = 0.25
+								earmark = duchy_adventure
+							}
+							war = {
+								target = PREVPREV
+								casus_belli = duchy_adventure
+								thirdparty_title = PREV
+								tier = DUKE
+							}
+							remove_opinion = {
+								who = PREVPREV
+								modifier = opinion_duchy_adventure_target
+							}
+							# Create some decent commander characters
+							create_random_soldier = {
+								random_traits = yes
+								dynasty = none
+								religion = PREVPREVPREV
+								culture = PREVPREVPREV
+								female = no
+								age = 30
+								trait = trained_warrior
+							}
+							create_random_soldier = {
+								random_traits = yes
+								dynasty = none
+								religion = PREVPREVPREV
+								culture = PREVPREVPREV
+								female = no
+								age = 25
+								trait = trained_warrior
+							}					
+							if  = {
+								limit = {
+									OR = {
+										trait = dragon_rider
+										culture = ironborn 
+									}	
+								}		
+								# Create a fleet, just to be sure
+								spawn_fleet = {
+									province = closest # closest sea zone
+									owner = ROOT
+									disband_on_peace = yes
+									troops =
+									{
+										galleys = { 200 200 }
+									}
+								}
+							}
+						}
+						duchy = {
+							event_target:chronicle_player = {
+								if = {
+									limit = { 
+										is_close_relative = ROOT
+										NOT = { character = ROOT } 
+										NOT = { character = PREV } 
+									}
+									PREV = { save_event_target_as = adventure_title }
+									character_event = { id = CM.11507 }	
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+character_event = {
+	id = TOG.1213
+	desc = EVTDESC_TOG_1213
+	picture = GFX_evt_crusaders
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_ruler = yes } # The DoW worked and the adventurer has a temporary title
+	}
+	
+	immediate = {
+			any_liege = {
+				character_event = {
+					id = TOG.1214
+				}
+			}
+	}
+	
+	option = {
+		name = "EVTOPTA_TOG_1203"
+	}
+}
+
+character_event = {
+	id = TOG.1214
+	desc = EVTDESC_TOG_1214
+	picture = GFX_evt_crusaders
+	border = GFX_event_normal_frame_war
+	
+	show_from_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA_TOG_1203"
+	}
+}
+
+###Post Adventure Loss Maintenance###
+character_event = {
+	id = TOG.1377
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		is_ruler = no
+		OR = {
+			has_character_flag = vassal_of_adventure_target #Was originally subject of the target
+			liege = {
+				OR = {
+					AND = { #the target of the adventure
+						character = FROMFROM 
+						has_opinion_modifier = { who = ROOT modifier = declared_war }
+					}					
+					NOR = { #is not related
+						is_married = ROOT
+						is_close_relative = ROOT
+						dynasty = ROOT						
+					}
+				}	
+			}
+		}	
+	}
+	
+	immediate = {
+		#flag any relatives to move
+		any_courtier = {
+			limit = {
+				same_liege = ROOT
+				is_ruler = no
+				is_councillor = no
+				NOT = { is_voter = yes }
+				NOT = { character = ROOT }
+				NOT = { trait = slave }
+				OR = {
+					is_married = ROOT
+					is_close_relative = ROOT
+					dynasty = ROOT						
+				}
+				liege = {
+					NOT = {
+						OR = {
+							is_married = PREV
+							is_close_relative = PREV
+							dynasty = PREV	
+							is_lover = PREV
+							is_consort = PREV
+						}
+					}	
+				}
+			}
+			set_character_flag = adventurer_courtier_relative
+		}
+		#Was originally subject of the target
+		if = {
+			limit = { has_character_flag = vassal_of_adventure_target }
+			FROMFROM = { save_event_target_as = TOG1377_new_liege }
+			clr_character_flag = vassal_of_adventure_target
+			break = yes
+		}
+		#first try and find spouse
+		random_spouse = {
+			limit = { 			
+				is_ruler = yes
+				demesne_size = 1	
+				NOT = { is_liege_of = ROOT }				
+			}
+			save_event_target_as = TOG1377_new_liege
+			break = yes
+		}
+		#Close relative
+		random_playable_ruler = {
+			limit = { 	
+				is_close_relative = ROOT
+				demesne_size = 1			
+				NOT = { is_liege_of = ROOT }
+			}
+			save_event_target_as = TOG1377_new_liege
+			break = yes
+		}
+		#Dynast
+		random_dynasty_member = {
+			limit = { 			
+				is_ruler = yes
+				demesne_size = 1	
+				NOT = { is_liege_of = ROOT }				
+			}
+			save_event_target_as = TOG1377_new_liege
+			break = yes
+		}
+		#next try culture
+		random_playable_ruler = {
+			limit = { 
+				culture = ROOT
+				demesne_size = 1
+				NOT = { is_liege_of = ROOT }				
+				NOT = { tier = BARON }			
+			}
+			save_event_target_as = TOG1377_new_liege
+			break = yes
+		}	
+	}
+	
+	option = {
+		name = OK
+		event_target:TOG1377_new_liege = {
+			ROOT = { 
+				any_courtier = {
+					limit = {
+						is_ruler = no
+						OR = {
+							is_married = ROOT
+							is_close_relative = ROOT
+							dynasty = ROOT						
+						}
+						has_character_flag = adventurer_courtier_relative
+					}
+					move_character = PREVPREV
+					clr_character_flag = adventurer_courtier_relative
+				}			
+				move_character = PREV 				
+			}
+		}
+	}
+}
+###Adventure companions
+character_event = {
+	id = TOG.1378
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		is_ruler = yes	
+	}
+	
+	immediate = {
+		any_friend = {
+			limit = {
+				is_ruler = no
+				NOT = { trait = slave }
+				NOT = { trait = dragon }
+				prisoner = no
+				age = 14
+				NOT = { trait = incapable }
+				NOT = { liege = { reverse_opinion = { who = PREV value = 35 } } }
+				NAND = {
+					is_female = yes
+					is_married = yes
+					NOT = { martial = 12 }
+				}
+				NOT = { has_minor_title = title_regent }
+				NOT = { trait = wikid }
+				OR = {
+					NOR = {
+						is_councillor = yes
+						is_voter = yes
+						liege = { is_close_relative = ROOT }
+					}	
+					NOT = { liege = { reverse_opinion = { who = PREV value = -20 } } }
+				}
+				OR = {
+					AND = {
+						NOT = { trait = content }
+						NOT = { trait = craven }
+					}
+					trait = ambitious
+					trait = honorable
+				}	
+				NOT = { ROOT = { any_current_enemy = { reverse_opinion = { who = PREVPREV value = 35 } } } }
+			}
+			move_character = ROOT
+		}
+		event_target:previous_liege = {
+			any_courtier = {
+				limit = {
+					is_ruler = no
+					NOT = { trait = slave }
+					NOT = { trait = dragon }
+					prisoner = no
+					age = 14
+					NOT = { trait = incapable }
+					OR = {
+						opinion = { who = ROOT value = 50 }
+						is_close_relative = ROOT
+					}					
+					opinion = { who = ROOT value = 25 }
+					NOT = { liege = { reverse_opinion = { who = PREV value = 35 } } }
+					NAND = {
+						is_female = yes
+						is_married = yes
+						NOT = { martial = 12 }
+					}
+					NOT = { has_minor_title = title_regent }
+					NOT = { trait = wikid }
+					OR = {
+						NOR = {
+							is_councillor = yes
+							is_voter = yes
+							liege = { is_close_relative = ROOT }
+						}	
+						NOT = { liege = { reverse_opinion = { who = PREV value = -20 } } }
+					}
+					OR = {
+						AND = {
+							NOT = { trait = content }
+							NOT = { trait = craven }
+						}
+						trait = ambitious
+						trait = honorable
+					}	
+					NOT = { ROOT = { any_current_enemy = { reverse_opinion = { who = PREVPREV value = 35 } } } }
+				}
+				move_character = ROOT
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}

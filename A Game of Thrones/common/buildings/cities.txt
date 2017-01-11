@@ -1,0 +1,1110 @@
+ # Triggers are in Province scope. The From Scope contains the settlement holder (character)
+ # start trigger is in title scope.
+ 
+ 
+ # City
+city = {
+	###Unique Buildings###
+	
+	ct_asoiaf_targshipyard = {
+		desc = ct_asoiaf_targshipyard_desc
+	
+		potential = {
+			province_id = 226 #kingslanding
+			has_province_flag = kings_landing_established
+			FROMFROM = { 
+				title = b_kings_landing 
+				has_title_flag = targshipyard_complete
+			}
+		}
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+	
+		gold_cost = 250
+		build_time = 730
+		galleys = 20
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	ct_asoiaf_driftmarkshipyard = {
+		desc = ca_asoiaf_driftmarkshipyard_desc
+	
+		potential = {
+			province_id = 220 #driftmark
+		}
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+	
+		gold_cost = 200
+		build_time = 730
+		galleys = 30
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	ct_asoiaf_redwyneshipyard = {
+		desc = ct_asoiaf_redwyneshipyard_desc
+	
+		potential = {
+			province_id = 292
+		}
+
+		#trigger = { always = no }
+	
+		gold_cost = 200
+		build_time = 730
+		galleys = 30
+		ai_creation_factor = 100
+	}
+	ct_asoiaf_oldtownshipyard = {
+		desc = ct_asoiaf_oldtownshipyard_desc
+	
+		potential = {
+			FROMFROM = { title = b_oldtown }		
+		}
+
+		#trigger = { always = no }
+	
+		gold_cost = 150
+		build_time = 730
+		galleys = 25
+		ai_creation_factor = 100	
+	}
+	ct_asoiaf_essosshipyard = {
+		desc = ca_asoiaf_essosshipyard_desc
+	
+		potential = {
+			OR = {
+				province_id = 367	#Tyrosh	
+				province_id = 368	#Lys
+				province_id = 378	#Myr
+				province_id = 406	#Pentos
+				province_id = 417	#Volantis
+				province_id = 419	#Old Volantis
+				province_id = 470	#Braavos
+				province_id = 471	#Lorath
+				province_id = 599	#Mantarys
+				province_id = 601	#Tolos
+				province_id = 602	#Elyria
+				province_id = 606	#Meereen
+				province_id = 610	#Yunkai
+				province_id = 613	#Astapor
+				province_id = 642 #Port Yhos
+				province_id = 654	#Qarkash
+				province_id = 663	#Qarth
+				province_id = 669	#Asabhad
+				province_id = 719	#Faros
+				# province_id = 765	#Yin
+				# province_id = 770	#Jinqi
+				# province_id = 792	#Leng Yi
+				province_id = 795	#Asshai
+			}
+		}
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+	
+		gold_cost = 400
+		build_time = 730
+		galleys = 90
+		ai_creation_factor = 100	
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	ct_asoiaf_smallshipyard = {
+		desc = ct_asoiaf_smallshipyard_desc
+	
+		potential = {
+			OR = {
+				province_id = 62    #White Harbor
+				province_id = 79    #Seagard
+				province_id = 149   #Gulltown
+				province_id = 304   #Storm's End
+				province_id = 350   #Plankytown
+				province_id = 366    #Little Tyrosh
+				province_id = 667    #Qal	
+			}
+		}
+		
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+	
+		gold_cost = 200
+		build_time = 730
+		galleys = 25
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	ct_asoiaf_koj_shipyard = {
+		desc = ca_asoiaf_koj_shipyard_desc
+	
+		potential = {
+			FROMFROM = { title = b_koj_harbour }	
+		}
+		
+		#trigger = { always = no }
+	
+		gold_cost = 250
+		build_time = 730
+		galleys = 25
+		tax_income = 3
+		diplomacy = 1
+		ai_creation_factor = 100
+	}
+	
+	ct_asoiaf_skagosishipyard = {
+		desc = ct_asoiaf_skagosishipyard_desc
+	
+		potential = {
+			OR = {
+				province_id = 30
+				province_id = 31
+				province_id = 32
+			}
+			has_province_flag = skagosi_rebuild_ships
+		}
+
+		trigger = { has_province_flag = skagosi_rebuild_ships }
+	
+		gold_cost = 200
+		build_time = 730
+		galleys = 30
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	ct_winery = {
+		desc = ct_winery_desc
+		potential = {
+			OR = {
+				province_id = 292
+				province_id = 344
+				province_id = 349
+				province_id = 350
+				province_id = 351
+				province_id = 352
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		
+		gold_cost = 200
+		build_time = 160
+		tax_income = 6
+		ai_creation_factor = 100	
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	ct_amphitheatre = {
+		desc = ct_amphitheatre_desc
+		potential = {
+			has_province_flag = restored_amphitheatre
+		}
+		gold_cost = 300
+		build_time = 160
+		tax_income = 0.5
+		ai_creation_factor = 90	
+	}
+	
+	ct_gold_cloaks = {
+		desc = ct_gold_cloaks_desc
+		potential = {
+			province_id = 226 #kingslanding
+			has_province_flag = kings_landing_established
+			FROMFROM = {
+				title = b_kings_landing
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		light_infantry = -905
+		heavy_infantry = 805
+		knights = 20
+		light_cavalry = 80
+		gold_cost = 150
+		build_time = 160
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	ct_lannisport = {
+		desc = ct_lannisport_desc
+		potential = {
+			FROMFROM = {
+				title = b_lannisportone
+			}
+		}
+		#trigger = { always = no }
+		light_infantry = -841
+		heavy_infantry = 776
+		knights = 15
+		light_cavalry = 50
+		heavy_infantry_morale = 0.2
+		gold_cost = 150
+		build_time = 160
+		
+		ai_creation_factor = 100
+	}
+	
+	ct_titan_castle = {
+		desc = ct_titan_castle_desc
+		potential = {
+			FROMFROM = {
+				title = b_braavos
+			}
+		}
+		#trigger = { always = no }
+		fort_level = 10
+		knights = 60
+		tax_income = 2
+		gold_cost = 400
+		build_time = 1825
+		
+		ai_creation_factor = 100
+	}
+	
+	ct_lorathi_maze = {
+		desc = lorathi_maze_desc
+		potential = {
+			FROMFROM = {
+				OR = {
+					title = b_lorassyon_city
+					title = b_lorathi_shore
+					title = b_lorath
+				}
+			}
+		}
+		#trigger = { always = no }
+		
+		gold_cost = 50
+		fort_level = 5
+		build_time = 365
+		ai_creation_factor = 110
+	}
+	
+	#Sothoryos Wealth
+	ct_sothoryos_1 = { #Small Mine
+		desc = ca_sothoryos_desc
+		potential = {
+			region = world_sothoryos
+			FROM = { NOT = { culture_group = unoccupied_group }	}
+		}
+		gold_cost = 100
+		build_time = 365
+		tax_income = 6
+		tradevalue = 10
+		
+		ai_creation_factor = 125
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	ct_sothoryos_2 = { #Spice Plantation
+		desc = ca_sothoryos_desc
+		potential = {
+			region = world_sothoryos
+			FROM = { NOT = { culture_group = unoccupied_group }	}
+		}
+		upgrades_from = ct_sothoryos_1
+		
+		gold_cost = 100
+		build_time = 365
+		tax_income = 6
+		tradevalue = 15
+		
+		ai_creation_factor = 125
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	ct_sothoryos_3 = { #Large Mines
+		desc = ca_sothoryos_desc	
+		potential = {
+			region = world_sothoryos
+			FROM = { NOT = { culture_group = unoccupied_group }	}
+		}
+		upgrades_from = ct_sothoryos_2
+		
+		gold_cost = 150
+		build_time = 730
+		tax_income = 9
+		tradevalue = 20
+		
+		ai_creation_factor = 125
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	#Qohor Wealth
+	ct_qohor_forest_1 = { #Mines
+		desc = ca_qohor_forest_desc	
+		potential = {
+			region = world_forest_of_qohor
+		}
+		gold_cost = 100
+		build_time = 365
+		tax_income = 4
+		tradevalue = 10
+		
+		ai_creation_factor = 125
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	ct_qohor_forest_2 = { #Logging Camp
+		desc = ca_qohor_forest_desc
+		potential = {
+			region = world_forest_of_qohor
+		}
+		upgrades_from = ct_qohor_forest_1
+		
+		gold_cost = 100
+		build_time = 365
+		tax_income = 4
+		tradevalue = 15
+		
+		ai_creation_factor = 125
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	# War elephant pens
+	ct_culture_indian_1 = {
+		desc = ca_culture_indian_1_desc
+		potential = {
+			OR = {
+				culture_group = moraqi_group
+				culture_group = yi_ti_group
+				culture = volantene
+				culture = eastern_valyrian
+				culture_group = ghiscari_group
+				culture_group = qarth_group
+				culture_group = jade_islands_group
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		gold_cost = 100
+		build_time = 365
+		war_elephants = 6
+		war_elephants_offensive = 0.15
+		ai_creation_factor = 90
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	ct_culture_indian_2 = {
+		desc = ca_culture_indian_2_desc
+		potential = {
+			OR = {
+				culture_group = moraqi_group
+				culture_group = yi_ti_group
+				culture = volantene
+				culture = eastern_valyrian
+				culture_group = ghiscari_group
+				culture_group = qarth_group
+				culture_group = jade_islands_group
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_3 }
+		upgrades_from = ct_culture_indian_1
+		gold_cost = 150
+		build_time = 365
+		war_elephants = 10
+		war_elephants_offensive = 0.05
+		war_elephants_defensive = 0.10
+		ai_creation_factor = 89
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	ct_culture_indian_3 = {
+		desc = ca_culture_indian_3_desc
+		potential = {
+			OR = {
+				culture_group = moraqi_group
+				culture_group = yi_ti_group
+				culture = volantene
+				culture = eastern_valyrian
+				culture_group = ghiscari_group
+				culture_group = qarth_group
+				culture_group = jade_islands_group
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_4 }
+		upgrades_from = ct_culture_indian_2
+		gold_cost = 200
+		build_time = 730
+		war_elephants = 22
+		war_elephants_offensive = 0.05
+		war_elephants_defensive = 0.10
+		ai_creation_factor = 88
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	ct_culture_indian_4 = {
+		desc = ca_culture_indian_4_desc
+		potential = {
+			OR = {
+				culture_group = moraqi_group
+				culture_group = yi_ti_group
+				culture = volantene
+				culture = eastern_valyrian
+				culture_group = ghiscari_group
+				culture_group = qarth_group
+				culture_group = jade_islands_group
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_5 }
+		upgrades_from = ct_culture_indian_3
+		gold_cost = 250
+		build_time = 730
+		war_elephants = 22
+		war_elephants_offensive = 0.05
+		war_elephants_defensive = 0.10
+		ai_creation_factor = 87
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	# Camel Cavalry
+	ct_culture_group_arabic_1 = {
+		desc = ca_culture_group_arabic_1_desc
+		potential = {
+			OR = {
+				culture_group = ghiscari_group
+				culture_group = qarth_group
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_2 }
+		gold_cost = 100
+		build_time = 365
+		camel_cavalry = 30
+		camel_cavalry_defensive = 0.15
+		ai_creation_factor = 90
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	ct_culture_group_arabic_2 = {
+		desc = ca_culture_group_arabic_1_desc
+		potential = {
+			OR = {
+				culture_group = ghiscari_group
+				culture_group = qarth_group
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_3 }
+		upgrades_from = ct_culture_group_arabic_1
+		gold_cost = 150
+		build_time = 365
+		camel_cavalry = 40
+		camel_cavalry_defensive = 0.15
+		ai_creation_factor = 89
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	ct_culture_group_arabic_3 = {
+		desc = ca_culture_group_arabic_1_desc
+		potential = {
+			OR = {
+				culture_group = ghiscari_group
+				culture_group = qarth_group
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_4 }
+		upgrades_from = ct_culture_group_arabic_2
+		gold_cost = 200
+		build_time = 730
+		camel_cavalry = 50
+		camel_cavalry_defensive = 0.15
+		ai_creation_factor = 88
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	ct_culture_group_arabic_4 = {
+		desc = ca_culture_group_arabic_1_desc
+		potential = {
+			OR = {
+				culture_group = ghiscari_group
+				culture_group = qarth_group
+			}
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prerequisites = { ct_wall_5 }
+		upgrades_from = ct_culture_group_arabic_3
+		gold_cost = 2500
+		build_time = 730
+		camel_cavalry = 60
+		camel_cavalry_defensive = 0.15
+		ai_creation_factor = 87
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+
+	###Buildable Buildings###
+	
+	ct_wall_q_1 = {
+		desc = ca_wall_q_1_desc
+		#potential = { FROM = { NOT = { culture = dothraki } NOT = { culture = jogos_nhai } } }
+		gold_cost = 50
+		build_time = 182
+		fort_level = 0.8
+		ai_creation_factor = 95
+		
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		extra_tech_building_start = 99.0 # Never get at start of game
+	}
+	ct_wall_q_2 = {
+		desc = ca_wall_q_2_desc
+		upgrades_from = ct_wall_q_1
+		gold_cost = 50
+		build_time = 182
+		fort_level = 0.8
+		ai_creation_factor = 94
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		extra_tech_building_start = 99.0 # Never get at start of game
+	}	
+	ct_wall_q_3 = {
+		desc = ca_wall_q_3_desc
+		upgrades_from = ct_wall_q_2
+		gold_cost = 50
+		build_time = 182
+		fort_level = 0.8
+		ai_creation_factor = 93
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		extra_tech_building_start = 99.0 # Never get at start of game
+	}
+	ct_wall_q_4 = {
+		desc = ca_wall_q_4_desc
+		upgrades_from = ct_wall_q_3
+		gold_cost = 100
+		build_time = 365
+		fort_level = 2
+		ai_creation_factor = 92
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		extra_tech_building_start = 99.0 # Never get at start of game
+	}
+	ct_wall_q_5 = {
+		desc = ca_wall_q_5_desc
+		upgrades_from = ct_wall_q_4
+		gold_cost = 100
+		build_time = 365
+		fort_level = 2
+		ai_creation_factor = 91
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		extra_tech_building_start = 99.0 # Never get at start of game
+	}
+	#Farms/Estates
+	ct_wall_1 = {
+		desc = ct_wall_1_desc
+		#potential = { FROM = { NOT = { culture = dothraki } NOT = { culture = jogos_nhai } } }
+		gold_cost = 50
+		build_time = 365
+		light_infantry = 25
+		tax_income = 0.2
+		ai_creation_factor = 100
+		
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	ct_wall_2 = {
+		desc = ct_wall_2_desc
+		upgrades_from = ct_wall_1
+		prerequisites = { ct_training_grounds_1 }
+		gold_cost = 50
+		build_time = 365
+		light_infantry = 50
+		tax_income = 0.2
+		ai_creation_factor = 99
+
+		start = {
+			year = 8425
+		}
+	}
+	ct_wall_3 = {
+		desc = ct_wall_3_desc
+		upgrades_from = ct_wall_2
+		prerequisites = { ct_training_grounds_2 }
+		gold_cost = 100
+		build_time = 547
+		light_infantry = 100
+		tax_income = 0.2
+		ai_creation_factor = 98
+
+		start = {
+			year = 8500
+		}
+	}
+	ct_wall_4 = {
+		desc = ct_wall_4_desc
+		prerequisites = { ct_training_grounds_3 }
+		upgrades_from = ct_wall_3
+		gold_cost = 100
+		build_time = 730
+		light_infantry = 200
+		tax_income = 0.2
+		ai_creation_factor = 97
+
+		start = {
+			year = 8575
+		}
+	}
+	ct_wall_5 = {
+		desc = ct_wall_5_desc
+		prerequisites = { ct_training_grounds_4 }
+		upgrades_from = ct_wall_4
+		gold_cost = 150
+		build_time = 1095
+		light_infantry = 400
+		tax_income = 0.5
+		ai_creation_factor = 96
+
+		start = {
+			year = 8650
+		}
+	}
+
+	ct_training_grounds_1 = {
+		desc = ct_training_grounds_1_desc
+		#potential = { FROM = { NOT = { culture = dothraki } NOT = { culture = jogos_nhai } } }
+		gold_cost = 100
+		build_time = 365
+		heavy_infantry = 15
+		pikemen = 10
+		garrison_size = 0.05
+		ai_creation_factor = 100
+
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	ct_training_grounds_2 = {
+		desc = ct_training_grounds_2_desc
+		prerequisites = { ct_marketplace_1 }
+		upgrades_from = ct_training_grounds_1
+		gold_cost = 120
+		build_time = 547
+		heavy_infantry = 30
+		pikemen = 20
+		ai_creation_factor = 99
+
+		start = {
+			year = 8425
+		}
+	} 
+	ct_training_grounds_3 = {
+		desc = ct_training_grounds_3_desc
+		upgrades_from = ct_training_grounds_2
+		prerequisites = { ct_marketplace_2 }
+		gold_cost = 200
+		build_time = 730
+		heavy_infantry = 60
+		pikemen = 40
+		garrison_size = 0.15
+		ai_creation_factor = 98
+
+		start = {
+			year = 8500
+		}
+	} 
+	ct_training_grounds_4 = {
+		desc = ct_training_grounds_4_desc
+		prerequisites = { ct_marketplace_3 }
+		upgrades_from = ct_training_grounds_3
+		gold_cost = 300
+		build_time = 1095
+		heavy_infantry = 120
+		pikemen = 80
+		garrison_size = 0.2
+		ai_creation_factor = 97
+
+		start = {
+			year = 8575
+		}
+	} 
+	ct_training_grounds_5 = {
+		desc = ct_training_grounds_5_desc
+		prerequisites = { ct_marketplace_4 }
+		upgrades_from = ct_training_grounds_4
+		gold_cost = 400
+		build_time = 1460
+		heavy_infantry = 240
+		pikemen = 160
+		garrison_size = 0.25
+		ai_creation_factor = 96
+
+		start = {
+			year = 8650
+		}
+	}
+	ct_training_grounds_6 = {
+		desc = ct_training_grounds_6_desc
+		prerequisites = { ct_marketplace_5 }
+		upgrades_from = ct_training_grounds_5
+		gold_cost = 500
+		build_time = 1460
+		heavy_infantry = 480
+		pikemen = 320
+		garrison_size = 0.25
+		ai_creation_factor = 95
+
+		start = {
+			year = 8725
+		}
+	}
+	
+	ct_barracks_1 = {
+		desc = ct_barracks_1_desc
+		#potential = { FROM = { NOT = { culture = dothraki } NOT = { culture = jogos_nhai } } }
+		gold_cost = 100
+		build_time = 365
+		light_infantry = 60
+		archers = 30
+		levy_reinforce_rate = 0.05
+		ai_creation_factor = 98
+		
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	ct_barracks_2 = {
+		desc = ct_barracks_2_desc
+		prerequisites = { ct_wall_1 }
+		upgrades_from = ct_barracks_1
+		gold_cost = 120
+		build_time = 365
+		light_infantry = 40
+		archers = 70
+		levy_reinforce_rate = 0.05
+		ai_creation_factor = 97
+
+		start = {
+			year = 8425
+		}
+	}
+	ct_barracks_3 = {
+		desc = ct_barracks_1_desc
+		prerequisites = { ct_wall_2 }
+		upgrades_from = ct_barracks_2
+		gold_cost = 200
+		build_time = 547
+		light_infantry = 80
+		archers = 50
+		levy_reinforce_rate = 0.05
+		ai_creation_factor = 96
+
+		start = {
+			year = 8500
+		}
+	}
+	ct_barracks_4 = {
+		desc = ct_barracks_2_desc
+		prerequisites = { ct_wall_3 }
+		upgrades_from = ct_barracks_3
+		gold_cost = 300
+		build_time = 730
+		light_infantry = 60
+		archers = 90
+		levy_reinforce_rate = 0.05
+		ai_creation_factor = 95
+
+		start = {
+			year = 8575
+		}
+	}
+	ct_barracks_5 = {
+		desc = ct_barracks_1_desc
+		prerequisites = { ct_wall_4 }
+		upgrades_from = ct_barracks_4
+		gold_cost = 400
+		build_time = 1095
+		light_infantry = 100
+		archers = 70
+		levy_reinforce_rate = 0.05
+		ai_creation_factor = 94
+
+		start = {
+			year = 8650
+		}
+	}
+	ct_barracks_6 = {
+		desc = ct_barracks_2_desc
+		prerequisites = { ct_wall_5 }
+		upgrades_from = ct_barracks_5
+		gold_cost = 500
+		build_time = 2160
+		light_infantry = 80
+		archers = 110
+		levy_reinforce_rate = 0.05
+		ai_creation_factor = 93
+
+		start = {
+			year = 8725
+		}
+	}
+	
+	# ct_guard_1 = {
+		# desc = ct_guard_1_desc
+		# gold_cost = 100
+		# build_time = 365
+		# pikemen = 45
+		# ai_creation_factor = 96
+		
+		# start = {
+			# year = 8350
+		# }
+	# }
+	# ct_guard_2 = {
+		# desc = ct_guard_1_desc
+		# prerequisites = { ct_wall_1 }
+		# upgrades_from = ct_guard_1
+		# gold_cost = 120
+		# build_time = 547
+		# pikemen = 55
+		# ai_creation_factor = 95
+
+		# start = {
+			# year = 8425
+		# }
+	# }
+	# ct_guard_3 = {
+		# desc = ct_guard_1_desc
+		# prerequisites = { ct_wall_2 }
+		# upgrades_from = ct_guard_2
+		# gold_cost = 200
+		# build_time = 730
+		# pikemen = 65
+		# ai_creation_factor = 94
+		
+		# start = {
+			# year = 8500
+		# }
+	# }
+	# ct_guard_4 = {
+		# desc = ct_guard_1_desc
+		# trigger = { TECH_CITY_CONSTRUCTION = 2 }
+		# upgrades_from = ct_guard_3
+		# gold_cost = 300
+		# build_time = 1095
+		# pikemen = 75
+		# ai_creation_factor = 93
+		
+		# start = {
+			# year = 8575
+		# }
+	# }
+	# ct_guard_5 = {
+		# desc = ct_guard_1_desc
+		# trigger = { TECH_CITY_CONSTRUCTION = 4 }
+		# upgrades_from = ct_guard_4
+		# gold_cost = 400
+		# build_time = 2190
+		# pikemen = 85
+		# ai_creation_factor = 92
+
+		# start = {
+			# year = 8650
+		# }
+	# }
+	
+	ct_marketplace_1 = {
+		desc = ct_marketplace_1_desc
+		#potential = { FROM = { NOT = { culture = dothraki } NOT = { culture = jogos_nhai } } }
+		gold_cost = 100
+		build_time = 365
+		tax_income = 2.5
+		ai_creation_factor = 101
+		
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	ct_marketplace_2 = {
+		desc = ct_marketplace_2_desc
+		prerequisites = { ct_wall_1 }
+		upgrades_from = ct_marketplace_1
+		gold_cost = 120
+		build_time = 365
+		tax_income = 3
+		ai_creation_factor = 100
+
+		start = {
+			year = 8425
+		}
+	}
+	ct_marketplace_3 = {
+		desc = ct_marketplace_3_desc
+		prerequisites = { ct_wall_2 }
+		upgrades_from = ct_marketplace_2
+		gold_cost = 200
+		build_time = 547
+		tax_income = 3.5
+		ai_creation_factor = 99
+
+		start = {
+			year = 8500
+		}
+	}
+	ct_marketplace_4 = {
+		desc = ct_marketplace_4_desc
+		prerequisites = { ct_wall_3 }
+		upgrades_from = ct_marketplace_3
+		gold_cost = 300
+		build_time = 730
+		tax_income = 4
+		ai_creation_factor = 98
+
+		start = {
+			year = 8575
+		}
+	}
+	ct_marketplace_5 = {
+		desc = ct_marketplace_5_desc
+		prerequisites = { ct_wall_4 }
+		upgrades_from = ct_marketplace_4
+		gold_cost = 400
+		build_time = 1095
+		tax_income = 4.5
+		ai_creation_factor = 97
+
+		start = {
+			year = 8650
+		}
+	}
+	ct_marketplace_6 = {
+		desc = ct_marketplace_6_desc
+		prerequisites = { ct_wall_5 }
+		upgrades_from = ct_marketplace_5
+		gold_cost = 500
+		build_time = 1095
+		tax_income = 5
+		ai_creation_factor = 96
+
+		start = {
+			year = 8725
+		}
+	}
+	
+	ct_port_1 = {
+		desc = ct_port_1_desc
+		potential = { 
+			# FROM = { 
+				# NOT = { culture = dothraki } 
+				# NOT = { culture = jogos_nhai } 
+			# } 
+			#NOT = { duchy = { title = d_harrenhal } } #Not in the God's Eye
+		}
+		port = yes
+		gold_cost = 100
+		build_time = 365
+		tax_income = 2.5
+		galleys = 7
+		ai_creation_factor = 98
+		
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	ct_port_2 = {
+		desc = ct_port_2_desc
+		port = yes
+		prerequisites = { ct_marketplace_1 }
+		upgrades_from = ct_port_1
+		gold_cost = 120
+		build_time = 365
+		tax_income = 3
+		galleys = 8
+		ai_creation_factor = 97
+
+		start = {
+			year = 8425
+		}
+	}
+	ct_port_3 = {
+		desc = ct_port_3_desc
+		port = yes
+		prerequisites = { ct_marketplace_2 }
+		upgrades_from = ct_port_2
+		gold_cost = 200
+		build_time = 547
+		tax_income = 3.5
+		galleys = 9
+		ai_creation_factor = 96
+
+		start = {
+			year = 8500
+		}
+	}
+	ct_port_4 = {
+		desc = ct_port_4_desc
+		port = yes
+		prerequisites = { ct_marketplace_3 }
+		upgrades_from = ct_port_3
+		gold_cost = 300
+		build_time = 730
+		tax_income = 4
+		galleys = 10
+		ai_creation_factor = 95
+
+		start = {
+			year = 8575
+		}
+	}
+	ct_port_5 = {
+		desc = ct_port_5_desc
+		port = yes
+		prerequisites = { ct_marketplace_4 }
+		upgrades_from = ct_port_4
+		gold_cost = 400
+		build_time = 1095
+		tax_income = 4.5
+		galleys = 11
+		ai_creation_factor = 94
+
+		start = {
+			year = 8650
+		}
+	}
+
+	# ct_university_1 = {
+		# desc = ct_university_1_desc
+		# trigger = { TECH_CITY_CONSTRUCTION = 1 }
+		# gold_cost = 600
+		# build_time = 1095
+		# tech_growth_modifier = 0.2
+		# ai_creation_factor = 107
+
+		# start = {
+			# year = 8500
+		# }
+	# }
+	# ct_university_2 = {
+		# desc = ct_university_1_desc
+		# trigger = { TECH_CITY_CONSTRUCTION = 3 }
+		# upgrades_from = ct_university_1
+		# gold_cost = 800
+		# build_time = 2190
+		# tech_growth_modifier = 0.3
+		# ai_creation_factor = 106
+
+		# start = {
+			# year = 8650
+		# }
+	# }
+	# ct_university_3 = {
+		# desc = ct_university_1_desc
+		# trigger = { TECH_CITY_CONSTRUCTION = 4 }
+		# upgrades_from = ct_university_2
+		# gold_cost = 800
+		# build_time = 2190
+		# tech_growth_modifier = 0.3
+		# ai_creation_factor = 105
+
+		# start = {
+			# year = 8800
+		# }
+	# }
+	
+}

@@ -1,0 +1,1653 @@
+decisions = {
+	
+	feast_0 = {
+		only_playable = yes
+		potential = {
+			is_playable = yes
+			age = 16
+			demesne_size = 1
+			NOT = { trait = incapable }
+			NOT = { is_inaccessible_trigger = yes }	
+			is_nomadic = no
+			NOT = { culture_group = unoccupied_group }
+			NOT = { culture_group = winter_group }	
+			NOT = { culture_group = free_folk }
+			NOT = { culture = moon_clansman }
+			num_of_vassals = 1				
+			NOT = {
+				liege = {
+					has_character_modifier = holding_large_feast
+				}
+			}					
+			OR = {
+				NOT = { has_character_flag = feastcooldown }
+				had_character_flag = { flag = feastcooldown days = 365 }	
+			}	
+			OR = {
+				ai = no
+				NOT = { has_character_flag = feastcooldown }
+				had_character_flag = {
+					flag = feastcooldown
+					days = 3650
+				}
+			}		
+		}
+		allow = {
+			war = no
+			prisoner = no
+			in_command = no
+			NOT = { is_inaccessible_trigger = yes }
+			custom_tooltip = {
+				text = TOOLTIPMINORDECISIONALLOWWEALTH
+				hidden_tooltip = {
+					OR = {
+						AND = {
+							lower_tier_than = DUKE
+							treasury = 10
+						}
+						AND = {
+							tier = DUKE
+							treasury = 25
+						}
+						AND = {
+							higher_tier_than = DUKE
+							treasury = 50
+						}
+					}
+				}
+			}
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+			#prestige = 100	
+		}
+		effect = {
+			if = {
+				limit = { lower_tier_than = DUKE }
+				treasury = -10
+			}
+			if = {
+				limit = { tier = DUKE }
+				treasury = -25
+			}
+			if = {
+				limit = { higher_tier_than = DUKE }
+				treasury = -50
+			}			
+			add_character_modifier = {
+				name = holding_large_feast
+				duration = 365
+			}		
+			hidden_tooltip = {
+				set_character_flag = feastcooldown
+				clr_character_flag = coming_to_feast		
+				clr_character_flag = guest_feast_started		
+				set_character_flag = do_not_disturb			
+				character_event = {
+					id = 72003
+					days = 15
+					random = 5
+				}	
+				character_event = { id = 72112 days = 15 } #cancel feast
+				letter_event = { 
+					id = 72109  
+				}
+				character_event = { id = 72999 days = 150 } # Safety catch flag clearing
+			}
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+				}
+				custom_tooltip = {
+					text = capital_prospers_custom_tooltip
+					hidden_tooltip = {
+						capital_scope = {
+							change_variable = { which = prosperity_value value = 8 }
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.05
+			}
+			modifier = {
+				factor = 0
+				has_character_modifier = loan_timer
+				OR = {
+					stewardship = 9
+					trait = temperate
+					NOT = { 
+						OR = {
+							trait = gluttonous 
+							trait = hedonist
+							trait = slothful
+						}	
+					}	
+				}	
+			}	
+			modifier = {
+				factor = 0.05
+				OR = {
+					trait = shy
+					trait = greedy
+					trait = temperate
+				}	
+			}	
+			modifier = {
+				factor = 5
+				OR = {
+					trait = gregarious
+					trait = charitable
+					trait = gluttonous 
+					trait = hedonist
+				}	
+			}
+		}
+	}
+	
+	summer_fair_0 = {
+		only_playable = yes
+		potential = {		
+			is_playable = yes
+			age = 16
+			NOT = { religion = drowned_god }
+			NOT = { culture_group = free_folk }
+			NOT = { culture = moon_clansman }
+			NOT = { trait = incapable }
+			is_nomadic = no
+			NOT = { trait = nightswatch }
+			NOT = { culture_group = unoccupied_group }
+			NOT = { culture_group = winter_group }
+			#num_of_vassals = 1
+			OR = {
+				NOT = { has_character_flag = faircooldown }
+				had_character_flag = { flag = faircooldown days = 365 }	
+			}	
+			OR = {
+				ai = no
+				NOT = { has_character_flag = faircooldown }
+				had_character_flag = {
+					flag = faircooldown
+					days = 3650
+				}
+			}		
+		}
+		allow = {
+			war = no
+			is_summer_trigger = yes
+			custom_tooltip = {
+				text = TOOLTIPMINORDECISIONALLOWWEALTH
+				hidden_tooltip = {
+					OR = {
+						AND = {
+							lower_tier_than = DUKE
+							treasury = 10
+						}
+						AND = {
+							tier = DUKE
+							treasury = 25
+						}
+						AND = {
+							higher_tier_than = DUKE
+							treasury = 50
+						}
+					}
+				}
+			}
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {
+			if = {
+				limit = { lower_tier_than = DUKE }
+				treasury = -10
+			}
+			if = {
+				limit = { tier = DUKE }
+				treasury = -25
+			}
+			if = {
+				limit = { higher_tier_than = DUKE }
+				treasury = -50
+			}
+			add_character_modifier = {
+				name = holding_summer_fair
+				duration = -1
+			}
+			hidden_tooltip = {
+				set_character_flag = faircooldown
+				set_character_flag = do_not_disturb
+				character_event = {
+					id = 74047
+					days = 65
+				}
+				character_event = { id = 74050 }
+			}
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+				}
+				custom_tooltip = {
+					text = capital_prospers_custom_tooltip
+					hidden_tooltip = {
+						capital_scope = {
+							change_variable = { which = prosperity_value value = 8 }
+						}
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.01
+			}
+			modifier = {
+				factor = 0
+				has_character_modifier = loan_timer
+				OR = {
+					stewardship = 9
+					trait = temperate
+					NOT = { 
+						OR = {
+							trait = gluttonous 
+							trait = hedonist
+							trait = slothful
+						}	
+					}	
+				}	
+			}	
+			modifier = {
+				factor = 0
+				OR = {
+					trait = shy
+					trait = greedy
+					trait = temperate
+				}	
+			}	
+			modifier = {
+				factor = 5
+				OR = {
+					trait = gregarious
+					trait = charitable
+					trait = gluttonous 
+					trait = hedonist
+				}	
+			}
+		}
+	}
+
+	hold_grand_hunt_0 = {
+		only_playable = yes
+		potential = {
+			is_playable = yes
+			age = 16
+			OR = {
+				NOT = { has_dlc = "Way of Life" }
+				has_focus = focus_hunting
+			}
+			OR = {
+				is_female = no
+				culture = lengi		
+				culture = kayakayanayan
+				culture = samyrianan
+				culture = bayasabhadi			
+				trait = hunter
+				has_focus = focus_hunting
+			}	
+			OR = {
+				NOT = { has_dlc = "Rajas of India" }
+				NOT = {
+					capital_scope = {
+						region = world_jade_sea
+					}
+				}	
+			}	
+			NOT = { trait = incapable }
+			NOT = { is_inaccessible_trigger = yes }
+			is_nomadic = no
+			NOT = { religion = nath_pagan }
+			NOT = { culture_group = unoccupied_group }
+			NOT = { culture_group = winter_group }		
+			OR = {
+				NOT = { has_character_flag = huntcooldown }
+				had_character_flag = { flag = huntcooldown days = 365 }	
+			}	
+			OR = {
+				ai = no
+				NOT = { has_character_flag = huntcooldown }
+				had_character_flag = {
+					flag = huntcooldown
+					days = 3650
+				}
+			}
+		}
+		allow = {
+			war = no
+			NOT = { has_severe_disability_trigger = yes }
+			NOT = { trait = wounded }
+			is_ill = no
+			has_epidemic = no
+			
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}			
+		}
+		effect = {
+			if = {
+				limit = { lower_tier_than = DUKE }
+				treasury = -5
+			}
+			if = {
+				limit = { tier = DUKE }
+				treasury = -10
+			}
+			if = {
+				limit = { higher_tier_than = DUKE }
+				treasury = -20
+			}
+			add_character_modifier = {
+				name = holding_grand_hunt
+				duration = -1
+			}
+			hidden_tooltip = { 
+				letter_event = { id = 36080 }
+			}
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+				}
+				custom_tooltip = {
+					text = capital_prospers_custom_tooltip
+					hidden_tooltip = {
+						capital_scope = {
+							change_variable = { which = prosperity_value value = 8 }
+						}
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.05
+			}
+			modifier = {
+				factor = 0
+				has_character_modifier = loan_timer
+				OR = {
+					stewardship = 9
+					trait = temperate
+					NOT = { 
+						OR = {
+							trait = gluttonous 
+							trait = hedonist
+							trait = hunter
+						}	
+					}	
+				}	
+			}	
+			modifier = {
+				factor = 0
+				OR = {
+					trait = shy
+					trait = craven
+					trait = temperate
+				}	
+			}	
+			modifier = {
+				factor = 5
+				OR = {
+					trait = gregarious
+					trait = brave
+					trait = hunter
+					trait = hedonist
+				}	
+			}
+		}
+	}
+	
+	# i_am_high_valyrian = { #now an event
+		# is_high_prio = yes
+		# potential = {
+			# NOT = { has_global_flag = scenario_initialised }
+			# ai = no
+			# culture = high_valyrian
+			# NOT = { has_character_flag = high_valyrian }
+			# NOT = {
+				# OR = {
+					# dynasty = 496
+					# dynasty = 57
+					# trait = high_valyrian
+				# }
+			# }
+		# }
+		# allow = {
+				
+		# }
+		# effect = {
+			# custom_tooltip = { text = TOOLTIPi_am_high_valyrian }
+			# set_character_flag = high_valyrian
+			# any_dynasty_member = { set_character_flag = high_valyrian }
+		# }
+		# revoke_allowed = {
+			# always = no
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }	
+
+	#vanilla suicide (modified)
+	# commit_suicide = {
+		# only_rulers = yes
+		# potential = {
+			# is_ruler = yes
+			# age = 32
+			# trait = depressed
+		# }
+		# allow = {
+			# trait = depressed
+		# }
+		# effect = {
+			# death = { death_reason = death_suicide }
+		# }
+		# revoke_allowed = {
+			# always = no
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
+	
+	legitimize_self = {
+		is_high_prio = yes
+		only_independent = yes
+		potential = {
+			is_ruler = yes
+			OR = {
+				trait = bastard
+				trait = disinherited
+			}	
+			NOT = { trait = maester }
+			NOT = { trait = archmaester }
+			NOT = { trait = septon }
+			NOT = { trait = septa }
+			NOT = { trait = red_priest }
+			NOT = { trait = nightswatch }
+			NOT = { trait = silent_sister }
+			NOT = { trait = kingsguard }
+			OR = {
+				tier = EMPEROR
+				AND = {
+					tier = KING
+					independent = yes
+					primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+				}
+			}
+		}
+		allow = {
+			piety = 0
+			#is_adult = yes
+			NOT = { is_inaccessible_trigger = yes }
+			prisoner = no
+		}
+		effect = {
+			if = {
+				limit = { 
+					trait = bastard 
+					NOT = { trait = child_of_consort }
+				}
+				tooltip = {
+					remove_trait = bastard
+					add_trait = legit_bastard	
+				}	
+				piety = -20
+				mother = {
+					if = {
+						limit = { is_alive = yes }
+						opinion = {
+							who = ROOT
+							modifier = legitimized_child
+							years = 10
+						}
+					}	
+				}
+				if = {
+					limit = { has_character_flag = bastardised }
+					#change siblings in this case as well
+					any_sibling_even_if_dead = {
+						limit = {
+							trait = bastard
+							has_character_flag = bastardised
+							mother_even_if_dead = { any_child = { character = ROOT } }
+							real_father_even_if_dead = { ROOT = { real_father_even_if_dead = { character = PREVPREV } } }
+						}
+						tooltip = { remove_trait = bastard }	
+						hidden_tooltip = {
+							set_character_flag = unbastardise
+							character_event = { id = bastard.999 } #generic legitimise event
+						}
+					}
+				}	
+				hidden_tooltip = {
+					set_character_flag = unbastardise
+					character_event = { id = bastard.999 } #generic legitimise event
+					clr_character_flag = unbastardise
+					any_sibling_even_if_dead = { clr_character_flag = unbastardise }
+				}								
+			}
+			if = {
+				limit = { 
+					trait = bastard 
+					trait = child_of_consort
+				}
+				remove_trait = bastard
+				if = { #salt child gains dynasty
+					limit = { 
+						father_even_if_dead = { NOT = { dynasty = ROOT } }
+					}
+					father_even_if_dead = {
+						ROOT = {
+							hidden_tooltip = {
+								any_child_even_if_dead = {
+									limit = { dynasty = ROOT }
+									dynasty = PREVPREV
+									any_child_even_if_dead = {
+										limit = { dynasty = ROOT }
+										dynasty = PREVPREVPREV
+										any_child_even_if_dead = {
+											limit = { dynasty = ROOT }
+											dynasty = PREVPREVPREVPREV
+										}
+									}
+								}
+							}
+							dynasty = PREV
+						}
+					}
+				}								
+			}
+			if = {
+				limit = { trait = disinherited }
+				remove_trait = disinherited
+				any_child = {
+					limit = {
+						trait = disinherited
+						NOT = { has_character_flag = forbidden_marriage }
+					}
+					remove_trait = disinherited
+				}					
+			}	
+			recalc_succession = yes
+			hidden_tooltip = { #inform family
+				any_dynasty_member = { 
+					limit = {
+						NOT = { character = ROOT }
+						is_alive = yes
+						OR = {
+							ai = no
+							dynasty_head = { character = PREV }
+							any_child = { 
+								OR = {
+									character = ROOT 
+									any_child = { character = ROOT  }
+								}	
+							}
+						}	
+					}
+					letter_event = { id = bastard.501 }
+				}
+				father = {
+					if = {
+						limit = {
+							NOT = { dynasty = ROOT }				
+							is_alive = yes					
+						}
+						letter_event = { id = bastard.501 }
+					}
+				}
+				mother = {
+					if = {
+						limit = {
+							NOT = { dynasty = ROOT }			
+							is_alive = yes					
+						}
+						letter_event = { id = bastard.501 }
+					}
+				}
+				any_child = {
+					limit = {
+						ai = no
+						NOT = { dynasty = ROOT }			
+						is_alive = yes				
+						NOT = { is_father = ROOT }
+						NOT = { is_mother = ROOT }
+					}
+					letter_event = { id = bastard.501 }
+				}
+				any_spouse = {
+					limit = {
+						ai = no
+						NOT = { dynasty = ROOT }
+						is_alive = yes					
+						NOT = { is_father = ROOT }
+						NOT = { is_mother = ROOT }
+						NOT = { is_child_of = ROOT }
+					}
+					letter_event = { id = bastard.501 }
+				}
+			}
+			if = {
+				limit = { ai = no }
+				chronicle = {
+					entry = CHRONICLE_LEGITIMISED_SELF
+					#picture = "GFX_knight"
+				}
+			}	
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	adopt_matrilineal_lineage = {
+		is_high_prio = yes
+		only_rulers = yes
+		potential = {
+			is_ruler = yes
+			is_female = yes
+			NOT = { dynasty = 0 }		
+			OR = {
+				AND = {
+					is_married_matrilineally = no
+					any_spouse = { 
+						ROOT = { higher_tier_than = PREV }
+						is_alive = yes
+						ai = yes
+						OR = {
+							dynasty = 0
+							NOT = { father_even_if_dead = { always = yes } }
+							AND = { #If a cognatic realm it is easier to do this
+								ROOT = { primary_title = { has_law = true_cognatic_succession } }
+								is_primary_heir = no
+								NOT = { father_even_if_dead = { is_ruler = yes } }
+								NOT = { mother_even_if_dead = { is_ruler = yes } }
+								NOT = { any_sibling = { is_ruler = yes } }
+							}							
+						}	
+					}
+				}		
+				any_child = {
+					dynasty = 0
+					NOT = { trait = bastard }
+					NOT = { trait = dragon }
+				}
+			}	
+		}
+		allow = {
+			prestige = 200
+			NOT = { is_inaccessible_trigger = yes }
+		}
+		effect = {
+			set_character_flag = no_wedding_event
+			any_spouse = {
+				limit = {
+					ROOT = { higher_tier_than = PREV }
+					is_alive = yes
+					ai = yes
+					OR = {
+						dynasty = 0
+						NOT = { father_even_if_dead = { always = yes } }
+						AND = { #If a cognatic realm it is easier to do this
+							ROOT = { primary_title = { has_law = true_cognatic_succession } }
+							is_primary_heir = no
+							NOT = { father_even_if_dead = { is_ruler = yes } }
+							NOT = { mother_even_if_dead = { is_ruler = yes } }
+							NOT = { any_sibling = { is_ruler = yes } }
+						}							
+					}
+				}
+				set_character_flag = no_wedding_event
+				hidden_tooltip = { remove_spouse = spouse }
+				add_spouse_matrilineal = ROOT
+				clr_character_flag = no_wedding_event
+				set_character_flag = matrilinealised
+				ROOT = {
+					hidden_tooltip = { #regain lost prestige for re-marriage
+						if = { 
+							limit = { tier = EMPEROR }
+							prestige = 400
+						}
+						if = { 
+							limit = { tier = KING }
+							prestige = 300
+						}
+						if = { 
+							limit = { tier = DUKE }
+							prestige = 200
+						}
+						if = { 
+							limit = { tier = COUNT }
+							prestige = 100
+						}
+						if = { 
+							limit = { tier = BARON }
+							prestige = 50
+						}
+					}
+				}
+			}		
+			clr_character_flag = no_wedding_event
+			any_child = {
+				limit = {
+					NOT = { trait = bastard }
+					NOT = { trait = dragon }
+					OR = {
+						dynasty = 0
+						father = { has_character_flag = matrilinealised }
+					}	
+				}			
+				any_child = {
+					limit = {
+						NOT = { trait = bastard }
+						NOT = { trait = dragon }
+						OR = {
+							dynasty = 0
+							dynasty = PREV
+						}	
+					}
+					dynasty = ROOT
+				}
+				dynasty = ROOT
+			}
+			any_spouse = { clr_character_flag = matrilinealised }
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	
+	ask_liege_for_legitimisation = {
+		is_high_prio = yes
+		only_rulers = yes
+		potential = {
+			trait = bastard
+			is_ruler = yes
+			OR = { #Stop baron spam
+				higher_tier_than = BARON
+				is_patrician = yes
+				prestige = 250
+				father_even_if_dead = { is_ruler = yes }
+				mother_even_if_dead = { is_ruler = yes }
+			}	
+			OR = {
+				is_feudal = yes
+				NOT = { dynasty = 0 }
+			}	
+			is_priest = no
+			NOT = { trait = maester }
+			NOT = { trait = archmaester }
+			NOT = { trait = nightswatch }
+			NOT = { trait = kingsguard }		
+			NOT = { trait = child_of_consort } #salt child
+			NOR = {
+				tier = EMPEROR
+				AND = {
+					tier = KING
+					independent = yes
+					primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+				}
+			}
+			top_liege = {
+				OR = {
+					tier = EMPEROR
+					AND = {
+						tier = KING
+						independent = yes
+						primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+					}
+				}
+				NOR = {
+					character = ROOT
+					AND = {
+						age = 16
+						NOT = { is_incapable = yes }
+						reverse_has_opinion_modifier = { who = ROOT modifier = opinion_refused_legit }
+					}	
+					AND = {
+						OR = {
+							NOT = { age = 16 }
+							is_incapable = yes
+						}
+						regent = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_refused_legit } }
+					}
+				}		
+			}
+			OR = {
+				NOT = { has_character_flag = asking_for_legitimisation }
+				had_character_flag = { flag = asking_for_legitimisation days = 365 }
+			}	
+		}
+		allow = {
+			#piety = 0
+			is_adult = yes
+			NOT = { is_inaccessible_trigger = yes }
+			prisoner = no
+		}
+		effect = {
+			set_character_flag = asking_for_legitimisation
+			top_liege = {
+				if = {
+					limit = {
+						OR = {
+							NOT = { age = 16 }
+							is_incapable = yes
+						}
+					}
+					regent = { letter_event = { id = 76107 days = 3 tooltip = EVTTOOLTIP76107 } }
+				}	
+				if = {
+					limit = {
+						age = 16
+						NOT = { is_incapable = yes }
+					}
+					letter_event = { id = 76107 days = 3 tooltip = EVTTOOLTIP76107 }
+				}	
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+		
+	commission_runestone = {
+		only_playable = yes
+		potential = {
+			has_dlc = "The Old Gods"
+			is_ruler = yes
+			age = 16
+			prisoner = no
+			OR = {
+				religion = old_gods
+				religion_group = wildling_religion
+			}
+			NOT = {	has_character_flag = commissioned_runestone }
+			#NOT = { year = 1150 }
+		}
+		allow = {
+			wealth = 100
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+		}
+		effect = {
+			wealth = -100
+			set_character_flag = commissioned_runestone
+			hidden_tooltip = { 
+				character_event = { id = TOG.500 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.1
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { wealth = 250 }
+					has_character_modifier = loan_timer
+				}	
+				OR = {
+					stewardship = 9
+					trait = temperate
+					NOT = { 
+						OR = {
+							trait = gluttonous 
+							trait = proud
+							trait = charitable
+						}	
+					}	
+				}	
+			}	
+			modifier = {
+				factor = 0
+				OR = {
+					trait = humble
+					trait = greedy
+					trait = temperate
+				}	
+			}	
+			modifier = {
+				factor = 5
+				trait = proud
+			}
+		}
+	}	
+	
+	hold_ukon_juhla = {
+		only_playable = yes
+		potential = {
+			has_dlc = "The Old Gods"
+			is_ruler = yes
+			age = 16
+			culture_group = free_folk
+			demesne_size = 1
+			NOT = { has_character_modifier = held_ukon_juhla_timer }
+			OR = {
+				NOT = {	has_character_flag = holding_ukon_juhla }
+				had_character_flag = { flag = holding_ukon_juhla days = 365 }
+			}
+		}
+		allow = {
+			is_winter_trigger = yes
+			custom_tooltip = {
+				text = TOOLTIPhold_ukon_juhla_cost
+				OR = {
+					AND = {
+						yearly_income = 125
+						scaled_wealth = 0.4
+					}
+					wealth = 50	
+				}
+			}	
+			war = no		
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			NOT = { trait = incapable }	
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {		
+			if = {
+				limit = { yearly_income = 125 }
+				scaled_wealth = -0.4
+			}
+			if = {
+				limit = { NOT = { yearly_income = 125 } }
+				wealth = -50
+			}			
+			set_character_flag = holding_ukon_juhla
+			hidden_tooltip = { 
+				character_event = { id = TOG.700 } 
+				set_character_flag = do_not_disturb
+				character_event = { id = TOG.899 days = 100 } # Safety catch flag clearing
+			}
+			custom_tooltip = { text = prepare_ukon_juhla }
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+				}
+				custom_tooltip = {
+					text = capital_prospers_custom_tooltip
+					hidden_tooltip = {
+						capital_scope = {
+							change_variable = { which = prosperity_value value = 8 }
+						}
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				has_character_modifier = loan_timer
+				OR = {
+					stewardship = 9
+					trait = temperate
+					NOT = { 
+						OR = {
+							trait = gluttonous 
+							trait = hedonist
+							trait = slothful
+						}	
+					}	
+				}	
+			}	
+			modifier = {
+				factor = 0
+				OR = {
+					trait = shy
+					trait = greedy
+					trait = temperate
+				}	
+			}	
+			modifier = {
+				factor = 5
+				OR = {
+					trait = gregarious
+					trait = charitable
+					trait = gluttonous 
+					trait = hedonist
+				}	
+			}
+		}
+	}
+		
+	find_guru = {
+		only_playable = yes
+		potential = {
+			has_dlc = "Rajas of India"
+			age = 16
+			is_ruler = yes
+			OR = {
+				is_feudal = yes
+				is_tribal = yes
+				is_nomadic = yes
+			}
+			prisoner = no
+			culture_group = yi_ti_group
+			NOT = { has_character_flag = looking_for_guru }
+			NOT = { has_character_flag = found_guru }
+			NOT = {
+				any_courtier = {
+					has_minor_title = title_guru
+				}
+			}
+		}
+		allow = {
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			wealth = 50
+			prestige = 300
+		}
+		effect = {
+			wealth = -50
+			set_character_flag = looking_for_guru
+			character_event = { id = RoI.3000 }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				trait = cynical
+			}
+			modifier = {
+				factor = 0
+				NOT = { wealth = 200 }
+			}
+		}
+	}
+	
+	hold_tiger_hunt = {
+		only_playable = yes
+		potential = {
+			has_dlc = "Rajas of India"
+			is_ruler = yes
+			age = 16
+			prisoner = no
+			num_of_vassals = 1
+			demesne_size = 1
+			capital_scope = {
+				region = world_jade_sea
+			}
+			NOT = { has_character_flag = holding_tiger_hunt }
+			NOT = { has_character_modifier = hunt_timer }
+		}
+		allow = {
+			war = no
+			NOT = { month = 10 }
+			wealth = 25
+			NOT = {	trait = incapable }
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {
+			wealth = -25
+			set_character_flag = holding_tiger_hunt
+			set_character_flag = recent_minor_decision
+			set_character_flag = do_not_disturb
+			hidden_tooltip = { character_event = { id = RoI.2000 } }
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+				}
+				custom_tooltip = {
+					text = capital_prospers_custom_tooltip
+					hidden_tooltip = {
+						capital_scope = {
+							change_variable = { which = prosperity_value value = 8 }
+						}
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = { wealth = 50 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { wealth = 200 }
+				NOT = { has_focus = focus_hunting }
+			}
+			modifier = {
+				factor = 0
+				NOT = { martial = 10 }
+				NOT = { has_focus = focus_hunting }
+			}
+			modifier = {
+				factor = 0
+				has_character_flag = recent_minor_decision
+				NOT = {
+					had_character_flag = {
+						flag = recent_minor_decision
+						days = 730
+					}
+				}
+			}				
+		}
+	}
+	
+	hold_a_northern_melee = {
+		is_high_prio = yes
+		only_playable = yes
+		
+		potential = {
+			is_ruler = yes
+			religion = old_gods
+			NOT = { tier = BARON }
+						
+			#Cannot hold tourney if....
+			NOT = { any_liege = { has_character_flag = melee_in_progress } } #Any liege is holding one
+			top_liege = { #Any King tier character in realm is holding one			
+				NOT = { 
+					any_vassal = {
+						tier = KING
+						has_character_flag = melee_in_progress
+					}
+				}
+			}
+			NOT = { #Any duke within same kingdom is holding one
+				any_liege = { 
+					tier = KING
+					any_vassal = {
+						tier = DUKE
+						has_character_flag = melee_in_progress
+					}
+				}
+			}				
+			
+			NOT = { top_liege = { trait = civil_war } }	
+			is_theocracy = no
+			NOT = { trait = kingsguard }
+			NOT = { trait = nightswatch }
+			NOT = { has_landed_title = c_the_citadel }
+			
+			NOT = { has_character_flag = no_kingship }
+			NOT = { has_character_flag = inherit_war }		
+			NOT = { has_character_flag = attending_melee }
+			OR = {
+				NOT = { has_character_flag = northern_melee }
+				had_character_flag = { flag = northern_melee days = 3650 }
+			}
+		}
+		
+		allow = {
+			war = no
+			custom_tooltip = {
+				text = TOOLTIPNOTANYLIEGEWARS
+				hidden_tooltip = {
+					NOT = {
+						any_liege = {
+							war = yes
+						}
+					}
+				}	
+			}	
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			is_adult = yes	
+			custom_tooltip = {
+				text = TOOLTIPMINORDECISIONALLOWWEALTH
+				hidden_tooltip = {
+					OR = {
+						AND = {
+							tier = COUNT
+							treasury = 25
+						}
+						AND = {
+							tier = DUKE
+							treasury = 50
+						}
+						AND = {
+							tier = KING
+							treasury = 100
+						}
+						AND = {
+							tier = EMPEROR
+							treasury = 150
+						}
+					}
+				}
+			}		
+			#prestige = 150			
+			NOT = { trait = incapable }
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		
+		effect = {
+			set_character_flag = northern_melee
+			set_character_flag = tourny_in_progress
+			set_character_flag = do_not_disturb 
+			clr_character_flag = tournament_has_ended		
+			if = {
+				limit = { tier = COUNT }
+				treasury = -25
+				prestige = 20
+			}
+			if = {
+				limit = { tier = DUKE }
+				treasury = -50
+				prestige = 40
+			}
+			if = {
+				limit = { tier = KING }
+				treasury = -100
+				prestige = 60
+			}	
+			if = {
+				limit = { tier = EMPEROR }
+				treasury = -150
+				prestige = 90
+			}				
+			add_character_modifier = {
+				name = "holding_epic_tournament"
+				duration = -1
+			}
+			character_event = { id = northern_melee.1 tooltip = "tournament_invite" }
+			hidden_tooltip = {
+				character_event = { id = northern_melee.3 days = 30 } # Tournament start
+			}
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+				}
+				custom_tooltip = {
+					text = capital_prospers_custom_tooltip
+					hidden_tooltip = {
+						capital_scope = {
+							change_variable = { which = prosperity_value value = 8 }
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.02
+			}
+			
+			#AI Wont Do!
+			modifier = {
+				factor = 0
+				has_character_modifier = loan_timer	
+				OR = {
+					stewardship = 9
+					trait = temperate
+					NOT = { 
+						OR = {
+							trait = gluttonous 
+							trait = hedonist
+						}	
+					}	
+				}	
+			}
+			
+			#AI unlikley to do
+			modifier = {
+				factor = 0.2
+				OR = {
+					trait = shy
+					trait = greedy
+					trait = temperate
+					trait = stressed
+					trait = depressed
+					trait = slothful
+				}	
+			}
+			
+			#AI likely to do
+			modifier = {
+				factor = 3
+				OR = {
+					trait = gregarious
+					trait = charitable
+					trait = gluttonous 
+					trait = hedonist
+					trait = impaler
+					trait = duelist
+					trait = poet
+					stewardship = 12
+				}	
+			}			
+		}
+	}
+	# Choose Warhorse (Nomad)
+	choose_warhorse_nomad = {
+		only_playable = yes
+		potential = {
+			is_playable = yes
+			is_nomadic = yes
+			is_ruler = yes
+			NOT = { has_character_modifier = nomad_warhorse }
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {
+			wealth = -20
+			custom_tooltip = { text = nomad_acquires_warhorse_tooltip }
+			hidden_tooltip = { long_character_event = { id = HL.6000 } } # Select and name horse
+			hidden_tooltip = { character_event = { id = HL.6500 days = 3500 random = 2000 } } # Horse dies
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0.01
+			modifier = {
+				factor = 0
+				NOT = { wealth = 100 }
+			}
+		}
+	}
+	
+	ancestor_worship = {
+		only_playable = yes
+		is_high_prio = yes 
+
+		potential = {
+			has_dlc = "The Old Gods"
+			is_playable = yes
+			is_landed = yes
+			is_adult = yes
+			prisoner = no
+			OR = {			
+				religion_group = wildling_religion
+				religion = black_goat
+				religion = aztec
+				religion = cold_gods
+				religion = old_ones
+				religion = sothoryos_rel
+			}
+		}
+
+		allow = {
+			war = no
+			any_demesne_title = {
+				NOT = { higher_tier_than = count }
+				is_occupied = no
+			}
+			NOT = { is_inaccessible_trigger = yes }
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+			custom_tooltip = {
+				text = worship_cooldown_tooltip
+				hidden_tooltip = { NOT = { has_character_modifier = worshipped_ancestors_timer } }
+			}
+		}
+
+		effect = {
+			set_character_flag = recent_minor_decision
+			set_character_flag = do_not_disturb
+			custom_tooltip = {
+				text = prepare_worship_ancestors
+				hidden_tooltip = { 
+					character_event = { id = TOG.7000 } 
+					add_character_modifier = {
+						name = worshipped_ancestors_timer
+						years = 10
+						hidden = yes
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0.01
+			
+			modifier = {
+				factor = 0.01
+				trait = cynical
+			}
+			modifier = {
+				factor = 5
+				trait = zealous
+			}	
+			modifier = {
+				factor = 0
+				has_character_flag = recent_minor_decision
+				NOT = {
+					had_character_flag = {
+						flag = recent_minor_decision
+						days = 730
+					}
+				}
+			}
+		}
+	}
+	launch_adventure = {
+		potential = {
+			has_character_modifier = planning_claimant_adventure
+			is_ruler = no
+			#had_character_flag = { flag = planning_claimant_adventure days = 365 }
+		}
+		allow = {
+			prisoner = no
+			NOT = { trait = incapable }
+			NOT = { is_inaccessible_trigger = yes }
+			is_ill = no
+			NOT = { #Remain loyal to liege during conflict
+				liege = {
+					war = yes
+					OR = {
+						is_close_relative = ROOT
+						is_married = ROOT
+						reverse_opinion = { who = ROOT value = 50 }
+					}
+					reverse_opinion = { who = ROOT value = 15 }			
+				}
+			}
+			OR = {
+				NOT = { has_character_flag = TOG.1202 }
+				had_character_flag = { flag = TOG.1202 days = 150 }
+			}
+			OR = { #To start adventurer must have means
+				wealth = 400		
+				AND = {
+					trait = dragon_rider				
+					any_friend = {
+						trait = dragon
+						NOT = { trait = maimed_dragon }
+						martial = 20
+					}
+				}	
+				trait = chosen_by_rhllor #religious fervour
+				AND = { #Patricularly charismatic
+					diplomacy = 11
+					martial = 9
+					OR = {
+						trait = genius
+						trait = master_warrior
+						trait = authoritative
+						trait = inspiring_leader
+						trait = brilliant_strategist
+					}
+				}
+				any_claim = { #Has the support of the claimant faction
+					holder_scope = {
+						reverse_has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_claimant_adventure_target
+						}
+						any_vassal = {
+							leads_faction = faction_claimant
+							supported_claimant = { character = ROOT }
+							faction_power = 
+							{
+								faction = faction_claimant
+								power = 0.5
+							}
+						}
+					}
+					OR = {
+						tier = KING
+						holder_scope = { tier = PREV }
+					}
+				}
+			}
+		}		
+		effect = {
+			set_character_flag = TOG.1202
+			character_event = { id = TOG.1202 }
+		}	
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.25
+			}
+		}
+	}	
+	rebuild_harrenhal = {
+		only_playable = yes
+		is_high_prio = yes 
+
+		potential = {
+			is_playable = yes
+			has_landed_title = c_harrenhal
+			107 = { 
+				NOR = {  
+					has_province_modifier = rebuilding_harrenhal 
+					has_province_modifier = completeharren3 
+				} 
+			} 
+		}
+
+		allow = {
+			has_regent = no
+			custom_tooltip = {
+				text = TOOLTIPrebuild_harrenhalCOST
+				hidden_tooltip = { 
+					OR = {
+						wealth = 800
+						AND = { #AI may take loan to rebuild
+							ai = yes
+							wealth = 200
+							monthly_income = 10
+							NOT = { has_character_flag = loan_taken }
+							NOT = { has_character_modifier = loan_timer }
+							NOT = { has_character_flag = offended_moneylenders }
+						}
+					}	
+				}	
+			}	
+		}
+
+		effect = {
+			character_event = { id = harrenhal.1 tooltip = TOOTLIPharrenhal.1 }
+		}
+		ai_will_do = {
+			factor = 0.01
+			
+			modifier = {
+				factor = 0.1
+				NOT = { wealth = 400 }
+			}
+			modifier = {
+				factor = 0
+				war = yes
+			}
+			modifier = {
+				factor = 2
+				culture = ironborn
+			}
+			modifier = {
+				factor = 4
+				trait = ambitious
+			}
+			modifier = {
+				factor = 0.25
+				trait = content
+			}		
+			modifier = {
+				factor = 4
+				trait = diligent
+			}
+			modifier = {
+				factor = 0.25
+				trait = slothful
+			}
+		}
+	}
+}

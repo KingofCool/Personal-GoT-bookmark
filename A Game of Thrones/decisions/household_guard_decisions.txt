@@ -1,0 +1,107 @@
+decisions = {
+	employ_cityguard = {
+		only_playable = yes
+		potential = { 
+			ai = no
+			is_ruler = yes			
+			#higher_tier_than = BARON
+			capital_scope = { NOT = { has_province_modifier = employed_cityguard } } 
+			is_nomadic = no
+			NOT = { religion = nath_pagan }
+			NOT = { culture_group = free_folk }
+			NOT = { trait = nightswatch }
+			NOT = { trait = kingsguard }
+		}
+		allow = {
+			demesne_size = 1
+			wealth = 50
+			prisoner = no
+			NOT = { trait = incapable }
+		}
+		effect = {
+			wealth = -50
+			capital_scope = {
+				add_province_modifier = {
+					name = employed_cityguard
+					duration = -1
+				}	
+			}		
+			hidden_tooltip = { character_event = { id = 347796 } }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	cityguard_menu = {
+		only_playable = yes
+		potential = { 
+			ai = no
+			is_ruler = yes
+			demesne_size = 1
+			capital_scope = { has_province_modifier = employed_cityguard } 
+		}
+		allow = { 
+			capital_scope = { NOT = { has_province_modifier = cityguard_busy } } 
+			capital_holding = { controller = { character = ROOT } }
+			custom_tooltip = {
+				text = TOOLTIPapponted_captain_guard
+				hidden_tooltip = {
+					any_courtier = {
+						has_minor_title = title_captain_of_guard
+					}
+				}
+			}
+		}
+		effect = {
+			character_event = { id = 347790 tooltip = TOOLTIP347790 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	disband_cityguard = {
+		only_playable = yes
+		potential = {
+			ai = no
+			is_ruler = yes
+			demesne_size = 1
+			capital_scope = { has_province_modifier = employed_cityguard }
+		}
+		allow = { 
+			capital_scope = { NOT = { has_province_modifier = cityguard_busy } } 
+		}
+		effect = { 
+			capital_scope = { 
+				remove_province_modifier = employed_cityguard 
+				if = {
+					limit = { has_province_modifier = cityguard_drilling }
+					remove_province_modifier = cityguard_drilling
+				}	
+				if = {
+					limit = { has_province_modifier = forced_training }
+					remove_province_modifier = forced_training
+				}
+				if = {
+					limit = { has_province_modifier = capital_defense }
+					remove_province_modifier = capital_defense
+				}
+				if = {
+					limit = { has_province_modifier = tyranny }
+					remove_province_modifier = tyranny
+				}
+				# if = {
+					# limit = { has_province_modifier = burned_land }
+					# remove_province_modifier = burned_land
+				# }	
+			} 
+			any_courtier = {
+				limit = { has_minor_title = title_captain_of_guard }
+				remove_title = title_captain_of_guard
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+}
+

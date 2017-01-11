@@ -1,0 +1,164 @@
+
+decisions = {
+	recruit_troops_norse = {
+		only_rulers = yes
+		potential = {
+			is_ruler = yes
+			has_character_flag = raiding_adventurer
+			ai = yes
+			war = no
+			wealth = 100
+			NOT = { realm_levies = 6000 }
+			location = { always = yes }
+			#NOT = { government = nomadic_government }
+		}
+		
+		effect = {
+			wealth = -75
+			location = {
+				ROOT = {
+					if = {
+						limit = { NOT = { government = nomadic_government } }
+						spawn_unit = {
+							province = PREV
+							owner = ROOT
+							leader = none
+							attrition = 0
+			#				disband_on_peace = yes
+							reinforces = yes
+							is_looter = yes
+							can_toggle_looting = no
+							cannot_inherit = yes
+							troops = {
+								light_infantry = { 1 500 }
+								heavy_infantry = { 1 40 }
+								archers = { 1 200 }
+							}
+							merge = yes
+						}
+					}	
+					if = {
+						limit = { government = nomadic_government }
+						spawn_unit = {
+							province = PREV
+							owner = ROOT
+							leader = none
+							attrition = 0
+			#				disband_on_peace = yes
+							reinforces = yes
+							is_looter = yes
+							can_toggle_looting = no
+							cannot_inherit = yes
+							troops = {
+								light_cavalry = { 1 250 }
+								horse_archers = { 1 250 }
+							}
+							merge = yes
+						}
+					}
+				}	
+			}	
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.1
+			}
+		}
+	}
+	become_genghis_khan = { #Great Khal
+		is_high_prio = yes
+		only_independent = yes
+		potential = {
+			#has_dlc = "Horse Lords"			
+			is_playable = yes
+			independent = yes
+			culture = dothraki
+			government = nomadic_government
+			NOT = { has_character_modifier = greatest_of_khans }
+		}
+		
+		allow = {
+			culture = dothraki
+			government = nomadic_government
+			num_of_count_titles_in_realm = 50
+			prestige = 1500
+			age = 16
+			OR = {
+				martial = 12
+				trait = skilled_warrior
+				trait = master_warrior
+			}
+			prisoner = no
+			is_tributary = no
+			NOR = {
+				has_severe_disability_trigger = yes
+				trait = eunuch
+				is_inaccessible_trigger = yes
+			}				
+		}
+		
+		effect = {
+			#set_global_flag = mongol_horde_arrival
+			#set_global_flag = mongol_horde_united
+			set_special_character_title = nomadic_emperor_foa_dothraki
+			prestige = 1000
+			add_character_modifier = {
+				name = greatest_of_khans
+				duration = -1
+			}
+			if = {
+				limit = {
+					e_khalasar = {
+						has_holder = no
+					}
+				}
+				any_demesne_title = {
+					limit = {
+						tier = EMPEROR
+						is_titular = yes
+					}
+					set_title_flag = to_be_destroyed
+				}
+				e_khalasar = {
+					hidden_tooltip = {
+						activate_title = { title = THIS status = yes }
+					}
+					grant_title = PREV
+					make_primary_title = yes
+				}
+				any_demesne_title = {
+					limit = {
+						has_title_flag = to_be_destroyed
+					}
+					clr_title_flag = to_be_destroyed
+					activate_title = { title = THIS status = no }
+					destroy_landed_title = THIS
+				}
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				character_event = { id = 60530 } # ai reinforcements
+				population = 50000
+			}
+			hidden_tooltip = {
+				any_playable_ruler = {
+					limit = { 
+						ai = no 
+						NOT = { character = ROOT }
+					}
+					narrative_event = { id = 60520 } # notify the world
+				}
+				narrative_event = { id = 60520 } # and self
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

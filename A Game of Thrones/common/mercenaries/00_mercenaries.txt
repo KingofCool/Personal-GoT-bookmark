@@ -1,0 +1,166 @@
+# Define mercenary types here now instead of in the static_composition.txt file
+# Also remember to tell the landed title to use this mercenary type instead.
+# Several titles can refer to the same type as well now.
+
+d_merc_inf = {
+	levy_size = 1
+	archers = 150
+	light_infantry = 300
+	heavy_infantry = 150
+	light_cavalry = 150
+}
+d_merc_ironborn = {
+	levy_size = 1
+	light_infantry = 350
+	heavy_infantry = 250
+	galleys = 7
+}
+d_merc_dornish = {
+	levy_size = 1
+	pikemen = 500
+	heavy_infantry = 50
+	light_cavalry = 10
+}
+d_merc_hedgeknight = {
+	levy_size = 1
+	light_cavalry = 50
+	knights = 50
+}
+d_merc_wild = {
+	levy_size = 1
+	light_infantry = 60
+	archers = 40
+}
+d_merc_golden_company = {
+	levy_size = 9
+	archers = 100
+	heavy_infantry = 300
+	pikemen = 300
+	light_infantry = 100
+	light_cavalry = 70
+	knights = 100
+	war_elephants = 30
+}
+d_merc_fleet = {
+	levy_size = 1
+	galleys = 15
+}
+d_warriors_sons = {
+	levy_size = 2
+	heavy_infantry = 500
+	knights = 400
+	archers = 200
+}
+d_poor_fellows = {
+	levy_size = 7
+	light_infantry = 800
+	heavy_infantry = 30
+	light_cavalry = 70
+	archers = 100
+}
+d_brave_companions = {
+	levy_size = 2
+	archers = 150
+	light_infantry = 500
+	heavy_infantry = 50
+	light_cavalry = 50
+}
+d_free_city_merc = {
+	levy_size = 2
+	archers = 150
+	light_infantry = 300
+	heavy_infantry = 150
+	light_cavalry = 150
+}
+d_company_of_the_cat = {
+	levy_size = 1
+	light_infantry = 1000
+	heavy_infantry = 500
+}
+d_long_lances = {
+	levy_size = 1
+	horse_archers = 1000
+	#light_cavalry = 300
+	#knights = 100
+}
+d_second_sons = {
+	levy_size = 1
+	archers = 50
+	heavy_infantry = 140
+	light_cavalry = 40
+	knights = 20
+}
+d_stormcrows = {
+	levy_size = 1
+	light_infantry = 100
+	heavy_infantry = 100
+	light_cavalry = 50
+}
+d_windblown = {
+	levy_size = 1
+	light_infantry = 500
+	heavy_infantry = 250
+	light_cavalry = 225
+	knights = 25
+}
+d_bearded_priests = {
+	levy_size = 1
+	heavy_infantry = 400
+	light_infantry = 400
+	light_cavalry = 200
+	archers = 200
+}
+c_fiery_hand = {
+	levy_size = 1
+	heavy_infantry = 1000
+}
+d_unsullied_10000 = {
+	levy_size = 1
+	heavy_infantry = 4000
+	pikemen = 1000
+}
+d_giants = {
+	levy_size = 1
+	heavy_infantry = 50
+	mammoths = 2
+}
+d_company_of_the_rose_merc = {
+	levy_size = 2
+
+	light_infantry = 170
+	heavy_infantry = 430
+	light_cavalry = 130
+	knights = 20
+}
+mercenary_princess_composition = {
+	levy_size = 5
+	archers = 450
+	heavy_infantry = 600
+	light_infantry = 500
+	light_cavalry = 500
+	pikemen = 200
+	galleys = 40
+}
+## Must exist or else dynamic mercenary band might fail for nomads!
+default_culture_band_composition = {
+	levy_size = 1
+	light_infantry = 100
+}
+
+altaic_culture_band_composition = {
+	levy_size = 1
+	light_cavalry = 60
+	horse_archers = 40
+}
+
+magyar_culture_band_composition = {
+	levy_size = 1
+	light_cavalry = 70
+	horse_archers = 30
+}
+
+alan_culture_band_composition = {
+	levy_size = 1
+	light_cavalry = 70
+	horse_archers = 30
+}

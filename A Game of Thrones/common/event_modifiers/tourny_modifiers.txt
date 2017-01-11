@@ -1,0 +1,199 @@
+jousting = {
+	monthly_character_prestige = 0.01
+	icon = 1
+}
+
+battlefield_fight = {
+	monthly_character_prestige = 0.01
+	icon = 1
+}
+
+#Equipment
+good_bow = {
+	icon = 13
+}
+golden_bow = {
+	icon = 13
+}
+
+###Tourny medals
+grand_tourny_1st_1 = {
+	monthly_character_prestige = 0.1
+	icon = 41
+}
+grand_tourny_1st_2 = {
+	monthly_character_prestige = 0.15
+	icon = 42
+}
+grand_tourny_1st_3 = {
+	monthly_character_prestige = 0.20
+	icon = 43
+}
+grand_tourny_1st_4 = {
+	monthly_character_prestige = 0.25
+	icon = 44
+}
+grand_tourny_1st_5 = {
+	monthly_character_prestige = 0.30
+	icon = 45
+}
+grand_tourny_2nd_1 = {
+	monthly_character_prestige = 0.05
+	icon = 46
+}
+grand_tourny_2nd_2 = {
+	monthly_character_prestige = 0.09
+	icon = 47
+}
+grand_tourny_2nd_3 = {
+	monthly_character_prestige = 0.13
+	icon = 48
+}
+grand_tourny_2nd_4 = {
+	monthly_character_prestige = 0.17
+	icon = 49
+}
+grand_tourny_2nd_5 = {
+	monthly_character_prestige = 0.21
+	icon = 50
+}
+grand_tourny_3rd_1 = {
+	monthly_character_prestige = 0.02
+	icon = 51
+}
+grand_tourny_3rd_2 = {
+	monthly_character_prestige = 0.05
+	icon = 52
+}
+grand_tourny_3rd_3 = {
+	monthly_character_prestige = 0.08
+	icon = 53
+}
+grand_tourny_3rd_4 = {
+	monthly_character_prestige = 0.11
+	icon = 54
+}
+grand_tourny_3rd_5 = {
+	monthly_character_prestige = 0.14
+	icon = 55
+}
+normal_tourny_1st_1 = {
+	monthly_character_prestige = 0.05
+	icon = 56
+}
+normal_tourny_1st_2 = {
+	monthly_character_prestige = 0.09
+	icon = 57
+}
+normal_tourny_1st_3 = {
+	monthly_character_prestige = 0.13
+	icon = 58
+}
+normal_tourny_1st_4 = {
+	monthly_character_prestige = 0.17
+	icon = 59
+}
+normal_tourny_1st_5 = {
+	monthly_character_prestige = 0.21
+	icon = 60
+}
+normal_tourny_2nd_1 = {
+	monthly_character_prestige = 0.03
+	icon = 61
+}
+normal_tourny_2nd_2 = {
+	monthly_character_prestige = 0.06
+	icon = 62
+}
+normal_tourny_2nd_3 = {
+	monthly_character_prestige = 0.09
+	icon = 63
+}
+normal_tourny_2nd_4 = {
+	monthly_character_prestige = 0.12
+	icon = 64
+}
+normal_tourny_2nd_5 = {
+	monthly_character_prestige = 0.15
+	icon = 65
+}
+normal_tourny_3rd_1 = {
+	monthly_character_prestige = 0.02
+	icon = 66
+}
+normal_tourny_3rd_2 = {
+	monthly_character_prestige = 0.04
+	icon = 67
+}
+normal_tourny_3rd_3 = {
+	monthly_character_prestige = 0.06
+	icon = 68
+}
+normal_tourny_3rd_4 = {
+	monthly_character_prestige = 0.08
+	icon = 69
+}
+normal_tourny_3rd_5 = {
+	monthly_character_prestige = 0.1
+	icon = 70
+}
+small_tourny_1st_1 = {
+	monthly_character_prestige = 0.03
+	icon = 71
+}
+small_tourny_1st_2 = {
+	monthly_character_prestige = 0.06
+	icon = 72
+}
+small_tourny_1st_3 = {
+	monthly_character_prestige = 0.09
+	icon = 73
+}
+small_tourny_1st_4 = {
+	monthly_character_prestige = 0.12
+	icon = 74
+}
+small_tourny_1st_5 = {
+	monthly_character_prestige = 0.15
+	icon = 75
+}
+small_tourny_2nd_1 = {
+	monthly_character_prestige = 0.02
+	icon = 76
+}
+small_tourny_2nd_2 = {
+	monthly_character_prestige = 0.04
+	icon = 77
+}
+small_tourny_2nd_3 = {
+	monthly_character_prestige = 0.06
+	icon = 78
+}
+small_tourny_2nd_4 = {
+	monthly_character_prestige = 0.08
+	icon = 79
+}
+small_tourny_2nd_5 = {
+	monthly_character_prestige = 0.1
+	icon = 80
+}
+small_tourny_3rd_1 = {
+	monthly_character_prestige = 0.01
+	icon = 81
+}
+small_tourny_3rd_2 = {
+	monthly_character_prestige = 0.02
+	icon = 82
+}
+small_tourny_3rd_3 = {
+	monthly_character_prestige = 0.03
+	icon = 83
+}
+small_tourny_3rd_4 = {
+	monthly_character_prestige = 0.04
+	icon = 84
+}
+small_tourny_3rd_5 = {
+	monthly_character_prestige = 0.05
+	icon = 85
+}

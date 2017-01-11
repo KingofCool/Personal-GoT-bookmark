@@ -1,0 +1,482 @@
+valyrian = {
+	graphical_cultures = { westerngfx } # buildings, portraits, units
+	
+	high_valyrian = {
+		graphical_cultures = { valyriangfx } # portraits
+		
+		used_for_random = no
+		
+		color = { 0.15 0.15 0.15 }
+		
+		male_names = {
+			Aerys:400 Aegon:1100 Aegor Aelyx Aemon:400 Aemond Aenar Aenys:200 Aerion:300 Aeryn Aelor Aurion:50 Aethon:50
+			Baelor:200 Baelon:300
+			Daegar:50 Daemon:400 Daeron:600 Daemion
+			Gaemon:200 Haegon Haerys:50
+			Jaekar:50 Jaehaerys:400 Jacaerys
+			Lucerys Laenor
+			Maelys Maegon Maegor:200 Maekar Maerys:50 Matarys Maelor
+			Orys:50 Otherys:50
+			Qoherys:50
+			Rhaegar Rhaegel Rhaekar:50
+			Valarr Viserys:400 Vaeron Vaekar:50 Vaermon Vaemond:50 Vaegon Valerion
+		}
+		female_names = {
+			Allyria:50 Alearys:50 Aelinor Alysanne Aerea Alyssa Aelora
+			Baela
+			Cyeana Cymella:50 Calla		
+			Daella:200 Daena Daeoril Daenerys:200 Daenys Daenaera Daenora
+			Elaena:200
+			Gael
+			Helaena Haera 
+			Jaehaera Jaenara
+			Leaysa:50 Laena 
+			Maera:50 Maega:50 Maegelle
+			Naerys Rhae Rhaelle Rhaena:300 Rhaeys:50 Rhaenyra Rhaelinor:50 Rhaenys:300 Rhalla
+			Saenrys:50 Syaella:50 Shaera Saera Shaena
+			Visenya:200 Vaera:50 Vaella:200 Viserra
+		}
+		
+		from_dynasty_prefix = "of "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 15
+		mat_grf_name_chance = 5
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 15
+		mat_grm_name_chance = 5
+		mother_name_chance = 0
+		
+		disinherit_from_blinding = yes
+		
+		modifier = default_culture_modifier
+	}
+	western_valyrian = {
+		graphical_cultures = { westvalyriangfx } # portraits
+		
+		color = { 0.35 0.35 0.35 }
+		
+		male_names = {
+			Aegon Aegor Aelix Aemon Aemond Aenys Aerion Aerys Alan Alaric Allar Allard Alliser Alyn Ardrian Arryk Aurane Ayrmidon Addam Aethon
+			Baelor Balman Belis Bennard Boros Bryen
+			Clarence Clayton Clement Crispian Corlys
+			Daemon Daeron Danos Davos Denys Dontos Duncan Duram
+			Erryk Florian
+			Guncer Gyles Galfrid Gargon
+			Haegon Hubard
+			Jacelyn Jaehaerys Janos Jarman Jarmen Jon Jothos Justin Jacaerys Joffrey
+			Lothar Lothor Lucos Lucerys Laenor
+			Maegor Maekar Maelys Malliard Maric Matarys Matthos Monford Monterys Morgan Morros
+			Ollidor Orys Otherys
+			Pate
+			Qarlton Quenton
+			Rhaegar Rhaegel Rolland
+			Sefton Simon Steffon Symon Symeon
+			Triston
+			Ulmer
+			Valarr Viserys Vaermon Vaemond
+		}
+		female_names = {
+			Aelinor Aglantine Alerie Alla Alyce Alynne Alys Alysanne Annara Arianne
+			Cassana Corenna Cyrenna
+			Dalla Delena Denyse Desmera Donyse Daella Daena Daenerys Daeryssa
+			Eglantine Elaena Ermesande
+			Falena Falyse
+			Jeyne Jonquil Joyeuse
+			Leona Leonette Leyla Lia Lollys Leana
+			Malessa Malora Marei Marya Matrice Melicent Mhaegan Mhaegen Moelle Mylenda Marilda
+			Nareys
+			Ravella Rhae Rhaella Rhaelle Rhaena Rhaenyra Rhaenys Roelle
+			Scolera Selyse Senelle Serenei Shiera Shireen
+			Talla Tanda
+			Unella
+			Visenya
+		}
+		
+		from_dynasty_prefix = "of "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 25
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 15
+		mat_grm_name_chance = 10
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+	
+	eastern_valyrian = {
+		graphical_cultures = { valyriangfx republicsgfx }
+		
+		color = { 0.25 0.25 0.25 }
+		
+		used_for_random = no
+		
+		male_names = {
+			#CANON
+			Alios Ayrmidon
+			Belicho Benerro
+			Colloquo
+			Doniphos
+			Gorys
+			Horonno
+			Malaquo Methyso Moqorro
+			Nyessos
+			Parquello
+			Qavo
+			Vogarro
+			
+			Aenar Aelix
+			Daegar Haerys
+			Jaekar
+			Matarys
+			Orys Qoherys
+			Vaeron Vaekar Vaermon
+		}
+		female_names = {
+			#CANON
+			Talisa Trianna
+			
+			#NON CANON
+			Alia
+			Belicha Benerra
+			Donipha
+			Horonna
+			Moqorra
+			Nyessa
+			Parquella
+			Qava
+			Vogarra
+			
+			Allyria Alearys
+			Cyeana Cymella
+			Daella Daeoril
+			Elaena Leaysa Naerys Rhae Rhaelle Rhaeys Rhaelinor Saenrys
+			Syaella
+		}
+		
+		from_dynasty_prefix = "of "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 25
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 15
+		mat_grm_name_chance = 10
+		mother_name_chance = 0
+		
+		disinherit_from_blinding = yes
+		
+		modifier = default_culture_modifier
+	}
+	
+	mantaryan = {
+		graphical_cultures = { westvalyriangfx republicsgfx }
+		
+		color = { 0.45 0.45 0.45 }
+		
+		male_names = {
+			#CANON
+			Alios Ayrmidon
+			Belicho Benerro
+			Colloquo
+			Doniphos
+			Gorys
+			Horonno
+			Malaquo Methyso Moqorro
+			Nyessos
+			Parquello
+			Qavo
+			Vogarro
+			
+			Aenar Aelix
+			Daegar Haerys
+			Jaekar
+			Matarys
+			Orys Qoherys
+			Vaeron Vaekar Vaermon
+		}
+		female_names = {
+			#CANON
+			Talisa Trianna
+			
+			#NON CANON
+			Alia
+			Belicha Benerra
+			Donipha
+			Horonna
+			Moqorra
+			Nyessa
+			Parquella
+			Qava
+			Vogarra
+			
+			Allyria Alearys
+			Cyeana Cymella
+			Daella Daeoril
+			Elaena Leaysa Naerys Rhae Rhaelle Rhaeys Rhaelinor Saenrys
+			Syaella
+		}
+		from_dynasty_prefix = "of "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		disinherit_from_blinding = yes
+		
+		modifier = default_culture_modifier
+	}
+	
+	tolosi = {
+		graphical_cultures = { westvalyriangfx republicsgfx }
+		
+		color = { 0.3 0.3 0.3 }
+		
+		male_names = {
+			#CANON
+			Alios Ayrmidon
+			Belicho Benerro
+			Colloquo
+			Doniphos
+			Gorys
+			Horonno
+			Malaquo Methyso Moqorro
+			Nyessos
+			Parquello
+			Qavo
+			Vogarro
+			
+			Aenar Aelix
+			Daegar Haerys
+			Jaekar
+			Matarys
+			Orys Qoherys
+			Vaeron Vaekar Vaermon
+		}
+		female_names = {
+			#CANON
+			Talisa Trianna
+			
+			#NON CANON
+			Alia
+			Belicha Benerra
+			Donipha
+			Horonna
+			Moqorra
+			Nyessa
+			Parquella
+			Qava
+			Vogarra
+			
+			Allyria Alearys
+			Cyeana Cymella
+			Daella Daeoril
+			Elaena Leaysa Naerys Rhae Rhaelle Rhaeys Rhaelinor Saenrys
+			Syaella
+		}
+		from_dynasty_prefix = "of "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		disinherit_from_blinding = yes
+		
+		modifier = default_culture_modifier
+	}
+	
+	elyrian = {
+		graphical_cultures = { westvalyriangfx republicsgfx }
+		
+		color = { 0.55 0.55 0.55 }
+		
+		male_names = {
+			#CANON
+			Alios Ayrmidon
+			Belicho Benerro
+			Colloquo
+			Doniphos
+			Gorys
+			Horonno
+			Malaquo Methyso Moqorro
+			Nyessos
+			Parquello
+			Qavo
+			Vogarro
+			
+			Aenar Aelix
+			Daegar Haerys
+			Jaekar
+			Matarys
+			Orys Qoherys
+			Vaeron Vaekar Vaermon
+		}
+		female_names = {
+			#CANON
+			Talisa Trianna
+			
+			#NON CANON
+			Alia
+			Belicha Benerra
+			Donipha
+			Horonna
+			Moqorra
+			Nyessa
+			Parquella
+			Qava
+			Vogarra
+			
+			Allyria Alearys
+			Cyeana Cymella
+			Daella Daeoril
+			Elaena Leaysa Naerys Rhae Rhaelle Rhaeys Rhaelinor Saenrys
+			Syaella
+		}	
+		from_dynasty_prefix = "of "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		disinherit_from_blinding = yes
+		
+		modifier = default_culture_modifier
+	}
+	
+	dragon = {
+		graphical_cultures = { dragongfx }
+		
+		used_for_random = no
+		allow_in_ruler_designer = no
+		
+		color = { 0.15 0.15 0.15 }
+		
+		male_names = {
+			#Canon
+			Viserion Rhaegal
+
+			Balerion Vermithor Silverwing Seasmoke Urrax "Grey Ghost" Dreamfyre Caraxes Syrax Sunfyre
+			Vermax Arrax Tyraxes Moondancer Stormcloud Morghul Shrykos
+			
+			#Non-Canon
+			Azuron Aderex Azantyr Azantys Acranion Artaxes Aderion Arhugon Angogon Anogaron 
+			Anogaregros Anaxaligon Aenion Aegal Aeriax Aetrox Ancylagon Archonei Aestion Ancalion Alatoraxes
+			Blackhorn Blayzoron Belmurtys Braedax Braedion Bantizolkal Blackfyre Baelal Baeliphax Bullbreaker Bahamuxes Blackwing Bloodfyre		
+			Caedarys Caeliphon Caenax Chalfyre
+			Drythron Daenaryon Daenal Darkscale Drakaryx Deltherion Darkfyre Draggox Duskfyre Darkwing Deathwing
+			Egros Embargelion Eberron Errkos Essoval
+			Firzon Fusrodax Firestorm Fyrax Firkrax Fafnar Falkael Forgesong Fasharyon Fangrys Famlyre Fenrion Fellfang
+			Fornaxes Firecatcher
+			Galeglider Gorthalon Goldfyre Goldscale Ghiscar Glimmer Gorgorkos Greyfyre Grymoire Greencomet Gloombringer Gravefyre
+			Haryz Hegagon Helfyre Heartfyre
+			Issilgor Ilthax Illithinos Ignerion
+			Jaharix Johegagon Jelmazma Jiedrien Jaeherion Jadewing
+			Knightslayer Krythax Keligon Kastakonir
+			Loramon Limagon Litsekaxes Lovoghar Lifefyre Laenion Laengar Luciferon Lorcan
+			Mountdweller Moonblaze Moonshadow Monioerys Morghon Maegal Maekal Marlrax Maelar Maelstral Malyss Moonfyre
+			Nedys Nightfyre Neltharion Nightdancer Nightpyre
+			Ossenaxes Odrikagon Ossyngnon Oirozaldrize Oktionnuqir Orion
+			Pryjagon Perzyspeldax Peasantslayer Pythax Porungar Pestyre Provorpion Predatorion
+			Qilonarion Qelosvaedar
+			Razys Rehiatys Raqagon Rhaenion Rhaenyral Rhaenal Rhaeal Rhaenar Ryax Rhaeltherion Raselion
+			Solthys Stormwyrm Starhunter Starfyre Spyrax Soulblaze Scales Slythe Serporoth Skysailor Starwing Seawing Shraynor Skysong Sunshine Skydancer Steelwing Sundancer
+			Toremoxen Thaxilix Telfyre Tallfyre Taeral Taegar Taerion Tiamaxes Toothless Telarion Trogdax Timerion
+			Valeryx Vhaegal Vassarion Vezozolkys Vezojaes Vaedargelion Vaedar Visenion Vaelax Volgavys Vishyap Vermithrax Valryon Verathion Viserax
+			Whiteclaw "Winged Stranger" Wolfbane Wraithwing
+			Zuvdar Zobrieanogar Zoklitsax Ziragon Zalagys Zaldrizedarys Zobriturgon Zobrughul Zaenor Zaeral
+			
+			#Male only
+			Aegax Baelax Aemax Althorion
+			Darondarys Daerax Daemax
+			Glaurax
+			Matarion
+			Ondordarys
+			Rhaegax
+			Smaugon
+		}
+		female_names = {
+			#Canon
+			Meraxes Vhagar Silverwing Meleys Seasmoke Urrax "Grey Ghost" Dreamfyre Caraxes Syrax Sunfyre
+			Tessarion Vermax Arrax Tyraxes Moondancer Stormcloud Morghul Shrykos Morning
+			
+			#Non-Canon
+			Azuron Aderex Azantyr Azantys Acranion Artaxes Aderion Arhugon Angogon Anogaron 
+			Anogaregros Anaxaligon Aenion Aegal Aeriax Aetrox Ancylagon Archonei Aestion Ancalion Alatoraxes
+			Blackhorn Blayzoron Belmurtys Braedax Braedion Bantizolkal Blackfyre Baelal Baeliphax Bullbreaker Bahamuxes Blackwing Bloodfyre		
+			Caedarys Caeliphon Caenax Chalfyre
+			Drythron Daenaryon Daenal Darkscale Drakaryx Deltherion Darkfyre Draggox Duskfyre Darkwing Deathwing
+			Egros Embargelion Eberron Errkos Essoval
+			Firzon Fusrodax Firestorm Fyrax Firkrax Fafnar Falkael Forgesong Fasharyon Fangrys Famlyre Fenrion Fellfang
+			Fornaxes Firecatcher
+			Galeglider Gorthalon Goldfyre Goldscale Ghiscar Glimmer Gorgorkos Greyfyre Grymoire Greencomet Gloombringer Gravefyre
+			Haryz Hegagon Helfyre Heartfyre
+			Issilgor Ilthax Illithinos Ignerion
+			Jaharix Johegagon Jelmazma Jiedrien Jaeherion Jadewing
+			Knightslayer Krythax Keligon Kastakonir
+			Loramon Limagon Litsekaxes Lovoghar Lifefyre Laenion Laengar Luciferon Lorcan
+			Mountdweller Moonblaze Moonshadow Monioerys Morghon Maegal Maekal Marlrax Maelar Maelstral Malyss Moonfyre
+			Nedys Nightfyre Neltharion Nightdancer Nightpyre
+			Ossenaxes Odrikagon Ossyngnon Oirozaldrize Oktionnuqir Orion
+			Pryjagon Perzyspeldax Peasantslayer Pythax Porungar Pestyre Provorpion Predatorion
+			Qilonarion Qelosvaedar
+			Razys Rehiatys Raqagon Rhaenion Rhaenyral Rhaenal Rhaeal Rhaenar Ryax Rhaeltherion Raselion
+			Solthys Stormwyrm Starhunter Starfyre Spyrax Soulblaze Scales Slythe Serporoth Skysailor Starwing Seawing Shraynor Skysong Sunshine Skydancer Steelwing Sundancer
+			Toremoxen Thaxilix Telfyre Tallfyre Taeral Taegar Taerion Tiamaxes Toothless Telarion Trogdax Timerion
+			Valeryx Vhaegal Vassarion Vezozolkys Vezojaes Vaedargelion Vaedar Visenion Vaelax Volgavys Vishyap Vermithrax Valryon Verathion Viserax
+			Whiteclaw "Winged Stranger" Wolfbane Wraithwing
+			Zuvdar Zobrieanogar Zoklitsax Ziragon Zalagys Zaldrizedarys Zobriturgon Zobrughul Zaenor Zaeral
+			
+			#Female only
+			Bantisdaria
+			Darilaros
+			Elaenal
+			Geliondaria
+			Haedar
+			Naerion
+			Rhaellax
+			Saphirax
+			Zaldrizedaria 
+		}
+			
+		from_dynasty_prefix = "of "
+		founder_named_dynasties = yes
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+}

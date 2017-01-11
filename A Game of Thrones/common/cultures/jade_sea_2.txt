@@ -1,0 +1,557 @@
+moraqi_group = {
+	graphical_cultures = { mesoamericangfx } # portraits, units
+
+	farosi = {
+		graphical_cultures = { southerngfx sanddornishgfx }
+
+		color = { 0.5 1 0 } 
+
+		male_names = {
+			Bakr Aarif Abdul Gafur Jaleel Qadir Wahab Abdullah Aghlab Akin Ali Alim Aram Azam Bahir Burhanaddin
+			Fadil Fadl Faruk Ghalib Hafiz Halil Hasan_Hasan Husam Hussayn Idris "Is'mail" Isa Jabir Jalil Jibril Khaireddin Khalil Mahdi
+			Mansur Mirza Mubarak Mukhtar Murad Muslihiddin Muzaffaraddin Najib Nasr Nizam Qawurd Ramadan Sadiq Sami Samir Shaiban
+			Shamir Shujah Talib Ubayd Uways Yahya Youkhanna Yusuf Zeyd
+		}
+		female_names = {
+			Adila Amsha Asiya Faghira Habiba Hanifa Jahaira Kamala Layla Maryam Nafisa Nyawela Parand Parween Paymaneh Paywand Qamara Rafiqa Rasa Rashida Reshawna
+			Saaman Sabba Saghar Sahba Sajida Samira Semeah Setara Shahrbano Shahzadah Shameem Shararah Sheeftah Sheeva Shogofa Shokouh Shola Sholah Simin Souzan
+			Taliba Tanaz Taneen Yagana Yakta Yasmin Zaynab
+		}
+		from_dynasty_prefix = "of "
+		prefix = yes
+
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+	
+	moraqi = {
+		graphical_cultures = { southerngfx sanddornishgfx }
+		
+		color = { 0 0.5 0 } 
+		
+		male_names = {
+			Bakr Aarif Abdul Gafur Jaleel Qadir Wahab Abdullah Aghlab Akin Ali Alim Aram Azam Bahir Burhanaddin
+			Fadil Fadl Faruk Ghalib Hafiz Halil Hasan_Hasan Husam Hussayn Idris "Is'mail" Isa Jabir Jalil Jibril Khaireddin Khalil Mahdi
+			Mansur Mirza Mubarak Mukhtar Murad Muslihiddin Muzaffaraddin Najib Nasr Nizam Qawurd Ramadan Sadiq Sami Samir Shaiban
+			Shamir Shujah Talib Ubayd Uways Yahya Youkhanna Yusuf Zeyd
+		}
+		female_names = {
+			Adila Amsha Asiya Faghira Habiba Hanifa Jahaira Kamala Layla Maryam Nafisa Nyawela Parand Parween Paymaneh Paywand Qamara Rafiqa Rasa Rashida Reshawna
+			Saaman Sabba Saghar Sahba Sajida Samira Semeah Setara Shahrbano Shahzadah Shameem Shararah Sheeftah Sheeva Shogofa Shokouh Shola Sholah Simin Souzan
+			Taliba Tanaz Taneen Yagana Yakta Yasmin Zaynab
+		}
+		from_dynasty_prefix = "of "
+		prefix = yes
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+	
+	zabhadi = {
+		graphical_cultures = { southerngfx sanddornishgfx }
+		
+		color = { 0.82 0.83 0.4 } 
+		
+		male_names = {
+			Bakr Aarif Abdul Gafur Jaleel Qadir Wahab Abdullah Aghlab Akin Ali Alim Aram Azam Bahir Burhanaddin
+			Fadil Fadl Faruk Ghalib Hafiz Halil Hasan_Hasan Husam Hussayn Idris "Is'mail" Isa Jabir Jalil Jibril Khaireddin Khalil Mahdi
+			Mansur Mirza Mubarak Mukhtar Murad Muslihiddin Muzaffaraddin Najib Nasr Nizam Qawurd Ramadan Sadiq Sami Samir Shaiban
+			Shamir Shujah Talib Ubayd Uways Yahya Youkhanna Yusuf Zeyd
+		}
+		female_names = {
+			Adila Amsha Asiya Faghira Habiba Hanifa Jahaira Kamala Layla Maryam Nafisa Nyawela Parand Parween Paymaneh Paywand Qamara Rafiqa Rasa Rashida Reshawna
+			Saaman Sabba Saghar Sahba Sajida Samira Semeah Setara Shahrbano Shahzadah Shameem Shararah Sheeftah Sheeva Shogofa Shokouh Shola Sholah Simin Souzan
+			Taliba Tanaz Taneen Yagana Yakta Yasmin Zaynab
+		}
+		from_dynasty_prefix = "of "
+		prefix = yes
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+	
+	vahari = {
+		graphical_cultures = { southerngfx sanddornishgfx }
+		
+		color = { 0.5 0.9 0.1 } 
+		
+		male_names = {
+			Bakr Aarif Abdul Gafur Jaleel Qadir Wahab Abdullah Aghlab Akin Ali Alim Aram Azam Bahir Burhanaddin
+			Fadil Fadl Faruk Ghalib Hafiz Halil Hasan_Hasan Husam Hussayn Idris "Is'mail" Isa Jabir Jalil Jibril Khaireddin Khalil Mahdi
+			Mansur Mirza Mubarak Mukhtar Murad Muslihiddin Muzaffaraddin Najib Nasr Nizam Qawurd Ramadan Sadiq Sami Samir Shaiban
+			Shamir Shujah Talib Ubayd Uways Yahya Youkhanna Yusuf Zeyd
+		}
+		female_names = {
+			Adila Amsha Asiya Faghira Habiba Hanifa Jahaira Kamala Layla Maryam Nafisa Nyawela Parand Parween Paymaneh Paywand Qamara Rafiqa Rasa Rashida Reshawna
+			Saaman Sabba Saghar Sahba Sajida Samira Semeah Setara Shahrbano Shahzadah Shameem Shararah Sheeftah Sheeva Shogofa Shokouh Shola Sholah Simin Souzan
+			Taliba Tanaz Taneen Yagana Yakta Yasmin Zaynab
+		}
+		from_dynasty_prefix = "of "
+		prefix = yes
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+
+	asabhadi = {
+		graphical_cultures = { easterngfx sanddornishgfx }
+		
+		color = { 0.87 0.75 0.38 } 
+		
+		male_names = {
+			Bakr Aarif Abdul Gafur Jaleel Qadir Wahab Abdullah Aghlab Akin Ali Alim Aram Azam Bahir Burhanaddin
+			Fadil Fadl Faruk Ghalib Hafiz Halil Hasan_Hasan Husam Hussayn Idris "Is'mail" Isa Jabir Jalil Jibril Khaireddin Khalil Mahdi
+			Mansur Mirza Mubarak Mukhtar Murad Muslihiddin Muzaffaraddin Najib Nasr Nizam Qawurd Ramadan Sadiq Sami Samir Shaiban
+			Shamir Shujah Talib Ubayd Uways Yahya Youkhanna Yusuf Zeyd
+		}
+		female_names = {
+			Adila Amsha Asiya Faghira Habiba Hanifa Jahaira Kamala Layla Maryam Nafisa Nyawela Parand Parween Paymaneh Paywand Qamara Rafiqa Rasa Rashida Reshawna
+			Saaman Sabba Saghar Sahba Sajida Samira Semeah Setara Shahrbano Shahzadah Shameem Shararah Sheeftah Sheeva Shogofa Shokouh Shola Sholah Simin Souzan
+			Taliba Tanaz Taneen Yagana Yakta Yasmin Zaynab
+		}
+		from_dynasty_prefix = "of "
+		prefix = yes
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+}
+
+yi_ti_group = {
+	graphical_cultures = { mesoamericangfx } # portraits, units
+
+	yi_ti = {
+		graphical_cultures = { mongolgfx yitigfx }
+		
+		color = { 0.5 0.8 0.05 }
+		
+		male_names = {
+			#Canon
+			Bu Doq Duq Choq Loi Gai Han Har Joq Quen Tho Qo
+			
+			#Non-canon
+			An Ba Bao Binh 
+			Chien Chinh Dai Danh  
+			Hai Hao Hieu Huu Huynh  
+			Lanh Minh Nuu Cho Chao Chen Bai
+			Dong Chun Fai Gang Huan
+			Nhung Phong Phuc Zhao Zong
+			Quan Quy San Ji Xun
+			Thanh Thao Thinh Trai Trang Truq Tu
+			Van Vien Vinh Xuan Xhe
+			Yu Mo Shen Ru Shun Zuang
+		}
+		
+		female_names = {
+			#Canon
+			Bathi 
+			
+			#Non-canon
+			Bich Cam Chau Chi Cuc
+			Hanh Hoa Hong Hue Ping
+			Kim "Kim Cuc" "Kim Ly" Zu
+			Lien Linh Mai Ngoc Ngon Nguyet
+			Phuong Quyen Mu Peng
+			Thi Thu Thuy Tien Xiu
+			Yen Ming Ling Ning Ya
+			Qi Shu Shi Si Ting Tu		
+		}
+		from_dynasty_prefix = "of "
+		prefix = yes
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+		
+		disinherit_from_blinding = yes
+	}
+}
+jade_islands_group = {
+	graphical_cultures = { indiangfx southyrosgfx } # buildings
+
+	lengi = {
+		graphical_cultures = { turkishgfx  naathigfx } # portraits, units 
+		#horde = yes
+		
+		color = { 0 0.65 0.4 }
+		
+		male_names = {
+			Abdul Atal Alijah Abholos Alala Ammutseba Arwassa
+			Barzai Baoht Basatan Bokrug Byatis
+			Chaugnar Cthaat
+			Dhumin
+			Exior Exekiel Eihort "Ei'lor"
+			Ghisguth
+			Horvath Han Hastalyk Hastur Hnarqu
+			Ibn Ithaqua
+			Japhet "Janai'ngo"
+			Kuranes Keziah Kaalut "Khal'kru" Kurpannga
+			Lam
+			Mormo Mortllgh
+			Nephren Ngirrth’lu Northot Nycrama
+			Obed Othuum
+			Pharol
+			Quyagen
+			Raandaii "Rh'Thulla" Rokon Ruhtra
+			Sunand Surama Sebek Shaklatal Shathak Shlithneth Summanus
+			"T'yog" Thog
+			Vibur
+			Yakthoob Yhashtur Yorith
+			Xirdneth
+			Zanthu Zathog
+		}
+		
+		female_names = {			
+			Khiara:300 #canon
+			
+			Abigail "Ayi'ig" Aylith
+			Coatlicue Cthaeghya Cthylla
+			Dygra Dythalla Dzewa
+			Gleetha "Gur'la" Gzxtyos
+			Idh-yaa Inpesca Istasha
+			Kassogtha Klosmiebhyx
+			Lavinia Lythalia
+			Mynoghra
+			Nctosa Nctolhu Nyogtha
+			Ragnalla
+			"Saa'itii" Scathach Sthanee
+			Thanaroa Turua
+			Voltiyiga
+			Xotli
+			Yhagni "Y'lla"
+		}
+			
+		pat_grf_name_chance = 25
+		mat_grf_name_chance = 25
+		father_name_chance = 25
+		
+		pat_grm_name_chance = 25
+		mat_grm_name_chance = 25
+		mother_name_chance = 25
+		
+		modifier = default_culture_modifier
+		
+		disinherit_from_blinding = yes
+	}
+
+}
+asshai_group = {
+	graphical_cultures = { indiangfx ghiscarigfx } # buildings
+	
+	asshai = {
+		graphical_cultures = { ghiscarigfx } # portraits
+	
+		color = { 0.75 0.0 0.0 }
+		
+		#Sumerian
+		male_names = {
+			#NON CANON	
+			Ammith Amurri Arganth Akiya Awil
+			Belshun Bunuth
+			Dagan Dadasig Damuzi Dadazig Dadanum
+			Enlil Errath
+			Gudeath
+			Hunhal Humbab
+			Irrara Ishtup Iddin Ishme Iluath Ibnatum Ipquath
+			Kabid Kuda Kurum Kabkath Kugbau
+			Limer Luenlila "La'um" Lugatum Lipith
+			Mesanepada Mushtal Mutubisir Mamagal Munawirtum
+			Nurkubi	Nawirum	Ninurta Naqir Namhu Nergal
+			Puzur Palusum
+			Quazur Quabum Qasmath
+			Shusuen Shulgi Shepsin Shullat Sidu Sumalika Shulpae Shamash Shatath Samuqan
+			Tehuth
+			Utu Urnammu Ugazum Ubaruth
+			Warad Wusum
+			Yatum Yasmath		
+		}
+		
+		female_names = {
+			#CANON
+			Quaithe
+			
+			#NON CANON
+			Aea Anu Ahassuth Aya
+			Belessa Bikku Bau
+			Daqqartum Delondra
+			Erethe Erethkiga Enheduana Eala
+			Gemethega Gemithe
+			Ishtare Ilutha Irkalla
+			Kithar
+			Murrithe Murrim
+			Ninhursag Nin Ninbanda Nammu Ninsun Nintuda Nisaba Nindukugga Nanna
+			Puabi
+			Quaiduri
+			Sapurtum Summirathe Shubad Silili
+			Taram
+			Urbau
+			Waqrat
+			Zimu
+		}
+		from_dynasty_prefix = "of "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+
+	shadowlander = {
+		graphical_cultures = { ghiscarigfx } # portraits shadowgfx
+	
+		color = { 0.75 0.0 0.0 }
+		
+		#Sumerian
+		male_names = {
+			#NON CANON	
+			Ammith Amurri Arganth Akiya Awil
+			Belshun Bunuth
+			Dagan Dadasig Damuzi Dadazig Dadanum
+			Enlil Errath
+			Gudeath
+			Hunhal Humbab
+			Irrara Ishtup Iddin Ishme Iluath Ibnatum Ipquath
+			Kabid Kuda Kurum Kabkath Kugbau
+			Limer Luenlila "La'um" Lugatum Lipith
+			Mesanepada Mushtal Mutubisir Mamagal Munawirtum
+			Nurkubi	Nawirum	Ninurta Naqir Namhu Nergal
+			Puzur Palusum
+			Quazur Quabum Qasmath
+			Shusuen Shulgi Shepsin Shullat Sidu Sumalika Shulpae Shamash Shatath Samuqan
+			Tehuth
+			Utu Urnammu Ugazum Ubaruth
+			Warad Wusum
+			Yatum Yasmath		
+		}
+		
+		female_names = {
+			#CANON
+			Quaithe
+			
+			#NON CANON
+			Aea Anu Ahassuth Aya
+			Belessa Bikku Bau
+			Daqqartum Delondra
+			Erethe Erethkiga Enheduana Eala
+			Gemethega Gemithe
+			Ishtare Ilutha Irkalla
+			Kithar
+			Murrithe Murrim
+			Ninhursag Nin Ninbanda Nammu Ninsun Nintuda Nisaba Nindukugga Nanna
+			Puabi
+			Quaiduri
+			Sapurtum Summirathe Shubad Silili
+			Taram
+			Urbau
+			Waqrat
+			Zimu
+		}
+		from_dynasty_prefix = "of "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+}
+further_east = {
+	graphical_cultures = { freefolkgfx } # buildings
+	
+	grey_waste = {
+		graphical_cultures = { celticgfx freefolkgfx }
+		
+		color = { 0.3 0.3 0.3 } #Grey
+		
+		used_for_random = no
+		
+		male_names = {
+			Borug Buggug Burghed Bagdud
+			Durzub
+			Faghig Fidgug
+			Garekk Gomatug Ghamonk Grung Gnabadug Gaakt
+			Hibub
+			Ignatz Ignorg
+			Karrghed Kilug
+			Mug Murkub
+			Oggugat Otugbu Oglub Oakgu
+			Pehrakgu Parfu
+			Sorgulg Shamob Sulgha
+			Urgran Uzul Urim Ug Urbul
+			Vigdug Vulug Vetorkag Viguka Vamugbu
+			Xothkug Xugarf	Xutjja	 		
+			Zurgha Zarod Zurpigig Zorgulg Zulmthu
+		}
+		female_names = {
+			Bumph Borgakh Bulfim Bula Bulak Bolar Bor Badbog
+			Dulug
+			Gashnakh Gluronk Gharol Ghob Gulfim Ghak Ghorza
+			Homraz
+			Lambug Lazgar Lagakh
+			Mor Morn Murzush Mazoga Mogak
+			Oghash
+			Rogmesh Rulfim Ragash
+			Sharn Shel Shazgob Shagar Sharamph Sharog
+			Ulumpha Urog Ushat Ushug Urzoth Ugak Ugor
+			Yazgash Yotul
+		}
+
+		from_dynasty_prefix = "of "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+}
+qarth_group = {
+	graphical_cultures = { ghiscarigfx } # buildings
+	
+	qartheen = {
+		graphical_cultures = { qartheengfx } # portraits
+		
+		color = { 0.25 0.5 0.75 }
+		
+		male_names = {
+			#CANON
+			Egon Mathos Pyat Sallor Sybassion Urrathon Wendello Saathos Xaro Xandarro
+			
+			#NON CANON
+			Gathril
+			Navathos
+			Mundello
+			Ognos
+			Regon
+			Surindos Semython
+			Wullon
+			Zathor
+			
+			#OTHER CITYS
+			Belicho
+			Doniphos
+			Gorys
+			Methyso
+			Nyessos
+			Vogarro
+			Lotho
+			Meralyn
+			Ordello
+		}
+		
+		female_names = {
+			#CANON
+			Alayaya Chataya Kojja 
+			
+			#OTHER CITYS
+			Talisa Trianna
+			Mellario Doreah Serenei Serra
+			Alia Betharios Brea Bellegere Bellonara
+			Lanna "S'vrone" Talea
+			Umma Yna Serala Taena
+			
+			#NON CANON
+			Cossoma Denia
+			Ferrega Ezzere
+			Gylenios Gylora
+			Izembara
+			Jaqea
+			Lothea Lucerre
+			Meralyia Mera Moredea Myrmellios
+			Nohia Narba Orbela Orios
+			Pynta Qarria
+			Rogga
+			Syrea
+			Tycha Tagganaria Terrios Ternesia Torma
+			Yorka
+		}
+		
+		from_dynasty_prefix = "of "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+		
+		seafarer = yes
+		
+		modifier = default_culture_modifier
+	}
+}

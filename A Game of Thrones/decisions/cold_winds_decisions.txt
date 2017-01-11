@@ -1,0 +1,297 @@
+###  Cold Winds related decisions
+
+decisions = {
+	call_for_aid_WW = { #call for aid on own continent
+		is_high_prio = yes
+		only_independent = yes
+		potential = {
+			is_ruler = yes			
+			independent = yes
+			has_global_flag = cold_winds			
+			war = yes	
+			NOT = { trait = nightswatch }			
+			any_war = {
+				OR = {
+					attacker = { character = ROOT }
+					defender = { character = ROOT }
+				}
+				OR = {
+					attacker = { 
+						trait = white_walker
+						OR = {
+							has_landed_title = d_winter 
+							has_landed_title = d_winter_essos
+						}
+					}
+					defender = { 
+						trait = white_walker
+						OR = {
+							has_landed_title = d_winter 
+							has_landed_title = d_winter_essos
+						}
+					}
+				}
+			}
+		}
+		
+		allow = {
+			custom_tooltip = {
+				text = TOOLTIPflag_called_for_aid
+				hidden_tooltip = {
+					OR = {
+						NOT = { has_character_flag = flag_called_for_aid }
+						had_character_flag = { flag = flag_called_for_aid days = 500 }
+					}
+				}	
+			}
+		}
+		
+		effect = {
+			set_character_flag = flag_called_for_aid
+			any_playable_ruler = {
+				limit = {						
+					OR = {
+						higher_tier_than = COUNT
+						AND = {
+							tier = COUNT
+							any_demesne_province = { 
+								OR  = {
+									kingdom = { title = k_beyond_wall } 
+									any_neighbor_province = { owner = { culture_group = winter_group } }
+								}	
+							}
+						}
+					}
+					NOR = { 
+						d_winter = { holder_scope = { war_with = PREVPREV } }
+						d_winter_essos = { holder_scope = { war_with = PREVPREV } } 
+						is_liege_or_above = ROOT
+					}
+					OR = { #Only wildling kings can ask for general aid
+						ROOT = { 
+							OR = {
+								NOT = { trait = wildling } 
+								higher_tier_than = DUKE
+							}	
+						}
+						trait = wildling
+					}
+					NOT = { war_with = ROOT }
+					NOT = { culture_group = winter_group }
+					NOT = { culture_group = unoccupied_group }
+					OR = {
+						AND = {
+							capital_scope = { region = world_westeros }
+							d_winter = { holder_scope = { war_with = ROOT } }
+						}
+						AND = {
+							capital_scope = { NOT = { region = world_westeros } }
+							d_winter_essos = { holder_scope = { war_with = ROOT } }
+						}
+					}					
+				}
+				character_event = { id = cold_winds.9 tooltip = "EVTTOOLTIP999900043" } #numbers wad
+		    }
+		}		
+		ai_will_do = { factor = 1000 }
+	}
+
+	call_for_aid_essos = { #call for aid on foreign continent
+		is_high_prio = yes
+		only_independent = yes
+		potential = {
+			is_ruler = yes			
+			independent = yes
+			has_global_flag = cold_winds			
+			war = yes	
+			NOT = { trait = nightswatch }			
+			any_war = {
+				OR = {
+					attacker = { character = ROOT }
+					defender = { character = ROOT }
+				}
+				OR = {
+					attacker = { 
+						trait = white_walker
+						OR = {
+							has_landed_title = d_winter 
+							has_landed_title = d_winter_essos
+						}
+					}
+					defender = { 
+						trait = white_walker
+						OR = {
+							has_landed_title = d_winter 
+							has_landed_title = d_winter_essos
+						}
+					}
+				}
+			}
+		}
+		
+		allow = {
+			custom_tooltip = {
+				text = TOOLTIPcall_for_aid_essosREALMSIZE
+				hidden_tooltip = {
+					any_current_enemy = { 
+						OR = {
+							has_landed_title = d_winter 
+							has_landed_title = d_winter_essos
+						}
+						trait = white_walker
+						realm_size = 50
+					}
+				}	
+			}
+			custom_tooltip = {
+				text = TOOLTIPflag_called_for_foreign_aid
+				hidden_tooltip = {
+					OR = {
+						NOT = { has_character_flag = flag_called_for_foreign_aid }
+						had_character_flag = { flag = flag_called_for_foreign_aid days = 500 }
+					}
+				}	
+			}					
+		}
+		
+		effect = {
+			set_character_flag = flag_called_for_foreign_aid
+			any_playable_ruler = {
+				limit = {
+					OR = {
+						higher_tier_than = COUNT
+						AND = {
+							tier = COUNT
+							any_demesne_province = { 
+								OR  = {
+									kingdom = { title = k_beyond_wall } 
+									any_neighbor_province = { owner = { culture_group = winter_group } }
+								}	
+							}
+						}
+					}
+					NOR = { 
+						d_winter = { holder_scope = { war_with = PREVPREV } }
+						d_winter_essos = { holder_scope = { war_with = PREVPREV } } 
+						is_liege_or_above = ROOT
+					}
+					OR = { #Only wildling kings can ask for general aid
+						ROOT = { 
+							OR = {
+								NOT = { trait = wildling } 
+								higher_tier_than = DUKE
+							}	
+						}
+						trait = wildling
+					}
+					NOT = { war_with = ROOT }
+					NOT = { culture_group = winter_group }
+					NOT = { culture_group = unoccupied_group }
+					OR = {
+						AND = {
+							capital_scope = { NOT = { region = world_westeros } }
+							d_winter = { holder_scope = { war_with = ROOT } }
+						}
+						AND = {
+							capital_scope = { region = world_westeros }
+							d_winter_essos = { holder_scope = { war_with = ROOT } }
+						}
+					}
+				}
+				character_event = { id = cold_winds.9 tooltip = "EVTTOOLTIP999900043" } #numbers wad
+		    }
+		}
+		
+		ai_will_do = { factor = 1000 }
+	}
+	nightswatch_calls_for_aid_WW = {
+		is_high_prio = yes
+		only_playable = yes
+		potential = {
+			is_ruler = yes
+			primary_title = { title = d_nightswatch }
+			trait = nightswatch
+			has_global_flag = cold_winds			
+			war = yes			
+			any_war = {
+				OR = {
+					attacker = { character = ROOT }
+					defender = { character = ROOT }
+				}
+				OR = {
+					attacker = { 
+						trait = white_walker
+						OR = {
+							has_landed_title = d_winter 
+							has_landed_title = d_winter_essos
+						}
+					}
+					defender = { 
+						trait = white_walker
+						OR = {
+							has_landed_title = d_winter 
+							has_landed_title = d_winter_essos
+						}
+					}
+				}
+			}
+		}
+		
+		allow = {
+			custom_tooltip = {
+				text = TOOLTIPflag_called_for_aid
+				hidden_tooltip = {
+					OR = {
+						NOT = { has_character_flag = flag_called_for_aid }
+						had_character_flag = { flag = flag_called_for_aid days = 500 }
+					}
+				}	
+			}
+		}
+		
+		effect = {
+			any_playable_ruler = {
+				limit = {
+					OR = {
+						higher_tier_than = DUKE
+						AND = {
+							tier = DUKE
+							any_demesne_province = { kingdom = { title = k_north } }
+						}
+						any_demesne_province = { 
+							OR = {
+								kingdom = { title = k_beyond_wall } 
+								any_neighbor_province = { owner = { culture_group = winter_group } }
+							}	
+						}
+					}				
+					OR = {
+						culture_group = andal
+						culture = ironborn
+						culture_group = dornish
+						culture = western_valyrian
+						culture_group = first_men
+						culture = skagosi
+						capital_scope = { region = world_westeros }
+						AND = {
+							capital_scope = { NOT = { region = world_westeros } }
+							d_winter_essos = { holder_scope = { war_with = ROOT } }
+						}
+					}
+					NOR = { 
+						d_winter = { holder_scope = { war_with = PREVPREV } }
+						d_winter_essos = { holder_scope = { war_with = PREVPREV } } 
+						is_liege_or_above = ROOT
+					}
+					NOT = { war_with = ROOT }
+					NOT = { culture_group = winter_group }
+					NOT = { culture_group = unoccupied_group }
+				}
+				character_event = { id = cold_winds.9 tooltip = "EVTTOOLTIP999900043" } #numbers wad
+		    }
+			set_character_flag = flag_called_for_aid
+		}
+		
+		ai_will_do = { factor = 1000 }
+	}
+}

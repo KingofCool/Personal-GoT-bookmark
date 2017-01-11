@@ -1,0 +1,326 @@
+###  Send children to preisthood
+
+targetted_decisions = {
+
+	send_son_to_temple_rhllor = {
+		ai_target_filter = dynasty
+		filter = dynasty
+		only_playable = yes
+		
+		icon_religion = rhllor
+		
+		from_potential = {
+			is_ruler = yes
+			religion = rhllor
+		}
+		potential = {
+			is_child_of = FROM		
+			NOT = { trait = red_priest }	
+			religion = rhllor			
+		}		
+		allow = {
+			OR = {
+				has_game_rule = { name = disinheritance_decisions value = unrestricted }
+				AND = {
+					FROM = {
+						num_of_children = 6
+						NOT = { 
+							any_child = {
+								count = 2
+								trait = red_priest
+							}
+						}	
+						NOT = { current_heir = { character = ROOT } }	
+					}
+					is_primary_heir = no
+				}	
+			}
+			FROM = { 
+				piety = 20 		
+				prisoner = no
+				age = 16
+				NOT = { is_incapable = yes }				
+			}
+			is_liege_or_above = FROM		
+			NOT = { has_minor_title = title_triarch }
+			NOT = { is_inaccessible_trigger = yes }
+			age = 16
+			is_married = no
+			is_betrothed = no
+			is_ruler = no		
+			prisoner = no		
+		}
+		
+		effect = {
+			FROM = { 
+				tooltip = {
+					piety = 200 
+				}
+			}			
+			tooltip = {
+				add_trait = red_priest
+				piety = 400
+			}	
+			hidden_tooltip = { character_event = { id = religious.302 } }
+		}
+		
+		ai_will_do = { 
+			factor = 1
+			
+			modifier = {
+				factor = 0.01
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_councillor = yes
+					is_voter = yes
+					martial = 10
+					trait = skilled_warrior
+					trait = master_warrior
+					trait = dragon_rider
+					FROM = { trait = honorable }
+					FROM = { trait = kind }
+					FROM = { trait = familyperson }
+				}
+			}
+		}
+	}
+
+	send_son_to_temple_norvos = {
+		ai_target_filter = dynasty
+		filter = dynasty
+		only_playable = yes
+		
+		icon_religion = bearded_priests
+		
+		from_potential = {
+			is_ruler = yes			
+			religion = bearded_priests
+		}
+		potential = {
+			is_child_of = FROM
+			NOT = { trait = bearded_priest }
+			is_female = no
+			religion = bearded_priests
+		}
+	
+		allow = {
+			OR = {
+				has_game_rule = { name = disinheritance_decisions value = unrestricted }
+				AND = {
+					FROM = {
+						num_of_children = 5
+						NOT = { 
+							any_child = {
+								count = 2
+								trait = bearded_priest
+							}
+						}	
+						NOT = { current_heir = { character = ROOT } }	
+					}
+					is_primary_heir = no
+				}	
+			}
+			FROM = { 
+				piety = 20 
+				prisoner = no
+				age = 16
+				NOT = { is_incapable = yes }
+			}
+			is_liege_or_above = FROM
+			NOT = { has_minor_title = title_triarch }
+			NOT = { is_inaccessible_trigger = yes }
+			age = 16		
+			is_married = no
+			is_betrothed = no
+			is_ruler = no		
+			prisoner = no			
+		}
+		
+		effect = {
+			FROM = { 
+				tooltip = {
+					piety = 200 
+				}
+			}			
+			tooltip = {
+				add_trait = bearded_priest
+				piety = 400
+			}	
+			hidden_tooltip = { character_event = { id = religious.302 } }
+		}
+		
+		ai_will_do = { 
+			factor = 1
+			
+			modifier = {
+				factor = 0.01
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_councillor = yes
+					is_voter = yes
+					martial = 10
+					trait = skilled_warrior
+					trait = master_warrior
+					trait = dragon_rider
+					FROM = { trait = honorable }
+					FROM = { trait = kind }
+					FROM = { trait = familyperson }
+				}
+			}
+		}
+	}
+	
+	send_daughter_to_silent_sisters = {
+		ai_target_filter = dynasty
+		filter = dynasty
+		only_playable = yes
+		
+		from_potential = {
+			is_ruler = yes		
+		}
+		potential = {
+			is_child_of = FROM
+			is_female = yes
+			religion = the_seven		
+			NOT = { trait = silent_sister }
+			NOT = { trait = septa }		
+		}
+		
+		allow = {
+			OR = {
+				has_game_rule = { name = disinheritance_decisions value = unrestricted }
+				AND = {
+					FROM = {
+						num_of_children = 5	
+						NOT = { current_heir = { character = ROOT } }	
+					}
+					is_primary_heir = no
+				}	
+			}
+			FROM = { 
+				piety = 20 
+				prisoner = no
+				age = 16
+				NOT = { is_incapable = yes }
+			}
+			is_liege_or_above = FROM
+			is_ruler = no
+			age = 16
+			NOT = { has_minor_title = title_triarch }
+			NOT = { is_inaccessible_trigger = yes }
+			prisoner = no
+			is_married = no
+			is_betrothed = no
+			NOT = { trait = incapable }
+		}
+		
+		effect = {
+			FROM = { 
+				tooltip = {
+					piety = 200 
+				}
+			}			
+			tooltip = {
+				add_trait = silent_sister
+				piety = 400
+			}	
+			hidden_tooltip = { character_event = { id = religious.302 } }	
+		}
+		
+		ai_will_do = { 
+			factor = 0.02
+			modifier = {
+				factor = 0
+				FROM = {
+					OR = {
+						trait = kind
+						trait = cynical
+						trait = familyperson
+						trait = just
+						trait = proud
+						opinion = { who = ROOT value = 50 }
+					}
+				}
+			}
+		}
+	}
+	
+	send_daughter_to_temple_graces = {
+		ai_target_filter = dynasty
+		filter = dynasty
+		only_playable = yes
+		
+		icon_religion = harpy
+		
+		from_potential = {
+			is_ruler = yes		
+		}
+		potential = {
+			is_child_of = FROM
+			is_female = yes
+			religion = harpy		
+			NOT = { trait = grace }			
+		}		
+		allow = {
+			OR = {
+				has_game_rule = { name = disinheritance_decisions value = unrestricted }
+				AND = {
+					FROM = {
+						num_of_children = 5
+						NOT = { current_heir = { character = ROOT } }	
+					}
+					is_primary_heir = no
+				}	
+			}
+			FROM = { 
+				piety = 20 
+				prisoner = no
+				age = 16
+				NOT = { is_incapable = yes }
+			}
+			is_liege_or_above = FROM
+			is_ruler = no
+			age = 16
+			NOT = { has_minor_title = title_triarch }	
+			NOT = { is_inaccessible_trigger = yes }
+			is_married = no
+			is_betrothed = no
+			NOT = { trait = incapable }
+			prisoner = no
+		}
+		
+		effect = {
+			FROM = { 
+				tooltip = {
+					piety = 200 
+				}
+			}			
+			tooltip = {
+				add_trait = grace
+				piety = 400
+			}	
+			hidden_tooltip = { character_event = { id = religious.302 } }	
+		}
+		
+		ai_will_do = { 
+			factor = 0.02
+			modifier = {
+				factor = 0
+				FROM = {
+					OR = {
+						trait = kind
+						trait = cynical
+						trait = familyperson
+						trait = just
+						trait = proud
+						opinion = { who = ROOT value = 50 }
+					}
+				}
+			}
+		}
+	}
+}

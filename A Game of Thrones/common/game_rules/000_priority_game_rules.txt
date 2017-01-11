@@ -1,0 +1,59 @@
+###Game rules important enough to be at the top of the list
+
+ck2_version_warning = {
+	name = "RULE_CK2_VERSION_WARNING"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_CK2_VERSION_WARNING_ON_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_CK2_VERSION_WARNING_OFF_DESC"
+	}
+}
+dod_spoiler_remover = {
+	name = "RULE_DOD_SPOILER_REMOVER"
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_DOD_SPOILER_REMOVER_OFF_DESC"
+	}
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_DOD_SPOILER_REMOVER_ON_DESC"
+	}
+}
+r_l_j = {
+	name = "RULE_R_L_J"
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_R_L_J_OFF_DESC"
+	}
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_R_L_J_ON_DESC"
+	}
+}
+education_costs = {
+	name = "RULE_EDUCATION_COSTS"
+	option = {
+		name = normal
+		text = "RULE_OPTION_NORMAL"
+		desc = "RULE_EDUCATION_COSTS_NORMAL_DESC"
+	}
+	option = {
+		name = low
+		text = "RULE_EDUCATION_COSTS_LOW"
+		desc = "RULE_EDUCATION_COSTS_LOW_DESC"
+	}
+	option = {
+		name = none
+		text = "RULE_EDUCATION_COSTS_NONE"
+		desc = "RULE_EDUCATION_COSTS_NONE_DESC"
+	}
+}

@@ -1,0 +1,16 @@
+influenced_election = {
+	authority = -5
+	years = 20
+}
+defied_liege = {
+	authority = 10
+	years = 20
+}
+authority_strengthened = {
+	authority = 20
+	years = 20
+}
+authority_weakened = {
+	authority = -20
+	years = 20
+}

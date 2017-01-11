@@ -1,0 +1,5 @@
+money_lender = {
+	monthly_character_prestige = 1
+	church_opinion = -10
+	customizer = no
+}

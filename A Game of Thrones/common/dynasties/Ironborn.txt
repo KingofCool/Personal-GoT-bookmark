@@ -1,0 +1,603 @@
+#Non-canon Houses for random
+174440 = {
+	name="Ironfoot"
+	culture = ironborn
+}
+174441 = {
+	name="Flatnose"
+	culture = ironborn
+}
+174442 = {
+	name="Reaver"
+	culture = ironborn
+}
+174443 = {
+	name="Darken"
+	culture = ironborn
+}
+174444 = {
+	name="Firestone"
+	culture = ironborn
+}
+174445 = {
+	name="Blackiron"
+	culture = ironborn
+}
+174446 = {
+	name="Breston"
+	culture = ironborn
+}
+174447 = {
+	name="Cragg"
+	culture = ironborn
+}
+174448 = {
+	name="Greatiron"
+	culture = ironborn
+}
+174449 = {
+	name="Yalman"
+	culture = ironborn
+}
+174450 = {
+	name="Grimmins"
+	culture = ironborn
+}
+174451 = {
+	name = Rothbone
+	culture = ironborn
+}
+174452 = {
+	name = Mastley
+	culture = ironborn
+}
+174453 = {
+	name = Nateby
+	culture = ironborn
+}
+174454 = {
+	name = Farlyn
+	culture = ironborn
+}
+174455 = {
+	name = Setbone
+	culture = ironborn
+}
+174456 = {
+	name = Mottingly
+	culture = ironborn
+}
+174457 = {
+	name = Tilden
+	culture = ironborn
+}
+174458 = {
+	name = Gargrave
+	culture = ironborn
+}
+174459 = {
+	name = Seaman
+	culture = ironborn
+}
+174460 = {
+	name = Blackram
+	culture = ironborn
+}
+174461 = {
+	name = Stonekyme
+	culture = ironborn
+}
+174462 = {
+	name = Barrows
+	culture = ironborn
+}
+174463 = {
+	name = Staves
+	culture = ironborn
+}
+174464 = {
+	name = Stayr
+	culture = ironborn
+}
+174465 = {
+	name = Folwynd
+	culture = ironborn
+}
+174466 = {
+	name = Flagg
+	culture = ironborn
+}
+174467 = {
+	name = Vyx
+	culture = ironborn
+}
+174468 = {
+	name = Shields
+	culture = ironborn
+}
+174469 = {
+	name = Mistwater
+	culture = ironborn
+}
+174470 = {
+	name = Ironmark
+	culture = ironborn
+}
+174471 = {
+	name = Seabury
+	culture = ironborn
+}
+174472 = {
+	name = Lynch
+	culture = ironborn
+}
+174473 = {
+	name = Hake
+	culture = ironborn
+}
+174474 = {
+	name = Pews
+	culture = ironborn
+}
+174475 = {
+	name = Burrows
+	culture = ironborn
+}
+174476 = {
+	name = Sharpley
+	culture = ironborn
+}
+174477 = {
+	name = Meade
+	culture = ironborn
+}
+174478 = {
+	name = Grix
+	culture = ironborn
+}
+174479 = {
+	name = Irondale
+	culture = ironborn
+}
+
+#canon
+64 = {
+	name="Botley"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+66 = {
+	name="Hoare"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 19
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	used_for_random = no
+}
+67 = {
+	name="Wynch"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 12
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+107 = {
+	name = "Greyjoy"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+108 = {
+	name="Stonehouse"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 17
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+109 = {
+	name="Saltcliffe"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+110 = {
+	name="Merlyn"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+111 = {
+	name="Myre"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 16
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+112 = {
+	name="Goodbrother"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+113 = {
+	name="Sparr"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 14
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+114 = {
+	name="Farwynd"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+115 = {
+	name="Kenning"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 15
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+116 = {
+	name="Orkwood"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+117 = {
+	name="Sunderly"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 13
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+118 = {
+	name="Blacktyde"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+119 = {
+	name="Volmark"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+120 = {
+	name="Stonetree"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 9
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+121 = {
+	name = "Drumm"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 10
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+122 = {
+	name="Harlaw"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 11
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+123 = {
+	name="Tawney"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 18
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+124 = {
+	name="Shepherd"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 25
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	can_appear = no
+}
+174419 = {
+	name="Codd"
+	culture = ironborn
+	divine_blood=yes
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 20
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	can_appear = no
+}
+174420 = {
+	name="Greyiron"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 21
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	used_for_random = no
+	can_appear = no
+}
+174421 = {
+	name="Humble"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 22
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	can_appear = no
+}
+174422 = {
+	name="Netley"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 23
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	can_appear = no
+}
+174423 = {
+	name="Sharp"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 24
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	can_appear = no
+}
+174424 = {
+	name="Weaver"
+	culture = ironborn
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 26
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	can_appear = no
+}
+
+4500019 = {
+	name = "Ironmaker"
+	culture = ironborn
+	used_for_random = no
+	can_appear = no
+}
+
+1836582 = {
+	name="" #Nagga
+	culture = dragon
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	can_appear = no
+	used_for_random = no
+}

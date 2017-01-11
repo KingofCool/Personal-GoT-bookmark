@@ -1,0 +1,161 @@
+600200 = {
+	name="Bharbo"
+	culture = dothraki
+	used_for_random = no
+	can_appear = no
+}
+600201 = {
+	name="Drogo"
+	culture = dothraki
+	used_for_random = no
+	can_appear = no
+}
+
+600202 = {
+	name="Jhaquo"
+	culture = dothraki
+	used_for_random = no
+	can_appear = no
+}
+600203 = {
+	name="Temmo"
+	culture = dothraki
+	used_for_random = no
+	can_appear = no
+}
+600204 = {
+	name="Pono"
+	culture = dothraki
+	used_for_random = no
+	can_appear = no
+}
+600205 = {
+	name="Jhaqo"
+	culture = dothraki
+	used_for_random = no
+	can_appear = no
+}
+600206 = {
+	name="Zekko"
+	culture = dothraki
+	used_for_random = no
+	can_appear = no
+}
+600207 = {
+	name="Mengo"
+	culture = dothraki
+	used_for_random = no
+	can_appear = no
+}
+600208 = {
+	name="Horro"
+	culture = dothraki
+	used_for_random = no
+	can_appear = no
+}
+600209 = {
+	name="Onqo"
+	culture = dothraki
+	used_for_random = no
+	can_appear = no
+}
+600210 = {
+	name="Temmo"
+	culture = dothraki
+	used_for_random = no
+	can_appear = no
+}
+600211 = {
+	name="Zirqo"
+	culture = dothraki
+	used_for_random = no
+	can_appear = no
+}
+600212 = {
+	name="Onqo"
+	culture = dothraki
+	used_for_random = no
+	can_appear = no
+}
+600213 = {
+	name="Remekko"
+	culture = dothraki
+	used_for_random = no
+	can_appear = no
+}
+600214 = {
+	name="Haggo"
+	culture = dothraki
+	used_for_random = no
+	can_appear = no
+}
+600215 = {
+	name="Kovarro"
+	culture = dothraki
+	used_for_random = no
+	can_appear = no
+}
+600216 = {
+	name="Marro"
+	culture = dothraki
+	used_for_random = no
+	can_appear = no
+}
+600217 = {
+	name="Rogo"
+	culture = dothraki
+	used_for_random = no
+	can_appear = no
+}
+600218 = {
+	name="Rovo"
+	culture = dothraki
+	used_for_random = no
+	can_appear = no
+}
+600219 = {
+	name="Harro"
+	culture = dothraki
+	used_for_random = no
+	can_appear = no
+}
+600220 = {
+	name="Cohollo"
+	culture = dothraki
+	used_for_random = no
+	can_appear = no
+}
+#Jogos Nhai
+607300 = {
+	name="Fardeen"
+	culture = jogos_nhai
+	used_for_random = no
+	can_appear = no
+}
+607301 = {
+	name="Barialy"
+	culture = jogos_nhai
+	used_for_random = no
+	can_appear = no
+}
+607302 = {
+	name="Jawak"
+	culture = jogos_nhai
+	used_for_random = no
+	can_appear = no
+}
+607303 = {
+	name="Zaid"
+	culture = jogos_nhai
+	used_for_random = no
+	can_appear = no
+}
+607304 = {
+	name="Ehsan"
+	culture = jogos_nhai
+	used_for_random = no
+	can_appear = no
+}
+
+
+

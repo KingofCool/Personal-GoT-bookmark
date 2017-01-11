@@ -1,0 +1,289 @@
+########################################################
+# MINOR TITLES
+# Characters can have any number of these
+########################################################
+#	grant_limit: Max number of holders.
+#	realm_in_name: Append the name of the country after the title (Queen [of Sweden])
+#	allow: conditions for the character to hold the title
+#	regent: This is the title for regents (not really "minor")
+#	gain_effect: fires when the title is granted
+#	lose_effect: fires when a title is lost if dismissal_trigger evaluates to false
+#	message: should fire a message to the its owner when set
+#	The other fields are all character modifiers.
+
+title_commander_gold_cloaks = {
+	is_high_prio = yes
+	
+	dignity = 0.1
+	grant_limit = 1
+	opinion_effect = 10
+	show_as_title = no
+	revoke_allowed = yes
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.5
+	
+	allowed_to_hold = {
+		is_female = no
+		age = 16
+		martial = 10
+		NOT = { has_severe_disability_trigger = yes }
+		can_press_claims_trigger = yes
+		OR = {
+			is_ruler = no
+			has_landed_title = b_kings_landing
+		}	
+		b_kings_landing = { has_title_flag = military_command }
+	}
+	allowed_to_grant = {
+		has_landed_title = c_kings_landing
+		b_kings_landing = { 
+			holder_scope = {
+				OR = {
+					character = ROOT
+					tier = BARON
+				}
+			}
+			has_title_flag = military_command
+		}	
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				age = 50
+				NOT = { reverse_opinion = { who = FROM value = 0 } }
+				NOT = { martial = 12 }
+			}
+		}
+	}
+	
+	gain_effect = {
+		b_kings_landing = { 
+			succession = appointment
+			grant_title = ROOT 
+		}
+		if = {
+			limit = { NOT = { liege = { character = FROM } } }
+			set_defacto_liege = FROM
+		}
+	}
+	
+	lose_effect = {
+		b_kings_landing = { 
+			gain_title = FROM
+		}
+		move_character = FROM
+	}
+
+	message = no
+	
+}
+
+title_commander_city_watch_oldtown = {
+	is_high_prio = yes
+	
+	dignity = 0.1
+	grant_limit = 1
+	opinion_effect = 10
+	show_as_title = no
+	revoke_allowed = yes
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.5
+	
+	allowed_to_hold = {
+		is_female = no
+		age = 16
+		martial = 10
+		NOT = { has_severe_disability_trigger = yes }
+		can_press_claims_trigger = yes
+		OR = {
+			is_ruler = no
+			has_landed_title = b_oldtown
+		}			
+	}
+	allowed_to_grant = {
+		has_landed_title = c_oldtown
+		b_oldtown = { 
+			holder_scope = {
+				OR = {
+					character = ROOT
+					tier = BARON
+				}
+			}
+		}		
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				age = 50
+				NOT = { reverse_opinion = { who = FROM value = 0 } }
+				NOT = { martial = 12 }
+			}
+		}
+	}
+	
+	gain_effect = {
+		b_oldtown = {
+			succession = appointment
+			grant_title = ROOT 
+		}
+		if = {
+			limit = { NOT = { liege = { character = FROM } } }
+			set_defacto_liege = FROM
+		}
+	}
+	
+	lose_effect = {
+		b_oldtown = {
+			gain_title = FROM
+		}
+		move_character = FROM
+	}
+
+	message = no
+	
+}
+
+title_knight_of_the_bloody_gate = {
+	is_high_prio = yes
+	
+	dignity = 0.1
+	grant_limit = 1
+	opinion_effect = 10
+	show_as_title = no
+	revoke_allowed = yes
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.5
+	
+	allowed_to_hold = {
+		is_female = no
+		age = 16
+		martial = 10
+		NOT = { has_severe_disability_trigger = yes }
+		can_press_claims_trigger = yes
+		OR = {
+			is_ruler = no
+			has_landed_title = c_bloody_gate
+		}			
+	}
+	allowed_to_grant = {
+		has_landed_title = d_the_giants_lance
+		any_demesne_title = {
+			tier = count
+			NOT = { title = c_bloody_gate }
+		}
+		OR = {
+			has_landed_title = c_bloody_gate
+			any_vassal = {
+				has_landed_title = c_bloody_gate
+			}
+		}	
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				age = 50
+				NOT = { reverse_opinion = { who = FROM value = 0 } }
+				NOT = { martial = 12 }
+			}
+		}
+	}
+	gain_effect = {
+		c_bloody_gate = { 
+			succession = appointment
+			grant_title = ROOT					
+		}
+		if = {
+			limit = { NOT = { liege = { character = FROM } } }
+			set_defacto_liege = FROM
+		}
+	}
+	
+	lose_effect = {
+		c_bloody_gate = { 
+			gain_title = FROM
+		}
+		move_character = FROM
+	}
+
+	message = no
+	
+}
+
+title_commander_city_watch_lannisport = {
+	is_high_prio = yes
+	
+	dignity = 0.1
+	grant_limit = 1
+	opinion_effect = 10
+	show_as_title = no
+	revoke_allowed = yes
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.5
+	
+	allowed_to_hold = {
+		is_female = no
+		age = 16
+		martial = 10
+		NOT = { has_severe_disability_trigger = yes }
+		can_press_claims_trigger = yes
+		OR = {
+			is_ruler = no
+			has_landed_title = b_lannisportone
+		}			
+	}
+	allowed_to_grant = {
+		has_landed_title = c_lannisport
+		b_lannisportone = { 
+			holder_scope = {
+				OR = {
+					character = ROOT
+					tier = BARON
+				}
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				age = 50
+				NOT = { reverse_opinion = { who = FROM value = 0 } }
+				NOT = { martial = 12 }
+			}
+		}
+	}
+	
+	gain_effect = {
+		b_lannisportone = {
+			succession = appointment
+			grant_title = ROOT 
+		}
+		if = {
+			limit = { NOT = { liege = { character = FROM } } }
+			set_defacto_liege = FROM
+		}
+	}
+	
+	lose_effect = {
+		b_lannisportone = {
+			gain_title = FROM
+		}
+		move_character = FROM
+	}
+
+	message = no
+	
+}
+
+

@@ -1,0 +1,146 @@
+decisions = {
+	build_alchemist_guild = {
+		only_playable = yes
+		potential = {
+			is_ruler = yes
+			capital_scope = {
+				NOT = { has_province_modifier = building_alchemist_guild }
+				NOT = { has_province_modifier = alchemist_guild }
+				owner = { character = ROOT }
+			}
+			NOT = { any_demesne_province = { has_province_modifier = building_alchemist_guild } }
+			NOT = { has_character_flag = flag_making_wildfire }
+			OR = {
+				trait = fire_obsessed
+				AND = {
+					religion = rhllor
+					trait = zealous
+				}
+			}
+		}
+		allow = {
+			wealth = 300
+			NOT = { is_inaccessible_trigger = yes }
+		}
+		effect = {
+			set_character_flag = flag_making_wildfire
+			wealth = -300
+			character_event = { id = wildfire.1 tooltip = "EVTTOOLTIPwildfire.1" }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.005
+			}
+			modifier = {
+				factor = 0
+				has_character_modifier = loan_timer
+				OR = {
+					stewardship = 9
+					trait = temperate
+					NOT = { 
+						OR = {
+							trait = gluttonous 
+							trait = hedonist
+							trait = slothful
+						}	
+					}	
+				}	
+			}
+			modifier = {
+				factor = 0
+				NOT = { trait = lunatic }
+				OR = {
+					trait = shy
+					trait = greedy
+					trait = temperate
+					trait = content
+				}	
+			}	
+		}
+	}
+	
+	make_wildfire = {
+		only_playable = yes
+		potential = {
+			ai = no #ai uses yearly event
+			#NOT = { tier = BARON }
+			capital_scope = {
+				has_province_modifier = alchemist_guild
+				NOT = { has_province_modifier = making_wildfire }
+				NOT = { has_province_modifier = destroying_wildfire }
+				NOT = { has_province_modifier = wildfire_5 }
+				NOT = { has_province_modifier = wildfire_outbreak }
+				owner = { character = ROOT }
+			}
+			NOT = { has_character_flag = flag_making_wildfire }
+		}
+		allow = {
+			wealth = 100
+		}
+		effect = {
+			set_character_flag = flag_making_wildfire
+			character_event = { id = wildfire.4 tooltip = "EVTTOOLTIPwildfire.4" }
+		}
+		# ai_will_do = {
+			# factor = 1
+			
+			# modifier = {
+				# factor = 0
+				# NOT = { has_character_flag = flag_not_enough_wildfire }
+			# }		
+			# modifier = {
+				# factor = 0
+				# has_character_modifier = loan_timer
+				# OR = {
+					# stewardship = 9
+					# trait = temperate
+					# NOT = { 
+						# OR = {
+							# trait = gluttonous 
+							# trait = hedonist
+							# trait = slothful
+						# }	
+					# }	
+				# }	
+			# }
+		# }
+	}
+	
+	destroy_wildfire = {
+		only_playable = yes
+		potential = {
+			ai = no #ai uses yearly event
+			#NOT = { tier = BARON }
+			capital_scope = {
+				has_province_modifier = alchemist_guild
+				OR = {
+					has_province_modifier = wildfire_1
+					has_province_modifier = wildfire_2
+					has_province_modifier = wildfire_3
+					has_province_modifier = wildfire_4
+					has_province_modifier = wildfire_5
+				}
+				NOT = { has_province_modifier = making_wildfire }
+				NOT = { has_province_modifier = destroying_wildfire }
+				NOT = { has_province_modifier = wildfire_outbreak }
+				owner = { character = ROOT }
+			}
+			NOT = { has_character_flag = flag_making_wildfire }
+		}
+		allow = {
+			wealth = 100
+		}
+		effect = {
+			set_character_flag = flag_making_wildfire
+			character_event = { id = wildfire.5 tooltip = "EVTTOOLTIPwildfire.5" }
+		}
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# factor = 0
+				# NOT = { has_character_flag = flag_too_much_wildfire }
+			# }
+		# }
+	}
+}

@@ -1,0 +1,1929 @@
+###################
+# Wildfire Events #
+namespace = wildfire
+###################
+# Galle (Gregory Hayes)
+###################
+# ALCHEMIST'S GUILD
+###################
+# wildfire.1	Establish an Alchemists' Guild
+# wildfire.2	Move Alchemists' Guild to capital
+# wildfire.3	Alchemists' Guild ready
+###################
+# WILDFIRE PRODUCTION
+###################
+# wildfire.4	Begin making wildfire
+# wildfire.5	Begin disposing of wildfire
+# wildfire.6	Done making wildfire
+# wildfire.7	Done disposing of wildfire
+# wildfire.8	AI yearly wildfire production management
+###################
+# USING WILDFIRE - DEFENSIVE SIEGES
+###################
+# wildfire.9	Meet with the Pyromancer
+# wildfire.10	Wildfire Used - Inform Defender
+# wildfire.11	Wildfire Used - Inform Attacker
+# wildfire.12	Wildfire Used - Inform Liege
+# wildfire.13	Enemy commanders caught in the flames
+####################
+# USING WILDFIRE - OFFENSIVE SIEGES
+####################
+# wildfire.14	Set marching orders for wildfire convoy
+# wildfire.15	Siege already over, abort wildfire attack
+# wildfire.16	Wildfire explodes in transit
+# wildfire.17	Wildfire convoy arrives, begin attack
+# wildfire.18	Defenders decimated
+# wildfire.19	Province residents caught in the flames
+# 5552926	Wildfire Hits the Alchemists Guild - Inform Defender
+# 5552927	Wildfire Hits the Alchemists Guild - Inform Attacker
+# 5552928	Wildfire Hits the Alchemists Guild - Inform Liege
+####################
+# WILDFIRE OUTBREAKS
+####################
+# wildfire.20	An accident ignites the wildfire!
+# wildfire.21	Caught in the flames!
+# wildfire.22	Flames finally die out.
+####################
+
+character_event = {
+	id = wildfire.1
+	desc = "EVTDESCwildfire.1"
+	picture = GFX_evt_pyromancer
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAwildfire.1"
+		clr_character_flag = flag_making_wildfire
+		capital_scope = {
+			add_province_modifier = {
+				name = building_alchemist_guild
+				duration = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = wildfire.2
+	desc = "EVTDESCwildfire.2"
+	picture = GFX_evt_pyromancer
+	
+	only_playable = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		capital_scope = { owner = { character = ROOT } }
+		any_demesne_province = {
+			has_province_modifier = building_alchemist_guild
+			is_capital = no
+		}
+	}
+	
+	option = {
+		trigger = {
+			capital_scope = {
+				NOT = { has_province_modifier = building_alchemist_guild }
+				NOT = { has_province_modifier = alchemist_guild }
+			}
+		}
+		name = "EVTOPTAwildfire.2"
+		any_demesne_province = {
+			limit = {
+				has_province_modifier = building_alchemist_guild
+				is_capital = no
+			}
+			remove_province_modifier = building_alchemist_guild
+		}
+		capital_scope = {
+			add_province_modifier = {
+				name = building_alchemist_guild
+				duration = -1
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { trait = fire_obsessed }
+			}
+		}
+	}
+	option = {
+		trigger = {
+			capital_scope = {
+				NOT = { has_province_modifier = building_alchemist_guild }
+				NOT = { has_province_modifier = alchemist_guild }
+			}
+		}
+		name = "EVTOPTBwildfire.2"
+		any_demesne_province = {
+			limit = {
+				has_province_modifier = building_alchemist_guild
+				is_capital = no
+			}
+			remove_province_modifier = building_alchemist_guild
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				trait = fire_obsessed
+			}
+		}
+	}
+	option = {
+		trigger = {
+			capital_scope = {
+				OR = {
+					has_province_modifier = building_alchemist_guild
+					has_province_modifier = alchemist_guild
+				}
+			}
+		}
+		name = "EVTOPTCwildfire.2"
+		any_demesne_province = {
+			limit = {
+				has_province_modifier = building_alchemist_guild
+				is_capital = no
+			}
+			remove_province_modifier = building_alchemist_guild
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				trait = fire_obsessed
+			}
+		}
+	}
+}
+
+character_event = {
+	id = wildfire.3
+	desc = "EVTDESCwildfire.3"
+	picture = GFX_evt_pyromancer
+	
+	only_playable = yes
+	
+	trigger = {
+		capital_scope = {
+			has_province_modifier = building_alchemist_guild
+			owner = { character = ROOT }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "EVTOPTAwildfire.3"
+		capital_scope = {
+			remove_province_modifier = building_alchemist_guild
+			add_province_modifier = {
+				name = alchemist_guild
+				duration = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = wildfire.4
+	desc = "EVTDESCwildfire.4"
+	picture = GFX_evt_pyromancer
+	is_triggered_only = yes
+	
+	option = {
+		clr_character_flag = flag_making_wildfire
+		name = "EVTOPTAwildfire.4"
+		wealth = -100
+		capital_scope = {
+			add_province_modifier = {
+				name = making_wildfire
+				duration = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = wildfire.5
+	desc = "EVTDESCwildfire.5"
+	picture = GFX_evt_pyromancer
+	is_triggered_only = yes
+	
+	option = {
+		clr_character_flag = flag_making_wildfire
+		name = "EVTOPTAwildfire.5"
+		wealth = -100
+		capital_scope = {
+			add_province_modifier = {
+				name = destroying_wildfire
+				duration = -1
+			}
+		}
+	}
+}
+
+character_event = {
+	id = wildfire.6
+	desc = "EVTDESCwildfire.6"
+	picture = GFX_evt_pyromancer
+	
+	only_playable = yes
+	
+	trigger = {
+		capital_scope = {
+			owner = { character = ROOT }
+			has_province_modifier = alchemist_guild
+			has_province_modifier = making_wildfire
+			NOT = { has_province_modifier = wildfire_outbreak }
+			NOT = { has_province_modifier = asoiaf_normal_winter }
+			NOT = { has_province_modifier = asoiaf_harsh_winter }
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			has_global_flag = age_of_dragons
+		}
+	}
+	option = {
+		name = "EVTOPTAwildfire.6"
+		capital_scope = { remove_province_modifier = making_wildfire }
+		if = {
+			limit = { capital_scope = { has_province_modifier = wildfire_4 } }
+			capital_scope = {
+				remove_province_modifier = wildfire_4
+				add_province_modifier = {
+					name = wildfire_5
+					duration = -1
+				}
+			}
+		}
+		if = {
+			limit = { capital_scope = { has_province_modifier = wildfire_3 } }
+			capital_scope = {
+				remove_province_modifier = wildfire_3
+				add_province_modifier = {
+					name = wildfire_4
+					duration = -1
+				}
+			}
+		}
+		if = {
+			limit = { capital_scope = { has_province_modifier = wildfire_2 } }
+			capital_scope = {
+				remove_province_modifier = wildfire_2
+				add_province_modifier = {
+					name = wildfire_3
+					duration = -1
+				}
+			}
+		}
+		if = {
+			limit = { capital_scope = { has_province_modifier = wildfire_1 } }
+			capital_scope = {
+				remove_province_modifier = wildfire_1
+				add_province_modifier = {
+					name = wildfire_2
+					duration = -1
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					capital_scope = {
+						OR = {
+							has_province_modifier = wildfire_1
+							has_province_modifier = wildfire_2
+							has_province_modifier = wildfire_3
+							has_province_modifier = wildfire_4
+							has_province_modifier = wildfire_5
+						}
+					}
+				}
+			}
+			capital_scope = {
+				add_province_modifier = {
+					name = wildfire_1
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = wildfire.7
+	desc = "EVTDESCwildfire.7"
+	picture = GFX_evt_pyromancer
+	
+	only_playable = yes
+	
+	trigger = {
+		capital_scope = {
+			owner = { character = ROOT }
+			has_province_modifier = alchemist_guild
+			has_province_modifier = destroying_wildfire
+			NOT = { has_province_modifier = wildfire_outbreak }
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "EVTOPTAwildfire.7"
+		capital_scope = { remove_province_modifier = destroying_wildfire }
+		if = {
+			limit = { capital_scope = { has_province_modifier = wildfire_1 } }
+			capital_scope = { remove_province_modifier = wildfire_1 }
+		}
+		if = {
+			limit = { capital_scope = { has_province_modifier = wildfire_2 } }
+			capital_scope = {
+				remove_province_modifier = wildfire_2
+				add_province_modifier = {
+					name = wildfire_1
+					duration = -1
+				}
+			}
+		}
+		if = {
+			limit = { capital_scope = { has_province_modifier = wildfire_3 } }
+			capital_scope = {
+				remove_province_modifier = wildfire_3
+				add_province_modifier = {
+					name = wildfire_2
+					duration = -1
+				}
+			}
+		}
+		if = {
+			limit = { capital_scope = { has_province_modifier = wildfire_4 } }
+			capital_scope = {
+				remove_province_modifier = wildfire_4
+				add_province_modifier = {
+					name = wildfire_3
+					duration = -1
+				}
+			}
+		}
+		if = {
+			limit = { capital_scope = { has_province_modifier = wildfire_5 } }
+			capital_scope = {
+				remove_province_modifier = wildfire_5
+				add_province_modifier = {
+					name = wildfire_4
+					duration = -1
+				}
+			}
+		}
+	}
+}
+#AI yearly wildfire production management
+character_event = {
+	id = wildfire.8
+	
+	is_triggered_only = yes
+	only_playable = yes
+
+	trigger = {
+		ai = yes
+		capital_scope = {
+			has_province_modifier = alchemist_guild
+			owner = { character = ROOT }		
+		}
+		NOT = { has_character_flag = flag_making_wildfire }
+	}
+	
+	immediate = {
+		#clr_character_flag = flag_too_much_wildfire
+		#clr_character_flag = flag_not_enough_wildfire
+	}
+	
+	option = { #destroy
+		trigger = {
+			wealth = 100
+			capital_scope = {
+				OR = {
+					has_province_modifier = wildfire_1
+					has_province_modifier = wildfire_2
+					has_province_modifier = wildfire_3
+					has_province_modifier = wildfire_4
+					has_province_modifier = wildfire_5
+				}
+				NOT = { has_province_modifier = making_wildfire }
+				NOT = { has_province_modifier = destroying_wildfire }
+				NOT = { has_province_modifier = wildfire_outbreak }
+				owner = { character = ROOT }
+			}			
+		}
+		ai_chance = {
+			factor = 100
+			
+			# Targaryen Modifier
+			modifier = {
+				factor = 0.25
+				OR = {
+					dynasty = 496
+					regent = {
+						dynasty = 496
+					}
+				}
+			}
+			# Stockpile Modifiers
+			modifier = {
+				factor = 2
+				capital_scope = {
+					OR = {
+						has_province_modifier = wildfire_1
+						has_province_modifier = wildfire_2
+						has_province_modifier = wildfire_3
+						has_province_modifier = wildfire_4
+						has_province_modifier = wildfire_5
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				capital_scope = {
+					OR = {
+						has_province_modifier = wildfire_2
+						has_province_modifier = wildfire_3
+						has_province_modifier = wildfire_4
+						has_province_modifier = wildfire_5
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				capital_scope = {
+					OR = {
+						has_province_modifier = wildfire_3
+						has_province_modifier = wildfire_4
+						has_province_modifier = wildfire_5
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				capital_scope = {
+					OR = {
+						has_province_modifier = wildfire_4
+						has_province_modifier = wildfire_5
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				capital_scope = {
+					has_province_modifier = wildfire_5
+				}
+			}
+		
+			# Ruler Personality Effects
+			modifier = {
+				factor = 0.0625
+				OR = {
+					AND = {
+						has_regent = no
+						trait = fire_obsessed
+					}
+					regent = {
+						trait = fire_obsessed
+					}
+				}
+			}
+			modifier = {
+				factor = 0.0625
+				OR = {
+					AND = {
+						has_regent = no
+						trait = possessed
+					}
+					regent = {
+						trait = possessed
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				OR = {
+					AND = {
+						has_regent = no
+						trait = lunatic
+					}
+					regent = {
+						trait = lunatic
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				OR = {
+					AND = {
+						has_regent = no
+						trait = brave
+					}
+					regent = {
+						trait = brave
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				OR = {
+					AND = {
+						has_regent = no
+						trait = wroth
+					}
+					regent = {
+						trait = wroth
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				OR = {
+					AND = {
+						has_regent = no
+						trait = cruel
+					}
+					regent = {
+						trait = cruel
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				OR = {
+					AND = {
+						has_regent = no
+						trait = mystic
+					}
+					regent = {
+						trait = mystic
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					AND = {
+						has_regent = no
+						trait = kind
+					}
+					regent = {
+						trait = kind
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					AND = {
+						has_regent = no
+						trait = craven
+					}
+					regent = {
+						trait = craven
+					}
+				}
+			}
+			modifier = {
+				factor = 4
+				OR = {
+					AND = {
+						has_regent = no
+						trait = paranoid
+					}
+					regent = {
+						trait = paranoid
+					}
+				}
+			}
+		
+			# Situational Modifiers
+			modifier = {
+				factor = 0.5
+				war = yes
+			}
+			modifier = {
+				factor = 0.5
+				any_current_enemy = {
+					location = { owner = { character = ROOT } }
+				}
+			}
+			modifier = {
+				factor = 0.5
+				any_current_enemy = {
+					location = { ROOT = { capital_scope = { province_id = PREVPREV } } }
+				}
+			}
+			modifier = {
+				factor = 0
+				has_character_modifier = loan_timer
+				OR = {
+					stewardship = 9
+					trait = temperate
+					NOT = { 
+						OR = {
+							trait = gluttonous 
+							trait = hedonist
+							trait = slothful
+						}	
+					}	
+				}	
+			}
+		}
+		#set_character_flag = flag_too_much_wildfire
+		set_character_flag = flag_making_wildfire
+		character_event = { id = wildfire.5 tooltip = "EVTTOOLTIPwildfire.5" }
+	}
+	
+	option = { #make
+		trigger = {
+			wealth = 100
+			capital_scope = {
+				has_province_modifier = alchemist_guild
+				NOT = { has_province_modifier = making_wildfire }
+				NOT = { has_province_modifier = destroying_wildfire }
+				NOT = { has_province_modifier = wildfire_5 }
+				NOT = { has_province_modifier = wildfire_outbreak }
+			}			
+		}
+		ai_chance = {
+			factor = 25
+			# Targaryen Modifier
+			modifier = {
+				factor = 4
+				OR = {
+					dynasty = 496
+					regent = {
+						dynasty = 496
+					}
+				}
+			}
+			# Stockpile Modifiers
+			modifier = {
+				factor = 0.5
+				capital_scope = {
+					OR = {
+						has_province_modifier = wildfire_1
+						has_province_modifier = wildfire_2
+						has_province_modifier = wildfire_3
+						has_province_modifier = wildfire_4
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				capital_scope = {
+					OR = {
+						has_province_modifier = wildfire_2
+						has_province_modifier = wildfire_3
+						has_province_modifier = wildfire_4
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				capital_scope = {
+					OR = {
+						has_province_modifier = wildfire_3
+						has_province_modifier = wildfire_4
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				capital_scope = {
+					has_province_modifier = wildfire_4
+				}
+			}
+		
+			# Ruler Personality Effects
+			modifier = {
+				factor = 16
+				OR = {
+					AND = {
+						has_regent = no
+						trait = fire_obsessed
+					}
+					regent = {
+						trait = fire_obsessed
+					}
+				}
+			}
+			modifier = {
+				factor = 16
+				OR = {
+					AND = {
+						has_regent = no
+						trait = possessed
+					}
+					regent = {
+						trait = possessed
+					}
+				}
+			}
+			modifier = {
+				factor = 4
+				OR = {
+					AND = {
+						has_regent = no
+						trait = lunatic
+					}
+					regent = {
+						trait = lunatic
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					AND = {
+						has_regent = no
+						trait = brave
+					}
+					regent = {
+						trait = brave
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					AND = {
+						has_regent = no
+						trait = wroth
+					}
+					regent = {
+						trait = wroth
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					AND = {
+						has_regent = no
+						trait = cruel
+					}
+					regent = {
+						trait = cruel
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					AND = {
+						has_regent = no
+						trait = mystic
+					}
+					regent = {
+						trait = mystic
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				OR = {
+					AND = {
+						has_regent = no
+						trait = kind
+					}
+					regent = {
+						trait = kind
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				OR = {
+					AND = {
+						has_regent = no
+						trait = craven
+					}
+					regent = {
+						trait = craven
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				OR = {
+					AND = {
+						has_regent = no
+						trait = paranoid
+					}
+					regent = {
+						trait = paranoid
+					}
+				}
+			}
+		
+			# Situational Modifiers
+			modifier = {
+				factor = 2
+				war = yes
+			}
+			modifier = {
+				factor = 2
+				any_current_enemy = {
+					location = { owner = { character = ROOT } }
+				}
+			}
+			modifier = {
+				factor = 2
+				any_current_enemy = {
+					location = { ROOT = { capital_scope = { province_id = PREVPREV } } }
+				}
+			}
+		}
+		#set_character_flag = flag_not_enough_wildfire
+		set_character_flag = flag_making_wildfire
+		character_event = { id = wildfire.4 tooltip = "EVTTOOLTIPwildfire.4" }
+	}
+	
+	option = { #nothing for now
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2
+				OR = {
+					AND = {
+						has_regent = no
+						trait = slothful
+					}
+					regent = {
+						trait = slothful
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					AND = {
+						has_regent = no
+						trait = greedy
+					}
+					regent = {
+						trait = greedy
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					AND = {
+						has_regent = no
+						trait = patient
+					}
+					regent = {
+						trait = patient
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				has_regent = yes
+			}
+		}
+	}
+}
+
+character_event = {
+	id = wildfire.9
+	desc = "EVTDESCwildfire.9"
+	picture = GFX_evt_pyromancer
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		siege = {
+			is_attacker = no
+			location = {
+				OR = {
+					has_province_modifier = wildfire_1
+					has_province_modifier = wildfire_2
+					has_province_modifier = wildfire_3
+					has_province_modifier = wildfire_4
+					has_province_modifier = wildfire_5
+				}
+				NOT = { has_province_modifier = wildfire_outbreak }				
+			}
+		}
+		NOT = { has_character_modifier = used_wildfire_in_siege }		
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = fire_obsessed
+		}
+		modifier = {
+			factor = 2
+			trait = genius
+		}
+		modifier = {
+			factor = 2
+			trait = possessed
+		}
+		modifier = {
+			factor = 1.25
+			is_smart_trigger = yes
+		}
+		modifier = {
+			factor = 1.25
+			trait = lunatic
+		}
+		modifier = {
+			factor = 1.25
+			location = { has_province_modifier = wildfire_2 }
+		}
+		modifier = {
+			factor = 1.66
+			location = { has_province_modifier = wildfire_3 }
+		}
+		modifier = {
+			factor = 2.5
+			location = { has_province_modifier = wildfire_4 }
+		}
+		modifier = {
+			factor = 5
+			location = { has_province_modifier = wildfire_5 }
+		}
+	}
+	
+	immediate = { #cooldown
+		add_character_modifier = {
+			name = used_wildfire_in_siege
+			duration = 200
+			hidden = yes
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTAwildfire.9"
+		character_event = { id = wildfire.10 tooltip = "EVTwildfire.10" }
+		siege = { enemy = { leader = { character_event = { id = wildfire.11 tooltip = "EVTwildfire.11" } } } }
+		if = {
+			limit = { NOT = { location = { owner = { character = ROOT } } } }
+			location = { owner = { character_event = { id = wildfire.12 tooltip = "EVTwildfire.12" } } }
+		}
+		if = {
+			limit = { location = { has_province_modifier = wildfire_1 } }
+			location = { remove_province_modifier = wildfire_1 }
+		}
+		if = {
+			limit = { location = { has_province_modifier = wildfire_2 } }
+			location = {
+				remove_province_modifier = wildfire_2
+				add_province_modifier = {
+					name = wildfire_1
+					duration = -1
+				}
+			}
+		}
+		if = {
+			limit = { location = { has_province_modifier = wildfire_3 } }
+			location = {
+				remove_province_modifier = wildfire_3
+				add_province_modifier = {
+					name = wildfire_2
+					duration = -1
+				}
+			}
+		}
+		if = {
+			limit = { location = { has_province_modifier = wildfire_4 } }
+			location = {
+				remove_province_modifier = wildfire_4
+				add_province_modifier = {
+					name = wildfire_3
+					duration = -1
+				}
+			}
+		}
+		if = {
+			limit = { location = { has_province_modifier = wildfire_5 } }
+			location = {
+				remove_province_modifier = wildfire_5
+				add_province_modifier = {
+					name = wildfire_4
+					duration = -1
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 4
+				trait = fire_obsessed
+			}
+			modifier = {
+				factor = 4
+				trait = possessed
+			}
+			modifier = {
+				factor = 2
+				trait = cruel
+			}
+			modifier = {
+				factor = 2
+				trait = lunatic
+			}
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 3
+				trait = ruthless
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBwildfire.9"
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 3
+				trait = honorable
+			}
+		}
+	}
+}
+
+character_event = {
+	id = wildfire.10
+	desc = "EVTDESCwildfire.10"
+	picture = GFX_evt_wildfire
+	border = "GFX_event_normal_frame_war"
+	is_triggered_only = yes
+	
+	# These are pure flavor for now
+	option = {
+		name = "EVTOPTAwildfire.10"
+	}
+	
+	option = {
+		name = "EVTOPTBwildfire.10"
+	}
+	
+	option = {
+		name = "EVTOPTCwildfire.10"
+	}
+}
+
+character_event = {
+	id = wildfire.11
+	desc = "EVTDESCwildfire.11"
+	picture = GFX_evt_wildfire
+	border = "GFX_event_normal_frame_war"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAwildfire.11"
+		siege = {
+			troops = -0.2
+			morale = -0.5
+			enemy = {
+				morale = 0.2
+			}
+		}
+		location = {
+			owner = {
+				any_current_enemy = {
+					if = {
+						limit = { 
+							in_command = yes
+							at_location = ROOT 
+						}
+						random = {
+							chance = 10
+							character_event = { id = wildfire.13 tooltip = "EVTTOOLTIPwildfire.13" }
+						}
+					}	
+					any_realm_character = {
+						limit = { 
+							in_command = yes
+							at_location = ROOT 
+						}
+						random = {
+							chance = 10
+							character_event = { id = wildfire.13 tooltip = "EVTTOOLTIPwildfire.13" }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = wildfire.12
+	desc = "EVTDESCwildfire.12"
+	picture = GFX_evt_wildfire
+	border = "GFX_event_normal_frame_war"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAwildfire.12"
+	}
+	option = {
+		name = "EVTOPTB552913"
+	}
+}
+
+character_event = {
+	id = wildfire.13
+	desc = "EVTDESCwildfire.13"
+	picture = GFX_evt_wildfire_city
+	border = "GFX_event_normal_frame_war"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAwildfire.13"
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						trait = wounded
+						is_maimed_trigger = yes
+					}
+				}
+			}
+			random_list = {
+				50 = { 
+					add_trait = wounded 
+					hidden_tooltip = {
+						character_event = {
+							id = 38280 #Notify
+						}
+					}
+				}
+				30 = { 
+					add_maimed_trait_effect = yes
+				}
+				20 = { death = { killer = FROMFROM death_reason = death_battle } }
+			}
+		}
+		if = {
+			limit = {
+				trait = wounded
+			}
+			random_list = {
+				50 = { 
+					hidden_tooltip = { remove_trait = wounded }
+					add_maimed_trait_effect = yes
+				}
+				30 = { death = { killer = FROMFROM death_reason = death_battle } }
+				20 = {  }
+			}
+		}
+		if = {
+			limit = {
+				is_maimed_trigger = yes
+			}
+			random_list = {
+				40 = { death = { killer = FROMFROM death_reason = death_battle } }
+				60 = {  }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = wildfire.14
+	desc = "EVTDESCwildfire.14"
+	picture = GFX_evt_siege
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	min_age = 16
+	only_playable = yes
+	prisoner = no
+	capable_only = yes
+	
+	trigger = {
+		siege = { is_attacker = yes }
+		capital_scope = {
+			owner = { character = ROOT }
+			NOT = { has_province_modifier = wildfire_outbreak }
+			OR = {
+				has_province_modifier = wildfire_1
+				has_province_modifier = wildfire_2
+				has_province_modifier = wildfire_3
+				has_province_modifier = wildfire_4
+				has_province_modifier = wildfire_5
+			}
+		}
+		NOT = { has_character_flag = flag_transporting_wildfire_slow }
+		NOT = { has_character_flag = flag_transporting_wildfire_normal }
+		NOT = { has_character_flag = flag_transporting_wildfire_fast }
+		NOT = { has_character_modifier = used_wildfire_in_siege }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 2
+			trait = fire_obsessed
+		}
+		modifier = {
+			factor = 2
+			trait = genius
+		}
+		modifier = {
+			factor = 2
+			trait = possessed
+		}
+		modifier = {
+			factor = 1.25
+			is_smart_trigger = yes
+		}
+		modifier = {
+			factor = 1.25
+			trait = lunatic
+		}
+		modifier = {
+			factor = 1.25
+			capital_scope = { has_province_modifier = wildfire_2 }
+		}
+		modifier = {
+			factor = 1.66
+			capital_scope = { has_province_modifier = wildfire_3 }
+		}
+		modifier = {
+			factor = 2.5
+			capital_scope = { has_province_modifier = wildfire_4 }
+		}
+		modifier = {
+			factor = 5
+			capital_scope = { has_province_modifier = wildfire_5 }
+		}
+	}
+	
+	immediate = { #cooldown
+		add_character_modifier = {
+			name = used_wildfire_in_siege
+			duration = 200
+			hidden = yes
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTAwildfire.14"
+		set_character_flag = flag_transporting_wildfire_slow
+		hidden_tooltip = {
+			random_list = {
+				10 = { character_event = { id = wildfire.16 days = 30 } }
+				90 = { character_event = { id = wildfire.17 days = 30 } }
+			}
+			character_event = { id = wildfire.15 days = 31 } #Failsafe		
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.5
+				trait = slothful
+			}
+			modifier = {
+				factor = 0.25
+				trait = lunatic
+			}
+			modifier = {
+				factor = 0.25
+				trait = possessed
+			}
+			modifier = {
+				factor = 0.5
+				trait = brave
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTBwildfire.14"
+		set_character_flag = flag_transporting_wildfire_normal
+		hidden_tooltip = {
+			random_list = {
+				25 = { character_event = { id = wildfire.16 days = 18 } }
+				75 = { character_event = { id = wildfire.17 days = 18 } }
+			}
+			character_event = { id = wildfire.15 days = 19 } #Failsafe	
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.5
+				trait = patient
+			}
+			modifier = {
+				factor = 0.5
+				trait = diligent
+			}
+			modifier = {
+				factor = 0.25
+				trait = paranoid
+			}
+			modifier = {
+				factor = 0.5
+				trait = craven
+			}
+			modifier = {
+				factor = 0.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.5
+				trait = slothful
+			}
+			modifier = {
+				factor = 0.25
+				trait = lunatic
+			}
+			modifier = {
+				factor = 0.25
+				trait = possessed
+			}
+			modifier = {
+				factor = 0.5
+				trait = brave
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTCwildfire.14"
+		set_character_flag = flag_transporting_wildfire_fast
+		hidden_tooltip = {
+			random_list = {
+				50 = { character_event = { id = wildfire.16 days = 7 } }
+				50 = { character_event = { id = wildfire.17 days = 7 } }
+			}
+			character_event = { id = wildfire.15 days = 8 } #Failsafe	
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				trait = patient
+			}
+			modifier = {
+				factor = 0.5
+				trait = diligent
+			}
+			modifier = {
+				factor = 0.25
+				trait = paranoid
+			}
+			modifier = {
+				factor = 0.5
+				trait = craven
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTDwildfire.14"
+		ai_chance = {
+			factor = 200
+			modifier = {
+				factor = 0.25
+				trait = fire_obsessed
+			}
+			modifier = {
+				factor = 0.5
+				trait = cruel
+			}
+			modifier = {
+				factor = 0.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.25
+				dynasty = 496
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+		}
+	}
+}
+
+character_event = {
+	id = wildfire.15
+	desc = "EVTDESCwildfire.15"
+	picture = GFX_evt_pyromancer
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { siege = { is_attacker = yes } }
+		OR = {
+			has_character_flag = flag_transporting_wildfire_slow
+			has_character_flag = flag_transporting_wildfire_normal
+			has_character_flag = flag_transporting_wildfire_fast
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAwildfire.15"
+		clr_character_flag = flag_transporting_wildfire_slow
+		clr_character_flag = flag_transporting_wildfire_normal
+		clr_character_flag = flag_transporting_wildfire_fast
+	}
+}
+
+character_event = {
+	id = wildfire.16
+	desc = "EVTDESCwildfire.16"
+	picture = GFX_evt_wildfire
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		siege = { is_attacker = yes }
+		OR = {
+			has_character_flag = flag_transporting_wildfire_slow
+			has_character_flag = flag_transporting_wildfire_normal
+			has_character_flag = flag_transporting_wildfire_fast
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAwildfire.16"
+		troops = -0.1
+		morale = -0.3
+		clr_character_flag = flag_transporting_wildfire_slow
+		clr_character_flag = flag_transporting_wildfire_normal
+		clr_character_flag = flag_transporting_wildfire_fast
+		if = {
+			limit = { capital_scope = { has_province_modifier = wildfire_1 } }
+			capital_scope = { remove_province_modifier = wildfire_1 }
+		}
+		if = {
+			limit = { capital_scope = { has_province_modifier = wildfire_2 } }
+			capital_scope = {
+				remove_province_modifier = wildfire_2
+				add_province_modifier = {
+					name = wildfire_1
+					duration = -1
+				}
+			}
+		}
+		if = {
+			limit = { capital_scope = { has_province_modifier = wildfire_3 } }
+			capital_scope = {
+				remove_province_modifier = wildfire_3
+				add_province_modifier = {
+					name = wildfire_2
+					duration = -1
+				}
+			}
+		}
+		if = {
+			limit = { capital_scope = { has_province_modifier = wildfire_4 } }
+			capital_scope = {
+				remove_province_modifier = wildfire_4
+				add_province_modifier = {
+					name = wildfire_3
+					duration = -1
+				}
+			}
+		}
+		if = {
+			limit = { capital_scope = { has_province_modifier = wildfire_5 } }
+			capital_scope = {
+				remove_province_modifier = wildfire_5
+				add_province_modifier = {
+					name = wildfire_4
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = wildfire.17
+	desc = "EVTDESCwildfire.17"
+	picture = GFX_evt_wildfire
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		siege = { is_attacker = yes }
+		OR = {
+			has_character_flag = flag_transporting_wildfire_slow
+			has_character_flag = flag_transporting_wildfire_normal
+			has_character_flag = flag_transporting_wildfire_fast
+		}
+	}
+	
+	immediate = {
+		clr_character_flag = flag_transporting_wildfire_slow
+		clr_character_flag = flag_transporting_wildfire_normal
+		clr_character_flag = flag_transporting_wildfire_fast
+		if = {
+			limit = { capital_scope = { has_province_modifier = wildfire_1 } }
+			capital_scope = { remove_province_modifier = wildfire_1 }
+		}
+		if = {
+			limit = { capital_scope = { has_province_modifier = wildfire_2 } }
+			capital_scope = {
+				remove_province_modifier = wildfire_2
+				add_province_modifier = {
+					name = wildfire_1
+					duration = -1
+				}
+			}
+		}
+		if = {
+			limit = { capital_scope = { has_province_modifier = wildfire_3 } }
+			capital_scope = {
+				remove_province_modifier = wildfire_3
+				add_province_modifier = {
+					name = wildfire_2
+					duration = -1
+				}
+			}
+		}
+		if = {
+			limit = { capital_scope = { has_province_modifier = wildfire_4 } }
+			capital_scope = {
+				remove_province_modifier = wildfire_4
+				add_province_modifier = {
+					name = wildfire_3
+					duration = -1
+				}
+			}
+		}
+		if = {
+			limit = { capital_scope = { has_province_modifier = wildfire_5 } }
+			capital_scope = {
+				remove_province_modifier = wildfire_5
+				add_province_modifier = {
+					name = wildfire_4
+					duration = -1
+				}
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTAwildfire.17"
+		siege = { 
+			enemy = { 
+				leader = { 
+					character_event = { id = wildfire.18 tooltip = "EVTTOOLTIPwildfire.18" } 
+					tooltip = {
+						troops = -0.2
+						morale = -0.3
+					}
+				} 
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTBwildfire.17"
+		siege = { 
+			enemy = { 
+				leader = { 
+					character_event = { id = wildfire.18 tooltip = "EVTTOOLTIPwildfire.18" } 
+					tooltip = {
+						troops = -0.2
+						morale = -0.3
+					}
+				} 
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTCwildfire.17"
+		siege = { 
+			enemy = { 
+				leader = { 
+					character_event = { id = wildfire.18 tooltip = "EVTTOOLTIPwildfire.18" } 
+					tooltip = {
+						troops = -0.2
+						morale = -0.3
+					}
+				} 
+			}
+		}
+	}
+}
+
+character_event = {
+	id = wildfire.18
+	desc = "EVTDESCwildfire.18"
+	picture = GFX_evt_wildfire
+	border = "GFX_event_normal_frame_war"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAwildfire.18"
+		troops = -0.2
+		morale = -0.3
+		if = {
+			limit = { location = { is_capital = yes } }
+			location = {
+				owner = {
+					any_courtier = {
+						limit = { at_location = ROOT }
+						random = {
+							chance = 10
+							character_event = { id = wildfire.19 tooltip = "EVTTOOLTIPwildfire.19" }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = wildfire.19
+	desc = "EVTDESCwildfire.19"
+	picture = GFX_evt_wildfire_city
+	border = "GFX_event_normal_frame_war"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAwildfire.19"
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						trait = wounded
+						is_maimed_trigger = yes
+					}
+				}
+			}
+			random_list = {
+				50 = { 
+					add_trait = wounded 
+					hidden_tooltip = {
+						character_event = {
+							id = 38280 #Notify
+						}
+					}
+				}
+				30 = { 
+					add_maimed_trait_effect = yes
+				}
+				20 = { death = { killer = FROMFROM death_reason = death_battle } }
+			}
+		}
+		if = {
+			limit = {
+				trait = wounded
+			}
+			random_list = {
+				50 = { 
+					hidden_tooltip = { remove_trait = wounded }
+					add_maimed_trait_effect = yes
+				}
+				30 = { death = { killer = FROMFROM death_reason = death_battle } }
+				20 = {  }
+			}
+		}
+		if = {
+			limit = {
+				is_maimed_trigger = yes
+			}
+			random_list = {
+				40 = { death = { killer = FROMFROM death_reason = death_battle } }
+				60 = {  }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = wildfire.20
+	desc = "EVTDESCwildfire.20"
+	picture = GFX_evt_wildfire_city
+	
+	only_playable = yes
+	
+	trigger = {
+		capital_scope = {
+			owner = { character = ROOT }
+			OR = {
+				has_province_modifier = wildfire_1
+				has_province_modifier = wildfire_2
+				has_province_modifier = wildfire_3
+				has_province_modifier = wildfire_4
+				has_province_modifier = wildfire_5
+			}
+			NOT = { has_province_modifier = wildfire_outbreak }
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 150
+		
+		modifier = {
+			factor = 0.8
+			capital_scope = { has_province_modifier = wildfire_2 }	
+		}
+		modifier = {
+			factor = 0.64
+			capital_scope = { has_province_modifier = wildfire_3 }	
+		}
+		modifier = {
+			factor = 0.51
+			capital_scope = { has_province_modifier = wildfire_4 }	
+		}
+		modifier = {
+			factor = 0.41
+			capital_scope = { has_province_modifier = wildfire_5 }	
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAwildfire.20"
+		capital_scope = {
+			add_province_modifier = {
+				name = wildfire_outbreak
+				duration = 365
+			}
+			if = {
+				limit = { has_province_modifier = making_wildfire }
+				remove_province_modifier = destroying_wildfire
+			}	
+			if = {
+				limit = { has_province_modifier = wildfire_1 }
+				remove_province_modifier = wildfire_1
+			}
+			if = {
+				limit = { has_province_modifier = wildfire_2 }
+				remove_province_modifier = wildfire_2
+			}
+			if = {
+				limit = { has_province_modifier = wildfire_3 }
+				remove_province_modifier = wildfire_3
+			}
+			if = {
+				limit = { has_province_modifier = wildfire_4 }
+				remove_province_modifier = wildfire_4
+			}
+			if = {
+				limit = { has_province_modifier = wildfire_5 }
+				remove_province_modifier = wildfire_5
+			}	
+		}
+		hidden_tooltip = { 
+			character_event = { id = wildfire.22 days = 240 random = 110 } 
+		}
+	}
+}
+
+character_event = {
+	id = wildfire.21
+	desc = "EVTDESCwildfire.21"
+	picture = GFX_evt_wildfire_city
+	
+	trigger = { 
+		location = { has_province_modifier = wildfire_outbreak } 
+		NOT = { trait = dragon }
+		NOT = { trait = wikid }
+		NOT = { trait = on_reaving }
+		NOT = { is_inaccessible_trigger = yes }
+		NOT = { trait = has_missing }
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+		modifier = {
+			factor = 0.33
+			in_command = yes
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAwildfire.21"
+		hidden_tooltip = {
+			liege = { character_event = { id = wildfire.23 } }
+			location = {
+				owner = {
+					if = {
+						limit = { NOT = { is_liege_of = ROOT } }
+						character_event = { id = wildfire.23 }
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						trait = wounded
+						is_maimed_trigger = yes
+					}
+				}
+			}
+			random_list = {
+				50 = { 
+					add_trait = wounded 
+					hidden_tooltip = {
+						character_event = {
+							id = 38280 #Notify
+						}
+					}
+				}
+				30 = { 
+					add_maimed_trait_effect = yes
+				}
+				20 = { 
+					red_god_resurrect_effect = yes #check for rhllor resurrection
+					death = { death_reason = death_accident_wildfire } 
+				}
+			}
+		}
+		if = {
+			limit = {
+				trait = wounded
+			}
+			random_list = {
+				50 = { 
+					hidden_tooltip = { remove_trait = wounded }
+					add_maimed_trait_effect = yes
+				}
+				30 = { 
+					red_god_resurrect_effect = yes #check for rhllor resurrection
+					death = { death_reason = death_accident_wildfire } 
+				}
+				20 = {  }
+			}
+		}
+		if = {
+			limit = {
+				is_maimed_trigger = yes
+			}
+			random_list = {
+				40 = { 
+					red_god_resurrect_effect = yes #check for rhllor resurrection
+					death = { death_reason = death_accident_wildfire } 
+				}
+				60 = {  }
+			}
+		}
+	}
+}
+
+character_event = {
+	id = wildfire.22
+	desc = "EVTDESCwildfire.22"
+	picture = GFX_evt_wildfire_city
+	
+	only_playable = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		capital_scope = {
+			has_province_modifier = wildfire_outbreak
+			owner = { character = ROOT }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAwildfire.22"
+		capital_scope = { remove_province_modifier = wildfire_outbreak }
+	}
+}
+
+character_event = { #inform liege
+	id = wildfire.23
+	desc = "EVTDESCwildfire.23"
+	picture = GFX_evt_wildfire_city
+	
+	only_playable = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAwildfire.23"
+	}
+}

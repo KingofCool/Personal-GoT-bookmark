@@ -1,0 +1,4757 @@
+namespace = cadet
+#Fashbinder, knuckey and blackninja9939
+
+#Stark Cadet Options
+character_event = { 
+   id = cadet.1
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = { #House Blackstark
+		name = "EVTOPTAcadet.1"
+		trigger = { not = { has_global_flag = cadet_blackstark } }
+	
+		set_global_flag = cadet_blackstark
+		FROM = { dynasty = 45000200 }
+	}
+	option = { #House Goldstark
+		name = "EVTOPTBcadet.1"
+		trigger = { not = { has_global_flag = cadet_goldstark } }
+	
+		set_global_flag = cadet_goldstark
+		FROM = { dynasty = 45000201 }
+	}
+	option = { #House Whitestark
+		name = "EVTOPTCcadet.1"
+		trigger = { not = { has_global_flag = cadet_whitestark } }
+	
+		set_global_flag = cadet_whitestark
+		FROM = { dynasty = 45000202 }
+	}
+	option = { #House Dreadstark
+		name = "EVTOPTDcadet.1"
+		trigger = { not = { has_global_flag = cadet_dreadstark } }
+	
+		set_global_flag = cadet_dreadstark
+		FROM = { dynasty = 45000203 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+#Targaryen Cadet Options (Hannibal Easter Egg)
+character_event = { 
+	id = cadet.2
+	desc = "EVTDESCcadet.1"
+	picture = GFX_evt_courtiers_talking
+   
+	is_triggered_only = yes
+	
+	option = { #House Redfyre
+		name = "EVTOPTAcadet.2"
+		trigger = { not = { has_global_flag = cadet_redfyre } }
+	
+		set_global_flag = cadet_redfyre
+		FROM = { dynasty = 45000204 }
+	}
+	option = { #House Blackdragon
+		name = "EVTOPTBcadet.2"
+		trigger = { not = { has_global_flag = cadet_blackdragon } }
+	
+		set_global_flag = cadet_blackdragon
+		FROM = { dynasty = 45000205 }
+	}
+	option = { #House Reddragon
+		name = "EVTOPTCcadet.2"
+		trigger = { not = { has_global_flag = cadet_reddragon } }
+	
+		set_global_flag = cadet_reddragon
+		FROM = { dynasty = 45000206 }
+	}
+	option = { #House Golddragon
+		name = "EVTOPTDcadet.2"
+		trigger = { not = { has_global_flag = cadet_golddragon } }
+	
+		set_global_flag = cadet_golddragon
+		FROM = { dynasty = 45000207 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+#Lannister Cadet Options
+character_event = { 
+   id = cadet.3
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = { #House Blacklion
+		name = "EVTOPTAcadet.3"
+		trigger = { not = { has_global_flag = cadet_blacklion } }
+	
+		set_global_flag = cadet_blacklion
+		FROM = { dynasty = 45000208 }
+	}
+	option = { #House redlion
+		name = "EVTOPTBcadet.3"
+		trigger = { not = { has_global_flag = cadet_redlion } }
+	
+		set_global_flag = cadet_redlion
+		FROM = { dynasty = 45000209 }
+	}
+	option = { #House goldlion
+		name = "EVTOPTCcadet.3"
+		trigger = { not = { has_global_flag = cadet_goldlion } }
+	
+		set_global_flag = cadet_goldlion
+		FROM = { dynasty = 45000210 }
+	}
+	option = { #House Casterly
+		name = "EVTOPTDcadet.3"
+		trigger = { not = { has_global_flag = cadet_casterly } }
+	
+		set_global_flag = cadet_casterly
+		FROM = { dynasty = 45000211 }
+	}
+	
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+#Martell Cadet Options
+character_event = { 
+   id = cadet.4
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = { #House redviper
+		name = "EVTOPTAcadet.4"
+		trigger = { not = { has_global_flag = cadet_redviper } }
+	
+		set_global_flag = cadet_redviper
+		FROM = { dynasty = 45000212 }
+	}
+	option = { #House whiteviper
+		name = "EVTOPTBcadet.4"
+		trigger = { not = { has_global_flag = cadet_whiteviper } }
+	
+		set_global_flag = cadet_whiteviper
+		FROM = { dynasty = 45000213 }
+	}
+	option = { #House blackadder
+		name = "EVTOPTCcadet.4"
+		trigger = { not = { has_global_flag = cadet_blackadder } }
+	
+		set_global_flag = cadet_blackadder
+		FROM = { dynasty = 45000214 }
+	}
+	option = { #House sandviper
+		name = "EVTOPTDcadet.4"
+		trigger = { not = { has_global_flag = cadet_sandviper } }
+	
+		set_global_flag = cadet_sandviper
+		FROM = { dynasty = 45000215 }
+	}
+	
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+#Tully Cadet Options
+character_event = { 
+   id = cadet.5
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = { 
+		name = "EVTOPTAcadet.5"
+		trigger = { not = { has_global_flag = cadet_redfish } }
+	
+		set_global_flag = cadet_redfish
+		FROM = { dynasty = 45000216 }
+	}
+	option = { 
+		name = "EVTOPTBcadet.5"
+		trigger = { not = { has_global_flag = cadet_blackfish } }
+	
+		set_global_flag = cadet_blackfish
+		FROM = { dynasty = 45000217 }
+	}
+	option = { 
+		name = "EVTOPTCcadet.5"
+		trigger = { not = { has_global_flag = cadet_goldfish } }
+	
+		set_global_flag = cadet_goldfish
+		FROM = { dynasty = 45000218 }
+	}
+	option = { 
+		name = "EVTOPTDcadet.5"
+		trigger = { not = { has_global_flag = cadet_silverfish } }
+	
+		set_global_flag = cadet_silverfish
+		FROM = { dynasty = 45000219 }
+	}
+	
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+#Arryn Cadet Options
+character_event = { 
+   id = cadet.6
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = { 
+		name = "EVTOPTAcadet.6"
+		trigger = { not = { has_global_flag = cadet_redbird } }
+	
+		set_global_flag = cadet_redbird
+		FROM = { dynasty = 45000220 }
+	}
+	option = { 
+		name = "EVTOPTBcadet.6"
+		trigger = { not = { has_global_flag = cadet_goldbird } }
+	
+		set_global_flag = cadet_goldbird
+		FROM = { dynasty = 45000221 }
+	}
+	option = { 
+		name = "EVTOPTCcadet.6"
+		trigger = { not = { has_global_flag = cadet_bluebird } }
+	
+		set_global_flag = cadet_bluebird
+		FROM = { dynasty = 45000222 }
+	}
+	option = { 
+		name = "EVTOPTDcadet.6"
+		trigger = { not = { has_global_flag = cadet_blackbird } }
+	
+		set_global_flag = cadet_blackbird
+		FROM = { dynasty = 45000223 }
+	}
+	
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+#Baratheon Cadet Options
+character_event = { 
+   id = cadet.7
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = { 
+		name = "EVTOPTAcadet.7"
+		trigger = { not = { has_global_flag = cadet_redstag } }
+	
+		set_global_flag = cadet_redstag
+		FROM = { dynasty = 45000224 }
+	}
+	option = { 
+		name = "EVTOPTBcadet.7"
+		trigger = { not = { has_global_flag = cadet_blackstag } }
+	
+		set_global_flag = cadet_blackstag
+		FROM = { dynasty = 45000225 }
+	}
+	option = { 
+		name = "EVTOPTCcadet.7"
+		trigger = { not = { has_global_flag = cadet_goldstag } }
+	
+		set_global_flag = cadet_goldstag
+		FROM = { dynasty = 45000226 }
+	}
+	option = { 
+		name = "EVTOPTDcadet.7"
+		trigger = { not = { has_global_flag = cadet_orys } }
+	
+		set_global_flag = cadet_orys
+		FROM = { dynasty = 45000227 }
+	}
+	
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+#Tyrell Cadet Options
+character_event = { 
+   id = cadet.8
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = { 
+		name = "EVTOPTAcadet.8"
+		trigger = { not = { has_global_flag = cadet_redrose } }
+	
+		set_global_flag = cadet_redrose
+		FROM = { dynasty = 45000228 }
+	}
+	option = { 
+		name = "EVTOPTBcadet.8"
+		trigger = { not = { has_global_flag = cadet_blackrose } }
+	
+		set_global_flag = cadet_blackrose
+		FROM = { dynasty = 45000229 }
+	}
+	option = { 
+		name = "EVTOPTCcadet.8"
+		trigger = { not = { has_global_flag = cadet_goldrose } }
+	
+		set_global_flag = cadet_goldrose
+		FROM = { dynasty = 45000230 }
+	}
+	option = { 
+		name = "EVTOPTDcadet.8"
+		trigger = { not = { has_global_flag = cadet_blackgarden } }
+	
+		set_global_flag = cadet_blackgarden
+		FROM = { dynasty = 45000231 }
+	}
+	
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+#Greyjoy Cadet Options
+character_event = { 
+   id = cadet.9
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = { 
+		name = "EVTOPTAcadet.9"
+		trigger = { not = { has_global_flag = cadet_blackiron } }
+	
+		set_global_flag = cadet_blackiron
+		FROM = { dynasty = 45000232 }
+	}
+	option = { 
+		name = "EVTOPTBcadet.9"
+		trigger = { not = { has_global_flag = cadet_rediron } }
+	
+		set_global_flag = cadet_rediron
+		FROM = { dynasty = 45000233 }
+	}
+	option = { 
+		name = "EVTOPTCcadet.9"
+		trigger = { not = { has_global_flag = cadet_blackjoy } }
+	
+		set_global_flag = cadet_blackjoy
+		FROM = { dynasty = 45000234 }
+	}
+	option = { #Suits
+		name = "EVTOPTDcadet.9"
+		trigger = { not = { has_global_flag = cadet_hardman } }
+	
+		set_global_flag = cadet_hardman
+		FROM = { dynasty = 45000235 }
+	}
+	
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+#Frey Cadet Options
+character_event = { 
+   id = cadet.13
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+
+	option = { #House Twinchild
+		name = "EVTOPTAcadet.13"
+		trigger = { not = { has_global_flag = cadet_blackstark } }
+	
+		set_global_flag = cadet_twinchild
+		FROM = { dynasty = 45000236 }
+	}
+	option = { #House Goldcross
+		name = "EVTOPTBcadet.13"
+		trigger = { not = { has_global_flag = cadet_goldstark } }
+	
+		set_global_flag = cadet_goldcross
+		FROM = { dynasty = 45000237 }
+	}
+	option = { #House Tollbridge
+		name = "EVTOPTCcadet.13"
+		trigger = { not = { has_global_flag = cadet_whitestark } }
+	
+		set_global_flag = cadet_tollbridge
+		FROM = { dynasty = 45000238 }
+	}
+	option = { #House Northgate
+		name = "EVTOPTDcadet.13"
+		trigger = { not = { has_global_flag = cadet_dreadstark } }
+	
+		set_global_flag = cadet_northgate
+		FROM = { dynasty = 45000239 }
+	}
+	
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+#Opinions
+character_event = { 
+	id = cadet.10
+	desc = "EVTDESCcadet.10"
+	picture = GFX_evt_courtiers_talking
+
+	only_playable = yes #landed cadet members 
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		OR = {
+			has_dynasty_flag = has_cadet_house
+			has_dynasty_flag = is_cadet_house
+		}
+	}
+	
+	immediate = {
+		any_dynasty_member_even_if_dead = {
+			limit = { trait = assign_mission_target }
+			any_playable_ruler = { #Parent houses
+				limit = {
+					has_dynasty_flag = has_cadet_house
+					has_dynasty_flag = owned_cadet_house_@PREV
+					NOT = { dynasty = ROOT }
+				}
+				if = {
+					limit = { NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_cadet_affection } } }
+					reverse_opinion = { who = ROOT modifier = opinion_cadet_affection years = 200 }
+					opinion = { who = ROOT modifier = opinion_cadet_affection years = 200 }
+				}
+				any_dynasty_member = {
+					limit = { NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_cadet_affection } } }
+					reverse_opinion = { who = ROOT modifier = opinion_cadet_affection years = 200 }
+					opinion = { who = ROOT modifier = opinion_cadet_affection years = 200 }
+				}
+			}
+			any_playable_ruler = { #Junior houses
+				limit = {
+					has_dynasty_flag = is_cadet_house
+					has_dynasty_flag = cadet_house_@PREV	
+					NOT = { dynasty = ROOT }
+				}
+				if = {
+					limit = { NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_cadet_affection } } }
+					reverse_opinion = { who = ROOT modifier = opinion_cadet_affection years = 200 }
+					opinion = { who = ROOT modifier = opinion_cadet_affection years = 200 }
+				}
+				any_dynasty_member = {
+					limit = { NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_cadet_affection } } }
+					reverse_opinion = { who = ROOT modifier = opinion_cadet_affection years = 200 }
+					opinion = { who = ROOT modifier = opinion_cadet_affection years = 200 }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTAcadet.10"	
+	}
+}
+
+#CUSTOM HOUSE CADETS
+character_event = { 
+   id = cadet.11
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = { 
+		name = "EVTOPTAcadet.11"
+		trigger = { not = { has_global_flag = cadet_fashbinder } }
+	
+		set_global_flag = cadet_fashbinder
+		set_dynasty_flag = cadet_made_fashbinder
+		FROM = { dynasty = 45000240 }
+	}
+	option = { 
+		name = "EVTOPTBcadet.11"
+		trigger = { not = { has_global_flag = cadet_who } }
+	
+		set_global_flag = cadet_who
+		set_dynasty_flag = cadet_made_who
+		FROM = { dynasty = 45000241 }
+	}
+	option = { 
+		name = "EVTOPTCcadet.11"
+		trigger = { not = { has_global_flag = cadet_Noscotland } }
+	
+		set_global_flag = cadet_Noscotland
+		set_dynasty_flag = cadet_made_Noscotland
+		FROM = { dynasty = 45000242 }
+	}
+	option = { 
+		name = "EVTOPTDcadet.11"
+		trigger = { not = { has_global_flag = cadet_america } }
+	
+		set_global_flag = cadet_america
+		set_dynasty_flag = cadet_made_america
+		FROM = { dynasty = 45000243 }
+	}
+	
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+# Remove bastard nickname/chronicle entry
+character_event = {
+	id = cadet.12
+
+	is_triggered_only = yes
+	hide_window = yes
+	ai = no
+	
+	trigger = {
+		FROM = {
+			is_alive = yes
+			trait = legit_bastard
+		}
+	}
+	
+	immediate = {
+		chronicle = {
+			entry = CHRONICLE_CADET_DYNASTY
+			portrait = [From.GetID]
+		}
+		FROM = {
+			if = {
+				limit = {
+					OR = {
+						has_nickname = nick_snow
+						has_nickname = nick_rivers
+						has_nickname = nick_stone
+						has_nickname = nick_hill
+						has_nickname = nick_flowers
+						has_nickname = nick_storm
+						has_nickname = nick_waters
+						has_nickname = nick_sand
+						has_nickname = nick_pyke
+					}
+				}
+				remove_nickname = yes
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}	
+
+# Cadet dynasty legitimised
+letter_event = {
+	id = cadet.15
+	desc = EVT_DESC_cadet_15
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVT_OPTA_cadet_15"
+		hidden_tooltip = {
+			if = {
+				limit = { character = event_target:legitmised_cadet }
+				any_dynasty_member_even_if_dead = {
+					dynasty = event_target:cadet_legitimiser
+				}
+			}
+		}
+		dynasty = event_target:cadet_legitimiser
+		prestige = 25	
+		recalc_succession = yes	
+		event_target:cadet_legitimiser = { recalc_succession = yes }
+	}
+}
+#Ai finds cadet house to legitmise
+character_event = { 
+	id = cadet.16
+
+	only_playable = yes
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		has_dynasty_flag = has_cadet_house
+		dynasty_head = { character = PREV }
+		NOT = { 
+			any_dynasty_member = { 
+				is_alive = yes
+				can_inherit_titles_trigger = yes
+				NOT = { character = PREV }
+			} 
+		}
+	}
+
+	option = {
+		name = "EVTOPTAcadet.10"
+		any_dynasty_member_even_if_dead = {
+			limit = { trait = assign_mission_target }
+			random_character = {
+				limit = {
+					has_dynasty_flag = is_cadet_house
+					dynasty_head = { character = PREV }
+					has_dynasty_flag = cadet_house_@PREV
+					ai = yes
+					lower_tier_than = ROOT				
+					OR = {
+						is_ruler = no
+						opinion = { who = ROOT value = 0 }
+					}
+					NOT = { dynasty = ROOT }
+				}
+				ROOT = { prestige = -200 }
+				clr_dynasty_flag = is_cadet_house	
+				random_dynasty_member_even_if_dead = {
+					limit = { 
+						is_child_of = PREVPREV
+						trait = bastard
+					}
+					remove_trait = bastard
+					add_trait = legit_bastard
+					if = {
+						limit = {
+							OR = {
+								has_nickname = nick_snow
+								has_nickname = nick_rivers
+								has_nickname = nick_stone
+								has_nickname = nick_hill
+								has_nickname = nick_flowers
+								has_nickname = nick_storm
+								has_nickname = nick_waters
+								has_nickname = nick_sand
+								has_nickname = nick_pyke
+							}
+						}
+						remove_nickname = yes
+					}
+				}	
+				clr_dynasty_flag = cadet_house_@PREV			
+				save_event_target_as = legitmised_cadet
+				ROOT = { 
+					save_event_target_as = cadet_legitimiser
+					##inform realm
+					letter_event = { id = cadet.17 }
+					any_realm_lord = { 
+						limit = { 
+							ai = no
+							NOT = { dynasty = event_target:legitmised_cadet } 
+						}
+						letter_event = { id = cadet.17 }
+					}
+					liege = {
+						if = {
+							limit = { 
+								ai = no
+								NOT = { character = ROOT }
+								NOT = { dynasty = event_target:legitmised_cadet } 
+							}
+							letter_event = { id = cadet.17 }
+							any_vassal = {
+								limit = { 
+									ai = no
+									NOT = { character = ROOT }
+									NOT = { dynasty = event_target:legitmised_cadet } 
+								}
+								letter_event = { id = cadet.17 }
+							}
+						}	
+					}
+					##
+				}
+				letter_event = { id = cadet.15 days = 1 }
+				any_dynasty_member = {
+					limit = { 
+						ai = no 
+						NOT = { character = PREV }
+					}
+					letter_event = { id = cadet.15 days = 1 }
+				}						
+				if = { #check if any cadet houses remain
+					limit = {
+						NOT = {
+							assign_mission_target = { #'Father' of cadet house
+								dynasty = ROOT
+								any_character = { has_dynasty_flag = cadet_house_@PREV }
+							}
+						}	
+					}
+					ROOT = { clr_dynasty_flag = has_cadet_house }
+				}			
+				break = yes
+			}
+		}
+	}
+}
+# Inform realm
+letter_event = {
+	id = cadet.17
+	desc = EVT_DESC_cadet_17
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		tooltip = {
+			event_target:cadet_legitimiser = { 
+				tooltip = { }
+				event_target:legitmised_cadet = {
+					dynasty = PREV
+					tooltip = { }
+				}
+			}
+		}
+	}
+}
+#Bastard starts new cadet dynasty
+character_event = { 
+	id = cadet.18
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		trait = bastard	
+		NOT = { dynasty = 0 }
+		FROM = { is_primary_holder_title = yes }
+		OR = {
+			father_even_if_dead = { dynasty = ROOT }
+			mother_even_if_dead = { dynasty = ROOT }
+		}
+		NAND = {
+			trait = assign_mission_target
+			has_dynasty_flag = is_cadet_house
+			OR = {
+				father_even_if_dead = { has_dynasty_flag = owned_cadet_house_@PREV }
+				mother_even_if_dead = { has_dynasty_flag = owned_cadet_house_@PREV }
+			}
+		}
+		NOT = { trait = nightswatch }
+		NOT = { trait = kingsguard }
+		NOT = { trait = archmaester }
+		is_theocracy = no
+	}
+	
+	immediate = {
+		#determine if father or mother is cadet founder
+		if = {
+			limit = { mother_even_if_dead = { dynasty = ROOT } }
+			mother_even_if_dead = { save_event_target_as = cadet_founder }
+		}
+		if = {
+			limit = { father_even_if_dead = { dynasty = ROOT } }
+			father_even_if_dead = { save_event_target_as = cadet_founder }
+		}
+		#Mark descendents to change dynasty
+		any_child_even_if_dead = {
+			limit = { 
+				dynasty = ROOT
+				NOR = {
+					father_even_if_dead = { dynasty = PREV NOT = { character = ROOT } }
+					mother_even_if_dead = { dynasty = PREV NOT = { character = ROOT } }
+				}
+			}
+			set_character_flag = change_dynasty
+			any_child_even_if_dead = {
+				limit = { 
+					dynasty = ROOT 
+					NOR = {
+						father_even_if_dead = { dynasty = PREV NOT = { character = ROOT } NOT = { character = PREV } }
+						mother_even_if_dead = { dynasty = PREV NOT = { character = ROOT } NOT = { character = PREV } }
+					}
+				}
+				set_character_flag = change_dynasty
+				any_child_even_if_dead = {
+					limit = { 
+						dynasty = ROOT 
+						NOR = {
+							father_even_if_dead = { dynasty = PREV NOT = { character = ROOT } NOT = { character = PREV } }
+							mother_even_if_dead = { dynasty = PREV NOT = { character = ROOT } NOT = { character = PREV } }
+						}
+					}
+					set_character_flag = change_dynasty
+				}
+			}
+		}
+		#create character to get interesting dynasty name
+		if = { 
+			limit = { dynasty = event_target:cadet_founder }	
+			create_character = { 
+				random_traits = yes
+				dynasty = culture
+				religion = THIS
+				culture = THIS
+				female = no
+				age = 30
+			}
+			new_character = {
+				ROOT = { dynasty = PREV }
+				dynasty = father_bastard
+				death = yes
+			}	
+		}	
+		#Change descendents
+		any_child_even_if_dead = {
+			limit = { has_character_flag = change_dynasty }
+			dynasty = ROOT
+			clr_character_flag = change_dynasty
+			any_child_even_if_dead = {
+				limit = { has_character_flag = change_dynasty }
+				dynasty = ROOT
+				clr_character_flag = change_dynasty
+				any_child_even_if_dead = {
+					limit = { has_character_flag = change_dynasty }
+					dynasty = ROOT
+					clr_character_flag = change_dynasty
+				}
+			}
+		}
+		#Set cadet link
+		add_trait = assign_mission_target
+		set_dynasty_flag = is_cadet_house
+		event_target:cadet_founder = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house
+			set_dynasty_flag = owned_cadet_house_@PREV
+			ROOT = { set_dynasty_flag = cadet_house_@PREV }
+		}
+	}
+
+	option = {
+		name = OK	
+	}
+}
+
+### MORE CADETS - blackninja9939 ###
+#START GENERATION HERE
+#NEWLY GENERATED DATA
+character_event = { 
+   id = cadet.20
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = { #House Staine
+		name = "EVTOPTAcadet.20"
+		trigger = { not = { has_global_flag = cadet_45000244 } }
+	
+		set_global_flag = cadet_45000244
+		FROM = { dynasty = 45000244 }
+	}
+	option = { #House Bradshaw
+		name = "EVTOPTBcadet.20"
+		trigger = { not = { has_global_flag = cadet_45000245 } }
+	
+		set_global_flag = cadet_Bradshaw
+		FROM = { dynasty = 45000245 }
+	}
+	option = { #House Wilkowe
+		name = "EVTOPTCcadet.20"
+		trigger = { not = { has_global_flag = cadet_45000246 } }
+	
+		set_global_flag = cadet_45000246
+		FROM = { dynasty = 45000246 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+character_event = { 
+   id = cadet.21
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.21"
+		trigger = { not = { has_global_flag = cadet_45000247 } }
+	
+		set_global_flag = cadet_45000247
+		FROM = { dynasty = 45000247 }
+	}
+	option = {
+		name = "EVTOPTBcadet.21"
+		trigger = { not = { has_global_flag = cadet_45000248 } }
+	
+		set_global_flag = cadet_45000248
+		FROM = { dynasty = 45000248 }
+	}
+	option = {
+		name = "EVTOPTCcadet.21"
+		trigger = { not = { has_global_flag = cadet_45000249 } }
+	
+		set_global_flag = cadet_45000249
+		FROM = { dynasty = 45000249 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+character_event = { 
+   id = cadet.22
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.22"
+		trigger = { not = { has_global_flag = cadet_45000250 } }
+	
+		set_global_flag = cadet_45000250
+		FROM = { dynasty = 45000250 }
+	}
+	option = {
+		name = "EVTOPTBcadet.22"
+		trigger = { not = { has_global_flag = cadet_45000251 } }
+	
+		set_global_flag = cadet_45000251
+		FROM = { dynasty = 45000251 }
+	}
+	option = {
+		name = "EVTOPTCcadet.22"
+		trigger = { not = { has_global_flag = cadet_45000252 } }
+	
+		set_global_flag = cadet_45000252
+		FROM = { dynasty = 45000252 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.23
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.23"
+		trigger = { not = { has_global_flag = cadet_45000253 } }
+	
+		set_global_flag = cadet_45000253
+		FROM = { dynasty = 45000253 }
+	}
+	option = {
+		name = "EVTOPTBcadet.23"
+		trigger = { not = { has_global_flag = cadet_45000254 } }
+	
+		set_global_flag = cadet_45000254
+		FROM = { dynasty = 45000254 }
+	}
+	option = {
+		name = "EVTOPTCcadet.23"
+		trigger = { not = { has_global_flag = cadet_45000255 } }
+	
+		set_global_flag = cadet_45000255
+		FROM = { dynasty = 45000255 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.24
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.24"
+		trigger = { not = { has_global_flag = cadet_45000256 } }
+	
+		set_global_flag = cadet_45000256
+		FROM = { dynasty = 45000256 }
+	}
+	option = {
+		name = "EVTOPTBcadet.24"
+		trigger = { not = { has_global_flag = cadet_45000257 } }
+	
+		set_global_flag = cadet_45000257
+		FROM = { dynasty = 45000257 }
+	}
+	option = {
+		name = "EVTOPTCcadet.24"
+		trigger = { not = { has_global_flag = cadet_45000258 } }
+	
+		set_global_flag = cadet_45000258
+		FROM = { dynasty = 45000258 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.25
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.25"
+		trigger = { not = { has_global_flag = cadet_45000259 } }
+	
+		set_global_flag = cadet_45000259
+		FROM = { dynasty = 45000259 }
+	}
+	option = {
+		name = "EVTOPTBcadet.25"
+		trigger = { not = { has_global_flag = cadet_45000260 } }
+	
+		set_global_flag = cadet_45000260
+		FROM = { dynasty = 45000260 }
+	}
+	option = {
+		name = "EVTOPTCcadet.25"
+		trigger = { not = { has_global_flag = cadet_45000261 } }
+	
+		set_global_flag = cadet_45000261
+		FROM = { dynasty = 45000261 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.26
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.26"
+		trigger = { not = { has_global_flag = cadet_45000262 } }
+	
+		set_global_flag = cadet_45000262
+		FROM = { dynasty = 45000262 }
+	}
+	option = {
+		name = "EVTOPTBcadet.26"
+		trigger = { not = { has_global_flag = cadet_45000263 } }
+	
+		set_global_flag = cadet_45000263
+		FROM = { dynasty = 45000263 }
+	}
+	option = {
+		name = "EVTOPTCcadet.26"
+		trigger = { not = { has_global_flag = cadet_45000264 } }
+	
+		set_global_flag = cadet_45000264
+		FROM = { dynasty = 45000264 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.27
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.27"
+		trigger = { not = { has_global_flag = cadet_45000265 } }
+	
+		set_global_flag = cadet_45000265
+		FROM = { dynasty = 45000265 }
+	}
+	option = {
+		name = "EVTOPTBcadet.27"
+		trigger = { not = { has_global_flag = cadet_45000266 } }
+	
+		set_global_flag = cadet_45000266
+		FROM = { dynasty = 45000266 }
+	}
+	option = {
+		name = "EVTOPTCcadet.27"
+		trigger = { not = { has_global_flag = cadet_45000267 } }
+	
+		set_global_flag = cadet_45000267
+		FROM = { dynasty = 45000267 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.28
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.28"
+		trigger = { not = { has_global_flag = cadet_45000268 } }
+	
+		set_global_flag = cadet_45000268
+		FROM = { dynasty = 45000268 }
+	}
+	option = {
+		name = "EVTOPTBcadet.28"
+		trigger = { not = { has_global_flag = cadet_45000269 } }
+	
+		set_global_flag = cadet_45000269
+		FROM = { dynasty = 45000269 }
+	}
+	option = {
+		name = "EVTOPTCcadet.28"
+		trigger = { not = { has_global_flag = cadet_45000270 } }
+	
+		set_global_flag = cadet_45000270
+		FROM = { dynasty = 45000270 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.29
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.29"
+		trigger = { not = { has_global_flag = cadet_45000271 } }
+	
+		set_global_flag = cadet_45000271
+		FROM = { dynasty = 45000271 }
+	}
+	option = {
+		name = "EVTOPTBcadet.29"
+		trigger = { not = { has_global_flag = cadet_45000272 } }
+	
+		set_global_flag = cadet_45000272
+		FROM = { dynasty = 45000272 }
+	}
+	option = {
+		name = "EVTOPTCcadet.29"
+		trigger = { not = { has_global_flag = cadet_45000273 } }
+	
+		set_global_flag = cadet_45000273
+		FROM = { dynasty = 45000273 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.30
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.30"
+		trigger = { not = { has_global_flag = cadet_45000274 } }
+	
+		set_global_flag = cadet_45000274
+		FROM = { dynasty = 45000274 }
+	}
+	option = {
+		name = "EVTOPTBcadet.30"
+		trigger = { not = { has_global_flag = cadet_45000275 } }
+	
+		set_global_flag = cadet_45000275
+		FROM = { dynasty = 45000275 }
+	}
+	option = {
+		name = "EVTOPTCcadet.30"
+		trigger = { not = { has_global_flag = cadet_45000276 } }
+	
+		set_global_flag = cadet_45000276
+		FROM = { dynasty = 45000276 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.31
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.31"
+		trigger = { not = { has_global_flag = cadet_45000277 } }
+	
+		set_global_flag = cadet_45000277
+		FROM = { dynasty = 45000277 }
+	}
+	option = {
+		name = "EVTOPTBcadet.31"
+		trigger = { not = { has_global_flag = cadet_45000278 } }
+	
+		set_global_flag = cadet_45000278
+		FROM = { dynasty = 45000278 }
+	}
+	option = {
+		name = "EVTOPTCcadet.31"
+		trigger = { not = { has_global_flag = cadet_45000279 } }
+	
+		set_global_flag = cadet_45000279
+		FROM = { dynasty = 45000279 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.32
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.32"
+		trigger = { not = { has_global_flag = cadet_45000280 } }
+	
+		set_global_flag = cadet_45000280
+		FROM = { dynasty = 45000280 }
+	}
+	option = {
+		name = "EVTOPTBcadet.32"
+		trigger = { not = { has_global_flag = cadet_45000281 } }
+	
+		set_global_flag = cadet_45000281
+		FROM = { dynasty = 45000281 }
+	}
+	option = {
+		name = "EVTOPTCcadet.32"
+		trigger = { not = { has_global_flag = cadet_45000282 } }
+	
+		set_global_flag = cadet_45000282
+		FROM = { dynasty = 45000282 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.33
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.33"
+		trigger = { not = { has_global_flag = cadet_45000283 } }
+	
+		set_global_flag = cadet_45000283
+		FROM = { dynasty = 45000283 }
+	}
+	option = {
+		name = "EVTOPTBcadet.33"
+		trigger = { not = { has_global_flag = cadet_45000284 } }
+	
+		set_global_flag = cadet_45000284
+		FROM = { dynasty = 45000284 }
+	}
+	option = {
+		name = "EVTOPTCcadet.33"
+		trigger = { not = { has_global_flag = cadet_45000285 } }
+	
+		set_global_flag = cadet_45000285
+		FROM = { dynasty = 45000285 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.34
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.34"
+		trigger = { not = { has_global_flag = cadet_45000286 } }
+	
+		set_global_flag = cadet_45000286
+		FROM = { dynasty = 45000286 }
+	}
+	option = {
+		name = "EVTOPTBcadet.34"
+		trigger = { not = { has_global_flag = cadet_45000287 } }
+	
+		set_global_flag = cadet_45000287
+		FROM = { dynasty = 45000287 }
+	}
+	option = {
+		name = "EVTOPTCcadet.34"
+		trigger = { not = { has_global_flag = cadet_45000288 } }
+	
+		set_global_flag = cadet_45000288
+		FROM = { dynasty = 45000288 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.35
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.35"
+		trigger = { not = { has_global_flag = cadet_45000289 } }
+	
+		set_global_flag = cadet_45000289
+		FROM = { dynasty = 45000289 }
+	}
+	option = {
+		name = "EVTOPTBcadet.35"
+		trigger = { not = { has_global_flag = cadet_45000290 } }
+	
+		set_global_flag = cadet_45000290
+		FROM = { dynasty = 45000290 }
+	}
+	option = {
+		name = "EVTOPTCcadet.35"
+		trigger = { not = { has_global_flag = cadet_45000291 } }
+	
+		set_global_flag = cadet_45000291
+		FROM = { dynasty = 45000291 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.36
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.36"
+		trigger = { not = { has_global_flag = cadet_45000292 } }
+	
+		set_global_flag = cadet_45000292
+		FROM = { dynasty = 45000292 }
+	}
+	option = {
+		name = "EVTOPTBcadet.36"
+		trigger = { not = { has_global_flag = cadet_45000293 } }
+	
+		set_global_flag = cadet_45000293
+		FROM = { dynasty = 45000293 }
+	}
+	option = {
+		name = "EVTOPTCcadet.36"
+		trigger = { not = { has_global_flag = cadet_45000294 } }
+	
+		set_global_flag = cadet_45000294
+		FROM = { dynasty = 45000294 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.37
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.37"
+		trigger = { not = { has_global_flag = cadet_45000295 } }
+	
+		set_global_flag = cadet_45000295
+		FROM = { dynasty = 45000295 }
+	}
+	option = {
+		name = "EVTOPTBcadet.37"
+		trigger = { not = { has_global_flag = cadet_45000296 } }
+	
+		set_global_flag = cadet_45000296
+		FROM = { dynasty = 45000296 }
+	}
+	option = {
+		name = "EVTOPTCcadet.37"
+		trigger = { not = { has_global_flag = cadet_45000297 } }
+	
+		set_global_flag = cadet_45000297
+		FROM = { dynasty = 45000297 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.38
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.38"
+		trigger = { not = { has_global_flag = cadet_45000298 } }
+	
+		set_global_flag = cadet_45000298
+		FROM = { dynasty = 45000298 }
+	}
+	option = {
+		name = "EVTOPTBcadet.38"
+		trigger = { not = { has_global_flag = cadet_45000299 } }
+	
+		set_global_flag = cadet_45000299
+		FROM = { dynasty = 45000299 }
+	}
+	option = {
+		name = "EVTOPTCcadet.38"
+		trigger = { not = { has_global_flag = cadet_45000300 } }
+	
+		set_global_flag = cadet_45000300
+		FROM = { dynasty = 45000300 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.39
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.39"
+		trigger = { not = { has_global_flag = cadet_45000301 } }
+	
+		set_global_flag = cadet_45000301
+		FROM = { dynasty = 45000301 }
+	}
+	option = {
+		name = "EVTOPTBcadet.39"
+		trigger = { not = { has_global_flag = cadet_45000302 } }
+	
+		set_global_flag = cadet_45000302
+		FROM = { dynasty = 45000302 }
+	}
+	option = {
+		name = "EVTOPTCcadet.39"
+		trigger = { not = { has_global_flag = cadet_45000303 } }
+	
+		set_global_flag = cadet_45000303
+		FROM = { dynasty = 45000303 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.40
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.40"
+		trigger = { not = { has_global_flag = cadet_45000304 } }
+	
+		set_global_flag = cadet_45000304
+		FROM = { dynasty = 45000304 }
+	}
+	option = {
+		name = "EVTOPTBcadet.40"
+		trigger = { not = { has_global_flag = cadet_45000305 } }
+	
+		set_global_flag = cadet_45000305
+		FROM = { dynasty = 45000305 }
+	}
+	option = {
+		name = "EVTOPTCcadet.40"
+		trigger = { not = { has_global_flag = cadet_45000306 } }
+	
+		set_global_flag = cadet_45000306
+		FROM = { dynasty = 45000306 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.41
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.41"
+		trigger = { not = { has_global_flag = cadet_45000307 } }
+	
+		set_global_flag = cadet_45000307
+		FROM = { dynasty = 45000307 }
+	}
+	option = {
+		name = "EVTOPTBcadet.41"
+		trigger = { not = { has_global_flag = cadet_45000308 } }
+	
+		set_global_flag = cadet_45000308
+		FROM = { dynasty = 45000308 }
+	}
+	option = {
+		name = "EVTOPTCcadet.41"
+		trigger = { not = { has_global_flag = cadet_45000309 } }
+	
+		set_global_flag = cadet_45000309
+		FROM = { dynasty = 45000309 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.42
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.42"
+		trigger = { not = { has_global_flag = cadet_45000310 } }
+	
+		set_global_flag = cadet_45000310
+		FROM = { dynasty = 45000310 }
+	}
+	option = {
+		name = "EVTOPTBcadet.42"
+		trigger = { not = { has_global_flag = cadet_45000311 } }
+	
+		set_global_flag = cadet_45000311
+		FROM = { dynasty = 45000311 }
+	}
+	option = {
+		name = "EVTOPTCcadet.42"
+		trigger = { not = { has_global_flag = cadet_45000312 } }
+	
+		set_global_flag = cadet_45000312
+		FROM = { dynasty = 45000312 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.43
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.43"
+		trigger = { not = { has_global_flag = cadet_45000313 } }
+	
+		set_global_flag = cadet_45000313
+		FROM = { dynasty = 45000313 }
+	}
+	option = {
+		name = "EVTOPTBcadet.43"
+		trigger = { not = { has_global_flag = cadet_45000314 } }
+	
+		set_global_flag = cadet_45000314
+		FROM = { dynasty = 45000314 }
+	}
+	option = {
+		name = "EVTOPTCcadet.43"
+		trigger = { not = { has_global_flag = cadet_45000315 } }
+	
+		set_global_flag = cadet_45000315
+		FROM = { dynasty = 45000315 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.44
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.44"
+		trigger = { not = { has_global_flag = cadet_45000316 } }
+	
+		set_global_flag = cadet_45000316
+		FROM = { dynasty = 45000316 }
+	}
+	option = {
+		name = "EVTOPTBcadet.44"
+		trigger = { not = { has_global_flag = cadet_45000317 } }
+	
+		set_global_flag = cadet_45000317
+		FROM = { dynasty = 45000317 }
+	}
+	option = {
+		name = "EVTOPTCcadet.44"
+		trigger = { not = { has_global_flag = cadet_45000318 } }
+	
+		set_global_flag = cadet_45000318
+		FROM = { dynasty = 45000318 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.45
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.45"
+		trigger = { not = { has_global_flag = cadet_45000319 } }
+	
+		set_global_flag = cadet_45000319
+		FROM = { dynasty = 45000319 }
+	}
+	option = {
+		name = "EVTOPTBcadet.45"
+		trigger = { not = { has_global_flag = cadet_45000320 } }
+	
+		set_global_flag = cadet_45000320
+		FROM = { dynasty = 45000320 }
+	}
+	option = {
+		name = "EVTOPTCcadet.45"
+		trigger = { not = { has_global_flag = cadet_45000321 } }
+	
+		set_global_flag = cadet_45000321
+		FROM = { dynasty = 45000321 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.46
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.46"
+		trigger = { not = { has_global_flag = cadet_45000322 } }
+	
+		set_global_flag = cadet_45000322
+		FROM = { dynasty = 45000322 }
+	}
+	option = {
+		name = "EVTOPTBcadet.46"
+		trigger = { not = { has_global_flag = cadet_45000323 } }
+	
+		set_global_flag = cadet_45000323
+		FROM = { dynasty = 45000323 }
+	}
+	option = {
+		name = "EVTOPTCcadet.46"
+		trigger = { not = { has_global_flag = cadet_45000324 } }
+	
+		set_global_flag = cadet_45000324
+		FROM = { dynasty = 45000324 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.47
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.47"
+		trigger = { not = { has_global_flag = cadet_45000325 } }
+	
+		set_global_flag = cadet_45000325
+		FROM = { dynasty = 45000325 }
+	}
+	option = {
+		name = "EVTOPTBcadet.47"
+		trigger = { not = { has_global_flag = cadet_45000326 } }
+	
+		set_global_flag = cadet_45000326
+		FROM = { dynasty = 45000326 }
+	}
+	option = {
+		name = "EVTOPTCcadet.47"
+		trigger = { not = { has_global_flag = cadet_45000327 } }
+	
+		set_global_flag = cadet_45000327
+		FROM = { dynasty = 45000327 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.48
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.48"
+		trigger = { not = { has_global_flag = cadet_45000328 } }
+	
+		set_global_flag = cadet_45000328
+		FROM = { dynasty = 45000328 }
+	}
+	option = {
+		name = "EVTOPTBcadet.48"
+		trigger = { not = { has_global_flag = cadet_45000329 } }
+	
+		set_global_flag = cadet_45000329
+		FROM = { dynasty = 45000329 }
+	}
+	option = {
+		name = "EVTOPTCcadet.48"
+		trigger = { not = { has_global_flag = cadet_45000330 } }
+	
+		set_global_flag = cadet_45000330
+		FROM = { dynasty = 45000330 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.49
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.49"
+		trigger = { not = { has_global_flag = cadet_45000331 } }
+	
+		set_global_flag = cadet_45000331
+		FROM = { dynasty = 45000331 }
+	}
+	option = {
+		name = "EVTOPTBcadet.49"
+		trigger = { not = { has_global_flag = cadet_45000332 } }
+	
+		set_global_flag = cadet_45000332
+		FROM = { dynasty = 45000332 }
+	}
+	option = {
+		name = "EVTOPTCcadet.49"
+		trigger = { not = { has_global_flag = cadet_45000333 } }
+	
+		set_global_flag = cadet_45000333
+		FROM = { dynasty = 45000333 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.50
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.50"
+		trigger = { not = { has_global_flag = cadet_45000334 } }
+	
+		set_global_flag = cadet_45000334
+		FROM = { dynasty = 45000334 }
+	}
+	option = {
+		name = "EVTOPTBcadet.50"
+		trigger = { not = { has_global_flag = cadet_45000335 } }
+	
+		set_global_flag = cadet_45000335
+		FROM = { dynasty = 45000335 }
+	}
+	option = {
+		name = "EVTOPTCcadet.50"
+		trigger = { not = { has_global_flag = cadet_45000336 } }
+	
+		set_global_flag = cadet_45000336
+		FROM = { dynasty = 45000336 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.51
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.51"
+		trigger = { not = { has_global_flag = cadet_45000337 } }
+	
+		set_global_flag = cadet_45000337
+		FROM = { dynasty = 45000337 }
+	}
+	option = {
+		name = "EVTOPTBcadet.51"
+		trigger = { not = { has_global_flag = cadet_45000338 } }
+	
+		set_global_flag = cadet_45000338
+		FROM = { dynasty = 45000338 }
+	}
+	option = {
+		name = "EVTOPTCcadet.51"
+		trigger = { not = { has_global_flag = cadet_45000339 } }
+	
+		set_global_flag = cadet_45000339
+		FROM = { dynasty = 45000339 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.52
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.52"
+		trigger = { not = { has_global_flag = cadet_45000340 } }
+	
+		set_global_flag = cadet_45000340
+		FROM = { dynasty = 45000340 }
+	}
+	option = {
+		name = "EVTOPTBcadet.52"
+		trigger = { not = { has_global_flag = cadet_45000341 } }
+	
+		set_global_flag = cadet_45000341
+		FROM = { dynasty = 45000341 }
+	}
+	option = {
+		name = "EVTOPTCcadet.52"
+		trigger = { not = { has_global_flag = cadet_45000342 } }
+	
+		set_global_flag = cadet_45000342
+		FROM = { dynasty = 45000342 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.53
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.53"
+		trigger = { not = { has_global_flag = cadet_45000343 } }
+	
+		set_global_flag = cadet_45000343
+		FROM = { dynasty = 45000343 }
+	}
+	option = {
+		name = "EVTOPTBcadet.53"
+		trigger = { not = { has_global_flag = cadet_45000344 } }
+	
+		set_global_flag = cadet_45000344
+		FROM = { dynasty = 45000344 }
+	}
+	option = {
+		name = "EVTOPTCcadet.53"
+		trigger = { not = { has_global_flag = cadet_45000345 } }
+	
+		set_global_flag = cadet_45000345
+		FROM = { dynasty = 45000345 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.54
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.54"
+		trigger = { not = { has_global_flag = cadet_45000346 } }
+	
+		set_global_flag = cadet_45000346
+		FROM = { dynasty = 45000346 }
+	}
+	option = {
+		name = "EVTOPTBcadet.54"
+		trigger = { not = { has_global_flag = cadet_45000347 } }
+	
+		set_global_flag = cadet_45000347
+		FROM = { dynasty = 45000347 }
+	}
+	option = {
+		name = "EVTOPTCcadet.54"
+		trigger = { not = { has_global_flag = cadet_45000348 } }
+	
+		set_global_flag = cadet_45000348
+		FROM = { dynasty = 45000348 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.55
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.55"
+		trigger = { not = { has_global_flag = cadet_45000349 } }
+	
+		set_global_flag = cadet_45000349
+		FROM = { dynasty = 45000349 }
+	}
+	option = {
+		name = "EVTOPTBcadet.55"
+		trigger = { not = { has_global_flag = cadet_45000350 } }
+	
+		set_global_flag = cadet_45000350
+		FROM = { dynasty = 45000350 }
+	}
+	option = {
+		name = "EVTOPTCcadet.55"
+		trigger = { not = { has_global_flag = cadet_45000351 } }
+	
+		set_global_flag = cadet_45000351
+		FROM = { dynasty = 45000351 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.56
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.56"
+		trigger = { not = { has_global_flag = cadet_45000352 } }
+	
+		set_global_flag = cadet_45000352
+		FROM = { dynasty = 45000352 }
+	}
+	option = {
+		name = "EVTOPTBcadet.56"
+		trigger = { not = { has_global_flag = cadet_45000353 } }
+	
+		set_global_flag = cadet_45000353
+		FROM = { dynasty = 45000353 }
+	}
+	option = {
+		name = "EVTOPTCcadet.56"
+		trigger = { not = { has_global_flag = cadet_45000354 } }
+	
+		set_global_flag = cadet_45000354
+		FROM = { dynasty = 45000354 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.57
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.57"
+		trigger = { not = { has_global_flag = cadet_45000355 } }
+	
+		set_global_flag = cadet_45000355
+		FROM = { dynasty = 45000355 }
+	}
+	option = {
+		name = "EVTOPTBcadet.57"
+		trigger = { not = { has_global_flag = cadet_45000356 } }
+	
+		set_global_flag = cadet_45000356
+		FROM = { dynasty = 45000356 }
+	}
+	option = {
+		name = "EVTOPTCcadet.57"
+		trigger = { not = { has_global_flag = cadet_45000357 } }
+	
+		set_global_flag = cadet_45000357
+		FROM = { dynasty = 45000357 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.58
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.58"
+		trigger = { not = { has_global_flag = cadet_45000358 } }
+	
+		set_global_flag = cadet_45000358
+		FROM = { dynasty = 45000358 }
+	}
+	option = {
+		name = "EVTOPTBcadet.58"
+		trigger = { not = { has_global_flag = cadet_45000359 } }
+	
+		set_global_flag = cadet_45000359
+		FROM = { dynasty = 45000359 }
+	}
+	option = {
+		name = "EVTOPTCcadet.58"
+		trigger = { not = { has_global_flag = cadet_45000360 } }
+	
+		set_global_flag = cadet_45000360
+		FROM = { dynasty = 45000360 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.59
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.59"
+		trigger = { not = { has_global_flag = cadet_45000361 } }
+	
+		set_global_flag = cadet_45000361
+		FROM = { dynasty = 45000361 }
+	}
+	option = {
+		name = "EVTOPTBcadet.59"
+		trigger = { not = { has_global_flag = cadet_45000362 } }
+	
+		set_global_flag = cadet_45000362
+		FROM = { dynasty = 45000362 }
+	}
+	option = {
+		name = "EVTOPTCcadet.59"
+		trigger = { not = { has_global_flag = cadet_45000363 } }
+	
+		set_global_flag = cadet_45000363
+		FROM = { dynasty = 45000363 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.60
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.60"
+		trigger = { not = { has_global_flag = cadet_45000364 } }
+	
+		set_global_flag = cadet_45000364
+		FROM = { dynasty = 45000364 }
+	}
+	option = {
+		name = "EVTOPTBcadet.60"
+		trigger = { not = { has_global_flag = cadet_45000365 } }
+	
+		set_global_flag = cadet_45000365
+		FROM = { dynasty = 45000365 }
+	}
+	option = {
+		name = "EVTOPTCcadet.60"
+		trigger = { not = { has_global_flag = cadet_45000366 } }
+	
+		set_global_flag = cadet_45000366
+		FROM = { dynasty = 45000366 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.61
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.61"
+		trigger = { not = { has_global_flag = cadet_45000367 } }
+	
+		set_global_flag = cadet_45000367
+		FROM = { dynasty = 45000367 }
+	}
+	option = {
+		name = "EVTOPTBcadet.61"
+		trigger = { not = { has_global_flag = cadet_45000368 } }
+	
+		set_global_flag = cadet_45000368
+		FROM = { dynasty = 45000368 }
+	}
+	option = {
+		name = "EVTOPTCcadet.61"
+		trigger = { not = { has_global_flag = cadet_45000369 } }
+	
+		set_global_flag = cadet_45000369
+		FROM = { dynasty = 45000369 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.62
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.62"
+		trigger = { not = { has_global_flag = cadet_45000370 } }
+	
+		set_global_flag = cadet_45000370
+		FROM = { dynasty = 45000370 }
+	}
+	option = {
+		name = "EVTOPTBcadet.62"
+		trigger = { not = { has_global_flag = cadet_45000371 } }
+	
+		set_global_flag = cadet_45000371
+		FROM = { dynasty = 45000371 }
+	}
+	option = {
+		name = "EVTOPTCcadet.62"
+		trigger = { not = { has_global_flag = cadet_45000372 } }
+	
+		set_global_flag = cadet_45000372
+		FROM = { dynasty = 45000372 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.63
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.63"
+		trigger = { not = { has_global_flag = cadet_45000373 } }
+	
+		set_global_flag = cadet_45000373
+		FROM = { dynasty = 45000373 }
+	}
+	option = {
+		name = "EVTOPTBcadet.63"
+		trigger = { not = { has_global_flag = cadet_45000374 } }
+	
+		set_global_flag = cadet_45000374
+		FROM = { dynasty = 45000374 }
+	}
+	option = {
+		name = "EVTOPTCcadet.63"
+		trigger = { not = { has_global_flag = cadet_45000375 } }
+	
+		set_global_flag = cadet_45000375
+		FROM = { dynasty = 45000375 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.64
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.64"
+		trigger = { not = { has_global_flag = cadet_45000376 } }
+	
+		set_global_flag = cadet_45000376
+		FROM = { dynasty = 45000376 }
+	}
+	option = {
+		name = "EVTOPTBcadet.64"
+		trigger = { not = { has_global_flag = cadet_45000377 } }
+	
+		set_global_flag = cadet_45000377
+		FROM = { dynasty = 45000377 }
+	}
+	option = {
+		name = "EVTOPTCcadet.64"
+		trigger = { not = { has_global_flag = cadet_45000378 } }
+	
+		set_global_flag = cadet_45000378
+		FROM = { dynasty = 45000378 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.65
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.65"
+		trigger = { not = { has_global_flag = cadet_45000379 } }
+	
+		set_global_flag = cadet_45000379
+		FROM = { dynasty = 45000379 }
+	}
+	option = {
+		name = "EVTOPTBcadet.65"
+		trigger = { not = { has_global_flag = cadet_45000380 } }
+	
+		set_global_flag = cadet_45000380
+		FROM = { dynasty = 45000380 }
+	}
+	option = {
+		name = "EVTOPTCcadet.65"
+		trigger = { not = { has_global_flag = cadet_45000381 } }
+	
+		set_global_flag = cadet_45000381
+		FROM = { dynasty = 45000381 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.66
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.66"
+		trigger = { not = { has_global_flag = cadet_45000382 } }
+	
+		set_global_flag = cadet_45000382
+		FROM = { dynasty = 45000382 }
+	}
+	option = {
+		name = "EVTOPTBcadet.66"
+		trigger = { not = { has_global_flag = cadet_45000383 } }
+	
+		set_global_flag = cadet_45000383
+		FROM = { dynasty = 45000383 }
+	}
+	option = {
+		name = "EVTOPTCcadet.66"
+		trigger = { not = { has_global_flag = cadet_45000384 } }
+	
+		set_global_flag = cadet_45000384
+		FROM = { dynasty = 45000384 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.67
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.67"
+		trigger = { not = { has_global_flag = cadet_45000385 } }
+	
+		set_global_flag = cadet_45000385
+		FROM = { dynasty = 45000385 }
+	}
+	option = {
+		name = "EVTOPTBcadet.67"
+		trigger = { not = { has_global_flag = cadet_45000386 } }
+	
+		set_global_flag = cadet_45000386
+		FROM = { dynasty = 45000386 }
+	}
+	option = {
+		name = "EVTOPTCcadet.67"
+		trigger = { not = { has_global_flag = cadet_45000387 } }
+	
+		set_global_flag = cadet_45000387
+		FROM = { dynasty = 45000387 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.68
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.68"
+		trigger = { not = { has_global_flag = cadet_45000388 } }
+	
+		set_global_flag = cadet_45000388
+		FROM = { dynasty = 45000388 }
+	}
+	option = {
+		name = "EVTOPTBcadet.68"
+		trigger = { not = { has_global_flag = cadet_45000389 } }
+	
+		set_global_flag = cadet_45000389
+		FROM = { dynasty = 45000389 }
+	}
+	option = {
+		name = "EVTOPTCcadet.68"
+		trigger = { not = { has_global_flag = cadet_45000390 } }
+	
+		set_global_flag = cadet_45000390
+		FROM = { dynasty = 45000390 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.69
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.69"
+		trigger = { not = { has_global_flag = cadet_45000391 } }
+	
+		set_global_flag = cadet_45000391
+		FROM = { dynasty = 45000391 }
+	}
+	option = {
+		name = "EVTOPTBcadet.69"
+		trigger = { not = { has_global_flag = cadet_45000392 } }
+	
+		set_global_flag = cadet_45000392
+		FROM = { dynasty = 45000392 }
+	}
+	option = {
+		name = "EVTOPTCcadet.69"
+		trigger = { not = { has_global_flag = cadet_45000393 } }
+	
+		set_global_flag = cadet_45000393
+		FROM = { dynasty = 45000393 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.70
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.70"
+		trigger = { not = { has_global_flag = cadet_45000394 } }
+	
+		set_global_flag = cadet_45000394
+		FROM = { dynasty = 45000394 }
+	}
+	option = {
+		name = "EVTOPTBcadet.70"
+		trigger = { not = { has_global_flag = cadet_45000395 } }
+	
+		set_global_flag = cadet_45000395
+		FROM = { dynasty = 45000395 }
+	}
+	option = {
+		name = "EVTOPTCcadet.70"
+		trigger = { not = { has_global_flag = cadet_45000396 } }
+	
+		set_global_flag = cadet_45000396
+		FROM = { dynasty = 45000396 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.71
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.71"
+		trigger = { not = { has_global_flag = cadet_45000397 } }
+	
+		set_global_flag = cadet_45000397
+		FROM = { dynasty = 45000397 }
+	}
+	option = {
+		name = "EVTOPTBcadet.71"
+		trigger = { not = { has_global_flag = cadet_45000398 } }
+	
+		set_global_flag = cadet_45000398
+		FROM = { dynasty = 45000398 }
+	}
+	option = {
+		name = "EVTOPTCcadet.71"
+		trigger = { not = { has_global_flag = cadet_45000399 } }
+	
+		set_global_flag = cadet_45000399
+		FROM = { dynasty = 45000399 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.72
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.72"
+		trigger = { not = { has_global_flag = cadet_45000400 } }
+	
+		set_global_flag = cadet_45000400
+		FROM = { dynasty = 45000400 }
+	}
+	option = {
+		name = "EVTOPTBcadet.72"
+		trigger = { not = { has_global_flag = cadet_45000401 } }
+	
+		set_global_flag = cadet_45000401
+		FROM = { dynasty = 45000401 }
+	}
+	option = {
+		name = "EVTOPTCcadet.72"
+		trigger = { not = { has_global_flag = cadet_45000402 } }
+	
+		set_global_flag = cadet_45000402
+		FROM = { dynasty = 45000402 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.73
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.73"
+		trigger = { not = { has_global_flag = cadet_45000403 } }
+	
+		set_global_flag = cadet_45000403
+		FROM = { dynasty = 45000403 }
+	}
+	option = {
+		name = "EVTOPTBcadet.73"
+		trigger = { not = { has_global_flag = cadet_45000404 } }
+	
+		set_global_flag = cadet_45000404
+		FROM = { dynasty = 45000404 }
+	}
+	option = {
+		name = "EVTOPTCcadet.73"
+		trigger = { not = { has_global_flag = cadet_45000405 } }
+	
+		set_global_flag = cadet_45000405
+		FROM = { dynasty = 45000405 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.74
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.74"
+		trigger = { not = { has_global_flag = cadet_45000406 } }
+	
+		set_global_flag = cadet_45000406
+		FROM = { dynasty = 45000406 }
+	}
+	option = {
+		name = "EVTOPTBcadet.74"
+		trigger = { not = { has_global_flag = cadet_45000407 } }
+	
+		set_global_flag = cadet_45000407
+		FROM = { dynasty = 45000407 }
+	}
+	option = {
+		name = "EVTOPTCcadet.74"
+		trigger = { not = { has_global_flag = cadet_45000408 } }
+	
+		set_global_flag = cadet_45000408
+		FROM = { dynasty = 45000408 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.75
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.75"
+		trigger = { not = { has_global_flag = cadet_45000409 } }
+	
+		set_global_flag = cadet_45000409
+		FROM = { dynasty = 45000409 }
+	}
+	option = {
+		name = "EVTOPTBcadet.75"
+		trigger = { not = { has_global_flag = cadet_45000410 } }
+	
+		set_global_flag = cadet_45000410
+		FROM = { dynasty = 45000410 }
+	}
+	option = {
+		name = "EVTOPTCcadet.75"
+		trigger = { not = { has_global_flag = cadet_45000411 } }
+	
+		set_global_flag = cadet_45000411
+		FROM = { dynasty = 45000411 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.76
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.76"
+		trigger = { not = { has_global_flag = cadet_45000412 } }
+	
+		set_global_flag = cadet_45000412
+		FROM = { dynasty = 45000412 }
+	}
+	option = {
+		name = "EVTOPTBcadet.76"
+		trigger = { not = { has_global_flag = cadet_45000413 } }
+	
+		set_global_flag = cadet_45000413
+		FROM = { dynasty = 45000413 }
+	}
+	option = {
+		name = "EVTOPTCcadet.76"
+		trigger = { not = { has_global_flag = cadet_45000414 } }
+	
+		set_global_flag = cadet_45000414
+		FROM = { dynasty = 45000414 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.77
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.77"
+		trigger = { not = { has_global_flag = cadet_45000415 } }
+	
+		set_global_flag = cadet_45000415
+		FROM = { dynasty = 45000415 }
+	}
+	option = {
+		name = "EVTOPTBcadet.77"
+		trigger = { not = { has_global_flag = cadet_45000416 } }
+	
+		set_global_flag = cadet_45000416
+		FROM = { dynasty = 45000416 }
+	}
+	option = {
+		name = "EVTOPTCcadet.77"
+		trigger = { not = { has_global_flag = cadet_45000417 } }
+	
+		set_global_flag = cadet_45000417
+		FROM = { dynasty = 45000417 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.78
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.78"
+		trigger = { not = { has_global_flag = cadet_45000418 } }
+	
+		set_global_flag = cadet_45000418
+		FROM = { dynasty = 45000418 }
+	}
+	option = {
+		name = "EVTOPTBcadet.78"
+		trigger = { not = { has_global_flag = cadet_45000419 } }
+	
+		set_global_flag = cadet_45000419
+		FROM = { dynasty = 45000419 }
+	}
+	option = {
+		name = "EVTOPTCcadet.78"
+		trigger = { not = { has_global_flag = cadet_45000420 } }
+	
+		set_global_flag = cadet_45000420
+		FROM = { dynasty = 45000420 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.79
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.79"
+		trigger = { not = { has_global_flag = cadet_45000421 } }
+	
+		set_global_flag = cadet_45000421
+		FROM = { dynasty = 45000421 }
+	}
+	option = {
+		name = "EVTOPTBcadet.79"
+		trigger = { not = { has_global_flag = cadet_45000422 } }
+	
+		set_global_flag = cadet_45000422
+		FROM = { dynasty = 45000422 }
+	}
+	option = {
+		name = "EVTOPTCcadet.79"
+		trigger = { not = { has_global_flag = cadet_45000423 } }
+	
+		set_global_flag = cadet_45000423
+		FROM = { dynasty = 45000423 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.80
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.80"
+		trigger = { not = { has_global_flag = cadet_45000424 } }
+	
+		set_global_flag = cadet_45000424
+		FROM = { dynasty = 45000424 }
+	}
+	option = {
+		name = "EVTOPTBcadet.80"
+		trigger = { not = { has_global_flag = cadet_45000425 } }
+	
+		set_global_flag = cadet_45000425
+		FROM = { dynasty = 45000425 }
+	}
+	option = {
+		name = "EVTOPTCcadet.80"
+		trigger = { not = { has_global_flag = cadet_45000426 } }
+	
+		set_global_flag = cadet_45000426
+		FROM = { dynasty = 45000426 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.81
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.81"
+		trigger = { not = { has_global_flag = cadet_45000427 } }
+	
+		set_global_flag = cadet_45000427
+		FROM = { dynasty = 45000427 }
+	}
+	option = {
+		name = "EVTOPTBcadet.81"
+		trigger = { not = { has_global_flag = cadet_45000428 } }
+	
+		set_global_flag = cadet_45000428
+		FROM = { dynasty = 45000428 }
+	}
+	option = {
+		name = "EVTOPTCcadet.81"
+		trigger = { not = { has_global_flag = cadet_45000429 } }
+	
+		set_global_flag = cadet_45000429
+		FROM = { dynasty = 45000429 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.82
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.82"
+		trigger = { not = { has_global_flag = cadet_45000430 } }
+	
+		set_global_flag = cadet_45000430
+		FROM = { dynasty = 45000430 }
+	}
+	option = {
+		name = "EVTOPTBcadet.82"
+		trigger = { not = { has_global_flag = cadet_45000431 } }
+	
+		set_global_flag = cadet_45000431
+		FROM = { dynasty = 45000431 }
+	}
+	option = {
+		name = "EVTOPTCcadet.82"
+		trigger = { not = { has_global_flag = cadet_45000432 } }
+	
+		set_global_flag = cadet_45000432
+		FROM = { dynasty = 45000432 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.83
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.83"
+		trigger = { not = { has_global_flag = cadet_45000433 } }
+	
+		set_global_flag = cadet_45000433
+		FROM = { dynasty = 45000433 }
+	}
+	option = {
+		name = "EVTOPTBcadet.83"
+		trigger = { not = { has_global_flag = cadet_45000434 } }
+	
+		set_global_flag = cadet_45000434
+		FROM = { dynasty = 45000434 }
+	}
+	option = {
+		name = "EVTOPTCcadet.83"
+		trigger = { not = { has_global_flag = cadet_45000435 } }
+	
+		set_global_flag = cadet_45000435
+		FROM = { dynasty = 45000435 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.84
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.84"
+		trigger = { not = { has_global_flag = cadet_45000436 } }
+	
+		set_global_flag = cadet_45000436
+		FROM = { dynasty = 45000436 }
+	}
+	option = {
+		name = "EVTOPTBcadet.84"
+		trigger = { not = { has_global_flag = cadet_45000437 } }
+	
+		set_global_flag = cadet_45000437
+		FROM = { dynasty = 45000437 }
+	}
+	option = {
+		name = "EVTOPTCcadet.84"
+		trigger = { not = { has_global_flag = cadet_45000438 } }
+	
+		set_global_flag = cadet_45000438
+		FROM = { dynasty = 45000438 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.85
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.85"
+		trigger = { not = { has_global_flag = cadet_45000439 } }
+	
+		set_global_flag = cadet_45000439
+		FROM = { dynasty = 45000439 }
+	}
+	option = {
+		name = "EVTOPTBcadet.85"
+		trigger = { not = { has_global_flag = cadet_45000440 } }
+	
+		set_global_flag = cadet_45000440
+		FROM = { dynasty = 45000440 }
+	}
+	option = {
+		name = "EVTOPTCcadet.85"
+		trigger = { not = { has_global_flag = cadet_45000441 } }
+	
+		set_global_flag = cadet_45000441
+		FROM = { dynasty = 45000441 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.86
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.86"
+		trigger = { not = { has_global_flag = cadet_45000442 } }
+	
+		set_global_flag = cadet_45000442
+		FROM = { dynasty = 45000442 }
+	}
+	option = {
+		name = "EVTOPTBcadet.86"
+		trigger = { not = { has_global_flag = cadet_45000443 } }
+	
+		set_global_flag = cadet_45000443
+		FROM = { dynasty = 45000443 }
+	}
+	option = {
+		name = "EVTOPTCcadet.86"
+		trigger = { not = { has_global_flag = cadet_45000444 } }
+	
+		set_global_flag = cadet_45000444
+		FROM = { dynasty = 45000444 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.87
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.87"
+		trigger = { not = { has_global_flag = cadet_45000445 } }
+	
+		set_global_flag = cadet_45000445
+		FROM = { dynasty = 45000445 }
+	}
+	option = {
+		name = "EVTOPTBcadet.87"
+		trigger = { not = { has_global_flag = cadet_45000446 } }
+	
+		set_global_flag = cadet_45000446
+		FROM = { dynasty = 45000446 }
+	}
+	option = {
+		name = "EVTOPTCcadet.87"
+		trigger = { not = { has_global_flag = cadet_45000447 } }
+	
+		set_global_flag = cadet_45000447
+		FROM = { dynasty = 45000447 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.88
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.88"
+		trigger = { not = { has_global_flag = cadet_45000448 } }
+	
+		set_global_flag = cadet_45000448
+		FROM = { dynasty = 45000448 }
+	}
+	option = {
+		name = "EVTOPTBcadet.88"
+		trigger = { not = { has_global_flag = cadet_45000449 } }
+	
+		set_global_flag = cadet_45000449
+		FROM = { dynasty = 45000449 }
+	}
+	option = {
+		name = "EVTOPTCcadet.88"
+		trigger = { not = { has_global_flag = cadet_45000450 } }
+	
+		set_global_flag = cadet_45000450
+		FROM = { dynasty = 45000450 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.89
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.89"
+		trigger = { not = { has_global_flag = cadet_45000451 } }
+	
+		set_global_flag = cadet_45000451
+		FROM = { dynasty = 45000451 }
+	}
+	option = {
+		name = "EVTOPTBcadet.89"
+		trigger = { not = { has_global_flag = cadet_45000452 } }
+	
+		set_global_flag = cadet_45000452
+		FROM = { dynasty = 45000452 }
+	}
+	option = {
+		name = "EVTOPTCcadet.89"
+		trigger = { not = { has_global_flag = cadet_45000453 } }
+	
+		set_global_flag = cadet_45000453
+		FROM = { dynasty = 45000453 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.90
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.90"
+		trigger = { not = { has_global_flag = cadet_45000454 } }
+	
+		set_global_flag = cadet_45000454
+		FROM = { dynasty = 45000454 }
+	}
+	option = {
+		name = "EVTOPTBcadet.90"
+		trigger = { not = { has_global_flag = cadet_45000455 } }
+	
+		set_global_flag = cadet_45000455
+		FROM = { dynasty = 45000455 }
+	}
+	option = {
+		name = "EVTOPTCcadet.90"
+		trigger = { not = { has_global_flag = cadet_45000456 } }
+	
+		set_global_flag = cadet_45000456
+		FROM = { dynasty = 45000456 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.91
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.91"
+		trigger = { not = { has_global_flag = cadet_45000457 } }
+	
+		set_global_flag = cadet_45000457
+		FROM = { dynasty = 45000457 }
+	}
+	option = {
+		name = "EVTOPTBcadet.91"
+		trigger = { not = { has_global_flag = cadet_45000458 } }
+	
+		set_global_flag = cadet_45000458
+		FROM = { dynasty = 45000458 }
+	}
+	option = {
+		name = "EVTOPTCcadet.91"
+		trigger = { not = { has_global_flag = cadet_45000459 } }
+	
+		set_global_flag = cadet_45000459
+		FROM = { dynasty = 45000459 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.92
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.92"
+		trigger = { not = { has_global_flag = cadet_45000460 } }
+	
+		set_global_flag = cadet_45000460
+		FROM = { dynasty = 45000460 }
+	}
+	option = {
+		name = "EVTOPTBcadet.92"
+		trigger = { not = { has_global_flag = cadet_45000461 } }
+	
+		set_global_flag = cadet_45000461
+		FROM = { dynasty = 45000461 }
+	}
+	option = {
+		name = "EVTOPTCcadet.92"
+		trigger = { not = { has_global_flag = cadet_45000462 } }
+	
+		set_global_flag = cadet_45000462
+		FROM = { dynasty = 45000462 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.93
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.93"
+		trigger = { not = { has_global_flag = cadet_45000463 } }
+	
+		set_global_flag = cadet_45000463
+		FROM = { dynasty = 45000463 }
+	}
+	option = {
+		name = "EVTOPTBcadet.93"
+		trigger = { not = { has_global_flag = cadet_45000464 } }
+	
+		set_global_flag = cadet_45000464
+		FROM = { dynasty = 45000464 }
+	}
+	option = {
+		name = "EVTOPTCcadet.93"
+		trigger = { not = { has_global_flag = cadet_45000465 } }
+	
+		set_global_flag = cadet_45000465
+		FROM = { dynasty = 45000465 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.94
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.94"
+		trigger = { not = { has_global_flag = cadet_45000466 } }
+	
+		set_global_flag = cadet_45000466
+		FROM = { dynasty = 45000466 }
+	}
+	option = {
+		name = "EVTOPTBcadet.94"
+		trigger = { not = { has_global_flag = cadet_45000467 } }
+	
+		set_global_flag = cadet_45000467
+		FROM = { dynasty = 45000467 }
+	}
+	option = {
+		name = "EVTOPTCcadet.94"
+		trigger = { not = { has_global_flag = cadet_45000468 } }
+	
+		set_global_flag = cadet_45000468
+		FROM = { dynasty = 45000468 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+character_event = { 
+   id = cadet.95
+   desc = "EVTDESCcadet.1"
+   picture = GFX_evt_courtiers_talking
+   
+   is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAcadet.95"
+		trigger = { not = { has_global_flag = cadet_45000469 } }
+	
+		set_global_flag = cadet_45000469
+		FROM = { dynasty = 45000469 }
+	}
+	option = {
+		name = "EVTOPTBcadet.95"
+		trigger = { not = { has_global_flag = cadet_45000470 } }
+	
+		set_global_flag = cadet_45000470
+		FROM = { dynasty = 45000470 }
+	}
+	option = {
+		name = "EVTOPTCcadet.95"
+		trigger = { not = { has_global_flag = cadet_45000471 } }
+	
+		set_global_flag = cadet_45000471
+		FROM = { dynasty = 45000471 }
+	}
+	after = {
+		hidden_tooltip = {
+			add_trait = assign_mission_target
+			set_dynasty_flag = has_cadet_house		
+			FROM = { 
+				add_trait = assign_mission_target
+				set_dynasty_flag = is_cadet_house
+				set_dynasty_flag = cadet_house_@PREV		
+				ROOT = { set_dynasty_flag = owned_cadet_house_@PREV }
+			}
+			reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			any_dynasty_member = {
+				limit = { NOT = { character = ROOT } }
+				reverse_opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+				opinion = { who = FROM modifier = opinion_cadet_affection years = 200 }
+			}
+		}	
+	}
+}
+
+#END GENERATION HERE

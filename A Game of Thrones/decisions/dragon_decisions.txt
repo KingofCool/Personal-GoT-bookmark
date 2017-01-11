@@ -1,0 +1,975 @@
+decisions = {
+	field_of_fire_dec = {
+		is_high_prio = yes
+		potential = { 
+			trait = dragon_rider
+			any_friend = {
+				trait = dragon
+				is_alive = yes
+				age = 2
+			}
+			OR = {
+				NOT = {has_character_flag = dragonduel}
+				had_character_flag = { flag = dragonduel days = 10 }
+			}
+			OR = {
+				had_character_flag = { flag = dragon_used_battle days = 15 } 
+				NOT = { has_character_flag = dragon_used_battle }
+			}
+			in_battle = yes
+			in_command = yes	
+			NOT = {
+				dragon_rider = {
+					at_location = ROOT
+					is_alive = yes											
+					prisoner = no
+					in_command = yes
+					NOT = { character = ROOT }
+					OR = {
+						war_with = ROOT
+						any_liege = { war_with = ROOT }
+						AND = {
+							ROOT = { war = no }
+							OR = {
+								ROOT = { any_liege = { war_with = PREVPREV } }
+								any_liege = { ROOT = { any_liege = { war_with = PREVPREV } } }
+							}
+						}
+					}
+				}
+			}
+		}
+		allow = {	
+			any_friend = {
+				trait = dragon
+				is_alive = yes
+				age = 2
+				NOT = { trait = maimed_dragon }
+			}	
+			custom_tooltip = {
+				text = TOOLTIPfield_of_fire_decTERRAIN
+				hidden_tooltip = {
+					NOT = {
+						location = { 
+							OR = {
+								terrain = mountain 
+								terrain = desert
+							}	
+						}
+					}	
+				}
+			}	
+			custom_tooltip = {
+				text = TOOLTIPfield_of_fire_dec
+				hidden_tooltip = {
+					# location = {
+						# any_province_character = {
+							# at_location = ROOT
+							# prisoner = no
+							# in_command = yes
+							# OR = {
+								# war_with = ROOT
+								# any_liege = { war_with = ROOT }
+								# ROOT = { any_liege = { war_with = PREVPREV } }
+								# any_liege = { ROOT = { any_liege = { war_with = PREVPREV } } }
+							# }
+						# }
+					# }
+					OR = {
+						AND = {
+							is_ruler = yes
+							war = yes
+							any_current_enemy = {
+								#war_with = ROOT
+								OR = {
+									AND = {
+										at_location = ROOT
+										prisoner = no
+										in_command = yes
+									}
+									any_realm_lord = {
+										at_location = ROOT
+										prisoner = no
+										in_command = yes
+									}
+									any_courtier = {
+										at_location = ROOT
+										prisoner = no
+										in_command = yes
+									}
+								}	
+							}
+						}
+						AND = {
+							#war = no # Your liege's wars still count
+							any_liege = {
+								any_current_enemy = {
+									#war_with = PREV
+									OR = {
+										AND = {
+											at_location = ROOT
+											prisoner = no
+											in_command = yes
+										}
+										any_realm_lord = {
+											at_location = ROOT
+											prisoner = no
+											in_command = yes
+										}
+										any_courtier = {
+											at_location = ROOT
+											prisoner = no
+											in_command = yes
+										}
+									}	
+								}
+							}
+						}						
+						any_independent_ruler = {
+							mercenary = yes
+							at_location = ROOT
+							in_command = yes
+							prisoner = no
+						}				
+					}	
+				}
+			}	
+		}
+		effect = {
+			set_character_flag = dragon_used_battle
+			character_event = { id = dragon.31 tooltip = "EVTTOOLTIPdragon.31" }	
+			
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = { #AI never use a young dragon in battle
+				factor = 0
+				NOT = {
+					any_friend = {
+						trait = dragon
+						is_alive = yes
+						age = 2
+						martial = 20
+					}
+				}
+			}
+		}		
+	}
+	siege_of_fire_dec = {
+		is_high_prio = yes
+		potential = { 
+			trait = dragon_rider
+			any_friend = {
+				trait = dragon
+				is_alive = yes
+				age = 2
+			}
+			OR = {
+				NOT = {has_character_flag = dragonduel}
+				had_character_flag = { flag = dragonduel days = 10 }
+			}
+			OR = {
+				had_character_flag = { flag = dragon_used days = 30} 
+				NOT = { has_character_flag = dragon_used}
+			}	
+			#OR = {
+				siege = {
+					is_attacker = yes
+				}
+				# siege = {
+					# is_attacker = no
+				# }
+			#}
+			NOT = {
+				location = { has_province_modifier = ruined_province }
+			}
+		}
+		allow = {
+			NOT = { in_battle = yes }
+			any_friend = {
+				trait = dragon
+				is_alive = yes
+				age = 2
+				NOT = { trait = maimed_dragon }
+			}	
+		}
+		effect = {
+			set_character_flag = dragon_used
+			hidden_tooltip = { #find leader/target
+				siege = {
+					enemy = {
+						leader = {
+							save_event_target_as = siege_of_fire_target
+							#set_character_flag = siege_leader
+							ROOT = { set_character_flag = siege_of_fire_target_found }
+						}
+					}
+					if = { #if no leader default to province owner (capital only)
+						limit = { ROOT = { NOT = { has_character_flag = siege_of_fire_target_found } } }
+						location = { 
+							owner = { 
+								if = {
+									limit = {
+										capital_holding = { controller = { character = PREVPREV } }
+										capital_scope = { ROOT = { at_location = PREV } }
+									}
+									save_event_target_as = siege_of_fire_target
+								}
+							} 
+						}
+					}					
+				}	
+				clr_character_flag = siege_of_fire_target_found
+			}
+			character_event = {id = dragon.38 tooltip = "EVTTOOLTIPdragon.31"}		
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = { #AI never use a young dragon in siege
+				factor = 0
+				NOT = {
+					any_friend = {
+						trait = dragon
+						is_alive = yes
+						age = 2
+						martial = 20
+					}
+				}
+			}
+		}		
+	}
+	hatch_dragon_dec = {
+		is_high_prio = yes
+		potential = { 
+			#ai = no
+			trait = dragon_egg
+			NOT = { trait = dragon_rider }
+			NOT = { trait = dragon }
+			NOT = { any_friend = { is_alive = yes trait = dragon } }
+			OR = {
+				NOT = { has_character_flag = tried_hatch }
+				had_character_flag = { flag = tried_hatch days = 500 }
+			}
+			OR = {
+				age = 14
+				AND = {
+					age = 6
+					liege = {
+						trait = dragon_rider
+						is_close_relative = ROOT
+					}
+				}	
+			}	
+		}
+		allow = {
+			OR = {
+				culture_group = valyrian
+				is_divine_blood_dynasty_trigger = yes
+				NOT = { has_game_rule = { name = dragon_hatching_taming value = valyrian_only } }
+			}	
+			prisoner = no
+			in_command = no
+			NOT = { trait = incapable }
+			is_ill = no
+			custom_tooltip = {
+				text = TOOLTIPDRAGONINTEL
+				hidden_tooltip = {
+					OR = {
+						has_character_flag = dragon_intel_harrenhal
+						has_character_flag = dragon_intel_dragonpit
+						has_character_flag = dragon_intel_dragonstone
+						has_character_flag = dragon_intel_citadel
+						has_character_flag = dragon_intel_fof
+						has_character_flag = dragon_intel_summerhall
+						has_character_flag = dragon_intel_eggs
+						has_character_flag = dragon_intel_old_ghis
+						has_character_flag = dragon_intel_volantis
+						has_character_flag = dragon_intel_smoking_sea
+						has_character_flag = dragon_intel_asshai
+						has_character_flag = dragon_intel_dynamic
+						has_character_flag = dragon_intel_rebirth
+					}
+				}	
+			}		
+		}
+		effect = {
+			set_character_flag = tried_hatch
+			character_event = { id = dragon.3 } 		
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+    
+	}
+	tame_dragon_dec = {
+		is_high_prio = yes
+		potential = { 
+			#ai = no
+			any_friend = { 
+				trait = dragon 
+				is_alive = yes
+			}
+			NOT = { trait = dragon_rider }	
+			NOT = { trait = dragon }			
+			OR = {
+				NOT = { has_character_flag = choose_wild_dragon_action }
+				had_character_flag = { flag = choose_wild_dragon_action days = 500 }
+			}				
+			NOT = { has_character_flag = dany_no_tame_dragon }
+		}
+		allow = {
+			OR = {
+				culture_group = valyrian
+				is_divine_blood_dynasty_trigger = yes
+				NOT = { has_game_rule = { name = dragon_hatching_taming value = valyrian_only } }
+			}
+			any_friend = { 
+				trait = dragon 
+				is_alive = yes
+				age = 2
+			}
+			age = 14
+			prisoner = no
+			NOT = { in_battle = yes }
+			NOT = { has_severe_disability_trigger = yes }
+			is_ill = no
+		}
+		effect = {
+			set_character_flag = choose_wild_dragon_action
+			character_event = { id = dragon.12 days = 1} 		
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+    
+	}
+	face_dragon_dec = {
+		is_high_prio = yes
+		potential = { 
+			age = 14	
+			dragon = {
+				is_alive = yes
+				at_location = ROOT
+				OR = {
+					NOT = { educator = { always = yes } } 
+					location = { any_province_lord = { is_liege_of = PREVPREV } }
+				}
+				NOT = { any_friend = { always = yes is_alive = yes } }
+				NOT = { has_character_flag = dany_dragon }
+				OR = {
+					ROOT = { ai = no }
+					AND = {
+						NOT = { trait = shy }
+						NOT = { has_character_flag = shadow_lands_dragon }
+					}
+					has_character_modifier = locked_in_dragonpit
+				}
+				OR = {
+					NOT = { has_character_flag = found_wild_dragon }
+					had_character_flag = { flag = found_wild_dragon days = 30 }
+				}				
+			}			
+			NOT = { any_friend = { trait = dragon is_alive = yes } }
+			NOT = { trait = dragon }
+			OR = { #Must not be about to be culled
+				NOT = { culture = high_valyrian }
+				has_dynasty_flag = high_valyrian
+				has_character_flag = high_valyrian
+			}
+			OR = {
+				NOT = { has_character_flag = found_wild_dragon }
+				had_character_flag = { flag = found_wild_dragon days = 60 }
+			}
+			OR = { 
+				NOT = {has_character_flag = ran_from_dragon}
+				had_character_flag = { flag = ran_from_dragon days = 500}
+			}
+		}
+		allow = {
+			location = {
+				owner = {
+					OR = {
+						character = ROOT
+						custom_tooltip = {
+							text = TOOLTIPface_dragon_decOWNER
+							hidden_tooltip = {
+								AND = {
+									NOT = { trait = dragon_rider }
+									NOT = {
+										regent = {
+											trait = dragon_rider
+											is_close_relative = PREV
+										}
+									}
+								}
+							}	
+						}	
+						dynasty = ROOT
+						is_close_relative = ROOT
+					}
+				}
+			}
+			prisoner = no
+			NOT = { in_battle = yes }
+			NOT = { has_severe_disability_trigger = yes }
+			NOT = { is_inaccessible_trigger = yes }
+			is_ill = no
+		}
+		effect = {
+			character_event = { id = dragon.2699 } 		
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.02
+			}			
+			#better stand a chance
+			modifier = {
+				factor = 0
+				NOT = { trait = dragon_slayer }
+				NOT = { trait = brave }
+				NOT = { trait = genius }
+				NOT = { trait = lunatic }
+				NOT = { trait = ambitious }
+				NOT = { trait = chosen_by_rhllor }
+				NOT = { culture = high_valyrian }
+				NOT = { dynasty = 496 }
+				NOT = { has_character_flag = demon_child_non_pagan }
+				NOT = { 
+					AND = {			
+						culture_group = valyrian 
+						OR = {
+							religion = valyrian
+							has_character_modifier = abomination_of_incest
+							location = { owner = { trait = dragon_rider is_close_relative = ROOT } }
+						}
+					}
+				}					
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					trait = craven 
+					trait = depressed
+					trait = maester
+					trait = archmaester
+					trait = septon
+					trait = content
+					has_character_flag = ran_from_dragon
+				}	
+			}
+			modifier = {
+				factor = 20
+				OR = {
+					trait = chosen_by_rhllor
+					culture = high_valyrian
+					dynasty = 496
+					has_character_flag = demon_child_non_pagan
+				}	
+			}
+			modifier = {
+				factor = 4
+				trait = ambitious	
+			}
+		}   
+	}
+	bestow_dragon_egg_ai = {
+		potential = {		
+			trait = dragon_egg 
+			is_ruler = no
+			#ai = yes
+			NOT = { trait = dragon }
+			any_friend = { is_alive = yes trait = dragon }
+			any_child = {
+				age = 6
+				is_alive = yes
+				reverse_opinion = { who = ROOT value = 0 }
+				NOT = { trait = incapable }
+				NOT = { trait = bastard }
+				NOT = { trait = maester }
+				NOT = { trait = archmaester }
+				NOT = { trait = nightswatch }
+				NOT = { trait = silent_sister }
+				NOT = { trait = septon }
+				NOT = { trait = septa }
+				NOT = { trait = kingsguard }
+				NOT = { any_friend = { is_alive = yes trait = dragon } }
+				NOT = { trait = dragon_egg }
+				NOT = { trait = dragon }
+				NOT = { war_with = ROOT }
+			}			
+		}
+		allow = {
+			trait = dragon_egg  
+		}
+		effect = {
+			remove_trait = dragon_egg
+			random_child = {
+				limit = {
+					age = 6
+					is_alive = yes
+					reverse_opinion = { who = ROOT value = 0 }
+					NOT = { trait = incapable }
+					NOT = { trait = bastard }
+					NOT = { trait = maester }
+					NOT = { trait = archmaester }
+					NOT = { trait = nightswatch }
+					NOT = { trait = silent_sister }
+					NOT = { trait = septon }
+					NOT = { trait = septa }
+					NOT = { trait = kingsguard }
+					NOT = { any_friend = { is_alive = yes trait = dragon } }
+					NOT = { trait = dragon_egg }
+					NOT = { trait = dragon }
+					NOT = { war_with = ROOT }
+				}
+				add_trait = dragon_egg
+				save_event_target_as = dragon_egg_heir	
+				prestige = 50
+				opinion = {
+					who = ROOT
+					modifier = bestowed_dragon_egg
+					years = 10
+				}
+				if = {
+					limit = { ai = no }
+					chronicle = {
+						entry = CHRONICLE_GIVEN_EGG
+						picture = "GFX_targaryen_eggs"
+					}
+				}
+			}	
+			dragon = {
+				limit = { ROOT = { has_character_flag = dragon_egg_mother_@PREV } }
+				ROOT = { clr_character_flag = dragon_egg_mother_@PREV }
+				event_target:dragon_egg_heir = { set_character_flag = dragon_egg_mother_@PREV }
+			}	
+			clear_event_target = dragon_egg_heir			
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5 # Slow it down a bit
+			}
+		}
+	}
+	#Dany spare dragon decisions
+	dany_give_spouse_dragon = {
+		potential = {
+			has_character_flag = daenerys_targaryen	
+			any_child = {
+				NOT = { any_friend = { is_alive = yes } }
+				trait = dragon
+				is_alive = yes
+			}
+			spouse = {
+				is_alive = yes
+				NOT = {
+					any_friend = {
+						trait = dragon
+						is_alive = yes
+					}
+				}
+				NOT = { war_with = ROOT }
+			}			
+		}
+		allow = { 
+		}
+		effect = {
+			spouse = {
+				ROOT = {
+					random_child = {
+						limit = {
+							NOT = { any_friend = { is_alive = yes } }
+							trait = dragon
+							is_alive = yes
+						}
+						add_friend = PREVPREV
+						#hidden_tooltip = { set_mother = 0 }
+					}
+				}	
+				hidden_tooltip = { character_event = { id = dragon.400 } }
+			}	
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5 # Slow it down a bit
+			}
+			modifier = {
+				factor = 0
+				spouse = {
+					OR = {
+						trait = craven
+						is_weak_trigger = yes
+						is_dumb_trigger = yes
+						trait = imbecile
+						trait = infirm
+						has_severe_disability_trigger = yes
+						NOT = { reverse_opinion = { who = ROOT value = 50 } }
+					}
+				}	
+			}
+			modifier = {
+				factor = 1.75
+				spouse = {
+					OR = {
+						trait = brave
+						is_strong_trigger = yes
+						is_smart_trigger = yes
+						trait = genius
+						reverse_opinion = { who = ROOT value = 99 } 
+					}
+				}	
+			}
+		}
+	}
+	
+	dany_give_child_dragon = {
+		potential = {
+			has_character_flag = daenerys_targaryen	
+			any_child = {
+				NOT = { any_friend = { is_alive = yes } }
+				trait = dragon
+				is_alive = yes
+			}
+			any_child = {
+				is_alive = yes
+				NOT = {
+					any_friend = {
+						trait = dragon
+						is_alive = yes
+					}
+				}
+				NOT = { war_with = ROOT }
+				NOT = { trait = dragon }
+			}			
+		}
+		allow = { 
+		}
+		effect = {
+			random_child = {
+				limit = {
+					is_alive = yes
+					NOT = {
+						any_friend = {
+							trait = dragon
+							is_alive = yes
+						}
+					}
+					NOT = { war_with = ROOT }
+					NOT = { trait = dragon }
+					OR = {
+						ROOT = { ai = no }
+						AND = {
+							age = 14
+							NOT = {
+								OR = {
+									trait = craven
+									is_weak_trigger = yes
+									is_dumb_trigger = yes
+									trait = imbecile
+									trait = infirm
+									has_severe_disability_trigger = yes
+									NOT = { reverse_opinion = { who = ROOT value = 25 } }
+								}
+							}
+						}
+					}
+				}
+				ROOT = {
+					random_child = {
+						limit = {
+							NOT = { any_friend = { is_alive = yes } }
+							trait = dragon
+							is_alive = yes
+						}
+						add_friend = PREVPREV
+						#hidden_tooltip = { set_mother = 0 }
+					}
+				}	
+				hidden_tooltip = { character_event = { id = dragon.400 } }
+			}			
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5 # Slow it down a bit
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_child = {
+						age = 14
+						NOT = {
+							OR = {
+								trait = craven
+								is_weak_trigger = yes
+								is_dumb_trigger = yes
+								trait = imbecile
+								trait = infirm
+								has_severe_disability_trigger = yes
+								NOT = { reverse_opinion = { who = ROOT value = 25 } }
+							}
+						}
+					}
+				}	
+			}
+		}
+	}
+}
+targetted_decisions = {
+	face_the_dragon_pi = {
+		ai_target_filter = all
+		filter = all
+		only_playable = yes
+		
+		from_potential = {
+			ai = no		
+			NOT = { any_friend = { trait = dragon is_alive = yes } }		
+		}
+		potential = {
+			trait = dragon				
+			NOT = { any_friend = { always = yes is_alive = yes } }					
+		}
+		allow = {
+			at_location = FROM
+			custom_tooltip = {
+				text = TOOLTIPface_dragonGUARDIAN
+				hidden_tooltip = { 
+					OR = {
+						NOT = { educator = { always = yes } } 
+						location = { any_province_lord = { is_liege_of = ROOT } }
+					}	
+				}
+			}	
+			custom_tooltip = {
+				text = TOOLTIPface_dragonFOUND
+				hidden_tooltip = {
+					OR = {
+						NOT = { has_character_flag = found_wild_dragon }			
+						had_character_flag = { flag = found_wild_dragon days = 30 }
+					}
+				}	
+			}	
+			custom_tooltip = {
+				text = TOOLTIPface_dragonDANY
+				hidden_tooltip = {
+					NOT = { has_character_flag = dany_dragon }
+				}	
+			}		
+			location = {
+				owner = {
+					OR = {
+						character = FROM
+						custom_tooltip = {
+							text = TOOLTIPface_dragon_decOWNER
+							hidden_tooltip = {
+								AND = {
+									NOT = { trait = dragon_rider }
+									NOT = {
+										regent = {
+											trait = dragon_rider
+											is_close_relative = PREV
+										}
+									}
+								}
+							}	
+						}	
+						dynasty = FROM
+						is_close_relative = FROM
+					}
+				}
+			}
+			FROM = {
+				age = 14
+				OR = {
+					is_female = no
+					culture = kayakayanayan
+					culture = samyrianan
+					culture = bayasabhadi	
+					trait = brave
+					martial = 18
+					culture_group = valyrian
+					trait = chosen_by_rhllor
+				}
+				prisoner = no
+				NOT = { in_battle = yes }
+				custom_tooltip = {
+					text = TOOLTIPface_dragonILL
+					hidden_tooltip = {
+						NOT = { has_severe_disability_trigger = yes }
+						is_ill = no
+					}
+				}	
+				custom_tooltip = {
+					text = TOOLTIPface_dragonFOUNDWILDDRAGON
+					hidden_tooltip = {
+						OR = {
+							NOT = { has_character_flag = found_wild_dragon }
+							had_character_flag = { flag = found_wild_dragon days = 60 }
+						}
+					}	
+				}
+				custom_tooltip = {
+					text = TOOLTIPface_dragonRAN
+					hidden_tooltip = {
+						OR = { 
+							NOT = {has_character_flag = ran_from_dragon}
+							had_character_flag = { flag = ran_from_dragon days = 500}
+						}
+					}	
+				}	
+				NOT = { is_inaccessible_trigger = yes }
+			}		
+		}
+		effect = {
+			FROM = { set_character_flag = found_wild_dragon }
+			set_character_flag = found_wild_dragon
+			character_event = { id = dragon.2698 tooltip = TOOLTIPdragon.2698 days = 2 random = 1 }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	bestow_dragon_egg = {
+		filter = all
+		ai_target_filter = dynasty
+		only_rulers = yes
+		
+		from_potential = {
+			is_ruler = yes #Unlanded AI cannot use dynasty decisions
+			trait = dragon_egg 
+			any_friend = { is_alive = yes trait = dragon }
+			NOT = { trait = dragon }
+		}
+		potential = {	
+			OR = {
+				dynasty = FROM	
+				is_close_relative = FROM
+				same_realm = FROM
+			}
+			NOT = { trait = dragon }
+			NOT = { culture_group = unoccupied_group }
+			NOT = { culture_group = winter_group }	
+			NOT = { character = FROM }			
+		}
+		allow = {
+			FROM = {
+				OR = {
+					hidden_tooltip = { is_ruler = no }
+					has_regent = no
+					regent = { opinion = { who = ROOT value = 0 } }
+				}
+			}	
+			NOT = { war_with = FROM }
+			NOT = { trait = dragon_egg }
+			NOT = { trait = nightswatch }
+			NOT = { any_friend = { is_alive = yes trait = dragon } }				
+		}
+		effect = {			
+			FROM = { remove_trait = dragon_egg }
+			add_trait = dragon_egg
+			dragon = {
+				limit = { FROM = { has_character_flag = dragon_egg_mother_@PREV } }
+				FROM = { clr_character_flag = dragon_egg_mother_@PREV }
+				ROOT = { set_character_flag = dragon_egg_mother_@PREV }
+			}
+			prestige = 50
+			if = {
+				limit = { dynasty = FROM }
+				opinion = {
+					who = FROM
+					modifier = bestowed_dragon_egg
+					years = 10
+				}
+			}
+			if = {
+				limit = { NOT = { dynasty = FROM } }
+				opinion = {
+					who = FROM
+					modifier = bestowed_dragon_egg
+					years = 10
+					multiplier = 3
+				}
+				FROM = {
+					prestige = -200
+					any_dynasty_member = {
+						limit = {
+							is_alive = yes
+							is_close_relative = FROM
+							NOT = { character = FROM }
+							NOT = { character = ROOT }
+						}
+						opinion = {
+							who = FROM
+							modifier = opinion_angry
+							months = 60
+						}									
+					}
+				}
+			}
+			if = {
+				limit = { ai = no }
+				chronicle = {
+					entry = CHRONICLE_GIVEN_EGG
+					picture = "GFX_targaryen_eggs"
+				}
+			}			
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.02 # Slow it down a bit
+			}
+			modifier = {
+				factor = 0
+				NOT = { is_close_relative = FROM }
+			}
+			modifier = {
+				factor = 0
+				NOT = { reverse_opinion = { who = FROM value = -49 } }
+			}
+			modifier = {
+				factor = 2
+				is_primary_heir = yes
+			}
+			modifier = {
+				factor = 2.5
+				is_female = no
+			}
+			modifier = {
+				factor = 2
+				sibling = FROM
+			}
+			modifier = {
+				factor = 5
+				is_child_of = FROM
+			}
+			modifier = {
+				factor = 0.2
+				trait = bastard
+			}
+		}
+	}
+}

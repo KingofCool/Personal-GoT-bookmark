@@ -1,0 +1,1084 @@
+namespace = evil
+
+#Smoking Sea
+character_event = {
+	id = evil.1
+	desc = "EVTDESCevil.1"
+	picture = "GFX_valyria_dragon"
+	
+	ai = no #to prevent too much abuse
+		
+	trigger = {
+		location = { province_id = 1010 }
+		NOT = { religion = starry_wisdom }
+		NOT = { trait = dragon_egg }
+		NOT = { trait = valyrian_steel }
+		NOT = { wealth = 500 }
+	}
+	
+	mean_time_to_happen = {
+		days = 7		
+	}
+		
+	option = {
+		name = "EVTOPTAevil.1"
+		chronicle = {
+			entry = CHRONICLE_SMOKING_SEA
+		}
+		random_list = {
+			95 = {				
+				# tooltip = { death = yes }
+				# hidden_tooltip = {
+					# add_trait=has_missing
+					# death = {
+						# death_reason = death_trait
+					# }
+				# }
+				
+				# add_trait = lunatic
+				
+				#religion = lady_of_the_waves
+				#add_trait = homosexual
+				
+				# add_trait = leper
+				# set_character_flag = eye_injury
+				# custom_tooltip = { text = TOOLTIP243EYEINJURY }
+				
+				#add_trait = has_greyscale
+				
+				# add_trait = disfigured_AGOT
+				# current_heir = {
+					# if = {
+						# limit = {
+							# is_ruler = no
+							# liege = { character = ROOT }
+						# }
+						# add_trait = lunatic
+					# }
+				# }
+				
+				# add_trait = possessed
+				# if = {
+					# limit = {
+						# is_female = no
+					# }
+					# add_trait = eunuch
+				# }	
+				# if = {
+					# limit = {
+						# is_female = yes
+					# }
+					# 599 = {
+						# owner = {
+							# create_character = {
+								# dynasty = culture
+								# age = 160
+								# culture = dragon
+								# religion = dragon_rel
+								# female = no
+								# attributes = {
+									# martial = 90
+								# }
+							# }
+							# new_character = {
+								# #dynasty = mother_bastard
+								# add_trait = dragon
+								# random = {
+									# chance = 5
+									# add_trait = fair
+								# }
+								# random = {
+									# chance = 5
+									# if = {
+										# limit = { NOT = { trait = fair } }
+										# add_trait = ugly
+									# }	
+								# }
+								# add_trait = strong
+								# random_list = {
+									# 1 = { add_trait = dragon_1 }
+									# 1 = { add_trait = dragon_2 }
+									# 1 = { add_trait = dragon_3 }
+									# 1 = { add_trait = dragon_4 }
+									# 1 = { add_trait = dragon_5 }
+									# 1 = { add_trait = dragon_6 }
+									# 1 = { add_trait = dragon_7 }
+									# 1 = { add_trait = dragon_8 }
+									# 1 = { add_trait = dragon_9 }
+									# 1 = { add_trait = dragon_10 }
+									# 1 = { add_trait = dragon_11 }
+									# 1 = { add_trait = dragon_12 }
+									# 1 = { add_trait = dragon_13 }
+									# 1 = { add_trait = dragon_14 }
+									# 1 = { add_trait = dragon_15 }
+									# 1 = { add_trait = dragon_16 }
+									# 1 = { add_trait = dragon_17 }
+									# 1 = { add_trait = dragon_18 }
+									# 1 = { add_trait = dragon_19 }
+									# 1 = { add_trait = dragon_20 }
+								# }
+								# character_event = { id = dragon.0 }
+								# ROOT = { impregnate_cuckoo = PREV }
+								# death = yes
+							# }
+						# }
+					# }
+				# }	
+				# hidden_tooltip = { character_event = { id = trait_notification.9 } }
+				
+				# religion = fish_gods
+				# if = {
+					# limit = {
+						# is_female = no
+					# }
+					# 599 = { # Yes I know what this means... yes it is intentional
+						# owner = {
+							# create_character = {
+								# dynasty = culture
+								# age = 160
+								# culture = giant
+								# religion = beyond_wall_old_gods
+								# female = no
+								# attributes = {
+									# martial = 90
+								# }
+							# }
+							# new_character = {
+								# add_trait = giant
+								# add_trait = strong
+								# add_trait = tall
+								# character_event = { id = dragon.0 }
+								# ROOT = { impregnate_cuckoo = PREV }
+								# death = yes
+							# }
+						# }
+					# }
+				# }	
+				# if = {
+					# limit = {
+						# is_female = yes
+					# }
+					# 599 = {
+						# owner = {
+							# create_character = {
+								# dynasty = culture
+								# age = 160
+								# culture = giant
+								# religion = beyond_wall_old_gods
+								# female = no
+								# attributes = {
+									# martial = 90
+								# }
+							# }
+							# new_character = {
+								# add_trait = giant
+								# add_trait = strong
+								# add_trait = tall
+								# character_event = { id = dragon.0 }
+								# ROOT = { impregnate_cuckoo = PREV }
+								# death = yes
+							# }
+						# }
+					# }
+				# }
+					
+				# religion = starry_wisdom
+				
+				# 599 = { # Hell yes this is too much fun
+					# owner = {
+						# create_character = {
+							# name = Beary
+							# age = 20
+							# culture = northman
+							# trait = tall
+							# trait = not_a_bear
+							# trait = skilled_warrior
+							# trait = intricate_webweaver
+							# trait = brave
+							# female = no
+						# }
+						# new_character = {
+							# ROOT = { impregnate_cuckoo = PREV }
+							# death = yes
+						# }
+					# }
+				# }
+
+				# religion = lion_night
+				# 599 = { 
+					# owner = {
+						# create_character = {
+							# age = 50
+							# dynasty = none
+							# trait = greensight
+							# trait = mystic
+							# trait = elusive_shadow
+							# trait = cotf
+							# religion = beyond_wall_old_gods
+							# culture = children_forest
+							# attributes = {intrigue = 12}
+						# }
+						# new_character = {
+							# ROOT = { impregnate_cuckoo = PREV }
+							# death = yes
+						# }
+					# }
+				# }
+				
+				add_trait = the_mark
+				change_variable = { which = "tyrant" value = 30 } 
+				hidden_tooltip = { character_event = { id = maintenance.1 } }#tyrant trait
+
+				troops = -0.95
+			}
+			2 = {
+				prestige = 250
+				wealth = 500
+				chronicle = {
+					entry = CHRONICLE_SMOKING_SEA_TREASURES
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					trait = dragon_egg
+				}
+				prestige = 250
+				add_trait = dragon_egg
+				chronicle = {
+					entry = CHRONICLE_SMOKING_SEA_DRAGON_EGG
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					trait = valyrian_steel
+				}			
+				prestige = 250
+				add_character_modifier = { name = owns_valyrian_steel_sword  duration = -1 }
+				add_trait = valyrian_steel
+				chronicle = {
+					entry = CHRONICLE_SMOKING_SEA_SWORD
+				}
+			}
+			1 = {
+				modifier = {
+					factor = 0
+					trait = valyrian_armour
+				}
+				prestige = 250
+				add_trait = valyrian_armour
+				# chronicle = {
+					# entry = CHRONICLE_SMOKING_SEA_SWORD
+				# }
+			}
+		}
+	}		
+}
+# #Curse of Harrenhal
+# character_event = {
+	# id = evil.2 MERGED WITH BIRTH.990
+	# desc = "EVTDESCevil.2"
+	# picture = "GFX_valyria_dragon"
+	
+	# is_triggered_only = yes
+		
+	# option = {
+		# name = OK
+	# }		
+# }
+#The Sorrows
+character_event = {
+	id = evil.3
+	desc = "EVTDESCevil.3"
+	picture = "GFX_sorrows"
+
+	ai = no #Not fair on the AI
+		
+	trigger = {
+		location = { 
+			province_id = 413 
+			has_province_flag = ruined_province
+		}
+		in_command = yes
+		NOT = { trait = has_greyscale }
+		NOT = { trait = greyscale_scarred } #immune if had greyscale before
+		NOT = { has_character_flag = immune_typhus }
+	}
+	
+	mean_time_to_happen = {
+		days = 21		
+	}
+		
+	option = {
+		name = "EVTOPTAevil.3"
+		random_list = {
+			70 = {
+			}
+			30 = {
+				add_trait = has_greyscale
+				chronicle = {
+					entry = CHRONICLE_SORROWS_GREYSCALE
+					picture = "GFX_sorrows"
+				}
+			}
+		}
+	}		
+}
+#############################################
+#
+# Evil events
+#
+# Event ID 68000-68999 is reserved
+#
+#############################################
+# Written by Johan Andersson
+# Adjusted by Henrik Fåhraeus
+
+#If in the red  => increase revolt risk in a province.
+province_event = {
+	id = 68000
+	desc = "EVTDESC68000"
+	picture = "GFX_evt_bandits"
+	
+	notification = yes
+	
+	trigger = {
+		NOT = { owner = { wealth = 0 } }
+		is_nomadic = no
+		NOT = { has_province_modifier = ruined_province } 
+		NOT = { has_province_modifier = incompetent_rule } 
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		
+		#lower if really bad demesne efficiency
+		modifier = {
+			factor = 0.9
+			NOT = { owner = { wealth = -50 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { wealth = -100 } }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { owner = { wealth = -200 } }
+		}
+		modifier = {
+			factor = 0.3
+			NOT = { owner = { wealth = -300 } }
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { owner = { wealth = -500 } }
+		}
+
+		#traits affect this
+		modifier = {
+			factor = 1.5
+			owner = { trait = ambitious }
+		}		
+		modifier = {
+			factor = 5.0
+			owner = { trait = just }
+		}		
+		modifier = {
+			factor = 0.5
+			owner = { trait = arbitrary }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { trait = greedy }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { trait = cruel }
+		}		
+		modifier = {
+			factor = 0.1
+			owner = { trait = slothful }
+		}
+		modifier = {
+			factor = 0.2
+			owner = { trait = incapable }
+		}
+		modifier = {
+			factor = 0.1
+			owner = { trait = infirm }
+		}
+
+		#modify by stewardship and intrigue	
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_stewardship = 15 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_stewardship = 10 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_stewardship = 5 } }
+		}	
+		modifier = {
+			factor = 2.0
+			owner = { realm_stewardship = 25 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { realm_stewardship = 20 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { realm_intrigue = 25 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { realm_intrigue = 20 }
+		}
+	}
+	
+	immediate = {
+		add_province_modifier = {
+			name = incompetent_rule
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "EVTOPTA68000"
+	}
+}
+
+province_event = {
+	id = 68001
+	desc = "EVTDESC68001"
+	picture = "GFX_evt_council"
+	
+	notification = yes
+	
+	trigger = {
+		owner = { wealth = 0 }
+		has_province_modifier = incompetent_rule
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			owner = { realm_stewardship = 20 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { realm_intrigue = 20 }
+		}
+	
+		modifier = {
+			factor = 0.75
+			owner = { trait = just }
+		}	
+
+		modifier = {
+			factor = 0.8
+			owner = { 
+				job_castellan = {
+					martial = 8
+					location = { province_id = ROOT }
+				}	
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = { 
+				job_castellan = {
+					martial = 12
+					location = { province_id = ROOT }
+				}	
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = { 
+				job_castellan = {
+					martial = 15
+					location = { province_id = ROOT }
+				}	
+			}
+		}
+		modifier = {
+			factor = 0.75
+			owner = { 
+				job_castellan = {
+					martial = 18
+					location = { province_id = ROOT }
+				}	
+			}
+		}
+	}
+	
+	immediate = {
+		remove_province_modifier = incompetent_rule
+	}
+
+	option = {
+		name = "EVTOPTA88283"
+	}
+}
+
+# Establishment of thieves_guild in a province, if budget in the red
+province_event = {
+	id = 68010
+	desc = "EVTDESC68010"
+	picture = "GFX_evt_bandits"
+	
+	notification = yes
+	
+	trigger = {
+		NOT = { owner = { wealth = 0 } }
+		is_nomadic = no
+		NOT = { has_province_modifier = ruined_province } 
+		NOT = { has_province_modifier = thieves_guild } 
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		
+		#lower if really bad demesne efficiency
+		modifier = {
+			factor = 0.9
+			NOT = { owner = { wealth = -50 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { wealth = -100 } }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { owner = { wealth = -200 } }
+		}
+		modifier = {
+			factor = 0.3
+			NOT = { owner = { wealth = -300 } }
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { owner = { wealth = -500 } }
+		}
+		
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_stewardship = 15 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_stewardship = 10 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_stewardship = 5 } }
+		}
+		
+		modifier = {
+			factor = 1.5
+			owner = { realm_stewardship = 20 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { realm_stewardship = 25 }
+		}
+
+		#traits affect this
+		modifier = {
+			factor = 1.5
+			owner = { trait = ambitious }
+		}		
+		modifier = {
+			factor = 5.0
+			owner = { trait = just }
+		}		
+		modifier = {
+			factor = 0.5
+			owner = { trait = arbitrary }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { trait = greedy }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { trait = cruel }
+		}		
+		modifier = {
+			factor = 0.1
+			owner = { trait = slothful }
+		}
+		modifier = {
+			factor = 0.2
+			owner = { trait = incapable }
+		}
+		modifier = {
+			factor = 0.1
+			owner = { trait = infirm }
+		}
+	}
+	
+	immediate = {
+		add_province_modifier = {
+			name = thieves_guild
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "EVTOPTA68010"
+	}
+}
+
+# Destruction of thieves_guild in a province
+province_event = {
+	id = 68011
+	desc = "EVTDESC68011"
+	
+	picture = "GFX_evt_burning_house"
+	
+	notification = yes
+	
+	trigger = {
+		owner = { wealth = 0 }
+		has_province_modifier = thieves_guild
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			owner = { realm_stewardship = 20 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { realm_intrigue = 20 }
+		}
+	
+		modifier = {
+			factor = 0.75
+			owner = { trait = just }
+		}
+
+		modifier = {
+			factor = 0.8
+			owner = { 
+				job_castellan = {
+					martial = 8
+					location = { province_id = ROOT }
+				}	
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = { 
+				job_castellan = {
+					martial = 12
+					location = { province_id = ROOT }
+				}	
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = { 
+				job_castellan = {
+					martial = 15
+					location = { province_id = ROOT }
+				}	
+			}
+		}
+		modifier = {
+			factor = 0.75
+			owner = { 
+				job_castellan = {
+					martial = 18
+					location = { province_id = ROOT }
+				}	
+			}
+		}	
+	}
+	
+	immediate = {
+		remove_province_modifier = thieves_guild
+	}
+
+	option = {
+		name = "EVTOPTA68011"
+	}
+}
+
+# Establishment of smugglers_ring in a province, if red budget
+province_event = {
+	id = 68020
+	desc = "EVTDESC68020"
+	
+	notification = yes
+	
+	trigger = {
+		NOT = { owner = { wealth = 0 } }
+		is_nomadic = no
+		NOT = { has_province_modifier = ruined_province } 
+		NOT = { has_province_modifier = smugglers_ring }
+	}
+	
+	picture = "GFX_evt_bandits"
+	
+	mean_time_to_happen = {
+		months = 240
+		
+		#lower if really bad demesne efficiency
+		modifier = {
+			factor = 0.9
+			NOT = { owner = { wealth = -50 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { wealth = -100 } }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { owner = { wealth = -200 } }
+		}
+		modifier = {
+			factor = 0.3
+			NOT = { owner = { wealth = -300 } }
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { owner = { wealth = -500 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_diplomacy = 15 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_diplomacy = 10 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_diplomacy = 5 } }
+		}
+		
+		modifier = {
+			factor = 1.5
+			owner = { realm_diplomacy = 20 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { realm_diplomacy = 25 }
+		}
+
+		#traits affect this
+		modifier = {
+			factor = 1.5
+			owner = { trait = ambitious }
+		}		
+		modifier = {
+			factor = 5.0
+			owner = { trait = just }
+		}		
+		modifier = {
+			factor = 0.5
+			owner = { trait = arbitrary }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { trait = greedy }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { trait = cruel }
+		}		
+		modifier = {
+			factor = 0.1
+			owner = { trait = slothful }
+		}
+		modifier = {
+			factor = 0.2
+			owner = { trait = incapable }
+		}
+		modifier = {
+			factor = 0.1
+			owner = { trait = infirm }
+		}
+	}
+	
+	immediate = {
+		add_province_modifier = {
+			name = smugglers_ring
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "EVTOPTA68020"
+	}
+}
+
+# Destruction of smugglers_ring in a province
+province_event = {
+	id = 68021
+	desc = "EVTDESC68021"
+	
+	notification = yes
+	
+	picture = "GFX_evt_burning_house"
+	
+	trigger = {
+		owner = { wealth = 0 }
+		has_province_modifier = smugglers_ring
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			owner = { realm_diplomacy = 20 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { realm_intrigue = 20 }
+		}
+	
+		modifier = {
+			factor = 0.75
+			owner = { trait = just }
+		}	
+
+		modifier = {
+			factor = 0.8
+			owner = { 
+				job_castellan = {
+					martial = 8
+					location = { province_id = ROOT }
+				}	
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = { 
+				job_castellan = {
+					martial = 12
+					location = { province_id = ROOT }
+				}	
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = { 
+				job_castellan = {
+					martial = 15
+					location = { province_id = ROOT }
+				}	
+			}
+		}
+		modifier = {
+			factor = 0.75
+			owner = { 
+				job_castellan = {
+					martial = 18
+					location = { province_id = ROOT }
+				}	
+			}
+		}		
+	}
+	
+	immediate = {
+		remove_province_modifier = smugglers_ring
+	}
+
+	option = {
+		name = "EVTOPTA68021"
+	}
+}
+
+#Establishment of highway_robber_band in a province, if red budget
+province_event = {
+	id = 68030
+	desc = "EVTDESC68030"
+	
+	notification = yes
+	
+	picture = "GFX_evt_bandits"
+	
+	trigger = {
+		NOT = { owner = { wealth = 0 } }
+		is_nomadic = no
+		NOT = { has_province_modifier = ruined_province } 
+		NOT = { has_province_modifier = highway_robber_band } 
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor = 0.9
+			NOT = { owner = { wealth = -50 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { wealth = -100 } }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { owner = { wealth = -200 } }
+		}
+		modifier = {
+			factor = 0.3
+			NOT = { owner = { wealth = -300 } }
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { owner = { wealth = -500 } }
+		}
+		
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_martial = 15 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_martial = 10 } }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { owner = { realm_martial = 5 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { realm_martial = 20 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { realm_martial = 25 }
+		}
+
+		#traits affect this
+		modifier = {
+			factor = 1.5
+			owner = { trait = ambitious }
+		}		
+		modifier = {
+			factor = 5.0
+			owner = { trait = just }
+		}		
+		modifier = {
+			factor = 0.5
+			owner = { trait = arbitrary }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { trait = greedy }
+		}
+		modifier = {
+			factor = 0.7
+			owner = { trait = cruel }
+		}		
+		modifier = {
+			factor = 0.1
+			owner = { trait = slothful }
+		}
+		modifier = {
+			factor = 0.2
+			owner = { trait = incapable }
+		}
+		modifier = {
+			factor = 0.1
+			owner = { trait = infirm }
+		}
+	}
+	
+	immediate = {
+		add_province_modifier = {
+			name = highway_robber_band
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "EVTOPTA68030"
+	}
+}
+
+# Destruction of highway_robber_band in a province
+province_event = {
+	id = 68031
+	desc = "EVTDESC68031"
+	picture = "GFX_evt_burning_house"
+	
+	notification = yes
+	
+	trigger = {
+		owner = { wealth = 0 }
+		has_province_modifier = highway_robber_band
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			owner = { realm_martial = 20 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { realm_intrigue = 20 }
+		}
+	
+		modifier = {
+			factor = 0.75
+			owner = { trait = just }
+		}
+
+		modifier = {
+			factor = 0.8
+			owner = { 
+				job_castellan = {
+					martial = 8
+					location = { province_id = ROOT }
+				}	
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = { 
+				job_castellan = {
+					martial = 12
+					location = { province_id = ROOT }
+				}	
+			}
+		}
+		modifier = {
+			factor = 0.8
+			owner = { 
+				job_castellan = {
+					martial = 15
+					location = { province_id = ROOT }
+				}	
+			}
+		}
+		modifier = {
+			factor = 0.75
+			owner = { 
+				job_castellan = {
+					martial = 18
+					location = { province_id = ROOT }
+				}	
+			}
+		}	
+	}
+	
+	immediate = {
+		remove_province_modifier = highway_robber_band
+	}
+
+	option = {
+		name = "EVTOPTA68031"
+	}
+}

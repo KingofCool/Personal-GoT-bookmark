@@ -1,0 +1,32 @@
+#########################
+### Dragon Nickanmes  ###
+### by blackninja9939 ###
+#########################
+
+###Historical###
+nick_black_dread = {} # Balerion
+nick_blood_wyrm = {} # Caraxes
+nick_red_queen = {} # Meleys
+nick_golden = {} # Sunfyre
+nick_blue_queen = {} # Tessarion
+nick_bronze_fury = {} # Vermithor
+nick_sea_dragon = {} # Nagga
+
+###Random###
+nick_red_dread = {}
+nick_white_dread = {}
+nick_yellow_dread = {}
+nick_blazing_fire = {}
+nick_shining_light = {}
+nick_red_fury = {}
+nick_shining_queen = {}
+nick_destroyer = {}
+nick_black_fire = {}
+nick_red_fire = {}
+nick_white_fire = {}
+nick_yellow_fire = {}
+nick_snake = {}
+nick_blood_fire = {}
+nick_dark_eyes = {}
+nick_dark_fire = {}
+nick_shadow = {}

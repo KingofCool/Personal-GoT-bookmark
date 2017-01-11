@@ -1,0 +1,69 @@
+namespace = NE
+
+# Notification event for invited character
+character_event = {
+	id = NE.1
+	desc = EVTDESC_NE_1
+	picture = GFX_evt_emissary
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_NE_1
+		
+		trigger = {
+			event_target:invited_character = { has_character_flag = invited_soldier }
+			OR = {
+				AND = {
+					tier = COUNT
+					NOT = { has_assigned_minor_title = { title = title_commander count = 2 } }
+				}
+				AND = {
+					tier = DUKE
+					NOT = { has_assigned_minor_title = { title = title_commander count = 4 } }
+				}
+				AND = {
+					tier = KING
+					is_nomadic = no
+					NOT = { has_assigned_minor_title = { title = title_commander count = 6 } }
+				}
+				AND = {
+					tier = EMPEROR
+					is_nomadic = no
+					NOT = { has_assigned_minor_title = { title = title_commander count = 8 } }
+				}
+				AND = {
+					tier = KING
+					is_nomadic = yes
+					NOT = { has_assigned_minor_title = { title = title_commander count = 2 } }
+				}
+				AND = {
+					tier = EMPEROR
+					is_nomadic = yes
+					NOT = { has_assigned_minor_title = { title = title_commander count = 4 } }
+				}
+			}
+		}
+		
+		event_target:invited_character = {
+			give_minor_title = title_commander
+		}
+	}
+	
+	option = {
+		name = EXCELLENT
+		event_target:invited_character = { tooltip = { } }
+	}
+	
+	option = {
+		name = EVTOPTB_NE_1
+		
+		hidden_tooltip = {
+			event_target:invited_character = { 
+				death = {
+					death_reason = death_missing
+				}
+			}
+		}
+	}
+}

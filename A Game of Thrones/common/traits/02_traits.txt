@@ -1,0 +1,136 @@
+eunuch = {
+	sex_appeal_opinion = -20
+	fertility = -50.0
+
+	customizer = no
+	
+	cannot_marry = yes
+	cannot_inherit = yes
+		
+	male_insult = INSULT_EUNUCH
+	male_insult_adj = INSULT_UNMANNED
+	child_insult_adj = INSULT_SILLY
+}
+
+blinded = {
+	sex_appeal_opinion = -10
+	martial = -6
+	stewardship = -2
+	intrigue = -2
+	health = -1
+	
+	customizer = no
+	
+	combat_rating = -9.82
+	
+	blinding = yes
+	
+	male_insult_adj = INSULT_BLIND
+	female_insult_adj = INSULT_BLIND
+}
+
+
+# Hard coded to be given correctly and affect inheritance laws in the ERE
+born_in_the_purple = {
+	customizer = no
+	
+	vassal_opinion = 5
+	monthly_character_prestige = 0.5
+		
+	male_compliment_adj = COMPL_PURPLE_BORN
+	female_compliment_adj = COMPL_PURPLE_BORN
+}
+
+augustus = {
+	customizer = no
+	
+	vassal_opinion = 10
+	monthly_character_prestige = 0.5
+		
+	male_compliment = COMPL_AUGUSTUS
+	female_compliment = COMPL_AUGUSTUS
+}
+
+flat_terrain_leader = {
+	leader = yes
+	random = no
+	
+	command_modifier = {
+		terrain = plains
+		terrain = farmlands
+		terrain = steppe
+	}
+}
+
+rough_terrain_leader = {
+	leader = yes
+	random = no
+	
+	command_modifier = {
+		terrain = forest
+		terrain = hills
+	}
+}
+
+mountain_terrain_leader = {
+	leader = yes
+	random = no
+	
+	command_modifier = {
+		terrain = mountain
+	}
+}
+
+desert_terrain_leader = {
+	leader = yes
+	random = no
+	
+	command_modifier = {
+		terrain = desert
+	}
+	
+	male_insult = INSULT_DESERT_RAT
+	female_insult = INSULT_DESERT_RAT
+}
+
+holy_warrior = {
+	leader = yes
+	
+	command_modifier = {
+		religious_enemy = 0.3
+	}
+		
+	male_compliment = COMPL_HOLY_WARRIOR
+	female_compliment = COMPL_HOLY_WARRIOR
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+}
+
+unyielding_leader = {
+	leader = yes
+	
+	command_modifier = {
+		morale_defence = 0.2
+		defence = 0.1
+	}
+}
+
+has_aztec_disease = {
+	is_epidemic = yes
+	is_illness = yes
+	
+	sex_appeal_opinion = -30
+	
+	diplomacy_penalty = -1
+	stewardship_penalty = -1
+	martial_penalty = -1
+	intrigue_penalty = -1
+	learning_penalty = -1
+	
+	health_penalty = -3
+	fertility_penalty = -0.2
+	
+	combat_rating = -3.17
+	
+	customizer = no
+}

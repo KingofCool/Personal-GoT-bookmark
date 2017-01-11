@@ -1,0 +1,595 @@
+#################################################
+#
+# CULTURAL CONVERSION EVENTS
+#
+#################################################
+# Province culture changes
+province_event = {
+	id = 55000
+	desc = "EVTDESC55000"
+	picture = GFX_evt_culture_change
+	
+	trigger = {
+		NOT = {
+			has_game_rule = {
+				name = culture_conversion
+				value = off
+			}
+		}
+		owner = {
+			top_liege = {
+				culture = PREV
+			}
+			NOT = { culture = ROOT }
+			OR = {
+				NOT = { culture = high_valyrian } 
+				has_game_rule = { name = high_valyrian_cull value = off }
+			}
+			religion = ROOT
+			NOT = { culture_group = winter_group }
+			NOT = { culture_group = unoccupied_group }
+			NOT = { culture_group = old_races }
+		}
+		any_neighbor_province = {
+			has_owner = yes
+			ROOT = {
+				owner = {
+					culture = PREVPREV
+				}
+			}
+			owner = {
+				ROOT = {
+					owner = {
+						culture = PREVPREV
+					}
+				}
+			}
+			NOR = {
+				has_province_modifier = depopulated_1
+				has_province_modifier = depopulated_2
+				has_province_modifier = depopulated_3
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 2 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 3 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 4 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 5 } }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 9 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 11 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 13 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 15 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				OR = {
+					primary_title = {
+						conquest_culture = PREV
+					}
+					ROOT = {
+						county = {
+							conquest_culture = PREVPREV
+						}
+					}
+					ROOT = {
+						duchy = {
+							holder_scope = {
+								character = PREVPREVPREV
+							}
+							conquest_culture = PREVPREV
+						}
+					}
+					ROOT = {
+						kingdom = {
+							holder_scope = {
+								character = PREVPREVPREV
+							}
+							conquest_culture = PREVPREV
+						}
+					}
+					ROOT = {
+						empire = {
+							holder_scope = {
+								character = PREVPREVPREV
+							}
+							conquest_culture = PREVPREV
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			has_province_flag = recent_depopulation_1
+		}
+		modifier = {
+			factor = 0.5
+			has_province_flag = recent_depopulation_2
+		}
+		modifier = {
+			factor = 0.25
+			has_province_flag = recent_depopulation_3
+		}
+		modifier = {
+			factor = 6
+			has_game_rule = {
+				name = culture_conversion
+				value = rare
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA55000"
+		owner = {
+			ROOT = {
+				culture = PREV
+				if = {
+					limit = {
+						has_province_modifier = nomad_agitation
+					}
+					remove_province_modifier = nomad_agitation
+				}
+			}
+		}
+	}
+}
+
+# Bring in some settlers
+province_event = {
+	id = 55001
+	desc = "EVTDESC55001"
+	picture = GFX_evt_culture_change
+	
+	trigger = {
+		NOT = {
+			has_game_rule = {
+				name = culture_conversion
+				value = off
+			}
+		}
+		OR = {
+			port = yes
+			NOT = {
+				has_game_rule = {
+					name = culture_conversion
+					value = rare
+				}
+			}
+		}
+		
+		owner = {
+			top_liege = {
+				culture = PREV
+			}
+			NOT = { culture = ROOT }
+			OR = {
+				NOT = { culture = high_valyrian } 
+				has_game_rule = { name = high_valyrian_cull value = off }
+			}
+			capital_scope = {
+				province_id = ROOT
+			}
+			NOT = { culture_group = winter_group }
+			NOT = { culture_group = unoccupied_group }
+			NOT = { culture_group = old_races }
+			OR = {
+				primary_title = {
+					conquest_culture = PREV
+				}
+				ROOT = {
+					county = {
+						conquest_culture = PREVPREV
+					}
+				}
+				ROOT = {
+					duchy = {
+						holder_scope = {
+							character = PREVPREVPREV
+						}
+						conquest_culture = PREVPREV
+					}
+				}
+				ROOT = {
+					kingdom = {
+						holder_scope = {
+							character = PREVPREVPREV
+						}
+						conquest_culture = PREVPREV
+					}
+				}
+				ROOT = {
+					empire = {
+						holder_scope = {
+							character = PREVPREVPREV
+						}
+						conquest_culture = PREVPREV
+					}
+				}
+			}
+		}
+		
+		NOT = { # Exclude provinces covered by event 55000
+			any_neighbor_province = {
+				has_owner = yes
+				ROOT = {
+					owner = {
+						culture = PREVPREV
+					}
+				}
+				owner = {
+					ROOT = {
+						owner = {
+							culture = PREVPREV
+						}
+					}
+				}
+				NOR = {
+					has_province_modifier = depopulated_1
+					has_province_modifier = depopulated_2
+					has_province_modifier = depopulated_3
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1200
+		
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 2 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 3 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 4 } }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { NOT = { stewardship = 5 } }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 9 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 11 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 13 }
+		}
+		modifier = {
+			factor = 0.75
+			owner = { stewardship = 15 }
+		}
+		modifier = {
+			factor = 0.75
+			has_province_flag = recent_depopulation_1
+		}
+		modifier = {
+			factor = 0.5
+			has_province_flag = recent_depopulation_2
+		}
+		modifier = {
+			factor = 0.25
+			has_province_flag = recent_depopulation_3
+		}
+		modifier = {
+			factor = 6
+			has_game_rule = {
+				name = culture_conversion
+				value = rare
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA55001"
+		owner = {
+			ROOT = {
+				culture = PREV
+				if = {
+					limit = {
+						NOT = { religion = PREV }
+					}
+					religion = PREV
+				}
+				if = {
+					limit = {
+						has_province_modifier = nomad_agitation
+					}
+					remove_province_modifier = nomad_agitation
+				}
+			}
+		}
+	}
+}
+
+
+# A ruler is assimilated by the local culture
+character_event = {
+	id = 55010
+	desc = "EVTDESC55010"
+	picture = GFX_evt_stone_church
+	
+	only_rulers = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { culture = high_valyrian }
+				NOT = { culture = western_valyrian }
+				NOT = { culture = eastern_valyrian }
+			}	
+			has_game_rule = { name = high_valyrian_cull value = off }
+		}	
+		NOT = { government = nomadic_government }
+		primary_title = { 
+			NOT = { conquest_culture = ROOT } 
+			NOT = { culture = ROOT }
+			any_previous_holder = { # The first holder in the dynasty of a title does not convert
+				NOT = { character = ROOT } 
+				dynasty = ROOT
+			}
+		}
+		capital_scope = {
+			NOT = { culture = ROOT }
+			OR = { #Half Southrons do not convert to Northmen
+				NOT = { culture = northman }
+				ROOT = { NOT = { culture = half_southron } }
+			}
+			OR = {
+				AND = {
+					NOT = { culture = high_valyrian }
+					NOT = { culture = western_valyrian }
+					NOT = { culture = eastern_valyrian }
+				}	
+				has_game_rule = { name = high_valyrian_cull value = off }
+			}
+			NOT = { culture_group = unoccupied_group }
+			NOT = { culture_group = winter_group }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			top_liege = {
+				NOT = { character = ROOT }
+				ROOT = { 
+					capital_scope = {
+						culture = PREVPREV
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			primary_title = {
+				ROOT = {
+					capital_scope = {
+						culture = PREVPREV
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			capital_scope = { #Want to keep these identies seperate somewhat
+				culture_group = ROOT
+				culture_group = free_cities 
+			}
+		}
+		modifier = {
+			factor = 0.25
+			capital_scope = {
+				culture_group = ROOT 
+			}
+		}
+		modifier = {
+			factor = 2
+			capital_scope = {
+				NOT = { religion = ROOT }
+			}
+		}
+		modifier = {
+			factor = 0.7
+			capital_scope = {
+				ROOT = {
+					any_courtier = {
+						culture = PREVPREV
+						is_close_relative = ROOT
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.7
+			capital_scope = {
+				ROOT = {
+					any_spouse = {
+						culture = PREVPREV
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.7
+			capital_scope = {
+				ROOT = {
+					father_even_if_dead = {
+						culture = PREVPREV
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTA55010"
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 5
+				NOT = { culture_group = free_cities }
+				capital_scope = {
+					culture_group = ROOT 
+				}
+			}
+			modifier = {
+				factor = 2
+				trait = humble
+			}
+			modifier = {
+				factor = 2
+				trait = patient
+			}
+			modifier = {
+				factor = 2
+				trait = ruthless
+			}
+			modifier = {
+				factor = 2
+				trait = deceitful
+			}
+			modifier = {
+				factor = 2
+				trait = fashionable
+			}
+		}
+		# Piss off the appropriate vassals
+		if = {
+			limit = { capital_scope = { NOT = { culture_group = ROOT } } }
+			any_vassal = {
+				limit = {
+					culture_group = ROOT
+					age = 16
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_adopted_foreign_ways
+					years = 10
+				}
+				hidden_tooltip = { character_event = { id = 55011 } }
+			}
+			any_courtier = {
+				limit = {
+					is_ruler = no
+					culture_group = ROOT
+					age = 16
+					NOT = { trait = slave }
+					NOT = { trait = dragon }
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_adopted_foreign_ways
+					years = 10
+				}
+			}
+		}	
+		
+		capital_scope = {
+			if = {
+				limit = {
+					OR = {
+						NOT = { culture = northman }
+						NOT = { ROOT = { culture_group = andal } }
+					}	
+				}
+				reverse_culture = ROOT
+			}	
+			if = {
+				limit = { #Andals can turn into half southrons
+					culture = northman
+					ROOT = { culture_group = andal }
+				}
+				ROOT = { culture = half_southron }
+			}			
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB55010"
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 2
+				trait = honorable
+			}
+			modifier = {
+				factor = 2
+				trait = honest
+			}
+			modifier = {
+				factor = 2
+				trait = stubborn
+			}
+		}
+	}
+}
+
+
+character_event = {
+	id = 55011
+	desc = "EVTDESC55011"
+	picture = GFX_evt_scandal
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA55011"
+		tooltip = {
+			opinion = {
+				who = FROM
+				modifier = opinion_adopted_foreign_ways
+				years = 10
+			}
+		}
+	}
+}

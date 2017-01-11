@@ -1,0 +1,392 @@
+decisions = {
+	
+	convert_to_liege_religion = {
+		only_playable = yes
+		potential = {
+			ai = no
+			is_playable = yes
+			liege = {
+				NOT = { character = ROOT }
+				NOT = { religion = ROOT }
+				religion_group = ROOT
+			}
+			OR = {
+				liege = {
+					NOT = {
+						OR = {
+							religion_group = westerosi_religion
+							religion_group = drowned_god_group
+						}
+					}
+				}
+				NOT = {
+					OR = {
+						religion_group = westerosi_religion
+						religion_group = drowned_god_group
+					}
+				}
+			}
+			controls_religion = no
+			holy_order = no
+		}
+		allow = {
+			NOT = { trait = incapable }
+			age = 16
+			NOT = { trait = zealous }
+			prestige = 400
+		}
+		effect = {
+			if = {
+				limit = {
+					liege = {
+						NOT = { religion_group = ROOT }
+					}
+				}
+				prestige = -400
+				piety = 250
+			}
+			religion_authority = {
+				modifier = ruler_converted_from
+			}
+			any_vassal = {
+				limit = {
+					religion = ROOT
+					age = 16
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_adopted_foreign_ways
+					years = 10
+				}
+			}
+			hidden_tooltip = {
+				any_courtier = {
+					limit = {
+						is_ruler = no
+						religion = ROOT
+						age = 16
+						NOT = { trait = slave }
+						NOT = { trait = dragon }
+					}
+					opinion = {
+						who = ROOT
+						modifier = opinion_adopted_foreign_ways
+						years = 10
+					}
+				}	
+			}	
+			liege = {
+				reverse_religion = ROOT
+			}
+			hidden_tooltip = {			
+				religion_authority = {
+					modifier = ruler_converted_to
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	convert_to_liege_culture = {
+		only_playable = yes
+		potential = {
+			ai = no
+			is_playable = yes
+			liege = {
+				NOT = { character = ROOT }
+				NOT = { culture = ROOT }
+				OR = { #Half Southrons do not convert to Northmen
+					NOT = { culture = northman }
+					ROOT = { NOT = { culture = half_southron } }
+				}
+				NOT = { culture = high_valyrian }
+				NOT = { culture = western_valyrian }
+				NOT = { culture = eastern_valyrian }
+			}
+			NOT = { culture = high_valyrian }
+			NOT = { culture = western_valyrian }
+			NOT = { culture = eastern_valyrian }
+		}
+		allow = {
+			NOT = { trait = incapable }
+			age = 16
+			prestige = 200
+		}
+		effect = {
+			if = {
+				limit = { liege = { NOT = { culture_group = ROOT } } }
+				prestige = -200
+				any_vassal = {
+					limit = {
+						culture_group = ROOT
+						age = 16
+					}
+					opinion = {
+						who = ROOT
+						modifier = opinion_adopted_foreign_ways
+						years = 10
+					}
+					hidden_tooltip = { character_event = { id = 55011 } }
+				}
+				hidden_tooltip = {
+					any_courtier = {
+						limit = {
+							is_ruler = no
+							culture_group = ROOT
+							age = 16
+							NOT = { trait = slave }
+							NOT = { trait = dragon }
+						}
+						opinion = {
+							who = ROOT
+							modifier = opinion_adopted_foreign_ways
+							years = 10
+						}
+					}
+				}	
+			}
+			liege = {
+				if = {
+					limit = {
+						OR = {
+							NOT = { culture = northman }
+							NOT = { ROOT = { culture_group = andal } }
+						}	
+					}
+					ROOT = { culture = PREV }
+				}	
+				if = {
+					limit = { #Andals can turn into half southrons
+						culture = northman
+						ROOT = { culture_group = andal }
+					}
+					ROOT = { culture = half_southron }
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	convert_to_local_culture = {
+		only_playable = yes
+		potential = {
+			ai = no
+			is_playable = yes
+			is_nomadic = no
+			demesne_size = 1
+			NOT = { culture = high_valyrian }
+			NOT = { culture = western_valyrian }
+			NOT = { culture = eastern_valyrian }
+			capital_scope = {
+				NOT = { culture = ROOT }
+				OR = { #Half Southrons do not convert to Northmen
+					NOT = { culture = northman }
+					ROOT = { NOT = { culture = half_southron } }
+				}
+				NOT = { culture = high_valyrian }
+				NOT = { culture = western_valyrian }
+				NOT = { culture = eastern_valyrian }
+			}			
+			holy_order = no
+			#has_dlc = "Rajas of India"
+		}
+		allow = {					
+			OR = {
+				custom_tooltip = {
+					text = TOOLTIPINDEPENDENTCONDITION
+					hidden_tooltip = {
+						independent = yes
+						OR = {
+							tier = EMPEROR
+							primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+						}	
+					}
+				}
+				liege = { NOT = { culture_group = ROOT } }
+				capital_scope = { culture_group = ROOT }
+			}
+			prestige = 200
+			NOT = { trait = incapable }
+			age = 16
+		}
+		effect = {		
+			if = {
+				limit = { capital_scope = { NOT = { culture_group = ROOT } } }
+				prestige = -200
+				any_vassal = {
+					limit = {
+						culture_group = ROOT
+						age = 16
+					}
+					opinion = {
+						who = ROOT
+						modifier = opinion_adopted_foreign_ways
+						years = 10
+					}
+					hidden_tooltip = { character_event = { id = 55011 } }
+				}
+				hidden_tooltip = {
+					any_courtier = {
+						limit = {
+							is_ruler = no
+							culture_group = ROOT
+							age = 16
+							NOT = { trait = slave }
+							NOT = { trait = dragon }
+						}
+						opinion = {
+							who = ROOT
+							modifier = opinion_adopted_foreign_ways
+							years = 10
+						}
+					}
+				}	
+			}
+			capital_scope = {
+				if = {
+					limit = {
+						OR = {
+							NOT = { culture = northman }
+							NOT = { ROOT = { culture_group = andal } }
+						}	
+					}
+					ROOT = { culture = PREV }
+				}	
+				if = {
+					limit = { #Andals can turn into half southrons
+						culture = northman
+						ROOT = { culture_group = andal }
+					}
+					ROOT = { culture = half_southron }
+				}			
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	convert_to_local_religion = {
+		only_playable = yes
+		potential = {
+			ai = no
+			is_playable = yes
+			is_nomadic = no
+			demesne_size = 1
+			capital_scope = {
+				NOT = { religion = ROOT }
+				OR = {
+					ROOT = { trait = nightswatch }
+					ROOT = {
+						NOT = {
+							OR = {
+								religion_group = westerosi_religion
+								religion_group = drowned_god_group
+							}
+						}
+					}
+					NOT = {
+						OR = {
+							religion_group = westerosi_religion
+							religion_group = drowned_god_group
+						}
+					}
+				}
+			}
+			
+				
+			controls_religion = no
+			holy_order = no
+			
+			#has_dlc = "Rajas of India"
+		}
+		allow = {		
+			NOT = { trait = zealous }
+			OR = {
+				custom_tooltip = {
+					text = TOOLTIPINDEPENDENTCONDITION
+					hidden_tooltip = {
+						independent = yes
+						OR = {
+							tier = EMPEROR
+							primary_title = { NOT = { check_variable = { which = "de_facto_empire" value = 1 } } }
+						}	
+					}
+				}
+				liege = {
+					NOT = { religion = ROOT }
+				}
+			}
+			prestige = 400
+			NOT = { trait = incapable }
+			age = 16
+		}
+		effect = {
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = { religion_group = ROOT }
+					}
+				}
+				prestige = -400
+				piety = 250
+			}
+			religion_authority = {
+				modifier = ruler_converted_from
+			}
+			any_vassal = {
+				limit = {
+					religion = ROOT
+					age = 16
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_adopted_foreign_ways
+					years = 10
+				}
+			}
+			hidden_tooltip = {
+				any_courtier = {
+					limit = {
+						is_ruler = no
+						religion = ROOT
+						age = 16
+						NOT = { trait = slave }
+						NOT = { trait = dragon }
+					}
+					opinion = {
+						who = ROOT
+						modifier = opinion_adopted_foreign_ways
+						years = 10
+					}
+				}	
+			}	
+			add_sympathy_trait_effect = yes
+			capital_scope = {
+				ROOT = { religion = PREV }
+			}
+			hidden_tooltip = {			
+				religion_authority = {
+					modifier = ruler_converted_to
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}

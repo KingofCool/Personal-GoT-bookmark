@@ -1,0 +1,71 @@
+iron_isles_culture = {
+	graphical_cultures = { westerngfx } # portraits
+	
+	ironborn = {
+		graphical_cultures = { ironborngfx } # portraits
+		
+		color = { 0.25 0.25 0.25 }
+		
+		male_names = {
+			Adrack Aeron Aggar Aladale Alvyn Alyn Ambrode Andrik Alton
+			Baelor Balon Bennarion Beron Boremund Burton
+			Cadwyl Cotter Cragorn Cromm Craghorn
+			Daegon Dagmer Dagon Dale Denys Donel Donnor Drennan Dunstan Dykk Dalton
+			Eerl Eldiss Eldred Emmond Endehar Erik Euron Erich
+			Fralegg Fergon
+			Gelmarr Germund Gevin Gormond Gorold Gran Greydon Gylbert Gyles Gynir Goren
+			Hagen Harl Harlon Harmund Harrag Harras Harren Harwyn Hilmar Hotho Harrock Horgan Hagon Harlan Harron Harrald Hake
+			Jon Joseran Joron
+			Kemmett Kenned Kromm
+			Lenwood Lorren Lucas Lucimore Loron Lodos
+			Manfryd Maron Meldred
+			Norjen Norne Nute
+			Othgar
+			Pate
+			Qalen Qarl Qhored Quellon Quenton Qhorwyn Qhorin
+			Ragnor Ralf Robin Rodrik Roggon Rolfe Romny Rook Roryn Rus Rymolf Rognar Ravos Regnar
+			Sargon Sawane Sigfry Sigfryd Sigrin Skyte Steffar Steffarion Stygg Sylas Symond
+			Tarle Theomore Theon Thormor Todric Tom Torgon Torwold Tristifer Triston Tymor Torwyn
+			Ulf Uller Urek Urragon Urras Urrigon Urron Urzen Urrathon
+			Vickon Victarion Veron
+			Waldon Werlag Wex Will Wulfe Wulfgar
+			Ygon Yohn
+		}
+		female_names = {
+			Alannys Asha Arwyn
+			Barbrey Beony Brella
+		Dorna
+			Esgred
+			Falia Falyse Ferny Frenya Frynne
+			Gretchel Grisel Grisella Gwin Gwynesse Gwyneth Gysella
+			Harma Harra Helya
+			Jeyne Jonella Jonnela Jorelle
+			Malora Margot Megga Meredyth Mhaegan Mhaegen Moelle Morna Munda Myrielle
+			Ravella Rhonda Roelle Ryella
+			Selyse Shierle
+			Talla
+			Unella
+			Victaria
+			Wynafrei Wynafryd
+			Yara Ynys Ysilla
+			Zia
+		}
+		
+		from_dynasty_prefix = "of "
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 25
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 5
+		mat_grm_name_chance = 20
+		mother_name_chance = 0
+		
+		allow_looting = yes
+		seafarer = yes
+		
+		modifier = default_culture_modifier
+	}
+}

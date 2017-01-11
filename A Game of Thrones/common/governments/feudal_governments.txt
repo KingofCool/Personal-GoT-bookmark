@@ -1,0 +1,489 @@
+feudal_governments = {
+
+	feudal_government = {
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CASTLE 
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			#TRIBAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			NW_government
+			military_command_government
+			feudal_government_LP
+			#muslim_government
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			#tribal_government
+		}
+		potential = {
+			OR = {
+				controls_religion = no
+				has_landed_title = c_thenn_rel
+			}	
+			is_patrician = no
+			NOR = { # Conditions for other governments
+				trait = nightswatch
+				trait = kingsguard
+				culture = ruin
+				culture_group = winter_group
+				religion = pirate
+				religion = corsair
+				culture_group = free_folk
+				culture = thenn
+				culture = skagosi
+				culture = moon_clansman
+				is_government_potential = alliance_government
+				is_government_potential = military_command_government
+				is_government_potential = feudal_government_LP
+			}
+		}
+		
+		color = { 91 133 207 }
+		
+		#dukes_called_kings = yes
+		barons_need_dynasty = yes
+
+		can_build_tribal = no
+		
+		ignore_in_vassal_limit_calculation = {
+			#tribal_government
+			KG_government
+		}
+	}
+	
+	NW_government = {
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CASTLE 
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			#TRIBAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			feudal_government
+			feudal_government_LP
+			#muslim_government
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			#tribal_government
+		}
+		potential = {
+			controls_religion = no
+			is_patrician = no
+			trait = nightswatch
+		}
+		
+		color = { 20 20 20 }
+		
+		have_gender_laws = no
+		barons_need_dynasty = no
+		title_prefix = "NW_"
+		frame_suffix = "_NW"
+
+		can_build_city = no
+		can_build_temple = no
+		can_build_tribal = no
+		free_levies_in_offensive_war = yes
+		
+		ignore_in_vassal_limit_calculation = {
+			#tribal_government
+		}
+	}
+	
+	KG_government = {
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CASTLE 
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			#TRIBAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			feudal_government
+			feudal_government_LP
+			merchant_republic_government
+			triarch_merchant_republic_government
+			#muslim_government
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			#tribal_government
+		}
+		potential = {
+			controls_religion = no
+			is_patrician = no
+			trait = kingsguard
+		}
+		
+		color = { 255 255 255 }
+		
+		have_gender_laws = no
+		barons_need_dynasty = no
+		title_prefix = "KG_"
+		frame_suffix = "_KG"
+
+		can_build_city = no
+		can_build_temple = no
+		can_build_tribal = no
+		can_create_kingdoms = no
+		can_imprison_without_reason = no
+		can_be_granted_kingdoms_and_empires_by_other_government = no
+		
+		ignore_in_vassal_limit_calculation = {
+			#tribal_government
+		}
+	}
+	
+	ruin_government = {
+		preferred_holdings = { 
+			CASTLE
+			CITY
+			TEMPLE
+			TRIBAL			
+		}
+		allowed_holdings = { 
+			CASTLE 
+			CITY
+			TEMPLE
+			TRIBAL
+		}
+		potential = {
+			culture = ruin
+		}
+		
+		color = { 120 120 120 }
+		barons_need_dynasty = no
+		have_gender_laws = no
+		
+		frame_suffix = "_tribal" #Brown
+
+		can_build_castle = no
+		can_build_tribal = no
+		can_build_city = no
+		can_build_temple = no
+		can_build_forts = no
+		can_imprison_without_reason = no
+		can_revoke_without_reason = no
+		can_create_kingdoms = no
+		can_be_granted_kingdoms_and_empires_by_other_government = no
+		
+		ignore_in_vassal_limit_calculation = {
+			ruin_government
+		}
+	}
+	
+	winter_government = {
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CASTLE 
+		}
+		potential = {
+			controls_religion = no
+			is_patrician = no
+			culture_group = winter_group
+		}
+		
+		color = { 128 255 255 }
+		
+		barons_need_dynasty = no
+		have_gender_laws = no
+		
+		frame_suffix = "_winter"
+
+		can_build_castle = no
+		can_build_tribal = no
+		can_build_city = no
+		can_build_temple = no
+		can_build_forts = no
+		free_levies_in_offensive_war = yes
+		
+		ignore_in_vassal_limit_calculation = {
+			winter_government
+		}
+	}
+	
+	pirate_government = {
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CASTLE 
+			FORT
+			CITY
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			#TRIBAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			feudal_government
+			feudal_government_LP
+			merchant_republic_government
+			republic_government
+			triarch_merchant_republic_government
+			military_command_government
+			#muslim_government
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			#tribal_government
+		}
+		potential = {
+			OR = {
+				controls_religion = no
+				has_landed_title = c_thenn_rel
+			}
+			is_patrician = no	
+			OR = {
+				religion = pirate
+				religion = corsair
+			}
+		}
+		
+		color = { 57 174 119 }
+		
+		frame_suffix = "_iqta" #Green
+		title_prefix = "pirate_"
+		
+		allow_looting = yes
+		# allow_rivermovement = yes
+		# defensive_attrition = yes
+		# peace_prestige_loss = yes
+		# raised_vassal_opinion_loss = no
+		# independence_war_score_bonus = 30
+		# aggression = 4.0
+		
+		max_consorts = 20
+		
+		have_gender_laws = no
+		barons_need_dynasty = yes
+		free_levies_in_offensive_war = yes
+		
+		can_build_tribal = no
+		
+		ignore_in_vassal_limit_calculation = {
+			#tribal_government
+		}
+	}
+	
+	alliance_government = {
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CITY
+			CASTLE 
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			#TRIBAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+		}
+		potential = {
+			OR = {
+				controls_religion = no
+				has_landed_title = c_thenn_rel
+			}
+			is_patrician = no
+			tier = EMPEROR
+			OR = {
+				AND = {
+					has_landed_title = e_three_daughters
+					has_game_started = no
+				}
+				any_demesne_title = {
+					tier = EMPEROR
+					has_title_flag = alliance_government
+				}
+			}	
+		}
+		
+		color = { 207 77 215 }
+		
+		title_prefix = "alliance_"
+		frame_suffix = "_republic"
+		
+		#dukes_called_kings = yes
+		barons_need_dynasty = yes
+
+		can_build_tribal = no
+		can_imprison_without_reason = no
+		can_revoke_without_reason = no
+		can_create_kingdoms = no
+		
+		ignore_in_vassal_limit_calculation = {
+			#tribal_government
+		}
+	}
+	
+	military_command_government = {
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CASTLE 
+			FORT
+			CITY
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			#TRIBAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			feudal_government
+			feudal_government_LP
+			#muslim_government
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			#tribal_government
+		}
+		potential = {
+			OR = {
+				controls_religion = no
+				has_landed_title = c_thenn_rel
+			}
+			is_patrician = no
+			NOT = { trait = nightswatch }
+			primary_title = {
+				has_title_flag = military_command
+				OR = {
+					holder_scope = { independent = no }
+					check_variable = { which = "de_facto_empire" value = 1 }		
+				}
+			}
+		}
+		
+		color = { 101 79 109 }
+		
+		have_gender_laws = no
+		barons_need_dynasty = no
+		title_prefix = "command_"
+		frame_suffix = "_NW"
+
+		can_build_temple = no
+		can_build_tribal = no
+		
+		ignore_in_vassal_limit_calculation = {
+			#tribal_government
+		}
+	}
+	
+	feudal_government_LP = {
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CASTLE 
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			#TRIBAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			NW_government
+			military_command_government
+			feudal_government
+			#muslim_government
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			#tribal_government
+		}
+		potential = {
+			OR = {
+				controls_religion = no
+				has_landed_title = c_thenn_rel
+			}
+			is_patrician = no
+			NOT = { trait = nightswatch }
+			OR = {
+				primary_title = {
+					higher_tier_than = DUKE
+					check_variable = { which = "lord_paramount_status" value = 0.9 } #1 = lord paramount, 2 = interregnum
+				}
+				AND = {
+					has_game_started = no
+					primary_title = {
+						OR = {
+							title = k_north
+							title = k_riverlands
+							title = k_vale
+							title = k_westerlands
+							title = k_reach
+							title = k_stormlands
+							AND = {
+								title = k_dorne
+								ROOT = { NOT = { dynasty = 1 } }
+							}	
+							title = k_iron_isles
+							title = k_crownlands
+						}
+					}
+				}
+			}	
+		}
+		
+		color = { 91 133 207 }
+		
+		title_prefix = "LP_"
+		#dukes_called_kings = yes
+		barons_need_dynasty = yes
+
+		can_build_tribal = no
+		
+		ignore_in_vassal_limit_calculation = {
+			#tribal_government
+			KG_government
+		}
+	}
+
+	wildling_feudal_government = {
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CASTLE 
+			FORT
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			#TRIBAL
+		}
+		accepts_liege_governments_culture = { # Tribals have no opinion penalty towards their liege if of the same culture
+			feudal_government
+			feudal_government_LP
+			alliance_government
+			republic_government
+			merchant_republic_government
+			triarch_merchant_republic_government
+			theocracy_government
+			#muslim_government
+		}
+		builds_with_prestige = {
+			CASTLE
+		}
+		frame_suffix = "_tribal"
+		#title_prefix = "tribal_"
+		potential = {
+			OR = {
+				controls_religion = no
+				has_landed_title = c_thenn_rel
+			}
+			is_patrician = no
+			OR = {
+				culture_group = free_folk
+				culture = thenn
+				culture = skagosi
+				culture = moon_clansman
+			}
+		}
+		
+		color = { 92 31 23 }
+		
+		allow_looting = yes
+		can_build_castle = yes
+		can_build_city = no
+		can_build_temple = yes
+		can_build_tribal = no
+		can_build_hospitals = no
+	}
+}

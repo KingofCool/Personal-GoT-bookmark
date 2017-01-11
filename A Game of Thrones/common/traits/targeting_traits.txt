@@ -1,0 +1,39 @@
+hunting_accident = { # Marks a character for cause-of-death purposes
+	is_illness = yes
+	health = -1
+	customizer = no
+	hidden = yes
+}
+
+assign_mission_target = {
+	cached = yes
+	customizer = no
+	hidden = yes
+}
+
+kingsguard_protection_target = {
+	cached = yes
+	customizer = no
+	hidden = yes
+}
+#Mega Wars
+rebel_leader = {
+	potential = {
+		is_ruler = yes
+	}
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
+	customizer = no
+}
+#temp dead character target
+dead_target = {
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
+	customizer = no
+	hidden = yes
+}
+#kingsmoot target
+kingsmoot = {
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
+	customizer = no
+	immortal = yes
+	hidden = yes
+}

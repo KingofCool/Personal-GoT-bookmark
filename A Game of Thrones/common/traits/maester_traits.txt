@@ -1,0 +1,143 @@
+maester = {	
+	diplomacy = 1
+	intrigue = 1
+	stewardship = 1
+	learning = 4
+	#fertility = -10.0
+	ai_rationality = 10
+	ai_ambition = -10
+	liege_opinion = 20
+	customizer = no
+	cannot_marry = yes
+	cannot_inherit = yes
+	can_hold_titles = no
+	
+	male_compliment = COMPL_SCHOLAR
+	female_compliment = COMPL_SCHOLAR
+	child_compliment = COMPL_SMARTY
+	male_compliment_adj = COMPL_LEARNED
+	female_compliment_adj = COMPL_LEARNED
+	child_compliment_adj = COMPL_CLEVER
+	male_insult = INSULT_BOOKWORM
+	female_insult = INSULT_BOOKWORM
+	child_insult = INSULT_BORE
+	male_insult_adj = INSULT_SQUINTEYED
+	female_insult_adj = INSULT_SQUINTEYED	
+}
+archmaester = {	
+	diplomacy = 2
+	intrigue = 2
+	stewardship = 2
+	learning = 5
+	#fertility = -10.0
+	ai_rationality = 10
+	ai_ambition = -10
+	liege_opinion = 20
+	customizer = no
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+	cannot_marry = yes
+	cannot_inherit = yes
+
+	male_compliment = COMPL_SCHOLAR
+	female_compliment = COMPL_SCHOLAR
+	child_compliment = COMPL_SMARTY
+	male_compliment_adj = COMPL_LEARNED
+	female_compliment_adj = COMPL_LEARNED
+	child_compliment_adj = COMPL_CLEVER
+	male_insult = INSULT_BOOKWORM
+	female_insult = INSULT_BOOKWORM
+	child_insult = INSULT_BORE
+	male_insult_adj = INSULT_SQUINTEYED
+	female_insult_adj = INSULT_SQUINTEYED	
+}
+
+# proper replacements below these
+detached_priest = { #17
+	attribute = learning
+	education = yes
+	martial = -2	
+	learning = 1
+	
+	male_insult_adj = INSULT_DRIVELING
+	female_insult_adj = INSULT_DRIVELING
+	child_insult_adj = INSULT_STUPID
+}
+martial_cleric = { #18
+	attribute = learning
+	education = yes
+	martial = -2	
+	learning = 3
+	stewardship = 1
+	monthly_character_prestige = 0.2
+	global_tax_modifier = 0.05
+	
+	male_insult_adj = INSULT_DRIVELING
+	female_insult_adj = INSULT_DRIVELING
+	child_insult_adj = INSULT_STUPID
+}
+scholarly_theologian = { #19
+	attribute = learning
+	education = yes
+	martial = -2	
+	learning = 6
+	stewardship = 2
+	monthly_character_prestige = 0.5
+	global_tax_modifier = 0.1
+
+	male_compliment_adj = COMPL_LEARNED
+	female_compliment_adj = COMPL_LEARNED
+	child_compliment_adj = COMPL_CLEVER
+	male_insult_adj = INSULT_DRIVELING
+	female_insult_adj = INSULT_DRIVELING
+	child_insult_adj = INSULT_STUPID
+}
+mastermind_theologian = { #20
+	attribute = learning
+	education = yes
+	martial = -2	
+	learning = 9
+	stewardship = 3	
+	monthly_character_prestige = 1
+	global_tax_modifier = 0.15
+	
+	male_compliment_adj = COMPL_LEARNED
+	female_compliment_adj = COMPL_LEARNED
+	child_compliment_adj = COMPL_CLEVER
+	male_insult_adj = INSULT_DRIVELING
+	female_insult_adj = INSULT_DRIVELING
+	child_insult_adj = INSULT_STUPID
+}
+
+# incompetent_scientist = {
+	# #education = yes
+
+	# martial = -2	
+	# learning = 1
+# }
+# dutiful_academic = {
+	# #education = yes
+	
+	# martial = -2	
+	# learning = 3
+	# stewardship = 1
+	# monthly_character_prestige = 0.2
+	# global_tax_modifier = 0.05
+# }
+# expert_scientist = {
+	# #education = yes
+
+	# martial = -2	
+	# learning = 6
+	# stewardship = 2
+	# monthly_character_prestige = 0.5
+	# global_tax_modifier = 0.1
+# }
+# mastermind_scholar = {
+	# #education = yes
+
+	# martial = -2	
+	# learning = 9
+	# stewardship = 3	
+	# monthly_character_prestige = 1
+	# global_tax_modifier = 0.15
+# }

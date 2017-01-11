@@ -1,0 +1,105 @@
+#Dragons!
+dragon_egg = {	
+	monthly_character_prestige = 0.75
+	ruler_designer_cost = 50
+}
+child_dragon = {
+	cached = yes
+	opposites =  {
+		dragon_slayer
+	}	
+	monthly_character_prestige = 1.0
+	vassal_opinion = 5
+	opposite_opinion = -25
+	customizer = no
+}
+wild_dragon = {
+	cached = yes
+	opposites =  {
+		dragon_slayer
+	}	
+	monthly_character_prestige = -0.2
+	vassal_opinion = -5
+	opposite_opinion = -25
+	customizer = no
+}
+dragon_rider = {
+	cached = yes	
+	opposites =  {
+		dragon_slayer
+	}
+	monthly_character_prestige = 1.0
+	vassal_opinion = 10
+	opposite_opinion = -25
+	martial = 10
+	ambition_opinion = -10 # Against those they want something from
+	ai_ambition = 75
+	command_modifier = {
+		morale_offence = 0.4
+		morale_defence = 0.4
+	}
+	ruler_designer_cost = 100
+	
+	child_compliment = COMPL_DRAGON
+	male_compliment = COMPL_DRAGONLORD
+	female_compliment = COMPL_DRAGONLADY
+}
+dragon_slayer = {	
+	monthly_character_prestige = 0.25
+	general_opinion = 15
+	customizer = no
+	
+	male_compliment = COMPL_DRAGONBANE
+	female_compliment = COMPL_DRAGONBANE
+	child_compliment = COMPL_HERO
+}
+dragon = {
+	#education = yes
+	learning = -50
+	stewardship = -50
+	diplomacy = -50
+	intrigue = -50
+	cached = yes	
+	cannot_marry = yes
+	cannot_inherit = yes 
+	immortal = yes
+	incapacitating = yes # Will need a regent
+	customizer = no
+	fertility = -10
+	ai_ambition = -100
+	can_hold_titles = no
+}
+wounded_dragon = {
+	is_health = yes
+	martial = -10
+	health = -1
+	customizer = no
+}
+maimed_dragon = {
+	is_health = yes
+	martial = -20
+	health = -2
+	customizer = no
+}
+#Dragon appearance traits
+dragon_1 = { customizer = no }
+dragon_2 = { customizer = no }
+dragon_3 = { customizer = no }
+dragon_4 = { customizer = no }
+dragon_5 = { customizer = no }
+dragon_6 = { customizer = no }
+dragon_7 = { customizer = no }
+dragon_8 = { customizer = no }
+dragon_9 = { customizer = no }
+dragon_10 = { customizer = no }
+dragon_11 = { customizer = no }
+dragon_12 = { customizer = no }
+dragon_13 = { customizer = no }
+dragon_14 = { customizer = no }
+dragon_15 = { customizer = no }
+dragon_16 = { customizer = no }
+dragon_17 = { customizer = no }
+dragon_18 = { customizer = no }
+dragon_19 = { customizer = no }
+dragon_20 = { customizer = no }
+

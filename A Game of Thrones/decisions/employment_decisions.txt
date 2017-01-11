@@ -1,0 +1,211 @@
+decisions = {
+
+	employ_maester = {
+		is_high_prio = yes
+		only_playable = yes
+		potential = {
+			OR = {
+				is_patrician = yes
+				AND = {
+					higher_tier_than = BARON
+					demesne_size = 1
+				}	
+			}
+			maester_culture_trigger = yes 
+			NOT = { has_landed_title = c_the_citadel }
+			NOT = { has_landed_title = d_kingsguard }
+			NAND = {
+				has_landed_title = e_iron_throne 
+				NOT = { has_global_flag = aegons_conquest }
+			}
+			NOT = { has_landed_title = k_the_most_devout }			
+			NOT = { 
+				any_courtier = { 
+					trait = maester 
+					NOT = { trait = incapable }
+					prisoner = no
+				} 
+			}
+			OR = {
+				NOT = { has_character_flag = employed_maester }
+				had_character_flag = { flag = employed_maester days = 30 }
+			}	
+		}
+		allow = {	
+			scaled_wealth = 0.2
+			custom_tooltip = { text = TOOLTIPEMPLOYMAESTER }
+			NOT = { has_character_modifier = in_seclusion }
+		}
+		effect = {
+			set_character_flag = employed_maester
+			scaled_wealth = -0.2
+			character_event = { id = maester.23 days = 10 tooltip = EVTTOOLTIPmaester.23 }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	employ_character = {
+		only_playable = yes
+		potential = {		
+			OR = {
+				is_patrician = yes
+				AND = {
+					higher_tier_than = BARON
+					demesne_size = 1
+				}	
+			}
+			NOT = { has_landed_title = c_the_citadel }
+			NOT = { has_landed_title = d_kingsguard }
+			NOT = { culture_group = unoccupied_group }	
+			NOT = { culture_group = winter_group }				
+		}
+		allow = {
+			scaled_wealth = 0.2
+			NOT = { has_character_modifier = in_seclusion }
+			NOT = { has_character_modifier = employment_timer }		
+		}
+		effect = {
+			add_character_modifier = {
+				name = employment_timer
+				duration = 180
+				hidden = yes
+			}
+			character_event = { id = 73555 }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				job_priest = { religion = ROOT }					
+			}
+		}
+	}
+
+	employ_golden_company = {
+		only_playable = yes
+		potential = {
+			is_ruler = yes
+			year = 8197
+			has_global_flag = scenario_initialised
+			war = yes
+			is_title_active = d_golden_company
+			d_golden_company = {
+				holder_scope = {
+					in_command = no
+					war = no
+					NOT = { demesne_size = 1 }
+				}
+			}
+			NOT = { has_character_flag = golden_company_hired }
+			NOT = { capital_scope = { kingdom = { title = k_beyond_wall } } } #Not a tribe beyond the wall
+			is_nomadic = no
+			NOT = { culture_group = winter_group }
+			NOT = { culture_group = unoccupied_group }
+			OR = {
+				NOT = { has_character_flag = golden_company_decision }
+				had_character_flag = { flag = golden_company_decision days = 500 }
+			}
+			OR = {
+				NOT = { has_global_flag = golden_company_in_invasion } #event spawned golden company troops
+				had_global_flag = { flag = golden_company_in_invasion days = 9125 }
+			}
+		}
+		allow = {	
+			war = yes
+		}
+		effect = {
+			set_character_flag = golden_company_decision
+			d_golden_company = {
+				holder_scope = {
+					character_event = { id = free_cities.2 days = 100 random = 50 tooltip = "TOOLTIPfree_cities.2" }
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.1
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 1200
+				} 
+			}
+			modifier = {
+				factor = 0
+				NOT = { higher_tier_than = COUNT }
+			}
+		}
+	}
+
+	employ_giants = {
+		only_playable = yes
+		potential = {
+			is_ruler = yes
+			higher_tier_than = COUNT
+			has_global_flag = scenario_initialised
+			war = yes
+			OR = {
+				culture_group = free_folk
+				culture = thenn
+			}
+			is_title_active = d_giants
+			d_giants = {
+				holder_scope = {
+					in_command = no
+					war = no
+					NOT = { demesne_size = 1 }
+				}
+			}
+			NOT = { has_character_flag = giants_hired }
+			OR = {
+				NOT = { has_character_flag = giants_decision }
+				had_character_flag = { flag = giants_decision days = 500 }
+			}
+		}
+		allow = {	
+			war = yes
+		}
+		effect = {
+			set_character_flag = giants_decision
+			d_giants = {
+				holder_scope = {
+					character_event = { id = old_races.200 days = 100 random = 50 tooltip = "TOOLTIPold_races.200" }
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.1
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 120
+				} 
+			}
+			modifier = {
+				factor = 0
+				NOT = { higher_tier_than = COUNT }
+			}
+		}
+	}				
+}

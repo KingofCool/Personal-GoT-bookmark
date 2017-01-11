@@ -1,0 +1,9 @@
+widowed = {
+	fertility = -0.5
+	same_opinion = 5
+	ai_honor = 5
+	ai_ambition = -5
+	ai_greed = -5
+	cannot_marry = yes
+	customizer = no
+}

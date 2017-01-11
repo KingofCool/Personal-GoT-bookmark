@@ -1,0 +1,36 @@
+employseer = {
+	customizer = no
+}
+employhedge = {
+	customizer = no
+}
+employmarshall = {
+	customizer = no
+}
+employpriest = {
+	customizer = no
+}
+employsteward = {
+	customizer = no
+}
+employchancelor = {
+	customizer = no
+}
+employspy = {
+	customizer = no
+}
+employdebutante = {
+	customizer = no
+}
+wikiddirewolf = {
+	customizer = no
+}
+wikidcrow = {
+	customizer = no
+}
+wikideagle = {
+	customizer = no
+}
+wikiddog = {
+	customizer = no
+}

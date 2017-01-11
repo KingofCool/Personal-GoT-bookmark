@@ -1,0 +1,2504 @@
+########################################################################################################
+# WARNING: IF YOU DON'T ADD NEW TRAITS LAST (IN THE LAST READ TRAIT FILE), IT WILL BREAK OLD SAVE GAMES!
+########################################################################################################
+
+septon = {
+	religious = yes # Lost immediately on religion change
+	
+	diplomacy = 2
+	
+	monthly_character_piety = 0.5
+	church_opinion = 5
+	same_religion_opinion = 5
+	
+	customizer = no
+	cannot_marry = yes
+	cannot_inherit = yes #you sure ? tom : yes
+	
+	ai_zeal = 25
+	
+	male_compliment_adj = COMPL_HOLY
+}
+septa = {
+	religious = yes # Lost immediately on religion change
+	
+	monthly_character_piety = 0.5
+	church_opinion = 5
+	same_religion_opinion = 5
+	
+	customizer = no
+	cannot_marry = yes
+	cannot_inherit = yes
+	
+	ai_zeal = 25
+	
+	female_compliment_adj = COMPL_DEVOUT
+}
+fed_to_dragon ={
+	customizer = no
+	is_illness = yes
+	is_epidemic = yes
+	health = -1
+}
+flayed ={
+	customizer = no
+}
+widowswail = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+oathkeeper = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+# poor_warrior_dragon = {
+	
+# }
+# trained_warrior_dragon = {
+	
+# }
+# skilled_warrior_dragon = {
+	
+# }
+# master_warrior_dragon = {
+	
+# }
+rainbowguard= {
+	diplomacy = 1
+	monthly_character_prestige = 2
+	monthly_character_piety = 0.1
+	liege_opinion = 20
+	#top_liege_opinion = 30 #does not work
+	customizer = no
+	#cached = yes
+	cannot_marry = yes
+	cannot_inherit = yes
+	command_modifier = {
+		morale_defence = 0.2
+	}
+}
+captain = {
+	monthly_character_prestige = 1
+	sex_appeal_opinion = 15
+	customizer = no
+
+}
+dog = {
+	martial = 1
+	monthly_character_piety = 1
+	same_opinion = 5
+	church_opinion = 5
+	same_religion_opinion = 5
+	general_opinion = -5
+	combat_rating = 0.64
+}
+brownbear = {
+	martial = 3
+	monthly_character_piety = 1
+	same_opinion = 5
+	church_opinion = 5
+	same_religion_opinion = 5
+	general_opinion = -5
+	combat_rating = 1.17
+}
+crabspincer = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+stillborn = { # Marks a stillborn character for cause-of-death purposes
+	is_illness = yes
+	is_epidemic = yes
+	health = -1
+	customizer = no
+	hidden = yes
+}
+forbid_marriage = {
+	customizer = no
+	cannot_marry = yes
+	cached = yes
+	hidden = yes
+}
+strangers_mercy = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+blood_feud = {
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+	customizer = no
+	hidden = yes
+}
+wikid = {
+	pilgrimage = yes # Will need a regent, but can still be guardian to children
+	cached = yes
+	customizer=no
+}
+concession = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+del_pino = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+el_swordo = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+anger = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+black_death = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+compassion = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+gold_sword = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+kingmaker = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+happyness = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+hubris = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+rage = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+the_monarchist = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+the_usurper = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+justice = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+passion = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+sightblinder = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+worldeater = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+worlds_envy = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+child_of_consort = {
+	diplomacy = -1
+}
+
+peasant_leader = {
+	diplomacy = -5
+	
+	same_opinion = 25
+	
+	vassal_opinion = -10
+
+	rebel_inherited = yes
+	customizer = no
+		
+	male_insult = INSULT_PEASANT
+	male_insult_adj = INSULT_LOWBORN
+	female_insult = INSULT_PEASANT_WOMAN
+	female_insult_adj = INSULT_LOWBORN
+}
+
+heresiarch = {
+	infidel_opinion = -25
+	
+	same_religion_opinion = 25
+	
+	rebel_inherited = yes
+	customizer = no
+	religious = yes
+		
+	male_insult = INSULT_HERESIARCH
+	female_insult = INSULT_HERESIARCH
+}
+
+berserker = {
+	potential = {
+		OR = {
+			religion_group = drowned_god_group
+			religion_group = wildling_religion
+			religion = bearded_priests
+		}	
+	}
+	martial = 4
+	diplomacy = -2
+	
+	same_opinion = 10
+	
+	ai_rationality = -5
+	
+	male_compliment = COMPL_BERSERKER
+	female_compliment = COMPL_BERSERKER
+	male_insult = INSULT_LUNATIC
+	female_insult = INSULT_LUNATIC
+	child_insult = INSULT_TROLL
+	male_insult_adj = INSULT_CRAZED
+	female_insult_adj = INSULT_CRAZED
+	child_insult_adj = INSULT_CRAZY
+}
+
+
+viking = {
+	potential = {
+		religion_group = drowned_god_group
+	}
+	opposites =  {
+		ravager
+		seaking
+		sea_queen
+	}
+	martial = 1
+	monthly_character_prestige = 0.3
+	same_religion_opinion = 5
+	
+	same_opinion = 5
+	religious = yes
+	customizer = no
+		
+	male_insult = COMPL_PIRATE
+	female_insult = COMPL_PIRATE
+	male_compliment = COMPL_REAVER
+	male_compliment_adj = COMPL_REAVER
+	female_compliment = COMPL_REAVER
+	female_compliment_adj = COMPL_REAVER
+	child_compliment = COMPL_WARRIOR
+	child_compliment_adj = COMPL_HEROIC
+}
+
+ruin = {
+	cannot_marry = yes
+	cannot_inherit = yes 
+	immortal = yes
+	incapacitating = yes # Will need a regent
+	customizer = no
+	hidden = yes
+	
+	ai_ambition = -100
+}
+
+civil_war = {
+	# potential = {
+		# tier = EMPEROR	
+	# }
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
+	customizer = no
+	hidden = yes
+}
+
+greyscale_scarred = { #54	
+	sex_appeal_opinion = -25
+	general_opinion = -5
+	diplomacy = -3
+	
+	male_insult = INSULT_DEFORMITY
+	female_insult = INSULT_DEFORMITY
+	male_insult_adj = INSULT_HIDEOUS
+	female_insult_adj = INSULT_REPULSIVE
+	child_insult_adj = INSULT_UGLY
+}
+
+dothraki_domain = {
+	cannot_marry = yes
+	cannot_inherit = yes 
+	immortal = yes
+	#incapacitating = yes # Will need a regent
+	customizer = no
+	hidden = yes
+	
+	ai_ambition = -100
+}
+
+siege_leader = {
+	leader = yes
+	
+	command_modifier = {
+		siege = 0.4
+	}
+}
+
+# Christian pilgrim while doing pilgrimage
+on_pilgrimage = {
+	potential = {
+		religion = rhllor
+		#NOT = { trait = pilgrim }
+	}
+	
+	cached = yes    # Keep a cache of all trait holders, to use with the corresponding event trigger 
+	
+	monthly_character_piety = 0.2
+	same_religion_opinion = 5
+	
+	pilgrimage = yes    # Will need a regent, but can still be guardian to children
+	customizer = no
+}
+
+# Babies can be born sickly
+sickly = {
+	is_health = yes
+	is_illness = yes
+	
+	potential = {
+		NOT = { age = 6 }
+	}
+	
+	health = -2.5
+	
+	customizer = no
+	random = no
+}
+
+sympathy_westerosi = {
+	opposites =  {
+		zealous
+	}
+	
+	potential = {
+		NOT = { religion_group = westerosi_religion }
+	}
+
+	tolerates_westerosi_religion = yes		# Tolerates and is tolerated by Westerosi
+
+	customizer = no
+	random = no
+	
+	
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_drowned_god = {
+	
+	opposites =  {
+		zealous
+	}
+	
+	potential = {
+		NOT = { religion_group = drowned_god_group }
+	}
+
+	tolerates_drowned_god_group = yes		# Tolerates and is tolerated by Drowned God
+
+	customizer = no
+	random = no
+	
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_essos_group = {
+	
+	opposites =  {
+		zealous
+	}
+	
+	potential = {
+		NOT = { religion_group = essos_group }
+	}
+
+	tolerates_essos_group = yes		# Tolerates and is tolerated by Essos Religions
+
+	customizer = no
+	random = no
+	
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_ghiscar_rel = {
+	
+	opposites =  {
+		zealous
+	}
+	
+	potential = {
+		NOT = { religion_group = ghiscar_rel }
+	}
+
+	tolerates_ghiscar_rel = yes		# Tolerates and is tolerated by Ghiscari Religions
+
+	customizer = no
+	random = no
+	
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_valyrian_rel_group = {
+	
+	opposites =  {
+		zealous
+	}
+	
+	potential = {
+		NOT = { religion_group = valyrian_rel_group }
+	}
+
+	tolerates_valyrian_rel_group = yes		# Tolerates and is tolerated by Valyrian Religions
+
+	customizer = no
+	random = no
+	
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+bad_priest_christian = { #the seven
+
+	religious = yes
+
+	potential = {
+		OR = {
+			is_theocracy = yes
+			is_ruler = no
+		}
+	}
+
+	church_opinion = -20
+
+	monthly_character_piety = -1
+
+	customizer = no
+	random = no
+	
+	male_insult = INSULT_SCARECROW
+	female_insult = INSULT_SCARECROW
+	child_insult = INSULT_SCARECROW
+	male_insult_adj = INSULT_DECADENT
+	female_insult_adj = INSULT_CORRUPT
+	child_insult_adj = INSULT_CRUMMY
+}
+
+bad_priest_muslim = {
+	
+	religious = yes
+
+	# potential = {
+		# OR = {
+			# controls_religion = sunni
+			# controls_religion = shiite
+			# controls_religion = ibadi
+			# controls_religion = hurufi
+		# }
+	# }
+	
+	church_opinion = -20
+
+	monthly_character_piety = -1
+
+	customizer = no
+	random = no
+	
+	male_insult = INSULT_SCARECROW
+	female_insult = INSULT_SCARECROW
+	child_insult = INSULT_SCARECROW
+	male_insult_adj = INSULT_DECADENT
+	female_insult_adj = INSULT_CORRUPT
+	child_insult_adj = INSULT_CRUMMY
+}
+
+bad_priest_norse = { #drowned god
+	
+	religious = yes
+
+	# potential = {
+		# OR = {
+			# is_theocracy = yes
+			# is_ruler = no
+			# controls_religion = norse_pagan_reformed
+		# }
+	# }
+	
+	church_opinion = -20
+
+	monthly_character_piety = -1
+
+	customizer = no
+	random = no
+	
+	male_insult = INSULT_SCARECROW
+	female_insult = INSULT_SCARECROW
+	child_insult = INSULT_SCARECROW
+	male_insult_adj = INSULT_DECADENT
+	female_insult_adj = INSULT_CORRUPT
+	child_insult_adj = INSULT_CRUMMY
+}
+
+bad_priest_tengri = {
+	
+	religious = yes
+
+	potential = {
+		OR = {
+			is_theocracy = yes
+			is_ruler = no
+		}
+	}
+	
+	church_opinion = -20
+
+	monthly_character_piety = -1
+
+	customizer = no
+	random = no
+	
+	male_insult = INSULT_SCARECROW
+	female_insult = INSULT_SCARECROW
+	child_insult = INSULT_SCARECROW
+	male_insult_adj = INSULT_DECADENT
+	female_insult_adj = INSULT_CORRUPT
+	child_insult_adj = INSULT_CRUMMY
+}
+
+bad_priest_zoroastrian = { #rhllor
+	
+	religious = yes
+
+	potential = {
+		OR = {
+			is_theocracy = yes
+			is_ruler = no
+		}
+	}
+
+	church_opinion = -20
+
+	monthly_character_piety = -1
+
+	customizer = no
+	random = no
+	
+	male_insult = INSULT_SCARECROW
+	female_insult = INSULT_SCARECROW
+	child_insult = INSULT_SCARECROW
+	male_insult_adj = INSULT_DECADENT
+	female_insult_adj = INSULT_CORRUPT
+	child_insult_adj = INSULT_CRUMMY
+}
+
+bad_priest_aztec = {
+	
+	religious = yes
+
+	potential = {
+		OR = {
+			is_theocracy = yes
+			is_ruler = no
+		}
+	}
+
+	church_opinion = -20
+
+	monthly_character_piety = -1
+
+	customizer = no
+	random = no
+	
+	male_insult = INSULT_SCARECROW
+	female_insult = INSULT_SCARECROW
+	child_insult = INSULT_SCARECROW
+	male_insult_adj = INSULT_DECADENT
+	female_insult_adj = INSULT_CORRUPT
+	child_insult_adj = INSULT_CRUMMY
+}
+
+
+narrow_flank_leader = {
+	leader = yes
+	
+	command_modifier = {
+		narrow_flank = 0.5
+	}
+}
+
+cotf= {
+	customizer = no
+	health = 1000
+	fertility = -50.0
+	cannot_marry = yes
+	cannot_inherit = yes
+	can_hold_titles = no
+}
+
+# Controls Muslim decadence gain
+decadent = {
+	opposites = {
+		zealous
+	}
+	
+	customizer = no
+	random = no
+}
+
+# Character is seen as a reincarnation of another character.
+reincarnation = {
+	customizer = no
+	random = no
+}
+
+war_elephant_leader = {
+	leader = yes
+	random = no
+	
+	command_modifier = {
+		war_elephants = 0.2
+		morale_offence = 0.2
+	}
+}
+
+jungle_terrain_leader = {
+	leader = yes
+	random = no
+	
+	command_modifier = {
+		terrain = jungle
+	}
+	
+	male_insult = INSULT_JUNGLE_SNAKE
+	female_insult = INSULT_JUNGLE_SNAKE
+}
+
+# Old Age Blindness
+blinded_age = {
+	sex_appeal_opinion = -5
+	martial = -6
+	stewardship = -2
+	intrigue = -2
+	
+	customizer = no
+	
+	combat_rating = -9.82
+	
+	male_insult_adj = INSULT_BLIND
+	female_insult_adj = INSULT_BLIND
+}
+triarch_statue = {
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+	monthly_character_prestige = 0.2
+	customizer = no
+}
+#"Dragon"
+dragon_fake = {
+	learning = -5
+	customizer = no
+	fertility = -0.2
+	ai_ambition = 100
+	vassal_opinion = -10
+}
+
+#Special Executions
+#fed_to_dragon
+#flayed
+burned_alive = {
+	customizer = no
+}
+thrown_out_moon_door = {
+	customizer = no
+}
+crucified = {
+	customizer = no
+}
+snu_snu = {
+	customizer = no
+}
+
+# Courtesans
+courtesan= {
+	customizer = no
+	cached = yes
+	cannot_marry = yes
+	cannot_inherit = yes
+	fertility = -50.0
+}
+former_courtesan= {
+	customizer = no
+	cached = yes
+}
+
+#Cold Winds Rising
+white_walker= {
+	customizer = no
+	immortal = yes
+	fertility = -50.0
+	cannot_marry = yes
+	combat_rating = 4.64
+	#cannot_inherit = yes
+}
+
+winter_wasteland = {
+	cannot_marry = yes
+	cannot_inherit = yes 
+	immortal = yes
+	incapacitating = yes # Will need a regent
+	customizer = no
+	hidden = yes
+	
+	ai_ambition = -100
+}
+
+#Iron Bank
+stakeholder= {
+	monthly_character_prestige = 5
+	monthly_character_wealth = 10
+	church_opinion = -5
+	customizer = no
+}
+
+
+in_hiding = {
+	potential = {
+		prisoner = no
+	}
+
+	monthly_character_prestige = -2
+	diplomacy = -5
+	vassal_opinion = -5
+	
+	in_hiding = yes
+
+	customizer = no
+	random = no
+	
+	male_insult = INSULT_COWARD
+	female_insult = INSULT_COWARD
+	male_insult_adj = INSULT_SNEAKING
+	female_insult_adj = INSULT_SNEAKING
+	child_insult_adj = INSULT_WIMP
+}
+
+disfigured_AGOT = {
+	sex_appeal_opinion = -10
+	same_opinion = 5
+	
+	martial = -1
+	health = -0.25
+	
+	male_insult_adj = INSULT_DISFIGURED
+	female_insult_adj = INSULT_DISFIGURED
+	child_insult_adj = INSULT_UGLY
+}
+
+seducer = {
+	lifestyle = yes
+	
+	opposites =  {
+		celibate
+		seductress
+	}
+	
+	potential = {
+		is_female = no
+	}
+	
+	intrigue = 2
+	diplomacy = 1
+	
+	sex_appeal_opinion = 50
+	
+	male_insult = INSULT_WHOREMONGER
+	male_insult_adj = INSULT_WHORING
+	male_compliment = COMPL_SEDUCER
+	male_compliment_adj = COMPL_CHARMING
+	
+	ruler_designer_cost = 12
+}
+
+seductress = {
+	lifestyle = yes
+	
+	opposites =  {
+		celibate
+		seducer
+	}
+	
+	potential = {
+		is_female = yes
+	}
+	
+	intrigue = 2
+	diplomacy = 1
+	
+	sex_appeal_opinion = 50
+	
+	female_insult = INSULT_TEMPTRESS
+	female_insult_adj = INSULT_DEBASED
+	female_compliment = COMPL_ENCHANTRESS
+	female_compliment_adj = COMPL_RAVISHING
+	
+	ruler_designer_cost = 12
+}
+
+administrator = {
+	lifestyle = yes
+	
+	stewardship = 3
+		
+	command_modifier = {
+		speed = 0.1
+	}
+	
+	ruler_designer_cost = 10
+}
+
+architect = {
+	lifestyle = yes
+	
+	same_opinion = 10
+	
+	stewardship = 2
+	martial = 1
+		
+	command_modifier = {
+		siege = 0.2
+	}
+	
+	ruler_designer_cost = 10
+		
+	male_compliment = COMPL_ARCHITECT
+	female_compliment = COMPL_ARCHITECT
+}
+
+strategist = {
+	lifestyle = yes
+	
+	same_opinion = 10
+	
+	martial = 2
+	stewardship = 1
+		
+	command_modifier = {
+		defence = 0.2
+	}
+	
+	ruler_designer_cost = 12
+}
+
+socializer = {
+	lifestyle = yes
+	
+	same_opinion = 10
+	sex_appeal_opinion = 10
+	
+	diplomacy = 3
+		
+	ruler_designer_cost = 12
+		
+	male_insult = INSULT_BLABBERER
+	female_insult = INSULT_BLABBERER
+	male_insult_adj = INSULT_SCHEMING
+	female_insult_adj = INSULT_SCHEMING
+	child_insult_adj = INSULT_SILLY
+}
+
+schemer = {
+	lifestyle = yes
+	
+	same_opinion = -5
+	
+	intrigue = 3
+		
+	ruler_designer_cost = 10
+	
+	male_insult = INSULT_INSTIGATOR
+	female_insult = INSULT_INSTIGATOR
+	child_insult = INSULT_SNEAK
+	male_insult_adj = INSULT_SCHEMING
+	female_insult_adj = INSULT_SCHEMING
+	child_insult_adj = INSULT_STUPID
+}
+
+theologian = {
+	lifestyle = yes
+	
+	learning = 2
+	intrigue = 1
+		
+	ruler_designer_cost = 10
+	
+	male_insult = INSULT_BOOKWORM
+	female_insult = INSULT_BOOKWORM
+	male_insult_adj = INSULT_SQUINTEYED
+	female_insult_adj = INSULT_SQUINTEYED
+	male_compliment = COMPL_SCHOLAR
+	female_compliment = COMPL_SCHOLAR
+	male_compliment_adj = COMPL_LEARNED
+	female_compliment_adj = COMPL_LEARNED
+}
+
+gamer = {
+	lifestyle = yes
+	
+	diplomacy = 2
+	martial = 1
+	
+	same_opinion = 10
+	
+	command_modifier = {
+		narrow_flank = 0.3
+	}
+		
+	ruler_designer_cost = 10
+}
+
+truth = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+
+adopted = {
+	diplomacy = -1
+}
+
+lamentation = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+has_red_death = {
+	is_epidemic = yes
+	is_illness = yes
+	
+	health_penalty = -7
+	
+	combat_rating = -5.17
+	
+	customizer = no
+	
+	male_insult_adj = INSULT_DECAYING
+	female_insult_adj = INSULT_DECAYING
+	child_insult_adj = INSULT_SMELLY
+}
+
+tyrannical_stain = { #129
+	monthly_character_prestige = -0.10
+	general_opinion = -10
+	customizer = no
+	
+	male_insult_adj = INSULT_TAINTED
+	female_insult_adj = INSULT_BESMIRCHED
+}
+has_butterfly_fever = {
+	is_epidemic = yes
+	is_illness = yes
+	
+	health_penalty = -6
+	
+	combat_rating = -5.17
+	
+	customizer = no
+	
+	male_insult_adj = INSULT_DECAYING
+	female_insult_adj = INSULT_DECAYING
+	child_insult_adj = INSULT_SMELLY
+}
+love_priest = {
+	religious = yes # Lost immediately on religion change
+	
+	learning = 4
+	
+	monthly_character_piety = 0.5
+	
+	infidel_opinion = -5
+	same_religion_opinion = 10
+	sex_appeal_opinion = 5
+	fertility = 0.1
+	
+	customizer = no
+	cannot_marry = yes
+	cannot_inherit = yes
+	
+	ai_zeal = 50
+	
+	female_compliment_adj = COMPL_HOLY
+	male_compliment_adj = COMPL_HOLY
+}
+
+adventurer = {
+
+	martial = 1
+	diplomacy = -1
+	levy_size = 0.2
+	max_manpower_mult = 0.1
+	
+	same_opinion = 10
+
+	ai_ambition = 40
+	
+	customizer = no
+	random = no
+	
+	male_insult = INSULT_UPSTART
+	female_insult = INSULT_UPSTART
+	child_insult = INSULT_PEABRAIN
+	male_insult_adj = INSULT_GRABBING
+	female_insult_adj = INSULT_GRABBING
+	child_insult_adj = INSULT_CRUMMY
+	male_compliment = COMPL_CONQUEROR
+	female_compliment = COMPL_CONQUEROR
+	male_compliment_adj = COMPL_AUDACIOUS
+	female_compliment_adj = COMPL_AUDACIOUS
+}
+the_mark = { #webbed hands/feet
+	birth = 1000
+	inherit_chance = 20
+	
+	potential = { 
+		OR = {
+			culture = sisterman 
+			father_even_if_dead = { culture = sisterman } 
+			mother_even_if_dead = { culture = sisterman }
+		}	
+	}
+	
+	sex_appeal_opinion = -10
+	same_opinion = 10
+	#same_culture_opinion = 15
+	
+	male_insult_adj = INSULT_HIDEOUS
+	female_insult_adj = INSULT_HIDEOUS
+	child_insult_adj = INSULT_UGLY
+}	
+resurrected_by_rhllor = {
+	monthly_character_piety = 0.25
+	monthly_character_prestige = 0.25
+	combat_rating = 4
+	
+	immortal = yes
+	
+	ruler_designer_cost = 50
+	
+	ai_zeal = 15
+}
+dragon_dreams = {
+	intrigue = 4
+	monthly_character_piety = 1
+	same_opinion = 15
+	general_opinion = -10
+	combat_rating = 1.17
+	
+	male_insult = INSULT_ABOMINATION
+	female_insult = INSULT_ABOMINATION
+	child_insult_adj = INSULT_WIERD
+}
+erudite = {
+	personality = yes
+	
+	learning = 2
+	
+	church_opinion = 5
+	
+	child_insult = INSULT_BORE
+	male_insult_adj = INSULT_BLATHERING
+	female_insult_adj = INSULT_BLATHERING
+	male_compliment = COMPL_SCHOLAR
+	female_compliment = COMPL_SCHOLAR
+	male_compliment_adj = COMPL_WISE
+	female_compliment_adj = COMPL_WISE
+}
+
+# stubborn = {
+	# personality = yes
+	
+	# stewardship = 1
+	# diplomacy = -1
+	
+	# vassal_opinion = -5
+	# ai_ambition = 10
+	# ai_zeal = 10
+	
+	# male_insult = INSULT_MULE
+	# female_insult = INSULT_MULE
+	# male_insult_adj = INSULT_PIGHEADED
+	# female_insult_adj = INSULT_PIGHEADED
+# }
+
+
+### Childhood Traits
+
+haughty = {
+	childhood = yes
+	
+	martial = 1
+	
+	male_insult = INSULT_BRAT
+	female_insult = INSULT_BRAT
+	child_insult = INSULT_TROLL
+	male_insult_adj = INSULT_ARROGANT
+	female_insult_adj = INSULT_ARROGANT
+	child_insult_adj = INSULT_GROUCHY
+	male_compliment_adj = COMPL_PROUD
+	female_compliment_adj = COMPL_PROUD
+}
+
+affectionate = {
+	childhood = yes
+	
+	diplomacy = 1
+	
+	male_insult = INSULT_TICK
+	female_insult = INSULT_TICK
+	male_insult_adj = INSULT_CLINGY
+	female_insult_adj = INSULT_CLINGY
+	child_insult_adj = INSULT_FLOPPY
+	male_compliment_adj = COMPL_SWEET
+	female_compliment_adj = COMPL_SWEET
+}
+
+timid = {
+	childhood = yes
+	
+	opposites =  {
+		rowdy
+	}
+
+	learning = 1
+	
+	male_insult_adj = INSULT_CREEPY
+	female_insult_adj = INSULT_CREEPY
+	male_compliment_adj = COMPL_GOOD
+	female_compliment_adj = COMPL_GOOD
+}
+
+rowdy = {
+	childhood = yes
+
+	opposites =  {
+		timid
+	}
+	
+	martial = 1
+	
+	male_insult = INSULT_RUFFIAN
+	female_insult = INSULT_RUFFIAN
+	male_insult_adj = INSULT_WILD
+	female_insult_adj = INSULT_WILD
+	child_insult_adj = INSULT_CRAZY
+}
+
+willful = {
+	childhood = yes
+	
+	intrigue = 1
+	
+	male_insult = INSULT_MULE
+	female_insult = INSULT_MULE
+	male_insult_adj = INSULT_PIGHEADED
+	female_insult_adj = INSULT_PIGHEADED
+}
+
+brooding = {
+	childhood = yes
+	
+	intrigue = 1
+	
+	male_insult = INSULT_BORE
+	female_insult = INSULT_BORE
+	male_insult_adj = INSULT_CREEPY
+	female_insult_adj = INSULT_CREEPY
+	male_compliment_adj = COMPL_CLEVER
+	female_compliment_adj = COMPL_CLEVER
+}
+
+indolent = {
+	childhood = yes
+
+	intrigue = 1
+	
+	male_insult_adj = INSULT_USELESS
+	female_insult_adj = INSULT_USELESS
+}
+
+playful = {
+	childhood = yes
+	
+	diplomacy = 1
+		
+	male_compliment_adj = COMPL_LOVELY
+	female_compliment_adj = COMPL_LOVELY
+}
+
+conscientious = {
+	childhood = yes
+
+	stewardship = 1
+	
+	male_insult = INSULT_BORE
+	female_insult = INSULT_BORE
+}
+
+fussy = {
+	childhood = yes
+	
+	stewardship = 1
+	
+	male_insult_adj = INSULT_USELESS
+	female_insult_adj = INSULT_USELESS
+}
+
+curious = {
+	childhood = yes
+	
+	learning = 1
+	
+	male_insult = INSULT_SNEAK
+	female_insult = INSULT_SNEAK
+}
+
+idolizer = {
+	childhood = yes
+	
+	learning = 1
+	
+	male_insult = INSULT_WORM
+	female_insult = INSULT_WORM
+}
+
+# Lunatic Special Traits
+horse = {
+	sex_appeal_opinion = -20
+	fertility = -50.0
+	health = -2
+
+	diplomacy = -10
+	intrigue = -10
+	stewardship = -10
+	martial = -10
+	learning = -10
+
+	inherit_chance = 100
+
+	customizer = no
+	random = no
+	
+	cannot_marry = yes
+	cannot_inherit = yes
+	can_hold_titles = no # Hopefully this will block Glitterhoof from becoming pope again
+
+	potential = {
+		race = horse
+	}
+}
+
+robust = {
+	opposites =  {
+		weak
+		feeble
+	}
+	
+	diplomacy = 1
+	martial = 2
+	
+	health = 1
+	
+	combat_rating = 2
+	
+	sex_appeal_opinion = 5
+	vassal_opinion = 5
+	tribal_opinion = 5
+	
+	male_compliment_adj = COMPL_STRONG
+}
+
+feeble = {
+	opposites =  {
+		strong
+		robust
+	}
+	
+	martial = -1
+	combat_rating = -2
+	
+	sex_appeal_opinion = -5
+	vassal_opinion = -5
+	tribal_opinion = -5
+	
+	male_insult = INSULT_WEAKLING
+}
+
+shrewd = {
+	opposites =  {
+		imbecile
+		slow
+		genius
+		dull
+	}
+	
+	diplomacy = 2
+	intrigue = 2
+	stewardship = 2
+	martial = 2
+	learning = 2
+	
+	combat_rating = 1.17
+	
+	ai_rationality = 15
+}
+
+dull = {
+	opposites =  {
+		imbecile
+		quick
+		genius
+		shrewd
+	}
+	
+	diplomacy = -2
+	intrigue = -2
+	stewardship = -2
+	martial = -2
+	learning = -2
+	
+	ai_rationality = -15
+	
+	combat_rating = -1.17
+	
+	male_insult = INSULT_DULLARD
+	female_insult = INSULT_NITWIT
+	male_insult_adj = INSULT_DIM
+	female_insult_adj = INSULT_VACUOUS
+	child_insult_adj = INSULT_STUPID
+}
+
+#Extra Dragon appearance
+dragon_21 = { customizer = no }
+dragon_22 = { customizer = no }
+dragon_23 = { customizer = no }
+dragon_24 = { customizer = no }
+dragon_25 = { customizer = no }
+dragon_26 = { customizer = no }
+
+poison = {
+	monthly_character_prestige = 0.25
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+}
+valyrian_armour = {
+	monthly_character_prestige = 0.5
+	vassal_opinion = 5
+	combat_rating = 2
+	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+	ruler_designer_cost = 30
+}
+death_eaten = {
+	customizer = no
+}
+
+
+## Symptoms
+
+cough = {
+	is_health = yes
+	is_symptom = yes
+	is_illness = yes
+
+	sex_appeal_opinion = -5
+
+	diplomacy_penalty = -1
+	health_penalty = -0.25
+	combat_rating = -2
+	
+	customizer = no
+
+	male_insult = INSULT_INVALID
+	female_insult = INSULT_INVALID
+	child_insult = INSULT_INVALID
+	male_insult_adj = INSULT_SICKLY
+	female_insult_adj = INSULT_SICKLY
+	child_insult_adj = INSULT_SICKLY
+}
+
+fever = {
+	is_health = yes
+	is_symptom = yes
+	is_illness = yes
+
+	stewardship_penalty = -1
+	learning_penalty = -1
+
+	health_penalty = -1
+	fertility_penalty = -0.1
+
+	ai_rationality = -10
+
+	combat_rating = -2
+	
+	customizer = no
+
+	male_insult = INSULT_INVALID
+	female_insult = INSULT_INVALID
+	child_insult = INSULT_INVALID
+	male_insult_adj = INSULT_SICKLY
+	female_insult_adj = INSULT_SICKLY
+	child_insult_adj = INSULT_SICKLY
+}
+
+diarrhea = {
+	is_health = yes
+	is_symptom = yes
+	is_illness = yes
+
+	sex_appeal_opinion = -10
+
+	martial_penalty = -2
+	intrigue_penalty = -2
+
+	health_penalty = -1
+	fertility_penalty = -0.2
+	
+	combat_rating = -2
+	
+	customizer = no
+
+	male_insult = INSULT_INVALID
+	female_insult = INSULT_INVALID
+	child_insult = INSULT_INVALID
+	male_insult_adj = INSULT_SICKLY
+	female_insult_adj = INSULT_SICKLY
+	child_insult_adj = INSULT_SICKLY
+}
+
+vomiting = {
+	is_health = yes
+	is_symptom = yes
+	is_illness = yes
+
+	sex_appeal_opinion = -10
+
+	diplomacy_penalty = -2
+	intrigue_penalty = -2
+
+	health_penalty = -1
+	fertility_penalty = -0.3
+
+	combat_rating = -2
+	
+	customizer = no
+
+	male_insult = INSULT_INVALID
+	female_insult = INSULT_INVALID
+	child_insult = INSULT_INVALID
+	male_insult_adj = INSULT_SICKLY
+	female_insult_adj = INSULT_SICKLY
+	child_insult_adj = INSULT_SICKLY
+
+}
+
+chest_pain = {
+	is_health = yes
+	is_symptom = yes
+	is_illness = yes
+
+	health_penalty = -2
+
+	combat_rating = -2
+	
+	customizer = no
+
+	male_insult = INSULT_INVALID
+	female_insult = INSULT_INVALID
+	child_insult = INSULT_INVALID
+	male_insult_adj = INSULT_SICKLY
+	female_insult_adj = INSULT_SICKLY
+	child_insult_adj = INSULT_SICKLY
+}
+
+cramps = {
+	is_health = yes
+	is_symptom = yes
+	is_illness = yes
+
+	martial_penalty = -2
+	
+	health_penalty = -0.5
+
+	combat_rating = -2
+	
+	customizer = no
+
+	male_insult = INSULT_INVALID
+	female_insult = INSULT_INVALID
+	child_insult = INSULT_INVALID
+	male_insult_adj = INSULT_SICKLY
+	female_insult_adj = INSULT_SICKLY
+	child_insult_adj = INSULT_SICKLY
+}
+
+rash = {
+	is_health = yes
+	is_symptom = yes
+	is_illness = yes
+
+	sex_appeal_opinion = -5
+
+	health_penalty = -0.5
+	
+	fertility_penalty = -0.1
+	
+	combat_rating = -2
+	
+	customizer = no
+
+	male_insult = INSULT_INVALID
+	female_insult = INSULT_INVALID
+	child_insult = INSULT_INVALID
+	male_insult_adj = INSULT_SICKLY
+	female_insult_adj = INSULT_SICKLY
+	child_insult_adj = INSULT_SICKLY
+}
+
+headache = {
+	is_health = yes
+	is_symptom = yes
+	is_illness = yes
+
+	diplomacy_penalty = -1
+	stewardship_penalty = -1
+	learning_penalty = -1
+	health_penalty = -0.5
+	
+	combat_rating = -2
+
+	ai_rationality = -10
+	
+	customizer = no
+
+	male_insult = INSULT_INVALID
+	female_insult = INSULT_INVALID
+	child_insult = INSULT_INVALID
+	male_insult_adj = INSULT_SICKLY
+	female_insult_adj = INSULT_SICKLY
+	child_insult_adj = INSULT_SICKLY
+}
+
+abdominal_pain = {
+	is_health = yes
+	is_symptom = yes
+	is_illness = yes
+
+	health_penalty = -1
+	
+	fertility_penalty = -0.1
+	
+	combat_rating = -2
+	
+	customizer = no
+
+	male_insult = INSULT_INVALID
+	female_insult = INSULT_INVALID
+	child_insult = INSULT_INVALID
+	male_insult_adj = INSULT_SICKLY
+	female_insult_adj = INSULT_SICKLY
+	child_insult_adj = INSULT_SICKLY
+}
+
+fatigue = {
+	is_health = yes
+	is_symptom = yes
+	is_illness = yes
+
+	diplomacy_penalty = -1
+	intrigue_penalty = -1
+
+	health_penalty = -0.25
+	
+	combat_rating = -2
+
+	ai_rationality = -20
+	
+	customizer = no
+
+	male_insult = INSULT_INVALID
+	female_insult = INSULT_INVALID
+	child_insult = INSULT_INVALID
+	male_insult_adj = INSULT_SICKLY
+	female_insult_adj = INSULT_SICKLY
+	child_insult_adj = INSULT_SICKLY
+}
+
+malaise = {
+	is_health = yes
+	is_symptom = yes
+	is_illness = yes
+
+	health_penalty = -0.75
+	
+	combat_rating = -2
+	
+	customizer = no
+
+	male_insult = INSULT_INVALID
+	female_insult = INSULT_INVALID
+	child_insult = INSULT_INVALID
+	male_insult_adj = INSULT_SICKLY
+	female_insult_adj = INSULT_SICKLY
+	child_insult_adj = INSULT_SICKLY
+}
+
+infection = {
+	is_health = yes
+	is_illness = yes
+
+	sex_appeal_opinion = -15
+
+	diplomacy_penalty = -3
+	intrigue_penalty = -3
+	martial_penalty = -3
+	stewardship_penalty = -3
+	learning_penalty = -3
+	
+	combat_rating = -2
+	
+	health_penalty = -2
+	
+	customizer = no
+
+	male_insult = INSULT_INVALID
+	female_insult = INSULT_INVALID
+	child_insult = INSULT_INVALID
+	male_insult_adj = INSULT_SICKLY
+	female_insult_adj = INSULT_SICKLY
+	child_insult_adj = INSULT_SICKLY
+	
+	succession_gfx = yes
+}
+
+## Maimed traits
+
+one_eyed = {
+	is_health = yes
+	
+	sex_appeal_opinion = -5
+	pagan_opinion = 10
+	same_opinion = 5
+	
+	combat_rating = -4
+	
+	customizer = no
+
+	male_insult = INSULT_CRIPPLE
+	female_insult = INSULT_CRIPPLE
+	child_insult = INSULT_CRIPPLE
+	male_insult_adj = INSULT_BLIND
+	female_insult_adj = INSULT_BLIND
+	child_insult_adj = INSULT_BLIND
+}
+
+one_handed = {
+	is_health = yes
+
+	learning = 1
+	
+	sex_appeal_opinion = -5
+	same_opinion = 5
+	
+	combat_rating = -8
+	
+	customizer = no
+	
+	male_insult = INSULT_CRIPPLE
+	female_insult = INSULT_CRIPPLE
+	child_insult = INSULT_CRIPPLE
+	male_insult_adj = INSULT_MAIMED
+	female_insult_adj = INSULT_MAIMED
+	child_insult_adj = INSULT_MAIMED
+}
+
+one_legged = {
+	is_health = yes
+
+	learning = 1
+	
+	sex_appeal_opinion = -10
+	same_opinion = 5
+	
+	combat_rating = -8
+
+	customizer = no
+	
+	male_insult = INSULT_CRIPPLE
+	female_insult = INSULT_CRIPPLE
+	child_insult = INSULT_CRIPPLE
+	male_insult_adj = INSULT_LIMPING
+	female_insult_adj = INSULT_LIMPING
+	child_insult_adj = INSULT_LIMPING
+
+}
+
+disfigured = {
+	is_health = yes
+	
+	sex_appeal_opinion = -20
+	same_opinion = 5
+	
+	diplomacy = -4
+	
+	customizer = no
+
+	male_insult = INSULT_FREAK
+	female_insult = INSULT_FREAK
+	child_insult = INSULT_FREAK
+	male_insult_adj = INSULT_HEINOUS
+	female_insult_adj = INSULT_HEINOUS
+	child_insult_adj = INSULT_HEINOUS
+}
+
+mangled = {
+	is_health = yes
+	
+	sex_appeal_opinion = -5
+	same_opinion = 5
+	
+	fertility_penalty = -0.5 
+	
+	intrigue = -2
+	diplomacy = -2
+	martial = -2
+	learning = -2
+	stewardship = -2
+	
+	combat_rating = -20
+
+	health = -3
+	
+	customizer = no
+
+	male_insult = INSULT_CRIPPLE
+	female_insult = INSULT_CRIPPLE
+	child_insult = INSULT_CRIPPLE
+	male_insult_adj = INSULT_MAIMED
+	female_insult_adj = INSULT_MAIMED
+	child_insult_adj = INSULT_MAIMED
+
+}
+
+severely_injured = {
+	is_health = yes
+	
+	sex_appeal_opinion = -10
+	same_opinion = 5
+	
+	fertility_penalty = -0.25 
+	
+	intrigue_penalty = -2
+	martial_penalty = -2
+	
+	combat_rating = -8
+
+	health_penalty = -2
+	
+	customizer = no
+	
+	male_insult = INSULT_CRIPPLE
+	male_insult_adj = INSULT_USELESS
+	female_insult_adj = INSULT_USELESS
+	
+	succession_gfx = yes
+}
+
+# Reaper diseases
+
+flu = {
+	is_health = yes
+	is_illness = yes
+
+	sex_appeal_opinion = -30
+
+	diplomacy_penalty = -1
+	intrigue_penalty = -1
+	martial_penalty = -1
+	stewardship_penalty = -1
+	learning_penalty = -1
+	health_penalty = -2
+	
+	combat_rating = -2
+	
+	customizer = no
+
+	male_insult_adj = INSULT_SICKLY
+	female_insult_adj = INSULT_SICKLY
+	child_insult_adj = INSULT_SICKLY
+}
+
+dysentery = {
+	is_health = yes
+	is_illness = yes
+
+	sex_appeal_opinion = -30
+
+	intrigue_penalty = -3
+	martial_penalty = -3
+
+	fertility_penalty = -0.25
+	
+	health_penalty = -4
+	
+	combat_rating = -2
+	
+	customizer = no
+
+	male_insult_adj = INSULT_PUTRID
+	female_insult_adj = INSULT_PUTRID
+	child_insult_adj = INSULT_PUTRID
+}
+
+gout = {
+	is_health = yes
+	is_illness = yes
+	
+	stewardship_penalty = -2
+	martial_penalty = -1
+
+	health_penalty = -2
+	
+	combat_rating = -2
+	
+	customizer = no
+
+	male_insult = INSULT_INVALID
+	female_insult = INSULT_INVALID
+	child_insult = INSULT_INVALID
+	male_insult_adj = INSULT_LIMPING
+	female_insult_adj = INSULT_LIMPING
+	child_insult_adj = INSULT_LIMPING
+}
+
+food_poisoning = {
+	is_health = yes
+	is_illness = yes
+
+	sex_appeal_opinion = -25
+
+	diplomacy_penalty = -2
+	intrigue_penalty = -2
+	martial_penalty = -2
+	stewardship_penalty = -2
+	learning_penalty = -2
+	
+	fertility_penalty = -0.5
+
+	health_penalty = -3
+	
+	combat_rating = -2
+	
+	customizer = no
+
+	male_insult_adj = INSULT_PUTRID
+	female_insult_adj = INSULT_PUTRID
+	child_insult_adj = INSULT_PUTRID
+}
+
+rabies = {
+	is_health = yes
+	is_illness = yes
+
+	vassal_opinion = -5
+	sex_appeal_opinion = -20
+	
+	ai_rationality = -50
+
+	diplomacy_penalty = -3
+	intrigue_penalty = -3
+	stewardship_penalty = -2
+	learning_penalty = -2
+
+	combat_rating = -2
+
+	health_penalty = -7
+	
+	customizer = no
+
+	male_insult = INSULT_MANIAC
+	female_insult = INSULT_MANIAC
+	child_insult = INSULT_MANIAC
+	male_insult_adj = INSULT_RABID
+	female_insult_adj = INSULT_RABID
+	child_insult_adj = INSULT_RABID
+}
+
+cancer = {
+	is_health = yes
+	is_illness = yes
+
+	fertility_penalty = -0.20
+	combat_rating = -2
+	health_penalty = -2.5
+	
+	customizer = no
+	
+	male_insult = INSULT_INVALID
+	female_insult = INSULT_INVALID
+	child_insult = INSULT_INVALID
+	male_insult_adj = INSULT_WITHERING
+	female_insult_adj = INSULT_WITHERING
+	child_insult_adj = INSULT_WITHERING
+}
+
+immortal = {
+	health = 10
+	combat_rating = 4
+	customizer = no
+	random = no
+	immortal = yes
+	hidden_from_others = yes
+}
+
+valhalla_bound  = {
+	opposites = {
+		crusader
+		mujahid
+	}
+	
+	martial = 2
+	customizer = no
+	pagan_opinion = 5
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	
+	male_compliment = COMPL_VALHALLA_BOUND_MALE
+	female_compliment = COMPL_VALHALLA_BOUND_FEMALE
+}
+
+ravager = {
+	potential = {
+		religion_group = drowned_god_group
+	}
+	opposites =  {
+		viking
+		seaking
+		sea_queen
+	}
+	martial = 2
+	monthly_character_prestige = 0.4
+	same_religion_opinion = 20
+	
+	same_opinion = 5
+	religious = yes
+	
+	male_insult = COMPL_PIRATE
+	female_insult = COMPL_PIRATE
+	male_compliment = COMPL_VIKING
+	male_compliment_adj = COMPL_VIKING
+	female_compliment = COMPL_VALKYRIE
+	female_compliment_adj = COMPL_VIKING
+}
+
+seaking = {
+	potential = {
+		religion_group = drowned_god_group
+	}
+	opposites =  {
+		viking
+		ravager
+		sea_queen
+	}
+	martial = 3
+	monthly_character_prestige = 0.5
+	same_religion_opinion = 25
+	
+	religious = yes
+	
+	male_insult = COMPL_PIRATE
+	female_insult = COMPL_PIRATE
+	male_compliment = COMPL_VIKING
+	male_compliment_adj = COMPL_VIKING
+	female_compliment = COMPL_VALKYRIE
+	female_compliment_adj = COMPL_VIKING
+}
+
+dancing_plague = {
+	is_epidemic = yes
+	is_illness = yes
+	
+	health_penalty = -2
+	diplomacy_penalty = -1
+	intrigue_penalty = -1
+	martial_penalty = -1
+	stewardship_penalty = -1
+	learning_penalty = -1
+	fertility = 0.25
+	
+	combat_rating = -6
+	
+	customizer = no
+	male_insult_adj = INSULT_SICKLY
+	female_insult_adj = INSULT_SICKLY
+	child_insult_adj = INSULT_SICKLY
+	
+	succession_gfx = yes
+}
+
+shieldmaiden  = {	
+
+	monthly_character_piety = 0.1
+	pagan_opinion = 5
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	
+	customizer = no
+	
+	female_compliment = COMPL_VALKYRIE
+	female_compliment_adj = COMPL_VIKING
+}
+
+physician = {
+	
+	diplomacy = 1
+	learning = 2
+	monthly_character_prestige = 0.25
+	health = 0.5
+	
+	general_opinion = 5
+	
+	customizer = no
+	random = no
+	
+	male_compliment = COMPL_SCHOLAR
+	female_compliment = COMPL_SCHOLAR
+	child_compliment = COMPL_SMARTY
+	male_compliment_adj = COMPL_LEARNED
+	female_compliment_adj = COMPL_LEARNED
+	child_compliment_adj = COMPL_CLEVER
+	male_insult = INSULT_BOOKWORM
+	female_insult = INSULT_BOOKWORM
+	child_insult = INSULT_BORE
+	male_insult_adj = INSULT_SQUINTEYED
+	female_insult_adj = INSULT_SQUINTEYED
+}
+
+scurvy = {
+	is_health = yes
+	is_illness = yes
+	
+	health_penalty = -3
+	diplomacy_penalty = -1
+	martial_penalty = -1
+	stewardship_penalty = -1
+	intrigue_penalty = -1
+	learning_penalty = -1
+	combat_rating = -2
+	
+	customizer = no
+	
+	male_insult_adj = INSULT_SICKLY
+	female_insult_adj = INSULT_SICKLY
+	child_insult_adj = INSULT_SICKLY
+}
+
+sick_incapable = {
+	is_health = yes
+	hidden = yes
+	
+	incapacitating = yes # Will need a regent
+	
+	customizer = no
+	random = no
+	
+	combat_rating = -9999
+	
+	male_insult = INSULT_VEGETABLE
+	female_insult = INSULT_VEGETABLE
+	male_insult_adj = INSULT_USELESS
+	female_insult_adj = INSULT_USELESS
+}
+
+cannot_marry = {
+	cannot_marry = yes
+	hidden = yes
+	
+	customizer = no
+	random = no
+}
+
+sea_queen = {
+	potential = {
+		religion_group = drowned_god_group
+	}
+	opposites =  {
+		viking
+		ravager
+		seaking
+	}
+	martial = 3
+	monthly_character_prestige = 0.5
+	same_religion_opinion = 25
+	
+	religious = yes
+	customizer = no
+	
+	male_insult = COMPL_PIRATE
+	female_insult = COMPL_PIRATE
+	male_compliment = COMPL_VIKING
+	male_compliment_adj = COMPL_VIKING
+	female_compliment = COMPL_VALKYRIE
+	female_compliment_adj = COMPL_VIKING
+}
+
+cannibal_trait = {
+	martial = 1
+	general_opinion = -10
+	combat_rating = 1
+	
+	same_opinion = 25
+	
+	ai_rationality = -20
+	ai_honor = -10
+	
+	male_insult = INSULT_CANNIBAL
+	female_insult = INSULT_CANNIBAL
+	male_insult_adj = INSULT_CANNIBALISTIC  
+	female_insult_adj = INSULT_CANNIBALISTIC  
+}
+
+lovers_pox = {
+	sex_appeal_opinion = -5
+	health = -0.25
+	
+	customizer = no
+	
+	male_insult_adj = INSULT_POX_RIDDEN
+	female_insult_adj = INSULT_POX_RIDDEN
+	child_insult_adj = INSULT_POX_RIDDEN
+} 
+
+sympathy_wildling_religion = {
+	opposites =  {
+		#zealous
+		wildling
+	}
+	
+	potential = {
+		NOT = { religion_group = wildling_religion }
+	}
+
+	tolerates_wildling_religion = yes
+	
+	church_opinion = -10
+	same_religion_opinion = -10
+	opposite_opinion = 50
+
+	customizer = no
+	random = no
+	
+	
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+sympathy_sarnor_rel = {
+	opposites =  {
+		zealous
+	}
+	
+	potential = {
+		NOT = { religion_group = sarnor_rel }
+	}
+
+	tolerates_sarnor_rel = yes
+
+	customizer = no
+	random = no
+	
+	
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+sympathy_qarth_rel = {
+	opposites =  {
+		zealous
+	}
+	
+	potential = {
+		NOT = { religion_group = qarth_rel }
+	}
+
+	tolerates_qarth_rel = yes
+
+	customizer = no
+	random = no
+	
+	
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+sympathy_far_east_group = {
+	opposites =  {
+		zealous
+	}
+	
+	potential = {
+		NOT = { religion_group = far_east_group }
+	}
+
+	tolerates_far_east_group = yes
+
+	customizer = no
+	random = no
+	
+	
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+sympathy_ibben_rel = {
+	opposites =  {
+		zealous
+	}
+	
+	potential = {
+		NOT = { religion_group = ibben_rel }
+	}
+
+	tolerates_ibben_rel = yes
+
+	customizer = no
+	random = no
+	
+	
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+sympathy_dothraki_rel_group = {
+	opposites =  {
+		zealous
+	}
+	
+	potential = {
+		NOT = { religion_group = dothraki_rel_group }
+	}
+
+	tolerates_dothraki_rel_group = yes
+
+	customizer = no
+	random = no
+	
+	
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+sympathy_jogos_rel_group = {
+	opposites =  {
+		zealous
+	}
+	
+	potential = {
+		NOT = { religion_group = jogos_rel_group }
+	}
+
+	tolerates_jogos_rel_group = yes
+
+	customizer = no
+	random = no
+	
+	
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+sympathy_lhazar_rel_group = {
+	opposites =  {
+		zealous
+	}
+	
+	potential = {
+		NOT = { religion_group = lhazar_rel_group }
+	}
+
+	tolerates_lhazar_rel_group = yes
+
+	customizer = no
+	random = no
+	
+	
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+sympathy_summer_rel_group = {
+	opposites =  {
+		zealous
+	}
+	
+	potential = {
+		NOT = { religion_group = summer_rel_group }
+	}
+
+	tolerates_summer_rel_group = yes
+
+	customizer = no
+	random = no
+	
+	
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+sympathy_sothoryos_rel_group = {
+	opposites =  {
+		zealous
+	}
+	
+	potential = {
+		NOT = { religion_group = sothoryos_rel_group }
+	}
+
+	tolerates_sothoryos_rel_group = yes
+
+	customizer = no
+	random = no
+	
+	
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+sympathy_pirate_group = {
+	opposites =  {
+		#zealous
+		pirate
+	}
+	
+	potential = {
+		NOT = { religion_group = pirate_group }
+		NOT = { religion_group = corsair_group }
+	}
+
+	tolerates_pirate_group = yes
+	tolerates_corsair_group = yes
+	
+	church_opinion = -10
+	same_religion_opinion = -10
+	opposite_opinion = 50
+
+	customizer = no
+	random = no
+	
+	
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+sympathy_pagans = {
+	
+	opposites =  {
+		zealous
+	}
+	
+	potential = {
+		NOT = { religion_group = pagan_group }
+	}
+
+	tolerates_pagan_group = yes		# Tolerates and is tolerated by Pagans
+
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+old_ones_scourge = {
+	is_epidemic = yes
+	is_illness = yes
+	
+	health_penalty = -2
+	ai_rationality = -25
+	ai_zeal = 25
+	ai_ambition = 15
+	
+	customizer = no
+}

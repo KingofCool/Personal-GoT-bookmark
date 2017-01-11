@@ -1,0 +1,1357 @@
+#a Valyrian steel sword
+defined_text = {
+	name = GetValyrianSword
+	
+	text = { 
+		localisation_key = ValyrianSword
+		weight_multiplier = {
+			factor = 1
+		}
+	}
+	text = {
+		trigger = { trait = dawn }
+		localisation_key = ValyrianSworddawn
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = ice }
+		localisation_key = ValyrianSwordice
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { 
+			OR = {
+				trait = longclaw
+				trait = longclaw_snow
+			}	
+		}
+		localisation_key = ValyrianSwordlongclaw
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = blackfyre }
+		localisation_key = ValyrianSwordblackfyre
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = lightbringer }
+		localisation_key = ValyrianSwordlightbringer
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = brightroar }
+		localisation_key = ValyrianSwordbrightroar
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = heartsbane }
+		localisation_key = ValyrianSwordheartsbane
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = nightfall }
+		localisation_key = ValyrianSwordnightfall
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = darksister }
+		localisation_key = ValyrianSworddarksister
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = ladyforlorn }
+		localisation_key = ValyrianSwordladyforlorn
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = redrain }
+		localisation_key = ValyrianSwordredrain
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = widowswail }
+		localisation_key = ValyrianSwordwidowswail
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = oathkeeper }
+		localisation_key = ValyrianSwordoathkeeper
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = crabspincer }
+		localisation_key = ValyrianSwordcrabspincer
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = strangers_mercy }
+		localisation_key = ValyrianSwordstrangers_mercy
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = anger }
+		localisation_key = ValyrianSwordanger
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = black_death }
+		localisation_key = ValyrianSwordblack_death
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = compassion }
+		localisation_key = ValyrianSwordcompassion
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = concession }
+		localisation_key = ValyrianSwordconcession
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = del_pino }
+		localisation_key = ValyrianSworddel_pino
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = el_swordo }
+		localisation_key = ValyrianSwordel_swordo
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = gold_sword }
+		localisation_key = ValyrianSwordgold_sword
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = happyness }
+		localisation_key = ValyrianSwordhappyness
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = hubris }
+		localisation_key = ValyrianSwordhubris
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = justice }
+		localisation_key = ValyrianSwordjustice
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = kingmaker }
+		localisation_key = ValyrianSwordkingmaker
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = passion }
+		localisation_key = ValyrianSwordpassion
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = rage }
+		localisation_key = ValyrianSwordrage
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = sightblinder }
+		localisation_key = ValyrianSwordsightblinder
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = the_monarchist }
+		localisation_key = ValyrianSwordthe_monarchist
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = the_usurper }
+		localisation_key = ValyrianSwordthe_usurper
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = worldeater }
+		localisation_key = ValyrianSwordworldeater
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = worlds_envy }
+		localisation_key = ValyrianSwordworlds_envy
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = vigilance }
+		localisation_key = ValyrianSwordvigilance
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = orphan_maker }
+		localisation_key = ValyrianSwordorphan_maker
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = truth }
+		localisation_key = ValyrianSwordtruth
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = lamentation }
+		localisation_key = ValyrianSwordlamentation
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = poison }
+		localisation_key = ValyrianSwordpoison
+		weight_multiplier = { factor = 1000 }
+	}
+}
+defined_text = { #your Valyrian steel sword (other named swords identical to above)
+	name = GetValyrianSwordOwned
+	
+	text = { 
+		trigger = { 
+			NOR = {
+				#trait = valyrian_steel 
+				trait = lightbringer
+				trait = longclaw 
+				trait = longclaw_snow
+				trait = blackfyre 
+				trait = dawn
+				trait = brightroar
+				trait = heartsbane
+				trait = ice
+				trait = nightfall
+				trait = darksister
+				trait = ladyforlorn
+				trait = redrain
+				trait = widowswail
+				trait = oathkeeper
+				trait = crabspincer
+				trait = strangers_mercy
+				trait = anger
+				trait = black_death
+				trait = compassion
+				trait = concession
+				trait = del_pino
+				trait = el_swordo
+				trait = gold_sword
+				trait = happyness
+				trait = hubris
+				trait = justice
+				trait = kingmaker
+				trait = passion
+				trait = rage
+				trait = sightblinder
+				trait = the_monarchist
+				trait = the_usurper
+				trait = worldeater
+				trait = worlds_envy
+				trait = vigilance
+				trait = orphan_maker
+				trait = truth
+				trait = lamentation
+				trait = poison
+			}
+		}
+		localisation_key = ValyrianSwordYours
+	}
+	text = {
+		trigger = { trait = dawn }
+		localisation_key = ValyrianSworddawn
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = ice }
+		localisation_key = ValyrianSwordice
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { 
+			OR = {
+				trait = longclaw
+				trait = longclaw_snow
+			}	
+		}
+		localisation_key = ValyrianSwordlongclaw
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = blackfyre }
+		localisation_key = ValyrianSwordblackfyre
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = lightbringer }
+		localisation_key = ValyrianSwordlightbringer
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = brightroar }
+		localisation_key = ValyrianSwordbrightroar
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = heartsbane }
+		localisation_key = ValyrianSwordheartsbane
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = nightfall }
+		localisation_key = ValyrianSwordnightfall
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = darksister }
+		localisation_key = ValyrianSworddarksister
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = ladyforlorn }
+		localisation_key = ValyrianSwordladyforlorn
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = redrain }
+		localisation_key = ValyrianSwordredrain
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = widowswail }
+		localisation_key = ValyrianSwordwidowswail
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = oathkeeper }
+		localisation_key = ValyrianSwordoathkeeper
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = crabspincer }
+		localisation_key = ValyrianSwordcrabspincer
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = strangers_mercy }
+		localisation_key = ValyrianSwordstrangers_mercy
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = anger }
+		localisation_key = ValyrianSwordanger
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = black_death }
+		localisation_key = ValyrianSwordblack_death
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = compassion }
+		localisation_key = ValyrianSwordcompassion
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = concession }
+		localisation_key = ValyrianSwordconcession
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = del_pino }
+		localisation_key = ValyrianSworddel_pino
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = el_swordo }
+		localisation_key = ValyrianSwordel_swordo
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = gold_sword }
+		localisation_key = ValyrianSwordgold_sword
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = happyness }
+		localisation_key = ValyrianSwordhappyness
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = hubris }
+		localisation_key = ValyrianSwordhubris
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = justice }
+		localisation_key = ValyrianSwordjustice
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = kingmaker }
+		localisation_key = ValyrianSwordkingmaker
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = passion }
+		localisation_key = ValyrianSwordpassion
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = rage }
+		localisation_key = ValyrianSwordrage
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = sightblinder }
+		localisation_key = ValyrianSwordsightblinder
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = the_monarchist }
+		localisation_key = ValyrianSwordthe_monarchist
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = the_usurper }
+		localisation_key = ValyrianSwordthe_usurper
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = worldeater }
+		localisation_key = ValyrianSwordworldeater
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = worlds_envy }
+		localisation_key = ValyrianSwordworlds_envy
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = vigilance }
+		localisation_key = ValyrianSwordvigilance
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = orphan_maker }
+		localisation_key = ValyrianSwordorphan_maker
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = truth }
+		localisation_key = ValyrianSwordtruth
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = lamentation }
+		localisation_key = ValyrianSwordlamentation
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = poison }
+		localisation_key = ValyrianSwordpoison
+		weight_multiplier = { factor = 1000 }
+	}
+}
+defined_text = { #her/his Valyrian steel sword (other named swords identical to above)
+	name = GetValyrianSwordHerHis
+	
+	text = { 
+		trigger = { 
+			is_female = no
+		}
+		localisation_key = ValyrianSwordHis
+		weight_multiplier = { 
+			factor = 1 
+		}
+	}
+	text = { 
+		trigger = { 
+			is_female = yes
+		}
+		localisation_key = ValyrianSwordHer
+		weight_multiplier = { 
+			factor = 1 
+		}
+	}
+	text = {
+		trigger = { trait = dawn }
+		localisation_key = ValyrianSworddawn
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = ice }
+		localisation_key = ValyrianSwordice
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { 
+			OR = {
+				trait = longclaw
+				trait = longclaw_snow
+			}	
+		}
+		localisation_key = ValyrianSwordlongclaw
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = blackfyre }
+		localisation_key = ValyrianSwordblackfyre
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = lightbringer }
+		localisation_key = ValyrianSwordlightbringer
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = brightroar }
+		localisation_key = ValyrianSwordbrightroar
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = heartsbane }
+		localisation_key = ValyrianSwordheartsbane
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = nightfall }
+		localisation_key = ValyrianSwordnightfall
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = darksister }
+		localisation_key = ValyrianSworddarksister
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = ladyforlorn }
+		localisation_key = ValyrianSwordladyforlorn
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = redrain }
+		localisation_key = ValyrianSwordredrain
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = widowswail }
+		localisation_key = ValyrianSwordwidowswail
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = oathkeeper }
+		localisation_key = ValyrianSwordoathkeeper
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = crabspincer }
+		localisation_key = ValyrianSwordcrabspincer
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = strangers_mercy }
+		localisation_key = ValyrianSwordstrangers_mercy
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = anger }
+		localisation_key = ValyrianSwordanger
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = black_death }
+		localisation_key = ValyrianSwordblack_death
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = compassion }
+		localisation_key = ValyrianSwordcompassion
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = concession }
+		localisation_key = ValyrianSwordconcession
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = del_pino }
+		localisation_key = ValyrianSworddel_pino
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = el_swordo }
+		localisation_key = ValyrianSwordel_swordo
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = gold_sword }
+		localisation_key = ValyrianSwordgold_sword
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = happyness }
+		localisation_key = ValyrianSwordhappyness
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = hubris }
+		localisation_key = ValyrianSwordhubris
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = justice }
+		localisation_key = ValyrianSwordjustice
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = kingmaker }
+		localisation_key = ValyrianSwordkingmaker
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = passion }
+		localisation_key = ValyrianSwordpassion
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = rage }
+		localisation_key = ValyrianSwordrage
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = sightblinder }
+		localisation_key = ValyrianSwordsightblinder
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = the_monarchist }
+		localisation_key = ValyrianSwordthe_monarchist
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = the_usurper }
+		localisation_key = ValyrianSwordthe_usurper
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = worldeater }
+		localisation_key = ValyrianSwordworldeater
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = worlds_envy }
+		localisation_key = ValyrianSwordworlds_envy
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = vigilance }
+		localisation_key = ValyrianSwordvigilance
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = orphan_maker }
+		localisation_key = ValyrianSwordorphan_maker
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = truth }
+		localisation_key = ValyrianSwordtruth
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = lamentation }
+		localisation_key = ValyrianSwordlamentation
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = poison }
+		localisation_key = ValyrianSwordpoison
+		weight_multiplier = { factor = 1000 }
+	}
+}
+
+defined_text = { #First, Second, Third etc
+	name = GetRegnalOrdinal
+	
+	text = { 
+		trigger = { 
+			primary_title = {
+				NOT = {
+					any_previous_holder = {
+						count = 2
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalFirst
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 2
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 3
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalSecond
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 3
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 4
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalThird
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 4
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 5
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalFourth
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 5
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 6
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalFifth
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 6
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 7
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalSixth
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 7
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 8
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalSeventh
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 8
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 9
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalEighth
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 9
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 10
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalNinth
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 10
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 11
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalTenth
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 11
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 12
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalEleventh
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 12
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 13
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalTwelth
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 13
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 14
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalThirteenth
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 14
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 15
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalFourteenth
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 15
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 16
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalFifteenth
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 16
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 17
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalSixteenth
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 17
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 18
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalSeventeenth
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 18
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 19
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalEighteenth
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 19
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 20
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalNineteenth
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 20
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 21
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalTwetienth
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 21
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 22
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalTwentyfirst
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 22
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 23
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalTwentysecond
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 23
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 24
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalTwentythird
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 24
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 25
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalTwentyfourth
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 25
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 26
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalTwentyfifth
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 26
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 27
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalTwentysixth
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 27
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 28
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalTwentyseventh
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 28
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 29
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalTwentyeighth
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 29
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 30
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalTwentyninth
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 30
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 31
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalThirtieth
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 31
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 32
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalThirtyfirst
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 32
+					same_regnal_name = PREVPREV
+				}
+				NOT = {
+					any_previous_holder = {
+						count = 33
+						same_regnal_name = PREVPREV
+					}
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalThirtysecond
+	}
+	text = { 
+		trigger = { 
+			primary_title = {
+				any_previous_holder = {
+					count = 33
+					same_regnal_name = PREVPREV
+				}
+			}
+		}
+		localisation_key = RegnalOrdinalLarge
+	}
+}
+#Skinchanger animal
+defined_text = {
+	name = GetAnimalCompanion
+	
+	text = { 
+		localisation_key = AnimalCompanion
+		weight_multiplier = {
+			factor = 1
+		}
+	}
+	text = {
+		trigger = { trait = crow }
+		localisation_key = AnimalCompanioncrow
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { trait = wolf }
+		localisation_key = AnimalCompanionwolf
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = sea_lion }
+		localisation_key = AnimalCompanionsea_lion
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = whale }
+		localisation_key = AnimalCompanionwhale
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = eagle }
+		localisation_key = AnimalCompanioneagle
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = shadowcat }
+		localisation_key = AnimalCompanionshadowcat
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = boar }
+		localisation_key = AnimalCompanionboar
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = snowbear }
+		localisation_key = AnimalCompanionsnowbear
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = direwolf }
+		localisation_key = AnimalCompaniondirewolf
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = dog }
+		localisation_key = AnimalCompaniondog
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { trait = brownbear }
+		localisation_key = AnimalCompanionbrownbear
+		weight_multiplier = { factor = 1000 }
+	}
+}
+#Ship name, must have find_ship_name_effect = yes in immediate, prints (flag)ship (name) so it can be used to display just ship or a specific name
+#use it as 'the [Root.GetShipName] has sunk' to display 'the ship has sunk' if no flagship or to display 'the flagship 'Crowed Stag' has sunk'
+defined_text = {
+	name = GetShipName
+	
+	text = {
+		localisation_key = ShipName_no_flagship
+		weight_multiplier = { factor = 1 }
+	}	
+	text = {
+		trigger = { has_character_flag = flagship_name_SELF }
+		localisation_key = ShipName_flagship_name_SELF
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { has_character_flag = flagship_name_FATHER }
+		localisation_key = ShipName_flagship_name_FATHER
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { has_character_flag = flagship_name_SPOUSE }
+		localisation_key = ShipName_flagship_name_SPOUSE
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { has_character_flag = flagship_name_GOD }
+		localisation_key = ShipName_flagship_name_GOD
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { has_character_flag = flagship_name_DYNASTY }
+		localisation_key = ShipName_flagship_name_DYNASTY
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { has_character_flag = flagship_name_PROVINCE }
+		localisation_key = ShipName_flagship_name_PROVINCE
+		weight_multiplier = { factor = 1000 }
+	}	
+	text = {
+		trigger = { 
+			OR = {
+				has_character_modifier = enormous_flagship
+				has_character_modifier = regular_flagship
+				has_character_modifier = small_flagship
+			}
+			NOR = {
+				has_character_flag = flagship_name_SELF
+				has_character_flag = flagship_name_FATHER
+				has_character_flag = flagship_name_SPOUSE
+				has_character_flag = flagship_name_GOD
+				has_character_flag = flagship_name_PROVINCE
+				has_character_flag = flagship_name_DYNASTY
+			}
+		}
+		localisation_key = ShipName_flagship_name_TARGET
+		weight_multiplier = { factor = 1000 }
+	}
+	text = {
+		trigger = { 
+			has_character_flag = wikid_no_take_flagship
+		}
+		localisation_key = ShipName_no_flagship
+		weight_multiplier = { factor = 10000 }
+	}
+}

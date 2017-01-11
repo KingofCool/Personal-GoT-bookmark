@@ -1,0 +1,165 @@
+###The Seven###
+silent_sister = {
+	potential = { religion = the_seven }
+	diplomacy = -10
+	monthly_character_piety = 1
+	#fertility = -1000
+	church_opinion = 25
+	customizer = no
+	cannot_marry = yes
+	cannot_inherit = yes
+	
+	female_compliment_adj = COMPL_DEVOUT
+}
+
+###Rhllor####
+red_priest = {
+	religious = yes # Lost immediately on religion change
+	
+	learning = 4
+	
+	monthly_character_piety = 0.5
+	
+	infidel_opinion = -5
+	same_religion_opinion = 10
+	church_opinion = 5
+	
+	customizer = no
+	cannot_marry = yes
+	cannot_inherit = yes
+	
+	ai_zeal = 50
+	
+	female_insult = INSULT_RED_BITCH
+	
+	female_compliment_adj = COMPL_HOLY
+	male_compliment_adj = COMPL_HOLY
+}
+favored_by_rhllor = {
+	religious = yes # Lost immediately on religion change
+	health = 2
+	
+	monthly_character_piety = 0.25
+	monthly_character_prestige = 0.1
+	
+	infidel_opinion = -10
+	same_religion_opinion = 10
+	church_opinion = 5
+	combat_rating = 0.64
+	
+	ai_zeal = 25
+}
+chosen_by_rhllor = {
+	religious = yes # Lost immediately on religion change
+	health = 4
+	
+	monthly_character_piety = 1
+	monthly_character_prestige = 0.5
+	
+	infidel_opinion = -15
+	same_religion_opinion = 15
+	church_opinion = 10
+	combat_rating = 2
+	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 
+	
+	ai_zeal = 50
+	
+	female_compliment_adj = COMPL_DIVINE
+	male_compliment_adj = COMPL_DIVINE
+}
+####Drowned God###
+drowned = {
+	religious = yes # Lost immediately on religion change
+	
+	martial = 4
+	learning = -2
+	
+	monthly_character_piety = 0.5 #1
+	monthly_character_prestige = 0.2 #0.4
+	church_opinion = 10 #75
+	same_religion_opinion = 5 #50
+	
+	customizer = no
+	cannot_marry = yes
+	cannot_inherit = yes
+	ai_zeal = 50
+	
+	male_compliment_adj = COMPL_HOLY
+}
+###Harpy###
+grace = {
+	potential = { religion = harpy }
+	learning = 2
+	monthly_character_piety = 0.5
+	#fertility = -1000
+	church_opinion = 15
+	infidel_opinion = -5
+	customizer = no
+	cannot_marry = yes
+	cannot_inherit = yes
+	
+	female_compliment_adj = COMPL_DEVOUT
+}
+###Warlocks####
+warlock = {
+	religious = yes # Lost immediately on religion change
+	
+	learning = 4
+	
+	monthly_character_piety = 0.5
+	
+	infidel_opinion = -5
+	same_religion_opinion = 10
+	church_opinion = 5
+	
+	customizer = no
+	cannot_marry = yes
+	cannot_inherit = yes
+	
+	ai_zeal = 50
+	
+	male_compliment_adj = COMPL_HOLY
+}
+###Shadowbinders####
+shadowbinder = {
+	religious = yes # Lost immediately on religion change
+	
+	learning = 4
+	
+	monthly_character_piety = 0.5
+	
+	infidel_opinion = -5
+	same_religion_opinion = 10
+	church_opinion = 5
+	
+	customizer = no
+	cannot_marry = yes
+	cannot_inherit = yes
+	
+	ai_zeal = 50
+	
+	male_compliment_adj = COMPL_HOLY
+}
+
+###Bearded Priests####
+bearded_priest = {
+	religious = yes # Lost immediately on religion change
+
+	martial = 4	
+	learning = 2
+	
+	monthly_character_piety = 0.5
+	
+	infidel_opinion = -5
+	same_religion_opinion = 10
+	church_opinion = 5
+	
+	customizer = no
+	cannot_marry = yes
+	cannot_inherit = yes
+	
+	ai_zeal = 50
+	
+	male_compliment_adj = COMPL_HOLY
+}

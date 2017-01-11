@@ -1,0 +1,42 @@
+######################
+###Written by Rodri###
+######################
+
+character_event = {
+	id = 251300
+	desc = "EVTDESC251300"
+	
+	is_triggered_only = yes
+	only_rulers = yes
+	
+	trigger = {
+		dynasty = 80
+		any_playable_ruler  = {            
+			dynasty = 59
+			NOT = {
+				ROOT = { 
+					has_opinion_modifier = { who = PREV modifier = opinion_debt_remembered }
+				}
+			}
+		}
+	}	
+
+	option = {
+		name = "EVTOPTA251300"
+		any_playable_ruler  = {
+			limit = { 
+				dynasty = 59
+				NOT = {
+					ROOT = { 
+						has_opinion_modifier = { who = PREV modifier = opinion_debt_remembered }
+					}
+				}
+			}
+			reverse_opinion = {
+				who = ROOT
+				modifier = opinion_debt_remembered
+				years = 200
+			}
+		}
+	}
+}

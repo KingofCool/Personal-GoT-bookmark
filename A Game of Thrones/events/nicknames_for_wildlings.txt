@@ -1,0 +1,265 @@
+namespace = nicknames_wildlings
+
+#nicknames_wildlings.1 - Wildling nicknames. [AI only]
+character_event = {
+	id = nicknames_wildlings.1
+	desc = "Wildlings" 
+	
+	min_age = 14
+	max_age = 40
+	culture_group = free_folk
+	
+	mean_time_to_happen = {
+		years = 6
+	}
+	
+	trigger = {
+		ai = yes	
+		has_nickname = no
+		NOT = { trait = maester }
+		NOT = { trait = archmaester }
+		NOT = { trait = silent_sister }
+		NOT = { trait = septon }
+		NOT = { trait = red_priest }
+	}
+	
+	option = {
+		name = "OK"
+
+		if = {
+			limit = {
+				OR = {
+					trait = duelist
+					trait = wroth
+				}
+			}
+			random_list = {
+				50 = { }
+				50 = { give_nickname = nick_shieldbreaker }
+			}
+		}
+		
+		if = {
+			limit = {
+					trait = hunter
+					trait = impaler
+			}
+			random_list = {
+				50 = { }
+				50 = { give_nickname = nick_sealskinner }
+			}
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					trait = scholar
+				}
+			}
+			random_list = {
+				50 = { }
+				50 = { give_nickname = nick_the_wanderer }
+			}
+		}
+		
+		if = {
+			limit = {
+				trait = skilled_warrior
+				trait = wroth
+				trait = aggressive_leader
+			}
+			random_list = {
+				50 = { }
+				50 = { give_nickname = nick_crowkiller }
+			}
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					trait = gregarious
+				}
+			}
+			random_list = {
+				50 = { }
+				50 = { give_nickname = nick_tall_talker }
+			}
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					trait = hunter
+					trait = falconer
+				}
+			}
+			random_list = {
+				50 = { }
+				50 = { give_nickname = nick_the_hunter }
+			}
+		}
+		
+		if = {
+			limit = {
+				trait = fair
+				trait = fashionable
+				trait = gregarious
+			}
+			random_list = {
+				50 = { }
+				50 = { give_nickname = nick_the_handsome }
+			}
+		}
+		
+		if = {
+			limit = {
+				trait = tough_soldier
+				trait = trained_warrior
+				trait = strong
+				is_female = yes
+			}
+			random_list = {
+				50 = { }
+				50 = { give_nickname = nick_the_spearwife }
+			}
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					trait = poet
+				}
+			}
+			random_list = {
+				50 = { }
+				50 = { give_nickname = nick_the_bard }
+			}
+		}
+		
+		if = {
+			limit = {
+				trait = tough_soldier
+				trait = skilled_warrior
+				trait = proud
+				trait = aggressive_leader
+			}
+			random_list = {
+				50 = { }
+				50 = { give_nickname = nick_widow_maker }
+			}
+		}
+		
+		if = {
+			limit = {
+				trait = brilliant_strategist
+				trait = skilled_tactician
+			}
+			random_list = {
+				50 = { }
+				50 = { give_nickname = nick_hornblower }
+			}
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					trait = boar
+				}
+			}
+			random_list = {
+				50 = { }
+				50 = { give_nickname = nick_the_boar }
+			}
+		}
+		
+		if = {
+			limit = {
+				trait = wolf
+			}
+			random_list = {
+				50 = { }
+				50 = { give_nickname = nick_the_wolf }
+			}
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					trait = brownbear
+					trait = snowbear
+				}
+			}
+			random_list = {
+				50 = { }
+				50 = { give_nickname = nick_the_bear }
+			}
+		}
+		
+		if = {
+			limit = {
+				trait = eagle
+			}
+			random_list = {
+				50 = { }
+				50 = { give_nickname = nick_the_eagle }
+			}
+		}
+		
+		if = {
+			limit = {
+				OR  = {
+					trait = shadowcat
+				}
+			}
+			random_list = {
+				50 = { }
+				50 = { give_nickname = nick_the_shadowcat }
+			}
+		}
+		if = {
+			limit = {
+				OR  = {
+					trait = wolf
+					trait = brownbear
+					trait = snowbear
+					trait = direwolf
+					trait = crow
+					trait = eagle
+					trait = shadowcat
+					trait = boar
+				}
+			}
+			random_list = {
+				50 = { }
+				50 = { give_nickname = nick_the_skinchanger  }
+			}
+		}
+		# if = {
+			# limit = {
+				# trait = gluttonous
+			# }
+			# random_list = {
+				# 50 = { }
+				# 50 = { give_nickname = nick_eater_herds }
+			# }
+		# }
+		# if = {
+			# limit = {
+				# trait = deceitful
+			# }
+			# random_list = {
+				# 50 = { }
+				# 50 = { give_nickname = nick_forked_tounge }
+			# }
+		# }
+		# if = {
+			# limit = {
+				# trait = honest
+			# }
+			# random_list = {
+				# 50 = { }
+				# 50 = { give_nickname = nick_truth_teller }
+			# }
+		# }
+	}
+}

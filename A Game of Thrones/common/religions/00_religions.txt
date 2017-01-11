@@ -1,0 +1,1610 @@
+westerosi_religion = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	#crusade_cb = crusade
+	hostile_within_group = yes
+	
+	playable = yes
+	
+	color = { 0.7 0.7 0.5 }
+	
+	the_seven = {
+		graphical_culture = westerngfx
+
+		icon = 1
+		color = { 0.8 0.8 0.6 }
+		
+		high_god_name = GOD_THE_GODS
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SEVEN-POINTED_STAR
+		priest_title = job_priest_the_seven
+		
+		god_names = {
+			GOD_THE_GODS GOD_FATHER GOD_MOTHER GOD_WARRIOR GOD_MAIDEN GOD_SMITH GOD_CRONE GOD_SEVEN #GOD_STRANGER
+		}
+		evil_god_names = {
+			GOD_THE_STRANGER GOD_THE_OTHERS
+		}
+		
+		# Tentative - Heavy cavalry bonuses!
+		unit_modifier = {
+			heavy_cavalry_offensive = 0.2
+			heavy_cavalry_defensive = 0.2
+			key = "OFF_RELIGION"
+		}
+		
+		investiture = yes
+		can_excommunicate = yes #no
+		can_grant_divorce = yes #no
+		#can_grant_invasion_cb = no
+		can_grant_claim = no
+		can_call_crusade = no
+		can_have_antipopes = no
+		
+		priests_can_inherit = no
+
+		religious_clothing_head = 0
+		religious_clothing_priest = 2
+		
+		max_consorts = 7
+	}
+	
+	old_gods = {
+		graphical_culture = oldgodsgfx
+
+		icon = 2
+		color = { 0.7 0.5 0 }
+		
+		high_god_name = GOD_THE_GODS
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		
+		god_names = {
+			GOD_THE_GODS GOD_THE_OLD_GODS
+		}
+		evil_god_names = {
+			GOD_THE_OTHERS
+		}
+		
+		can_excommunicate = no
+		can_grant_divorce = no
+		can_grant_claim = no
+		can_call_crusade = no
+		can_hold_temples = yes
+		
+		intermarry = beyond_wall_old_gods
+		intermarry = thenn_rel
+	}
+}
+
+wildling_religion = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	#crusade_cb = crusade
+	
+	playable = yes
+	
+	color = { 0.8 0.6 0.1 }
+
+	beyond_wall_old_gods = {
+		graphical_culture = oldgodsgfx
+
+		icon = 7
+		color = { 0.8 0.6 0.1 }
+		
+		high_god_name = GOD_THE_GODS
+		priest_title = PRIEST
+		
+		god_names = {
+			GOD_THE_GODS GOD_THE_OLD_GODS
+		}
+		evil_god_names = {
+			GOD_THE_OTHERS
+		}
+		allow_looting = yes
+		defensive_attrition = yes
+		raised_vassal_opinion_loss = no
+		can_hold_temples = yes
+		
+		independence_war_score_bonus = 30
+		aggression = 4.0
+		#reformed = old_gods
+				
+		intermarry = old_gods
+		
+		dislike_tribal_organization = yes
+	}
+	
+	mountain_old_gods = {
+		graphical_culture = oldgodsgfx
+
+		icon = 40
+		color = { 0.8 0.6 0.1 }
+		
+		high_god_name = GOD_THE_GODS
+		priest_title = PRIEST
+		
+		god_names = {
+			GOD_THE_GODS GOD_THE_OLD_GODS
+		}
+		evil_god_names = {
+			GOD_THE_OTHERS
+		}
+		allow_looting = yes
+		defensive_attrition = yes
+		raised_vassal_opinion_loss = no
+		can_hold_temples = yes
+		
+		independence_war_score_bonus = 30
+		aggression = 4.0
+		#reformed = old_gods
+				
+		intermarry = old_gods
+		
+		dislike_tribal_organization = yes
+			
+		max_consorts = 7
+	}
+	
+	thenn_rel = {
+		graphical_culture = oldgodsgfx
+
+		icon = 41
+		color = { 0.9 0.5 0.1 }
+		
+		high_god_name = GOD_THE_GODS
+		priest_title = PRIEST
+		
+		god_names = {
+			GOD_THE_MAGNAR GOD_THE_GODS GOD_THE_OLD_GODS
+		}
+		evil_god_names = {
+			GOD_THE_OTHERS
+		}
+		unit_modifier = {	
+			light_infantry_defensive = 0.2
+			heavy_infantry_defensive = 0.2
+			
+			key = "thenn_rel"
+		}
+		allow_looting = yes
+		defensive_attrition = yes
+		raised_vassal_opinion_loss = no
+		can_hold_temples = yes
+		
+		independence_war_score_bonus = 30
+		aggression = 4.0
+		#reformed = old_gods
+				
+		intermarry = old_gods
+		
+		dislike_tribal_organization = yes
+		
+		can_grant_divorce = yes
+	}
+}
+
+drowned_god_group = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	
+	playable = yes
+	
+	color = { 0.0 0.0 0.6 }
+
+	#shades of blue
+	drowned_god = {
+		graphical_culture = drownedgodgfx
+
+		icon = 5
+		heresy_icon = 9
+		color = { 0.0 0.0 0.6 }
+		
+		high_god_name = GOD_THE_DROWNED_GOD
+		
+		god_names = {
+			GOD_THE_DROWNED_GOD
+		}
+		evil_god_names = {
+			GOD_STORM_GOD GOD_THE_OTHERS
+		}
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_LEGENDS
+		priest_title = job_priest_drowned_god
+		
+		allow_looting = yes
+		allow_rivermovement = yes
+		peace_prestige_loss = yes
+		raised_vassal_opinion_loss = no
+		seafarer = yes
+		
+		priests_can_inherit = no
+		
+		max_consorts = 20
+		
+		aggression = 2.0
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
+	}
+	
+	storm_god = {
+		graphical_culture = drownedgodgfx
+		
+		icon = 9
+		heresy_icon = 5
+		color = { 0.2 0.7 0.9 }
+		
+		high_god_name = GOD_STORM_GOD 
+		priest_title = PRIEST
+		
+		god_names = { 
+			GOD_STORM_GOD 
+		}
+		evil_god_names = {
+			GOD_THE_DROWNED_GOD GOD_THE_OTHERS
+		}
+		parent = drowned_god
+		
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
+	}
+}
+
+essos_group = { #red, yellow, orange
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	hostile_within_group = yes
+	
+	playable = yes
+	
+	color = { 0.6 0.4 1 }
+	
+	rhllor = {
+		graphical_culture = rhllorgfx
+
+		icon = 3
+		color = { 0.8 0 0 } #red
+		
+		high_god_name = GOD_GOD_OF_LIGHT
+		
+		god_names = {
+			GOD_RHLLOR GOD_GOD_OF_LIGHT GOD_THE_HOLY_FIRE
+		}
+		evil_god_names = {
+			GOD_THE_GREAT_OTHER
+		}
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_FIRE
+		priest_title = job_priest_rhllor
+		
+		max_consorts = 7
+		
+		religious_clothing_head = 1
+		religious_clothing_priest = 1
+		
+		autocephaly = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_claim = no
+		can_call_crusade = no
+		female_temple_holders = yes # Speculation, but we know at least one red priestess
+		
+		priests_can_inherit = no
+		
+		intermarry = valyrian
+	}
+
+	black_goat = {
+		graphical_culture = muslimgfx
+
+		icon = 11
+		color = { 0.4 0.05 0.8 }
+		
+		high_god_name = GOD_THE_BLACK_GOAT
+		
+		god_names = {
+			GOD_THE_BLACK_GOAT
+		}
+		evil_god_names = {
+			GOD_THE_OTHERS
+		}
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+		
+		max_consorts = 7
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		priests_can_inherit = no
+		
+		intermarry = valyrian
+	}
+
+	gods_lorath = {
+		graphical_culture = muslimgfx
+
+		icon = 26
+		color = { 0.62 0.7 0.8 } 
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_LORATH GOD_AQUAN GOD_MERLIN_KING GOD_MOONPALE_MAIDEN GOD_SILENT_GOD
+		}
+		evil_god_names = {
+			GOD_THE_OTHERS GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+		
+		max_consorts = 7
+		
+		religious_clothing_head = 7
+		religious_clothing_priest = 7
+		
+		intermarry = valyrian
+	}
+
+	moonsingers = {
+		graphical_culture = muslimgfx
+
+		icon = 12
+		color = { 0.5 0.5 0 }
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_THE_GODS GOD_AQUAN GOD_HOODED_WAYFARER GOD_MERLIN_KING GOD_MOONPALE_MAIDEN GOD_SEMOSH GOD_SELLOSO GOD_SILENT_GOD
+		}
+		evil_god_names = {
+			GOD_THE_OTHERS GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = job_priest_jogos_pagan
+		
+		max_consorts = 7
+		
+		religious_clothing_head = 7
+		religious_clothing_priest = 7
+		
+		intermarry = valyrian
+	}
+
+	trios = {
+		graphical_culture = muslimgfx
+
+		icon = 16
+		color = { 0.6 0.4 1 }
+		
+		high_god_name = GOD_TRIOS
+		
+		god_names = {
+			GOD_TRIOS GOD_THE_DRUNKEN_GOD GOD_MERLIN_KING
+		}
+		evil_god_names = {
+			GOD_THE_OTHERS GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+		
+		max_consorts = 7
+		
+		religious_clothing_head = 6
+		religious_clothing_priest = 6
+		
+		intermarry = valyrian
+	}
+
+	bearded_priests = {
+		graphical_culture = muslimgfx
+
+		icon = 13
+		color = { 0.8 0.5 0.2 }
+		
+		high_god_name = GOD_THE_AXE
+		
+		god_names = {
+			GOD_THE_AXE
+		}
+		evil_god_names = {
+			GOD_THE_BLACK_GOAT #They consider the Black Goat a demon
+		}
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = bearded_priest
+		
+		priests_can_inherit = no
+		
+		max_consorts = 7
+		
+		intermarry = valyrian
+	}
+
+	bakkalon = {
+		graphical_culture = muslimgfx
+
+		icon = 39
+		color = { 0.5 0.5 0.5 } #grey
+		
+		high_god_name = GOD_BAKKALON
+		
+		god_names = {
+			GOD_BAKKALON GOD_THE_PALE_CHILD
+		}
+		evil_god_names = {
+			GOD_THE_OTHERS GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+		
+		max_consorts = 7
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		intermarry = valyrian
+	}
+	
+	many_faced_god = {
+		graphical_culture = muslimgfx
+		
+		high_god_name = GOD_MANY_FACED_GOD
+
+		icon = 17
+		color = { 0.7 0.7 0 }
+		god_names = {
+			GOD_MANY_FACED_GOD
+		}
+		evil_god_names = {
+			GOD_THE_OTHERS GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		
+		max_consorts = 7
+		
+		intermarry = valyrian
+	}
+
+	father_of_waters = {
+		graphical_culture = muslimgfx
+
+		icon = 36
+		color = { 0.3 0.3 0 }
+		
+		high_god_name = GOD_FATHER_OF_WATERS
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		
+		god_names = {
+			GOD_FATHER_OF_WATERS
+		}
+		evil_god_names = {
+			GOD_THE_OTHERS GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		max_consorts = 7
+		
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
+		
+		intermarry = valyrian
+	}
+	
+	rhoynar_pagan = {
+		graphical_culture = muslimgfx
+
+		icon = 14
+		color = { 0.8 0.3 0 } #orange
+		
+		high_god_name = GOD_MOTHER_RHOYNE
+		
+		god_names = {
+			GOD_MOTHER_RHOYNE GOD_OLD_MAN_RIVER GOD_CRAB_KING
+		}
+		evil_god_names = {
+			GOD_THE_OTHERS GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SAGAS
+		priest_title = PRIEST
+		
+		allow_rivermovement = yes
+		priests_can_marry = yes
+		female_temple_holders = yes # If anyone allows this, the Rhoynar certainly do
+		feminist = yes      # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		max_consorts = 7
+		
+		religious_clothing_head = 8
+		religious_clothing_priest = 8
+		
+		intermarry = valyrian
+	}
+	
+	boash = {
+		graphical_culture = muslimgfx
+
+		icon = 34
+		color = { 0.52 0.8 0.6 } 
+		
+		high_god_name = GOD_BOASH
+		
+		god_names = {
+			GOD_BOASH GOD_THE_BLIND_GOD
+		}
+		evil_god_names = {
+			GOD_THE_OTHERS GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+		
+		max_consorts = 7
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		intermarry = valyrian
+	}
+	
+	weeping_lady = {
+		graphical_culture = muslimgfx
+
+		icon = 4
+		color = { 0.4 0.5 0.9 }
+		
+		high_god_name = GOD_THE_WEEPING_LADY
+		
+		god_names = {
+			GOD_THE_WEEPING_LADY GOD_THE_LOVE_GODDESS
+		}
+		evil_god_names = {
+			GOD_THE_OTHERS GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+		
+		max_consorts = 7
+		
+		religious_clothing_head = 6
+		religious_clothing_priest = 6
+		
+		intermarry = valyrian
+	}
+
+}
+
+valyrian_rel_group = { #red, yellow, orange
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	playable = yes
+	
+	color = { 0.25 0.25 0.25 } #Black
+	
+	valyrian = {
+		graphical_culture = muslimgfx
+
+		icon = 8
+		color = { 0.25 0.25 0.25 } #Black
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_BALERION GOD_MERAXES GOD_VHAGAR GOD_URRAX GOD_SYRAX
+		}
+		evil_god_names = {
+			GOD_THE_OTHERS GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_LEGENDS
+		priest_title = job_priest_valyrian
+		
+		max_wives = 3
+		max_consorts = 7
+
+		divine_blood = yes
+		bs_marriage = yes
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}	
+	
+	dragon_rel = {
+		graphical_culture = norsegfx
+
+		icon = 8
+		color = { 1 1 1 } #white
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_BALERION GOD_MERAXES GOD_VHAGAR GOD_URRAX GOD_SYRAX
+		}
+		evil_god_names = {
+			GOD_THE_OTHERS GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+		
+		allow_in_ruler_designer = no
+	}
+}
+
+sarnor_rel = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	playable = yes	
+	
+	color = { 0.72 0.8 0.2 } 
+	
+	gods_sarnor = {
+		graphical_culture = muslimgfx
+
+		icon = 28
+		color = { 0.72 0.8 0.2 } 
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_THE_GODS GOD_SARNOR GOD_MOONPALE_MAIDEN
+		}
+		evil_god_names = {
+			GOD_THE_OTHERS GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+		
+		max_consorts = 7
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+		intermarry = valyrian
+		intermarry = dothraki_pagan
+	}
+}	
+
+qarth_rel = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	playable = yes
+	
+	color = { 0.0 0.0 0.8 } #blue
+
+	qarth_warlocks = {
+		graphical_culture = muslimgfx
+
+		icon = 18
+		color = { 0.0 0.0 0.8 } #blue
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_THE_GODS GOD_UNDYING
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = job_priest_qarth_warlocks
+		
+		priests_can_inherit = no
+		
+		max_consorts = 7
+		
+		religious_clothing_head = 7
+		religious_clothing_priest = 7
+		
+		intermarry = valyrian
+		intermarry = far_east_group
+	}	
+}	
+
+ghiscar_rel = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	playable = yes	
+	
+	color = { 0.8 0.5 0.2 } #cream
+	
+	harpy = {
+		graphical_culture = harpygfx
+
+		icon = 10
+		color = { 0.8 0.5 0.2 } #cream
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_THE_GODS GOD_HARPY
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = job_priest_harpy
+		
+		female_temple_holders = yes
+		
+		max_consorts = 7
+			
+		priests_can_inherit = no
+		
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
+		
+		intermarry = valyrian
+	}
+	
+	lady_of_spears = {
+		graphical_culture = muslimgfx
+		
+		icon = 38
+		color = { 0.8 0.5 0.2 } #cream
+		
+		high_god_name = LADY_OF_SPEARS
+		
+		god_names = {
+			LADY_OF_SPEARS
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+		
+		female_temple_holders = yes
+		
+		allow_in_ruler_designer = no
+	}
+}
+far_east_group = {
+	has_coa_on_barony_only = yes
+	graphical_culture = indiangfx
+	playable = yes
+	
+	color = { 0.6 0.9 0.15 } #Green
+
+	yiti_gods = {
+		graphical_culture = hindugfx
+
+		icon = 19
+		color = { 0.6 0.9 0.15 } #Green
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_THE_GODS GOD_MAIDEN_LIGHT
+		}
+		evil_god_names = {
+			GOD_LION_NIGHT 
+		}
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+		
+		max_consorts = 20
+		
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
+		
+		intermarry = qarth_rel
+	}
+
+	lion_night = {
+		graphical_culture = hindugfx
+
+		icon = 19
+		#heresy_icon = 19
+		color = { 0.6 0.9 0.15 } #Green
+		
+		high_god_name = GOD_LION_NIGHT
+		
+		god_names = {
+			GOD_LION_NIGHT
+		}
+		evil_god_names = {
+			GOD_MAIDEN_LIGHT 
+		}
+		#parent = yiti_gods
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+		
+		allow_looting = yes
+		raised_vassal_opinion_loss = no
+		
+		max_consorts = 7
+		
+		intermarry = qarth_rel
+	}
+
+	starry_wisdom = {
+		graphical_culture = jaingfx
+
+		icon = 39
+		color = { 0.25 0.25 0.25 } #Black
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_THE_GODS
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		intermarry = qarth_rel
+	}	
+	
+	old_ones = {
+		graphical_culture = buddhistgfx
+
+		icon = 39
+		color = { 0.43 0.16 0.16 } 
+		
+		high_god_name = GOD_OLD_ONES
+		
+		god_names = {
+			GOD_OLD_ONES
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+		
+		max_consorts = 7
+		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+	
+		intermarry = qarth_rel
+	}
+	
+	shadowbinders = {
+		graphical_culture = muslimgfx
+
+		icon = 30
+		color = { 0.9 0 0 } #red
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_THE_GODS GOD_SHADOW
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+		female_temple_holders = yes
+		priests_can_inherit = no
+		
+		max_consorts = 7
+		
+		intermarry = qarth_rel
+	}
+	
+	gods_bone_mountains = {
+		graphical_culture = muslimgfx
+
+		icon = 27
+		color = { 0.7 0.4 0.2 } 
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_THE_GODS GOD_BONE_MOUNTAINS
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+		
+		max_consorts = 20 # A male dominated society
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+		intermarry = qarth_rel
+	}
+	
+	gods_nghai = {
+		graphical_culture = muslimgfx
+
+		icon = 33
+		color = { 0.9 0.5 0 } #brown
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_THE_GODS GOD_NGHAI
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+		
+		max_consorts = 7
+	}	
+	
+	stone_cow = {
+		graphical_culture = muslimgfx
+
+		icon = 23
+		color = { 0.0 0.6 0.0 } #Green
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_THE_GODS GOD_STONE_COW
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+		
+		max_consorts = 7
+		
+		intermarry = qarth_rel
+		intermarry = valyrian
+	}
+}
+
+ibben_rel = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	playable = yes	
+	
+	color = { 0.5 0.5 0.5 } #grey
+	
+	gods_ibben = {
+		graphical_culture = muslimgfx
+
+		icon = 25
+		color = { 0.5 0.5 0.5 } #grey
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_THE_GODS GOD_IBBEN
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+		
+		max_consorts = 7
+		
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
+	}
+}
+
+dothraki_rel_group = {
+	has_coa_on_barony_only = no
+	graphical_culture = muslimgfx
+	playable = yes
+	
+	color = { 0.6 0.4 0 } #bronze
+	
+	dothraki_pagan = {
+		graphical_culture = mongolgfx
+
+		icon = 15
+		color = { 0.6 0.4 0 } #bronze
+		
+		high_god_name = GOD_GREAT_STALLION
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_LEGENDS
+		priest_title = job_priest_dothraki_pagan
+		
+		god_names = {
+			GOD_GREAT_STALLION
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		
+		# unit_offensive = {
+			# horse_archers_offensive = 0.2
+			# horse_archers_defensive = 0.2
+			# light_cavalry_offensive = 0.2
+			# light_cavalry_defensive = 0.2
+			# key = "DEF_RELIGION"
+		# }
+		priests_can_marry = yes
+		can_grant_claim = no #yes
+		can_call_crusade = no #yes
+		aggression = 12
+		
+		female_temple_holders = yes
+		allow_looting = yes
+		peace_prestige_loss = yes
+		raised_vassal_opinion_loss = no
+		
+		max_consorts = 20
+	}
+
+}
+jogos_rel_group = {
+	has_coa_on_barony_only = yes
+	graphical_culture = muslimgfx
+	playable = yes
+	
+	color = { 0.25 0 0.33 }
+	
+	jogos_pagan = {
+		graphical_culture = mongolgfx
+
+		icon = 32
+		color = { 0.25 0 0.33 }
+		
+		high_god_name = GOD_THE_GODS
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_LEGENDS
+		priest_title = job_priest_jogos_pagan
+		
+		god_names = {
+			GOD_THE_GODS
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		
+		# unit_offensive = {
+			# horse_archers_offensive = 0.2
+			# horse_archers_defensive = 0.2
+			# light_cavalry_offensive = 0.2
+			# light_cavalry_defensive = 0.2
+			# key = "DEF_RELIGION"
+		# }
+		can_grant_claim = no #yes
+		can_call_crusade = no #yes
+		aggression = 12
+		
+		female_temple_holders = yes
+		peace_prestige_loss = yes
+		raised_vassal_opinion_loss = no
+		
+		max_consorts = 20
+		
+		intermarry = far_east_group
+		intermarry = dothraki_pagan
+	}
+}
+
+lhazar_rel_group = {
+	has_coa_on_barony_only = yes
+	graphical_culture = muslimgfx
+	playable = yes
+	
+	color = { 0.9 0.5 0 } #brown
+	
+	great_shepherd = {
+		graphical_culture = muslimgfx
+		ai_peaceful = yes
+
+		icon = 24
+		color = { 0.9 0.5 0 } #brown
+		
+		high_god_name = GOD_GREAT_SHEPHERD
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		
+		god_names = {
+			GOD_GREAT_SHEPHERD
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		female_temple_holders = yes
+		
+		aggression = 0.5
+		
+		intermarry = valyrian
+		intermarry = qarth_rel
+		intermarry = far_east_group
+		intermarry = ghiscar_rel
+	}
+}
+
+pagan_group = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	playable = yes	
+	
+	color = { 0.7 0.5 0.5 }
+
+	pagan = { # Use for misc other pagans
+		graphical_culture = muslimgfx
+
+		icon = 4
+		color = { 0.7 0.5 0.5 }
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_THE_GODS GOD_THE_SPIRITS GOD_THE_ANCESTORS
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		
+		priests_can_marry = yes
+		
+		allow_in_ruler_designer = no
+	}
+
+	aztec_reformed = {
+		graphical_culture = muslimgfx
+		icon = 6
+		color = { 0.95 0.3 0.3 }
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_HUITZILOPOCHTLI GOD_XIPE_TOTEC GOD_TEZCATLIPOCA GOD_QUETZALCOATL GOD_MICTLANTECUHTLI GOD_TLALOC
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		unit_modifier = {
+			levy_size = 0.3
+			
+			key = "OFF_RELIGION"
+		}
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		priests_can_marry = yes
+		max_consorts = 7
+		can_call_crusade = yes
+		
+		aggression = 2.0 # AI aggression factor
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
+	}
+	aztec = {
+		graphical_culture = muslimgfx
+		icon = 6
+		color = { 0.8 0.2 0.2 }
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_HUITZILOPOCHTLI GOD_XIPE_TOTEC GOD_TEZCATLIPOCA GOD_QUETZALCOATL GOD_MICTLANTECUHTLI GOD_TLALOC
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		unit_modifier = {
+			levy_size = 0.3
+			
+			key = "OFF_RELIGION"
+		}
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		
+		priests_can_marry = yes
+		peace_prestige_loss = yes # Lose Prestige while at peace
+		raised_vassal_opinion_loss = no
+		max_consorts = 7
+		independence_war_score_bonus = 30 # Overrides define CONTESTED_TITLE_OCCUPIED_WARSCORE_BONUS_INDEP
+		reformed = aztec_reformed
+		
+		aggression = 2.0 # AI aggression factor
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		allow_in_ruler_designer = no
+	}
+}
+
+summer_rel_group = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	
+	playable = yes
+	
+	color = { 0.0 0.6 0.0 } #Green
+
+	summer_rel = {
+		graphical_culture = muslimgfx
+
+		icon = 21
+		color = { 0.0 0.6 0.0 } #Green
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_THE_GODS
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		
+		female_temple_holders = yes
+		
+		religious_clothing_head = 6
+		religious_clothing_priest = 6
+		
+		intermarry = valyrian
+	}
+
+	nath_pagan = { #pacifists
+		graphical_culture = muslimgfx
+
+		icon = 22
+		color = { 0.1373 0.8235 0.4118 } #blue
+		
+		high_god_name = GOD_LORD_HARMONY
+		
+		god_names = {
+			GOD_LORD_HARMONY
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		
+		ai_peaceful = yes
+		pacifist = yes # Makes the AI less likely to start wars, plots and factions
+		
+		peace_piety_gain = 1.0 # Gains 1 piety each month while at peace
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+		piety_name = PURITY
+		
+		aggression = 0.5
+		religious_clothing_head = 9
+		religious_clothing_priest = 9
+		
+		intermarry = valyrian
+	}
+}
+
+pirate_group = { #red, yellow, orange
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	
+	playable = yes
+	
+	ai_fabricate_claims = no
+	
+	color = { 0.5 0.5 0.5 } #grey
+	
+	pirate = {
+		graphical_culture = muslimgfx
+
+		icon = 20
+		color = { 0.5 0.5 0.5 } #grey
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_THE_GODS GOD_BAKKALON GOD_MERLIN_KING GOD_MOONPALE_MAIDEN
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		max_consorts = 7
+		
+		allow_looting = yes
+		allow_rivermovement = yes
+		seafarer = yes
+		
+		defensive_attrition = yes
+		peace_prestige_loss = yes
+		raised_vassal_opinion_loss = no
+		independence_war_score_bonus = 30
+		aggression = 4.0
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+		
+		intermarry = valyrian
+	}
+	
+	lady_of_the_waves = {
+		graphical_culture = norsegfx
+
+		icon = 37
+		color = { 0.75 0.3 0 }
+		
+		high_god_name = GOD_LADY_OF_THE_WAVES
+		
+		god_names = {
+			GOD_LADY_OF_THE_WAVES GOD_LORD_OF_THE_SKIES GOD_THE_GODS GOD_MERLIN_KING GOD_MOONPALE_MAIDEN
+		}
+		evil_god_names = {
+			GOD_THE_OTHERS
+		}
+		max_consorts = 7
+		
+		allow_looting = yes
+		allow_rivermovement = yes
+		seafarer = yes
+		
+		defensive_attrition = yes
+		peace_prestige_loss = yes
+		raised_vassal_opinion_loss = no
+		independence_war_score_bonus = 30
+		aggression = 4.0
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+		
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
+	}
+	
+}
+
+corsair_group = { #red, yellow, orange
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	
+	playable = yes
+	
+	ai_fabricate_claims = no
+	
+	color = { 0.5 0.5 0.5 } #grey
+	
+	corsair = {
+		graphical_culture = muslimgfx
+
+		icon = 29
+		color = { 0.5 0.5 0.5 } #grey
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_THE_GODS GOD_BAKKALON GOD_MERLIN_KING GOD_MOONPALE_MAIDEN
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		max_consorts = 7
+		
+		allow_looting = yes
+		allow_rivermovement = yes
+		seafarer = yes
+		
+		defensive_attrition = yes
+		peace_prestige_loss = yes
+		raised_vassal_opinion_loss = no
+		independence_war_score_bonus = 30
+		aggression = 4.0
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+		intermarry = valyrian
+	}	
+}
+
+unoccupied = { 
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	
+	playable = no
+	
+	ai_fabricate_claims = no
+	
+	color = { 1 1 1 } #white
+	
+	ruins = {
+		graphical_culture = muslimgfx
+
+		icon = 4
+		color = { 1 1 1 } #white
+
+		god_names = {
+			GOD_BAKKALON
+		}
+
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		
+		allow_in_ruler_designer = no
+	}
+	
+	# dothraki_domain_rel = {
+		# graphical_culture = norsegfx
+
+		# icon = 4
+		# color = { 0 0 0 } #black
+		# god_names = {
+			# GOD_BAKKALON
+		# }
+		# crusade_name = "HOLY_WAR"
+		# scripture_name = THE_SOLDIER
+		
+		# allow_in_ruler_designer = no
+	# }
+
+	# jogos_domain_rel = {
+		# graphical_culture = norsegfx
+
+		# icon = 4
+		# color = { 0 0 0 } #black
+		# god_names = {
+			# GOD_BAKKALON
+		# }
+		# crusade_name = "HOLY_WAR"
+		# scripture_name = THE_SOLDIER
+		
+		# allow_in_ruler_designer = no
+	# }
+}	
+winter_religion = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	#crusade_cb = crusade
+	
+	playable = no
+	
+	ai_fabricate_claims = no
+	
+	color = { 1 1 1 } #white
+	
+	cold_gods = {
+		graphical_culture = oldgodsgfx
+
+		icon = 31
+		color = { 0.7 0.5 0 }
+		
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_LEGENDS
+		
+		god_names = {
+			GOD_THE_OTHERS
+		}
+		evil_god_names = {
+			GOD_THE_GODS GOD_THE_OLD_GODS
+		}
+		
+		can_excommunicate = no
+		can_grant_divorce = no
+		can_grant_claim = no
+		can_call_crusade = no
+		
+		max_wives = 10
+
+		divine_blood = yes
+		pc_marriage = yes # Parent/child marriage allowed
+		bs_marriage = yes # Brother/sister marriage allowed
+	}
+}
+
+islands_rel = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	playable = yes
+	
+	color = { 0.0 0.6 0.0 } #Green
+
+	fish_gods = {
+		graphical_culture = muslimgfx
+
+		icon = 35
+		color = { 0.0 0.6 0.0 } #Green
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_THE_GODS GOD_FISH_GODS
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_SOLDIER
+		priest_title = PRIEST
+	}	
+}
+
+
+sothoryos_rel_group = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	
+	playable = yes
+	
+	color = { 0.0 0.3 0.0 } #Green
+
+	sothoryos_rel = {
+		graphical_culture = muslimgfx
+
+		icon = 4
+		color = { 0.0 0.3 0.0 } #Green
+		
+		high_god_name = GOD_THE_GODS
+		
+		god_names = {
+			GOD_THE_GODS
+		}
+		evil_god_names = {
+			GOD_THE_DEMONS GOD_DARK_SPIRITS
+		}
+		crusade_name = "HOLY_WAR"
+		scripture_name = THE_LEGENDS
+		priest_title = PRIEST
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
+	}
+}	

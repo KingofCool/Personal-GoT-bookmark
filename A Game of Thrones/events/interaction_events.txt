@@ -1,0 +1,5150 @@
+########################################
+###Written by Sunspear               ###
+########################################
+
+#########Interaction###########
+namespace = interaction
+###############################
+
+# character_event = {
+	# id = interaction.1
+	
+	# hide_window = yes
+	# ai = no
+	# only_playable = yes
+	
+	# trigger = {
+		# OR = {
+			# any_independent_ruler = {
+				# OR = {
+					# AND = { has_opinion_modifier = { who = ROOT modifier = sent_gift } NOT = { has_character_flag = interact_sent } }
+					# any_realm_character = { has_opinion_modifier = { who = ROOT modifier = sent_gift } NOT = { has_character_flag = interact_sent } }
+				# }	
+			# }
+			# any_realm_character = { has_opinion_modifier = { who = ROOT modifier = sent_gift } NOT = { has_character_flag = interact_sent } }
+		# }	
+	# }
+	
+	# immediate = {
+		# random_independent_ruler = {
+			# limit = {
+				# OR = {
+					# has_opinion_modifier = { who = ROOT modifier = sent_gift }
+					# any_realm_character = { has_opinion_modifier = { who = ROOT modifier = sent_gift } }
+				# }
+			# }
+			# if = {
+				# limit = { has_opinion_modifier = { who = ROOT modifier = sent_gift } }
+				# set_character_flag = interact_sent
+				# character_event = { id = interaction.2 }
+			# }
+			# random_realm_character = {
+				# limit = { 			
+					# has_opinion_modifier = { who = ROOT modifier = sent_gift } 
+					# NOT = { has_character_flag = interact_sent }
+				# }
+				# set_character_flag = interact_sent
+				# character_event = { id = interaction.2 }
+			# }
+		# }
+		# random_realm_character = {
+			# limit = { 			
+				# has_opinion_modifier = { who = ROOT modifier = sent_gift } 
+				# NOT = { has_character_flag = interact_sent }
+			# }
+			# set_character_flag = interact_sent
+			# character_event = { id = interaction.2 }
+		# }
+	# }
+	
+	# option = { name = OK }
+# }	
+
+# #chain start
+# character_event = {
+	# id = interaction.2	
+	# desc = "EVTDESCinteraction.2" #wants interact
+	# picture = GFX_evt_council
+	
+	# is_triggered_only = yes
+	
+	# trigger = {
+		# FROM = {
+			# ai = no
+			# reverse_has_opinion_modifier = { who = PREV modifier = sent_gift }
+		# }
+	# }
+	
+	# option = {	
+		# name = "EVTOPTAinteraction.2" #ok	
+		# FROM = {
+			# character_event = { id = interaction.3 }
+		# }
+		# clr_character_flag = interact_sent
+	# }		
+# }
+
+
+# #Base Courtier
+# character_event = {
+	# id = interaction.3
+	# is_triggered_only = yes
+	# desc = "EVTDESCinteraction.3" #interaction menu
+	# picture = GFX_evt_council
+	
+	# trigger = {
+		# OR = {
+			# NOT = { has_character_flag = in_interaction }
+			# had_character_flag = { flag = in_interaction days = 60 } 
+		# }
+	# }
+	# immediate = {
+		# set_character_flag = in_interaction
+	# }
+	
+	
+	# option = {		
+		# name = "EVTOPTAinteraction.3" #Personal
+		# trigger = {
+			# FROM = { NOT = { trait = dragon } }
+			# is_within_diplo_range = FROM
+		# }
+		# ai_chance = {
+			# factor = 0
+		# }
+		# custom_tooltip = { text = TOOLTIPINTERACTIONPERSONAL }
+		# hidden_tooltip = { character_event = { id = interaction.4 } }
+
+	# }
+	# option = {		
+		# name = "EVTOPTBinteraction.3" #Diplomatic
+		# ai_chance = {
+			# factor = 0
+		# }
+		# trigger = {
+			# FROM = { NOT = { trait = dragon } }
+			# OR = {
+				# FROM = {
+					# is_liege_or_above = ROOT
+					# OR = {
+						# NOT = { has_opinion_modifier = { who = ROOT modifier = asked_to_stand_down } }
+						# AND = {
+							# prisoner = yes
+							# host = { character = ROOT }
+						# }
+					# }	
+					# any_war = {
+						# attacker = {
+							# is_liege_or_above = ROOT
+							# character = PREVPREV
+							# NOT = { has_minor_title = title_triarch }
+						# }
+						# defender = { 
+							# OR = {
+								# is_liege_or_above = ROOT 
+								# AND = {
+									# lower_tier_than = ROOT
+									# has_opinion_modifier = { who = ROOT modifier = opinion_de_facto_liege }
+									# NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_granted_independence } }
+								# }
+							# }	
+						# }
+					# }
+				# }
+				# ROOT = {
+					# has_landed_title = e_iron_throne
+					# #has_global_flag = kingsguard_initialised
+					# is_within_diplo_range = FROM
+					# NOT = {
+						# kingsguard = {
+							# is_alive = yes
+							# count = 7
+						# }
+					# }
+					
+					# FROM = {
+						# OR = {
+							# martial = 12
+							# trait = master_warrior
+							# trait = skilled_warrior
+							# age = 16
+						# }
+						# same_realm = ROOT
+						# #prisoner = no
+						# ai = yes
+						# is_married = no
+						# NOT = {trait = kingsguard}
+						# NOT = { trait = giant }
+						# is_female = no
+						# NOT = { trait = maester }
+						# NOT = { trait = archmaester }
+						# NOT = { trait = nightswatch }
+						# NOT = { trait = septon }
+						# NOT = { trait = red_priest }
+						# NOT = { trait = drowned }
+						# NOT = { has_character_flag = refused_kingsguard }
+						# NOT = { character = ROOT }
+						# NOT = { demesne_size = 1 }
+						# #trait = knight
+						
+					# }
+				# }
+				# ROOT = {
+					# NOT = { has_dlc = "Sons of Abraham" }
+					# has_global_flag = need_new_high_septon
+					# NOT = { had_global_flag = { flag = need_new_high_septon days = 100 } }
+					# has_character_flag = select_next_high_septon	
+					# FROM = {
+						# NOT = { has_landed_title = k_the_most_devout }
+						# OR = {
+							# is_theocracy = yes
+							# NOT = { demesne_size = 1 }
+						# }	
+						# any_liege = { character = ROOT }
+						# NOT = { trait = incapable }
+						# NOT = { trait = maester }
+						# NOT = { trait = kingsguard }
+						# NOT = { trait = giant }
+						# NOT = { trait = nightswatch }
+						# NOT = { trait = archmaester }
+						# NOT = { trait = excommunicated }
+						# prisoner = no
+						# is_female = no
+						# religion = the_seven
+						# is_primary_heir = no
+						# NOT = { has_character_flag = no_to_high_septon }
+					# }
+				# }
+				# ROOT = {
+					# tier = EMPEROR	
+					# FROM = {
+						# any_liege = { character = ROOT }
+						# demesne_size = 1
+						# NOT = { tier = KING }
+						# war = no
+						# capital_scope = {
+							# kingdom = {
+								# NOT = { any_war = { always = yes } } #is not being contested
+								# OR = { #is either vacant or held by liege
+									# has_holder = no 
+									# holder_scope = {
+										# character = ROOT
+									# }
+								# }	
+								# OR = { #cannot request a vacant crownlands title
+									# NOT = { title = k_crownlands }
+									# has_holder = yes
+								# }
+								# OR = { #Cannot request Sarnor or North Valyria if they have had no previous holder
+									# NOT = { 
+										# OR = {
+											# title = k_sarnor
+											# title = k_north_valyria
+										# }	
+									# }
+									# any_previous_holder = { always = yes }
+								# }
+								# OR = { #Can only request Andalos or Rhoyne if correct culture
+									# NOT = { title = k_andalos }
+									# FROM = { culture_group = andal }
+								# }
+								# OR = { #Can only request Andalos or Rhoyne if correct culture
+									# NOT = { title = k_rhoynar }
+									# FROM = { culture_group = dornish }
+								# }
+								# NOT = { #cannot request a title if equivalent kingdom exists
+									# OR = {
+										# title = k_beyond_wall
+										# title = k_nightswatch
+										# title = k_dragonstone
+										# title = k_crackclaw_point
+										# AND = {
+											# title = k_north
+											# e_north = { has_holder = yes }
+										# }
+										# AND = {
+											# title = k_riverlands
+											# e_riverlands = { has_holder = yes }
+										# }
+										# AND = {
+											# title = k_vale
+											# e_vale = { has_holder = yes }
+										# }
+										# AND = {
+											# title = k_westerlands
+											# e_westerlands = { has_holder = yes }
+										# }
+										# AND = {
+											# title = k_reach
+											# e_reach = { has_holder = yes }
+										# }
+										# AND = {
+											# title = k_stormlands
+											# e_stormlands = { has_holder = yes }
+										# }
+										# AND = {
+											# title = k_dorne
+											# e_dorne = { has_holder = yes }
+										# }
+										# AND = {
+											# title = k_iron_isles
+											# e_iron_isles = { has_holder = yes }
+										# }
+									# }
+								# }		
+							# }
+						# }
+					# }
+				# }
+				# ROOT = { #Appoint Hand of the King
+					# tier = EMPEROR	
+					# FROM = {
+						# liege = {
+							# tier = KING
+							# liege = { character = ROOT }
+						# }
+						# war = no
+						# NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_rejected_castellan } }
+						
+						# OR = {
+							# AND = {
+								# is_female = yes
+								# liege = { 
+									# OR = {
+										# culture = kayakayanayan
+										# culture = samyrianan
+										# culture = bayasabhadi
+									# }
+								# }
+							# }
+							# AND = {
+								# is_female = no
+								# NOT = {
+									# liege = { 
+										# OR = {
+											# culture = kayakayanayan
+											# culture = samyrianan
+											# culture = bayasabhadi
+										# }
+									# }
+								# }	
+							# }	
+							# has_character_flag = special_chancellor			
+						# }	
+						# is_adult = yes
+						# prisoner = no
+						# NOT = { trait = incapable }
+						# NOT = { is_inaccessible_trigger = yes }
+						# NOT = { trait = salt_wife }
+						# NOT = { trait = slave }
+						# NOT = { trait = dragon }
+						# NOT = { has_landed_title = d_nightswatch }
+					# }
+				# }
+			# }
+		# }
+		# custom_tooltip = { text = TOOLTIPINTERACTIONDIPLOMATIC }
+		# hidden_tooltip = { character_event = { id = interaction.5 } }
+	# }
+	# option = {
+		
+		# name = "EVTOPTDinteraction.3" #Action
+		# ai_chance = {
+			# factor = 0
+		# }
+		# trigger = {
+			# OR = {
+				# #has_character_flag = faceless_men_hit
+				# AND = {
+					# has_character_flag = made_sacrafice_redgod
+					# FROM = { NOT = { trait = dragon } }
+					# is_within_diplo_range = FROM
+				# }	
+				# AND = {
+					# crownlaw_title = {
+						# OR = {
+							# has_law = slavery_1
+							# has_law = slavery_2
+						# }
+					# }
+					# FROM = {
+						# trait = slave
+						# NOT = { has_character_flag = flag_not_for_sale }
+						# NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_rejected_slave } }
+						# slave_owner = {
+							# NOT = { character = ROOT }
+							# has_opinion_modifier = { who = PREV modifier = opinion_my_slave }
+							# is_within_diplo_range = ROOT
+						# }
+					# }
+				# }
+				# FROM = {
+					# has_opinion_modifier = { who = ROOT modifier = opinion_loyalty_bought }
+					# is_councillor = yes
+					# #ai = yes
+					# prisoner = no
+					# NOT = { liege = { character = ROOT } }
+				# }
+				# AND = { #Tame Dragon
+					# age = 14
+					# OR = {
+						# is_female = no
+						# culture = kayakayanayan
+						# culture = samyrianan
+						# culture = bayasabhadi	
+						# trait = brave
+						# martial = 18
+						# culture_group = valyrian
+						# trait = chosen_by_rhllor
+					# }
+					# NOT = { any_friend = { trait = dragon is_alive = yes } }
+					# OR = {
+						# NOT = { has_character_flag = found_wild_dragon }
+						# had_character_flag = { flag = found_wild_dragon days = 60 }
+					# }
+					# OR = { 
+						# NOT = {has_character_flag = ran_from_dragon}
+						# had_character_flag = { flag = ran_from_dragon days = 500}
+					# }
+					# FROM = {
+						# trait = dragon
+						# at_location = ROOT
+						# NOT = { guardian = { always = yes } }
+						# NOT = { any_friend = { always = yes is_alive = yes } }
+						# NOT = { has_character_flag = dany_dragon }
+						# OR = {
+							# NOT = { has_character_flag = found_wild_dragon }
+							# had_character_flag = { flag = found_wild_dragon days = 30 }
+						# }
+					# }
+					# location = {
+						# owner = {
+							# OR = {
+								# character = ROOT
+								# custom_tooltip = {
+									# text = TOOLTIPface_dragon_decOWNER
+									# hidden_tooltip = {
+										# AND = {
+											# NOT = { trait = dragon_rider }
+											# NOT = {
+												# regent = {
+													# trait = dragon_rider
+													# is_close_relative = PREV
+												# }
+											# }
+										# }
+									# }	
+								# }	
+								# dynasty = ROOT
+								# is_close_relative = ROOT
+							# }
+						# }
+					# }
+					# prisoner = no
+					# NOT = { in_battle = yes }
+					# NOT = { trait = incapable }
+					# NOT = { trait = infirm }
+					# NOT = { trait = wounded }
+					# NOT = { is_maimed_trigger = yes }
+					# NOT = { trait = crippled }
+					# is_ill = no
+				# }
+				# AND = { #Grant sword
+					# NOT = { trait = incapable }
+					# OR = {
+						# AND = {
+							# trait = valyrian_steel 
+							# FROM = { NOT = { trait = valyrian_steel } }
+						# }	
+						# trait = longclaw 
+						# trait = longclaw_snow
+						# trait = blackfyre 
+						# trait = brightroar
+						# trait = heartsbane
+						# trait = ice
+						# trait = nightfall
+						# trait = darksister
+						# trait = ladyforlorn
+						# trait = redrain
+						# trait = widowswail
+						# trait = oathkeeper
+						# trait = crabspincer
+						# trait = strangers_mercy
+						# trait = vigilance
+						# trait = orphan_maker
+						# trait = anger
+						# trait = black_death
+						# trait = compassion
+						# trait = concession
+						# trait = del_pino
+						# trait = el_swordo
+						# trait = gold_sword
+						# trait = happyness
+						# trait = hubris
+						# trait = justice
+						# trait = kingmaker
+						# trait = passion
+						# trait = rage
+						# trait = sightblinder
+						# trait = the_monarchist
+						# trait = the_usurper
+						# trait = worldeater
+						# trait = worlds_envy
+					# }
+					# OR = {
+						# dynasty = FROM
+						# same_realm = FROM
+						# is_close_relative = FROM
+					# }	
+				# }
+			# }
+		# }
+	
+		# hidden_tooltip = { character_event = { id = interaction.6 } }
+		# custom_tooltip = { text = TOOLTIPINTERACTIONACTION }
+	# }
+
+	# option = {
+		# name = "NEVERMIND"
+		 # ai_chance = {
+			# factor = 100
+		# }
+		# hidden_tooltip = {
+			# FROM = {
+			
+				# remove_opinion = { who = ROOT modifier = sent_gift } 
+				
+			# }
+			# clr_character_flag = in_interaction
+		# }
+	# }
+# }
+# #Personal
+# character_event = {
+	# id = interaction.4
+	# is_triggered_only = yes
+	# desc = "EVTDESCinteraction.4" 
+	# picture = GFX_evt_council
+	
+	
+	# option = {		
+		# name = "EVTOPTAinteraction.4" #send gift
+		# trigger = {
+			# wealth = 10
+			# FROM = {
+				# FROM = {
+					# NOT = { has_opinion_modifier = { who = ROOT modifier = real_gift } }					
+					# OR = {
+						# AND = { 
+							# is_ruler = no
+							# ROOT = { wealth = 5 }
+						# }
+						# AND = { 
+							# tier = baron
+							# ROOT = { wealth = 10 }
+						# }
+						# AND = { 
+							# tier = count
+							# ROOT = { wealth = 20 }
+						# }
+						# AND = { 
+							# tier = duke
+							# ROOT = { wealth = 50 }
+						# }
+						# AND = { 
+							# tier = king
+							# ROOT = { wealth = 100 }
+						# }
+						# AND = { 
+							# tier = emperor
+							# ROOT = { wealth = 200}
+						# }		
+					# }
+				# }
+			# }			
+		# }
+		# FROMFROM = { 
+			# if = {
+				# limit = { 
+					# OR = {
+						# tier = EMPEROR
+						# wealth = 1200
+						# yearly_income = 600
+					# }
+				# }
+				# ROOT = { wealth = -200 }
+			# }
+			# if = {
+				# limit = { 
+					# NOT = {
+						# OR = {
+							# tier = EMPEROR
+							# wealth = 1200
+							# yearly_income = 600
+						# }
+					# }	
+					# OR = {
+						# tier = KING
+						# wealth = 600
+						# yearly_income = 300
+					# }
+				# }
+				# ROOT = { wealth = -100 }
+			# }
+			# if = {
+				# limit = { 
+					# NOT = {
+						# OR = {
+							# higher_tier_than = DUKE
+							# wealth = 600
+							# yearly_income = 300
+						# }
+					# }	
+					# OR = {
+						# tier = DUKE
+						# wealth = 300
+						# yearly_income = 150
+					# }
+				# }
+				# ROOT = { wealth = -50 }
+			# }
+			# if = {
+				# limit = { 
+					# NOT = {
+						# OR = {
+							# higher_tier_than = COUNT
+							# wealth = 300
+							# yearly_income = 150
+						# }
+					# }	
+					# OR = {
+						# tier = COUNT
+						# wealth = 120
+						# yearly_income = 60
+					# }
+				# }
+				# ROOT = { wealth = -20 }
+			# }
+			# if = {
+				# limit = { 
+					# NOT = {
+						# OR = {
+							# higher_tier_than = BARON
+							# wealth = 120
+							# yearly_income = 60
+						# }
+					# }	
+					# OR = {
+						# tier = BARON
+						# wealth = 60
+						# yearly_income = 30
+					# }
+				# }
+				# ROOT = { wealth = -10 }
+			# }
+			# if = {
+				# limit = { 
+					# NOT = {
+						# OR = {
+							# is_ruler = yes
+							# wealth = 60
+							# yearly_income = 30
+						# }
+					# }	
+				# }
+				# ROOT = { wealth = -5 }
+			# }
+		# }
+		# FROM = {
+			# FROM = {
+				# #Base opinion 30, +10 for greedy, proud, -10 for charitable, humble
+				# if = {
+					# limit = {
+						# trait = greedy
+						# trait = proud
+					# }
+					# opinion = { who = ROOT modifier = real_gift multiplier = 5 years = 2 }
+				# }
+				# if = {
+					# limit = {
+						# OR = {
+							# AND = {
+								# trait = greedy
+								# NOT = { trait = proud }
+								# NOT = { trait = humble }
+							# }
+							# AND = {
+								# trait = proud
+								# NOT = { trait = greedy }
+								# NOT = { trait = charitable }
+							# }
+						# }	
+					# }
+					# opinion = { who = ROOT modifier = real_gift multiplier = 4 years = 2 }
+				# }
+				# if = {
+					# limit = {
+						# OR = {
+							# AND = {
+								# NOT = { trait = greedy }
+								# NOT = { trait = proud }
+								# NOT = { trait = humble }
+								# NOT = { trait = charitable }
+							# }
+							# AND = {
+								# trait = proud
+								# trait = charitable
+							# }
+							# AND = {
+								# trait = greedy
+								# trait = humble
+							# }
+						# }	
+					# }
+					# opinion = { who = ROOT modifier = real_gift multiplier = 3 years = 2 }
+				# }
+				# if = {
+					# limit = {
+						# OR = {
+							# AND = {
+								# trait = humble
+								# NOT = { trait = greedy }
+								# NOT = { trait = charitable }
+							# }
+							# AND = {
+								# trait = charitable
+								# NOT = { trait = proud }
+								# NOT = { trait = humble }
+							# }
+						# }
+					# }
+					# opinion = { who = ROOT modifier = real_gift multiplier = 2 years = 2 }
+				# }
+				# if = {
+					# limit = {
+						# trait = humble
+						# trait = charitable
+					# }
+					# opinion = { who = ROOT modifier = real_gift years = 2 }
+				# }
+				# hidden_tooltip = {
+					# remove_opinion = { who = ROOT modifier = sent_gift }
+					# character_event = { id = interaction.23 }
+				# }
+			# }
+		# }
+		# clr_character_flag = in_interaction
+	# }
+	# option = {
+		# name = "EVTOPTBinteraction.4" #Insult
+		# ai_chance = {
+			# factor = 0
+		# }
+		# FROM = {
+			# FROM = {
+				# if = { 
+					# limit = {
+						# trait = wroth
+					# }
+					# opinion = {
+						# modifier = real_insult
+						# who = ROOT
+						# years = 4
+						# multiplier = 2
+					# }				
+				# }
+				# if = { 
+					# limit = {
+						# trait = depressed
+					# }
+					# opinion = {
+						# modifier = real_insult
+						# who = ROOT
+						# years = 4
+					# }					
+				# }
+				# if = { 
+					# limit = {
+						# trait = proud
+					# }
+					# opinion = {
+						# modifier = real_insult
+						# who = ROOT
+						# years = 4
+					# }
+					
+				# }
+				# if = { 
+					# limit = {
+						# NOT = { trait = humble }
+						# NOT = { trait = kind }
+					# }
+					# opinion = {
+						# modifier = real_insult
+						# who = ROOT
+						# years = 4
+					# }
+					
+				# }
+				# opinion = {
+					# modifier = real_insult
+					# who = ROOT
+					# years = 4
+				# }		
+				# hidden_tooltip = {
+					# character_event = { id = interaction.24 }
+					# remove_opinion = { who = ROOT modifier = sent_gift }		
+				# }
+			# }
+		# }
+		# clr_character_flag = in_interaction
+	# }
+	# #Visit her chambers
+	# option = {
+		# name = "EVTOPTCinteraction.4"
+		# trigger = {
+			# age = 16
+			# NOT = { trait = infirm }
+			# NOT = { trait = incapable }
+			# NOT = { trait = celibate }
+			# NOT = { trait = chaste }
+			# NOT = { trait = eunuch }
+			# NOT = { any_consort = { character = FROMFROM } }
+			# NOT = { is_married = FROMFROM }
+			# FROM = {
+				# FROM = {
+					# age = 16
+					# at_location = ROOT				
+					# OR = {
+						# prisoner = yes
+						# NOT = { martial = 18 }
+					# }
+					# NOT = { trait = incapable }
+					# OR = {
+						# AND = {
+							# is_female = yes
+							# OR = {
+								# ROOT = { 
+									# is_female = no
+									# NOT = { trait = homosexual } 
+								# }
+								# ROOT = { 
+									# is_female = yes
+									# trait = homosexual
+								# }
+							# }	
+						# }
+						# AND = {
+							# is_female = no
+							# OR = {
+								# ROOT = { 
+									# is_female = no
+									# trait = homosexual
+								# }
+								# ROOT = { 
+									# is_female = yes
+									# NOT = { trait = homosexual }
+								# }
+							# }
+						# }						
+					# }					
+					# OR = {
+						# NOT = { is_close_relative = ROOT }
+						# AND = {
+							# dynasty = 496
+							# ROOT = { dynasty = 496 }
+						# }
+						# #Targ Cadets
+						# AND = {
+							# dynasty = 45000204
+							# ROOT = { dynasty = 45000204 }
+						# }
+						# AND = {
+							# dynasty = 45000205
+							# ROOT = { dynasty = 45000205 }
+						# }
+						# AND = {
+							# dynasty = 45000206
+							# ROOT = { dynasty = 45000206 }
+						# }
+						# AND = {
+							# dynasty = 45000207
+							# ROOT = { dynasty = 45000207 }
+						# }
+					# }
+					# NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_visited_chamber } }					
+				# }
+			# }			
+			# #Lovers events will take care of foerign romances and this will prevent you visiting any imprisoned woman for gg unless she is liege
+			# OR = {
+				# location = { owner = { character = FROMFROM } } 			
+				# location = { owner = { character = root } } 
+				# in_command = no
+				# FROM = { FROM = { any_liege = { character = ROOT } } }
+			# }
+			# #Niceguys wont visit a woman in prison as they dont like grapes
+			# OR = { 
+				# FROMFROM = { prisoner = no }
+				# AND = {
+					# NOT = { trait = kind }
+					# NOT = { trait = honorable }
+				# }			
+			# }
+		# }
+		 # ai_chance = {
+			# factor = 0
+		# }
+		# FROM = {
+			# FROM = {
+				
+				# character_event = { id = interaction.26 }
+				
+				# hidden_tooltip = {
+					# opinion = { who = ROOT modifier = opinion_visited_chamber months = 12 } #cooldown
+					# remove_opinion = { who = ROOT modifier = sent_gift }
+				# }
+			# }
+		# }
+		
+		# hidden_tooltip = {
+			# FROM = {
+				# FROM = {
+					# remove_opinion = { who = ROOT modifier = sent_gift } 
+				# }
+			# }
+		# }
+		# clr_character_flag = in_interaction
+	# }
+	# option = {
+		# name = "EVTOPTDinteraction.4" #Knight
+		 # ai_chance = {
+			# factor = 0
+		# }
+		# trigger = {
+			# trait = knight
+			# FROM = {
+				# FROM = {
+					# age = 16
+					# religion = the_seven
+					# OR = {
+						# at_location = ROOT
+						# AND = {
+							# is_ruler = no
+							# liege = { character = ROOT }
+						# }
+					# }	
+					# is_liege_or_above = ROOT
+					# prisoner = no
+					# NOT = { trait = incapable }
+					# #trait = squire
+					# NOT = { trait = knight }
+					# NOT = { trait = maester }
+					# NOT = { trait = archmaester }
+					# NOT = { trait = archmaester }
+					# NOT = { trait = septon }
+					# NOT = { trait = septa }
+					# NOT = { primary_title = { title = k_the_most_devout } }
+					# OR = {
+						# is_female = no
+						# martial = 18
+						# trait = master_warrior 
+						# trait = skilled_warrior 
+					# }
+				# }
+			# }
+		# }
+		
+		# FROM = {
+			# FROM = {		
+				# if = {
+					# limit = { is_female = no } 
+					# set_special_character_title = title_ser
+				# }
+				# if = {
+					# limit = { is_female = yes }
+					# give_minor_title = title_lady
+				# }
+				# if = {
+					# limit = { trait = squire }
+					# remove_trait = squire
+					# prestige = 40
+				# }
+				# if = {
+					# limit = { 		
+						# NOT = { trait = squire }
+						# trait = poor_warrior 
+					# }
+					# prestige = -100
+					# ROOT = { prestige = -100 }
+				# }
+				# if = {
+					# limit = { 		
+						# NOT = { trait = squire }
+						# NOT = {
+							# OR = {
+								# trait = master_warrior 
+								# trait = skilled_warrior 
+								# trait = trained_warrior 
+								# trait = poor_warrior 
+							# }	
+						# }
+					# }
+					# prestige = -150
+					# ROOT = { prestige = -150 }
+				# }
+				# if = {
+					# limit = { NOT = { is_child_of = ROOT } }
+					# opinion = {
+						# modifier = opinion_knighted_me
+						# who = ROOT
+						# years = 10
+					# }
+				# }	
+			# }
+		# }
+		# hidden_tooltip = {
+			# FROM = {
+				# FROM = {
+					# remove_opinion = { who = ROOT modifier = sent_gift } 
+					# add_trait = knight
+					# remove_trait = squire
+					# character_event = {id = interaction.22}
+				# }
+			# }
+		# }
+		# clr_character_flag = in_interaction
+	# }
+	# option = {
+		# name = "NEVERMIND"
+		 # ai_chance = {
+			# factor = 100
+		# }
+		# hidden_tooltip = {
+			# FROM = {
+				# FROM = {
+					# remove_opinion = { who = ROOT modifier = sent_gift } 
+				# }
+			# }
+		# }
+		# clr_character_flag = in_interaction
+	# }
+
+# }
+# #Diplomatic
+# character_event = {
+	# id = interaction.5
+	# is_triggered_only = yes
+	# desc = "EVTDESCinteraction.5" 
+	# picture = GFX_evt_council
+	
+	# option = {
+		# name = "EVTOPTAinteraction.5" #stand down
+		 # ai_chance = {
+			# factor = 0
+		# }
+		# trigger = {
+			# FROM = {
+				# FROM = {
+					# is_liege_or_above = ROOT
+					# OR = {
+						# NOT = { has_opinion_modifier = { who = ROOT modifier = asked_to_stand_down } }
+						# AND = {
+							# prisoner = yes
+							# host = { character = ROOT }
+						# }
+					# }
+					# any_war = {
+						# attacker = {
+							# is_liege_or_above = ROOT
+							# character = PREVPREV
+							# NOT = { has_minor_title = title_triarch }
+						# }
+						# defender = { 
+							# OR = {
+								# is_liege_or_above = ROOT 
+								# AND = {
+									# lower_tier_than = ROOT
+									# has_opinion_modifier = { who = ROOT modifier = opinion_de_facto_liege }
+									# NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_granted_independence } }
+								# }
+							# }	
+						# }
+					# }
+				# }
+			# }
+		# }
+		# FROM = {
+			# FROM = {
+				# hidden_tooltip = { letter_event = { id = interaction.10 days = 5 } } #High Authority
+				# hidden_tooltip = { letter_event = { id = interaction.11 days = 5 } } # Low Authority
+				# any_war = {
+					# defender = {
+						# tooltip = { }				
+					# }
+				# }
+			# }
+		# }
+		# hidden_tooltip = {
+			# FROM = {
+				# FROM = {
+					# remove_opinion = { who = ROOT modifier = sent_gift } 
+					# opinion = { #Cooldown
+						# who = ROOT 
+						# modifier = asked_to_stand_down 
+						# years = 2
+					# } 
+				# }
+			# }
+		# }
+		# clr_character_flag = in_interaction		
+	# }
+	# option = {
+		# name = "EVTOPTBinteraction.5" #kingsguard
+		 # ai_chance = {
+			# factor = 0
+		# }
+		# trigger = {
+		
+			# has_landed_title = e_iron_throne
+			# #has_global_flag = kingsguard_initialised
+	
+			# NOT = {
+				# kingsguard = {
+					# is_alive = yes
+					# count = 7
+				# }
+			# }
+			
+			# FROM = {
+				# FROM = {
+					# OR = {
+						# martial = 12
+						# trait = master_warrior
+						# trait = skilled_warrior
+						# age = 16
+					# }
+					# #prisoner = no
+					# same_realm = ROOT
+					# ai = yes
+					# is_married = no
+					# NOT = {trait = kingsguard}
+					# NOT = { trait = giant }
+					# is_female = no
+					# NOT = { trait = maester }
+					# NOT = { trait = archmaester }
+					# NOT = { trait = nightswatch }
+					# NOT = { trait = septon }
+					# NOT = { trait = red_priest }
+					# NOT = { trait = drowned }
+					# NOT = { has_character_flag = refused_kingsguard }
+					# NOT = { character = ROOT }
+					# NOT = { demesne_size = 1 }
+					# #trait = knight
+				# }
+			# }
+		# }
+		# FROM = {
+				# FROM = {
+					# character_event = { id = interaction.7 }
+				# }
+		# }
+		# hidden_tooltip = {
+			# FROM = {
+				# FROM = {
+					# remove_opinion = { who = ROOT modifier = sent_gift } 
+				# }
+			# }
+		# }
+		# clr_character_flag = in_interaction
+		
+		
+	# }
+	
+	# option = {
+		# name = "EVTOPTCinteraction.5" #High Septon
+		# ai_chance = {
+			# factor = 0
+		# }
+		# trigger = {
+			# NOT = { has_dlc = "Sons of Abraham" }
+			# has_global_flag = need_new_high_septon
+			# NOT = { had_global_flag = { flag = need_new_high_septon days = 100 } }
+			# has_character_flag = select_next_high_septon	
+			# FROM = {
+				# FROM = {
+					# NOT = { has_landed_title = k_the_most_devout }
+					# is_female = no
+					# OR = {
+						# is_theocracy = yes
+						# NOT = { demesne_size = 1 }
+					# }	
+					# any_liege = { character = ROOT }
+					# NOT = { trait = incapable }
+					# NOT = { trait = maester }
+					# NOT = { trait = kingsguard }
+					# NOT = { trait = giant }
+					# NOT = { trait = nightswatch }
+					# NOT = { trait = archmaester }
+					# NOT = { trait = excommunicated }
+					# prisoner = no
+					# religion = the_seven
+					# is_primary_heir = no
+					# NOT = { has_character_flag = no_to_high_septon }
+				# }
+			# }
+		# }
+		# if = {
+			# limit = {
+				# FROM = {
+					# FROM = {
+						# OR = {
+							# trait = septon
+							# AND = {
+								# liege = { character = ROOT }
+								# NOT = { age = 16 }
+								# is_primary_heir = no
+								# is_ruler = no
+							# }
+						# }
+					# }
+				# }
+			# }
+			# clr_character_flag = select_next_high_septon
+			# set_character_flag = next_high_septon_selected
+			# scaled_wealth = -0.2
+			# FROM = {
+				# FROM = {
+					# set_character_flag = kings_preferred_candidate
+					# opinion = {
+						# modifier = opinion_preferred_high_septon
+						# who = ROOT
+						# years = 10
+					# }
+				# }
+			# }
+		# }	
+		# if = {
+			# limit = {
+				# FROM = {
+					# FROM = {
+						# NOT = {
+							# OR = {
+								# trait = septon
+								# AND = {
+									# liege = { character = ROOT }
+									# NOT = { age = 16 }
+									# is_primary_heir = no
+									# is_ruler = no
+								# }
+							# }
+						# }	
+					# }
+				# }
+			# }
+			# FROM = {
+				# FROM = {
+					# character_event = { id = religious.15 tooltip = TOOLTIPreligious.15 }
+				# }
+			# }
+		# }
+		# hidden_tooltip = {
+			# FROM = {
+				# FROM = {
+					# remove_opinion = { who = ROOT modifier = sent_gift } 
+				# }
+			# }
+		# }
+		# clr_character_flag = in_interaction
+	# }
+	
+	# option = {
+		# name = "EVTOPTDinteraction.5" #Grant LP
+		# ai_chance = {
+			# factor = 0
+		# }
+		# trigger = {
+			# tier = EMPEROR	
+			# FROM = {
+				# FROM = {
+					# any_liege = { character = ROOT }
+					# demesne_size = 1
+					# NOT = { tier = KING }
+					# war = no
+					# capital_scope = {
+						# kingdom = {
+							# NOT = { any_war = { always = yes } } #is not being contested
+							# OR = { #cannot request a vacant crownlands title
+								# NOT = { title = k_crownlands }
+								# has_holder = yes
+							# }	
+							# OR = { #Cannot request Sarnor or North Valyria if they have had no previous holder
+								# NOT = { 
+									# OR = {
+										# title = k_sarnor
+										# title = k_north_valyria
+									# }	
+								# }
+								# any_previous_holder = { always = yes }
+							# }
+							# OR = { #Can only request Andalos or Rhoyne if correct culture
+								# NOT = { title = k_andalos }
+								# FROMFROM = { culture_group = andal }
+							# }
+							# OR = { #Can only request Andalos or Rhoyne if correct culture
+								# NOT = { title = k_rhoynar }
+								# FROMFROM = { culture_group = dornish }
+							# }
+							# NOT = { #cannot request a title if equivalent kingdom exists
+								# OR = {
+									# title = k_beyond_wall
+									# title = k_nightswatch
+									# title = k_dragonstone
+									# title = k_crackclaw_point
+									# AND = {
+										# title = k_north
+										# e_north = { has_holder = yes }
+									# }
+									# AND = {
+										# title = k_riverlands
+										# e_riverlands = { has_holder = yes }
+									# }
+									# AND = {
+										# title = k_vale
+										# e_vale = { has_holder = yes }
+									# }
+									# AND = {
+										# title = k_westerlands
+										# e_westerlands = { has_holder = yes }
+									# }
+									# AND = {
+										# title = k_reach
+										# e_reach = { has_holder = yes }
+									# }
+									# AND = {
+										# title = k_stormlands
+										# e_stormlands = { has_holder = yes }
+									# }
+									# AND = {
+										# title = k_dorne
+										# e_dorne = { has_holder = yes }
+									# }
+									# AND = {
+										# title = k_iron_isles
+										# e_iron_isles = { has_holder = yes }
+									# }
+								# }
+							# }		
+						# }
+					# }	
+				# }
+			# }	
+		# }
+		# FROM = {
+			# FROM = { 
+				# clr_character_flag = requested_lord_paramountcy 
+				# capital_scope = {
+					# kingdom = {
+						# grant_title = PREVPREV
+					# }	
+				# }
+				# if = {
+					# limit = { NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_granted_kingdom } } }
+					# opinion = {
+						# who = ROOT
+						# modifier = opinion_granted_kingdom
+					# }
+				# } 
+				# hidden_tooltip = { 
+					# letter_event = { id = 63078 tooltip = EVTTOOLTIP63078 days = 1 }
+					# set_defacto_liege = ROOT	
+				# }
+			# }
+		# }	
+		# hidden_tooltip = {
+			# FROM = {
+				# FROM = {
+					# remove_opinion = { who = ROOT modifier = sent_gift } 
+				# }
+			# }
+		# }
+		# clr_character_flag = in_interaction
+	# }	
+		
+	# option = {
+		# name = "EVTOPTEinteraction.5" #Hand of the King
+		# ai_chance = {
+			# factor = 0
+		# }
+		# trigger = {
+			# tier = EMPEROR	
+			# FROMFROM = {
+				# liege = {
+					# tier = KING
+					# liege = { character = ROOT }
+				# }
+				# war = no
+				# NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_rejected_castellan } }
+				
+				# OR = {
+					# AND = {
+						# is_female = yes
+						# liege = { 
+							# OR = {
+								# culture = kayakayanayan
+								# culture = samyrianan
+								# culture = bayasabhadi
+							# }
+						# }
+					# }
+					# AND = {
+						# is_female = no
+						# NOT = {
+							# liege = { 
+								# OR = {
+									# culture = kayakayanayan
+									# culture = samyrianan
+									# culture = bayasabhadi
+								# }
+							# }
+						# }	
+					# }	
+					# has_character_flag = special_chancellor			
+				# }	
+				# is_adult = yes
+				# prisoner = no
+				# NOT = { trait = incapable }
+				# NOT = { is_inaccessible_trigger = yes }
+				# NOT = { trait = salt_wife }
+				# NOT = { trait = slave }
+				# NOT = { trait = dragon }
+				# NOT = { has_landed_title = d_nightswatch }
+			# }	
+		# }
+		# FROM = {
+			# FROM = { 
+				# letter_event = { id = 73570 tooltip = EVTTOOLTIP73570 days = 3 }
+			# }
+		# }	
+		# hidden_tooltip = {
+			# FROM = {
+				# FROM = {
+					# remove_opinion = { who = ROOT modifier = sent_gift } 
+				# }
+			# }
+		# }
+		# clr_character_flag = in_interaction
+	# }	
+				
+	# option = {
+		# name = "NEVERMIND"
+		 # ai_chance = {
+			# factor = 100
+		# }
+		# hidden_tooltip = {
+			# FROM = {
+				# FROM = {
+					# remove_opinion = { who = ROOT modifier = sent_gift } 
+				# }
+			# }
+		# }
+		# clr_character_flag = in_interaction
+	# }
+
+# }
+# #Action
+# character_event = {
+	# id = interaction.6
+	# is_triggered_only = yes
+	# desc = "EVTDESCinteraction.6" 
+	# picture = GFX_evt_council
+	
+	# # option = {
+		# # name = "EVTOPTAinteraction.6" #Assasinate
+		 # # ai_chance = {
+			# # factor = 0
+		# # }
+		# # trigger = {
+			# # has_character_flag = faceless_men_hit
+		# # }
+		# # clr_character_flag = faceless_men_hit
+		
+		# # hidden_tooltip = {
+			# # FROM = {
+				# # FROM = {
+					
+					# # character_event = { id = 20800507 days = 14} 
+				# # }
+			# # }
+		# # }
+		# # character_event = { id = 20800508} 
+		# # hidden_tooltip = {
+			# # FROM = {
+				# # FROM = {
+					# # remove_opinion = { who = ROOT modifier = sent_gift } 
+				# # }
+			# # }
+		# # }
+		# # clr_character_flag = in_interaction
+		
+		
+	# # }
+	# option = {
+		
+		# name = "EVTOPTCinteraction.3" #Assign  bought councillor mission
+		# ai_chance = {
+			# factor = 0
+		# }
+		# trigger = {
+			# FROM = {
+				# FROM = {
+					# has_opinion_modifier = { who = ROOT modifier = opinion_loyalty_bought }
+					# is_councillor = yes
+					# #ai = yes
+					# prisoner = no
+					# NOT = { liege = { character = ROOT } }
+				# }
+			# }
+		# }
+		# hidden_tooltip = {
+			# FROM = {
+				# FROM = {
+					# add_trait = assign_mission_target
+				# }
+			# }
+		# }
+		# character_event = { id = plot_event.15  days = 2 } #plot_events.txt
+
+	# }
+	
+	# # option = {
+		
+		# # name = "EVTOPTBinteraction.6" #Fire City Watch Commander
+		# # ai_chance = {
+			# # factor = 0
+		# # }
+		# # trigger = {
+			# # FROM = {
+				# # FROM = {
+					# # OR = {
+						# # AND = {
+							# # has_minor_title = title_commander_gold_cloaks
+							# # ROOT = { has_landed_title = c_kings_landing }
+						# # }	
+						# # AND = {
+							# # has_minor_title = title_commander_city_watch_oldtown
+							# # ROOT = { has_landed_title = c_oldtown }
+						# # }
+						# # AND = {
+							# # has_minor_title = title_knight_of_the_bloody_gate
+							# # ROOT = { has_landed_title = d_the_giants_lance }
+						# # }
+						# # AND = {
+							# # has_minor_title = title_commander_city_watch_lannisport
+							# # ROOT = { has_landed_title = c_lannisport }
+						# # }
+					# # }
+				# # }
+			# # }
+		# # }
+		# # if = {
+			# # limit = {
+				# # FROM = {
+					# # FROM = {
+						# # has_minor_title = title_commander_gold_cloaks
+						# # ROOT = { has_landed_title = c_kings_landing }
+					# # }
+				# # }	
+			# # }
+			# # FROM = {
+				# # FROM = {
+					# # remove_title = title_commander_gold_cloaks
+				# # }
+			# # }			
+			# # hidden_tooltip = { b_kings_landing = { grant_title = ROOT } }
+		# # }
+		# # if = {
+			# # limit = {
+				# # FROM = {
+					# # FROM = {
+						# # has_minor_title = title_commander_city_watch_oldtown
+						# # ROOT = { has_landed_title = c_oldtown }
+					# # }
+				# # }	
+			# # }
+			# # FROM = {
+				# # FROM = {
+					# # remove_title = title_commander_city_watch_oldtown
+				# # }
+			# # }			
+			# # hidden_tooltip = { b_oldtown  = { grant_title = ROOT } }
+		# # }
+		# # if = {
+			# # limit = {
+				# # FROM = {
+					# # FROM = {
+						# # has_minor_title = title_knight_of_the_bloody_gate
+						# # ROOT = { has_landed_title = d_the_giants_lance }
+					# # }
+				# # }	
+			# # }
+			# # FROM = {
+				# # FROM = {
+					# # remove_title = title_knight_of_the_bloody_gate
+				# # }
+			# # }			
+			# # hidden_tooltip = { c_bloody_gate = { grant_title = ROOT } }
+		# # }
+		# # if = {
+			# # limit = {
+				# # FROM = {
+					# # FROM = {
+						# # has_minor_title = title_commander_city_watch_lannisport
+						# # ROOT = { has_landed_title = c_lannisport }
+					# # }
+				# # }	
+			# # }
+			# # FROM = {
+				# # FROM = {
+					# # remove_title = title_commander_city_watch_lannisport
+				# # }
+			# # }			
+			# # hidden_tooltip = { b_lannisportone  = { grant_title = ROOT } }
+		# # }
+		# # FROM = {
+			# # FROM = {
+				# # opinion = {
+					# # modifier = opinion_fired_from_office
+					# # who = ROOT
+					# # years = 10
+				# # }
+				# # hidden_tooltip = { 
+					# # ROOT = { reverse_banish = PREV } 
+					# # remove_opinion = { who = ROOT modifier = sent_gift } 
+					# # letter_event = { id = 110024 }
+				# # }
+			# # }
+		# # }
+		# # clr_character_flag = in_interaction
+		
+	# # }
+
+	# option = {
+		# name = "EVTOPTDinteraction.6" #Rhllor Action list
+		# trigger = { 
+			# has_character_flag = made_sacrafice_redgod 
+			# FROMFROM = { 
+				# NOT = { trait = dragon }
+				# is_within_diplo_range = ROOT
+			# }#
+		# }
+		# fromfrom = { character_event = { id = red_priest.21 } }
+		# hidden_tooltip = {
+			# FROM = {
+				# FROM = {
+					# remove_opinion = { who = ROOT modifier = sent_gift } 
+				# }
+			# }
+		# }
+		# clr_character_flag = in_interaction
+	# }
+	
+	# option = {
+		
+		# name = "EVTOPTEinteraction.3" #Offer to buy slave
+		# ai_chance = {
+			# factor = 0
+		# }
+		# trigger = {
+			# crownlaw_title = {
+				# OR = {
+					# has_law = slavery_1
+					# has_law = slavery_2
+				# }
+			# }
+			# FROM = {
+				# FROM = {
+					# trait = slave
+					# NOT = { has_character_flag = flag_not_for_sale }
+					# NOT = { reverse_has_opinion_modifier = { who = ROOT modifier = opinion_rejected_slave } }
+					# NOT = { has_character_flag = unsullied }
+					# slave_owner = {
+						# NOT = { character = ROOT }
+						# has_opinion_modifier = { who = PREV modifier = opinion_my_slave }
+						# is_within_diplo_range = ROOT
+					# }
+				# }
+			# }
+		# }
+		# FROM = {
+			# FROM = {
+				# slave_owner = {
+					# limit = {
+						# NOT = { character = ROOT }
+						# has_opinion_modifier = { who = PREV modifier = opinion_my_slave }
+					# }	
+					# custom_tooltip = { text = TOOLTIPEVTOPTEinteraction.3 }
+				# }
+				# hidden_tooltip = { character_event = { id = slavery.250 } }
+				# hidden_tooltip = { remove_opinion = { who = ROOT modifier = sent_gift } }
+			# }
+		# }
+		# clr_character_flag = in_interaction		
+	# }
+	
+	# option = {
+		
+		# name = "EVTOPTFinteraction.3" #Face Dragon
+		# ai_chance = {
+			# factor = 0
+		# }
+		# trigger = {
+			# age = 14
+			# OR = {
+				# is_female = no
+				# culture = kayakayanayan
+				# culture = samyrianan
+				# culture = bayasabhadi	
+				# trait = brave
+				# martial = 18
+				# culture_group = valyrian
+				# trait = chosen_by_rhllor
+			# }
+			# NOT = { any_friend = { trait = dragon is_alive = yes } }
+			# OR = {
+				# NOT = { has_character_flag = found_wild_dragon }
+				# had_character_flag = { flag = found_wild_dragon days = 60 }
+			# }
+			# OR = { 
+				# NOT = {has_character_flag = ran_from_dragon}
+				# had_character_flag = { flag = ran_from_dragon days = 500}
+			# }
+			# FROM = {
+				# FROM = {
+					# trait = dragon
+					# at_location = ROOT
+					# NOT = { guardian = { always = yes } }
+					# NOT = { any_friend = { always = yes is_alive = yes } }
+					# NOT = { has_character_flag = dany_dragon }
+					# OR = {
+						# NOT = { has_character_flag = found_wild_dragon }
+						# had_character_flag = { flag = found_wild_dragon days = 30 }
+					# }
+				# }
+			# }	
+			# location = {
+				# owner = {
+					# OR = {
+						# character = ROOT
+						# custom_tooltip = {
+							# text = TOOLTIPface_dragon_decOWNER
+							# hidden_tooltip = {
+								# AND = {
+									# NOT = { trait = dragon_rider }
+									# NOT = {
+										# regent = {
+											# trait = dragon_rider
+											# is_close_relative = PREV
+										# }
+									# }
+								# }
+							# }	
+						# }	
+						# dynasty = ROOT
+						# is_close_relative = ROOT
+					# }
+				# }
+			# }
+			# prisoner = no
+			# NOT = { in_battle = yes }
+			# NOT = { trait = incapable }
+			# NOT = { trait = infirm }
+			# NOT = { trait = wounded }
+			# NOT = { is_maimed_trigger = yes }
+			# NOT = { trait = crippled }
+			# is_ill = no
+		# }
+		# set_character_flag = found_wild_dragon
+		# FROM = {
+			# FROM = {
+				# set_character_flag = found_wild_dragon
+				# character_event = { id = dragon.2698 tooltip = TOOLTIPdragon.2698 days = 2 random = 1 }				
+				# hidden_tooltip = { remove_opinion = { who = ROOT modifier = sent_gift } }
+			# }
+		# }	
+		# clr_character_flag = in_interaction
+	# }
+	# option = {
+		# name = "NEVERMIND"
+		 # ai_chance = {
+			# factor = 100
+		# }
+		# hidden_tooltip = {
+			# FROM = {
+				# FROM = {
+					# remove_opinion = { who = ROOT modifier = sent_gift } 
+				# }
+			# }
+		# }
+		# clr_character_flag = in_interaction
+	# }
+
+# }
+# #KG ai draft
+# #interaction.7 (7770046 clone)
+# character_event = {
+	# id = interaction.7
+	# desc = "EVTDESC7770046"
+	
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = "Ok"	
+		# ai_chance = {
+			# factor = 2		
+			# ###KG relations with his father.
+			# modifier = {
+				# factor = 4
+				# AND = {
+					# is_primary_heir = yes 
+					# father = {
+						# opinion = { who = ROOT value =  50 }
+					# }
+				# }
+			# }
+			# modifier = {
+				# factor = 3
+				# AND = {
+					# is_primary_heir = yes 
+					# father = {
+						# reverse_opinion = { who = ROOT value =  50 }
+					# }
+				# }
+			# }
+			
+			# ###KG fighting skills
+			# modifier = {
+				# factor = 2
+				# NOT = { martial = 10 }
+			# }
+			# modifier = {
+				# factor = 2
+				# is_weak_trigger = yes
+			# }
+			
+			# ###KG Characterh
+			# modifier = {
+				# factor = 2
+				# trait = craven
+			# }
+			# modifier = {
+				# factor = 2
+				# trait = slothful
+			# }
+			# modifier = {
+				# factor = 2
+				# trait = paranoid
+			# }
+			# modifier = {
+				# factor = 2
+				# NOT  = { trait = proud }
+			# }
+			# modifier = {
+				# factor = 3
+				# AND = {
+					# is_primary_heir = yes 
+					# father = {
+						# is_alive = yes
+						# is_ruler = yes
+						# tier = duke
+					# }
+				# }
+			# }
+			# modifier = {
+				# factor = 4
+				# AND = {
+					# is_primary_heir = yes 
+					# father = {
+						# is_alive = yes
+						# is_ruler = yes
+						# tier = king
+					# }
+				# }
+			# }
+		# }
+		
+		
+		
+		# if = {
+			# limit = {
+				# is_primary_heir = yes 
+				# father = { NOT = { character = ROOT } }
+			# }
+			# set_character_flag = refused_kingsguard
+			# father = { character_event = { id = 7770047 } } #Son & hair refuses kingsguard. (Notification)
+			# FROMFROM  = { character_event = { id = 7770048 } } #Candidate refuses to join your kingsguard because he is an heir. (Notification)
+		# }
+		# if = {
+			# limit = {
+				# is_primary_heir = no 
+			# }
+			# FROMFROM = { character_event = { id = 7770008 } }
+		# }
+	# }
+
+	# option = {
+		# name = "Ok"
+		
+		# #Ai will accept, and join the kingsguard. Despite his father going bananz over this.
+		# ai_chance = {
+			# factor = 3
+			
+			# ###KG relations with his father.
+			# modifier = {
+				# factor = 2
+				# AND = {
+					# is_primary_heir = yes 
+					# NOT = {
+						# father = {
+							# opinion = { who = ROOT value =  0 }
+						# }
+					# }
+				# }
+			# }
+			
+			# modifier = {
+				# factor = 2
+				# AND = {
+					# is_primary_heir = yes 
+					# NOT = {
+						# father = {
+							# reverse_opinion = { who = ROOT value =  0 }
+						# }
+					# }
+				# }
+			# }
+			
+			# ###KG relations with his king.
+			# modifier = {
+				# factor = 3
+				# top_liege = {
+					# opinion = { who = ROOT value =  50 }
+				# }
+			# }
+			# modifier = {
+				# factor = 3
+				# top_liege = {
+					# reverse_opinion = { who = ROOT value =  40 }
+				# }
+			# }
+			
+			# ###KG military orientated
+			# modifier = {
+				# factor = 1.5
+				# OR = {
+					# trait = misguided_warrior
+					# trait = tough_soldier
+					# trait = skilled_tactician
+					# trait = brilliant_strategist
+				# }
+			# }
+			
+			# ###KG fighting skills
+			# modifier = {
+				# factor = 1.5
+				# martial = 14
+			# }
+			# modifier = {
+				# factor = 1.5
+				# is_strong_trigger = yes
+			# }
+			# modifier = {
+				# factor = 1.5
+				# trait = master_warrior
+			# }
+			# modifier = {
+				# factor = 2
+				# trait = duelist
+			# }
+			
+			# ###KG personality
+			# modifier = {
+				# factor = 2
+				# trait = impaler
+			# }
+			# modifier = {
+				# factor = 2
+				# trait = cruel
+			# }
+			# modifier = {
+				# factor = 2
+				# trait = wroth
+			# }
+			# modifier = {
+				# factor = 1.5
+				# trait = brave
+			# }
+			# modifier = {
+				# factor = 1.5
+				# trait = duelist
+			# }
+			# modifier = {
+				# factor = 1.5
+				# trait = diligent
+			# }
+			# modifier = {
+				# factor = 1.5
+				# trait = chaste
+			# }
+			# modifier = {
+				# factor = 1.5
+				# trait = proud
+			# }
+			# modifier = {
+				# factor = 1.5
+				# trait = just
+			# }
+			# modifier = {
+				# factor = 1.5
+				# trait = zealous
+			# }
+			# modifier = {
+				# factor = 1.5
+				# trait = trusting
+			# }
+		# }
+		# if = { #If no other Kingsguard present, become lord Commander
+			# limit = {
+				# NOT = { kingsguard = { is_alive = yes } }
+				# is_title_active = d_kingsguard
+			# }
+			# d_kingsguard = { grant_title = ROOT }
+			# set_defacto_liege = FROMFROM
+			# clr_global_flag = need_commander_kingsguard
+			# character_event = { id = 7770014 }
+		# }
+		# add_trait = kingsguard
+		# recalc_succession = yes
+		# if = {
+			# limit = {
+				# NOT = { is_title_active = d_kingsguard }
+			# }
+			# activate_title = { title = d_kingsguard status = yes }
+			# d_kingsguard = { grant_title = ROOT }
+			# set_defacto_liege = FROMFROM
+			# #clr_global_flag = kingsguard_initialised
+		# }
+		# if = {
+			# limit = {
+				# is_primary_heir = yes 
+			# }
+			# father = { character_event = { id = 7770049 } } #Son & hair accepts the kingsguard. (Notification)
+			# FROMFROM  = { character_event = { id = 7770050 } } #Candidate accepts to join your kingsguard despite being an heir. (Notification)
+		# }
+		# if = {
+			# limit = {
+				# is_primary_heir = no 
+			# }
+			# FROMFROM = { character_event = { id = 7770007 } }
+		# }
+		# if = {
+			# limit = {
+				# NOT = { trait = knight}
+			# }
+			# add_trait = knight
+			# remove_trait = squire
+			# prestige = 50
+		# }
+		
+		
+	# }
+# }
+
+####Liege vassal intervention interactions####
+
+#Liege is asked by bannermen to intervene
+letter_event = {
+	id = interaction.8
+	desc = "EVTDESCinteraction.8"
+	
+	is_triggered_only = yes #	
+
+	trigger = {
+		FROM = {
+			any_current_enemy = {
+				any_war = {
+					defender = { 
+						character = ROOT_FROM	
+					}
+					attacker = {
+						character = PREVPREV
+						NOT = { has_minor_title = title_triarch }
+						is_liege_or_above = ROOT 
+						OR = {
+							ROOT = { 
+								primary_title = { NOT = { has_law = diplomacy_voting_power_1 } } 
+								has_regent = no
+							}
+							NOT = { has_opinion_modifier = { who = ROOT modifier = voted_on_stand_down } }
+						}
+						OR = {
+							NOT = { has_opinion_modifier = { who = ROOT modifier = asked_to_stand_down } }
+							AND = {
+								prisoner = yes
+								host = { character = ROOT }
+							}
+						}
+					}					
+				}
+			}	
+		}	
+	}
+	
+	immediate = {
+		FROM = {
+			random_current_enemy = {
+				limit = {
+					any_war = {
+						defender = { 
+							character = ROOT_FROM	
+						}
+						attacker = {
+							character = PREVPREV
+							NOT = { has_minor_title = title_triarch }
+							is_liege_or_above = ROOT 
+							OR = {
+								ROOT = { 
+									primary_title = { NOT = { has_law = diplomacy_voting_power_1 } } 
+									has_regent = no
+								}
+								NOT = { has_opinion_modifier = { who = ROOT modifier = voted_on_stand_down } }
+							}
+							OR = {
+								NOT = { has_opinion_modifier = { who = ROOT modifier = asked_to_stand_down } }
+								AND = {
+									prisoner = yes
+									host = { character = ROOT }
+								}
+							}
+						}						
+					}	
+				}
+				save_event_target_as = interaction_8_aggressor
+			}
+		}
+	}
+	
+	option = {
+		name = {
+			text = "EVTOPTAinteraction.8" #tell agressor to stand down
+			trigger = {
+				primary_title = { NOT = { has_law = diplomacy_voting_power_1 } } 
+				has_regent = no
+			}
+		}	
+		name = {
+			text = "EVTOPTAinteraction.8B" #Vote in favour
+			trigger = {
+				primary_title = { has_law = diplomacy_voting_power_1 }
+				has_regent = no
+			}
+		}
+		name = {
+			text = "EVTOPTAinteraction.8C" #Regency council
+			trigger = {
+				has_regent = yes
+			}
+		}
+		ai_chance = { 
+			factor = 15
+			
+			#Aggressor is bullying smaller vassal
+			modifier = { 
+				factor = 5
+				event_target:interaction_8_aggressor = {
+					relative_power = { who = FROM power = 2 }
+					NOT = { liege_before_war = { character = FROM } }
+				}
+
+			}
+			modifier = { # Crownlands are protected by the King for non-crownlands wars
+				factor = 14
+				FROM = {
+					capital_scope = {
+						region = world_crownlands
+					}
+					top_liege = { has_landed_title = e_iron_throne }
+					event_target:interaction_8_aggressor = {
+						NOT = {
+							capital_scope = {
+								region = world_crownlands
+							}	
+						}		
+					}
+				}
+			}
+			
+			#Alliances
+			modifier = {
+				factor = 5
+				is_close_relative = FROM
+			}
+			modifier = {
+				factor = 3
+				NOT = { is_close_relative = FROM }
+				OR = {
+					is_allied_with = FROM
+					has_non_aggression_pact_with = FROM
+				}
+			}		
+			modifier = {
+				factor = 0.2
+				event_target:interaction_8_aggressor = {
+					is_close_relative = ROOT
+				}
+			}
+			modifier = {
+				factor = 0.33
+				event_target:interaction_8_aggressor = {
+					OR = {
+						is_allied_with = ROOT
+						has_non_aggression_pact_with = ROOT
+					}
+				}		
+			}
+			
+			#Opinions	
+			modifier = {
+				factor = 1.66
+				opinion = { who = FROM value = 20 }
+			}
+			modifier = {
+				factor = 1.66
+				opinion = { who = FROM value = 40 }
+			}
+			modifier = {
+				factor = 1.66
+				opinion = { who = FROM value = 60 }
+			}
+			modifier = {
+				factor = 1.66
+				opinion = { who = FROM value = 80 }
+			}
+			modifier = {
+				factor = 1.66
+				opinion = { who = FROM value = 100 }
+			}				
+			modifier = {
+				factor = 0.6
+				NOT = { opinion = { who = FROM value = -19 } }
+			}
+			modifier = {
+				factor = 0.6
+				NOT = { opinion = { who = FROM value = -39 } }
+			}
+			modifier = {
+				factor = 0.6
+				NOT = { opinion = { who = FROM value = -59 } }
+			}
+			modifier = {
+				factor = 0.6
+				NOT = { opinion = { who = FROM value = -79 } }
+			}
+			modifier = {
+				factor = 0.6
+				NOT = { opinion = { who = FROM value = -99 } }
+			}
+
+			modifier = {
+				factor = 0.6
+				event_target:interaction_8_aggressor = {
+					reverse_opinion = { who = ROOT value = 20 }
+				}
+			}
+			modifier = {
+				factor = 0.6
+				event_target:interaction_8_aggressor = {
+					reverse_opinion = { who = ROOT value = 40 }
+				}
+			}
+			modifier = {
+				factor = 0.6
+				event_target:interaction_8_aggressor = {
+					reverse_opinion = { who = ROOT value = 60 }
+				}
+			}
+			modifier = {
+				factor = 0.6
+				event_target:interaction_8_aggressor = {
+					reverse_opinion = { who = ROOT value = 80 }
+				}
+			}
+			modifier = {
+				factor = 0.6
+				event_target:interaction_8_aggressor = {
+					reverse_opinion = { who = ROOT value = 100 }
+				}
+			}			
+			modifier = {
+				factor = 1.66
+				event_target:interaction_8_aggressor = {
+					NOT = { reverse_opinion = { who = ROOT value = -19 } }
+				}
+			}
+			modifier = {
+				factor = 1.66
+				event_target:interaction_8_aggressor = {
+					NOT = { reverse_opinion = { who = ROOT value = -39 } }
+				}
+			}
+			modifier = {
+				factor = 1.66
+				event_target:interaction_8_aggressor = {
+					NOT = { reverse_opinion = { who = ROOT value = -59 } }
+				}
+			}
+			modifier = {
+				factor = 1.66
+				event_target:interaction_8_aggressor = {
+					NOT = { reverse_opinion = { who = ROOT value = -79 } }
+				}
+			}
+			modifier = {
+				factor = 1.66
+				event_target:interaction_8_aggressor = {
+					NOT = { reverse_opinion = { who = ROOT value = -99 } }
+				}
+			}
+								
+		}
+		if = {
+			limit = {
+				OR = {
+					primary_title = { has_law = diplomacy_voting_power_1 }
+					has_regent = yes
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = { has_regent = no }
+					set_character_flag = stand_down_vote_for
+					set_variable = { which = council_end_war_votes value = 1 } 
+				}
+				if = {
+					limit = { has_regent = yes }
+					set_variable = { which = council_end_war_votes value = 0 } 
+				}				
+			}
+			event_target:interaction_8_aggressor = {
+				character_event = { id = councillor.199 tooltip = TOOLTIPstand_downVOTE }
+				hidden_tooltip = {			
+					opinion = { #Cooldown
+						who = ROOT
+						modifier = voted_on_stand_down
+						years = 2
+					} 
+				}
+			}
+		}	
+		if = {
+			limit = {
+				primary_title = { NOT = { has_law = diplomacy_voting_power_1 } } 
+				has_regent = no
+			}
+			event_target:interaction_8_aggressor = {
+				letter_event = { id = interaction.10 tooltip = "EVTTOOLTIPinteraction.10" days = 5 }
+				tooltip = { }
+				if = {
+					limit = {
+						NOT = { 
+							crownlaw_title = { 
+								OR = {
+									has_law = centralization_0
+									has_law = centralization_1
+								}	
+							} 
+						}
+					}
+					custom_tooltip = { text = TOOLTIPPIinteraction.10 } #High Authority
+				}
+				if = {
+					limit = {
+						crownlaw_title = { 
+							OR = {
+								has_law = centralization_0
+								has_law = centralization_1
+							}	
+						} 
+					}
+					custom_tooltip = { text = TOOLTIPPIinteraction.11 } # Low Authority
+				}	
+			}	
+		}	
+		clear_event_target = interaction_8_aggressor
+	}
+	
+	option = {		 
+		trigger = { has_regent = no }
+		name = {
+			text = "EVTOPTBinteraction.8" #Idc
+			trigger = {
+				primary_title = { NOT = { has_law = diplomacy_voting_power_1 } } 
+			}
+		}	
+		name = {
+			text = "EVTOPTBinteraction.8B" #Vote against
+			trigger = {
+				primary_title = { has_law = diplomacy_voting_power_1 }
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = { #Will lose land from my realm
+				factor = 0
+				event_target:interaction_8_aggressor = {
+					has_character_flag = external_claimant 
+				}
+			}
+		}
+		if = {
+			limit = {
+				primary_title = { has_law = diplomacy_voting_power_1 }
+			}
+			hidden_tooltip = {
+				set_variable = { which = council_end_war_votes value = -1 } 
+				set_character_flag = stand_down_vote_against
+			}
+			event_target:interaction_8_aggressor = {
+				character_event = { id = councillor.199 tooltip = TOOLTIPstand_downVOTE }
+				hidden_tooltip = {			
+					opinion = { #Cooldown
+						who = ROOT
+						modifier = voted_on_stand_down
+						years = 2
+					} 
+				}
+			}
+		}	
+		if = {
+			limit = {
+				primary_title = { NOT = { has_law = diplomacy_voting_power_1 } }
+			}
+			FROM = {
+				opinion = {
+					modifier = opinion_failed_to_protect_me 
+					who = ROOT
+					months = 60
+				}
+				hidden_tooltip = { letter_event = { id = interaction.12 } }
+			}	
+		}	
+		clear_event_target = interaction_8_aggressor
+	}	
+}
+#Make sure liege is FROM scope in personal interaction
+character_event = {
+	id = interaction.9
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		FROM = {
+			letter_event = { id = interaction.10 days = 5 }
+		}	
+	}
+	
+	option = {
+		name = OK
+	}	
+}	
+#Vassal is commanded to stand down
+letter_event = {
+	id = interaction.10
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_alive = yes }
+		any_war = {
+			attacker = { character = ROOT }
+			defender = { 
+				OR = {
+					is_liege_or_above = FROM
+					AND = {
+						lower_tier_than = FROM
+						has_opinion_modifier = { who = FROM modifier = opinion_de_facto_liege }
+						NOT = { has_opinion_modifier = { who = FROM modifier = opinion_granted_independence } }
+					}
+					OR = {
+						is_allied_with = FROM
+						has_non_aggression_pact_with = FROM
+					}
+				}	
+			}
+		}
+	}
+	
+	desc = {
+		text = "EVTDESCinteraction.10" #High Crown Authority
+		trigger = { 
+			NOT = { 
+				crownlaw_title = { 
+					OR = {
+						has_law = centralization_0
+						has_law = centralization_1
+					}	
+				} 
+			}
+		}
+	}
+	desc = {
+		text = "EVTDESCinteraction.11" #Low Crown Authority
+		trigger = { 
+			crownlaw_title = { 
+				OR = {
+					has_law = centralization_0
+					has_law = centralization_1
+				}	
+			}
+		}
+	}
+	
+	option = { 
+		name = "EVTOPTAinteraction.10" #Yes my Lord
+		 ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 2
+				trait = humble
+			}
+			modifier = {
+				factor = 2
+				trait = content
+			}
+			modifier = {
+				factor = 2
+				trait = patient
+			}
+			modifier = {
+				factor = 2
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				FROM = {
+					trait = authoritative 
+				}
+			}
+			modifier = {
+				factor = 1.5
+				opinion = {
+					who = FROM
+					 value = 10
+				}
+			}
+			modifier = {
+				factor = 1.5
+				opinion = {
+					who = FROM
+					value = 25
+				}
+			}
+			modifier = {
+				factor = 1.5
+				opinion = {
+					who = FROM
+					value = 50
+				}
+			}
+			modifier = {
+				factor = 1.5
+				opinion = {
+					who = FROM
+					value = 75
+				}
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { relative_power_to_liege = 0.05 }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { relative_power_to_liege = 0.15 }
+			}
+			modifier = {
+				factor = 3
+				FROM = { tier = EMPEROR }
+				tier = COUNT
+			}
+			modifier = {
+				factor = 1.5
+				FROM = { tier = KING }
+				tier = COUNT
+			}
+			modifier = {
+				factor = 1.5
+				FROM = { tier = EMPEROR }
+				tier = DUKE
+			}
+			modifier = { # Crownlands are protected by the King for non-crownlands wars
+				factor = 10	
+				any_war = {
+					attacker = { character = ROOT }
+					defender = { 
+						OR = {
+							is_liege_or_above = FROM
+							AND = {
+								lower_tier_than = FROM
+								has_opinion_modifier = { who = FROM modifier = opinion_de_facto_liege }
+								NOT = { has_opinion_modifier = { who = FROM modifier = opinion_granted_independence } }
+							}
+							OR = {
+								is_allied_with = FROM
+								has_non_aggression_pact_with = FROM
+							}
+						}	
+						capital_scope = {
+							region = world_crownlands
+						}
+						any_liege = { has_landed_title = e_iron_throne }
+					}
+				}
+				NOT = {
+					capital_scope = {
+						region = world_crownlands
+					}	
+				}
+			}
+		}	
+		any_war = {
+			limit = {
+				attacker = { character = ROOT }
+				defender = { 
+					OR = {
+						is_liege_or_above = FROM
+						AND = {
+							lower_tier_than = FROM
+							has_opinion_modifier = { who = FROM modifier = opinion_de_facto_liege }
+							NOT = { has_opinion_modifier = { who = FROM modifier = opinion_granted_independence } }
+						}
+						OR = {
+							is_allied_with = FROM
+							has_non_aggression_pact_with = FROM
+						}
+					}	
+				}
+			}
+			defender = {	
+				hidden_tooltip = { 
+					character_event = { id = interaction.18 } 
+					if = {
+						limit = {
+							OR = {
+								is_liege_or_above = FROM
+								AND = {
+									lower_tier_than = FROM
+									has_opinion_modifier = { who = FROM modifier = opinion_de_facto_liege }
+									NOT = { has_opinion_modifier = { who = FROM modifier = opinion_granted_independence } }
+								}
+							}	
+						}
+						opinion = {
+							modifier = opinion_protected_me 
+							who = FROM
+							months = 36
+						}
+					}
+					
+					# opinion = {
+						# modifier = opinion_enforced_truce
+						# who = ROOT
+						# months = 60
+					# }
+				}
+				ROOT = { set_truce = { who = PREV years = 5 } }
+			}
+			end_war = whitepeace				
+		}
+		FROM = {
+			hidden_tooltip = { letter_event = { id = interaction.13 } }
+			opinion = {
+				modifier = opinion_satisfied 
+				who = ROOT
+				months = 36
+			}
+		}		
+		hidden_tooltip = {	
+			hidden_tooltip = { character_event = { id = TOG.1377 days = 2 } }#Post Adventure Loss Maintenance
+			remove_opinion = { #Cooldown
+				who = FROM
+				modifier = asked_to_stand_down 
+			}
+			remove_opinion = { #Cooldown
+				who = FROM
+				modifier = voted_on_stand_down
+			}
+			# random_playable_ruler = { #debug message
+				# limit = { 
+					# ai = no
+				# }
+				# character_event = {id = 20800999} #agreed
+			# }
+		}
+	}
+	option = { 
+		name = {
+			text = "EVTOPTBinteraction.10" #No (High Authority)
+			trigger = { 
+				NOT = { 
+					crownlaw_title = { 
+						OR = {
+							has_law = centralization_0
+							has_law = centralization_1
+						}	
+					} 
+				}
+			}
+		}	
+		name = {
+			text = "EVTOPTDinteraction.10" #No (Low Authority)
+			trigger = { 
+				crownlaw_title = { 
+					OR = {
+						has_law = centralization_0
+						has_law = centralization_1
+					}	
+				} 
+			}
+		}
+		trigger = {
+			OR = {
+				prisoner = no
+				NOT = { host = { character = FROM } }
+			}
+		}
+		 ai_chance = {
+			factor = 45
+			
+			modifier = {
+				factor = 5
+				crownlaw_title = { 
+					OR = {
+						has_law = centralization_0
+						has_law = centralization_1
+					}	
+				} 
+			}
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+			modifier = {
+				factor = 2
+				trait = lunatic
+			}
+			modifier = {
+				factor = 3
+				trait = ambitious
+			}
+			modifier = {
+				factor = 3
+				trait = stubborn
+			}
+			modifier = {
+				factor = 2
+				trait = brave
+			}
+			modifier = {
+				factor = 2
+				FROM = {
+					trait = content
+				}
+			}
+			modifier = {
+				factor = 2
+				FROM = {
+					is_weak_trigger = yes
+				}
+			}	
+			modifier = {
+				factor = 1.5
+				NOT = {
+					opinion = {
+						who = FROM
+						value = 0
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -25
+					 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -50
+					 }
+				}
+			}
+			modifier = {
+				factor = 1.5
+				NOT = {
+					opinion = {
+						who = FROM
+						value = -75
+					 }
+				}
+			}	
+			modifier = {
+				factor = 1.5
+				relative_power_to_liege = 0.3
+			}
+			modifier = {
+				factor = 1.5
+				relative_power_to_liege = 0.4
+			}
+			modifier = {
+				factor = 1.5
+				relative_power_to_liege = 0.5
+			}
+			modifier = {
+				factor = 2
+				tier = KING
+			}
+		}
+		FROM = {
+			letter_event = { id = interaction.14 tooltip = TOOLTIPinteraction.14 }
+			if = {
+				limit = { 
+					ROOT = {
+						crownlaw_title = { 
+							OR = {
+								has_law = centralization_0
+								has_law = centralization_1
+							}	
+						} 
+					}
+				}
+				opinion = {
+					who = ROOT
+					modifier = opinion_did_not_stand_down
+				}
+			}	
+			
+		}
+		hidden_tooltip = {
+			FROMFROM = {					
+				if = {
+					limit = { 
+						NOT = { character = ROOT_FROM } 
+						NOT = { character = ROOT } 
+						ROOT = {
+							crownlaw_title = { 
+								OR = {
+									has_law = centralization_0
+									has_law = centralization_1
+								}	
+							} 
+						}
+					}
+					letter_event = { id = interaction.20 days = 2 }
+				}
+			}
+		}
+		# #debug message
+		# hidden_tooltip = {
+			# random_playable_ruler = {
+				# limit = { 
+					# ai = no
+				# }
+				# character_event = {id = 20800998} #disagreed
+			# }
+		# }	
+	}
+}
+#Inform vassal liege declined to intervene
+letter_event = {
+	id = interaction.12	
+	desc = "EVTDESCinteraction.12"
+	
+	is_triggered_only = yes
+	
+	option = {	 
+		name = "EVTOPTAinteraction.12" #:(
+	}
+}
+#Inform vassal agreed to stand down
+letter_event = {
+	id = interaction.13
+	is_triggered_only = yes
+	desc = "EVTDESCinteraction.13"
+	
+	option = {
+		name = "EVTOPTAinteraction.2"
+		reverse_opinion = {
+			modifier = opinion_disapprove 
+			who = FROM
+			months = 60
+		}
+	}
+}		
+#Inform vassal refused to stand down
+letter_event = {
+	id = interaction.14
+	is_triggered_only = yes
+	desc = "EVTDESCinteraction.14"
+	
+	option = { 
+		name = "EVTOPTAinteraction.14" #Brand Traitor
+		trigger = { 
+			FROM = {
+				NOT = { 
+					crownlaw_title = { 
+						OR = {
+							has_law = centralization_0
+							has_law = centralization_1
+						}	
+					} 
+				}
+			}	
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				trait = just
+			}
+			modifier = {
+				factor = 2
+				trait = honorable
+			}
+		}
+		opinion = {
+			modifier = opinion_traitor 
+			who = FROM
+		}
+		reverse_opinion = {
+			modifier = opinion_furious
+			who = FROM
+			months = 60
+		}
+		hidden_tooltip = {
+			any_realm_lord = { 
+				limit = { ai = no }
+				letter_event = { id = interaction.21 } 							
+			} 
+			any_realm_lord = {
+				limit = {
+					war_with = FROM
+					any_war = {
+						attacker = { character = FROM }
+						defender = { character = PREVPREV }
+					}
+				}
+				letter_event = { id = interaction.19 days = 3 }
+			}
+		}	
+	}
+	option = {
+		name = "EVTOPTBinteraction.14" #Brand Traitor & imprison
+		trigger = { 
+			OR = {
+				NOT = { has_dlc = "Zeus" }
+				AND = {
+					has_regent = no
+					NOT = { primary_title = { has_law = justice_voting_power_1 } }
+				}	
+			}
+			FROM = {
+				liege = { character = ROOT }
+				demesne_size = 1
+				NOT = { 
+					crownlaw_title = { 
+						OR = {
+							has_law = centralization_0
+							has_law = centralization_1
+						}	
+					} 
+				}
+			}	
+		}
+		ai_chance = {
+			factor = 3
+			modifier = {
+				factor = 10
+				relative_power = {
+					who = FROM
+					power = 10
+				}
+			}
+			modifier = {
+				factor = 2
+				relative_power = {
+					who = FROM
+					power = 5
+				}
+			}
+			modifier = {
+				factor = 2
+				relative_power = {
+					who = FROM
+					power = 2
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					relative_power = {
+						who = FROM
+						power = 1
+					}
+				}	
+			}
+			modifier = {
+				factor = 2
+				realm_intrigue = 25
+			}
+			modifier = {
+				factor = 3
+				realm_intrigue = 37
+			}
+			modifier = {
+				factor = 2
+				trait = wroth
+			}
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+		}
+		random_list = {
+			50 = { 
+				modifier = {
+					factor = 1.33
+					realm_intrigue = 25
+					NOT = { realm_intrigue = 37 } 
+				}
+				modifier = {
+					factor = 1.2
+					realm_intrigue = 37
+				}
+				FROM = { #successfully imprisoned
+					imprison = ROOT
+					hidden_tooltip = { character_event = { id = 151 } }				
+				} 
+			} 
+			50 = { 
+				modifier = {
+					factor = 0.5
+					realm_intrigue = 25
+					NOT = { realm_intrigue = 37 } 
+				}
+				modifier = {
+					factor = 0.4
+					realm_intrigue = 37
+				}
+				FROM = { #avoided prison
+					character_event = { id = 150 tooltip = TOOLTIP150 } 						
+				} 
+			}
+		}
+		opinion = {
+			modifier = opinion_traitor 
+			who = FROM
+		}
+		reverse_opinion = {
+			modifier = opinion_furious
+			who = FROM
+			months = 60
+		}
+		hidden_tooltip = {
+			any_realm_lord = { 
+				limit = { ai = no }
+				letter_event = { id = interaction.21 } 							
+			} 
+			any_realm_lord = {
+				limit = {
+					war_with = FROM
+					any_war = {
+						attacker = { character = FROM }
+						defender = { character = PREVPREV }
+					}
+				}
+				letter_event = { id = interaction.19 days = 3 }
+			}
+		}	
+	}
+	option = {
+		name = "EVTOPTDinteraction.14" # Grant someone claim menu
+		trigger = { 
+			OR = {
+				NOT = { has_dlc = "Zeus" }
+				AND = {
+					has_regent = no
+					NOT = { primary_title = { has_law = justice_voting_power_1 } }
+				}	
+			}
+			FROM = {
+				demesne_size = 1
+				NOT = { 
+					crownlaw_title = { 
+						OR = {
+							has_law = centralization_0
+							has_law = centralization_1
+						}	
+					} 
+				}
+			}	
+		}
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 2
+				trait = patient
+			}
+			modifier = {
+				factor = 2
+				trait = deceitful
+			}
+		}
+		character_event = { id = interaction.15 tooltip = "EVTTOOLTIPinteraction.14" }
+		hidden_tooltip = {
+			any_realm_lord = {
+				limit = {
+					war_with = FROM
+					any_war = {
+						attacker = { character = FROM }
+						defender = { character = PREVPREV }
+					}
+				}
+				letter_event = { id = interaction.19 days = 3 }
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCinteraction.14" #Idc
+		trigger = { 
+			OR = {
+				NOT = { has_dlc = "Zeus" }
+				AND = {
+					has_regent = no
+					NOT = { primary_title = { has_law = justice_voting_power_1 } }
+				}	
+			}
+			FROM = {
+				NOT = { 
+					crownlaw_title = { 
+						OR = {
+							has_law = centralization_0
+							has_law = centralization_1
+						}	
+					} 
+				}
+			}	
+		}
+		ai_chance = {
+			factor = 0
+		}
+		prestige = -50
+		any_realm_lord = {
+			limit = {
+				war_with = FROM
+				any_war = {
+					attacker = { character = FROM }
+					defender = { character = PREVPREV }
+				}
+			}
+			opinion = {
+				modifier = opinion_failed_to_protect_me 
+				who = ROOT
+				months = 60
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTEinteraction.14" #Nothing I can do
+		trigger = { 
+			FROM = {
+				crownlaw_title = { 
+					OR = {
+						has_law = centralization_0
+						has_law = centralization_1
+					}	
+				} 
+			}	
+		}
+		prestige = -50
+	}
+}
+#grant claim submenu
+character_event = {
+	id = interaction.15
+	is_triggered_only = yes
+	desc = "EVTDESCinteraction.15"
+	
+	option = {
+		name = "EVTOPTAinteraction.15" # Give rival claim
+		trigger = {
+			FROMFROM = {
+				any_rival = {
+					NOT = { character = ROOT }
+					is_liege_or_above = ROOT
+					age = 16
+					prisoner = no
+					can_press_claims_trigger = yes
+					NOT = { any_claim = { holder = ROOT_FROMFROM is_primary_holder_title = yes } }
+				}
+			}
+		}
+		ai_chance = { 
+			factor = 150
+		}			
+		FROMFROM = {
+			random_rival = {
+				limit = {
+					NOT = { character = ROOT }
+					is_liege_or_above = ROOT
+					age = 16
+					prisoner = no
+					can_press_claims_trigger = yes
+					NOT = { any_claim = { holder = ROOT_FROMFROM is_primary_holder_title = yes } }
+				}
+				custom_tooltip = { text = TOOLTIPinteraction.15A }
+				opinion = {
+					who = ROOT
+					modifier = opinion_delighted
+					months = 60
+				}
+				set_character_flag = give_title_to_this_person	
+			}
+			hidden_tooltip = {
+				character_event = { id = interaction.17 } 
+			}
+			
+		}
+		reverse_opinion = {
+			who = FROMFROM
+			modifier = opinion_furious
+			months = 60
+		}
+	}
+	option = {
+		name = "EVTOPTBinteraction.15" # Give liege claim
+		trigger = {
+			FROMFROM = {
+				OR = {
+					liege = {
+						NOT = { character = ROOT }
+						NOT = { character = PREV }
+						NOT = { any_claim = { holder = ROOT_FROMFROM is_primary_holder_title = yes } }
+					}
+					liege_before_war = {
+						NOT = { character = ROOT }
+						NOT = { character = PREV }
+						NOT = { any_claim = { holder = ROOT_FROMFROM is_primary_holder_title = yes } }
+					}
+				}	
+			}
+		}
+		ai_chance = { 
+			factor = 10	
+			modifier = {
+				factor = 50
+				FROMFROM = {					
+					liege = {
+						NOT = { character = ROOT }
+						reverse_opinion = {
+							who = ROOT
+							value = 30
+						}
+					}
+				}			
+			}	
+		}		
+		FROMFROM = {
+			if = {
+				limit = {
+					liege = {
+						NOT = { character = ROOT }
+						NOT = { character = PREV }
+						NOT = { any_claim = { holder = ROOT_FROMFROM is_primary_holder_title = yes } }
+					}
+				}
+				liege = {
+					custom_tooltip = { text = TOOLTIPinteraction.15A }
+					opinion = {
+						who = ROOT
+						modifier = opinion_delighted
+						months = 60
+					}
+					set_character_flag = give_title_to_this_person	
+				}
+			}	
+			if = {
+				limit = {
+					NOT = {
+						liege = {
+							NOT = { character = ROOT }
+							NOT = { character = PREV }
+							NOT = { any_claim = { holder = ROOT_FROMFROM is_primary_holder_title = yes } }
+						}
+					}
+				}
+				liege_before_war = {
+					custom_tooltip = { text = TOOLTIPinteraction.15A }
+					opinion = {
+						who = ROOT
+						modifier = opinion_delighted
+						months = 60
+					}
+					set_character_flag = give_title_to_this_person	
+				}
+			}
+			hidden_tooltip = {
+				character_event = { id = interaction.17 } 
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_furious
+				months = 60
+			}	
+		}		
+	}
+	option = {
+		name = "EVTOPTCinteraction.15" # Give self claim
+		trigger = {
+			NOT = { any_claim = { holder = ROOT_FROMFROM is_primary_holder_title = yes } }
+		}
+		ai_chance = { 
+			factor = 10
+			
+			modifier = {
+				factor = 10
+				trait = greedy
+			}
+			modifier = {
+				factor = 10
+				trait = selfish
+			}		 
+		}	
+		FROMFROM = {
+			primary_title = { add_pressed_claim = ROOT }
+			reverse_opinion = {
+				who = ROOT
+				modifier = opinion_traitor
+			}
+			hidden_tooltip = {
+				character_event = { id = interaction.17  } 
+			}
+			opinion = {
+				who = ROOT
+				modifier = opinion_furious
+				months = 60
+			}
+		}	
+	}
+}
+#Inform bannermen granted claim
+letter_event = {
+	id = interaction.16
+	desc = "EVTDESCinteraction.16"
+	
+	border = "GFX_event_letter_frame_intrigue"
+	
+	show_from_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAinteraction.16" # thats useful
+		FROM = { 
+			primary_title = { add_pressed_claim = ROOT }
+		}
+		clr_character_flag = give_title_to_this_person
+	}
+}
+# granted bannerman claim, traitor notfication
+character_event = {
+	id = interaction.17
+	desc = "EVTDESCinteraction.17"
+	
+	picture = "GFX_evt_shadowy_cabal"
+	border = "GFX_event_normal_frame_intrigue"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA63004" # This bodes ill
+		FROM = { 
+			random_realm_lord = {
+				limit = { has_character_flag = give_title_to_this_person }
+				letter_event = { id = interaction.16 tooltip = "EVTTOOLTIPinteraction.17" }
+			}	
+		}
+	}
+}
+# Inform defender attacker stood down
+character_event = {
+	id = interaction.18
+	desc = "EVTDESCinteraction.18"
+	
+	border = "GFX_event_normal_frame_intrigue"
+	
+	show_from_from = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAinteraction.18" 
+		FROM = { tooltip = { } }
+	}
+}
+# Inform defender attacker refused, but branded traitor
+letter_event = {
+	id = interaction.19
+	desc = "EVTDESCinteraction.19"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAinteraction.19" 
+		any_war = { #end wars if enemy was imprisoned by liege
+			limit = {
+				defender = { character = ROOT }
+				attacker = {
+					character = FROMFROM
+					AND = {
+						prisoner = yes
+						host = { character = FROM }
+					}	
+				}
+			}
+			end_war = whitepeace
+		}
+	}
+}
+# Inform defender attacker refused, did nothing
+letter_event = {
+	id = interaction.20
+	desc = "EVTDESCinteraction.20"
+	
+	show_from_from = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAinteraction.20" 
+	}
+}
+# Inform defender council voted against motion
+letter_event = {
+	id = interaction.2099
+	desc = "EVTDESCinteraction.2099"
+	
+	show_from_from = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAinteraction.2099" 
+	}
+}
+# Inform realm attacker has been branded a traitor
+letter_event = {
+	id = interaction.21
+	desc = "EVTDESCinteraction.21"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAinteraction.21" 
+		trigger = { character = FROMFROM }
+	}
+	
+	option = {
+		name = "EVTOPTBinteraction.21" 
+		trigger = { NOT = { character = FROMFROM } }
+		FROMFROM = { tooltip = { } }
+	}
+}
+
+# #knighted
+# character_event = {
+	# id = interaction.22
+	
+	# is_triggered_only = yes
+	# show_from_from = yes
+	
+	# desc = "EVTDESCinteraction.22"
+	
+	# option = {		 
+		# name = "EVTOPTAinteraction.22" #Awesome
+		# add_trait = knight	
+	# }
+# }
+				
+# #gift received
+# character_event = {
+	# id = interaction.23
+	# is_triggered_only = yes
+	# desc = "EVTDESCinteraction.23"
+	
+	# option = {		 
+		# name = "EVTOPTAinteraction.23" #Thanks
+		# if = {
+			# limit = { 
+				# OR = {
+					# tier = EMPEROR
+					# wealth = 1200
+					# yearly_income = 600
+				# }
+			# }
+			# wealth = 200
+		# }
+		# if = {
+			# limit = { 
+				# NOT = {
+					# OR = {
+						# tier = EMPEROR
+						# wealth = 1200
+						# yearly_income = 600
+					# }
+				# }	
+				# OR = {
+					# tier = KING
+					# wealth = 600
+					# yearly_income = 300
+				# }
+			# }
+			# wealth = 100
+		# }
+		# if = {
+			# limit = { 
+				# NOT = {
+					# OR = {
+						# higher_tier_than = DUKE
+						# wealth = 600
+						# yearly_income = 300
+					# }
+				# }	
+				# OR = {
+					# tier = DUKE
+					# wealth = 300
+					# yearly_income = 150
+				# }
+			# }
+			# wealth = 50
+		# }
+		# if = {
+			# limit = { 
+				# NOT = {
+					# OR = {
+						# higher_tier_than = COUNT
+						# wealth = 300
+						# yearly_income = 150
+					# }
+				# }	
+				# OR = {
+					# tier = COUNT
+					# wealth = 120
+					# yearly_income = 60
+				# }
+			# }
+			# wealth = 20
+		# }
+		# if = {
+			# limit = { 
+				# NOT = {
+					# OR = {
+						# higher_tier_than = BARON
+						# wealth = 120
+						# yearly_income = 60
+					# }
+				# }	
+				# OR = {
+					# tier = BARON
+					# wealth = 60
+					# yearly_income = 30
+				# }
+			# }
+			# wealth = 10
+		# }
+		# if = {
+			# limit = { 
+				# NOT = {
+					# OR = {
+						# is_ruler = yes
+						# wealth = 60
+						# yearly_income = 30
+					# }
+				# }	
+			# }
+			# wealth = 5
+		# }	
+	# }
+# }
+
+#insult composed
+character_event = {
+	id = interaction.23
+	is_triggered_only = yes
+	
+	desc = "EVTDESCSENDINSULT"
+	
+	option = {
+		name = "EVTOPTASENDINSULT"
+	}
+}
+#insult received
+letter_event = {
+	id = interaction.24
+	
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	desc = "EVTDESCINSULT"
+	
+	option = {
+		name = "EVTOPTAinteraction.24" #WTF
+	}
+}
+
+# #AI send gift
+# character_event = {
+	# id = interaction.25
+	
+	# is_triggered_only = yes
+	# hide_window = yes
+	# only_rulers = yes
+	# ai = yes
+	
+	# trigger = {		
+		# higher_tier_than = COUNT
+		# NOT = { trait = greedy }
+		# wealth = 100
+	# }
+		
+	# option = {		
+		# name = "SEND_GIFT"
+		# ai_chance = {
+			# factor = 75
+			# modifier = {
+				# factor = 4
+				# trait = charitable
+			# }
+			# modifier = {
+				# factor = 2
+				# trait = diligent
+			# }
+			# modifier = {
+				# factor = 2
+				# trait = honorable
+			# }
+			# modifier = {
+				# factor = 2
+				# trait = kind
+			# }
+			# modifier = {
+				# factor = 2
+				# trait = humble
+			# }
+			# modifier = {
+				# factor = 2
+				# diplomacy = 12
+			# }
+			# modifier = {
+				# factor = 2
+				# diplomacy = 15
+			# }
+			# modifier = {
+				# factor = 2
+				# wealth = 400
+			# }
+			# modifier = {
+				# factor = 2
+				# wealth = 600
+			# }
+		# }
+		# random_vassal = { 
+			# limit = {
+				# NOT = { tier = BARON }
+				# NOT = { has_opinion_modifier = { who = ROOT modifier = real_gift } }
+				# opinion = { who = ROOT value = -80 }
+				# NOT = { opinion = { who = ROOT value = -20 } }
+				# prisoner = no
+				# NOT = { trait = incapable }
+				# ai = yes
+				# OR = {
+					# higher_tier_than = COUNT
+					# is_patrician = yes
+					# ROOT = { tier = DUKE }
+					# relative_power_to_liege = 0.2
+				# }
+				# OR = {
+					# reverse_opinion = { who = ROOT value = -30 }
+					# ROOT = {
+						# OR = {
+							# trait = charitable
+							# trait = patient
+							# trait = kind
+						# }
+						# NOT = { trait = wroth }
+						# NOT = { trait = cruel }
+					# }
+				# }
+				# OR = {
+					# religion = ROOT
+					# ROOT = { NOT = { trait = zealous } }
+				# }
+				# NOT = { is_rival = ROOT }
+			# }
+			# if = {
+				# limit = { 
+					# OR = {
+						# tier = KING
+						# wealth = 600
+						# yearly_income = 300
+					# }
+				# }
+				# ROOT = { wealth = -100 }
+			# }
+			# if = {
+				# limit = { 
+					# NOT = {
+						# OR = {
+							# higher_tier_than = DUKE
+							# wealth = 600
+							# yearly_income = 300
+						# }
+					# }	
+					# OR = {
+						# tier = DUKE
+						# wealth = 300
+						# yearly_income = 150
+					# }
+				# }
+				# ROOT = { wealth = -50 }
+			# }
+			# if = {
+				# limit = { 
+					# NOT = {
+						# OR = {
+							# higher_tier_than = COUNT
+							# wealth = 300
+							# yearly_income = 150
+						# }
+					# }	
+				# }
+				# ROOT = { wealth = -20 }
+			# }
+			# if = {
+				# limit = {
+					# trait = greedy
+					# trait = proud
+				# }
+				# opinion = { who = ROOT modifier = real_gift multiplier = 5 years = 2 }
+			# }
+			# if = {
+				# limit = {
+					# trait = greedy
+					# NOT = { trait = proud }
+					# NOT = { trait = humble }
+				# }
+				# opinion = { who = ROOT modifier = real_gift multiplier = 4 years = 2 }
+			# }
+			# if = {
+				# limit = {
+					# NOT = { trait = greedy }
+					# trait = proud
+					# NOT = { trait = charitable }
+				# }
+				# opinion = { who = ROOT modifier = real_gift multiplier = 4 years = 2 }
+			# }
+			# if = {
+				# limit = {
+					# NOT = { trait = greedy }
+					# NOT = { trait = proud }
+					# NOT = { trait = humble }
+					# NOT = { trait = charitable }
+				# }
+				# opinion = { who = ROOT modifier = real_gift multiplier = 3 years = 2 }
+			# }
+			# if = {
+				# limit = {
+					# NOT = { trait = greedy }
+					# trait = humble
+					# NOT = { trait = charitable }
+				# }
+				# opinion = { who = ROOT modifier = real_gift multiplier = 2 years = 2 }
+			# }
+			# if = {
+				# limit = {
+					# NOT = { trait = proud }
+					# NOT = { trait = humble }
+					# trait = charitable
+				# }
+				# opinion = { who = ROOT modifier = real_gift multiplier = 2 years = 2 }
+			# }
+			# if = {
+				# limit = {
+					# trait = humble
+					# trait = charitable
+				# }
+				# opinion = { who = ROOT modifier = real_gift years = 2 }
+			# }
+			# hidden_tooltip = {
+				# character_event = { id = interaction.23 }
+			# }
+		# }
+	# }
+	
+	# option = {		
+		# name = "NO"
+		# ai_chance = {
+			# factor = 25
+			# modifier = {
+				# factor = 2
+				# trait = slothful
+			# }
+			# modifier = {
+				# factor = 2
+				# trait = arbitrary
+			# }
+			# modifier = {
+				# factor = 2
+				# trait = cruel
+			# }
+			# modifier = {
+				# factor = 2
+				# trait = proud
+			# }
+			# modifier = {
+				# factor = 2
+				# NOT = { diplomacy = 5 }
+			# }
+			# modifier = {
+				# factor = 2
+				# NOT = { diplomacy = 2 }
+			# }
+			# modifier = {
+				# factor = 2
+				# NOT = { wealth = 200 }
+			# }
+		# }
+	# }
+# }	
+#####
+
+# The female courtier accepts or spurns the liege lord
+# modified for personal interaction
+character_event = {
+	id = interaction.26	
+	
+	is_triggered_only = yes 
+	show_from_from = yes
+	
+	desc = "EVTDESCinteraction.26"
+	picture = "GFX_evt_lovers"
+	
+	option = {
+		name = "EVTOPTD452" #No choice
+		trigger = {
+			OR = {
+				prisoner = yes
+				AND = {
+					trait = slave
+					has_opinion_modifier = { who = FROMFROM modifier = opinion_my_owner }
+				}
+			}	
+		}
+		if = { 
+			limit = { 
+				is_female = yes
+				is_pregnant = no
+				NOT = { age = 40 }
+				FROMFROM = { is_female = no }
+			}
+			if = {
+				limit = {
+					fertility = 0.66
+					FROMFROM = { fertility = 0.66 }
+				}	
+				random_list = {
+					85 = { 
+						if = {
+							limit = {
+								OR = {
+									is_married = no
+									spouse = { character = FROMFROM }
+								}
+							}
+							impregnate = FROMFROM 
+						}	
+						if = {
+							limit = {
+								is_married = yes
+								NOT = { spouse = { character = FROMFROM } }
+							}
+							impregnate_cuckoo = FROMFROM 
+						}
+					}
+					15 = { health = 0.01 }
+				}
+			}
+			if = { 
+				limit = { 
+					fertility = 0.33
+					FROMFROM = { fertility = 0.33 }
+					OR = {
+						NOT = { fertility = 0.66 }
+						FROMFROM = { NOT = { fertility = 0.66 } }
+					}
+				}
+				random_list = {
+					50 = { 
+						if = {
+							limit = {
+								OR = {
+									is_married = no
+									spouse = { character = FROMFROM }
+								}
+							}
+							impregnate = FROMFROM 
+						}	
+						if = {
+							limit = {
+								is_married = yes
+								NOT = { spouse = { character = FROMFROM } }
+							}
+							impregnate_cuckoo = FROMFROM 
+						}
+					}
+					50 = { health = 0.01 }
+				}
+			}	
+			if = { 
+				limit = { 
+					fertility = 0.1
+					FROMFROM = { fertility = 0.1 }
+					OR = {
+						NOT = { fertility = 0.33 }
+						FROMFROM = { NOT = { fertility = 0.33 } }
+					}
+				}
+				random_list = {
+					15 = { 
+						if = {
+							limit = {
+								OR = {
+									is_married = no
+									spouse = { character = FROMFROM }
+								}
+							}
+							impregnate = FROMFROM 
+						}	
+						if = {
+							limit = {
+								is_married = yes
+								NOT = { spouse = { character = FROMFROM } }
+							}
+							impregnate_cuckoo = FROMFROM 
+						}
+					}
+					85 = { health = 0.01 }
+				}
+			}	
+			if = { #if forced impregnated flag as such
+				limit = {
+					prisoner = yes
+					NOT = { trait = slave }
+					is_pregnant = yes
+					host = { character = FROMFROM }
+				}
+				set_character_flag = forced_child
+			}			
+		}
+		if = { #slaves may not mind
+			limit = {
+				trait = slave
+				personal_opinion = { who = FROMFROM value = 55 }
+			}
+			opinion = { who = FROMFROM modifier = interaction_lover }
+		}
+		if = { 
+			limit = { 
+				NOT = { personal_opinion = { who = FROMFROM value = 55 } }
+			}
+			random = {
+				chance = 20
+				add_trait = stressed
+				hidden_tooltip = { character_event = { id = 38282 } }
+			}
+		}
+		FROMFROM = { character_event = { id = interaction.27 tooltip = EVTTOOLTIPinteraction.26 } }
+		FROMFROM = {
+			if = {
+				limit = { has_ambition = obj_make_the_eight }
+				hidden_tooltip = { character_event = { id = ambition.1 } }
+			}
+		}
+	}
+
+	
+	option = {
+		name = "EVTOPTA452"
+		trigger = {
+			prisoner = no
+			NAND = {
+				trait = slave
+				has_opinion_modifier = { who = FROMFROM modifier = opinion_my_owner }
+			}
+		}
+		ai_chance = { 
+			factor = 100
+			
+			modifier = {
+				factor = 2.5
+				trait = lustful
+			}
+			modifier = {
+				factor = 2
+				culture = summer_islander #promiscious
+			}
+			modifier = {
+				factor = 0.1
+				trait = chaste
+			}
+			modifier = {
+				factor = 0.2
+				trait = honorable
+			}
+			modifier = {
+				factor = 0
+				trait = celibate
+			}
+			modifier = { #Forbidden
+				factor = 0.15
+				OR = {
+					trait = kingsguard
+					trait = nightswatch
+					trait = maester
+					trait = archmaester
+					is_priest = yes
+				}	
+			}
+			modifier = {
+				factor = 2.5
+				is_ruler = no
+				any_liege = { character = FROMFROM }
+			}	
+			modifier = {
+				factor = 10
+				any_lover = {
+					character = FROMFROM
+				}
+			}
+			
+			modifier = {
+				factor = 0.15
+				is_married = yes
+			}
+			modifier = {
+				factor = 0.10
+				is_pregnant = yes
+			}
+			modifier = {
+				factor = 0.05
+				OR = {
+					AND = {
+						same_sex = FROMFROM
+						NOT = { trait = homosexual }
+					}
+					AND = {
+						NOT = { same_sex = FROMFROM }
+						trait = homosexual
+					}
+				}	
+			}
+			modifier = {
+				factor = 1.4
+				personal_opinion = { who = FROMFROM value = 99 } 
+			}
+			modifier = {
+				factor = 1.4
+				personal_opinion = { who = FROMFROM value = 74 } 
+			}
+			modifier = {
+				factor = 1.4
+				personal_opinion = { who = FROMFROM value = 49 } 
+			}
+			modifier = {
+				factor = 1.4
+				personal_opinion = { who = FROMFROM value = 24 } 
+			}	
+			
+			modifier = {
+				factor = 0.90
+				FROMFROM = { trait = clubfooted  }
+			}
+			modifier = {
+				factor = 0.75
+				FROMFROM = { trait = harelip   }
+			}
+			modifier = {
+				factor = 0.85
+				FROMFROM = { trait = hunchback   }
+			}
+			modifier = {
+				factor = 0.95
+				FROMFROM = { trait = lisp   }
+			}
+			modifier = {
+				factor = 0.85
+				FROMFROM = { trait = stutter    }
+			}
+			modifier = {
+				factor = 0.65
+				FROMFROM = { trait = ugly    }
+			}
+			modifier = {
+				factor = 0.65
+				FROMFROM = { trait = dwarf    }
+			}
+			modifier = {
+				factor = 0.55
+				FROMFROM = { trait = imbecile    }
+			}
+			modifier = {
+				factor = 0.85
+				FROMFROM = { is_weak_trigger = yes    }
+			}
+			modifier = {
+				factor = 0.85
+				FROMFROM = { trait = wounded     }
+			}
+			modifier = {
+				factor = 0.85
+				FROMFROM = { is_maimed_trigger = yes     }
+			}
+			modifier = {
+				factor = 0.75
+				FROMFROM = { is_ill = yes } 
+			}
+			modifier = {
+				factor = 1.35
+				FROMFROM = { is_strong_trigger = yes     }
+			}
+			modifier = {
+				factor = 1.15
+				FROMFROM = { trait = genius     }
+			}
+			modifier = {
+				factor = 1.45
+				FROMFROM = { trait = fair     }
+			}
+			modifier = {
+				factor = 1.15
+				FROMFROM = { trait = fashionable     }
+			}
+			modifier = {
+				factor = 1.25
+				FROMFROM = { trait = tall  }
+			}		
+		}
+		if = { 
+			limit = { 
+				is_female = yes
+				is_pregnant = no
+				NOT = { age = 40 }
+				FROMFROM = { is_female = no }
+			}
+			if = {
+				limit = {
+					fertility = 0.66
+					FROMFROM = { fertility = 0.66 }
+				}				
+				random_list = {
+					85 = { 
+						if = {
+							limit = {
+								OR = {
+									is_married = no
+									spouse = { character = FROMFROM }
+								}
+							}
+							impregnate = FROMFROM 
+						}	
+						if = {
+							limit = {
+								is_married = yes
+								NOT = { spouse = { character = FROMFROM } }
+							}
+							impregnate_cuckoo = FROMFROM 
+						}
+					}
+					15 = { health = 0.01 }
+				}
+			}
+			if = { 
+				limit = { 
+					fertility = 0.33
+					FROMFROM = { fertility = 0.33 }
+					OR = {
+						NOT = { fertility = 0.66 }
+						FROMFROM = { NOT = { fertility = 0.66 } }
+					}
+				}
+				random_list = {
+					50 = { 
+						if = {
+							limit = {
+								OR = {
+									is_married = no
+									spouse = { character = FROMFROM }
+								}
+							}
+							impregnate = FROMFROM 
+						}	
+						if = {
+							limit = {
+								is_married = yes
+								NOT = { spouse = { character = FROMFROM } }
+							}
+							impregnate_cuckoo = FROMFROM 
+						}
+					}
+					50 = { health = 0.01 }
+				}
+			}	
+			if = { 
+				limit = { 
+					fertility = 0.1
+					FROMFROM = { fertility = 0.1 }
+					OR = {
+						NOT = { fertility = 0.33 }
+						FROMFROM = { NOT = { fertility = 0.33 } }
+					}
+				}
+				random_list = {
+					15 = { 
+						if = {
+							limit = {
+								OR = {
+									is_married = no
+									spouse = { character = FROMFROM }
+								}
+							}
+							impregnate = FROMFROM 
+						}	
+						if = {
+							limit = {
+								is_married = yes
+								NOT = { spouse = { character = FROMFROM } }
+							}
+							impregnate_cuckoo = FROMFROM 
+						}
+					}
+					85 = { health = 0.01 }
+				}
+			}				
+		}
+		if = { 
+			limit = { 
+				personal_opinion = { who = FROMFROM value = 55 }
+			}
+			opinion = { who = FROMFROM modifier = interaction_lover }
+		}
+		FROMFROM = { character_event = { id = interaction.27 tooltip = EVTTOOLTIPinteraction.26 } }
+		FROMFROM = {
+			if = {
+				limit = { has_ambition = obj_make_the_eight }
+				hidden_tooltip = { character_event = { id = ambition.1 } }
+			}
+		}
+	}
+
+	#doesnt like me
+	option = {
+		name = "EVTOPTB452"
+		trigger = {
+			prisoner = no
+			NAND = {
+				trait = slave
+				has_opinion_modifier = { who = FROMFROM modifier = opinion_my_owner }
+			}
+		}
+		ai_chance = {
+			factor = 50
+		
+			#too young
+			modifier = {
+				factor = 2
+				AND = {
+					FROMFROM = { NOT = { age = 18  } }
+					age = 45
+				}
+			}
+			#too old
+			modifier = {
+				factor = 5
+				AND = {
+					FROMFROM = {  age = 50   }
+					NOT = { age = 28 }
+				}
+			}
+			modifier = {
+				factor = 2
+				AND = {
+					FROMFROM = {  age = 40   }
+					NOT = { age = 20 }
+				}
+			}
+			modifier = {
+				factor = 1.2
+				AND = {
+					FROMFROM = {  age = 35   }
+					NOT = { age = 22 }
+				}
+			}
+			modifier = {
+				factor = 1.25
+				FROMFROM = { trait = shy     }
+			}
+			
+			modifier = {
+				factor = 1.35
+				NOT = { personal_opinion = { who = FROMFROM value = -25 } }
+			}
+			modifier = {
+				factor = 1.75
+				NOT = { personal_opinion = { who = FROMFROM value = -50 } }
+			}
+		}		
+		
+		
+		FROMFROM = { character_event = { id = 454 tooltip = EVTTOOLTIP454 } }
+	
+	}
+	#guards!
+	option = {
+		name = "EVTOPTC452"
+		trigger = {
+			prisoner = no
+			NAND = {
+				trait = slave
+				has_opinion_modifier = { who = FROMFROM modifier = opinion_my_owner }
+			}
+		}
+		ai_chance = {
+			factor = 30
+		
+			modifier = {
+				factor = 2
+				 trait = chaste 
+			}
+			modifier = {
+				factor = 1.5
+				trait = depressed 
+			}
+			modifier = {
+				factor = 5
+				trait = homosexual 
+			}
+			modifier = {
+				factor = 5
+				trait = celibate 
+			}
+			modifier = {
+				factor = 2
+				NOT = { personal_opinion = { who = FROMFROM value = -75 } }
+			}
+			modifier = {
+				factor = 3
+				NOT = { personal_opinion = { who = FROMFROM value = -90 } }
+			}
+		}	
+		FROMFROM = { character_event = { id = interaction.28 tooltip = EVTTOOLTIP455 } }	
+	}
+}
+# The ruler becomes her lover
+character_event = {
+	id = interaction.27
+	
+	is_triggered_only = yes 
+	
+	desc = "EVTDESC453"
+	picture = "GFX_evt_lovers"
+	
+	immediate = {
+		if = { 
+			limit = { 
+				is_female = yes
+				is_pregnant = no
+				NOT = { age = 40 }
+				FROM = { is_female = no }
+			}
+			if = {
+				limit = {
+					fertility = 0.66
+					FROM = { fertility = 0.66 }
+				}	
+				random_list = {
+					85 = { 
+						if = {
+							limit = {
+								OR = {
+									is_married = no
+									is_married = FROM
+								}
+							}
+							impregnate = FROM 
+						}	
+						if = {
+							limit = {
+								is_married = yes
+								NOT = { is_married = FROM }
+							}
+							impregnate_cuckoo = FROM 
+						}
+					}
+					15 = { health = 0.01 }
+				}
+			}
+			if = { 
+				limit = { 
+					fertility = 0.33
+					FROM = { fertility = 0.33 }
+					OR = {
+						NOT = { fertility = 0.66 }
+						FROM = { NOT = { fertility = 0.66 } }
+					}
+				}
+				random_list = {
+					50 = { 
+						if = {
+							limit = {
+								OR = {
+									is_married = no
+									is_married = FROM
+								}
+							}
+							impregnate = FROM 
+						}	
+						if = {
+							limit = {
+								is_married = yes
+								NOT = { is_married = FROM }
+							}
+							impregnate_cuckoo = FROM 
+						}
+					}
+					50 = { health = 0.01 }
+				}
+			}	
+			if = { 
+				limit = { 
+					fertility = 0.1
+					FROM = { fertility = 0.1 }
+					OR = {
+						NOT = { fertility = 0.33 }
+						FROM = { NOT = { fertility = 0.33 } }
+					}
+				}
+				random_list = {
+					15 = { 
+						if = {
+							limit = {
+								OR = {
+									is_married = no
+									is_married = FROM
+								}
+							}
+							impregnate = FROM 
+						}	
+						if = {
+							limit = {
+								is_married = yes
+								NOT = { is_married = FROM }
+							}
+							impregnate_cuckoo = FROM 
+						}
+					}
+					85 = { health = 0.01 }
+				}
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				FROM = { 
+					OR = {
+						prisoner = yes
+						AND = {
+							trait = slave
+							has_opinion_modifier = { who = ROOT modifier = opinion_my_owner }
+							NOT = { personal_opinion = { who = ROOT value = 55 } }
+						}
+					}
+				}
+			}
+			OR = {
+				trait = lustful	
+				is_married = no
+				NOT = {
+					OR = {
+						trait = honorable
+						trait = just
+					}
+				}	
+			}	
+		}
+		name = "EVTOPTA453"
+		opinion = { who = FROM modifier = interaction_lover }
+	}
+	option = { #Is this right?
+		trigger = {
+			NOT = {
+				FROM = { 
+					OR = {
+						prisoner = yes
+						AND = {
+							trait = slave
+							has_opinion_modifier = { who = ROOT modifier = opinion_my_owner }
+							NOT = { personal_opinion = { who = ROOT value = 55 } }
+						}
+					}
+				}
+			}
+			NOT = { trait = lustful }			
+			is_married = yes
+			OR = {
+				trait = honorable
+				trait = just
+			}
+		}
+		name = "EVTOPTB453"
+		if = {
+			limit = { NOT = { trait = stressed } }
+			random = {
+				chance = 20
+				add_trait = stressed
+				hidden_tooltip = { character_event = { id = 38282 } }
+			}
+		}	
+	}
+	option = { #dishonorable
+		name = "EVTOPTCinteraction.27"
+		trigger = {		
+			FROM = { 
+				OR = {
+					prisoner = yes
+					AND = {
+						trait = slave
+						has_opinion_modifier = { who = ROOT modifier = opinion_my_owner }
+						NOT = { personal_opinion = { who = ROOT value = 55 } }
+					}
+				}
+			}
+		}
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_forced_upon_me
+			}
+			if = {
+				limit = { 
+					NOT = { trait = slave }
+					OR = {
+						ROOT = { is_female = no } 
+						is_female = yes
+					}	
+				}
+				custom_tooltip = {
+					text = TOOLTIPinteraction.27
+					hidden_tooltip = {	
+						mother = {
+							set_character_flag = murder_opinion_set
+							opinion = {
+								who = ROOT
+								modifier = opinion_forced_upon_kin
+							}
+							if = {
+								limit = { 
+									OR = {
+										ai = no 
+										is_vassal_or_below = ROOT
+									}	
+								}
+								character_event = { id = interaction.30 }	
+							}						
+						}		
+						father = {
+							set_character_flag = murder_opinion_set
+							opinion = {
+								who = ROOT
+								modifier = opinion_forced_upon_kin
+							}	
+							if = {
+								limit = { 
+									OR = {
+										ai = no 
+										is_vassal_or_below = ROOT
+									}	
+								}
+								character_event = { id = interaction.30 }	
+							}	
+						}
+						any_child = {
+							limit = { 
+								NOT = { character = ROOT }
+								NOT = { has_character_flag = murder_opinion_set }
+							}	
+							set_character_flag = murder_opinion_set
+							opinion = {
+								who = ROOT
+								modifier = opinion_forced_upon_kin
+							}	
+							if = {
+								limit = { 
+									OR = {
+										ai = no 
+										is_vassal_or_below = ROOT
+									}	
+								}
+								character_event = { id = interaction.30 }	
+							}							
+						}	
+						any_spouse = {
+							limit = { 
+								NOT = { character = ROOT }
+								NOT = { has_character_flag = murder_opinion_set }
+							}	
+							set_character_flag = murder_opinion_set
+							opinion = {
+								who = ROOT
+								modifier = opinion_forced_upon_spouse
+							}
+							if = {
+								limit = { 
+									OR = {
+										ai = no 
+										is_vassal_or_below = ROOT
+									}	
+								}
+								character_event = { id = interaction.30 }	
+							}				
+						}
+						any_lover = {
+							limit = { 
+								NOT = { character = ROOT }
+								NOT = { has_character_flag = murder_opinion_set }
+							}	
+							set_character_flag = murder_opinion_set
+							opinion = {
+								who = ROOT
+								modifier = opinion_forced_upon_lover
+							}
+							if = {
+								limit = { 
+									OR = {
+										ai = no 
+										is_vassal_or_below = ROOT
+									}	
+								}
+								character_event = { id = interaction.30 }	
+							}						
+						}
+						any_friend = {
+							limit = { 
+								NOT = { character = ROOT }
+								NOT = { has_character_flag = murder_opinion_set }
+							}	
+							set_character_flag = murder_opinion_set
+							opinion = {
+								who = ROOT
+								modifier = opinion_forced_upon_friend
+							}
+							if = {
+								limit = { 
+									OR = {
+										ai = no 
+										is_vassal_or_below = ROOT
+									}	
+								}
+								character_event = { id = interaction.30 }	
+							}	
+						}
+						any_dynasty_member = {
+							limit = { 
+								is_close_relative = PREV
+								NOT = { character = ROOT }
+								NOT = { character = PREV }
+								NOT = { has_character_flag = murder_opinion_set }
+							}	
+							opinion = {
+								who = ROOT
+								modifier = opinion_forced_upon_kin
+							}
+							if = {
+								limit = { 
+									OR = {
+										ai = no 
+										is_vassal_or_below = ROOT
+									}	
+								}
+								character_event = { id = interaction.30 }	
+							}							
+						}
+						#clear flags
+						mother = { clr_character_flag = murder_opinion_set	}
+						father = { clr_character_flag = murder_opinion_set }	
+						any_child = { clr_character_flag = murder_opinion_set }
+						any_lover = { clr_character_flag = murder_opinion_set }
+						any_friend = { clr_character_flag = murder_opinion_set }
+						any_spouse = { clr_character_flag = murder_opinion_set }
+					}
+				}
+			}	
+		}
+		if = {
+			limit = { NOT = { personality_traits = 6 } }
+			random_list = {
+				60 = { }
+				20 = { 
+					if = {
+						limit = { NOT = { trait = cruel } }
+						add_trait = cruel
+						hidden_tooltip = { character_event = { id = 38259 } }
+					}	
+				}
+				20 = { 
+					if = {
+						limit = { NOT = { trait = ruthless } }
+						add_trait = ruthless
+						hidden_tooltip = { character_event = { id = trait_notification.18 } }
+					}	
+				}
+			}
+		}
+	}
+}
+# She calls her guards
+character_event = {
+	id = interaction.28
+	picture = GFX_evt_quarrel
+	is_triggered_only = yes 
+
+	desc = EVTDESC455
+
+	option = {
+		name = EVTOPTAinteraction.28
+		FROM = {
+			opinion = {
+				who = ROOT
+				modifier = opinion_scandalised_me
+			}
+			custom_tooltip = {
+				text = TOOLTIPinteraction.28
+				hidden_tooltip = {	
+					mother = {
+						set_character_flag = murder_opinion_set
+						character_event = { id = interaction.29 }			
+					}		
+					father = {
+						set_character_flag = murder_opinion_set
+						character_event = { id = interaction.29 }	
+					}
+					any_child = {
+						limit = { 
+							NOT = { character = ROOT }
+							NOT = { has_character_flag = murder_opinion_set }
+						}	
+						set_character_flag = murder_opinion_set
+						character_event = { id = interaction.29 }					
+					}	
+					any_spouse = {
+						limit = { 
+							NOT = { character = ROOT }
+							NOT = { has_character_flag = murder_opinion_set }
+						}	
+						set_character_flag = murder_opinion_set
+						character_event = { id = interaction.29 }			
+					}
+					any_dynasty_member = {
+						limit = { 
+							is_close_relative = PREV
+							NOT = { character = ROOT }
+							NOT = { character = PREV }
+							NOT = { has_character_flag = murder_opinion_set }
+						}	
+						character_event = { id = interaction.29 }				
+					}
+					#clear flags
+					mother = { clr_character_flag = murder_opinion_set	}
+					father = { clr_character_flag = murder_opinion_set }	
+					any_child = { clr_character_flag = murder_opinion_set }
+					any_spouse = { clr_character_flag = murder_opinion_set }
+				}
+			}
+		}
+		opinion = {
+			who = FROM
+			modifier = opinion_embarrassed
+			months = 60
+		}
+	}
+}
+# Inform relatives guards
+character_event = {
+	id = interaction.29
+	picture = GFX_evt_quarrel
+	is_triggered_only = yes 
+
+	desc = EVTDESCinteraction.29
+
+	option = {
+		name = EVTOPTAinteraction.29
+		opinion = {
+			who = FROM
+			modifier = opinion_scandalised_kin
+		}
+		#AI might imprison cuckolder
+		if = {
+			limit = {
+				ai = yes
+				is_ruler = yes
+				OR = {
+					trait = proud
+					trait = wroth
+					trait = just
+					trait = envious
+					trait = cruel
+				}
+				is_vassal_or_below = FROM
+				FROM = { prisoner = no }
+			}
+			if = {
+				limit = { NOT = { realm_intrigue = 25 } }
+				random_list = {
+					50 = { 
+						FROM = { #successfully imprisoned
+							character_event = { id = 151 } 
+							imprison = ROOT
+						} 
+					} 
+					50 = { 
+						FROM = { #avoided prison
+							if = { #Flee
+								limit = { is_ruler = no }
+								banish = yes
+								character_event = { id = 152 } 								
+							}
+							if = { #Rebel?
+								limit = { is_ruler = yes }
+								character_event = { id = 150 days = 3 } 
+							}							
+						} 
+					}
+				}
+			}
+			if = {
+				limit = { 
+					realm_intrigue = 25
+					NOT = { realm_intrigue = 37 } 
+				}
+				random_list = {
+					75 = { 
+						FROM = { #successfully imprisoned
+							character_event = { id = 151 }
+							imprison = ROOT
+						} 
+					} 
+					25 = { 
+						FROM = { #avoided prison
+							if = { #Flee
+								limit = { is_ruler = no }
+								banish = yes
+								character_event = { id = 152 } 								
+							}
+							if = { #Rebel?
+								limit = { is_ruler = yes }
+								character_event = { id = 150 days = 3 } 
+							}							
+						} 
+					}
+				}
+			}
+			if = {
+				limit = { realm_intrigue = 37 }
+				random_list = {
+					90 = { 
+						FROM = { #successfully imprisoned
+							character_event = { id = 151 } 
+							imprison = ROOT
+						} 
+					} 
+					10 = { 
+						FROM = { #avoided prison
+							if = { #Flee
+								limit = { is_ruler = no }
+								banish = yes
+								character_event = { id = 152 } 								
+							}
+							if = { #Rebel?
+								limit = { is_ruler = yes }
+								character_event = { id = 150 days = 3 } 
+							}							
+						} 
+					}
+				}
+			}
+		}
+	}
+}
+# Inform relatives forced upon prisoner
+character_event = {
+	id = interaction.30
+	picture = GFX_evt_quarrel
+	is_triggered_only = yes 
+
+	desc = EVTDESCinteraction.30
+
+	option = {
+		name = EVTOPTAinteraction.30
+		#AI might imprison raper
+		if = {
+			limit = {
+				ai = yes
+				is_ruler = yes
+				OR = {
+					trait = proud
+					trait = wroth
+					trait = just
+					trait = envious
+					trait = cruel
+				}
+				is_vassal_or_below = FROM
+				FROM = { prisoner = no }
+			}
+			if = {
+				limit = { NOT = { realm_intrigue = 25 } }
+				random_list = {
+					50 = { 
+						FROM = { #successfully imprisoned
+							character_event = { id = 151 } 
+							imprison = ROOT
+						} 
+					} 
+					50 = { 
+						FROM = { #avoided prison
+							if = { #Flee
+								limit = { is_ruler = no }
+								banish = yes
+								character_event = { id = 152 } 								
+							}
+							if = { #Rebel?
+								limit = { is_ruler = yes }
+								character_event = { id = 150 days = 3 } 
+							}							
+						} 
+					}
+				}
+			}
+			if = {
+				limit = { 
+					realm_intrigue = 25
+					NOT = { realm_intrigue = 37 } 
+				}
+				random_list = {
+					75 = { 
+						FROM = { #successfully imprisoned
+							character_event = { id = 151 }
+							imprison = ROOT
+						} 
+					} 
+					25 = { 
+						FROM = { #avoided prison
+							if = { #Flee
+								limit = { is_ruler = no }
+								banish = yes
+								character_event = { id = 152 } 								
+							}
+							if = { #Rebel?
+								limit = { is_ruler = yes }
+								character_event = { id = 150 days = 3 } 
+							}							
+						} 
+					}
+				}
+			}
+			if = {
+				limit = { realm_intrigue = 37 }
+				random_list = {
+					90 = { 
+						FROM = { #successfully imprisoned
+							character_event = { id = 151 } 
+							imprison = ROOT
+						} 
+					} 
+					10 = { 
+						FROM = { #avoided prison
+							if = { #Flee
+								limit = { is_ruler = no }
+								banish = yes
+								character_event = { id = 152 } 								
+							}
+							if = { #Rebel?
+								limit = { is_ruler = yes }
+								character_event = { id = 150 days = 3 } 
+							}							
+						} 
+					}
+				}
+			}
+		}
+	}
+}
+# Lustful AI character visit chamber?
+character_event = {
+	id = interaction.31
+
+	is_triggered_only = yes 
+	
+	only_playable = yes
+	capable_only = yes
+	prisoner = no
+	min_age = 16
+	ai = yes
+	lacks_dlc = "Way of Life"
+	
+	trigger = {
+		trait = lustful
+		NOT = { trait = honorable }
+		NOT = { trait = infirm }
+		NOT = { trait = celibate }
+		NOT = { trait = chaste }
+		NOT = { trait = eunuch }
+		is_ill = no
+		higher_tier_than = COUNT	
+	}
+
+	option = {
+		name = YES
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0.5
+				is_female = yes
+			}
+			modifier = {
+				factor = 0.25
+				has_lover = yes
+			}
+			modifier = {
+				factor = 2
+				trait = hedonist
+			}
+			modifier = {
+				factor = 2
+				trait = lunatic
+			}
+			modifier = {
+				factor = 2
+				is_married = no
+			}
+		}
+		location = {
+			random_province_character = {
+				limit = {
+					age = 16
+					at_location = ROOT		
+					NOT = { is_married = ROOT }
+					NOT = { is_lover = ROOT }
+					NOT = { is_consort = ROOT }
+					OR = {
+						prisoner = yes
+						NOT = { martial = 18 }
+					}	
+					NOT = { trait = incapable }	
+					OR = {
+						AND = {
+							ROOT = { NOT = { trait = homosexual } }
+							NOT = { same_sex = ROOT }
+						}
+						AND = {
+							ROOT = { trait = homosexual }						
+							same_sex = ROOT
+						}
+						ROOT = { #Dornish need not be homosexual if lustful
+							culture_group = dornish
+							trait = lustful	
+						}
+					}					
+					OR = {
+						NOT = { 
+							AND = {
+								NOT = { is_child_of = ROOT }
+								NOT = { mother_even_if_dead = { is_child_of = ROOT } }
+								NOT = { father_even_if_dead = { is_child_of = ROOT } }
+								ROOT = {
+									NOT = { is_child_of = PREV }
+									NOT = { mother_even_if_dead = { is_child_of = PREVPREV } }
+									NOT = { father_even_if_dead = { is_child_of = PREVPREV } }
+								}
+							}
+						}
+						AND = {
+							dynasty = ROOT
+							is_divine_blood_dynasty_trigger = yes
+						}
+					}
+					OR = {
+						location = { owner = { character = PREVPREV } } 			
+						location = { owner = { character = ROOT } } 
+						ROOT = { in_command = no }
+						any_liege = { character = ROOT }
+					}
+					OR = { 
+						prisoner = no
+						ROOT = { 
+							OR = {
+								trait = cruel 
+								trait = lunatic
+								trait = impaler
+							}	
+						}		
+					}
+				}
+				character_event = { id = interaction.26 }
+			}
+		}
+	}
+	
+	option = {
+		name = NO
+		ai_chance = {
+			factor = 80
+		}
+	}
+}
+
+

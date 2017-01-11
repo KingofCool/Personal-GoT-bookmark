@@ -1,0 +1,530 @@
+namespace = dynastic_stability
+
+#Gained a Title, adopt mother/grandparent's dynasty?
+character_event = {
+	id = dynastic_stability.1
+	
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		is_patrician = no
+		NOT = { trait = bastard }
+		NOT = { trait = kingsguard }
+		NOT = { trait = nightswatch }
+		NOT = { trait = archmaester }
+		NOT = { trait = septon }
+		NOT = { culture = dothraki }
+		NOT = { culture = jogos_nhai }
+		
+		FROM = { higher_tier_than = BARON }
+		has_game_rule = { name = dynastic_stability value = on }
+	}
+	
+	immediate = { character_event = { id = dynastic_stability.2 days = 5 } }
+	
+	option = {
+		name = OK
+	}
+}	
+character_event = {
+	id = dynastic_stability.2
+	desc = EVTDESCdynastic_stability.2
+	picture = GFX_evt_emissary
+	
+	is_triggered_only = yes
+
+	trigger = {
+		is_feudal = yes
+		
+		FROMFROM = {#The inherited title, must be primary
+			holder_scope = { character = ROOT }
+			is_primary_holder_title = yes
+		}			
+		NOT = { dynasty = FROMFROMFROM } #Not same dynasty as previous holder
+		#Is not heir or pretender to another greater or equal title in curent dynasty
+		NOT = { 
+			any_heir_title = { 
+				holder_scope = { dynasty = ROOT }
+				NOT = { lower_tier_than = ROOT }
+			} 
+		}
+		NOT = { 
+			any_pretender_title = { 
+				holder_scope = { dynasty = ROOT }
+				NOT = { lower_tier_than = ROOT }
+			} 
+		}
+		#
+		FROMFROM = { 
+			OR = {
+				any_previous_holder = { #Great-Grandparent or closer had the title, and are different dynasty
+					NOT = { dynasty = ROOT }
+					any_child_even_if_dead = {
+						OR = {
+							character = ROOT
+							any_child_even_if_dead = {
+								OR = {
+									character = ROOT
+									any_child_even_if_dead = { character = ROOT }
+								}
+							}
+						}
+					}
+				}
+				ROOT = { father_even_if_dead = { NOT = { dynasty = ROOT } has_landed_title = PREVPREV } }
+				ROOT = { mother_even_if_dead = { NOT = { dynasty = ROOT } has_landed_title = PREVPREV } }
+			}	
+			NOT = { #No previous Great-Grandparent or closer holder is already ROOT's dynasty
+				any_previous_holder = {
+					dynasty = ROOT
+					OR = {
+						sibling = ROOT
+						is_child_of = ROOT
+						any_sibling_even_if_dead = {
+							OR = {
+								is_father = ROOT
+								is_mother = ROOT
+							}
+						}
+						any_child_even_if_dead = {
+							OR = {
+								character = ROOT
+								any_child_even_if_dead = {
+									OR = {
+										character = ROOT
+										any_child_even_if_dead = { character = ROOT }
+									}
+								}
+							}
+						}
+					}	
+				}
+			}	
+		}
+	}
+	
+	immediate = { 
+		#Find line of descent
+		#Parents First
+		father_even_if_dead = {
+			if = {
+				limit = {
+					NOT = { dynasty = ROOT }
+					OR = {
+						has_landed_title = FROMFROM
+						FROMFROM = { any_previous_holder = { character = PREVPREV } }
+					}
+				}
+				save_event_target_as = line_of_descent
+				break = yes
+			}
+		}
+		mother_even_if_dead = {
+			if = {
+				limit = {
+					NOT = { dynasty = ROOT }
+					OR = {
+						has_landed_title = FROMFROM
+						FROMFROM = { any_previous_holder = { character = PREVPREV } }
+					}	
+				}
+				save_event_target_as = line_of_descent
+				break = yes
+			}	
+		}
+		#Grandparents
+		father_even_if_dead = {
+			father_even_if_dead = {
+				if = {
+					limit = {
+						NOT = { dynasty = ROOT }
+						FROMFROM = { any_previous_holder = { character = PREVPREV } }
+					}
+					save_event_target_as = line_of_descent
+					ROOT = { father_even_if_dead = { save_event_target_as = parent_link } } #save parent in case dynasty needs to be changed
+					break = yes
+				}
+				father_even_if_dead = {
+					if = {
+						limit = {
+							NOT = { dynasty = ROOT }
+							FROMFROM = { any_previous_holder = { character = PREVPREV } }
+						}
+						save_event_target_as = line_of_descent
+						ROOT = { 
+							father_even_if_dead = { 
+								save_event_target_as = parent_link  #save parent in case dynasty needs to be changed
+								father_even_if_dead = { save_event_target_as = grandparent_link } #save grandparent in case dynasty needs to be changed
+							} 
+						}
+						break = yes
+					}
+				}
+				mother_even_if_dead = {
+					if = {
+						limit = {
+							NOT = { dynasty = ROOT }
+							FROMFROM = { any_previous_holder = { character = PREVPREV } }
+						}
+						save_event_target_as = line_of_descent
+						ROOT = { 
+							father_even_if_dead = { 
+								save_event_target_as = parent_link 
+								father_even_if_dead = { save_event_target_as = grandparent_link }
+							} 
+						}
+						break = yes
+					}
+				}
+			}
+			mother_even_if_dead = {
+				if = {
+					limit = {
+						NOT = { dynasty = ROOT }
+						FROMFROM = { any_previous_holder = { character = PREVPREV } }
+					}
+					save_event_target_as = line_of_descent
+					ROOT = { father_even_if_dead = { save_event_target_as = parent_link } }
+					break = yes
+				}
+				father_even_if_dead = {
+					if = {
+						limit = {
+							NOT = { dynasty = ROOT }
+							FROMFROM = { any_previous_holder = { character = PREVPREV } }
+						}
+						save_event_target_as = line_of_descent
+						ROOT = { 
+							father_even_if_dead = { 
+								save_event_target_as = parent_link 
+								mother_even_if_dead = { save_event_target_as = grandparent_link }
+							} 
+						}
+						break = yes
+					}
+				}
+				mother_even_if_dead = {
+					if = {
+						limit = {
+							NOT = { dynasty = ROOT }
+							FROMFROM = { any_previous_holder = { character = PREVPREV } }
+						}
+						save_event_target_as = line_of_descent
+						ROOT = { 
+							father_even_if_dead = { 
+								save_event_target_as = parent_link 
+								mother_even_if_dead = { save_event_target_as = grandparent_link }
+							} 
+						}
+						break = yes
+					}
+				}
+			}
+		}
+		mother_even_if_dead = {
+			father_even_if_dead = {
+				if = {
+					limit = {
+						NOT = { dynasty = ROOT }
+						FROMFROM = { any_previous_holder = { character = PREVPREV } }
+					}
+					save_event_target_as = line_of_descent
+					ROOT = { mother_even_if_dead = { save_event_target_as = parent_link } }
+					break = yes
+				}
+				father_even_if_dead = {
+					if = {
+						limit = {
+							NOT = { dynasty = ROOT }
+							FROMFROM = { any_previous_holder = { character = PREVPREV } }
+						}
+						save_event_target_as = line_of_descent
+						ROOT = { 
+							mother_even_if_dead = { 
+								save_event_target_as = parent_link 
+								father_even_if_dead = { save_event_target_as = grandparent_link }
+							} 
+						}
+						break = yes
+					}
+				}
+				mother_even_if_dead = {
+					if = {
+						limit = {
+							NOT = { dynasty = ROOT }
+							FROMFROM = { any_previous_holder = { character = PREVPREV } }
+						}
+						save_event_target_as = line_of_descent
+						ROOT = { 
+							mother_even_if_dead = { 
+								save_event_target_as = parent_link 
+								father_even_if_dead = { save_event_target_as = grandparent_link }
+							} 
+						}
+						break = yes
+					}
+				}
+			}
+			mother_even_if_dead = {
+				if = {
+					limit = {
+						NOT = { dynasty = ROOT }
+						FROMFROM = { any_previous_holder = { character = PREVPREV } }
+					}
+					save_event_target_as = line_of_descent
+					ROOT = { mother_even_if_dead = { save_event_target_as = parent_link } }
+					break = yes
+				}
+				father_even_if_dead = {
+					if = {
+						limit = {
+							NOT = { dynasty = ROOT }
+							FROMFROM = { any_previous_holder = { character = PREVPREV } }
+						}
+						save_event_target_as = line_of_descent
+						ROOT = { 
+							mother_even_if_dead = { 
+								save_event_target_as = parent_link 
+								mother_even_if_dead = { save_event_target_as = grandparent_link }
+							} 
+						}
+						break = yes
+					}
+				}
+				mother_even_if_dead = {
+					if = {
+						limit = {
+							NOT = { dynasty = ROOT }
+							FROMFROM = { any_previous_holder = { character = PREVPREV } }
+						}
+						save_event_target_as = line_of_descent
+						ROOT = { 
+							mother_even_if_dead = { 
+								save_event_target_as = parent_link 
+								mother_even_if_dead = { save_event_target_as = grandparent_link }
+							} 
+						}
+						break = yes
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTAdynastic_stability.2 #Adopt Dynasty
+		ai_chance = { 
+			factor = 2
+			modifier = { #Player's heir wont do this
+				factor = 0
+				any_heir_title = { 
+					holder_scope = { 
+						dynasty = ROOT 
+						ai = no
+					}
+				}
+			}	
+			modifier = {
+				factor = 0.5
+				trait = familyperson
+			}
+			modifier = {
+				factor = 0.5
+				trait = proud
+			}
+			modifier = {
+				factor = 0.5
+				trait = zealous
+			}
+			modifier = {
+				factor = 2
+				trait = humble
+			}
+			modifier = {
+				factor = 2
+				trait = cynical
+			}
+		}
+		event_target:line_of_descent = { 		
+			ROOT = {
+				hidden_tooltip = { #change descendents as well
+					any_child_even_if_dead = {
+						limit = { dynasty = ROOT }
+						any_child_even_if_dead = {
+							limit = { dynasty = ROOT }
+							any_child_even_if_dead = {
+								limit = { dynasty = ROOT }
+								dynasty = PREVPREVPREVPREV
+							}
+							dynasty = PREVPREVPREV
+						}
+						dynasty = PREVPREV
+					}
+				}
+				dynasty = PREV 
+			}
+			#Make sure dynasty tree links
+			if = {
+				limit = { event_target:parent_link = { always = yes } }
+				event_target:parent_link = { 
+					if = {
+						limit = { NOT = { dynasty = PREV } }
+						any_child_even_if_dead = {
+							limit = {
+								NOT = { character = ROOT }
+								dynasty = PREV
+							}
+							any_child_even_if_dead = {
+								limit = {
+									NOT = { character = ROOT }
+									dynasty = PREV
+								}						
+								any_child_even_if_dead = {
+									limit = {
+										NOT = { character = ROOT }
+										dynasty = PREV
+									}
+									dynasty = PREVPREVPREVPREV
+								}
+								dynasty = PREVPREVPREV
+							}						
+							dynasty = PREVPREV
+						}
+						dynasty = PREV 				
+					}	
+				}
+			}	
+			if = {
+				limit = { event_target:grandparent_link = { always = yes } }
+				event_target:grandparent_link = { 
+					if = {
+						limit = { NOT = { dynasty = PREV } }
+						any_child_even_if_dead = {
+							limit = {
+								NOT = { character = ROOT }
+								dynasty = PREV
+							}
+							any_child_even_if_dead = {
+								limit = {
+									NOT = { character = ROOT }
+									dynasty = PREV
+								}						
+								any_child_even_if_dead = {
+									limit = {
+										NOT = { character = ROOT }
+										dynasty = PREV
+									}
+									dynasty = PREVPREVPREVPREV
+								}
+								dynasty = PREVPREVPREV
+							}						
+							dynasty = PREVPREV
+						}
+						dynasty = PREV 				
+					}		
+				}
+			}	
+		}
+		
+		if = {
+			limit = { tier = EMPEROR }
+			prestige = 400
+		}
+		if = {
+			limit = { tier = KING }
+			prestige = 200
+		}
+		if = {
+			limit = { tier = DUKE }
+			prestige = 100
+		}
+		if = {
+			limit = { tier = COUNT }
+			prestige = 50
+		}
+		hidden_tooltip = {
+			any_realm_lord = {
+				limit = { ai = no }
+				letter_event = { id = dynastic_stability.3 }
+			}
+			liege = {
+				if = {
+					limit = { 
+						ai = no 
+						NOT = { character = ROOT }
+					}
+					letter_event = { id = dynastic_stability.3 }
+				}	
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBdynastic_stability.2 #No
+		ai_chance = { 
+			factor = 1
+			modifier = { #May not do this if heir/pretender/holder to a high rank title
+				factor = 0
+				NOR = {
+					any_demesne_title = { 
+						NOT = {
+							any_previous_holder = { 
+								OR = {
+									character = event_target:line_of_descent 
+									AND = {
+										dynasty = event_target:line_of_descent 
+										is_close_relative = event_target:line_of_descent 
+									}
+								}	
+							} 
+						}
+						any_previous_holder = { 
+							dynasty = ROOT
+							NOT = { character = ROOT }
+						}
+						OR = {
+							higher_tier_than = COUNT
+							AND = {
+								tier = COUNT
+								FROMFROM = { tier = DUKE }
+							}
+							FROMFROM = { tier = COUNT }
+						}
+					}
+					any_heir_title = { 
+						holder_scope = { dynasty = ROOT }
+						OR = {
+							higher_tier_than = COUNT
+							AND = {
+								tier = COUNT
+								FROMFROM = { tier = DUKE }
+							}
+							FROMFROM = { tier = COUNT }
+						}
+					}
+					any_pretender_title = { 
+						holder_scope = { dynasty = ROOT }
+						OR = {
+							higher_tier_than = COUNT
+							AND = {
+								tier = COUNT
+								FROMFROM = { tier = DUKE }
+							}
+							FROMFROM = { tier = COUNT }
+						}
+					}
+				}	
+			}
+		}
+	}
+}	
+letter_event = { #Inform realm
+	id = dynastic_stability.3
+	desc = EVTDESCdynastic_stability.3
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAdynastic_stability.3
+	}
+}	

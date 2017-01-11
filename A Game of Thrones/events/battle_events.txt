@@ -1,0 +1,6726 @@
+# New events by Galle
+namespace = battle
+
+### Pre-Battlefield-Duel Events
+# battle.1	Begin Battlefield Duel Chain
+# battle.2	Defender: Fight or Run?
+# battle.3	Attacker: Fight or Run? (Begin Duel)
+# battle.4	Defender Runs
+# battle.5	Attacker Runs
+# battle.6	Defender Calls Kingsguard
+# battle.7	Attacker versus Kingsguard - Fight or Run? (Begin Duel)
+# battle.8	Attacker or Defender Runs From Kingsguard
+# battle.9	Attacker Calls Kingsguard
+# battle.10	Defender versus Kingsguard - Fight or Run? (Begin Duel)
+### Post-Battlefield-Duel Events
+# battle.11	(End Duel) Victor Killed Opponent
+# battle.12	(End Duel) Victor Takes Opponent Hostage
+# battle.13	Opponent Imprisoned
+# battle.14	(End Duel) Opponent Killed Kingsguard - Original Opponent Reacts
+# battle.15	Victor Attacks Original Opponent (Begin Duel)
+# battle.16	Kingsguard Killed Opponent - Original Opponent Reacts
+# battle.17	Kingsguard Beat Opponent - Original Opponent Takes Opponent Hostage
+
+#On-action combat event: Killed in action
+character_event = {
+	id = 242
+	desc = EVTDESC242	
+	picture = GFX_evt_death
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { trait = berserker }
+		NOT = { trait = white_walker }
+	}
+
+	weight_multiplier = {
+		days = 1
+		
+		#Bodyguard effects
+		modifier = {
+			factor = 0.8
+			has_landed_title = e_iron_throne
+			kingsguard = {
+				in_command = no
+				is_alive = yes
+				trait = master_warrior
+			}
+		}
+		modifier = {
+			factor = 0.9
+			has_landed_title = e_iron_throne
+			kingsguard = {
+				in_command = no
+				is_alive = yes
+				trait = skilled_warrior
+			}
+		}
+		modifier = {
+			factor = 0.8
+			is_ruler = yes
+			any_courtier = {
+				OR = {
+					has_minor_title = title_bodyguard
+					has_minor_title = title_bloodrider
+				}	
+				liege = { character = ROOT }
+				in_command = no
+				trait = master_warrior
+			}
+		}
+		modifier = {
+			factor = 0.9
+			is_ruler = yes
+			any_courtier = {
+				OR = {
+					has_minor_title = title_bodyguard
+					has_minor_title = title_bloodrider
+				}	
+				liege = { character = ROOT }
+				in_command = no
+				trait = skilled_warrior
+			}
+		}
+		
+		#Fighting skill
+		modifier = {
+			factor = 0.7
+			trait = master_warrior
+		}
+		modifier = {
+			factor = 0.8
+			trait = skilled_warrior
+		}
+		modifier = {
+			factor = 0.9
+			trait = trained_warrior
+		}
+		
+		#Physical characteristics
+		modifier = {
+			is_strong_trigger = yes
+			factor = 0.7
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 2.5
+		}	
+		modifier = {
+			trait = tall
+			factor = 0.8
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.25
+		}
+		modifier = {
+			trait = clubfooted
+			factor = 1.25
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.25
+		}	
+		modifier = {
+			trait = inbred
+			factor = 3.0
+		}		
+		
+		
+		#Mental Characteristics		
+		modifier = {
+			factor = 1.25
+			trait = brave
+		}
+		modifier = {
+			factor = 0.75
+			trait = craven
+		}			
+		modifier = {
+			trait = genius
+			factor = 0.9
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 0.9
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 2.0
+		}		
+		modifier = {
+			trait = imbecile
+			factor = 3.0
+		}		
+		modifier = {
+			factor = 1.25
+			trait = stressed
+		}
+		modifier = {
+			factor = 1.25
+			trait = depressed
+		}
+		modifier = {
+			factor = 1.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 1.5
+			trait = possessed
+		}
+		
+		#Health
+		modifier = {
+			factor = 1.2
+			is_ill = yes
+		}
+		modifier = {
+			factor = 1.2
+			has_epidemic = yes
+		}
+		modifier = {
+			factor = 1.15
+			trait = wounded
+		}
+		modifier = {
+			factor = 1.25
+			is_maimed_trigger = yes
+		}
+		modifier = {
+			factor = 2.0
+			trait = infirm
+		}
+		modifier = {
+			factor = 3.0
+			trait = incapable
+		}
+		modifier = {
+			factor = 1.1
+			trait = drunkard
+		}	
+
+		#Dragon riders are in a safer position
+		modifier = {
+			factor = 0.5
+			trait = dragon_rider
+		}
+		
+		#Curse of Harrenhal
+		modifier = {
+			factor = 2.0
+			107 = { NOT = { has_province_modifier = completeharren3 } }
+			c_harrenhal = {
+				holder_scope = {
+					OR = {
+						character = ROOT
+						any_child = { character = ROOT }
+						any_child = { any_child = { character = ROOT } }
+					}
+				}
+			}
+		}			
+	}
+	
+	immediate = {
+		#Check if Rhllor saves character
+		if = {
+			limit = { 
+				religion = rhllor 
+				OR = {
+					trait = resurrected_by_rhllor
+					AND = {
+						OR = { 	
+							trait = favored_by_rhllor
+							trait = chosen_by_rhllor				
+						}
+						OR = {
+							check_variable = { which = "red_god_magic" value = 10 }
+							has_global_flag = age_of_dragons
+						}
+					}
+				}	
+			}
+			random = {
+				chance = 10
+				modifier = {
+					factor = 2
+					trait = resurrected_by_rhllor
+				}
+				modifier = {
+					factor = 2
+					trait = chosen_by_rhllor
+				}
+				modifier = {
+					factor = 2
+					has_global_flag = age_of_dragons
+				}
+				modifier = {
+					factor = 1.33
+					check_variable = { which = "red_god_magic" value = 1 }
+				}
+				modifier = {
+					factor = 1.5
+					check_variable = { which = "red_god_magic" value = 5 }
+				}
+				set_character_flag = rhllor_resurrected
+			}
+		}
+		hidden_tooltip = {
+			liege = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = ROOT }
+					}
+					character_event = { id = battle.750 }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = ALAS
+		trigger = {
+			NOT = { has_character_flag = rhllor_resurrected }
+		}
+		FROM = {
+			if = {
+				limit = { 
+					NOR = { 
+						is_vassal_or_below = ROOT
+						character = ROOT
+					}
+				}
+				ROOT = {
+					death = {
+						death_reason = death_battle
+						killer = PREV
+					}
+				}
+				hidden_tooltip = { character_event = { id = 249 } }
+				break = yes
+			}
+		}	
+		FROMFROM = {
+			if = {
+				limit = { 
+					NOR = { 
+						is_vassal_or_below = ROOT
+						character = ROOT
+					}
+				}
+				ROOT = {
+					death = {
+						death_reason = death_battle
+						killer = PREV
+					}
+				}
+				hidden_tooltip = { character_event = { id = 249 } }
+				break = yes
+			}
+		}	
+		death = {
+			death_reason = death_battle
+		}
+	}
+
+	option = {
+		name = "EVTOPTBred_priest.10"
+		trigger = {
+			has_character_flag = rhllor_resurrected
+		}
+		character_event = { id = red_priest.38 tooltip = CUSTOMTOOLTIPrhllor_saved_me }
+		clr_character_flag = rhllor_resurrected
+	}	
+}
+
+#On-action combat event: Wounded in action
+character_event = {
+	id = 243
+	desc = EVTDESC243
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { trait = wounded }
+		can_be_maimed_trigger = yes
+		NOT = { trait = berserker }
+		NOT = { trait = white_walker }
+		is_alive = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		
+		#Bodyguard effects
+		modifier = {
+			factor = 0.8
+			has_landed_title = e_iron_throne
+			kingsguard = {
+				in_command = no
+				is_alive = yes
+				trait = master_warrior
+			}
+		}
+		modifier = {
+			factor = 0.9
+			has_landed_title = e_iron_throne
+			kingsguard = {
+				in_command = no
+				is_alive = yes
+				trait = skilled_warrior
+			}
+		}
+		modifier = {
+			factor = 0.8
+			is_ruler = yes
+			any_courtier = {
+				OR = {
+					has_minor_title = title_bodyguard
+					has_minor_title = title_bloodrider
+				}	
+				liege = { character = ROOT }
+				in_command = no
+				trait = master_warrior
+			}
+		}
+		modifier = {
+			factor = 0.9
+			is_ruler = yes
+			any_courtier = {
+				OR = {
+					has_minor_title = title_bodyguard
+					has_minor_title = title_bloodrider
+				}	
+				liege = { character = ROOT }
+				in_command = no
+				trait = skilled_warrior
+			}
+		}
+		
+		#Fighting skill
+		modifier = {
+			factor = 0.7
+			trait = master_warrior
+		}
+		modifier = {
+			factor = 0.8
+			trait = skilled_warrior
+		}
+		modifier = {
+			factor = 0.9
+			trait = trained_warrior
+		}
+		
+		#Physical characteristics
+		modifier = {
+			is_strong_trigger = yes
+			factor = 0.7
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 2.5
+		}	
+		modifier = {
+			trait = tall
+			factor = 0.8
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.25
+		}
+		modifier = {
+			trait = clubfooted
+			factor = 1.25
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.25
+		}	
+		modifier = {
+			trait = inbred
+			factor = 3.0
+		}		
+		
+		
+		#Mental Characteristics		
+		modifier = {
+			factor = 1.25
+			trait = brave
+		}
+		modifier = {
+			factor = 0.75
+			trait = craven
+		}			
+		modifier = {
+			trait = genius
+			factor = 0.9
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 0.9
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 2.0
+		}		
+		modifier = {
+			trait = imbecile
+			factor = 3.0
+		}		
+		modifier = {
+			factor = 1.25
+			trait = stressed
+		}
+		modifier = {
+			factor = 1.25
+			trait = depressed
+		}
+		modifier = {
+			factor = 1.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 1.5
+			trait = possessed
+		}
+		
+		#Health
+		modifier = {
+			factor = 1.2
+			is_ill = yes
+		}
+		modifier = {
+			factor = 1.2
+			has_epidemic = yes
+		}
+		modifier = {
+			factor = 1.15
+			trait = wounded
+		}
+		modifier = {
+			factor = 1.25
+			is_maimed_trigger = yes
+		}
+		modifier = {
+			factor = 2.0
+			trait = infirm
+		}
+		modifier = {
+			factor = 3.0
+			trait = incapable
+		}
+		modifier = {
+			factor = 1.1
+			trait = drunkard
+		}	
+
+		#Dragon riders are in a safer position
+		modifier = {
+			factor = 0.5
+			trait = dragon_rider
+		}
+		
+		#Curse of Harrenhal
+		modifier = {
+			factor = 2.0
+			107 = { NOT = { has_province_modifier = completeharren3 } }
+			c_harrenhal = {
+				holder_scope = {
+					OR = {
+						character = ROOT
+						any_child = { character = ROOT }
+						any_child = { any_child = { character = ROOT } }
+					}
+				}
+			}
+		}			
+	}
+	
+	immediate = {
+		if = {
+			limit = { NOT = { has_character_flag = eye_injury } }
+			random = {
+				chance = 1
+				set_character_flag = new_eye_injury
+			}
+		}	
+	}
+	
+	option = {
+		name = CURSES
+		add_trait = wounded
+		if = {
+			limit = { has_character_flag = new_eye_injury } 
+			clr_character_flag = new_eye_injury
+			add_trait = one_eyed
+		}
+	}
+}
+
+#On-action combat event: Maimed in action
+character_event = {
+	id = 244
+	desc = EVTDESC244
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+	
+	
+	trigger = {
+		NOT = { is_maimed_trigger = yes }
+		NOT = { trait = mangled }
+		NOR = { 
+			trait = one_eyed
+			trait = one_handed 
+			trait = one_legged 
+			trait = disfigured
+		}
+		NOT = { trait = berserker }
+		NOT = { trait = white_walker }
+		is_alive = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		
+		#Bodyguard effects
+		modifier = {
+			factor = 0.8
+			has_landed_title = e_iron_throne
+			kingsguard = {
+				in_command = no
+				is_alive = yes
+				trait = master_warrior
+			}
+		}
+		modifier = {
+			factor = 0.9
+			has_landed_title = e_iron_throne
+			kingsguard = {
+				in_command = no
+				is_alive = yes
+				trait = skilled_warrior
+			}
+		}
+		modifier = {
+			factor = 0.8
+			is_ruler = yes
+			any_courtier = {
+				OR = {
+					has_minor_title = title_bodyguard
+					has_minor_title = title_bloodrider
+				}	
+				liege = { character = ROOT }
+				in_command = no
+				trait = master_warrior
+			}
+		}
+		modifier = {
+			factor = 0.9
+			is_ruler = yes
+			any_courtier = {
+				OR = {
+					has_minor_title = title_bodyguard
+					has_minor_title = title_bloodrider
+				}	
+				liege = { character = ROOT }
+				in_command = no
+				trait = skilled_warrior
+			}
+		}
+		
+		#Fighting skill
+		modifier = {
+			factor = 0.7
+			trait = master_warrior
+		}
+		modifier = {
+			factor = 0.8
+			trait = skilled_warrior
+		}
+		modifier = {
+			factor = 0.9
+			trait = trained_warrior
+		}
+		
+		#Physical characteristics
+		modifier = {
+			is_strong_trigger = yes
+			factor = 0.7
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 2.5
+		}	
+		modifier = {
+			trait = tall
+			factor = 0.8
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.25
+		}
+		modifier = {
+			trait = clubfooted
+			factor = 1.25
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.25
+		}	
+		modifier = {
+			trait = inbred
+			factor = 3.0
+		}		
+		
+		
+		#Mental Characteristics		
+		modifier = {
+			factor = 1.25
+			trait = brave
+		}
+		modifier = {
+			factor = 0.75
+			trait = craven
+		}			
+		modifier = {
+			trait = genius
+			factor = 0.9
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 0.9
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 2.0
+		}		
+		modifier = {
+			trait = imbecile
+			factor = 3.0
+		}		
+		modifier = {
+			factor = 1.25
+			trait = stressed
+		}
+		modifier = {
+			factor = 1.25
+			trait = depressed
+		}
+		modifier = {
+			factor = 1.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 1.5
+			trait = possessed
+		}
+		
+		#Health
+		modifier = {
+			factor = 1.2
+			is_ill = yes
+		}
+		modifier = {
+			factor = 1.2
+			has_epidemic = yes
+		}
+		modifier = {
+			factor = 1.15
+			trait = wounded
+		}
+		modifier = {
+			factor = 1.25
+			is_maimed_trigger = yes
+		}
+		modifier = {
+			factor = 2.0
+			trait = infirm
+		}
+		modifier = {
+			factor = 3.0
+			trait = incapable
+		}
+		modifier = {
+			factor = 1.1
+			trait = drunkard
+		}	
+
+		#Dragon riders are in a safer position
+		modifier = {
+			factor = 0.5
+			trait = dragon_rider
+		}
+		
+		#Curse of Harrenhal
+		modifier = {
+			factor = 2.0
+			107 = { NOT = { has_province_modifier = completeharren3 } }
+			c_harrenhal = {
+				holder_scope = {
+					OR = {
+						character = ROOT
+						any_child = { character = ROOT }
+						any_child = { any_child = { character = ROOT } }
+					}
+				}
+			}
+		}			
+	}
+	
+	option = {
+		name = CURSES
+		add_maimed_trait_effect = yes
+		hidden_tooltip = {
+			liege = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = ROOT }
+					}
+					character_event = { id = battle.751 }
+				}
+			}
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_MAIMED_BATTLE
+				picture = GFX_evt_battle
+			}
+		}
+	}
+}
+
+#On-action combat event: Serious head injury in action
+character_event = {
+	id = 245
+	#desc = EVTDESC245
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+			
+	desc = {
+		picture = GFX_evt_battle
+		text = EVTDESC245
+		trigger = { has_character_flag = wounded_incapable }
+	}
+	desc = {
+		picture = GFX_evt_battle
+		text = 245.d2
+		trigger = { has_character_flag = wounded_disfigured }
+	}
+	
+	trigger = {
+		NOT = { trait = incapable }
+		NOT = { trait = white_walker }
+		is_alive = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		
+		#Bodyguard effects
+		modifier = {
+			factor = 0.8
+			has_landed_title = e_iron_throne
+			kingsguard = {
+				in_command = no
+				is_alive = yes
+				trait = master_warrior
+			}
+		}
+		modifier = {
+			factor = 0.9
+			has_landed_title = e_iron_throne
+			kingsguard = {
+				in_command = no
+				is_alive = yes
+				trait = skilled_warrior
+			}
+		}
+		modifier = {
+			factor = 0.8
+			is_ruler = yes
+			any_courtier = {
+				OR = {
+					has_minor_title = title_bodyguard
+					has_minor_title = title_bloodrider
+				}	
+				liege = { character = ROOT }
+				in_command = no
+				trait = master_warrior
+			}
+		}
+		modifier = {
+			factor = 0.9
+			is_ruler = yes
+			any_courtier = {
+				OR = {
+					has_minor_title = title_bodyguard
+					has_minor_title = title_bloodrider
+				}	
+				liege = { character = ROOT }
+				in_command = no
+				trait = skilled_warrior
+			}
+		}
+		
+		#Fighting skill
+		modifier = {
+			factor = 0.7
+			trait = master_warrior
+		}
+		modifier = {
+			factor = 0.8
+			trait = skilled_warrior
+		}
+		modifier = {
+			factor = 0.9
+			trait = trained_warrior
+		}
+		
+		#Physical characteristics
+		modifier = {
+			is_strong_trigger = yes
+			factor = 0.7
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 2.5
+		}	
+		modifier = {
+			trait = tall
+			factor = 0.8
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.25
+		}
+		modifier = {
+			trait = clubfooted
+			factor = 1.25
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.25
+		}	
+		modifier = {
+			trait = inbred
+			factor = 3.0
+		}		
+		
+		
+		#Mental Characteristics		
+		modifier = {
+			factor = 1.25
+			trait = brave
+		}
+		modifier = {
+			factor = 0.75
+			trait = craven
+		}			
+		modifier = {
+			trait = genius
+			factor = 0.9
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 0.9
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 2.0
+		}		
+		modifier = {
+			trait = imbecile
+			factor = 3.0
+		}		
+		modifier = {
+			factor = 1.25
+			trait = stressed
+		}
+		modifier = {
+			factor = 1.25
+			trait = depressed
+		}
+		modifier = {
+			factor = 1.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 1.5
+			trait = possessed
+		}
+		
+		#Health
+		modifier = {
+			factor = 1.2
+			is_ill = yes
+		}
+		modifier = {
+			factor = 1.2
+			has_epidemic = yes
+		}
+		modifier = {
+			factor = 1.15
+			trait = wounded
+		}
+		modifier = {
+			factor = 1.25
+			is_maimed_trigger = yes
+		}
+		modifier = {
+			factor = 2.0
+			trait = infirm
+		}
+		modifier = {
+			factor = 3.0
+			trait = incapable
+		}
+		modifier = {
+			factor = 1.1
+			trait = drunkard
+		}	
+
+		#Dragon riders are in a safer position
+		modifier = {
+			factor = 0.5
+			trait = dragon_rider
+		}
+		
+		#Curse of Harrenhal
+		modifier = {
+			factor = 2.0
+			107 = { NOT = { has_province_modifier = completeharren3 } }
+			c_harrenhal = {
+				holder_scope = {
+					OR = {
+						character = ROOT
+						any_child = { character = ROOT }
+						any_child = { any_child = { character = ROOT } }
+					}
+				}
+			}
+		}			
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				has_dlc = "Reapers"
+			}
+			random_list = {
+				60 = {
+					modifier = {
+						factor = 0
+						trait = disfigured						
+					}
+					set_character_flag = wounded_disfigured
+				}
+				40 = {
+					set_character_flag = wounded_incapable
+				}
+			}
+		}
+	}
+	
+
+	option = {
+		name = CURSES
+		if = {
+			limit = {
+				NOT = {
+					has_dlc = "Reapers"
+				}
+			}
+			add_trait = incapable
+			break = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Reapers"
+				has_character_flag = wounded_disfigured
+			}
+			add_trait = disfigured 
+			add_trait = severely_injured 
+			resolve_severely_injured_effect = yes
+			clr_character_flag = wounded_disfigured
+			break = yes
+		}
+		if = {
+			limit = {
+				has_character_flag = wounded_incapable
+			}
+			add_trait = incapable
+			clr_character_flag = wounded_incapable
+		}
+		hidden_tooltip = {
+			liege = {
+				if = {
+					limit = {
+						ai = no
+						NOT = { character = ROOT }
+					}
+					character_event = { id = battle.752 }
+				}
+			}
+		}
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_INCAPABLE_BATTLE
+				picture = GFX_evt_battle
+			}
+		}
+	}
+}
+
+#On-action combat event: Character skill improves
+character_event = {
+	id = 246
+	desc = EVTDESC246
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+	
+	trigger = {
+		in_command = yes
+		is_alive = yes
+		OR = {
+			trait = misguided_warrior
+			trait = tough_soldier
+			trait = skilled_tactician
+		}
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+		modifier = {
+			trait = genius
+			factor = 1.2
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 1.1
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 0.9
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 0.2
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.2
+		}
+		modifier = {
+			is_strong_trigger = yes
+			factor = 1.5
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 0.8
+		}	
+		modifier = {
+			factor = 0.8
+			trait = stressed
+		}
+		modifier = {
+			factor = 0.8
+			trait = depressed
+		}
+		modifier = {
+			factor = 0.75
+			trait = lunatic
+		}
+		modifier = {
+			factor = 0.75
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.33
+			has_epidemic = yes
+		}
+		modifier = {
+			factor = 0.5
+			is_ill = yes
+		}
+		modifier = {
+			factor = 0.9
+			trait = wounded
+		}
+		modifier = {
+			factor = 0.8
+			is_maimed_trigger = yes
+		}
+		modifier = {
+			factor = 0.5
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.4
+			trait = incapable
+		}
+		modifier = {
+			factor = 0.5
+			trait = drunkard
+		}	
+	}
+
+	option = {
+		name = EXCELLENT
+		if = {
+			limit = {
+				trait = skilled_tactician
+			}
+			remove_trait = skilled_tactician
+			add_trait = brilliant_strategist
+		}
+		if = {
+			limit = {
+				trait = tough_soldier
+			}
+			remove_trait = tough_soldier
+			add_trait = skilled_tactician
+		}
+		if = {
+			limit = {
+				trait = misguided_warrior
+			}
+			remove_trait = misguided_warrior
+			add_trait = tough_soldier
+		}
+	}
+}
+
+#On-action combat event: Flat improvement to martial skill
+character_event = {
+	id = 247
+	desc = EVTDESC247
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+	trigger = {
+		is_alive = yes
+		NOT = { martial = 10 }
+		in_command = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+		modifier = {
+			trait = genius
+			factor = 1.2
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 1.1
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 0.9
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 0.2
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.2
+		}
+		modifier = {
+			is_strong_trigger = yes
+			factor = 1.5
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 0.8
+		}			
+		modifier = {
+			factor = 0.8
+			trait = stressed
+		}
+		modifier = {
+			factor = 0.8
+			trait = depressed
+		}
+		modifier = {
+			factor = 0.75
+			trait = lunatic
+		}
+		modifier = {
+			factor = 0.75
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.33
+			has_epidemic = yes
+		}
+		modifier = {
+			factor = 0.5
+			is_ill = yes
+		}
+		modifier = {
+			factor = 0.9
+			trait = wounded
+		}
+		modifier = {
+			factor = 0.8
+			is_maimed_trigger = yes
+		}
+		modifier = {
+			factor = 0.5
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.4
+			trait = incapable
+		}
+		modifier = {
+			factor = 0.5
+			trait = drunkard
+		}
+	}
+
+	option = {
+		name = EXCELLENT
+		change_martial = 1
+	}
+}
+
+#On-action combat event: Tech Increase in Capital #AGOT: changed to increase martial
+character_event = {
+	id = 248
+	desc = EVTDESC248
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		OR = {
+			trait = brilliant_strategist
+			trait = skilled_tactician
+		}
+		NOT = { trait = white_walker }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 3
+			has_focus = focus_scholarship
+		}
+		modifier = {
+			factor = 1.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+		modifier = {
+			trait = genius
+			factor = 3.0
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 2.0
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 0.1
+		}
+
+		modifier = {
+			trait = imbecile
+			factor = 0
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.2
+		}
+		modifier = {
+			factor = 0.8
+			trait = stressed
+		}
+		modifier = {
+			factor = 0.8
+			trait = depressed
+		}
+		modifier = {
+			factor = 0.75
+			trait = lunatic
+		}
+		modifier = {
+			factor = 0.75
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.33
+			has_epidemic = yes
+		}
+		modifier = {
+			factor = 0.5
+			is_ill = yes
+		}
+		modifier = {
+			factor = 0.9
+			trait = wounded
+		}
+		modifier = {
+			factor = 0.8
+			is_maimed_trigger = yes
+		}
+		modifier = {
+			factor = 0.5
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.4
+			trait = incapable
+		}
+		modifier = {
+			factor = 0.5
+			trait = drunkard
+		}
+	}
+
+	option = {
+		name = EXCELLENT
+		add_character_modifier = {
+			name = war_knowledge
+			duration = 365
+		}	
+	}
+}
+
+#Opponent is informed that enemy commander has been killed
+character_event = {
+	id = 249
+	desc = EVTDESC249
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+	trigger = {
+		is_alive = yes
+	}
+
+	option = {
+		name = EVTOPTA249
+	}
+}
+#Opponent is informed that enemy commander has been killed
+character_event = {
+	id = 253
+	desc = EVTDESC253
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+	trigger = {
+		is_alive = yes
+	}
+
+	option = {
+		name = ALAS
+	}
+}
+#Liege informed vaassal has been killed
+character_event = {
+	id = battle.750
+	desc = EVTDESCbattle.750
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAbattle.750
+		FROMFROMFROM = { tooltip = { } }
+	}
+}
+#Liege informed vaassal has been maimed
+character_event = {
+	id = battle.751
+	desc = EVTDESCbattle.751
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAbattle.751
+		tooltip = { FROM = { add_maimed_trait_effect = yes } }
+		FROMFROMFROM = { tooltip = { } }
+	}
+}
+#Liege informed vaassal has been made incapable
+character_event = {
+	id = battle.752
+	desc = EVTDESCbattle.752
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAbattle.752
+		tooltip = { FROM = { add_trait = incapable } }
+		FROMFROMFROM = { tooltip = { } }
+	}
+}
+
+#On-action combat event: Becoming Brave
+character_event = {
+	id = 270
+	desc = EVTDESC270
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+	trigger = {
+		is_alive = yes
+		NOT = { trait = brave }
+		NOT = { trait = craven }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		
+		modifier = {
+			personality_traits = 6 
+			factor = 0.1
+		}
+		modifier = {
+			factor = 5
+			has_character_modifier = proving_bravery
+		}
+		modifier = {
+			trait = genius
+			factor = 1.2
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 1.1
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 0.9
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 0.2
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.2
+		}
+		modifier = {
+			is_strong_trigger = yes
+			factor = 1.5
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 0.8
+		}		
+				modifier = {
+			factor = 0.8
+			trait = stressed
+		}
+		modifier = {
+			factor = 0.8
+			trait = depressed
+		}
+		modifier = {
+			factor = 0.75
+			trait = lunatic
+		}
+		modifier = {
+			factor = 0.75
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.33
+			has_epidemic = yes
+		}
+		modifier = {
+			factor = 0.5
+			is_ill = yes
+		}
+		modifier = {
+			factor = 0.9
+			trait = wounded
+		}
+		modifier = {
+			factor = 0.8
+			is_maimed_trigger = yes
+		}
+		modifier = {
+			factor = 0.5
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.4
+			trait = incapable
+		}
+		modifier = {
+			factor = 0.5
+			trait = drunkard
+		}
+	}
+
+	option = {
+		name = EXCELLENT
+		add_trait = brave
+	}
+}
+
+#On-action combat event: Becoming Craven
+character_event = {
+	id = 271
+	desc = EVTDESC271
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+	trigger = {
+		is_alive = yes
+		NOT = { trait = brave }
+		NOT = { trait = craven }
+		NOT = { trait = berserker }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		
+		modifier = {
+			personality_traits = 6 
+			factor = 0.1
+		}
+		modifier = {
+			trait = clubfooted
+			factor = 1.25
+		}
+		modifier = {
+			trait = hunchback
+			factor = 1.25
+		}
+		modifier = {
+			trait = lisp
+			factor = 1.1
+		}
+		modifier = {
+			trait = stutter
+			factor = 1.1
+		}
+		modifier = {
+			trait = dwarf
+			factor = 1.25
+		}		
+		modifier = {
+			trait = genius
+			factor = 0.9
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 0.9
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 2.0
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 3.0
+		}
+		modifier = {
+			trait = inbred
+			factor = 3.0
+		}
+		modifier = {
+			is_strong_trigger = yes
+			factor = 0.7
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 2.5
+		}		
+		modifier = {
+			factor = 1.25
+			trait = stressed
+		}
+		modifier = {
+			factor = 1.25
+			trait = depressed
+		}
+		modifier = {
+			factor = 1.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 1.5
+			trait = possessed
+		}
+		modifier = {
+			factor = 1.25
+			has_epidemic = yes
+		}
+		modifier = {
+			factor = 1.25
+			is_ill = yes
+		}
+		modifier = {
+			factor = 1.15
+			trait = wounded
+		}
+		modifier = {
+			factor = 1.25
+			is_maimed_trigger = yes
+		}
+		modifier = {
+			factor = 2.0
+			trait = infirm
+		}
+		modifier = {
+			factor = 3.0
+			trait = incapable
+		}
+		modifier = {
+			factor = 1.1
+			trait = drunkard
+		}	
+	}
+
+	option = {
+		name = CURSES
+		add_trait = craven
+	}
+}
+
+#On-action combat event: Becoming Wroth
+character_event = {
+	id = 272
+	desc = EVTDESC272
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+	trigger = {
+		is_alive = yes
+		NOT = { trait = wroth }
+		NOT = { trait = patient }
+	}
+	
+	weight_multiplier = {
+		days = 1
+	}
+
+	option = {
+		name = CURSES
+		add_trait = wroth
+	}
+}
+
+#On-action combat event: Becoming Patient
+character_event = {
+	id = 273
+	desc = EVTDESC273
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+
+	is_triggered_only = yes
+	
+	trigger = {
+		is_alive = yes
+		NOT = { trait = wroth }
+		NOT = { trait = patient }
+	}
+	
+	weight_multiplier = {
+		days = 1
+	}
+
+	option = {
+		name = EXCELLENT
+		add_trait = patient
+	}
+}
+
+#On-action battle_won: Heroism shown.
+character_event = {
+	id = 260
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	trigger = {
+		is_alive = yes
+		NOT = { trait = white_walker }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.5
+			trait = brave
+		}		
+		modifier = {
+			factor = 1.5
+			martial = 10
+		}		
+
+		modifier = {
+			trait = genius
+			factor = 1.2
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 1.1
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 0.9
+		}
+		
+		modifier = {
+			trait = imbecile
+			factor = 0.2
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.2
+		}
+		modifier = {
+			is_strong_trigger = yes
+			factor = 1.5
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 0.8
+		}	
+		modifier = {
+			factor = 0.8
+			trait = stressed
+		}
+		modifier = {
+			factor = 0.8
+			trait = depressed
+		}
+		modifier = {
+			factor = 0.75
+			trait = lunatic
+		}
+		modifier = {
+			factor = 0.75
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.33
+			has_epidemic = yes
+		}
+		modifier = {
+			factor = 0.5
+			is_ill = yes
+		}
+		modifier = {
+			factor = 0.9
+			trait = wounded
+		}
+		modifier = {
+			factor = 0.8
+			is_maimed_trigger = yes
+		}
+		modifier = {
+			factor = 0.5
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.4
+			trait = incapable
+		}
+		modifier = {
+			factor = 0.5
+			trait = drunkard
+		}
+	}
+	
+	immediate = {
+		random_list = {
+			16 = { character_event = { id = 262 } }
+			16 = { character_event = { id = 263 } }
+			16 = { character_event = { id = 264 } }
+			16 = { character_event = { id = 265 } }
+			16 = { character_event = { id = 266 } }
+			16 = { character_event = { id = 267 } }
+		}
+		if = {
+			limit = {
+				OR = {
+					is_ruler = no
+					AND = {
+						war = no
+						liege = { war = yes }
+					}
+				}
+			}
+			change_variable = { which = "services_rendered" value = 1 }
+		}	
+		if = {
+			limit = { 
+				has_nickname = no 
+				location = { NOT = { has_province_flag = prohibited_nickname_location } }
+			}
+			random_list = {
+				500 = { 
+					modifier = {
+						factor = 2
+						higher_tier_than = DUKE #less likely for high rank characters
+					}
+				}
+				10 = { give_nickname = nick_of_the_hero_of_location }
+				10 = { give_nickname = nick_of_the_lion_of_location }
+				10 = { give_nickname = nick_of_the_sword_of_location }
+				10 = { give_nickname = nick_of_the_star_of_location }
+				10 = { give_nickname = nick_of_the_fist_of_location }
+				10 = { 
+					modifier = {
+						factor = 0
+						NOT = {
+							OR = {
+								dynasty = 496 #targaryen
+								dynasty = 57 #blackfyre
+								trait = dragon_rider
+							}
+						}
+					}
+					give_nickname = nick_of_the_dragon_of_location 
+				}
+				25 = { 
+					modifier = {
+						factor = 0
+						NOT = { dynasty = 59 } #Stark
+					}
+					give_nickname = nick_of_the_wolf_of_location 
+				}
+				10 = { give_nickname = nick_of_the_demon_of_location }
+				10 = { give_nickname = nick_of_the_shield_of_location }
+				10 = {
+					modifier = {
+						factor = 0
+						OR = {
+							culture_group = andal
+							culture_group = first_men
+							culture = ironborn
+						}
+					}
+					give_nickname = nick_of_the_spear_of_location 
+				}
+				10 = { give_nickname = nick_of_the_axe_of_location }
+				10 = { give_nickname = nick_of_the_hammer_of_location }
+			}
+		}
+	}
+
+	option = {
+		name = EXCELLENT
+	}
+}
+
+
+#On-action battle_won: Soldier Distinguishes himself.
+character_event = {
+	id = 261
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	desc = {
+		text = EVTDESC261
+		trigger = {
+			NOT = { culture_group = hyrkoon_group }
+		}
+	}
+	
+	desc = {
+		text = EVTDESC261B
+		trigger = {
+			culture_group = hyrkoon_group
+		}
+	}
+	
+	trigger = {
+		is_alive = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.5
+			trait = patient
+		}		
+		modifier = {
+			factor = 1.5
+			trait = just
+		}		
+		modifier = {
+			factor = 1.5
+			trait = diligent
+		}		
+		modifier = {
+			factor = 0.2
+			trait = deceitful
+		}		
+		modifier = {
+			factor = 0.2
+			trait = arbitrary
+		}		
+	}
+	
+	immediate = {
+		capital_scope = {
+			ROOT = {
+				if = {
+					limit = {
+						NOT = { culture_group = hyrkoon_group }	
+					}
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = random
+						female = no
+						religion = PREV
+						culture = PREV
+					}		
+				}	
+				if = {
+					limit = {
+						culture_group = hyrkoon_group	
+					}
+					create_random_soldier = {
+						random_traits = yes
+						dynasty = random
+						female = yes
+						religion = PREV
+						culture = PREV
+					}		
+				}	
+				new_character = {
+					save_event_target_as = soldier_target
+					
+					remove_trait = weak
+					remove_trait = imbecile
+					remove_trait = dwarf
+					remove_trait = clubfooted
+					remove_trait = hunchback
+					remove_trait = inbred
+					remove_trait = craven		
+					random_list = {
+						75 = { add_trait = trained_warrior }
+						20 = { add_trait = skilled_warrior }
+						5 = { add_trait = master_warrior }
+					}
+					random_list = {
+						40 = { }
+						10 = { add_trait = strong }
+						10 = { add_trait = tall }
+						10 = { add_trait = brave }
+						10 = { remove_trait = slow add_trait = quick }
+					}
+					if = {
+						limit = { religion = the_seven }
+						knight_character_effect = yes
+					}				
+				}
+			}
+		}
+	}
+
+	option = {
+		name = EXCELLENT
+		event_target:soldier_target = {
+			prestige = 50
+		}	
+	}
+}
+# Heroism Shown 1
+character_event = {
+	id = 262
+	desc = EVTDESC262
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA262
+		if = {
+			limit = { tier = EMPEROR }
+			prestige = 100
+		}
+		if = {
+			limit = { tier = KING }
+			prestige = 75
+		}
+		if = {
+			limit = { tier = DUKE }
+			prestige = 50
+		}
+		if = {
+			limit = { tier = COUNT }
+			prestige = 30
+		}
+		if = {
+			limit = { tier = BARON }
+			prestige = 20
+		}
+		if = {
+			limit = { is_ruler = no }
+			prestige = 10
+		}
+		if = {
+			limit = {
+				OR = {
+					is_ruler = no
+					AND = {
+						war = no
+						liege = { war = yes }
+					}
+				}
+			}	
+			liege = {
+				opinion = {
+					modifier = opinion_service_rendered
+					who = ROOT
+					years = 3
+				}
+			}
+		}
+	}
+}
+
+# Heroism Shown 2
+character_event = {
+	id = 263
+	desc = EVTDESC263
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA262
+		if = {
+			limit = { tier = EMPEROR }
+			prestige = 100
+		}
+		if = {
+			limit = { tier = KING }
+			prestige = 75
+		}
+		if = {
+			limit = { tier = DUKE }
+			prestige = 50
+		}
+		if = {
+			limit = { tier = COUNT }
+			prestige = 30
+		}
+		if = {
+			limit = { tier = BARON }
+			prestige = 20
+		}
+		if = {
+			limit = { is_ruler = no }
+			prestige = 10
+		}
+		if = {
+			limit = {
+				OR = {
+					is_ruler = no
+					AND = {
+						war = no
+						liege = { war = yes }
+					}
+				}
+			}	
+			liege = {
+				opinion = {
+					modifier = opinion_service_rendered
+					who = ROOT
+					years = 3
+				}
+			}
+		}
+	}
+}
+
+# Heroism Shown 3
+character_event = {
+	id = 264
+	desc = EVTDESC264
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA262
+		if = {
+			limit = { tier = EMPEROR }
+			prestige = 100
+		}
+		if = {
+			limit = { tier = KING }
+			prestige = 75
+		}
+		if = {
+			limit = { tier = DUKE }
+			prestige = 50
+		}
+		if = {
+			limit = { tier = COUNT }
+			prestige = 30
+		}
+		if = {
+			limit = { tier = BARON }
+			prestige = 20
+		}
+		if = {
+			limit = { is_ruler = no }
+			prestige = 10
+		}
+		if = {
+			limit = {
+				OR = {
+					is_ruler = no
+					AND = {
+						war = no
+						liege = { war = yes }
+					}
+				}
+			}	
+			liege = {
+				opinion = {
+					modifier = opinion_service_rendered
+					who = ROOT
+					years = 3
+				}
+			}
+		}
+	}
+}
+
+# Heroism Shown 4
+character_event = {
+	id = 265
+	desc = EVTDESC265
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA262
+		if = {
+			limit = { tier = EMPEROR }
+			prestige = 100
+		}
+		if = {
+			limit = { tier = KING }
+			prestige = 75
+		}
+		if = {
+			limit = { tier = DUKE }
+			prestige = 50
+		}
+		if = {
+			limit = { tier = COUNT }
+			prestige = 30
+		}
+		if = {
+			limit = { tier = BARON }
+			prestige = 20
+		}
+		if = {
+			limit = { is_ruler = no }
+			prestige = 10
+		}
+		if = {
+			limit = {
+				OR = {
+					is_ruler = no
+					AND = {
+						war = no
+						liege = { war = yes }
+					}
+				}
+			}	
+			liege = {
+				opinion = {
+					modifier = opinion_service_rendered
+					who = ROOT
+					years = 3
+				}
+			}
+		}
+	}
+}
+
+# Heroism Shown 5
+character_event = {
+	id = 266
+	desc = EVTDESC266
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA262
+		if = {
+			limit = { tier = EMPEROR }
+			prestige = 100
+		}
+		if = {
+			limit = { tier = KING }
+			prestige = 75
+		}
+		if = {
+			limit = { tier = DUKE }
+			prestige = 50
+		}
+		if = {
+			limit = { tier = COUNT }
+			prestige = 30
+		}
+		if = {
+			limit = { tier = BARON }
+			prestige = 20
+		}
+		if = {
+			limit = { is_ruler = no }
+			prestige = 10
+		}
+		if = {
+			limit = {
+				OR = {
+					is_ruler = no
+					AND = {
+						war = no
+						liege = { war = yes }
+					}
+				}
+			}	
+			liege = {
+				opinion = {
+					modifier = opinion_service_rendered
+					who = ROOT
+					years = 3
+				}
+			}
+		}
+	}
+}
+
+# Heroism Shown 6
+character_event = {
+	id = 267
+	desc = EVTDESC267
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA262
+		if = {
+			limit = { tier = EMPEROR }
+			prestige = 100
+		}
+		if = {
+			limit = { tier = KING }
+			prestige = 75
+		}
+		if = {
+			limit = { tier = DUKE }
+			prestige = 50
+		}
+		if = {
+			limit = { tier = COUNT }
+			prestige = 30
+		}
+		if = {
+			limit = { tier = BARON }
+			prestige = 20
+		}
+		if = {
+			limit = { is_ruler = no }
+			prestige = 10
+		}
+		if = {
+			limit = {
+				OR = {
+					is_ruler = no
+					AND = {
+						war = no
+						liege = { war = yes }
+					}
+				}
+			}	
+			liege = {
+				opinion = {
+					modifier = opinion_service_rendered
+					who = ROOT
+					years = 3
+				}
+			}
+		}
+	}
+}
+
+
+#On-action battle_lost: Imprisoned by the enemy
+character_event = {
+	id = 250
+	desc = EVTDESC250
+	picture = GFX_evt_into_the_dungeon
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+	trigger = {
+		is_alive = yes
+		prisoner = no
+		NOT = {
+			character = FROM
+		}
+		NOT = { trait = white_walker }
+	}
+	
+	weight_multiplier = {
+		days = 1
+
+		modifier = {
+			factor = 1.25
+			trait = brave
+		}
+		modifier = {
+			factor = 0.25
+			trait = craven
+		}
+		modifier = {
+			factor = 0.25
+			trait = paranoid
+		}
+
+		modifier = {
+			factor = 1.25
+			trait = stressed
+		}
+		modifier = {
+			factor = 1.25
+			trait = depressed
+		}
+		modifier = {
+			factor = 1.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 1.5
+			trait = possessed
+		}
+		modifier = {
+			factor = 2
+			has_epidemic = yes
+		}
+		modifier = {
+			factor = 2
+			is_ill = yes
+		}
+		modifier = {
+			factor = 1.15
+			trait = wounded
+		}
+		modifier = {
+			factor = 1.25
+			is_maimed_trigger = yes
+		}
+		modifier = {
+			factor = 2.0
+			trait = infirm
+		}
+		modifier = {
+			factor = 3.0
+			trait = incapable
+		}
+		modifier = {
+			factor = 1.1
+			trait = drunkard
+		}
+		modifier = {
+			factor = 0.5
+			tier = duke
+		}
+		modifier = {
+			factor = 0.25
+			tier = king
+		}
+		modifier = {
+			factor = 0.125
+			tier = emperor
+		}
+		modifier = {
+			factor = 2.0
+			107 = { NOT = { has_province_modifier = completeharren3 } }
+			c_harrenhal = {
+				holder_scope = {
+					OR = {
+						character = ROOT
+						any_child = { character = ROOT }
+						any_child = { any_child = { character = ROOT } }
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = CURSES
+		tooltip = {
+			imprison = FROM		
+			any_ward = {
+				limit = { 
+					at_location = FROM 
+					NOT = { trait = dragon }
+				}
+				imprison = FROM
+			}
+		}	
+		set_character_flag = captured_in_battle
+		hidden_tooltip = {
+			FROM = {
+				character_event = { 
+					id = 50020 # imprisoned_events.txt
+				}
+			}
+		}
+	}
+}
+
+# Leading attacker dies, will never trigger from code
+letter_event = {
+	id = 251
+	is_triggered_only = yes
+	border = GFX_event_letter_frame_war
+	
+	trigger = {
+		ai = no
+	}
+
+	desc = EVTDESC251
+
+	option = {
+		name = OK
+	}
+}
+
+# Leading defender dies, will never trigger from code
+letter_event = {
+	id = 252
+	desc = EVTDESC251
+	border = GFX_event_letter_frame_war
+	
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+#Marshal: Unnecessary violence
+character_event = {
+	id = 255
+	desc = EVTDESC255
+	picture = GFX_evt_torture
+	border = GFX_event_normal_frame_war
+	
+	capable_only = yes
+	
+	is_triggered_only = yes
+	war = yes
+	
+	trigger = {	
+		in_command = yes
+		has_job_title = job_marshal
+		trait = cruel
+	}
+	
+	weight_multiplier = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA255
+		prestige = -20
+		piety = -20
+		hidden_tooltip = {
+			liege = {
+				character_event = {
+					id = 256
+				}
+			}
+		}
+	}
+}
+
+#Liege: Marshal used unnecessary violence
+character_event = {
+	id = 256
+	desc = EVTDESC256
+	picture = GFX_evt_torture
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA256 #That's the cruelty of war
+		if = {
+			limit = { higher_tier_than = DUKE }
+			prestige = -40
+		}	
+		if = {
+			limit = { tier = DUKE }
+			prestige = -20
+		}
+		if = {
+			limit = { lower_tier_than = DUKE }
+			prestige = -10
+		}
+	}
+	option = {
+		name = EVTOPTB256 #Disapprove of his conduct
+		opinion = {
+			modifier = opinion_disapprove
+			who = FROM
+			years = 5
+		}
+	}
+	option = {
+		name = EVTOPTC256 #He's right, we should terrorise our enemy
+		trigger = {
+			NOT = { trait = kind }
+		}
+		opinion = {
+			modifier = opinion_approves
+			who = FROM
+			years = 5
+		}
+		if = {
+			limit = { higher_tier_than = DUKE }
+			prestige = -80
+		}	
+		if = {
+			limit = { tier = DUKE }
+			prestige = -40
+		}
+		if = {
+			limit = { lower_tier_than = DUKE }
+			prestige = -20
+		}
+		if = {
+			limit = { 
+				NOT = { trait = cruel } 
+				NOT = { personality_traits = 6 }
+			}
+			random = {
+				chance = 25
+				add_trait = cruel
+				hidden_tooltip = {
+					character_event ={
+						id = 38259 #Notify Cruel
+					}
+				}
+			}
+		}	
+	}
+}
+
+
+### Combat Trait Events
+
+# Event 1
+character_event = {
+	id = 96500
+	desc = EVTDESC96500
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	trigger = { 
+		can_have_more_leadership_traits = yes
+		is_alive = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.5
+			martial = 10
+		}
+		modifier = {
+			factor = 1.5
+			martial = 14
+		}	
+		modifier = {
+			factor = 1.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+		modifier = {
+			trait = genius
+			factor = 1.5
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 1.2
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.1
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.7
+		}
+		modifier = {
+			is_strong_trigger = yes
+			factor = 1.2
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 0.8
+		}		
+		modifier = {
+			factor = 0.85
+			trait = stressed
+		}
+		modifier = {
+			factor = 0.85
+			trait = depressed
+		}
+		modifier = {
+			factor = 0.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 0.5
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.9
+			is_ill = yes
+		}
+		modifier = {
+			factor = 0.6
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.9
+			trait = drunkard
+		}
+	}
+
+	option = {
+		name = EVTOPTK96500 # Jungle Terrain Specialization
+		trigger = {
+			location = { terrain = jungle }
+			NOR = { 
+				trait = rough_terrain_leader
+				trait = flat_terrain_leader
+				trait = mountain_terrain_leader
+				trait = desert_terrain_leader
+				trait = jungle_terrain_leader
+			}
+		}
+		add_trait = jungle_terrain_leader
+	}
+	option = {
+		name = EVTOPTL96500 # War elephants
+		trigger = {
+			location = {
+				OR = {
+					culture_group = moraqi_group
+					culture_group = yi_ti_group
+					culture = volantene
+					culture = eastern_valyrian
+					culture_group = ghiscari_group
+					culture_group = qarth_group
+					culture_group = jade_islands_group
+				}
+			}
+			NOT = { trait = war_elephant_leader }
+		}
+		add_trait = war_elephant_leader
+	}
+	option = {
+		name = EVTOPTA96500 # Rough Terrain Specialization
+		trigger = {
+			OR = {
+				location = { terrain = forest }
+				location = { terrain = hills }
+			}
+			NOR = { 
+				trait = rough_terrain_leader
+				trait = flat_terrain_leader
+				trait = mountain_terrain_leader
+				trait = desert_terrain_leader
+				trait = jungle_terrain_leader
+			}
+		}
+		add_trait = rough_terrain_leader
+	}
+	option = {
+		name = EVTOPTB96500 # Flat Terrain Specialization
+		trigger = {
+			OR = {
+				location = { terrain = plains }
+				location = { terrain = farmlands }
+				location = { terrain = steppe }
+			}
+			NOR = { 
+				trait = rough_terrain_leader
+				trait = flat_terrain_leader
+				trait = mountain_terrain_leader
+				trait = desert_terrain_leader
+				trait = jungle_terrain_leader
+			}
+		}
+		add_trait = flat_terrain_leader
+	}
+	option = {
+		name = EVTOPTC96500 # Mountain Terrain Specialization
+		trigger = {
+			location = { terrain = mountain }
+			NOR = { 
+				trait = rough_terrain_leader
+				trait = flat_terrain_leader
+				trait = mountain_terrain_leader
+				trait = desert_terrain_leader
+				trait = jungle_terrain_leader
+			}
+		}
+		add_trait = mountain_terrain_leader
+	}
+	option = {
+		name = EVTOPTD96500 # Desert Terrain Leader
+		trigger = {
+			location = { terrain = desert }
+			NOR = { 
+				trait = rough_terrain_leader
+				trait = flat_terrain_leader
+				trait = mountain_terrain_leader
+				trait = desert_terrain_leader
+				trait = jungle_terrain_leader
+			}
+		}
+		add_trait = desert_terrain_leader
+	}
+	option = {
+		name = EVTOPTE96500 # Cavalry
+		trigger = {
+			NOR = { 
+				trait = cavalry_leader
+				trait = heavy_infantry_leader
+				trait = light_foot_leader
+			}
+		}
+		add_trait = cavalry_leader
+	}
+	option = {
+		name = EVTOPTF96500 # Light Infantry
+		trigger = {
+			NOR = { 
+				trait = cavalry_leader
+				trait = heavy_infantry_leader
+				trait = light_foot_leader
+			}
+		}
+		add_trait = light_foot_leader
+	}
+	option = {
+		name = EVTOPTG96500 # Heavy Infantry
+		trigger = {
+			NOR = { 
+				trait = cavalry_leader
+				trait = heavy_infantry_leader
+				trait = light_foot_leader
+			}
+		}
+		add_trait = heavy_infantry_leader
+	}
+}
+
+# Event 2
+character_event = {
+	id = 96501
+	desc = EVTDESC96500
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	trigger = { 
+		can_have_more_leadership_traits = yes
+		is_alive = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+		modifier = {
+			trait = genius
+			factor = 1.5
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 1.2
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.1
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.7
+		}
+		modifier = {
+			is_strong_trigger = yes
+			factor = 1.2
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 0.8
+		}		
+		modifier = {
+			factor = 0.85
+			trait = stressed
+		}
+		modifier = {
+			factor = 0.85
+			trait = depressed
+		}
+		modifier = {
+			factor = 0.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 0.5
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.9
+			is_ill = yes
+		}
+		modifier = {
+			factor = 0.6
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.9
+			trait = drunkard
+		}
+	}
+
+	option = { # Organizer
+		name = EVTOPTA96502
+		trigger = {
+			NOT = { 
+				trait = organizer
+			}
+		}
+		add_trait = organizer
+	}
+	option = { # Experimenter
+		name = EVTOPTB96502
+		trigger = {
+			NOT = { 
+				trait = experimenter
+			}
+		}
+		add_trait = experimenter
+	}
+	option = { # Holy Warrior
+		name = EVTOPTC96502
+		trigger = {
+			trait = zealous
+			NOR = { 
+				trait = holy_warrior
+				trait = cynical
+			}
+		}
+		add_trait = holy_warrior
+	}
+	option = { # Unyielding
+		name = EVTOPTD96502
+		trigger = {
+			NOT = { 
+				trait = unyielding_leader
+			}
+		}
+		add_trait = unyielding_leader
+	}
+}
+
+# Event 3
+character_event = {
+	id = 96502
+	desc = EVTDESC96500
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	trigger = { 
+		can_have_more_leadership_traits = yes
+		is_alive = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+		modifier = {
+			trait = genius
+			factor = 1.5
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 1.2
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.1
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.7
+		}
+		modifier = {
+			is_strong_trigger = yes
+			factor = 1.2
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 0.8
+		}		
+		modifier = {
+			factor = 0.85
+			trait = stressed
+		}
+		modifier = {
+			factor = 0.85
+			trait = depressed
+		}
+		modifier = {
+			factor = 0.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 0.5
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.9
+			is_ill = yes
+		}
+		modifier = {
+			factor = 0.6
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.9
+			trait = drunkard
+		}
+	}
+	
+	option = {
+		name = EVTOPTH96500 # Aggressive
+		trigger = {
+			NOR = { 
+				trait = defensive_leader
+				trait = aggressive_leader
+			}
+		}
+		add_trait = aggressive_leader
+	}
+	option = {
+		name = EVTOPTI96500 # Defensive
+		trigger = {
+			NOR = { 
+				trait = defensive_leader
+				trait = aggressive_leader
+			}
+		}
+		add_trait = defensive_leader
+	}
+	option = {
+		name = EVTOPTJ96500 # Inspiring
+		trigger = {
+			NOR = { 
+				trait = inspiring_leader
+				trait = back_seat_leader
+			}
+		}
+		add_trait = inspiring_leader
+	}
+	option = { # Trickster
+		name = EVTOPTH96501
+		trigger = {
+			NOT = { 
+				trait = trickster
+			}
+		}
+		add_trait = trickster
+	}
+	option = {
+		name = EVTOPTZ96500 # Leads from rear
+		trigger = {
+			NOR = { 
+				trait = inspiring_leader
+				trait = back_seat_leader
+			}
+		}
+		add_trait = back_seat_leader
+	}
+}
+
+# Event 4
+character_event = {
+	id = 96503
+	desc = EVTDESC96500
+	picture = GFX_evt_battle
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	trigger = { 
+		can_have_more_leadership_traits = yes
+		is_alive = yes
+	}
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}
+		modifier = {
+			trait = genius
+			factor = 1.5
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 1.2
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 0.5
+		}
+		modifier = {
+			trait = imbecile
+			factor = 0.1
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.7
+		}
+		modifier = {
+			is_strong_trigger = yes
+			factor = 1.2
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 0.8
+		}		
+		modifier = {
+			factor = 0.85
+			trait = stressed
+		}
+		modifier = {
+			factor = 0.85
+			trait = depressed
+		}
+		modifier = {
+			factor = 0.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 0.5
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.9
+			is_ill = yes
+		}
+		modifier = {
+			factor = 0.6
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.9
+			trait = drunkard
+		}
+	}
+
+	option = {
+		name = EVTOPTA96500 # Rough Terrain Specialization
+		trigger = {
+			OR = {
+				location = { terrain = forest }
+				location = { terrain = hills }
+			}
+			NOR = { 
+				trait = rough_terrain_leader
+				trait = flat_terrain_leader
+				trait = mountain_terrain_leader
+				trait = desert_terrain_leader
+				trait = jungle_terrain_leader
+			}
+		}
+		add_trait = rough_terrain_leader
+	}
+	option = {
+		name = EVTOPTB96500 # Flat Terrain Specialization
+		trigger = {
+			OR = {
+				location = { terrain = plains }
+				location = { terrain = farmlands }
+				location = { terrain = steppe }
+			}
+			NOR = { 
+				trait = rough_terrain_leader
+				trait = flat_terrain_leader
+				trait = mountain_terrain_leader
+				trait = desert_terrain_leader
+				trait = jungle_terrain_leader
+			}
+		}
+		add_trait = flat_terrain_leader
+	}
+	option = {
+		name = EVTOPTC96500 # Mountain Terrain Specialization
+		trigger = {
+			location = { terrain = mountain }
+			NOR = { 
+				trait = rough_terrain_leader
+				trait = flat_terrain_leader
+				trait = mountain_terrain_leader
+				trait = desert_terrain_leader
+				trait = jungle_terrain_leader
+			}
+		}
+		add_trait = mountain_terrain_leader
+	}
+	option = {
+		name = EVTOPTD96500 # Desert Terrain Leader
+		trigger = {
+			location = { terrain = desert }
+			NOR = { 
+				trait = rough_terrain_leader
+				trait = flat_terrain_leader
+				trait = mountain_terrain_leader
+				trait = desert_terrain_leader
+				trait = jungle_terrain_leader
+			}
+		}
+		add_trait = desert_terrain_leader
+	}
+	option = { # Flanker
+		name = EVTOPTI96501
+		trigger = {
+			NOT = { 
+				trait = flanker
+			}
+		}
+		add_trait = flanker
+	}
+	option = { # Narrow flank leader
+		name = EVTOPTJ96501
+		trigger = {
+			OR = {
+				location = { terrain = mountain }
+				location = { terrain = hills }
+				location = { terrain = forest }
+			}
+			NOT = { 
+				trait = narrow_flank_leader
+			}
+		}
+		add_trait = narrow_flank_leader
+	}
+	option = { # Siege leader
+		name = EVTOPTK96501
+		trigger = {
+			siege = {
+				is_attacker = yes
+			}
+			NOT = { 
+				trait = siege_leader
+			}
+		}
+		add_trait = siege_leader
+	}
+}
+
+# battle.1	Begin Battlefield Duel Chain
+character_event = { # Battlefield Duel Start
+	id = battle.1
+	desc = "EVTDESCbattle.1"
+	border = "GFX_event_normal_frame_war"
+	picture = GFX_evt_battle
+	
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		NOT = { has_character_modifier = battlefield_fight }
+		NOT = { culture_group = unoccupied_group }
+		# # Avoid crossing targets
+		# OR = {
+			# AND = {
+				# liege = { war = yes }
+				# war = no
+			# }
+			# AND = {
+				# war = yes
+				# liege = { 
+					# OR = {
+						# war = no 
+						# character = ROOT
+					# }	
+				# }	
+			# }
+		# }
+		# OR = {
+			# AND = {
+				# is_ruler = yes
+				# war = yes
+				# any_playable_ruler = {
+					# war_with = ROOT
+					# OR = {
+						# AND = {						
+							# in_battle = yes
+							# at_location = ROOT
+							# prisoner = no
+							# is_alive = yes		
+							# NOT = { character = ROOT }						
+							# NOT = { trait = dragon_rider }
+							# NOT = { culture_group = unoccupied_group }
+							# NOT = { has_character_modifier = battlefield_fight }
+						# }
+						# any_realm_character = {				
+							# in_battle = yes
+							# at_location = ROOT
+							# prisoner = no
+							# is_alive = yes		
+							# NOT = { character = ROOT }
+							# NOT = { trait = dragon_rider }
+							# NOT = { culture_group = unoccupied_group }
+							# NOT = { has_character_modifier = battlefield_fight }
+						# }
+					# }	
+				# }
+			# }	
+			# AND = {
+				# war = no
+				# liege = {
+					# any_playable_ruler = {
+						# war_with = PREV
+						# OR = {
+							# AND = {						
+								# in_battle = yes
+								# at_location = ROOT
+								# prisoner = no
+								# is_alive = yes		
+								# NOT = { character = ROOT }						
+								# NOT = { trait = dragon_rider }
+								# NOT = { culture_group = unoccupied_group }
+								# NOT = { has_character_modifier = battlefield_fight }
+							# }
+							# any_realm_character = {						
+								# in_battle = yes
+								# at_location = ROOT
+								# prisoner = no
+								# is_alive = yes		
+								# NOT = { character = ROOT }
+								# NOT = { trait = dragon_rider }
+								# NOT = { culture_group = unoccupied_group }
+								# NOT = { has_character_modifier = battlefield_fight }
+							# }
+						# }	
+					# }
+				# }
+			# }	
+		# }
+	}
+	
+	weight_multiplier = {
+		days = 1
+		
+		modifier = {
+			factor = 0.2
+			has_game_rule = { name = battlefield_duels value = rare }
+		}
+		modifier = {
+			factor = 5
+			has_game_rule = { name = battlefield_duels value = more_frequent }
+		}
+		
+		modifier = {
+			factor = 0.15
+			trait = back_seat_leader
+		}
+		
+		modifier = {
+			factor = 3
+			trait = duelist
+		}
+		modifier = {
+			factor = 3
+			trait = brave
+		}
+		modifier = {
+			factor = 3
+			trait = wroth
+		}
+		modifier = {
+			factor = 0.33
+			trait = craven
+		}
+		modifier = {
+			factor = 0.33
+			trait = patient
+		}
+		modifier = {
+			factor = 1.5
+			107 = { NOT = { has_province_modifier = completeharren3 } }
+			c_harrenhal = {
+				holder_scope = {
+					OR = {
+						character = ROOT
+						any_child = { character = ROOT }
+						any_child = { any_child = { character = ROOT } }
+					}
+				}
+			}
+		}
+		#Unlikely to be in middle of battle
+		modifier = {
+			factor = 0.05
+			is_crippled_trigger = yes
+		}
+		modifier = {
+			factor = 0.15
+			is_ill = yes
+		}
+		modifier = {
+			factor = 0.15
+			is_maimed_trigger = yes
+		}
+		modifier = {
+			factor = 0.25
+			trait = wounded
+		}
+		modifier = {
+			factor = 0.05
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.05
+			trait = blinded
+		}
+		modifier = {
+			factor = 0.05
+			trait = blinded_age
+		}
+	}
+	
+	immediate = {
+		# Target lock
+		if = {
+			limit = { 
+				is_ruler = yes
+				war = yes
+				# liege = { 
+					# OR = {
+						# war = no 
+						# character = ROOT
+					# }	
+				# }
+			}
+			random_current_enemy = {
+				limit = {
+					OR = {
+						AND = {						
+							in_battle = yes
+							at_location = ROOT
+							prisoner = no
+							is_alive = yes		
+							NOT = { character = ROOT }
+							NOT = { trait = dragon_rider }
+							NOT = { culture_group = unoccupied_group }
+							NOT = { has_character_modifier = battlefield_fight }
+						}
+						any_realm_character = {						
+							in_battle = yes
+							at_location = ROOT
+							prisoner = no
+							is_alive = yes		
+							NOT = { character = ROOT }
+							NOT = { trait = dragon_rider }
+							NOT = { culture_group = unoccupied_group }
+							NOT = { has_character_modifier = battlefield_fight }
+						}
+					}	
+				}
+				if = {
+					limit = {
+						in_battle = yes
+						at_location = ROOT
+						prisoner = no
+						is_alive = yes		
+						NOT = { character = ROOT }						
+						NOT = { trait = dragon_rider }
+						NOT = { culture_group = unoccupied_group }
+						NOT = { has_character_modifier = battlefield_fight }
+					}
+					if = {
+						limit = { ROOT = { trait = dragon_rider } }
+						random = {
+							chance = 60
+							character_event = { id = dragon.33 tooltip = "EVTTOOLTIPbattle.2" }
+							break = yes
+						}
+					}	
+					character_event = { id = battle.2 tooltip = "EVTTOOLTIPbattle.2" }
+					break = yes
+				}
+				random_realm_character = {
+					limit = {
+						in_battle = yes
+						at_location = ROOT
+						prisoner = no
+						is_alive = yes		
+						NOT = { character = ROOT }						
+						NOT = { trait = dragon_rider }
+						NOT = { culture_group = unoccupied_group }
+						NOT = { has_character_modifier = battlefield_fight }
+					}
+					if = {
+						limit = { ROOT = { trait = dragon_rider } }
+						random = {
+							chance = 60
+							character_event = { id = dragon.33 tooltip = "EVTTOOLTIPbattle.2" }
+							break = yes
+						}
+					}
+					character_event = { id = battle.2 tooltip = "EVTTOOLTIPbattle.2" }
+					break = yes
+				}
+			}
+			random_playable_ruler = {
+				limit = {
+					war_with = ROOT
+					OR = {
+						AND = {						
+							in_battle = yes
+							at_location = ROOT
+							prisoner = no
+							is_alive = yes		
+							NOT = { character = ROOT }
+							NOT = { trait = dragon_rider }
+							NOT = { culture_group = unoccupied_group }
+							NOT = { has_character_modifier = battlefield_fight }
+						}
+						any_realm_character = {						
+							in_battle = yes
+							at_location = ROOT
+							prisoner = no
+							is_alive = yes		
+							NOT = { character = ROOT }
+							NOT = { trait = dragon_rider }
+							NOT = { culture_group = unoccupied_group }
+							NOT = { has_character_modifier = battlefield_fight }
+						}
+					}	
+				}
+				if = {
+					limit = {
+						in_battle = yes
+						at_location = ROOT
+						prisoner = no
+						is_alive = yes		
+						NOT = { character = ROOT }						
+						NOT = { trait = dragon_rider }
+						NOT = { culture_group = unoccupied_group }
+						NOT = { has_character_modifier = battlefield_fight }
+					}
+					if = {
+						limit = { ROOT = { trait = dragon_rider } }
+						random = {
+							chance = 60
+							character_event = { id = dragon.33 tooltip = "EVTTOOLTIPbattle.2" }
+							break = yes
+						}
+					}
+					character_event = { id = battle.2 tooltip = "EVTTOOLTIPbattle.2" }
+					break = yes
+				}
+				random_realm_character = {
+					limit = {
+						in_battle = yes
+						at_location = ROOT
+						prisoner = no
+						is_alive = yes		
+						NOT = { character = ROOT }						
+						NOT = { trait = dragon_rider }
+						NOT = { culture_group = unoccupied_group }
+						NOT = { has_character_modifier = battlefield_fight }
+					}
+					if = {
+						limit = { ROOT = { trait = dragon_rider } }
+						random = {
+							chance = 60
+							character_event = { id = dragon.33 tooltip = "EVTTOOLTIPbattle.2" }
+							break = yes
+						}
+					}
+					character_event = { id = battle.2 tooltip = "EVTTOOLTIPbattle.2" }
+					break = yes
+				}
+			}
+		}
+		if = {
+			limit = { 
+				liege = { NOT = { character = ROOT } }				
+			}
+			liege = {
+				random_current_enemy = {
+					limit = {
+						OR = {
+							AND = {						
+								in_battle = yes
+								at_location = ROOT
+								prisoner = no
+								is_alive = yes		
+								NOT = { character = ROOT }
+								NOT = { trait = dragon_rider }
+								NOT = { culture_group = unoccupied_group }
+								NOT = { has_character_modifier = battlefield_fight }
+							}
+							any_realm_character = {						
+								in_battle = yes
+								at_location = ROOT
+								prisoner = no
+								is_alive = yes		
+								NOT = { character = ROOT }
+								NOT = { trait = dragon_rider }
+								NOT = { culture_group = unoccupied_group }
+								NOT = { has_character_modifier = battlefield_fight }
+							}
+						}	
+					}
+					if = {
+						limit = {
+							in_battle = yes
+							at_location = ROOT
+							prisoner = no
+							is_alive = yes		
+							NOT = { character = ROOT }						
+							NOT = { trait = dragon_rider }
+							NOT = { culture_group = unoccupied_group }
+							NOT = { has_character_modifier = battlefield_fight }
+						}
+						if = {
+							limit = { ROOT = { trait = dragon_rider } }
+							random = {
+								chance = 60
+								character_event = { id = dragon.33 tooltip = "EVTTOOLTIPbattle.2" }
+								break = yes
+							}
+						}
+						character_event = { id = battle.2 tooltip = "EVTTOOLTIPbattle.2" }
+						break = yes
+					}
+					random_realm_character = {
+						limit = {
+							in_battle = yes
+							at_location = ROOT
+							prisoner = no
+							is_alive = yes		
+							NOT = { character = ROOT }						
+							NOT = { trait = dragon_rider }
+							NOT = { culture_group = unoccupied_group }
+							NOT = { has_character_modifier = battlefield_fight }
+						}
+						if = {
+							limit = { ROOT = { trait = dragon_rider } }
+							random = {
+								chance = 60
+								character_event = { id = dragon.33 tooltip = "EVTTOOLTIPbattle.2" }
+								break = yes
+							}
+						}
+						character_event = { id = battle.2 tooltip = "EVTTOOLTIPbattle.2" }
+						break = yes
+					}
+				}
+				random_playable_ruler = {
+					limit = {
+						war_with = PREV
+						OR = {
+							AND = {						
+								in_battle = yes
+								at_location = ROOT
+								prisoner = no
+								is_alive = yes		
+								NOT = { character = ROOT }
+								NOT = { trait = dragon_rider }
+								NOT = { culture_group = unoccupied_group }
+								NOT = { has_character_modifier = battlefield_fight }
+							}
+							any_realm_character = {						
+								in_battle = yes
+								at_location = ROOT
+								prisoner = no
+								is_alive = yes		
+								NOT = { character = ROOT }
+								NOT = { trait = dragon_rider }
+								NOT = { culture_group = unoccupied_group }
+								NOT = { has_character_modifier = battlefield_fight }
+							}
+						}
+					}
+					if = {
+						limit = {
+							in_battle = yes
+							at_location = ROOT
+							prisoner = no
+							is_alive = yes		
+							NOT = { character = ROOT }						
+							NOT = { trait = dragon_rider }
+							NOT = { culture_group = unoccupied_group }
+							NOT = { has_character_modifier = battlefield_fight }
+						}
+						if = {
+							limit = { ROOT = { trait = dragon_rider } }
+							random = {
+								chance = 60
+								character_event = { id = dragon.33 tooltip = "EVTTOOLTIPbattle.2" }
+								break = yes
+							}
+						}
+						character_event = { id = battle.2 tooltip = "EVTTOOLTIPbattle.2" }
+						break = yes
+					}
+					random_realm_character = {
+						limit = {
+							in_battle = yes
+							at_location = ROOT
+							prisoner = no
+							is_alive = yes		
+							NOT = { character = ROOT }						
+							NOT = { trait = dragon_rider }
+							NOT = { culture_group = unoccupied_group }
+							NOT = { has_character_modifier = battlefield_fight }
+						}
+						if = {
+							limit = { ROOT = { trait = dragon_rider } }
+							random = {
+								chance = 60
+								character_event = { id = dragon.33 tooltip = "EVTTOOLTIPbattle.2" }
+								break = yes
+							}
+						}
+						character_event = { id = battle.2 tooltip = "EVTTOOLTIPbattle.2" }
+						break = yes
+					}
+				}
+			}
+		}
+		if = {
+			limit = { is_ruler = yes }
+			random_opinion_modifier_target = {
+				limit = {
+					reverse_has_opinion_modifier = { who = ROOT modifier = opinion_looted }
+					OR = {
+						AND = {						
+							in_battle = yes
+							at_location = ROOT
+							prisoner = no
+							is_alive = yes		
+							NOT = { character = ROOT }
+							NOT = { trait = dragon_rider }
+							NOT = { culture_group = unoccupied_group }
+							NOT = { has_character_modifier = battlefield_fight }
+						}
+						any_realm_character = {						
+							in_battle = yes
+							at_location = ROOT
+							prisoner = no
+							is_alive = yes		
+							NOT = { character = ROOT }
+							NOT = { trait = dragon_rider }
+							NOT = { culture_group = unoccupied_group }
+							NOT = { has_character_modifier = battlefield_fight }
+						}
+					}
+				}
+				if = {
+					limit = {
+						in_battle = yes
+						at_location = ROOT
+						prisoner = no
+						is_alive = yes		
+						NOT = { character = ROOT }						
+						NOT = { trait = dragon_rider }
+						NOT = { culture_group = unoccupied_group }
+						NOT = { has_character_modifier = battlefield_fight }
+					}
+					if = {
+						limit = { ROOT = { trait = dragon_rider } }
+						random = {
+							chance = 60
+							character_event = { id = dragon.33 tooltip = "EVTTOOLTIPbattle.2" }
+							break = yes
+						}
+					}
+					character_event = { id = battle.2 tooltip = "EVTTOOLTIPbattle.2" }
+					break = yes
+				}
+				random_realm_character = {
+					limit = {
+						in_battle = yes
+						at_location = ROOT
+						prisoner = no
+						is_alive = yes		
+						NOT = { character = ROOT }						
+						NOT = { trait = dragon_rider }
+						NOT = { culture_group = unoccupied_group }
+						NOT = { has_character_modifier = battlefield_fight }
+					}
+					if = {
+						limit = { ROOT = { trait = dragon_rider } }
+						random = {
+							chance = 60
+							character_event = { id = dragon.33 tooltip = "EVTTOOLTIPbattle.2" }
+							break = yes
+						}
+					}
+					character_event = { id = battle.2 tooltip = "EVTTOOLTIPbattle.2" }
+					break = yes
+				}
+			}
+		}	
+		if = {
+			limit = { 
+				liege = { NOT = { character = ROOT } }				
+			}
+			liege = {
+				random_opinion_modifier_target = {
+					limit = {
+						reverse_has_opinion_modifier = { who = PREV modifier = opinion_looted }
+						OR = {
+							AND = {						
+								in_battle = yes
+								at_location = ROOT
+								prisoner = no
+								is_alive = yes		
+								NOT = { character = ROOT }
+								NOT = { trait = dragon_rider }
+								NOT = { culture_group = unoccupied_group }
+								NOT = { has_character_modifier = battlefield_fight }
+							}
+							any_realm_character = {						
+								in_battle = yes
+								at_location = ROOT
+								prisoner = no
+								is_alive = yes		
+								NOT = { character = ROOT }
+								NOT = { trait = dragon_rider }
+								NOT = { culture_group = unoccupied_group }
+								NOT = { has_character_modifier = battlefield_fight }
+							}
+						}
+					}
+					if = {
+						limit = {
+							in_battle = yes
+							at_location = ROOT
+							prisoner = no
+							is_alive = yes		
+							NOT = { character = ROOT }						
+							NOT = { trait = dragon_rider }
+							NOT = { culture_group = unoccupied_group }
+							NOT = { has_character_modifier = battlefield_fight }
+						}
+						if = {
+							limit = { ROOT = { trait = dragon_rider } }
+							random = {
+								chance = 60
+								character_event = { id = dragon.33 tooltip = "EVTTOOLTIPbattle.2" }
+								break = yes
+							}
+						}
+						character_event = { id = battle.2 tooltip = "EVTTOOLTIPbattle.2" }
+						break = yes
+					}
+					random_realm_character = {
+						limit = {
+							in_battle = yes
+							at_location = ROOT
+							prisoner = no
+							is_alive = yes		
+							NOT = { character = ROOT }						
+							NOT = { trait = dragon_rider }
+							NOT = { culture_group = unoccupied_group }
+							NOT = { has_character_modifier = battlefield_fight }
+						}
+						if = {
+							limit = { ROOT = { trait = dragon_rider } }
+							random = {
+								chance = 60
+								character_event = { id = dragon.33 tooltip = "EVTTOOLTIPbattle.2" }
+								break = yes
+							}
+						}
+						character_event = { id = battle.2 tooltip = "EVTTOOLTIPbattle.2" }
+						break = yes
+					}
+				}
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVTOPTAbattle.1"
+		#hidden_tooltip = {
+			#event_target:battle_duel_target = {
+				#character_event = { id = battle.2 tooltip = "EVTTOOLTIPbattle.2" }
+			#}
+		#}	
+	}
+}
+# battle.2	Defender: Fight or Run?
+character_event = {
+	id = battle.2
+	desc = "EVTDESCbattle.2"
+	picture = GFX_evt_battle
+	border = "GFX_event_normal_frame_war"
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = { add_character_modifier = { name = battlefield_fight duration = 20 } }
+		add_character_modifier = { name = battlefield_fight duration = 20 }
+	}
+	
+	option = {
+		name = "EVTOPTAbattle.2" #Fight
+		FROM = { character_event = { id = battle.3 tooltip = "EVTTOOLTIPbattle.3" } }
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2
+				trait = poor_warrior
+			}
+			modifier = {
+				factor = 3
+				trait = trained_warrior
+			}
+			modifier = {
+				factor = 6
+				trait = skilled_warrior
+			}
+			modifier = {
+				factor = 8
+				trait = master_warrior
+			}
+			modifier = {
+				factor = 6
+				trait = duelist
+			}
+			modifier = {
+				factor = 6
+				trait = brave
+			}
+			modifier = {
+				factor = 3
+				trait = proud
+			}
+			modifier = {
+				factor = 3
+				trait = wroth
+			}
+			modifier = {
+				factor = 3
+				is_strong_trigger = yes
+			}
+			modifier = {
+				factor = 3
+				trait = tall
+			}
+			#Avoid fights
+			modifier = {
+				factor = 0
+				OR = {
+					is_crippled_trigger = yes
+					trait = infirm
+					trait = blinded
+					trait = blinded_age
+				}	
+			}
+			modifier = {
+				factor = 0.1
+				is_ill = yes
+			}
+			modifier = {
+				factor = 0.1
+				is_maimed_trigger = yes
+			}
+			modifier = {
+				factor = 0.25
+				trait = wounded
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBbattle.2" #run
+		trigger = { NOT = { trait = berserker } }
+		hidden_tooltip = { FROM = { character_event = { id = battle.4 } } }		
+		remove_character_modifier = battlefield_fight
+		if = {
+			limit = { NOT = { trait = craven } }
+			random = {
+				chance = 25
+				add_trait = craven
+				hidden_tooltip = {
+					character_event ={
+						id = 38257 #Notify
+					}
+				}
+			}	
+		}
+		morale = -0.1
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.01
+				kingsguard = {
+					is_alive = yes
+					OR = {
+						AND = {
+							liege = { character = ROOT }
+							has_opinion_modifier = { who = ROOT modifier = loan_kingsguard }
+						}
+						ROOT = { has_landed_title = e_iron_throne }
+					}	
+					NOT = { trait = wounded }
+					NOT = { has_severe_disability_trigger = yes }
+					OR = {
+						location = { ROOT = { capital_scope = { province_id = PREVPREV } } }
+						at_location = ROOT
+					}					
+				}
+			}
+			modifier = {
+				factor = 2
+				FROM = { trait = poor_warrior }
+			}
+			modifier = {
+				factor = 3
+				FROM = { trait = trained_warrior }
+			}
+			modifier = {
+				factor = 4
+				FROM = { trait = skilled_warrior }
+			}
+			modifier = {
+				factor = 5
+				FROM = { trait = master_warrior }
+			}
+			modifier = {
+				factor = 2
+				FROM = { is_strong_trigger = yes }
+			}
+			modifier = {
+				factor = 2
+				FROM = { trait = tall }
+			}
+			modifier = {
+				factor = 6
+				trait = craven
+			}
+			modifier = {
+				factor = 3
+				trait = paranoid
+			}
+			modifier = {
+				factor = 3
+				is_weak_trigger = yes
+			}
+			modifier = {
+				factor = 2
+				trait = dwarf
+			}
+			modifier = {
+				factor = 2
+				trait = hunchback
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCbattle.3" #kingsguard
+		trigger = {
+			is_ruler = yes
+			kingsguard = {
+				is_alive = yes
+				OR = {
+					AND = {
+						liege = { character = ROOT }
+						has_opinion_modifier = { who = ROOT modifier = loan_kingsguard }
+					}
+					ROOT = { has_landed_title = e_iron_throne }
+				}	
+				NOT = { trait = wounded }
+				NOT = { has_severe_disability_trigger = yes }	
+				OR = {
+					location = { ROOT = { capital_scope = { province_id = PREVPREV } } }
+					at_location = ROOT
+				}					
+			}
+		}		
+		remove_character_modifier = battlefield_fight
+		kingsguard = {
+			limit = {
+				is_alive = yes
+				OR = {
+					AND = {
+						liege = { character = ROOT }
+						has_opinion_modifier = { who = ROOT modifier = loan_kingsguard }
+					}
+					ROOT = { has_landed_title = e_iron_throne }
+				}	
+				NOT = { trait = wounded }
+				NOT = { has_severe_disability_trigger = yes }	
+				OR = {
+					location = { ROOT = { capital_scope = { province_id = PREVPREV } } }
+					at_location = ROOT
+				}
+			}
+			add_character_modifier = {
+				name = battlefield_fight
+				duration = 20
+			}	
+			character_event = { id = battle.6 tooltip = "EVTTOOLTIPbattle.6" }
+		}
+		ai_chance = {
+			factor = 200
+			modifier = {
+				factor = 5
+				NOT = { 
+					OR = {
+						trait = poor_warrior 
+						trait = trained_warrior
+						trait = skilled_warrior
+						trait = master_warrior	
+					}	
+				}
+			}
+			modifier = {
+				factor = 0.5
+				trait = proud
+			}
+			modifier = {
+				factor = 2
+				FROM = { trait = poor_warrior }
+			}
+			modifier = {
+				factor = 3
+				FROM = { trait = trained_warrior }
+			}
+			modifier = {
+				factor = 4
+				FROM = { trait = skilled_warrior }
+			}
+			modifier = {
+				factor = 5
+				FROM = { trait = master_warrior }
+			}
+			modifier = {
+				factor = 2
+				FROM = { is_strong_trigger = yes }
+			}
+			modifier = {
+				factor = 2
+				FROM = { trait = tall }
+			}
+			modifier = {
+				factor = 2
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				trait = paranoid
+			}
+			modifier = {
+				factor = 2
+				is_weak_trigger = yes
+			}
+			modifier = {
+				factor = 2
+				trait = dwarf
+			}
+			modifier = {
+				factor = 2
+				trait = hunchback
+			}
+			modifier = {
+				factor = 2
+				is_ill = yes
+			}
+			modifier = {
+				factor = 2
+				trait = wounded
+			}
+			modifier = {
+				factor = 4
+				is_maimed_trigger = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCbattle.3" #bodyguard
+		trigger = {
+			is_ruler = yes
+			any_courtier = {
+				is_alive = yes
+				OR = {
+					has_minor_title = title_bodyguard
+					has_minor_title = title_bloodrider
+				}	
+				liege = { character = ROOT }
+				OR = {
+					at_location = ROOT
+					in_command = no
+				}	
+				NOT = { trait = wounded }
+				NOT = { has_severe_disability_trigger = yes }	
+			}
+		}	
+		remove_character_modifier = battlefield_fight
+		random_courtier = {
+			limit = {
+				is_alive = yes
+				OR = {
+					has_minor_title = title_bodyguard
+					has_minor_title = title_bloodrider
+				}	
+				liege = { character = ROOT }
+				OR = {
+					at_location = ROOT
+					in_command = no
+				}	
+				NOT = { trait = wounded }
+				NOT = { has_severe_disability_trigger = yes }	
+			}
+			add_character_modifier = {
+				name = battlefield_fight
+				duration = 20
+			}	
+			character_event = { id = battle.6 tooltip = "EVTTOOLTIPbattle.6" }
+		}
+		ai_chance = {
+			factor = 200
+			modifier = {
+				factor = 5
+				NOT = { 
+					OR = {
+						trait = poor_warrior 
+						trait = trained_warrior
+						trait = skilled_warrior
+						trait = master_warrior	
+					}	
+				}
+			}
+			modifier = {
+				factor = 0.5
+				trait = proud
+			}
+			modifier = {
+				factor = 2
+				FROM = { trait = poor_warrior }
+			}
+			modifier = {
+				factor = 3
+				FROM = { trait = trained_warrior }
+			}
+			modifier = {
+				factor = 4
+				FROM = { trait = skilled_warrior }
+			}
+			modifier = {
+				factor = 5
+				FROM = { trait = master_warrior }
+			}
+			modifier = {
+				factor = 2
+				FROM = { is_strong_trigger = yes }
+			}
+			modifier = {
+				factor = 2
+				FROM = { trait = tall }
+			}
+			modifier = {
+				factor = 2
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				trait = paranoid
+			}
+			modifier = {
+				factor = 2
+				is_weak_trigger = yes
+			}
+			modifier = {
+				factor = 2
+				trait = dwarf
+			}
+			modifier = {
+				factor = 2
+				trait = hunchback
+			}
+			modifier = {
+				factor = 2
+				is_ill = yes
+			}
+			modifier = {
+				factor = 2
+				trait = wounded
+			}
+			modifier = {
+				factor = 4
+				is_maimed_trigger = yes
+			}
+		}
+	}
+}
+# battle.3	Attacker: Fight or Run? (Begin Duel)
+character_event = {
+	id = battle.3
+	desc = "EVTDESCbattle.3"
+	picture = GFX_evt_battle
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAbattle.3" #fight
+		
+		# Set context flags for duel
+		set_character_flag = duel_context_battle
+		FROM = { set_character_flag = duel_context_battle }
+		set_character_flag = flag_battlefield_duel
+		FROM = { set_character_flag = flag_battlefield_duel }
+		
+		# Begin duel
+		hidden_tooltip = { e_rebels = { holder_scope = { character_event = { id = duel.0 } } } }
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2
+				trait = poor_warrior
+			}
+			modifier = {
+				factor = 3
+				trait = trained_warrior
+			}
+			modifier = {
+				factor = 4
+				trait = skilled_warrior
+			}
+			modifier = {
+				factor = 5
+				trait = master_warrior
+			}
+			modifier = {
+				factor = 2
+				trait = brave
+			}
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+			modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 1.5
+				is_strong_trigger = yes
+			}
+			modifier = {
+				factor = 1.5
+				trait = tall
+			}
+			#Avoid fights
+			modifier = {
+				factor = 0
+				OR = {
+					is_crippled_trigger = yes
+					trait = infirm
+					trait = blinded
+					trait = blinded_age
+				}	
+			}
+			modifier = {
+				factor = 0.1
+				is_ill = yes
+			}
+			modifier = {
+				factor = 0.1
+				is_maimed_trigger = yes
+			}
+			modifier = {
+				factor = 0.25
+				trait = wounded
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBbattle.3" #run
+		trigger = { NOT = { trait = berserker } }
+		hidden_tooltip = { FROM = { character_event = { id = battle.5 } } }
+		remove_character_modifier = battlefield_fight
+		if = {
+			limit = { NOT = { trait = craven } }
+			random = {
+				chance = 25
+				add_trait = craven
+				hidden_tooltip = {
+					character_event ={
+						id = 38257 #Notify
+					}
+				}
+			}
+		}
+		morale = -0.1
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.01
+				kingsguard = {
+					is_alive = yes
+					OR = {
+						AND = {
+							liege = { character = ROOT }
+							has_opinion_modifier = { who = ROOT modifier = loan_kingsguard }
+						}
+						ROOT = { has_landed_title = e_iron_throne }
+					}	
+					NOT = { trait = wounded }
+					NOT = { has_severe_disability_trigger = yes }	
+					OR = {
+						location = { ROOT = { capital_scope = { province_id = PREVPREV } } }
+						at_location = ROOT
+					}					
+				}
+			}
+			modifier = {
+				factor = 2
+				FROM = { trait = poor_warrior }
+			}
+			modifier = {
+				factor = 3
+				FROM = { trait = trained_warrior }
+			}
+			modifier = {
+				factor = 4
+				FROM = { trait = skilled_warrior }
+			}
+			modifier = {
+				factor = 5
+				FROM = { trait = master_warrior }
+			}
+			modifier = {
+				factor = 2
+				FROM = { is_strong_trigger = yes }
+			}
+			modifier = {
+				factor = 2
+				FROM = { trait = tall }
+			}
+			modifier = {
+				factor = 2
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				trait = paranoid
+			}
+			modifier = {
+				factor = 2
+				is_weak_trigger = yes
+			}
+			modifier = {
+				factor = 2
+				trait = dwarf
+			}
+			modifier = {
+				factor = 2
+				trait = hunchback
+			}
+			modifier = {
+				factor = 2
+				is_ill = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCbattle.3" #kingsguard
+		trigger = {
+			kingsguard = {
+				is_alive = yes
+				OR = {
+					AND = {
+						liege = { character = ROOT }
+						has_opinion_modifier = { who = ROOT modifier = loan_kingsguard }
+					}
+					ROOT = { has_landed_title = e_iron_throne }
+				}	
+				NOT = { trait = wounded }
+				NOT = { has_severe_disability_trigger = yes }	
+				OR = {
+					location = { ROOT = { capital_scope = { province_id = PREVPREV } } }
+					at_location = ROOT
+				}					
+			}
+		}		
+		kingsguard = {
+			limit = {
+				is_alive = yes
+				OR = {
+					AND = {
+						liege = { character = ROOT }
+						has_opinion_modifier = { who = ROOT modifier = loan_kingsguard }
+					}
+					ROOT = { has_landed_title = e_iron_throne }
+				}	
+				NOT = { trait = wounded }
+				NOT = { has_severe_disability_trigger = yes }
+				OR = {
+					location = { ROOT = { capital_scope = { province_id = PREVPREV } } }
+					at_location = ROOT
+				}
+			}
+			add_character_modifier = {
+				name = battlefield_fight
+				duration = 20
+			}
+			character_event = { id = battle.9 tooltip = "EVTTOOLTIPbattle.9" }
+		}
+		remove_character_modifier = battlefield_fight
+		ai_chance = {
+			factor = 200
+			modifier = {
+				factor = 5
+				NOT = { 
+					trait = poor_warrior 
+					trait = trained_warrior
+					trait = skilled_warrior
+					trait = master_warrior					
+				}
+			}
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+			modifier = {
+				factor = 2
+				FROM = { trait = poor_warrior }
+			}
+			modifier = {
+				factor = 3
+				FROM = { trait = trained_warrior }
+			}
+			modifier = {
+				factor = 4
+				FROM = { trait = skilled_warrior }
+			}
+			modifier = {
+				factor = 5
+				FROM = { trait = master_warrior }
+			}
+			modifier = {
+				factor = 2
+				FROM = { is_strong_trigger = yes }
+			}
+			modifier = {
+				factor = 2
+				FROM = { trait = tall }
+			}
+			modifier = {
+				factor = 2
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				trait = paranoid
+			}
+			modifier = {
+				factor = 2
+				is_weak_trigger = yes
+			}
+			modifier = {
+				factor = 2
+				trait = dwarf
+			}
+			modifier = {
+				factor = 2
+				trait = hunchback
+			}
+			modifier = {
+				factor = 2
+				is_ill = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCbattle.3" #bodyguard
+		trigger = {
+			is_ruler = yes
+			any_courtier = {
+				is_alive = yes
+				OR = {
+					has_minor_title = title_bodyguard
+					has_minor_title = title_bloodrider
+				}	
+				liege = { character = ROOT }
+				OR = {
+					at_location = ROOT
+					in_command = no
+				}	
+				NOT = { trait = wounded }
+				NOT = { has_severe_disability_trigger = yes }	
+			}
+		}		
+		remove_character_modifier = battlefield_fight
+		random_courtier = {
+			limit = {
+				is_alive = yes
+				OR = {
+					has_minor_title = title_bodyguard
+					has_minor_title = title_bloodrider
+				}	
+				liege = { character = ROOT }
+				OR = {
+					at_location = ROOT
+					in_command = no
+				}	
+				NOT = { trait = wounded }
+				NOT = { has_severe_disability_trigger = yes }		
+			}
+			add_character_modifier = {
+				name = battlefield_fight
+				duration = 20
+			}
+			character_event = { id = battle.9 tooltip = "EVTTOOLTIPbattle.9" }
+		}
+		ai_chance = {
+			factor = 200
+			modifier = {
+				factor = 5
+				NOT = { 
+					OR = {
+						trait = poor_warrior 
+						trait = trained_warrior
+						trait = skilled_warrior
+						trait = master_warrior	
+					}	
+				}
+			}
+			modifier = {
+				factor = 0.5
+				trait = proud
+			}
+			modifier = {
+				factor = 2
+				FROM = { trait = poor_warrior }
+			}
+			modifier = {
+				factor = 3
+				FROM = { trait = trained_warrior }
+			}
+			modifier = {
+				factor = 4
+				FROM = { trait = skilled_warrior }
+			}
+			modifier = {
+				factor = 5
+				FROM = { trait = master_warrior }
+			}
+			modifier = {
+				factor = 2
+				FROM = { is_strong_trigger = yes }
+			}
+			modifier = {
+				factor = 2
+				FROM = { trait = tall }
+			}
+			modifier = {
+				factor = 2
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				trait = paranoid
+			}
+			modifier = {
+				factor = 2
+				is_weak_trigger = yes
+			}
+			modifier = {
+				factor = 2
+				trait = dwarf
+			}
+			modifier = {
+				factor = 2
+				trait = hunchback
+			}
+			modifier = {
+				factor = 2
+				is_ill = yes
+			}
+		}
+	}
+}
+# battle.4	Defender Runs
+character_event = {
+	id = battle.4
+	desc = "EVTDESCbattle.4"
+	picture = GFX_evt_battle
+	border = "GFX_event_normal_frame_war"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAbattle.4"
+		remove_character_modifier = battlefield_fight
+		morale = 0.1
+	}
+}
+# battle.5	Attacker Runs
+character_event = {
+	id = battle.5
+	desc = "EVTDESCbattle.5"
+	picture = GFX_evt_battle
+	border = "GFX_event_normal_frame_war"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAbattle.5"
+		remove_character_modifier = battlefield_fight
+		morale = 0.1
+	}
+}
+# battle.6	Defender Calls Kingsguard
+character_event = {
+	id = battle.6
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		opinion = { who = FROM modifier = opinion_kingsguard_protection }
+		FROM = { FROM = { character_event = { id = battle.7 } } }
+	}
+}
+# battle.7	Attacker versus Kingsguard - Fight or Run? (Begin Duel)
+character_event = {
+	id = battle.7
+	desc = "EVTDESCbattle.7"
+	picture = GFX_kingsguard
+	border = "GFX_event_normal_frame_war"
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	option = {
+		name = "EVTOPTAbattle.7" #Fight
+		trigger = { FROM = { trait = kingsguard } }
+		# Set context flags for duel
+		set_character_flag = duel_context_battle
+		FROM = { set_character_flag = duel_context_battle }
+		set_character_flag = flag_battlefield_duel_vs_kingsguard
+		FROM = { set_character_flag = flag_battlefield_duel_kingsguard }
+		FROM = { set_character_flag = flag_duel_to_the_death }
+		hidden_tooltip = {
+			opinion = { who = FROMFROM modifier = opinion_kingsguard_protection }
+			FROMFROM = { add_trait = kingsguard_protection_target }
+		}
+		
+		# Begin duel
+		hidden_tooltip = { e_rebels = { holder_scope = { character_event = { id = duel.0 } } } }
+		
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2
+				trait = poor_warrior
+			}
+			modifier = {
+				factor = 3
+				trait = trained_warrior
+			}
+			modifier = {
+				factor = 4
+				trait = skilled_warrior
+			}
+			modifier = {
+				factor = 5
+				trait = master_warrior
+			}
+			modifier = {
+				factor = 2
+				trait = brave
+			}
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+			modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 1.5
+				is_strong_trigger = yes
+			}
+			modifier = {
+				factor = 1.5
+				trait = tall
+			}
+			
+			#Avoid fights
+			modifier = {
+				factor = 0
+				OR = {
+					is_crippled_trigger = yes
+					trait = infirm
+					trait = blinded
+					trait = blinded_age
+				}	
+			}
+			modifier = {
+				factor = 0.1
+				is_ill = yes
+			}
+			modifier = {
+				factor = 0.1
+				is_maimed_trigger = yes
+			}
+			modifier = {
+				factor = 0.25
+				trait = wounded
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTCbattle.7" #Fight
+		trigger = { FROM = { NOT = { trait = kingsguard } } }
+		# Set context flags for duel
+		set_character_flag = duel_context_battle
+		FROM = { set_character_flag = duel_context_battle }
+		set_character_flag = flag_battlefield_duel_vs_kingsguard
+		FROM = { set_character_flag = flag_battlefield_duel_kingsguard }
+		FROM = { set_character_flag = flag_duel_to_the_death }
+		hidden_tooltip = {
+			opinion = { who = FROMFROM modifier = opinion_kingsguard_protection }
+			FROMFROM = { add_trait = kingsguard_protection_target }
+		}
+		
+		# Begin duel
+		hidden_tooltip = { e_rebels = { holder_scope = { character_event = { id = duel.0 } } } }
+		
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2
+				trait = poor_warrior
+			}
+			modifier = {
+				factor = 3
+				trait = trained_warrior
+			}
+			modifier = {
+				factor = 4
+				trait = skilled_warrior
+			}
+			modifier = {
+				factor = 5
+				trait = master_warrior
+			}
+			modifier = {
+				factor = 2
+				trait = brave
+			}
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+			modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 1.5
+				is_strong_trigger = yes
+			}
+			modifier = {
+				factor = 1.5
+				trait = tall
+			}
+			
+			#Avoid fights
+			modifier = {
+				factor = 0
+				OR = {
+					is_crippled_trigger = yes
+					trait = infirm
+					trait = blinded
+					trait = blinded_age
+				}	
+			}
+			modifier = {
+				factor = 0.1
+				is_ill = yes
+			}
+			modifier = {
+				factor = 0.1
+				is_maimed_trigger = yes
+			}
+			modifier = {
+				factor = 0.25
+				trait = wounded
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBbattle.7" #run
+		trigger = { NOT = { trait = berserker } }
+		hidden_tooltip = { FROM = { FROM = { character_event = { id = battle.8 } } } }	
+		FROM = { remove_character_modifier = battlefield_fight }
+		remove_character_modifier = battlefield_fight
+		if = {
+			limit = { NOT = { trait = craven } }
+			random = {
+				chance = 25
+				add_trait = craven
+				hidden_tooltip = {
+					character_event ={
+						id = 38257 #Notify
+					}
+				}
+			}
+		}
+		morale = -0.1
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 5
+				NOT = { 
+					trait = poor_warrior 
+					trait = trained_warrior
+					trait = skilled_warrior
+					trait = master_warrior					
+				}
+			}
+			modifier = {
+				factor = 2
+				FROM = { trait = poor_warrior }
+			}
+			modifier = {
+				factor = 3
+				FROM = { trait = trained_warrior }
+			}
+			modifier = {
+				factor = 4
+				FROM = { trait = skilled_warrior }
+			}
+			modifier = {
+				factor = 5
+				FROM = { trait = master_warrior }
+			}
+			modifier = {
+				factor = 2
+				FROM = { is_strong_trigger = yes }
+			}
+			modifier = {
+				factor = 2
+				FROM = { trait = tall }
+			}
+			modifier = {
+				factor = 2
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				trait = paranoid
+			}
+			modifier = {
+				factor = 2
+				is_weak_trigger = yes
+			}
+			modifier = {
+				factor = 2
+				trait = dwarf
+			}
+			modifier = {
+				factor = 2
+				trait = hunchback
+			}
+			modifier = {
+				factor = 2
+				is_ill = yes
+			}
+		}
+	}
+}
+# battle.8	Attacker or Defender Runs From Kingsguard
+character_event = {
+	id = battle.8
+	desc = "EVTDESCbattle.8"
+	picture = GFX_kingsguard
+	border = "GFX_event_normal_frame_war"
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	immediate = {
+		reverse_remove_opinion = { who = FROMFROM modifier = opinion_kingsguard_protection }
+	}
+	
+	option = {
+		name = "EVTOPTAbattle.8"
+		morale = 0.1
+	}
+}
+# battle.9	Attacker Calls Kingsguard
+character_event = {
+	id = battle.9
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+		opinion = { who = FROM modifier = opinion_kingsguard_protection }
+		FROM = { FROM = { character_event = { id = battle.10 } } }
+	}
+}
+
+character_event = {
+	id = battle.10
+	desc = "EVTDESCbattle.10"
+	picture = GFX_kingsguard
+	border = "GFX_event_normal_frame_war"
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	option = {
+		name = "EVTOPTAbattle.10" #fight
+		
+		# Set context flags for duel
+		set_character_flag = duel_context_battle
+		FROM = { set_character_flag = duel_context_battle }
+		set_character_flag = flag_battlefield_duel_vs_kingsguard
+		FROM = { set_character_flag = flag_battlefield_duel_kingsguard }
+		FROM = { set_character_flag = flag_duel_to_the_death }
+		hidden_tooltip = {
+			opinion = { who = FROMFROM modifier = opinion_kingsguard_protection }
+			FROMFROM = { add_trait = kingsguard_protection_target }
+		}
+		
+		# Begin duel
+		hidden_tooltip = { e_rebels = { holder_scope = { character_event = { id = duel.0 } } } }
+		
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 2
+				trait = poor_warrior
+			}
+			modifier = {
+				factor = 3
+				trait = trained_warrior
+			}
+			modifier = {
+				factor = 4
+				trait = skilled_warrior
+			}
+			modifier = {
+				factor = 5
+				trait = master_warrior
+			}
+			modifier = {
+				factor = 2
+				trait = brave
+			}
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+			modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 1.5
+				is_strong_trigger = yes
+			}
+			modifier = {
+				factor = 1.5
+				trait = tall
+			}
+			
+			#Avoid fights
+			modifier = {
+				factor = 0
+				OR = {
+					is_crippled_trigger = yes
+					trait = infirm
+					trait = blinded
+					trait = blinded_age
+				}	
+			}
+			modifier = {
+				factor = 0.1
+				is_ill = yes
+			}
+			modifier = {
+				factor = 0.1
+				is_maimed_trigger = yes
+			}
+			modifier = {
+				factor = 0.25
+				trait = wounded
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBbattle.10" #run
+		trigger = { NOT = { trait = berserker } }
+		hidden_tooltip = { FROM = { FROM = { character_event = { id = battle.8 } } } }
+		remove_character_modifier = battlefield_fight
+		FROM = { remove_character_modifier = battlefield_fight }
+		if = {
+			limit = { NOT = { trait = craven } }
+			random = {
+				chance = 25
+				add_trait = craven
+				hidden_tooltip = {
+					character_event ={
+						id = 38257 #Notify
+					}
+				}
+			}
+		}
+		morale = -0.1
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 5
+				NOT = { 
+					trait = poor_warrior 
+					trait = trained_warrior
+					trait = skilled_warrior
+					trait = master_warrior					
+				}
+			}
+			modifier = {
+				factor = 2
+				FROM = { trait = poor_warrior }
+			}
+			modifier = {
+				factor = 3
+				FROM = { trait = trained_warrior }
+			}
+			modifier = {
+				factor = 4
+				FROM = { trait = skilled_warrior }
+			}
+			modifier = {
+				factor = 5
+				FROM = { trait = master_warrior }
+			}
+			modifier = {
+				factor = 2
+				FROM = { is_strong_trigger = yes }
+			}
+			modifier = {
+				factor = 2
+				FROM = { trait = tall }
+			}
+			modifier = {
+				factor = 2
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				trait = paranoid
+			}
+			modifier = {
+				factor = 2
+				is_weak_trigger = yes
+			}
+			modifier = {
+				factor = 2
+				trait = dwarf
+			}
+			modifier = {
+				factor = 2
+				trait = hunchback
+			}
+			modifier = {
+				factor = 2
+				is_ill = yes
+			}
+		}
+	}
+}
+### Post-Battlefield-Duel Events
+# battle.11	(End Duel) Victor Killed Opponent
+character_event = {
+	id = battle.11
+	desc = "EVTDESCbattle.11"
+	picture = GFX_evt_battle
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	option = {
+		name = "EVTOPTAbattle.11"
+		if = {
+			limit = { 
+				ai = no 
+				FROMFROM = {
+					OR = {
+						is_ruler = yes
+						liege = { is_close_relative = PREV }
+						prestige = 250
+						trait = skilled_warrior
+						trait = master_warrior
+					}
+				}
+			}
+			chronicle = {
+				entry = CHRONICLE_WON_BATTLE_DUEL_KILL
+				portrait = [FromFrom.GetID]
+			}
+		}
+		random_current_enemy = {
+			limit = { at_location = ROOT }
+			morale = -0.2
+		}
+	}
+}
+# # battle.12	(End Duel) Victor Takes Opponent Hostage
+# character_event = {
+	# id = battle.12
+	# desc = "EVTDESCbattle.12"
+	# picture = GFX_evt_battle
+	# border = "GFX_event_normal_frame_war"
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = "EVTOPTAbattle.12"
+		# hidden_tooltip = { FROM = { FROM = { character_event = { id = battle.13 } } } }
+	# }
+# }
+# battle.13	Opponent Imprisoned
+character_event = {
+	id = battle.13
+	desc = "EVTDESCbattle.13"
+	picture = GFX_evt_battle
+	border = "GFX_event_normal_frame_war"
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAbattle.13"
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_LOST_BATTLE_DUEL_CAPTURED
+				portrait = [From.GetID]
+			}
+		}
+		FROM = {
+			if = {
+				limit = { 
+					ai = no 
+					ROOT = {
+						OR = {
+							is_ruler = yes
+							liege = { is_close_relative = PREV }
+							prestige = 250
+							trait = skilled_warrior
+							trait = master_warrior
+						}
+					}	
+				}
+				chronicle = {
+					entry = CHRONICLE_WON_BATTLE_DUEL_HOSTAGE
+					portrait = [Root.GetID]
+				}
+			}
+		}
+		tooltip = {
+			if = {
+				limit = { FROM = { is_ruler = yes } }
+				hidden_tooltip = { character_event = { id = 50020 } } # "imprisoned_events.txt"
+				ROOT = { imprison = FROM }
+			}
+			if = {
+				limit = { FROM = { is_ruler = no } }
+				FROM = {
+					liege = { 
+						hidden_tooltip = { character_event = { id = 50020 } } # "imprisoned_events.txt"
+						ROOT = { imprison = PREV } 
+					}
+				}	
+			}
+		}
+		set_character_flag = captured_in_battle	
+	}
+}
+# battle.14	(End Duel) Opponent Killed Kingsguard - Original Opponent Reacts
+character_event = {
+	id = battle.14
+	desc = "EVTDESCbattle.14"
+	picture = GFX_evt_battle
+	border = "GFX_event_normal_frame_war"
+	show_from_from = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		reverse_remove_opinion = { who = FROM modifier = opinion_kingsguard_protection }
+		reverse_remove_opinion = { who = FROMFROM modifier = opinion_kingsguard_protection }
+		remove_trait = kingsguard_protection_target
+	}
+	
+	option = {
+		name = "EVTDESCbattle.15"
+		FROM = { character_event = { id = battle.15 tooltip = "EVTTOOLTIPbattle.15" } }
+	}
+}
+# battle.15	Victor Attacks Original Opponent (Begin Duel)
+character_event = {
+	id = battle.15
+	desc = "EVTDESCbattle.15"
+	picture = GFX_evt_battle
+	border = "GFX_event_normal_frame_war"
+	is_triggered_only = yes
+	
+	immediate = {
+		add_character_modifier = {
+			name = battlefield_fight
+			duration = 20
+		}
+	}
+	
+	option = {
+		name = "EVTOPTAbattle.15"
+		
+		# Set context flags for duel
+		set_character_flag = duel_context_battle
+		FROM = { set_character_flag = duel_context_battle }
+		set_character_flag = flag_battlefield_duel
+		FROM = { set_character_flag = flag_battlefield_duel }
+		
+		# Begin duel
+		hidden_tooltip = { e_rebels = { holder_scope = { character_event = { id = duel.0 } } } }
+	}
+}
+# battle.16	Kingsguard Killed Opponent - Original Opponent Reacts
+character_event = {
+	id = battle.16
+	desc = "EVTDESCbattle.16"
+	picture = GFX_kingsguard
+	border = "GFX_event_normal_frame_war"
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	immediate = {
+		if = {
+			limit = { 
+				ai = no 
+				FROMFROM = {
+					OR = {
+						is_ruler = yes
+						liege = { is_close_relative = PREV }
+						prestige = 250
+						trait = skilled_warrior
+						trait = master_warrior
+					}
+				}
+			}
+			chronicle = {
+				entry = CHRONICLE_WON_BATTLE_DUEL_KILL_BODYGUARD
+				portrait = [FromFrom.GetID]
+			}
+		}
+		reverse_remove_opinion = { who = FROM modifier = opinion_kingsguard_protection }
+		reverse_remove_opinion = { who = FROMFROM modifier = opinion_kingsguard_protection }
+		remove_trait = kingsguard_protection_target
+	}
+	
+	option = {
+		name = "EVTOPTAbattle.16"
+		morale = 0.1
+		if = {
+			limit = { FROM = { NOT = { trait = kingsguard } } }
+			hidden_tooltip = {
+				FROM = { change_variable = { which = "services_rendered" value = 1 } }
+				opinion = {
+					modifier = opinion_service_rendered
+					who = FROM
+					years = 3
+				}
+			}
+		}
+	}
+}
+# battle.17	Kingsguard Beat Opponent - Original Opponent Takes Opponent Hostage
+character_event = {
+	id = battle.17
+	desc = "EVTDESCbattle.17"
+	picture = GFX_kingsguard
+	border = "GFX_event_normal_frame_war"
+	is_triggered_only = yes
+	show_from_from = yes
+	
+	immediate = {
+		if = {
+			limit = { 
+				ai = no 
+				FROMFROM = {
+					OR = {
+						is_ruler = yes
+						liege = { is_close_relative = PREV }
+						prestige = 250
+						trait = skilled_warrior
+						trait = master_warrior
+					}
+				}	
+			}
+			chronicle = {
+				entry = CHRONICLE_WON_BATTLE_DUEL_HOSTAGE_BODYGUARD
+				portrait = [FromFrom.GetID]
+			}
+		}		
+		FROMFROM = {
+			if = {
+				limit = { ai = no }
+				chronicle = {
+					entry = CHRONICLE_LOST_BATTLE_DUEL_CAPTURED
+					portrait = [From.GetID]
+				}
+			}
+		}
+		reverse_remove_opinion = { who = FROM modifier = opinion_kingsguard_protection }
+		reverse_remove_opinion = { who = FROMFROM modifier = opinion_kingsguard_protection }
+		remove_trait = kingsguard_protection_target
+	}
+	
+	option = {
+		name = "EVTOPTAbattle.17"
+		FROMFROM = {
+			hidden_tooltip = { character_event = { id = battle.13 } }	
+			set_character_flag = captured_in_battle					
+		}
+		if = {
+			limit = { is_ruler = yes }
+			FROMFROM = { 
+				imprison = ROOT 
+				any_ward = {
+					limit = { 
+						at_location = ROOT 
+						NOT = { trait = dragon }
+					}
+					imprison = ROOT 
+					set_character_flag = captured_in_battle
+				}
+			}
+		}
+		if = {
+			limit = { is_ruler = no }
+			liege = { 
+				FROMFROM = { 
+					imprison = PREV 
+					any_ward = {
+						limit = { 
+							at_location = ROOT 
+							NOT = { trait = dragon }
+						}
+						imprison = PREVPREV
+						set_character_flag = captured_in_battle
+					}
+				} 
+			}
+		}
+		if = {
+			limit = { FROM = { NOT = { trait = kingsguard } } }
+			hidden_tooltip = {
+				FROM = { change_variable = { which = "services_rendered" value = 1 } }
+				opinion = {
+					modifier = opinion_service_rendered
+					who = FROM
+					years = 3
+				}
+			}
+		}
+	}
+}
+
+#On-action combat event: Direwolf kills many men
+character_event = {
+	id = battle.18
+	desc = EVTDESCbattle.18	
+	picture = "GFX_wolf"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	trigger = { trait = direwolf }
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}	
+		modifier = {
+			trait = genius
+			factor = 1.3
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 1.15
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 0.5
+		}	
+		modifier = {
+			trait = imbecile
+			factor = 0.33
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.33
+		}
+		modifier = {
+			is_strong_trigger = yes
+			factor = 1.3
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 0.2
+		}		
+		modifier = {
+			factor = 1.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 1.5
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.5
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.33
+			trait = incapable
+		}	
+	}
+	
+	immediate = {
+		FROMFROM = {
+			character_event = { id = battle.19 }
+			set_character_flag = temp_direwolf_battle
+		}
+		FROM = {
+			if = {
+				limit = { NOT = { has_character_flag = temp_direwolf_battle } }
+				character_event = { id = battle.19 }
+			}
+		}
+		FROMFROM = {
+			clr_character_flag = temp_direwolf_battle
+		}
+	}
+	
+	option = {
+		name = EXCELLENT
+		morale = 0.1
+	}
+}
+#Inform opponent
+character_event = {
+	id = battle.19
+	desc = EVTDESCbattle.19	
+	picture = "GFX_wolf"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTbattle.19
+		morale = -0.1
+	}
+}
+#On-action combat event: Direwolf slain
+character_event = {
+	id = battle.20
+	desc = EVTDESCbattle.20	
+	picture = "GFX_wolf"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	trigger = { trait = direwolf }
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}	
+		modifier = {
+			trait = genius
+			factor = 0.7
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 0.85
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 2
+		}	
+		modifier = {
+			trait = imbecile
+			factor = 3
+		}
+		modifier = {
+			trait = inbred
+			factor = 3
+		}
+		modifier = {
+			is_strong_trigger = yes
+			factor = 0.7
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 3
+		}		
+		modifier = {
+			factor = 1.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 1.5
+			trait = possessed
+		}
+		modifier = {
+			factor = 2
+			trait = infirm
+		}
+		modifier = {
+			factor = 3
+			trait = incapable
+		}	
+	}
+	
+	immediate = {
+		FROMFROM = {
+			character_event = { id = battle.21 }
+			set_character_flag = temp_direwolf_battle
+		}
+		FROM = {
+			if = {
+				limit = { NOT = { has_character_flag = temp_direwolf_battle } }
+				character_event = { id = battle.21 }
+			}
+		}
+		FROMFROM = {
+			clr_character_flag = temp_direwolf_battle
+		}
+	}
+	
+	option = {
+		name = ALAS
+		remove_trait = direwolf
+		random = {
+			chance = 50
+			add_trait = depressed
+			hidden_tooltip = {
+				character_event = {
+					id = 38288 #Notify Depressed
+				}
+			}
+		}
+		morale = -0.1
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_DIREWOLF_SLAIN
+				picture = GFX_wolf
+			}
+		}
+	}
+}
+#Inform opponent
+character_event = {
+	id = battle.21
+	desc = EVTDESCbattle.21	
+	picture = "GFX_wolf"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTbattle.23
+		FROM = { remove_trait = direwolf }
+	}
+}
+
+#On-action combat event: Wolf kills many men
+character_event = {
+	id = battle.22
+	desc = EVTDESCbattle.22	
+	picture = "GFX_wolf"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	trigger = { trait = wolf }
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}	
+		modifier = {
+			trait = genius
+			factor = 1.3
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 1.15
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 0.5
+		}	
+		modifier = {
+			trait = imbecile
+			factor = 0.33
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.33
+		}
+		modifier = {
+			is_strong_trigger = yes
+			factor = 1.3
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 0.2
+		}		
+		modifier = {
+			factor = 1.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 1.5
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.5
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.33
+			trait = incapable
+		}	
+	}
+	
+	immediate = {
+		FROMFROM = {
+			character_event = { id = battle.23 }
+			set_character_flag = temp_wolf_battle
+		}
+		FROM = {
+			if = {
+				limit = { NOT = { has_character_flag = temp_wolf_battle } }
+				character_event = { id = battle.23 }
+			}
+		}
+		FROMFROM = {
+			clr_character_flag = temp_wolf_battle
+		}
+	}
+	
+	option = {
+		name = EXCELLENT
+		morale = 0.1
+	}
+}
+character_event = {
+	id = battle.23
+	desc = EVTDESCbattle.23	
+	picture = "GFX_wolf"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTbattle.23
+		morale = -0.1
+	}
+}
+#On-action combat event: Wolf slain
+character_event = {
+	id = battle.24
+	desc = EVTDESCbattle.24	
+	picture = "GFX_wolf"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	trigger = { trait = wolf }
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}	
+		modifier = {
+			trait = genius
+			factor = 0.7
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 0.85
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 2
+		}	
+		modifier = {
+			trait = imbecile
+			factor = 3
+		}
+		modifier = {
+			trait = inbred
+			factor = 3
+		}
+		modifier = {
+			is_strong_trigger = yes
+			factor = 0.7
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 3
+		}		
+		modifier = {
+			factor = 1.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 1.5
+			trait = possessed
+		}
+		modifier = {
+			factor = 2
+			trait = infirm
+		}
+		modifier = {
+			factor = 3
+			trait = incapable
+		}	
+	}
+	
+	immediate = {
+		FROMFROM = {
+			character_event = { id = battle.25 }
+			set_character_flag = temp_wolf_battle
+		}
+		FROM = {
+			if = {
+				limit = { NOT = { has_character_flag = temp_wolf_battle } }
+				character_event = { id = battle.25 }
+			}
+		}
+		FROMFROM = {
+			clr_character_flag = temp_wolf_battle
+		}
+	}
+	
+	option = {
+		name = ALAS
+		remove_trait = wolf
+		random = {
+			chance = 50
+			add_trait = depressed
+			hidden_tooltip = {
+				character_event = {
+					id = 38288 #Notify Depressed
+				}
+			}
+		}
+		morale = -0.1
+	}
+}
+#Inform opponent
+character_event = {
+	id = battle.25
+	desc = EVTDESCbattle.25	
+	picture = "GFX_wolf"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTbattle.23
+		FROM = { remove_trait = wolf }
+	}
+}
+
+#On-action combat event: Snowbear kills many men
+character_event = {
+	id = battle.26
+	desc = EVTDESCbattle.26	
+	picture = "GFX_snowbear"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	trigger = { trait = snowbear }
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}	
+		modifier = {
+			trait = genius
+			factor = 1.3
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 1.15
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 0.5
+		}	
+		modifier = {
+			trait = imbecile
+			factor = 0.33
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.33
+		}
+		modifier = {
+			is_strong_trigger = yes
+			factor = 1.3
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 0.2
+		}		
+		modifier = {
+			factor = 1.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 1.5
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.5
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.33
+			trait = incapable
+		}	
+	}
+	
+	immediate = {
+		FROMFROM = {
+			character_event = { id = battle.27 }
+			set_character_flag = temp_snowbear_battle
+		}
+		FROM = {
+			if = {
+				limit = { NOT = { has_character_flag = temp_snowbear_battle } }
+				character_event = { id = battle.27 }
+			}
+		}
+		FROMFROM = {
+			clr_character_flag = temp_snowbear_battle
+		}
+	}
+	
+	option = {
+		name = EXCELLENT
+		morale = 0.1
+	}
+}
+#Inform opponent
+character_event = {
+	id = battle.27
+	desc = EVTDESCbattle.27	
+	picture = "GFX_snowbear"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTbattle.27
+		morale = -0.1
+	}
+}
+#On-action combat event: Snowbear slain
+character_event = {
+	id = battle.28
+	desc = EVTDESCbattle.28	
+	picture = "GFX_snowbear"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	trigger = { trait = snowbear }
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}	
+		modifier = {
+			trait = genius
+			factor = 0.7
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 0.85
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 2
+		}	
+		modifier = {
+			trait = imbecile
+			factor = 3
+		}
+		modifier = {
+			trait = inbred
+			factor = 3
+		}
+		modifier = {
+			is_strong_trigger = yes
+			factor = 0.7
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 3
+		}		
+		modifier = {
+			factor = 1.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 1.5
+			trait = possessed
+		}
+		modifier = {
+			factor = 2
+			trait = infirm
+		}
+		modifier = {
+			factor = 3
+			trait = incapable
+		}	
+	}
+	
+	immediate = {
+		FROMFROM = {
+			character_event = { id = battle.29 }
+			set_character_flag = temp_snowbear_battle
+		}
+		FROM = {
+			if = {
+				limit = { NOT = { has_character_flag = temp_snowbear_battle } }
+				character_event = { id = battle.29 }
+			}
+		}
+		FROMFROM = {
+			clr_character_flag = temp_snowbear_battle
+		}
+	}
+	
+	option = {
+		name = ALAS
+		remove_trait = snowbear
+		random = {
+			chance = 50
+			add_trait = depressed
+			hidden_tooltip = {
+				character_event = {
+					id = 38288 #Notify Depressed
+				}
+			}
+		}
+		morale = -0.1
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_SNOWBEAR_SLAIN
+				picture = GFX_snowbear
+			}
+		}
+	}
+}
+#Inform opponent
+character_event = {
+	id = battle.29
+	desc = EVTDESCbattle.29	
+	picture = "GFX_snowbear"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTbattle.27
+		FROM = { remove_trait = snowbear }
+	}
+}
+
+#On-action combat event: Bear kills many men
+character_event = {
+	id = battle.30
+	desc = EVTDESCbattle.30	
+	picture = "GFX_brownbear"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	trigger = { trait = brownbear }
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}	
+		modifier = {
+			trait = genius
+			factor = 1.3
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 1.15
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 0.5
+		}	
+		modifier = {
+			trait = imbecile
+			factor = 0.33
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.33
+		}
+		modifier = {
+			is_strong_trigger = yes
+			factor = 1.3
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 0.2
+		}		
+		modifier = {
+			factor = 1.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 1.5
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.5
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.33
+			trait = incapable
+		}	
+	}
+	
+	immediate = {
+		FROMFROM = {
+			character_event = { id = battle.31 }
+			set_character_flag = temp_brownbear_battle
+		}
+		FROM = {
+			if = {
+				limit = { NOT = { has_character_flag = temp_brownbear_battle } }
+				character_event = { id = battle.31 }
+			}
+		}
+		FROMFROM = {
+			clr_character_flag = temp_brownbear_battle
+		}
+	}
+	
+	option = {
+		name = EXCELLENT
+		morale = 0.1
+	}
+}
+#Inform opponent
+character_event = {
+	id = battle.31
+	desc = EVTDESCbattle.31	
+	picture = "GFX_brownbear"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTbattle.31
+		morale = -0.1
+	}
+}
+#On-action combat event: Bear slain
+character_event = {
+	id = battle.32
+	desc = EVTDESCbattle.32	
+	picture = "GFX_brownbear"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	trigger = { trait = brownbear }
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}	
+		modifier = {
+			trait = genius
+			factor = 0.7
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 0.85
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 2
+		}	
+		modifier = {
+			trait = imbecile
+			factor = 3
+		}
+		modifier = {
+			trait = inbred
+			factor = 3
+		}
+		modifier = {
+			is_strong_trigger = yes
+			factor = 0.7
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 3
+		}		
+		modifier = {
+			factor = 1.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 1.5
+			trait = possessed
+		}
+		modifier = {
+			factor = 2
+			trait = infirm
+		}
+		modifier = {
+			factor = 3
+			trait = incapable
+		}	
+	}
+	
+	immediate = {
+		FROMFROM = {
+			character_event = { id = battle.33 }
+			set_character_flag = temp_brownbear_battle
+		}
+		FROM = {
+			if = {
+				limit = { NOT = { has_character_flag = temp_brownbear_battle } }
+				character_event = { id = battle.33 }
+			}
+		}
+		FROMFROM = {
+			clr_character_flag = temp_brownbear_battle
+		}
+	}
+	
+	option = {
+		name = ALAS
+		remove_trait = brownbear
+		random = {
+			chance = 50
+			add_trait = depressed
+			hidden_tooltip = {
+				character_event = {
+					id = 38288 #Notify Depressed
+				}
+			}
+		}
+		morale = -0.1
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_BEAR_SLAIN
+				picture = GFX_brownbear
+			}
+		}
+	}
+}
+#Inform opponent
+character_event = {
+	id = battle.33
+	desc = EVTDESCbattle.33	
+	picture = "GFX_brownbear"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTbattle.31
+		FROM = { remove_trait = brownbear }
+	}
+}
+
+#On-action combat event: Shadowcat kills many men
+character_event = {
+	id = battle.34
+	desc = EVTDESCbattle.34	
+	picture = "GFX_shadowcat"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	trigger = { trait = shadowcat }
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}	
+		modifier = {
+			trait = genius
+			factor = 1.3
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 1.15
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 0.5
+		}	
+		modifier = {
+			trait = imbecile
+			factor = 0.33
+		}
+		modifier = {
+			trait = inbred
+			factor = 0.33
+		}
+		modifier = {
+			is_strong_trigger = yes
+			factor = 1.3
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 0.2
+		}		
+		modifier = {
+			factor = 1.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 1.5
+			trait = possessed
+		}
+		modifier = {
+			factor = 0.5
+			trait = infirm
+		}
+		modifier = {
+			factor = 0.33
+			trait = incapable
+		}	
+	}
+	
+	immediate = {
+		FROMFROM = {
+			character_event = { id = battle.35 }
+			set_character_flag = temp_shadowcat_battle
+		}
+		FROM = {
+			if = {
+				limit = { NOT = { has_character_flag = temp_shadowcat_battle } }
+				character_event = { id = battle.35 }
+			}
+		}
+		FROMFROM = {
+			clr_character_flag = temp_shadowcat_battle
+		}
+	}
+	
+	option = {
+		name = EXCELLENT
+		morale = 0.1
+	}
+}
+#Inform opponent
+character_event = {
+	id = battle.35
+	desc = EVTDESCbattle.35	
+	picture = "GFX_shadowcat"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTbattle.35
+		morale = -0.1
+	}
+}
+#On-action combat event: Shadowcat slain
+character_event = {
+	id = battle.36
+	desc = EVTDESCbattle.36	
+	picture = "GFX_shadowcat"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	trigger = { trait = shadowcat }
+
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 1.5
+			trait = brave
+		}
+		modifier = {
+			factor = 0.5
+			trait = craven
+		}	
+		modifier = {
+			trait = genius
+			factor = 0.7
+		}
+		modifier = {
+			is_smart_trigger = yes
+			factor = 0.85
+		}	
+		modifier = {
+			is_dumb_trigger = yes
+			factor = 2
+		}	
+		modifier = {
+			trait = imbecile
+			factor = 3
+		}
+		modifier = {
+			trait = inbred
+			factor = 3
+		}
+		modifier = {
+			is_strong_trigger = yes
+			factor = 0.7
+		}
+		modifier = {
+			is_weak_trigger = yes
+			factor = 3
+		}		
+		modifier = {
+			factor = 1.5
+			trait = lunatic
+		}
+		modifier = {
+			factor = 1.5
+			trait = possessed
+		}
+		modifier = {
+			factor = 2
+			trait = infirm
+		}
+		modifier = {
+			factor = 3
+			trait = incapable
+		}	
+	}
+	
+	immediate = {
+		FROMFROM = {
+			character_event = { id = battle.37 }
+			set_character_flag = temp_shadowcat_battle
+		}
+		FROM = {
+			if = {
+				limit = { NOT = { has_character_flag = temp_shadowcat_battle } }
+				character_event = { id = battle.37 }
+			}
+		}
+		FROMFROM = {
+			clr_character_flag = temp_shadowcat_battle
+		}
+	}
+	
+	option = {
+		name = ALAS
+		remove_trait = shadowcat
+		random = {
+			chance = 50
+			add_trait = depressed
+			hidden_tooltip = {
+				character_event = {
+					id = 38288 #Notify Depressed
+				}
+			}
+		}
+		morale = -0.1
+		if = {
+			limit = { ai = no }
+			chronicle = {
+				entry = CHRONICLE_SHADOWCAT_SLAIN
+				picture = GFX_shadowcat
+			}
+		}
+	}
+}
+#Inform opponent
+character_event = {
+	id = battle.37
+	desc = EVTDESCbattle.37	
+	picture = "GFX_shadowcat"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTbattle.35
+		FROM = { remove_trait = shadowcat }
+	}
+}
+
+# Battle flavour event - wounded soldier asks for death
+character_event = {
+	id = battle.40
+	desc = EVTDESCbattle.40
+	picture = "GFX_evt_battle"
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	weight_multiplier = {
+		days = 1
+		modifier = {
+			factor = 0.15
+			trait = back_seat_leader
+		}
+	}
+	
+	option = {
+		name = EVTOPTAbattle.40 # I will give mercy
+		trigger = {
+			NOT = { trait = impaler }
+		}
+		piety = 5
+		prestige = -5
+	}
+	option = {
+		name = EVTOPTBbattle.40 # Stand up and fight!
+		trigger = {
+			NOT = { trait = impaler }
+		}
+		piety = -5
+		prestige = 5
+	}
+	option = {
+		name = EVTOPTCbattle.40 # I'll have fun with you
+		trigger = {
+			trait = impaler
+		}
+		tooltip_info = impaler
+		custom_tooltip = { text = TOOLTIPbattle.40 }
+		piety = -20
+		prestige = 10
+	}
+}

@@ -1,0 +1,8008 @@
+##########
+###Vanilla###
+##########
+# add_trait_brave_effect
+# add_trait_charitable_effect
+# add_trait_chaste_effect
+# add_trait_craven_effect
+# add_trait_cruel_effect
+# add_trait_cynical_effect
+# add_trait_depressed_effect
+# add_trait_greedy_effect
+# add_trait_gregarious_effect
+# add_trait_kind_effect
+# add_trait_lustful_effect
+# add_trait_one_eyed_effect
+# add_trait_one_handed_effect
+# add_trait_patient_effect
+# add_trait_proud_effect
+# add_trait_severely_injured_effect
+# add_trait_shy_effect
+# add_trait_temperate_effect
+# add_trait_wounded_effect
+# add_trait_wroth_effect
+
+# remove_trait_charitable_effect
+# remove_trait_chaste_effect
+# remove_trait_craven_effect
+# remove_trait_cruel_effect
+# remove_trait_kind_effect
+# remove_trait_shy_effect
+# remove_trait_gregarious_effect
+# remove_trait_zealous_effect
+
+# remove_patrons_effect
+
+# increase_mercenary_troop_support_effect
+# increase_mercenary_ambition_level_effect
+# decrease_mercenary_ambition_level_effect
+
+# add_symptom_effect
+# add_maimed_trait_effect
+# add_crippled_trait_effect
+# add_plague_symptom_effect
+# add_pneumonia_symptom_effect
+# add_syphilis_symptom_effect
+# add_tuberculosis_symptom_effect
+# add_typhoid_symptom_effect
+# add_typhus_symptom_effect
+# add_measles_symptom_effect
+# add_smallpox_symptom_effect
+# add_flu_symptom_effect
+# add_dysentery_symptom_effect
+# add_gout_symptom_effect
+# add_food_poisoning_symptom_effect
+# add_rabies_symptom_effect
+# add_cancer_symptom_effect
+
+# increase_depopulation_effect
+# decrease_depopulation_effect
+
+# prisoner_mutilate_effect
+# jailor_mutilate_effect
+# prisoner_torture_effect
+# jailor_torture_effect
+# jailor_humiliation_effect
+# prisoner_humiliation_effect
+# maim_hand_effect
+# mangle_effect
+# remove_treatment_modifiers_effect
+# remove_disease_flags_effect
+
+# leave_court_effect
+# leave_court_and_die_effect
+# give_epidemic_disease_effect
+# blessing_removes_disease_effect
+# deaths_gift_removes_disease_effect
+# remove_disease_trait_effect
+# resolve_severely_injured_effect
+# leave_council_position_effect
+# increase_prosperity_effect
+# add_disease_level_effect
+# clear_disease_level_effect
+# end_inaccessibility_effect
+
+# give_pneumonic_effect
+# give_has_tuberculosis_effect
+# give_has_typhoid_fever_effect
+# give_has_bubonic_plague_effect
+# give_has_measles_effect
+# give_has_small_pox_effect
+# give_has_aztec_disease_effect
+# give_syphilitic_effect
+# give_flu_effect
+# give_dysentery_effect
+# give_gout_effect
+# give_food_poisoning_effect
+# give_rabies_effect
+# give_cancer_effect
+# give_ill_effect
+
+# unprotected_sex_effect
+# venereal_disease_effect
+# impregnate_effect
+# will_not_marry_effect
+# female_councilor_effect_3
+# remove_prison_reason_effect
+# add_cat_effect
+
+##########
+###AGOT###
+##########
+# knight_character_effect
+# increase_warlock_magic
+# child_fertility_debuff
+# appoint_KG_lord_commander_effect
+# murder_success_calulator_effect
+# increase_holding_base_value_effect
+# set_unsullied_name_effect
+
+# plot_murder_undiscovered_effect
+# plot_murder_discovered_effect
+# cm_plot_murder_undiscovered_effect
+# cm_plot_murder_discovered_effect
+# FROM_murder_red_god_resurrect_effect
+# ROOT_murder_red_god_resurrect_effect
+# red_god_resurrect_effect
+
+# legitimise_newborn_FROM_effect
+# acknowledge_newborn_FROM_effect
+# denounce_newborn_FROM_effect
+
+# bastard_nickname_mother_effect
+# bastard_nickname_father_effect
+# bastard_nickname_ROOT_effect
+
+# transfer_wealth_to_ROOT_effect
+# transfer_wealth_to_heir_effect
+
+# set_mega_war_empire_variable_ROOT_effect
+# set_mega_war_kingdom_variable_ROOT_effect
+
+# extrajudicial_action_tyranny_effect
+# add_sympathy_trait_effect
+# slave_raid_gain_slaves_effect
+# add_priest_trait_effect
+# heal_basic_effect
+# heal_advanced_effect
+# increase_red_god_magic
+
+# shattered_realms_effect
+# symmetrical_start_effect
+# startup_prosperity_effect
+
+# gain_regency_effect
+# find_ship_name_effect
+# add_fear_execution_effect
+# add_fear_torture_effect
+# enslave_effect
+
+# get_education_level_effect
+# decrease_education_level_effect
+# increase_education_level_effect
+# add_random_leadership_trait_effect
+# add_education_leadership_traits_effect
+
+###TRAIT ADDING EFFECTS###
+#Add new ones in alphabetical order.
+add_trait_brave_effect  = {
+	if = {
+		limit = { 
+			NOR = { 
+				trait = brave 
+				trait = craven
+			}
+		} 
+		add_trait = brave
+		hidden_tooltip = { character_event = { id = 38270 } }
+	}
+}
+
+
+add_trait_charitable_effect = {
+	if = {
+		limit = { 
+			NOR = { 
+				trait = charitable
+				trait = greedy
+			}
+		} 
+		add_trait = charitable
+		hidden_tooltip = { character_event = { id = 38273 } } # Notify Charitable
+	}
+}
+
+add_trait_chaste_effect = {
+	if = {
+		limit = { 
+			NOR = { 
+				trait = chaste 
+				trait = lustful
+			}
+		} 
+		add_trait = chaste
+		hidden_tooltip = { character_event = { id = 38274 } }
+	}
+}
+
+add_trait_craven_effect  = {
+	if = {
+		limit = { 
+			NOR = { 
+				trait = brave 
+				trait = craven
+			}
+		} 
+		add_trait = craven
+		hidden_tooltip = { character_event = { id = 38257 } }
+	}
+}
+
+add_trait_cruel_effect  = {
+	if = {
+		limit = { 
+			NOR = { 
+				trait = cruel 
+				trait = kind
+			}
+		} 
+		add_trait = cruel
+		hidden_tooltip = { character_event = { id = 38259 } }
+	}
+}
+
+add_trait_cynical_effect = {
+	if = {
+		limit = {
+			NOR = {
+				trait = cynical
+				trait = zealous
+			}
+		}
+		add_trait = cynical
+		hidden_tooltip = { character_event = { id = 38258 } } #notify cynical
+	}
+}
+
+add_trait_depressed_effect = {
+	if = {
+		limit = { NOT = { trait = depressed } }
+		add_trait = depressed
+		hidden_tooltip = { character_event = { id = 38288 } }
+	}
+}
+
+add_trait_greedy_effect = {
+	if = {
+		limit = { 
+			NOR = { 
+				trait = greedy 
+				trait = charitable
+			}
+		} 
+		add_trait = greedy
+		hidden_tooltip = { character_event = { id = 38252 } }
+	}
+}
+
+add_trait_gregarious_effect = {
+	if = {
+		limit = {
+			NOR = {
+				trait = gregarious
+				trait = shy
+			}
+		}
+		add_trait = gregarious
+		hidden_tooltip = { character_event = { id = 38265 } }
+	}
+}
+
+add_trait_kind_effect = {
+	if = {
+		limit = {
+			NOR = {
+				trait = kind
+				trait = envious
+				trait = cruel
+			}
+		}
+		add_trait = kind
+		hidden_tooltip = { character_event = { id = 38268 } }
+	}	
+}
+
+add_trait_lustful_effect = {
+	if = {
+		limit = {
+			NOR = {
+				trait = lustful
+				trait = chaste
+			}
+		}
+		add_trait = lustful
+		hidden_tooltip = { character_event = { id = 38272 } }
+	}
+}
+
+add_trait_one_eyed_effect = {
+	if = {
+		limit = {
+			NOR = {
+				trait = one_eyed
+				trait = blinded
+			}
+		}
+		add_trait = one_eyed
+		hidden_tooltip = { character_event = { id = RIP.11501 } }
+		add_trait_severely_injured_effect = yes
+		
+	}
+}
+
+add_trait_one_handed_effect = {
+	if = {
+		limit = { NOT = { trait = one_handed } }
+		add_trait = one_handed
+		hidden_tooltip = { character_event = { id = RIP.11502 } }
+		add_trait_severely_injured_effect = yes
+	}
+}
+
+add_trait_patient_effect = {
+	if = {
+		limit = {
+			NOR = {
+				trait = patient
+				trait = wroth
+			}
+		}
+		add_trait = patient
+		hidden_tooltip = { character_event = { id = 38264 } }
+	}
+}
+
+add_trait_proud_effect = {
+	if = {
+		limit = {
+			NOR = {
+				trait = proud
+				trait = humble
+			}
+		}
+		add_trait = proud
+		hidden_tooltip = { character_event = { id = 38264 } }
+	}
+}
+
+add_trait_severely_injured_effect = {
+	if = {
+		limit = { NOT = { trait = severely_injured } }
+		add_trait = severely_injured
+
+		hidden_tooltip = {
+			random_list = {
+				75 = { #Get rid of severely_injured
+					character_event = { id = RIP.11000 days = 90 random = 275}
+				}
+				25 = { #Get rid of severely_injured but develop infection
+					set_character_flag = pending_infection
+					character_event = { id = RIP.11000 days = 90 random = 275}
+				}
+			}
+		}
+	}
+}
+
+add_trait_shy_effect = {
+	if = {
+		limit = {
+			NOR = {
+				trait = gregarious
+				trait = shy
+			}
+		}
+		add_trait = shy
+		hidden_tooltip = { character_event = { id = 38295 } }
+	}
+}
+
+add_trait_temperate_effect = {
+	if = {
+		limit = {
+			NOR = {
+				trait = temperate
+				trait = gluttonous
+			}
+		}
+		add_trait = temperate
+		hidden_tooltip = { character_event = { id = 38276 } } #Notify Temperate
+	}
+}
+
+add_trait_wounded_effect = {
+	if = {
+		limit = { NOT = { trait = wounded } }
+		add_trait = wounded
+		hidden_tooltip = { character_event = { id = 38280 } }
+	}
+}
+
+add_trait_wroth_effect = {
+	if = {
+		limit = { 
+			NOR = { 
+				trait = wroth 
+				trait = patient
+			}
+		} 
+		add_trait = wroth
+		hidden_tooltip = { character_event = { id = 38254 } }
+	}
+}
+
+
+
+#TRAIT REMOVAL EFFECTS
+#Add new ones in alphabetical order.
+
+remove_trait_charitable_effect = {
+	if = {
+		limit = { trait = charitable }
+		remove_trait = charitable
+	}
+}
+
+remove_trait_chaste_effect = {
+	if = {
+		limit = { trait = chaste }
+		remove_trait = chaste
+		hidden_tooltip = { character_event = {	id = 38303 } } #Notify Removed Chaste
+	}
+}
+
+remove_trait_craven_effect = {
+	if = {
+		limit = { trait = craven }
+		remove_trait = craven
+		hidden_tooltip = { character_event = { id = 38296 } }
+	}	
+}
+
+remove_trait_cruel_effect = {
+	if = {
+		limit = { trait = cruel }
+		remove_trait = cruel
+	}	
+}
+
+remove_trait_kind_effect = {
+	if = {
+		limit = { trait = kind }
+		remove_trait = kind
+	}	
+}
+
+remove_trait_shy_effect = {
+	if = {
+		limit = { trait = shy }
+		remove_trait = shy
+		hidden_tooltip = { character_event = { id = 38295 } }
+	}
+}
+remove_trait_gregarious_effect = {
+	if = {
+		limit = { trait = gregarious }
+		remove_trait = gregarious
+		hidden_tooltip = { character_event = { id = 38297 } }
+	}
+}
+
+remove_trait_zealous_effect = {
+	if = {
+		limit = { trait = zealous }
+		remove_trait = zealous
+		hidden_tooltip = { character_event = { id = 38310 } }
+	}	
+}
+
+
+remove_patrons_effect = {
+	remove_character_modifier = patron_shiva
+	remove_character_modifier = patron_vishnu
+	remove_character_modifier = patron_brahma
+	remove_character_modifier = patron_kali
+	remove_character_modifier = patron_ganesha
+	remove_character_modifier = patron_ganga
+}
+
+increase_mercenary_troop_support_effect = {
+	if = {
+		limit = {
+			has_mercenary_maintenance_modifier = maintaining_mercenary_band_6
+		}
+		set_mercenary_maintenance_modifier = maintaining_mercenary_band_7
+		change_title_army_size = 0.3
+	}
+	if = {
+		limit = {
+			has_mercenary_maintenance_modifier = maintaining_mercenary_band_5
+		}
+		set_mercenary_maintenance_modifier = maintaining_mercenary_band_6
+		change_title_army_size = 0.3
+	}
+	if = {
+		limit = {
+			has_mercenary_maintenance_modifier = maintaining_mercenary_band_4
+		}
+		set_mercenary_maintenance_modifier = maintaining_mercenary_band_5
+		change_title_army_size = 0.3
+	}
+	if = {
+		limit = {
+			has_mercenary_maintenance_modifier = maintaining_mercenary_band_3
+		}
+		set_mercenary_maintenance_modifier = maintaining_mercenary_band_4
+		change_title_army_size = 0.3
+	}
+	if = {
+		limit = {
+			has_mercenary_maintenance_modifier = maintaining_mercenary_band_2
+		}
+		set_mercenary_maintenance_modifier = maintaining_mercenary_band_3
+		change_title_army_size = 0.3
+	}
+	if = {
+		limit = {
+			has_mercenary_maintenance_modifier = maintaining_mercenary_band
+		}
+		set_mercenary_maintenance_modifier = maintaining_mercenary_band_2
+		change_title_army_size = 0.3
+	}
+}
+
+increase_mercenary_ambition_level_effect = {
+	if = {
+		limit = {
+			has_character_flag = mercenary_ambition_8
+		}
+		clr_character_flag = mercenary_ambition_8
+		set_character_flag = mercenary_ambition_9
+	}
+	if = {
+		limit = {
+			has_character_flag = mercenary_ambition_7
+		}
+		clr_character_flag = mercenary_ambition_7
+		set_character_flag = mercenary_ambition_8
+	}
+	if = {
+		limit = {
+			has_character_flag = mercenary_ambition_6
+		}
+		clr_character_flag = mercenary_ambition_6
+		set_character_flag = mercenary_ambition_7
+	}
+	if = {
+		limit = {
+			has_character_flag = mercenary_ambition_5
+		}
+		clr_character_flag = mercenary_ambition_5
+		set_character_flag = mercenary_ambition_6
+	}
+	if = {
+		limit = {
+			has_character_flag = mercenary_ambition_4
+		}
+		clr_character_flag = mercenary_ambition_4
+		set_character_flag = mercenary_ambition_5
+	}
+	if = {
+		limit = {
+			has_character_flag = mercenary_ambition_3
+		}
+		clr_character_flag = mercenary_ambition_3
+		set_character_flag = mercenary_ambition_4
+	}
+	if = {
+		limit = {
+			has_character_flag = mercenary_ambition_2
+		}
+		clr_character_flag = mercenary_ambition_2
+		set_character_flag = mercenary_ambition_3
+	}
+	if = {
+		limit = {
+			has_character_flag = mercenary_ambition_1
+		}
+		clr_character_flag = mercenary_ambition_1
+		set_character_flag = mercenary_ambition_2
+	}
+}
+
+decrease_mercenary_ambition_level_effect = {
+	if = {
+		limit = {
+			has_character_flag = mercenary_ambition_2
+		}
+		clr_character_flag = mercenary_ambition_2
+		set_character_flag = mercenary_ambition_1
+	}
+	if = {
+		limit = {
+			has_character_flag = mercenary_ambition_3
+		}
+		clr_character_flag = mercenary_ambition_3
+		set_character_flag = mercenary_ambition_2
+	}
+	if = {
+		limit = {
+			has_character_flag = mercenary_ambition_4
+		}
+		clr_character_flag = mercenary_ambition_4
+		set_character_flag = mercenary_ambition_3
+	}
+	if = {
+		limit = {
+			has_character_flag = mercenary_ambition_5
+		}
+		clr_character_flag = mercenary_ambition_5
+		set_character_flag = mercenary_ambition_4
+	}
+	if = {
+		limit = {
+			has_character_flag = mercenary_ambition_6
+		}
+		clr_character_flag = mercenary_ambition_6
+		set_character_flag = mercenary_ambition_5
+	}
+	if = {
+		limit = {
+			has_character_flag = mercenary_ambition_7
+		}
+		clr_character_flag = mercenary_ambition_7
+		set_character_flag = mercenary_ambition_6
+	}
+	if = {
+		limit = {
+			has_character_flag = mercenary_ambition_8
+		}
+		clr_character_flag = mercenary_ambition_8
+		set_character_flag = mercenary_ambition_7
+	}
+	if = {
+		limit = {
+			has_character_flag = mercenary_ambition_9
+		}
+		clr_character_flag = mercenary_ambition_9
+		set_character_flag = mercenary_ambition_8
+	}
+}
+add_symptom_effect = {
+	custom_tooltip = {
+		text = add_symptom_tooltip
+		hidden_tooltip = {
+			random_list = {
+				10 = {
+					modifier = {
+						factor = 0
+							trait = cough
+					}
+					character_event = { id = RIP.5000 days = 1 }
+				}
+				10 = {
+					modifier = {
+						factor = 0
+							trait = fever
+
+					}
+					character_event = { id = RIP.5001 days = 1 }
+				}
+				10 = {
+					modifier = {
+						factor = 0
+							trait = diarrhea
+
+					}
+					character_event = { id = RIP.5002 days = 1 }
+				}
+				10 = {
+					modifier = {
+						factor = 0
+							trait = vomiting
+					}
+					character_event = { id = RIP.5003 days = 1 }
+				}
+				10 = {
+					modifier = {
+						factor = 0
+							trait = headache
+					}
+					character_event = { id = RIP.5004 days = 1 }
+				}
+				10 = {
+					modifier = {
+						factor = 0
+							trait = chest_pain
+					}
+					character_event = { id = RIP.5005 days = 1 }
+				}
+				10 = {
+					modifier = {
+						factor = 0
+							trait = cramps
+					}
+					character_event = { id = RIP.5006 days = 1 }
+				}
+				10 = {
+					modifier = {
+						factor = 0
+							trait = rash
+					}
+					character_event = { id = RIP.5007 days = 1 }
+				}
+				10 = {
+					modifier = {
+						factor = 0
+							trait = abdominal_pain
+					}
+					character_event = { id = RIP.5008 days = 1 }
+				}
+				10 = {
+					modifier = {
+						factor = 0
+							trait = fatigue
+					}
+					character_event = { id = RIP.5009 days = 1 }
+				}
+				10 = {
+					modifier = {
+						factor = 0
+							trait = malaise
+					}
+					character_event = { id = RIP.5010 days = 1 }
+				}
+			}
+		}
+	}
+}
+
+add_maimed_trait_effect = {
+	custom_tooltip = {
+		text = maimed_effect_tooltip
+		hidden_tooltip = {
+			if = {
+				limit = { NOT = { has_dlc = "Reapers" } }
+				add_trait = maimed
+				character_event = { id = 38281 }
+			}
+			if = {
+				limit = { has_dlc = "Reapers" }
+				random_list = {
+					15 = {
+						modifier = {
+							factor = 0
+							OR = {
+								trait = one_eyed
+								trait = blinded								
+							}
+						}
+						add_trait = one_eyed
+						character_event = { id = RIP.11501 }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							trait = one_legged
+						}
+						add_trait = one_legged
+						character_event = { id = RIP.11503 }
+					}
+					20 = {
+						modifier = {
+							factor = 0
+							trait = one_handed
+						}
+						add_trait = one_handed
+						character_event = { id = RIP.11502 }
+					}
+					10 = {
+						modifier = {
+							factor = 0
+							trait = disfigured
+						}
+						add_trait = disfigured
+						character_event = { id = RIP.11504 }
+					}
+					5 = {
+						modifier = {
+							factor = 0
+							trait = mangled
+						}
+						add_trait = mangled
+						character_event = { id = RIP.11505 }
+					}
+				}
+			}	
+		}
+	}
+	if = {
+		limit = {
+			AND = {
+				has_dlc = "Reapers"
+				NOT = { trait = severely_injured }
+			}
+		}
+		add_trait = severely_injured
+		hidden_tooltip = {
+			random_list = {
+				75 = { #Get rid of severely_injured
+					character_event = { id = RIP.11000 days = 90 random = 275}
+				}
+				25 = { #Get rid of severely_injured but develop infection
+					set_character_flag = pending_infection
+					character_event = { id = RIP.11000 days = 90 random = 275}
+				}
+			}
+		}
+	}
+}
+
+
+add_crippled_trait_effect = {
+	if = {
+		limit = { NOT = { has_dlc = "Reapers" } }
+		add_trait = crippled
+		hidden_tooltip = { character_event = { id = trait_notification.12 } }
+	}
+	if = {
+		limit = { has_dlc = "Reapers" }
+		add_trait = mangled
+		hidden_tooltip = { character_event = { id = RIP.11505 } }
+		if = {
+			limit = { NOT = { trait = severely_injured } }
+			add_trait = severely_injured
+			hidden_tooltip = {
+				random_list = {
+					75 = { #Get rid of severely_injured
+						character_event = { id = RIP.11000 days = 90 random = 275}
+					}
+					25 = { #Get rid of severely_injured but develop infection
+						set_character_flag = pending_infection
+						character_event = { id = RIP.11000 days = 90 random = 275}
+					}
+				}
+			}
+		}
+	}	
+}
+
+add_plague_symptom_effect = {
+	random_list = {
+		10 = {
+			modifier = {
+				factor = 0
+				trait = malaise
+			}
+			character_event = { id = RIP.5010 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fever
+			}
+			character_event = { id = RIP.5001 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = cramps
+			}
+			character_event = { id = RIP.5006 }
+		}
+	}
+}
+
+add_pneumonia_symptom_effect = {
+	random_list = {
+		10 = {
+			modifier = {
+				factor = 0
+				trait = cough
+			}
+			character_event = { id = RIP.5000 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fever
+			}
+			character_event = { id = RIP.5001 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = chest_pain
+			}
+			character_event = { id = RIP.5005 }
+		}
+	}
+}
+
+add_syphilis_symptom_effect = {
+	random_list = {
+		10 = {
+			modifier = {
+				factor = 0
+				trait = rash
+			}
+			character_event = { id = RIP.5007 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fever
+			}
+			character_event = { id = RIP.5001 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = headache
+			}
+			character_event = { id = RIP.5004 }
+		}
+	}
+}
+
+add_tuberculosis_symptom_effect = {
+	random_list = {
+		10 = {
+			modifier = {
+				factor = 0
+				trait = cough
+			}
+			character_event = { id = RIP.5000 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fever
+			}
+			character_event = { id = RIP.5001 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = chest_pain
+			}
+			character_event = { id = RIP.5005 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fatigue
+			}
+			character_event = { id = RIP.5009 }
+		}
+	}
+}
+
+add_typhoid_symptom_effect = {
+	random_list = {
+		10 = {
+			modifier = {
+				factor = 0
+				trait = diarrhea
+			}
+			character_event = { id = RIP.5002 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fever
+			}
+			character_event = { id = RIP.5001 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = abdominal_pain
+			}
+			character_event = { id = RIP.5008 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = malaise
+			}
+			character_event = { id = RIP.5010 }
+		}
+	}
+}
+
+add_typhus_symptom_effect = {
+	random_list = {
+		10 = {
+			modifier = {
+				factor = 0
+				trait = diarrhea
+			}
+			character_event = { id = RIP.5002 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fever
+			}
+			character_event = { id = RIP.5001 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = abdominal_pain
+			}
+			character_event = { id = RIP.5008 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fatigue
+			}
+			character_event = { id = RIP.5009 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = rash
+			}
+			character_event = { id = RIP.5007 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = headache
+			}
+			character_event = { id = RIP.5004 }
+		}
+	}
+}
+
+add_measles_symptom_effect = {
+	random_list = {
+		10 = {
+			modifier = {
+				factor = 0
+				trait = rash
+			}
+			character_event = { id = RIP.5007 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fever
+			}
+			character_event = { id = RIP.5001 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = cough
+			}
+			character_event = { id = RIP.5000 }
+		}
+	}
+}
+
+add_smallpox_symptom_effect = {
+	random_list = {
+		10 = {
+			modifier = {
+				factor = 0
+				trait = rash
+			}
+			character_event = { id = RIP.5007 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fever
+			}
+			character_event = { id = RIP.5001 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = headache
+			}
+			character_event = { id = RIP.5004 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = malaise
+			}
+			character_event = { id = RIP.5010 }
+		}
+	}
+}
+
+add_flu_symptom_effect = {
+	random_list = {
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fatigue
+			}
+			character_event = { id = RIP.5009 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fever
+			}
+			character_event = { id = RIP.5001 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = headache
+			}
+			character_event = { id = RIP.5004 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = malaise
+			}
+			character_event = { id = RIP.5010 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = cough
+			}
+			character_event = { id = RIP.5000 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = abdominal_pain
+			}
+			character_event = { id = RIP.5008 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = diarrhea
+			}
+			character_event = { id = RIP.5002 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = vomiting
+			}
+			character_event = { id = RIP.5003 }
+		}
+	}
+}
+
+add_dysentery_symptom_effect = {
+	random_list = {
+		10 = {
+			modifier = {
+				factor = 0
+				trait = diarrhea
+			}
+			character_event = { id = RIP.5002 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fever
+			}
+			character_event = { id = RIP.5001 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = abdominal_pain
+			}
+			character_event = { id = RIP.5008 }
+		}
+	}
+}
+
+add_gout_symptom_effect = {
+	random_list = {
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fatigue 
+			}
+			character_event = { id = RIP.5009 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fever
+			}
+			character_event = { id = RIP.5001 }
+		}
+	}
+}
+
+add_food_poisoning_symptom_effect = {
+	random_list = {
+		10 = {
+			modifier = {
+				factor = 0
+				trait = diarrhea
+			}
+			character_event = { id = RIP.5002 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fever
+			}
+			character_event = { id = RIP.5001 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = cramps
+			}
+			character_event = { id = RIP.5006 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = vomiting
+			}
+			character_event = { id = RIP.5003 }
+		}
+	}
+}
+
+add_rabies_symptom_effect = {
+	random_list = {
+		10 = {
+			modifier = {
+				factor = 0
+				trait = malaise
+			}
+			character_event = { id = RIP.5010 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fever
+			}
+			character_event = { id = RIP.5001 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fatigue
+			}
+			character_event = { id = RIP.5009 }
+		}
+	}
+}
+
+add_cancer_symptom_effect = {
+	random_list = {
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fatigue
+			}
+			character_event = { id = RIP.5009 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = chest_pain
+			}
+			character_event = { id = RIP.5005 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = headache
+			}
+			character_event = { id = RIP.5004 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = malaise
+			}
+			character_event = { id = RIP.5010 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = cough
+			}
+			character_event = { id = RIP.5000 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = abdominal_pain
+			}
+			character_event = { id = RIP.5008 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = diarrhea
+			}
+			character_event = { id = RIP.5002 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = vomiting
+			}
+			character_event = { id = RIP.5003 }
+		}
+	}
+}
+add_scourge_symptom_effect = {
+	random_list = {
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fatigue
+			}
+			character_event = { id = RIP.5009 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fever
+			}
+			character_event = { id = RIP.5001 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = headache
+			}
+			character_event = { id = RIP.5004 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = malaise
+			}
+			character_event = { id = RIP.5010 }
+		}
+	}
+}
+add_red_death_symptom_effect = {
+	random_list = {
+		10 = {
+			modifier = {
+				factor = 0
+				trait = cough
+			}
+			character_event = { id = RIP.5000 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = diarrhea
+			}
+			character_event = { id = RIP.5002 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = fever
+			}
+			character_event = { id = RIP.5001 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = malaise
+			}
+			character_event = { id = RIP.5010 }
+		}	
+		10 = {
+			modifier = {
+				factor = 0
+				trait = vomiting
+			}
+			character_event = { id = RIP.5003 }
+		}
+	}
+}
+add_butterfly_fever_symptom_effect = {
+	random_list = {
+		50 = {
+			modifier = {
+				factor = 0
+				trait = fever
+			}
+			character_event = { id = RIP.5001 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = vomiting
+			}
+			character_event = { id = RIP.5003 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = cramps
+			}
+			character_event = { id = RIP.5006 }
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				trait = abdominal_pain
+			}
+			character_event = { id = RIP.5008 }
+		}		
+	}
+}
+
+increase_depopulation_effect = {
+	if = {
+		limit = {
+			has_province_modifier = depopulated_2
+		}
+		random_list = {		
+			40 = {
+				modifier = {
+					factor = 1.5
+					any_province_holding = {
+						OR = {
+							holding_type = nomad
+							holding_type = tribal
+						}
+					}
+					NOT = { num_of_settlements = 3 }
+				}
+				modifier = {
+					factor = 1.2
+					hospital_level = 1
+				}
+				modifier = {
+					factor = 1.2
+					hospital_level = 2
+				}
+				modifier = {
+					factor = 1.2
+					hospital_level = 3
+				}
+				modifier = {
+					factor = 1.2
+					hospital_level = 4
+				}
+				modifier = {
+					factor = 1.2
+					hospital_level = 5
+				}
+				modifier = {
+					factor = 1.2
+					hospital_level = 6
+				}
+				modifier = {
+					factor = 0.8
+					has_province_modifier = asoiaf_mild_winter
+				}
+				modifier = {
+					factor = 0.65
+					has_province_modifier = asoiaf_normal_winter
+				}
+				modifier = {
+					factor = 0.5
+					has_province_modifier = asoiaf_harsh_winter
+				}
+			}
+			60 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						any_province_holding = {
+							OR = {
+								holding_type = city
+								holding_type = temple
+								holding_type = castle
+								holding_type = tribal
+							}
+						}
+					}	
+				}
+				remove_province_modifier = depopulated_2
+				add_province_modifier = {
+					name = depopulated_3
+					duration = -1
+				}
+				clr_province_flag = recent_depopulation_2
+				set_province_flag = recent_depopulation_3
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_province_modifier = depopulated_1
+		}
+		random_list = {		
+			20 = {
+				modifier = {
+					factor = 4
+					any_province_holding = {
+						OR = {
+							holding_type = nomad
+							holding_type = tribal
+						}
+					}
+					NOT = { num_of_settlements = 3 }
+				}
+				modifier = {
+					factor = 1.4
+					hospital_level = 1
+				}
+				modifier = {
+					factor = 1.4
+					hospital_level = 2
+				}
+				modifier = {
+					factor = 1.4
+					hospital_level = 3
+				}
+				modifier = {
+					factor = 1.4
+					hospital_level = 4
+				}
+				modifier = {
+					factor = 1.4
+					hospital_level = 5
+				}
+				modifier = {
+					factor = 1.4
+					hospital_level = 6
+				}
+			}
+			80 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						any_province_holding = {
+							OR = {
+								holding_type = city
+								holding_type = temple
+								holding_type = castle
+								holding_type = tribal
+							}
+						}
+					}
+				}
+				remove_province_modifier = depopulated_1
+				add_province_modifier = {
+					name = depopulated_2
+					duration = -1
+				}
+				clr_province_flag = recent_depopulation_1
+				set_province_flag = recent_depopulation_2
+			}
+		}
+		
+	}
+	if = {
+		limit = {
+			NOR = {
+				has_province_modifier = depopulated_1
+				has_province_modifier = depopulated_2
+				has_province_modifier = depopulated_3
+			}
+		}
+		random_list = {		
+			5 = {
+				modifier = {
+					factor = 15
+					any_province_holding = {
+						OR = {
+							holding_type = nomad
+							holding_type = tribal
+						}
+					}
+					NOT = { num_of_settlements = 3 }
+				}
+				modifier = {
+					factor = 1.5
+					hospital_level = 1
+				}
+				modifier = {
+					factor = 1.5
+					hospital_level = 2
+				}
+				modifier = {
+					factor = 1.5
+					hospital_level = 3
+				}
+				modifier = {
+					factor = 1.5
+					hospital_level = 4
+				}
+				modifier = {
+					factor = 1.5
+					hospital_level = 5
+				}
+				modifier = {
+					factor = 1.5
+					hospital_level = 6
+				}
+			}
+			95 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						any_province_holding = {
+							OR = {
+								holding_type = city
+								holding_type = temple
+								holding_type = castle
+								holding_type = tribal
+							}
+						}
+					}
+				}
+				set_variable = { which = prosperity_value value = 0 }
+				remove_province_modifier = prosperity_modifier_1
+				remove_province_modifier = prosperity_modifier_2
+				remove_province_modifier = prosperity_modifier_3
+				add_province_modifier = {
+					name = depopulated_1
+					duration = -1
+				}
+				set_province_flag = recent_depopulation_1
+			}
+		}
+	}
+}
+
+decrease_depopulation_effect = {
+	if = {
+		limit = {
+			has_province_modifier = depopulated_1
+		}
+		remove_province_modifier = depopulated_1
+	}
+	if = {
+		limit = {
+			has_province_modifier = depopulated_2
+		}
+		remove_province_modifier = depopulated_2
+		add_province_modifier = {
+			name = depopulated_1
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_province_modifier = depopulated_3
+		}
+		remove_province_modifier = depopulated_3
+		add_province_modifier = {
+			name = depopulated_2
+			duration = -1
+		}
+	}
+}
+
+prisoner_mutilate_effect = {
+	if = {
+		limit = { 
+			NOR = { 
+				trait = craven 
+				trait = brave
+				trait = berserker 
+				personality_traits = 6
+			} 
+		}
+		random = {
+			chance = 20		
+			add_trait = craven
+			hidden_tooltip = { character_event = { id = 38257 } }
+		}
+	}	
+	if = {
+		limit = { 
+			trait = brave 
+		}
+		random = {
+			chance = 20		
+			remove_trait = brave
+		}
+	}
+	random_list = {
+		80 = {
+			if = {
+					limit = { NOT = { trait = stressed } }
+					add_trait = stressed
+					hidden_tooltip = { character_event = { id = 38282 } }
+				}
+		}
+		10 = {
+			if = {
+					limit = { NOT = { trait = lunatic } }
+					add_trait = lunatic
+					hidden_tooltip = { character_event = { id = 38304 } }
+				}
+		}
+		10 = {
+			#no effect
+		}
+	}
+
+	add_trait = severely_injured
+	hidden_tooltip = {
+		random_list = {
+			75 = { #Get rid of severely_injured
+				character_event = { id = RIP.11000 days = 90 random = 275}
+			}
+			25 = { #Get rid of severely_injured but develop infection
+				set_character_flag = pending_infection
+				character_event = { id = RIP.11000 days = 90 random = 275}
+			}
+		}
+	}	
+}
+
+jailor_mutilate_effect = {
+	if = {
+		limit = { 
+			NOR = { 
+				trait = craven 
+				trait = brave
+				trait = berserker 
+				personality_traits = 6
+			} 
+		}
+		random = {
+			chance = 20		
+			add_trait = craven
+			hidden_tooltip = { character_event = { id = 38257 } }
+		}
+	}	
+	if = {
+		limit = { 
+			trait = brave 
+		}
+		random = {
+			chance = 20		
+			remove_trait = brave
+		}
+	}
+	
+	random_list = {
+		80 = {
+			add_trait = stressed
+		}
+		10 = {
+			add_trait = lunatic
+		}
+		10 = {
+			#no effect
+		}
+	}
+
+	add_trait = severely_injured
+	hidden_tooltip = {
+		random_list = {
+			75 = { #Get rid of severely_injured
+				character_event = { id = RIP.11000 days = 90 random = 275}
+			}
+			25 = { #Get rid of severely_injured but develop infection
+				set_character_flag = pending_infection
+				character_event = { id = RIP.11000 days = 90 random = 275}
+			}
+		}
+	}
+}
+
+prisoner_torture_effect = {
+	random_list = {
+		70 = { 
+			add_character_modifier = { 
+				name = tortured
+				duration = 180
+			}
+		}
+		15 = { 
+			if = {
+				limit = { 
+					NOT = { is_maimed_trigger = yes } 
+					NOT = { trait = wounded } 
+				}
+				add_trait = wounded 
+				hidden_tooltip = { character_event = { id = 38280 } }
+			}	
+		}
+		5 = { 
+			if = {
+				limit = { NOT = { is_maimed_trigger = yes } }
+				add_maimed_trait_effect = yes
+				hidden_tooltip = { 
+					remove_trait = wounded
+				}
+			}	
+		}								
+		5 = { 
+			if = {
+				limit = { NOT = { is_crippled_trigger = yes } }
+				add_crippled_trait_effect = yes
+			}	
+		}
+		5 = { 
+			hidden_tooltip = {
+				event_target:torturer = {
+					set_character_flag = unjust_execution 
+					#set_character_flag = special_execution_found
+					save_event_target_as = executioner 
+				}
+				character_event = { id = 45342 } #Universal execution event	
+			}
+			death = {
+				death_reason = death_execution_torture
+				killer = event_target:torturer
+			}
+		}				
+	}
+	random_list = {
+		15 = {
+			if = {
+				limit = { 
+					NOT = { trait = brave }
+					NOT = { trait = craven }
+					NOT = { trait = berserker }
+				}
+				add_trait = craven
+				hidden_tooltip = { character_event = { id = 38257 } }
+			}
+			if = {
+				limit = { trait = brave }
+				remove_trait = brave
+			}				
+		}
+		15 = { 
+			if = {
+				limit = { NOT = { trait = stressed } }
+				add_trait = stressed 
+				hidden_tooltip = { character_event = { id = 38282 } }
+			}	
+		}
+		15 = { 
+			if = {
+				limit = { NOT = { trait = depressed } }
+				add_trait = depressed 
+				hidden_tooltip = { character_event = { id = 38288 } }
+			}	
+		}
+		5 = { 
+			if = {
+				limit = { NOT = { trait = lunatic } }
+				add_trait = lunatic 
+				hidden_tooltip = { character_event = { id = 38304 } }
+			}	
+		}
+		50 = { }
+	}
+	clr_character_flag = torture_confession
+}
+
+
+prisoner_torture_confession_effect = {
+	random_list = {
+		85 = { 
+			add_character_modifier = { 
+				name = tortured
+				duration = 90
+			}
+		}
+		10 = { 
+			if = {
+				limit = { 
+					NOT = { is_maimed_trigger = yes } 
+					NOT = { trait = wounded } 
+				}
+				add_trait = wounded 
+				hidden_tooltip = { character_event = { id = 38280 } }
+			}	
+		}
+		3 = { 
+			if = {
+				limit = { NOT = { is_maimed_trigger = yes } }
+				add_maimed_trait_effect = yes
+				hidden_tooltip = { 
+					remove_trait = wounded
+				}
+			}	
+		}								
+		2 = { 
+			if = {
+				limit = { NOT = { is_crippled_trigger = yes } }
+				add_crippled_trait_effect = yes
+			}	
+		}				
+	}
+	random_list = {
+		10 = {
+			if = {
+				limit = { 
+					NOT = { trait = brave }
+					NOT = { trait = craven }
+					NOT = { trait = berserker }
+				}
+				add_trait = craven
+				hidden_tooltip = { character_event = { id = 38257 } }
+			}
+			if = {
+				limit = { trait = brave }
+				remove_trait = brave
+			}				
+		}
+		10 = { 
+			if = {
+				limit = { NOT = { trait = stressed } }
+				add_trait = stressed 
+				hidden_tooltip = { character_event = { id = 38282 } }
+			}	
+		}
+		5 = { 
+			if = {
+				limit = { NOT = { trait = depressed } }
+				add_trait = depressed 
+				hidden_tooltip = { character_event = { id = 38288 } }
+			}	
+		}
+		75 = { }
+	}	
+	event_target:torturer = {
+		custom_tooltip = {
+			text = TOOLTIPEVT_OPTB_50052
+			hidden_tooltip = {
+				opinion = { who = PREV modifier = opinion_confessed }
+				character_event = { id = imprisoned.200 days = 4 }
+			}	
+		}	
+	}
+	clr_character_flag = torture_confession
+}
+
+jailor_torture_effect = {
+	random_list = {
+		70 = { 
+			add_character_modifier = { 
+				name = tortured
+				duration = 180
+			}
+		}
+		15 = { 
+			if = {
+				limit = { 
+					NOT = { is_maimed_trigger = yes } 
+					NOT = { trait = wounded } 
+				}
+				add_trait = wounded 
+				hidden_tooltip = { character_event = { id = 38280 } }
+			}	
+		}
+		5 = { 
+			if = {
+				limit = { NOT = { is_maimed_trigger = yes } }
+				add_maimed_trait_effect = yes
+				hidden_tooltip = { 
+					remove_trait = wounded
+				}
+			}	
+		}								
+		5 = { 
+			if = {
+				limit = { NOT = { is_crippled_trigger = yes } }
+				add_crippled_trait_effect = yes
+			}	
+		}
+		5 = { 
+			hidden_tooltip = {
+				event_target:torturer = {
+					set_character_flag = unjust_execution 
+					#set_character_flag = special_execution_found
+					save_event_target_as = executioner 
+				}
+				character_event = { id = 45342 } #Universal execution event	
+			}
+			death = {
+				death_reason = death_execution_torture
+				killer = event_target:torturer
+			}
+		}				
+	}
+	random_list = {
+		15 = {
+			if = {
+				limit = { 
+					NOT = { trait = brave }
+					NOT = { trait = craven }
+					NOT = { trait = berserker }
+				}
+				add_trait = craven
+				hidden_tooltip = { character_event = { id = 38257 } }
+			}
+			if = {
+				limit = { trait = brave }
+				remove_trait = brave
+			}				
+		}
+		15 = { 
+			if = {
+				limit = { NOT = { trait = stressed } }
+				add_trait = stressed 
+				hidden_tooltip = { character_event = { id = 38282 } }
+			}	
+		}
+		15 = { 
+			if = {
+				limit = { NOT = { trait = depressed } }
+				add_trait = depressed 
+				hidden_tooltip = { character_event = { id = 38288 } }
+			}	
+		}
+		5 = { 
+			if = {
+				limit = { NOT = { trait = lunatic } }
+				add_trait = lunatic 
+				hidden_tooltip = { character_event = { id = 38304 } }
+			}	
+		}
+		50 = { }
+	}
+}
+
+jailor_humiliation_effect = {
+	random_list = {
+		15 = {
+			add_trait = stressed
+		}
+		30 = {
+			if = {
+				limit = { 
+					NOR = { 
+						trait = humble
+						trait = proud
+						personality_traits = 6
+					} 
+				}
+				add_trait = humble
+				hidden_tooltip = { character_event = { id = 38260 } }
+			}	
+			if = {
+				limit = { 
+					trait = proud
+				}
+				remove_trait = proud
+				hidden_tooltip = { character_event = { id = 38300 } }
+			}			
+		}
+		30 = {
+			if = {
+				limit = { 
+					NOR = { 
+						trait = shy
+						trait = gregarious
+						personality_traits = 6
+					} 
+				}
+				add_trait = shy
+				hidden_tooltip = { character_event = { id = 38263 } }
+			}	
+			if = {
+				limit = { 
+					trait = gregarious
+				}
+				remove_trait = gregarious
+				hidden_tooltip = { character_event = { id = 38297 } }
+			}
+		}
+		25 = {
+			#nothing happens
+		}
+	}
+}
+
+prisoner_humiliation_effect = {
+	random_list = {
+		15 = {
+			modifier = {
+				factor = 0
+				trait = stressed
+			}
+			add_trait = stressed
+			hidden_tooltip = { 
+				character_event = { id = 38282 } # Notify Stressed
+			}
+		}
+		30 = {
+			if = {
+				limit = { 
+					NOR = { 
+						trait = humble
+						trait = proud
+						personality_traits = 6
+					} 
+				}
+				add_trait = humble
+				hidden_tooltip = { character_event = { id = 38260 } }
+			}	
+			if = {
+				limit = { 
+					trait = proud
+				}
+				remove_trait = proud
+				hidden_tooltip = { character_event = { id = 38300 } }
+			}			
+		}
+		30 = {
+			if = {
+				limit = { 
+					NOR = { 
+						trait = shy
+						trait = gregarious
+						personality_traits = 6
+					} 
+				}
+				add_trait = shy
+				hidden_tooltip = { character_event = { id = 38263 } }
+			}	
+			if = {
+				limit = { 
+					trait = gregarious
+				}
+				remove_trait = gregarious
+				hidden_tooltip = { character_event = { id = 38297 } }
+			}
+		}
+		25 = {
+			#nothing happens
+		}
+	}
+}
+
+maim_hand_effect = {
+	if = {
+		limit = {
+			NOT = {
+				has_dlc = "Reapers"
+			}
+		}
+		add_trait = maimed
+	}
+	if = {
+		limit = {
+			has_dlc = "Reapers"
+		}
+		if = {
+			limit = {
+				trait = one_handed
+				NOT = { trait = mangled }
+			}
+			add_trait = mangled
+			hidden_tooltip = { character_event = { id = RIP.11505 } }
+		}
+		if = {
+			limit = {
+				NOT = { trait = one_handed }
+			}
+			add_trait = one_handed
+			hidden_tooltip = { character_event = { id = RIP.11502 } }
+		}
+	}
+	add_trait = severely_injured
+	hidden_tooltip = {
+		hidden_tooltip = {
+			random_list = {
+				75 = { #Get rid of severely_injured
+					character_event = { id = RIP.11000 days = 90 random = 275}
+				}
+				25 = { #Get rid of severely_injured but develop infection
+					set_character_flag = pending_infection
+					character_event = { id = RIP.11000 days = 90 random = 275}
+				}
+			}
+		}
+	}
+}
+
+mangle_effect = {
+	if = {
+		limit = {
+			NOT = {
+				has_dlc = "Reapers"
+			}
+		}
+		add_trait = maimed
+	}
+	if = {
+		limit = {
+			has_dlc = "Reapers"
+		}
+		if = {
+			limit = {
+				NOT = { trait = mangled }
+			}
+			add_trait = mangled
+			hidden_tooltip = { character_event = { id = RIP.11505 } }
+		}
+	}
+	add_trait = severely_injured
+	hidden_tooltip = {
+		hidden_tooltip = {
+			random_list = {
+				75 = { #Get rid of severely_injured
+					character_event = { id = RIP.11000 days = 90 random = 275}
+				}
+				25 = { #Get rid of severely_injured but develop infection
+					set_character_flag = pending_infection
+					character_event = { id = RIP.11000 days = 90 random = 275}
+				}
+			}
+		}
+	}
+}
+
+remove_treatment_modifiers_effect = {
+	remove_character_modifier = successful_treatment_1
+	remove_character_modifier = successful_treatment_2
+	remove_character_modifier = successful_treatment_3
+	remove_character_modifier = failed_treatment_1
+	remove_character_modifier = failed_treatment_2
+	remove_character_modifier = mystic_treatment_decent
+	remove_character_modifier = mystic_treatment_poor
+	remove_character_modifier = mystic_treatment_terrible
+	remove_character_modifier = symptom_treatment_1
+	remove_character_modifier = symptom_treatment_2
+	remove_character_modifier = symptom_treatment_3
+	remove_character_modifier = symptom_treatment_4
+}
+
+remove_disease_flags_effect = {
+	clr_character_flag = developing_illness
+	clr_character_flag = got_syphilis
+	clr_character_flag = got_tuberculosis
+	clr_character_flag = got_typhoid_fever
+	clr_character_flag = got_typhus
+	clr_character_flag = got_bubonic_plague
+	clr_character_flag = got_measles
+	clr_character_flag = got_smallpox
+	clr_character_flag = got_aztec_disease
+	clr_character_flag = got_flu
+	clr_character_flag = got_dysentery
+	clr_character_flag = got_gout
+	clr_character_flag = got_food_poisoning
+	clr_character_flag = got_rabies
+	clr_character_flag = got_cancer
+	clr_character_flag = got_pneumonia
+	clr_character_flag = got_old_ones_scourge
+	clr_character_flag = got_red_death
+	clr_character_flag = got_butterfly_fever
+	clr_character_flag = manifest_syphilis
+	clr_character_flag = manifest_tuberculosis
+	clr_character_flag = manifest_typhoid_fever
+	clr_character_flag = manifest_typhus
+	clr_character_flag = manifest_bubonic_plague
+	clr_character_flag = manifest_measles
+	clr_character_flag = manifest_smallpox
+	clr_character_flag = manifest_aztec_disease
+	clr_character_flag = manifest_flu
+	clr_character_flag = manifest_dysentery
+	clr_character_flag = manifest_gout
+	clr_character_flag = manifest_food_poisoning
+	clr_character_flag = manifest_rabies
+	clr_character_flag = manifest_cancer
+	clr_character_flag = manifest_pneumonia
+	clr_character_flag = manifest_red_death
+	clr_character_flag = manifest_butterfly_fever
+}
+
+leave_court_effect = {
+	reverse_opinion = {
+		modifier = opinion_leave
+		who = ROOT
+	}
+	random_playable_ruler = {
+		limit = {
+			demesne_size = 1
+			OR = {
+				higher_tier_than = DUKE
+				culture_group = PREV
+			}
+			NOT = { character = ROOT }
+			NOT = { is_liege_or_above = ROOT }
+			NOT = { has_opinion_modifier = { who = ROOT modifier = opinion_de_facto_liege } }
+			NOT = { any_liege = { has_opinion_modifier = { who = ROOT modifier = opinion_de_facto_liege } } }
+			is_within_diplo_range = ROOT
+			
+			NOT = { trait = nightswatch }
+			NOT = { culture_group = unoccupied_group }
+			OR = {
+				NOT = { trait = wildling }
+				PREV = { trait = wildling }
+			}	
+			OR = {
+				NOT = { culture = old_andal }
+				higher_tier_than = DUKE
+				PREV = { culture = old_andal }
+			}
+			OR = {
+				NOT = { culture = rhoynar }
+				higher_tier_than = DUKE
+				PREV = { culture = rhoynar }
+			}	
+			OR = {
+				NOT = { trait = pirate }
+				PREV = { trait = pirate }
+			}
+			OR = {
+				NOT = { is_nomadic = yes }
+				PREV = { is_nomadic = yes }
+			}
+			OR = { #slaves flee to non-slavery location
+				PREV = { NOT = { trait = slave } }
+				crownlaw_title = { has_law = slavery_0 }			
+			}			
+		}
+		reverse_banish = PREV
+	}
+	reverse_remove_opinion = {
+		modifier = opinion_leave
+		who = ROOT
+	}
+}
+
+leave_court_and_die_effect = {
+	leave_court_effect = yes
+	death = { death_reason = death_missing }
+}
+
+give_epidemic_disease_effect = {
+	if = {
+		limit = {
+			location = { disease = bloody_flux }
+			NOT = { has_character_flag = immune_tuberculosis }
+		}
+
+		set_character_flag = got_tuberculosis
+		set_character_flag = developing_illness
+
+		character_event = { id = RIP.5015 }
+
+		break = yes
+	}
+	if = {
+		limit = {
+			location = { disease = typhoid_fever }
+			NOT = { has_character_flag = immune_typhoid_fever }
+		}
+
+		set_character_flag = got_typhoid_fever
+		set_character_flag = developing_illness
+
+		character_event = { id = RIP.5016 }
+
+		break = yes
+	}
+	if = {
+		limit = {
+			location = { disease = grey_plague }
+			NOT = { has_character_flag = immune_typhus }
+		}
+
+		set_character_flag = got_typhus
+		set_character_flag = developing_illness
+
+		character_event = { id = RIP.5017 }
+
+		break = yes
+	}
+	if = {
+		limit = { 
+			location = { disease = bubonic_plague }
+			NOT = { has_character_flag = immune_bubonic_plague }
+		}
+
+		set_character_flag = got_bubonic_plague
+		set_character_flag = developing_illness
+
+		character_event = { id = RIP.5012 }
+
+		break = yes
+	}
+	# if = {
+		# limit = { 
+			# location = { disease = measles }
+			# NOT = { has_character_flag = immune_measles }
+		# }
+
+		# set_character_flag = got_measles
+		# set_character_flag = developing_illness
+
+		# character_event = { id = RIP.5018 }
+
+		# break = yes
+	# }
+	if = {
+		limit = {
+			location = { disease = small_pox }
+			NOT = { has_character_flag = immune_smallpox }
+		}
+
+		set_character_flag = got_small_pox
+		set_character_flag = developing_illness
+
+		character_event = { id = RIP.5019 }
+
+		break = yes
+	}
+	if = {
+		limit = { 
+			location = { disease = syphilis }
+			NOT = { has_character_flag = immune_syphilis }
+		}
+
+		set_character_flag = got_syphilis
+		set_character_flag = developing_illness
+
+		character_event = { id = RIP.5014 }
+
+		break = yes
+	}
+	if = {
+		limit = { 
+			location = { disease = old_ones_scourge }
+			NOT = { has_character_flag = immune_old_ones_scourge }
+		}
+
+		set_character_flag = got_old_ones_scourge
+		set_character_flag = developing_illness
+
+		if = {
+			limit = { has_dlc = "Reapers" }
+			character_event = { id = essos.157 } #Symptoms
+		}
+		if = {
+			limit = { NOT = { has_dlc = "Reapers" } }
+			character_event = { id = essos.158 } #Disease develops
+		}
+
+		break = yes
+	}
+	if = {
+		limit = { 
+			location = { disease = red_death }
+			NOT = { has_character_flag = immune_red_death }
+		}
+
+		set_character_flag = got_red_death
+		set_character_flag = developing_illness
+
+		character_event = { id = sothoryos.6 }
+		
+		break = yes
+	}
+	
+	
+}
+
+blessing_removes_disease_effect = {
+	if = {
+		limit = {
+			has_dlc = "The Old Gods"
+			has_character_flag = old_gods_blessing
+			has_character_modifier = blessing_of_health
+		}
+		hidden_tooltip = { character_event = { id = TOG.7015 days = 30 } }
+	}
+	# if = {
+		# limit = {
+			# has_dlc = "Sons of Abraham"
+			# has_character_flag = pilgrim_blessing
+			# has_character_modifier = blessing_of_health 
+		# }
+		# hidden_tooltip = { character_event = { id = SoA.5068 days = 30 } }
+	# }
+}
+
+deaths_gift_removes_disease_effect = {
+	if = {
+		limit = {
+			has_dlc = "Reapers"
+			has_character_modifier = deaths_gift 
+		}
+		hidden_tooltip = { character_event = { id = RIP.30233 days = 30 } }
+	}
+}
+
+remove_disease_trait_effect = {
+	if = {
+	 	limit = { trait = ill }
+	 	remove_trait = ill
+	}
+	if = {
+	 	limit = { trait = has_bloody_flux }
+	 	remove_trait = has_bloody_flux
+		set_character_flag = immune_tuberculosis
+	}
+	if = {
+	 	limit = { trait = has_typhoid_fever }
+	 	remove_trait = has_typhoid_fever
+		set_character_flag = immune_typhoid_fever
+	}
+	if = {
+	 	limit = { trait = has_grey_plague }
+	 	remove_trait = has_grey_plague
+		set_character_flag = immune_typhus
+	}
+	if = {
+	 	limit = { trait = has_bubonic_plague }
+	 	remove_trait = has_bubonic_plague
+		set_character_flag = immune_bubonic_plague
+	}
+	if = {
+	 	limit = { trait = has_measles }
+	 	remove_trait = has_measles
+		set_character_flag = immune_measles
+	}
+	if = {
+	 	limit = { trait = has_small_pox }
+	 	remove_trait = has_small_pox
+		set_character_flag = immune_small_pox
+	}
+	if = {
+	 	limit = { trait = has_aztec_disease }
+	 	remove_trait = has_aztec_disease
+		set_character_flag = immune_aztec_disease
+	}
+	if = {
+	 	limit = { trait = syphilitic }
+	 	remove_trait = syphilitic
+		set_character_flag = immune_syphilitic
+	}
+	if = {
+	 	limit = { trait = flu }
+	 	remove_trait = flu
+	}
+	if = {
+	 	limit = { trait = dysentery }
+	 	remove_trait = dysentery
+	}
+	if = {
+	 	limit = { trait = gout }
+	 	remove_trait = gout
+	}
+	if = {
+	 	limit = { trait = food_poisoning }
+	 	remove_trait = food_poisoning
+	}
+	if = {
+	 	limit = { trait = rabies }
+	 	remove_trait = rabies
+	}
+	if = {
+	 	limit = { trait = cancer }
+	 	remove_trait = cancer
+	}
+	if = {
+	 	limit = { trait = pneumonic }
+	 	remove_trait = pneumonic
+	}
+	if = {
+	 	limit = { trait = scurvy }
+	 	remove_trait = scurvy
+	}
+	if = {
+	 	limit = { trait = dancing_plague }
+	 	remove_trait = dancing_plague
+	}
+	if = {
+	 	limit = { trait = leper }
+	 	remove_trait = leper
+	}
+	if = {
+	 	limit = { trait = old_ones_scourge }
+	 	remove_trait = old_ones_scourge
+		set_character_flag = immune_old_ones_scourge
+	}	
+	if = {
+	 	limit = { trait = has_red_death }
+	 	remove_trait = has_red_death
+	}
+	if = {
+	 	limit = { trait = has_butterfly_fever }
+	 	remove_trait = has_butterfly_fever
+	}	
+	clear_disease_level_effect = yes
+}
+
+resolve_severely_injured_effect = {
+	hidden_tooltip = {
+		random_list = {
+			70 = { #Get rid of severely_injured
+				character_event = { id = RIP.11000 days = 100 random = 300 }
+			}
+			30 = { #Get rid of severely_injured but develop infection
+				set_character_flag = pending_infection
+				character_event = { id = RIP.11000 days = 100 random = 300 }
+			}
+		}
+	}
+}
+
+leave_council_position_effect = {
+	if = {
+		limit = { has_job_title = job_castellan }
+		remove_title = job_castellan
+		add_character_modifier = {
+			modifier = resigned_in_anger
+			years = 2
+			hidden = yes
+		}
+	}
+	if = {
+		limit = { has_job_title = job_chancellor }
+		remove_title = job_chancellor
+		add_character_modifier = {
+			modifier = resigned_in_anger
+			years = 2
+			hidden = yes
+		}
+	}
+	if = {
+		limit = { has_job_title = job_marshal }
+		remove_title = job_marshal
+		add_character_modifier = {
+			modifier = resigned_in_anger
+			years = 2
+			hidden = yes
+		}
+	}
+	if = {
+		limit = { has_job_title = job_treasurer }
+		remove_title = job_treasurer
+		add_character_modifier = {
+			modifier = resigned_in_anger
+			years = 2
+			hidden = yes
+		}
+	}
+	if = {
+		limit = { has_job_title = job_spymaster }
+		remove_title = job_spymaster
+		add_character_modifier = {
+			modifier = resigned_in_anger
+			years = 2
+			hidden = yes
+		}
+	}
+	if = {
+		limit = { has_job_title = job_spiritual }
+		remove_title = job_spiritual
+		add_character_modifier = {
+			modifier = resigned_in_anger
+			years = 2
+			hidden = yes
+		}
+	}
+	if = {
+		limit = { has_job_title = job_priest }
+		remove_title = job_priest
+		add_character_modifier = {
+			modifier = resigned_in_anger
+			years = 2
+			hidden = yes
+		}
+	}
+	if = {
+		limit = { has_minor_title = title_councilmember_king }
+		remove_title = title_councilmember_king
+		add_character_modifier = {
+			modifier = resigned_in_anger
+			years = 2
+			hidden = yes
+		}
+	}
+	if = {
+		limit = { has_minor_title = title_councilmember_emperor }
+		remove_title = title_councilmember_emperor
+		add_character_modifier = {
+			modifier = resigned_in_anger
+			years = 2
+			hidden = yes
+		}
+	}
+	#if = {
+		#limit = { has_minor_title = title_master_of_ships }
+		#remove_title = title_master_of_ships
+		#add_character_modifier = {
+			#modifier = resigned_in_anger
+			#years = 2
+			#hidden = yes
+		#}
+	#}
+	if = {
+		limit = { has_minor_title = title_high_admiral }
+		remove_title = title_high_admiral
+		add_character_modifier = {
+			modifier = resigned_in_anger
+			years = 2
+			hidden = yes
+		}
+	}
+}
+
+increase_prosperity_effect = {
+	if = {
+		limit = { 
+			NOR = {
+				has_province_modifier = prosperity_modifier_1
+				has_province_modifier = prosperity_modifier_2
+				has_province_modifier = prosperity_modifier_3
+				has_province_modifier = depopulated_1
+				has_province_modifier = depopulated_2
+				has_province_modifier = depopulated_3
+			}
+		}
+
+		add_province_modifier = { name = prosperity_modifier_1 duration = -1 }
+		hidden_tooltip = { set_variable = { which = prosperity_value value = 100 } }
+		break = yes
+	}
+
+	if = {
+		limit = { has_province_modifier = prosperity_modifier_1 }
+
+		hidden_tooltip = { remove_province_modifier = prosperity_modifier_1 }
+		add_province_modifier = { name = prosperity_modifier_2 duration = -1 }
+		hidden_tooltip = { set_variable = { which = prosperity_value value = 250 } }
+		break = yes
+	}
+
+	if = {
+		limit = { has_province_modifier = prosperity_modifier_2 }
+
+		hidden_tooltip = { remove_province_modifier = prosperity_modifier_2 }
+		add_province_modifier = { name = prosperity_modifier_3 duration = -1 }
+		hidden_tooltip = { set_variable = { which = prosperity_value value = 500 } }
+		break = yes
+	}
+}
+
+add_disease_level_effect = {
+	random_list = {
+		65 = { 
+			custom_tooltip = {
+				text = become_normal_ill
+			}
+		}
+		20 = { 
+			modifier = {
+				factor = 2
+				trait = strong
+			}
+			modifier = {
+				factor = 2
+				trait = robust
+			}
+			custom_tooltip = {
+				text = become_mild_ill
+				hidden_tooltip = { 
+					add_character_modifier = { name = mild_illness duration = -1 }
+				}
+			}
+		}
+		10 = { 
+			modifier = {
+				factor = 1.5
+				trait = feeble
+			}
+			modifier = {
+				factor = 1.5
+				trait = weak
+			}
+			modifier = {
+				factor = 0.5
+				trait = strong
+			}
+			modifier = {
+				factor = 0.5
+				trait = robust
+			}
+			modifier = {
+				factor = 1.5
+				age = 50
+			}
+			modifier = {
+				factor = 1.5
+				age = 60
+			}
+			modifier = {
+				factor = 1.5
+				age = 70
+			}
+			modifier = {
+				factor = 1.5
+				age = 80
+			}
+			custom_tooltip = {
+				text = become_severe_ill
+				hidden_tooltip = { 
+					add_character_modifier = { name = severe_illness duration = -1 }
+				}
+			}
+		}
+		5= { 
+			modifier = {
+				factor = 0
+				immortal = yes
+			}
+			modifier = {
+				factor = 2
+				trait = feeble
+			}
+			modifier = {
+				factor = 2
+				trait = weak
+			}
+			modifier = {
+				factor = 0.5
+				trait = strong
+			}
+			modifier = {
+				factor = 0.5
+				trait = robust
+			}
+			 modifier = {
+				factor = 2
+				age = 50
+			}
+			modifier = {
+				factor = 2
+				age = 60
+			}
+			modifier = {
+				factor = 2
+				age = 70
+			}
+			modifier = {
+				factor = 2
+				age = 80
+			}
+			custom_tooltip = {
+				text = become_bedridden_ill
+				hidden_tooltip = { 
+					add_character_modifier = { name = bedridden_illness duration = -1 }
+					add_trait = sick_incapable
+				}
+			}
+		}
+	}
+}
+
+clear_disease_level_effect = {
+	if = {
+		limit = { has_character_modifier = mild_illness }
+		remove_character_modifier = mild_illness
+	}
+	if = {
+		limit = { has_character_modifier = severe_illness }
+		remove_character_modifier = severe_illness
+	}
+	if = {
+		limit = { has_character_modifier = bedridden_illness }
+		remove_character_modifier = bedridden_illness
+		hidden_tooltip = {
+			remove_trait = sick_incapable
+		}
+	}
+}
+
+end_inaccessibility_effect = {
+	if = {
+		limit = { trait = in_hiding }
+		remove_trait = in_hiding
+
+		clr_character_flag = do_not_disturb
+		
+		add_character_modifier = {
+			name = went_out_of_hiding_timer
+			duration = 180
+			hidden = yes
+		}
+		hidden_tooltip = { character_event = { id = CM.6400 } } # Notify plotters and family
+	}
+	if = { 
+		limit = { has_character_modifier = in_seclusion }
+
+		remove_character_modifier = in_seclusion
+
+		if = {
+			limit = { is_ruler = yes }
+			
+			clr_character_flag = do_not_disturb
+			clr_character_flag = exposed_to_outside
+			clr_character_flag = seclusion_piling_corpses
+			clr_character_flag = seclusion_lazy_seduction
+			clr_character_flag = seclusion_nightmares
+			clr_character_flag = seclusion_gained_friend
+			clr_character_flag = seclusion_child_has_lover
+			clr_character_flag = seclusion_tunnel
+			clr_character_flag = seclusion_food_events
+
+			custom_tooltip = { text = open_the_gates_info_tooltip }
+			
+			add_character_modifier = {
+				name = recently_opened_gates
+				duration = 365
+			}
+			hidden_tooltip = {
+				clr_character_flag = seclusion_events_on
+				character_event = { id = RIP.11557 days = 40 random = 20} #clears starvation modifiers
+				any_courtier = {
+					clr_character_flag = seclusion_events_on
+					remove_character_modifier = in_seclusion
+					character_event = { id = RIP.11557 days = 40 random = 20} #clears starvation modifiers
+				}
+				any_vassal = {
+					limit = {
+						OR = {
+							is_councillor = yes
+							has_minor_title = title_councilmember_king
+							has_minor_title = title_councilmember_emperor
+						}
+						is_landed = yes
+						liege = { character = ROOT }
+						NOT = {
+							has_character_modifier = in_seclusion
+						}
+						host = { NOT = { character = ROOT } }
+					}
+					force_host = ROOT
+				}
+			}
+			if = { # Rejoin your liege's court if both of you are not in seclusion
+				limit = {
+					OR = {
+						is_councillor = yes
+						has_minor_title = title_councilmember_king
+						has_minor_title = title_councilmember_emperor
+					}
+					NOT = {
+						liege = {
+							has_character_modifier = in_seclusion
+						}
+					}
+				}
+				liege = {
+					save_event_target_as = liege_target
+				}
+				force_host = event_target:liege_target
+			}
+		}
+	}
+}
+#Effects for adding diseases
+give_pneumonic_effect = {
+	if = {
+		limit = { NOT = { trait = pneumonic } }
+
+		if = {
+			limit = { 
+				has_dlc = "Reapers"
+				NOT = { has_character_flag = developing_illness }
+				NOT = { has_character_flag = disease_not_serious } 
+			}
+			tooltip = { add_trait = pneumonic }
+			set_character_flag = got_pneumonia
+			set_character_flag = developing_illness
+			hidden_tooltip = { character_event = { id = RIP.5011 days = 3 random = 10 } }
+		}
+		if = {
+			limit = { NOT = { has_dlc = "Reapers" } }
+			add_trait = pneumonic
+		}
+	}
+}
+
+
+give_has_tuberculosis_effect = {
+	if = {
+		limit = { NOT = { trait = has_bloody_flux } }
+
+		if = {
+			limit = { 
+				has_dlc = "Reapers"
+				NOT = { has_character_flag = developing_illness }
+				NOT = { has_character_flag = disease_not_serious } 
+			}
+			set_character_flag = got_tuberculosis
+			set_character_flag = developing_illness
+			hidden_tooltip = { character_event = { id = RIP.5015 days = 3 random = 40 } }
+		}
+		if = {
+			limit = { NOT = { has_dlc = "Reapers" } }
+			add_trait = has_bloody_flux
+		}
+	}
+}
+
+give_has_typhoid_fever_effect = {
+	if = {
+		limit = { NOT = { trait = has_typhoid_fever } }
+
+		if = {
+			limit = { 
+				has_dlc = "Reapers"
+				NOT = { has_character_flag = developing_illness }
+				NOT = { has_character_flag = disease_not_serious } 
+			}
+			set_character_flag = got_typhoid_fever
+			set_character_flag = developing_illness
+			hidden_tooltip = { character_event = { id = RIP.5016 days = 3 random = 10 } }
+		}
+		if = {
+			limit = { NOT = { has_dlc = "Reapers" } }
+			add_trait = has_typhoid_fever
+		}
+	}
+}
+
+give_has_bubonic_plague_effect = {
+	if = {
+		limit = { NOT = { trait = has_bubonic_plague } }
+
+		if = {
+			limit = { 
+				has_dlc = "Reapers"
+				NOT = { has_character_flag = developing_illness }
+				NOT = { has_character_flag = disease_not_serious } 
+			}
+			set_character_flag = got_bubonic_plague
+			set_character_flag = developing_illness
+			hidden_tooltip = { character_event = { id = RIP.5012 days = 3 random = 10 } }
+		}
+		if = {
+			limit = { NOT = { has_dlc = "Reapers" } }
+			add_trait = has_bubonic_plague
+		}
+	}
+}
+
+give_has_measles_effect = {
+	if = {
+		limit = { NOT = { trait = has_measles } }
+
+		if = {
+			limit = { 
+				has_dlc = "Reapers"
+				NOT = { has_character_flag = developing_illness }
+				NOT = { has_character_flag = disease_not_serious } 
+			}
+			set_character_flag = got_measles
+			set_character_flag = developing_illness
+			hidden_tooltip = { character_event = { id = RIP.5018 days = 3 random = 10 } }
+		}
+		if = {
+			limit = { NOT = { has_dlc = "Reapers" } }
+			add_trait = has_measles
+		}
+	}
+}
+
+give_has_small_pox_effect = {
+	if = {
+		limit = { NOT = { trait = has_small_pox } }
+
+		if = {
+			limit = { 
+				has_dlc = "Reapers"
+				NOT = { has_character_flag = developing_illness }
+				NOT = { has_character_flag = disease_not_serious } 
+			}
+			set_character_flag = got_smallpox
+			set_character_flag = developing_illness
+			hidden_tooltip = { character_event = { id = RIP.5019 days = 3 random = 10 } }
+		}
+		if = {
+			limit = { NOT = { has_dlc = "Reapers" } }
+			add_trait = has_small_pox
+		}
+	}
+}
+
+give_has_aztec_disease_effect = {
+	if = {
+		limit = { NOT = { trait = has_aztec_disease } }
+
+		if = {
+			limit = { 
+				has_dlc = "Reapers"
+				NOT = { has_character_flag = developing_illness }
+				NOT = { has_character_flag = disease_not_serious } 
+			}
+			set_character_flag = got_aztec_disease
+			set_character_flag = developing_illness
+			hidden_tooltip = { character_event = { id = RIP.5014 days = 3 random = 40 } }
+		}
+		if = {
+			limit = { NOT = { has_dlc = "Reapers" } }
+			add_trait = has_aztec_disease
+		}
+	}
+}
+
+give_syphilitic_effect = {
+	if = {
+		limit = { 
+			NOT = { trait = syphilitic } 
+		}
+
+		if = {
+			limit = { 
+				has_dlc = "Reapers"
+				NOT = { has_character_flag = developing_illness }
+				NOT = { has_character_flag = disease_not_serious } 
+			}
+			set_character_flag = got_syphilis
+			set_character_flag = developing_illness
+			hidden_tooltip = { character_event = { id = RIP.5014 days = 3 random = 40 } }
+		}
+		if = {
+			limit = { NOT = { has_dlc = "Reapers" } }
+			add_trait = syphilitic
+		}
+	}
+}
+
+give_flu_effect = {
+	if = {
+		limit = { 
+			NOT = { trait = flu } 
+			has_dlc = "Reapers"
+			NOT = { has_character_flag = developing_illness }
+			NOT = { has_character_flag = disease_not_serious }
+		}
+
+		set_character_flag = got_flu
+		set_character_flag = developing_illness
+		hidden_tooltip = { character_event = { id = RIP.5020 days = 3 random = 3 } }
+	}
+}
+
+give_dysentery_effect = {
+	if = {
+		limit = { 
+			NOT = { trait = dysentery } 
+			has_dlc = "Reapers"
+			NOT = { has_character_flag = developing_illness }
+			NOT = { has_character_flag = disease_not_serious }
+		}
+
+		set_character_flag = got_dysentery
+		set_character_flag = developing_illness
+		hidden_tooltip = { character_event = { id = RIP.5021 days = 3 random = 10 } }
+	}
+}
+
+give_gout_effect = {
+	if = {
+		limit = { 
+			NOT = { trait = gout } 
+			has_dlc = "Reapers"
+			NOT = { has_character_flag = developing_illness }
+			NOT = { has_character_flag = disease_not_serious }
+		}
+
+		set_character_flag = got_gout
+		set_character_flag = developing_illness
+		hidden_tooltip = { character_event = { id = RIP.5022 days = 30 random = 60 } }
+	}
+}
+
+give_food_poisoning_effect = {
+	if = {
+		limit = { 
+			NOT = { trait = food_poisoning } 
+			has_dlc = "Reapers"
+			NOT = { has_character_flag = developing_illness }
+			NOT = { has_character_flag = disease_not_serious }
+		}
+
+		set_character_flag = got_food_poisoning
+		set_character_flag = developing_illness
+		hidden_tooltip = { character_event = { id = RIP.5023 days = 1 random = 2 } }
+	}
+}
+
+give_rabies_effect = {
+	if = {
+		limit = { 
+			NOT = { trait = rabies } 
+			has_dlc = "Reapers"
+			NOT = { has_character_flag = developing_illness }
+			NOT = { has_character_flag = disease_not_serious }
+		}
+
+		set_character_flag = got_rabies
+		set_character_flag = developing_illness
+		hidden_tooltip = { character_event = { id = RIP.5024 days = 30 random = 60 } }
+	}
+}
+
+give_cancer_effect = {
+	if = {
+		limit = { 
+			NOT = { trait = cancer } 
+			has_dlc = "Reapers"
+			NOT = { has_character_flag = developing_illness }
+			NOT = { has_character_flag = disease_not_serious }
+		}
+
+		set_character_flag = got_cancer
+		set_character_flag = developing_illness
+		hidden_tooltip = { character_event = { id = RIP.5025 days = 30 random = 60 } }
+	}
+}
+
+give_ill_effect = {
+	if = {
+		limit = { 
+			NOR = { 
+				has_dlc = "Reapers" 
+				trait = ill
+			} 
+		}
+		add_trait = ill
+		hidden_tooltip = {
+			character_event = {
+				days = 3
+				id = 38290 #Notify Ill
+			}
+		}
+	}
+	if = {
+		limit = { has_dlc = "Reapers" }
+		tooltip = { add_trait = flu }
+		give_flu_effect = yes
+	}
+}
+
+#Impregnation and venereal disease handling
+unprotected_sex_effect = {
+	random = {
+		chance = 50
+		venereal_disease_effect = yes
+	}
+	random = {
+		chance = 10
+		modifier = {
+			factor = 2
+			is_fertile_trigger = yes
+		}
+		modifier = {
+			factor = 0
+			is_infertile_trigger = yes
+		}
+		modifier = {
+			factor = 2
+			FROM = { is_fertile_trigger = yes }
+		}
+		modifier = {
+			factor = 0
+			FROM = { is_infertile_trigger = yes }
+		}
+		impregnate_effect = yes
+	}
+}
+			
+#Transfers venereal diseases between FROM and ROOT
+venereal_disease_effect = {
+	#Great pox and aztec disease for FROM
+	if = {
+		limit = {
+			NOR = {
+				FROM = { has_character_flag = developing_illness }
+				FROM = { has_character_flag = disease_not_serious }
+			}
+		}
+
+		if = {
+			limit = { trait = syphilitic }
+			FROM = { give_syphilitic_effect = yes }			
+		}
+		if = {
+			limit = { trait = has_aztec_disease }
+			FROM = { give_has_aztec_disease_effect = yes }			
+		}
+	}
+
+	#Great pox and aztec disease for ROOT
+	if = {
+		limit = {
+			NOR = {
+				has_character_flag = developing_illness
+				has_character_flag = disease_not_serious 
+			}
+		}
+
+		if = {
+			limit = { FROM = { trait = syphilitic } }
+			give_syphilitic_effect = yes		
+		}
+		if = {
+			limit = { FROM = { trait = has_aztec_disease } }
+			give_has_aztec_disease_effect = yes		
+		}
+	}
+
+	#Lover's pox
+	if = {
+		limit = { 
+			OR = {
+				trait = lovers_pox 
+				has_character_modifier = minor_disease_herpes 
+			}
+			NOR = { 
+				FROM = { trait = lovers_pox }
+				FROM = { FROM = { has_character_modifier = minor_disease_herpes } }
+			}
+		}
+		hidden_tooltip = { FROM = { character_event = { id = 6359 days = 15 random = 5 } } }
+	}
+	if = {
+		limit = { 
+			OR = {
+				FROM = { trait = lovers_pox }
+				FROM = { has_character_modifier = minor_disease_herpes }
+			}
+			NOR = { 
+				trait = lovers_pox
+				has_character_modifier = minor_disease_herpes
+			}
+		}
+		hidden_tooltip = { character_event = { id = 6359 days = 15 random = 5 } } 
+	}
+}
+
+#Tries to impregnate either ROOT or FROM if all conditions are met
+impregnate_effect = {
+	if = {
+		limit = { is_opposite_sex = FROM }
+
+		#If ROOT is a female which can get pregnant
+		if = {
+			limit = {
+				is_female = yes
+				NOT = { age = 45 }
+				is_pregnant = no
+				health = 3
+				FROM = { NOT = { trait = eunuch } }
+			}
+
+			#ROOT is not consort/spouse of anyone or is consort/spouse of FROM
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							is_married = no
+							is_consort = no
+						}
+						AND = {
+							is_consort = yes
+							consort = { character = FROM }
+						}
+						AND = {
+							is_married = yes
+							spouse = { character = FROM }
+						}
+					}
+				}
+				FROM = { impregnate = ROOT }
+			}
+
+			#ROOT is consort/spouse of someone else than FROM
+			if = {
+				limit = { 
+					OR = {
+					 	AND = {
+					 		is_married = yes
+					 		NOT = { spouse = { character = FROM } }
+					 	}
+					 	AND = {
+					 		is_consort = yes
+					 		NOT = { consort = { character = FROM } }
+					 	}
+					}
+				}
+				FROM = { impregnate_cuckoo = ROOT }
+			}
+		}
+
+		#If FROM is a female which can get pregnant
+		if = {
+			limit = {
+				FROM = {
+					is_female = yes
+					NOT = { age = 45 }
+					is_pregnant = no
+					health = 3
+					ROOT = { NOT = { trait = eunuch } }
+				}
+			}
+
+			#FROM is not consort/spouse of anyone or is consort/spouse of ROOT
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							AND = {
+								is_married = no
+								is_consort = no
+							}
+							AND = {
+								is_consort = yes
+								consort = { character = ROOT }
+							}
+							AND = {
+								is_married = yes
+								spouse = { character = ROOT }
+							}
+						}
+					}
+				}
+				impregnate = FROM
+			}
+
+			#FROM is consort/spouse of someone else than ROOT
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+						 	AND = {
+						 		is_married = yes
+						 		NOT = { spouse = { character = ROOT } }
+						 	}
+						 	AND = {
+						 		is_consort = yes
+						 		NOT = { consort = { character = ROOT } }
+						 	}
+						}
+					}
+				}
+
+				impregnate_cuckoo = FROM
+			}
+		}
+	}
+}
+
+will_not_marry_effect = {
+	add_character_modifier = {
+		modifier = will_not_marry
+		duration = -1
+	}
+	add_trait = cannot_marry
+}
+
+female_councilor_effect_3 = {
+	reverse_opinion = { 
+		modifier = opinion_given_council_position_3 
+		who = FROM 
+		years = 5 
+	}
+	add_character_modifier = {
+		name = scandalous_councillor_3
+		months = 60
+	}
+}
+
+#Use to remove any opinion giving a prison reason. Must set appropriate event targets before using this effect.
+remove_prison_reason_effect = {
+	event_target:remove_prison_reason_effect_accuser = {
+		remove_opinion = { who = event_target:remove_prison_reason_effect_accused modifier = opinion_traitor }
+		remove_opinion = { who = event_target:remove_prison_reason_effect_accused modifier = opinion_rebel_traitor }
+		remove_opinion = { who = event_target:remove_prison_reason_effect_accused modifier = opinion_dishonorable }
+		remove_opinion = { who = event_target:remove_prison_reason_effect_accused modifier = opinion_fatwa_target }
+		remove_opinion = { who = event_target:remove_prison_reason_effect_accused modifier = opinion_refused_order }
+		remove_opinion = { who = event_target:remove_prison_reason_effect_accused modifier = opinion_witch }
+		remove_opinion = { who = event_target:remove_prison_reason_effect_accused modifier = opinion_unfaithful_wife }
+		remove_opinion = { who = event_target:remove_prison_reason_effect_accused modifier = opinion_cuckolded }
+		remove_opinion = { who = event_target:remove_prison_reason_effect_accused modifier = opinion_charge_heresiarch }
+		remove_opinion = { who = event_target:remove_prison_reason_effect_accused modifier = opinion_charge_infidel }
+		remove_opinion = { who = event_target:remove_prison_reason_effect_accused modifier = opinion_charge_deviant }
+		remove_opinion = { who = event_target:remove_prison_reason_effect_accused modifier = opinion_charge_illegitimate }
+		remove_opinion = { who = event_target:remove_prison_reason_effect_accused modifier = opinion_charge_traitor }
+		remove_opinion = { who = event_target:remove_prison_reason_effect_accused modifier = opinion_charge_slanderer }
+	}	
+}
+
+add_cat_effect = {
+	if = {
+		limit =  { NOT = { has_character_modifier = pet_cat } }
+		add_character_modifier = {
+			name = pet_cat
+			duration = -1
+		}
+		hidden_tooltip = { character_event = { id = 77802 days = 3000 random = 2000 } } # Cat dies
+		hidden_tooltip = { character_event = { id = 77861 days = 30 random = 100 } } # Cat & dog todo days
+	}
+}
+##########
+###AGOT###
+##########
+
+knight_character_effect = {
+	if = {
+		limit = { trait = squire }
+		remove_trait = squire
+	}	
+	add_trait = knight
+	hidden_tooltip = { 
+		if = {
+			limit = { 
+				is_ruler = no 
+				NOT = { has_minor_title = title_prince }
+				NOT = { has_minor_title = title_prince_AGOT }
+				NOT = { has_minor_title = title_queen_mother }
+				NOT = { has_minor_title = title_ruler_consort }
+			}
+			if = {
+				limit = { is_female = no } 
+				set_special_character_title = title_ser
+			}
+			if = {
+				limit = { is_female = yes }
+				set_special_character_title = title_lady	
+			}
+		}	
+	}
+}
+
+increase_warlock_magic = {
+	if = {
+		limit = { check_variable = { which = "warlock_magic" value = 1 } }
+		change_variable = { which = "warlock_magic" value = 1 }
+	}
+	if = {
+		limit = { NOT = { check_variable = { which = "warlock_magic" value = 1 } } }
+		set_variable = { which = "warlock_magic" value = 1 }
+	}
+}
+
+child_fertility_debuff = {
+	if = {
+		limit = { 
+			NOT = { age = 3 } 
+		}
+		add_character_modifier = { #To stop impregnation
+			name = child
+			duration = 4745
+			hidden = yes
+		}
+	}
+	if = {
+		limit = { 
+			age = 3
+			NOT = { age = 8 } 
+		}
+		add_character_modifier = { #To stop impregnation
+			name = child
+			duration = 3650
+			hidden = yes
+		}
+	}
+	if = {
+		limit = {
+			age = 8
+			NOT = { age = 11 }					
+		}
+		add_character_modifier = { #To stop impregnation
+			name = child
+			duration = 2190
+			hidden = yes
+		}
+	}
+	if = {
+		limit = {
+			age = 11
+			NOT = { age = 14 }					
+		}
+		add_character_modifier = { #To stop impregnation
+			name = child
+			duration = 1095
+			hidden = yes
+		}
+	}
+}
+
+appoint_KG_lord_commander_effect = {
+	if = {
+		limit = {
+			NOT = { has_landed_title = d_kingsguard }
+		}
+		d_kingsguard = {
+			holder_scope = {
+				if = {
+					limit = {
+						OR = {
+							trait = kingsguard
+							AND = {
+								tier = DUKE
+								NOT = { num_of_duke_titles = 2 }
+								NOT = { num_of_count_titles = 1 }
+							}
+						}	
+					}
+					abdicate_to = PREVPREV
+				}	
+				if = {
+					limit = {
+						NOR = {
+							trait = kingsguard
+							AND = {
+								tier = DUKE
+								NOT = { num_of_duke_titles = 2 }
+								NOT = { num_of_count_titles = 1 }
+							}
+						}	
+					}
+					d_kingsguard = { gain_title = PREVPREVPREV }
+				}
+			}
+		}
+		if = {
+			limit = { has_global_flag = change_kingsguard_history }
+			clr_global_flag = change_kingsguard_history
+			d_kingsguard_dummy = { gain_title = PREV }
+			d_kingsguard = { copy_title_history = d_kingsguard_dummy }
+			character_event = { id = kingsguard.21 days = 2 }						
+		}	
+	}
+	character_event = { id = kingsguard.16 days = 1 }
+	set_government_type = KG_government
+	#e_iron_throne = { holder_scope = { character_event = { id = kingsguard.23 } } }
+	#d_kingsguard = { holder_scope = { character_event = { id = kingsguard.20 } } }
+	character_event = { id = kingsguard.20 }
+}
+
+murder_success_calulator_effect = {
+	random_list = {
+		66 = {	
+			#Intrigue effects
+			modifier = {
+				factor = 1.33
+				NOT = { intrigue = 2 }
+			}
+			modifier = {
+				factor = 1.33
+				NOT = { intrigue = 5 }
+			}
+			modifier = {
+				factor = 0.75
+				intrigue = 8
+			}
+			modifier = {
+				factor = 0.75
+				intrigue = 11
+			}
+			modifier = {
+				factor = 0.75
+				intrigue = 14
+			}
+			modifier = {
+				factor = 0.75
+				intrigue = 17
+			}
+			
+			modifier = {
+				factor = 0.75
+				FROM = { NOT = { intrigue = 2 } }
+			}
+			modifier = {
+				factor = 0.75
+				FROM = { NOT = { intrigue = 5 } }
+			}
+			modifier = {
+				factor = 1.33
+				FROM = { intrigue = 8 }
+			}
+			modifier = {
+				factor = 1.33
+				FROM = { intrigue = 11 }
+			}
+			modifier = {
+				factor = 1.33
+				FROM = { intrigue = 14 }
+			}
+			modifier = {
+				factor = 1.33
+				FROM = { intrigue = 17 }
+			}
+			modifier = {
+				factor = 1.5
+				FROM = { has_character_flag = murder_extra_investment }
+			}
+			
+			#Bodyguard effects
+			modifier = {
+				factor = 0.9
+				is_ruler = yes
+				any_courtier = {				
+					OR = {
+						has_minor_title = title_bodyguard
+						has_minor_title = title_bloodrider
+					}
+					trait = trained_warrior
+					liege = { character = ROOT }
+					NOT = { character = FROM }
+					NOT = { character = FROMFROM }
+				}
+			}
+			modifier = {
+				factor = 0.75
+				is_ruler = yes
+				any_courtier = {				
+					OR = {
+						has_minor_title = title_bodyguard
+						has_minor_title = title_bloodrider
+					}
+					trait = skilled_warrior
+					liege = { character = ROOT }
+					NOT = { character = FROM }
+					NOT = { character = FROMFROM }
+				}
+			}
+			modifier = {
+				factor = 0.6
+				is_ruler = yes
+				any_courtier = {				
+					OR = {
+						has_minor_title = title_bodyguard
+						has_minor_title = title_bloodrider
+					}
+					trait = master_warrior
+					liege = { character = ROOT }
+					NOT = { character = FROM }
+					NOT = { character = FROMFROM }
+				}
+			}
+			modifier = {
+				factor = 0.9
+				OR = {
+					has_landed_title = e_iron_throne
+					AND = {
+						is_ruler = no
+						liege = {
+							has_landed_title = e_iron_throne
+							is_close_relative = ROOT
+						}
+					}	
+				}	
+				kingsguard = {				
+					is_alive = yes
+					trait = trained_warrior
+					prisoner = no
+					NOT = { trait = incapable }
+					NOT = { character = FROM }
+					NOT = { character = FROMFROM }
+				}
+			}
+			modifier = {
+				factor = 0.75
+				OR = {
+					has_landed_title = e_iron_throne
+					AND = {
+						is_ruler = no
+						liege = {
+							has_landed_title = e_iron_throne
+							is_close_relative = ROOT
+						}
+					}	
+				}	
+				kingsguard = {				
+					is_alive = yes
+					trait = skilled_warrior
+					prisoner = no
+					NOT = { trait = incapable }
+					NOT = { character = FROM }
+					NOT = { character = FROMFROM }
+				}
+			}
+			modifier = {
+				factor = 0.6
+				OR = {
+					has_landed_title = e_iron_throne
+					AND = {
+						is_ruler = no
+						liege = {
+							has_landed_title = e_iron_throne
+							is_close_relative = ROOT
+						}
+					}	
+				}	
+				kingsguard = {				
+					is_alive = yes
+					trait = master_warrior
+					prisoner = no
+					NOT = { trait = incapable }
+					NOT = { character = FROM }
+					NOT = { character = FROMFROM }
+				}
+			}
+			
+			#Traits
+			modifier = {
+				factor = 1.5
+				trait = trusting
+			}
+			modifier = {
+				factor = 0.5
+				trait = paranoid
+			}
+			#Special murders
+			modifier = {
+				factor = 0.66
+				has_character_flag = food_murder
+				trait = temperate
+			}
+			modifier = {
+				factor = 1.5
+				has_character_flag = food_murder
+				trait = gluttonous
+			}
+			modifier = {
+				factor = 0.4
+				has_character_flag = fighting_murder
+				trait = master_warrior
+			}
+			modifier = {
+				factor = 0.66
+				has_character_flag = fighting_murder
+				trait = skilled_warrior
+			}
+			modifier = {
+				factor = 0.8
+				has_character_flag = fighting_murder
+				trait = trained_warrior
+			}
+			modifier = {
+				factor = 0.66
+				has_character_flag = fighting_murder
+				is_strong_trigger = yes
+			}
+			modifier = {
+				factor = 1.5
+				has_character_flag = fighting_murder
+				is_weak_trigger = yes
+			}
+			set_character_flag = murder_success
+		}
+		33 = {
+			set_character_flag = murder_fail
+		}
+	}
+}
+increase_holding_base_value_effect = {
+	if = {
+		limit = { holding_type = castle }
+		if = {
+			limit = { has_building = ca_upgrade_bv_1 }
+			remove_building = ca_upgrade_bv_1
+		}	
+		if = {
+			limit = { has_building = ca_upgrade_bv_2 }
+			remove_building = ca_upgrade_bv_2
+		}		
+		if = {
+			limit = { has_building = ca_upgrade_bv_3 }
+			remove_building = ca_upgrade_bv_3
+		}	
+		if = {
+			limit = { has_building = ca_upgrade_bv_4 }
+			remove_building = ca_upgrade_bv_4
+		}	
+		if = {
+			limit = { has_building = ca_upgrade_bv_5 }
+			remove_building = ca_upgrade_bv_5
+		}	
+		if = {
+			limit = { has_building = ca_upgrade_bv_6 }
+			
+			remove_building = ca_upgrade_bv_6
+		}					
+		location = { clr_province_flag = inherited_upgrade }
+		if = {
+			limit = { has_building = ca_asoiaf_north_basevalue_5 }
+			add_building = ca_asoiaf_north_basevalue_6
+			break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_river_basevalue_5 }
+			add_building = ca_asoiaf_river_basevalue_6
+			break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_dorne_basevalue_5 }
+			add_building = ca_asoiaf_dorne_basevalue_6
+			break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_ironislands_basevalue_5 }
+			add_building = ca_asoiaf_ironislands_basevalue_6
+			break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_crown_basevalue_5 }
+			add_building = ca_asoiaf_crown_basevalue_6
+			break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_storm_basevalue_5 }
+			add_building = ca_asoiaf_storm_basevalue_6
+			break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_vale_basevalue_5 }
+			add_building = ca_asoiaf_vale_basevalue_6
+			break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_westerland_basevalue_5 }
+			add_building = ca_asoiaf_westerland_basevalue_6
+			break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_reach_basevalue_5 }
+			add_building = ca_asoiaf_reach_basevalue_6
+			break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_essos_basevalue_5 }
+			add_building = ca_asoiaf_essos_basevalue_6
+			break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_summerisland_basevalue_5 }
+			add_building = ca_asoiaf_summerisland_basevalue_6
+			break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_qarth_basevalue_5 }
+			add_building = ca_asoiaf_qarth_basevalue_6
+			break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_ghiscari_basevalue_5 }
+			add_building = ca_asoiaf_ghiscari_basevalue_6
+			break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_lhazareen_basevalue_5 }
+			add_building = ca_asoiaf_lhazareen_basevalue_6
+			break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_asshai_basevalue_5 }
+			add_building = ca_asoiaf_asshai_basevalue_6
+			break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_ibben_basevalue_5 }
+			add_building = ca_asoiaf_ibben_basevalue_6
+			break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_yiti_basevalue_5 }
+			add_building = ca_asoiaf_yiti_basevalue_6
+			break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_sarnor_basevalue_5 }
+			add_building = ca_asoiaf_sarnor_basevalue_6
+			break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_asshai_basevalue_5 }
+			add_building = ca_asoiaf_asshai_basevalue_6
+			break = yes
+		}
+		#####
+		if = {
+			limit = { has_building = ca_asoiaf_north_basevalue_4 }
+			add_building = ca_asoiaf_north_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_river_basevalue_4 }
+			add_building = ca_asoiaf_river_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_dorne_basevalue_4 }
+			add_building = ca_asoiaf_dorne_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_ironislands_basevalue_4 }
+			add_building = ca_asoiaf_ironislands_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_crown_basevalue_4 }
+			add_building = ca_asoiaf_crown_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_storm_basevalue_4 }
+			add_building = ca_asoiaf_storm_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_vale_basevalue_4 }
+			add_building = ca_asoiaf_vale_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_westerland_basevalue_4 }
+			add_building = ca_asoiaf_westerland_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_reach_basevalue_4 }
+			add_building = ca_asoiaf_reach_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_essos_basevalue_4 }
+			add_building = ca_asoiaf_essos_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_summerisland_basevalue_4 }
+			add_building = ca_asoiaf_summerisland_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_qarth_basevalue_4 }
+			add_building = ca_asoiaf_qarth_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_ghiscari_basevalue_4 }
+			add_building = ca_asoiaf_ghiscari_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_lhazareen_basevalue_4 }
+			add_building = ca_asoiaf_lhazareen_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_asshai_basevalue_4 }
+			add_building = ca_asoiaf_asshai_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_ibben_basevalue_4 }
+			add_building = ca_asoiaf_ibben_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_yiti_basevalue_4 }
+			add_building = ca_asoiaf_yiti_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_sarnor_basevalue_4 }
+			add_building = ca_asoiaf_sarnor_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_asshai_basevalue_4 }
+			add_building = ca_asoiaf_asshai_basevalue_5 break = yes
+		}
+		####
+		if = {
+			limit = { has_building = ca_asoiaf_north_basevalue_3 }
+			add_building = ca_asoiaf_north_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_river_basevalue_3 }
+			add_building = ca_asoiaf_river_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_dorne_basevalue_3 }
+			add_building = ca_asoiaf_dorne_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_ironislands_basevalue_3 }
+			add_building = ca_asoiaf_ironislands_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_crown_basevalue_3 }
+			add_building = ca_asoiaf_crown_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_storm_basevalue_3 }
+			add_building = ca_asoiaf_storm_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_vale_basevalue_3 }
+			add_building = ca_asoiaf_vale_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_westerland_basevalue_3 }
+			add_building = ca_asoiaf_westerland_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_reach_basevalue_3 }
+			add_building = ca_asoiaf_reach_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_essos_basevalue_3 }
+			add_building = ca_asoiaf_essos_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_summerisland_basevalue_3 }
+			add_building = ca_asoiaf_summerisland_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_qarth_basevalue_3 }
+			add_building = ca_asoiaf_qarth_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_ghiscari_basevalue_3 }
+			add_building = ca_asoiaf_ghiscari_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_lhazareen_basevalue_3 }
+			add_building = ca_asoiaf_lhazareen_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_asshai_basevalue_3 }
+			add_building = ca_asoiaf_asshai_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_ibben_basevalue_3 }
+			add_building = ca_asoiaf_ibben_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_yiti_basevalue_3 }
+			add_building = ca_asoiaf_yiti_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_sarnor_basevalue_3 }
+			add_building = ca_asoiaf_sarnor_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_asshai_basevalue_3 }
+			add_building = ca_asoiaf_asshai_basevalue_4 break = yes
+		}
+		####
+		if = {
+			limit = { has_building = ca_asoiaf_north_basevalue_2 }
+			add_building = ca_asoiaf_north_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_river_basevalue_2 }
+			add_building = ca_asoiaf_river_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_dorne_basevalue_2 }
+			add_building = ca_asoiaf_dorne_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_ironislands_basevalue_2 }
+			add_building = ca_asoiaf_ironislands_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_crown_basevalue_2 }
+			add_building = ca_asoiaf_crown_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_storm_basevalue_2 }
+			add_building = ca_asoiaf_storm_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_vale_basevalue_2 }
+			add_building = ca_asoiaf_vale_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_westerland_basevalue_2 }
+			add_building = ca_asoiaf_westerland_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_reach_basevalue_2 }
+			add_building = ca_asoiaf_reach_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_essos_basevalue_2 }
+			add_building = ca_asoiaf_essos_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_summerisland_basevalue_2 }
+			add_building = ca_asoiaf_summerisland_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_qarth_basevalue_2 }
+			add_building = ca_asoiaf_qarth_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_ghiscari_basevalue_2 }
+			add_building = ca_asoiaf_ghiscari_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_lhazareen_basevalue_2 }
+			add_building = ca_asoiaf_lhazareen_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_asshai_basevalue_2 }
+			add_building = ca_asoiaf_asshai_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_ibben_basevalue_2 }
+			add_building = ca_asoiaf_ibben_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_yiti_basevalue_2 }
+			add_building = ca_asoiaf_yiti_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_sarnor_basevalue_2 }
+			add_building = ca_asoiaf_sarnor_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_asshai_basevalue_2 }
+			add_building = ca_asoiaf_asshai_basevalue_3 break = yes
+		}
+		####
+		if = {
+			limit = { has_building = ca_asoiaf_north_basevalue_1 }
+			add_building = ca_asoiaf_north_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_river_basevalue_1 }
+			add_building = ca_asoiaf_river_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_dorne_basevalue_1 }
+			add_building = ca_asoiaf_dorne_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_ironislands_basevalue_1 }
+			add_building = ca_asoiaf_ironislands_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_crown_basevalue_1 }
+			add_building = ca_asoiaf_crown_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_storm_basevalue_1 }
+			add_building = ca_asoiaf_storm_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_vale_basevalue_1 }
+			add_building = ca_asoiaf_vale_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_westerland_basevalue_1 }
+			add_building = ca_asoiaf_westerland_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_reach_basevalue_1 }
+			add_building = ca_asoiaf_reach_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_essos_basevalue_1 }
+			add_building = ca_asoiaf_essos_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_summerisland_basevalue_1 }
+			add_building = ca_asoiaf_summerisland_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_qarth_basevalue_1 }
+			add_building = ca_asoiaf_qarth_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_ghiscari_basevalue_1 }
+			add_building = ca_asoiaf_ghiscari_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_lhazareen_basevalue_1 }
+			add_building = ca_asoiaf_lhazareen_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_asshai_basevalue_1 }
+			add_building = ca_asoiaf_asshai_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_ibben_basevalue_1 }
+			add_building = ca_asoiaf_ibben_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_yiti_basevalue_1 }
+			add_building = ca_asoiaf_yiti_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_sarnor_basevalue_1 }
+			add_building = ca_asoiaf_sarnor_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ca_asoiaf_asshai_basevalue_1 }
+			add_building = ca_asoiaf_asshai_basevalue_2 break = yes
+		}
+		####
+		if = {
+			limit = {
+				location = {
+					OR = {
+						region = world_north
+						county = {
+							title = c_thenn
+						}
+					}
+				}
+			}
+			add_building = ca_asoiaf_north_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_riverlands
+				}
+			}
+			add_building = ca_asoiaf_river_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_dorne
+				}
+			}
+			add_building = ca_asoiaf_dorne_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_iron_isles
+				}
+			}
+			add_building = ca_asoiaf_ironislands_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_crownlands
+				}
+			}
+			add_building = ca_asoiaf_crown_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_stormlands
+				}
+			}
+			add_building = ca_asoiaf_storm_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_vale
+				}
+			}
+			add_building = ca_asoiaf_vale_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_westerlands
+				}
+			}
+			add_building = ca_asoiaf_westerland_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_reach
+				}
+			}
+			add_building = ca_asoiaf_reach_basevalue_1	break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_free_cities
+				}
+			}
+			add_building = ca_asoiaf_essos_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_summer_sea
+				}
+			}
+			add_building = ca_asoiaf_summerisland_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					OR = {
+						region = world_qarth
+						region = world_moraq
+					}
+				}
+			}
+			add_building = ca_asoiaf_qarth_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_ghiscar
+				}
+			}
+			add_building = ca_asoiaf_ghiscari_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_lhazar
+				}
+			}
+			add_building = ca_asoiaf_lhazareen_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					OR = {
+						region = world_bone_mountains
+						region = world_nghai
+					}
+				}
+			}
+			add_building = ca_asoiaf_asshai_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_ibben
+				}
+			}
+			add_building = ca_asoiaf_ibben_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_yi_ti
+				}
+			}
+			add_building = ca_asoiaf_yiti_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_sarnor
+				}
+			}
+			add_building = ca_asoiaf_sarnor_basevalue_1 break = yes
+		}	
+		if = {
+			limit = {
+				location = {
+					region = world_asshai
+				}
+			}
+			add_building = ca_asoiaf_asshai_basevalue_1 break = yes
+		}
+	}
+	if = {
+		limit = { holding_type = city }
+		if =	{
+			limit = { has_building = ct_upgrade_bv_1 }
+			remove_building = ct_upgrade_bv_1
+		}	
+		if = {
+			limit = { has_building = ct_upgrade_bv_2 }
+			remove_building = ct_upgrade_bv_2
+		}		
+		if = {
+			limit = { has_building = ct_upgrade_bv_3 }
+			remove_building = ct_upgrade_bv_3
+		}	
+		if = {
+			limit = { has_building = ct_upgrade_bv_4 }
+			remove_building = ct_upgrade_bv_4
+		}	
+		if = {
+			limit = { has_building = ct_upgrade_bv_5 }
+			remove_building = ct_upgrade_bv_5
+		}	
+		if = {
+			limit = { has_building = ct_upgrade_bv_6 }
+			remove_building = ct_upgrade_bv_6
+		}					
+		location = { clr_province_flag = inherited_upgrade }
+		if = {
+			limit = { has_building = ct_asoiaf_north_basevalue_5 }
+			add_building = ct_asoiaf_north_basevalue_6 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_river_basevalue_5 }
+			add_building = ct_asoiaf_river_basevalue_6 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_dorne_basevalue_5 }
+			add_building = ct_asoiaf_dorne_basevalue_6 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_ironislands_basevalue_5 }
+			add_building = ct_asoiaf_ironislands_basevalue_6 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_crown_basevalue_5 }
+			add_building = ct_asoiaf_crown_basevalue_6 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_storm_basevalue_5 }
+			add_building = ct_asoiaf_storm_basevalue_6 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_vale_basevalue_5 }
+			add_building = ct_asoiaf_vale_basevalue_6 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_westerland_basevalue_5 }
+			add_building = ct_asoiaf_westerland_basevalue_6 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_reach_basevalue_5 }
+			add_building = ct_asoiaf_reach_basevalue_6 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_essos_basevalue_5 }
+			add_building = ct_asoiaf_essos_basevalue_6 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_summerisland_basevalue_5 }
+			add_building = ct_asoiaf_summerisland_basevalue_6 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_qarth_basevalue_5 }
+			add_building = ct_asoiaf_qarth_basevalue_6 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_ghiscari_basevalue_5 }
+			add_building = ct_asoiaf_ghiscari_basevalue_6 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_lhazareen_basevalue_5 }
+			add_building = ct_asoiaf_lhazareen_basevalue_6 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_asshai_basevalue_5 }
+			add_building = ct_asoiaf_asshai_basevalue_6 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_ibben_basevalue_5 }
+			add_building = ct_asoiaf_ibben_basevalue_6 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_yiti_basevalue_5 }
+			add_building = ct_asoiaf_yiti_basevalue_6 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_sarnor_basevalue_5 }
+			add_building = ct_asoiaf_sarnor_basevalue_6 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_asshai_basevalue_5 }
+			add_building = ct_asoiaf_asshai_basevalue_6 break = yes
+		}
+		####
+		
+		if = {
+			limit = { has_building = ct_asoiaf_north_basevalue_4 }
+			add_building = ct_asoiaf_north_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_river_basevalue_4 }
+			add_building = ct_asoiaf_river_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_dorne_basevalue_4 }
+			add_building = ct_asoiaf_dorne_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_ironislands_basevalue_4 }
+			add_building = ct_asoiaf_ironislands_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_crown_basevalue_4 }
+			add_building = ct_asoiaf_crown_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_storm_basevalue_4 }
+			add_building = ct_asoiaf_storm_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_vale_basevalue_4 }
+			add_building = ct_asoiaf_vale_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_westerland_basevalue_4 }
+			add_building = ct_asoiaf_westerland_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_reach_basevalue_4 }
+			add_building = ct_asoiaf_reach_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_essos_basevalue_4 }
+			add_building = ct_asoiaf_essos_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_summerisland_basevalue_4 }
+			add_building = ct_asoiaf_summerisland_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_qarth_basevalue_4 }
+			add_building = ct_asoiaf_qarth_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_ghiscari_basevalue_4 }
+			add_building = ct_asoiaf_ghiscari_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_lhazareen_basevalue_4 }
+			add_building = ct_asoiaf_lhazareen_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_asshai_basevalue_4 }
+			add_building = ct_asoiaf_asshai_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_ibben_basevalue_4 }
+			add_building = ct_asoiaf_ibben_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_yiti_basevalue_4 }
+			add_building = ct_asoiaf_yiti_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_sarnor_basevalue_4 }
+			add_building = ct_asoiaf_sarnor_basevalue_5 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_asshai_basevalue_4 }
+			add_building = ct_asoiaf_asshai_basevalue_5 break = yes
+		}
+		####
+		if = {
+			limit = { has_building = ct_asoiaf_north_basevalue_3 }
+			add_building = ct_asoiaf_north_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_river_basevalue_3 }
+			add_building = ct_asoiaf_river_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_dorne_basevalue_3 }
+			add_building = ct_asoiaf_dorne_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_ironislands_basevalue_3 }
+			add_building = ct_asoiaf_ironislands_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_crown_basevalue_3 }
+			add_building = ct_asoiaf_crown_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_storm_basevalue_3 }
+			add_building = ct_asoiaf_storm_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_vale_basevalue_3 }
+			add_building = ct_asoiaf_vale_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_westerland_basevalue_3 }
+			add_building = ct_asoiaf_westerland_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_reach_basevalue_3 }
+			add_building = ct_asoiaf_reach_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_essos_basevalue_3 }
+			add_building = ct_asoiaf_essos_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_summerisland_basevalue_3 }
+			add_building = ct_asoiaf_summerisland_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_qarth_basevalue_3 }
+			add_building = ct_asoiaf_qarth_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_ghiscari_basevalue_3 }
+			add_building = ct_asoiaf_ghiscari_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_lhazareen_basevalue_3 }
+			add_building = ct_asoiaf_lhazareen_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_asshai_basevalue_3 }
+			add_building = ct_asoiaf_asshai_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_ibben_basevalue_3 }
+			add_building = ct_asoiaf_ibben_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_yiti_basevalue_3 }
+			add_building = ct_asoiaf_yiti_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_sarnor_basevalue_3 }
+			add_building = ct_asoiaf_sarnor_basevalue_4 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_asshai_basevalue_3 }
+			add_building = ct_asoiaf_asshai_basevalue_4 break = yes
+		}
+		####
+		if = {
+			limit = { has_building = ct_asoiaf_north_basevalue_2 }
+			add_building = ct_asoiaf_north_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_river_basevalue_2 }
+			add_building = ct_asoiaf_river_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_dorne_basevalue_2 }
+			add_building = ct_asoiaf_dorne_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_ironislands_basevalue_2 }
+			add_building = ct_asoiaf_ironislands_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_crown_basevalue_2 }
+			add_building = ct_asoiaf_crown_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_storm_basevalue_2 }
+			add_building = ct_asoiaf_storm_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_vale_basevalue_2 }
+			add_building = ct_asoiaf_vale_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_westerland_basevalue_2 }
+			add_building = ct_asoiaf_westerland_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_reach_basevalue_2 }
+			add_building = ct_asoiaf_reach_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_essos_basevalue_2 }
+			add_building = ct_asoiaf_essos_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_summerisland_basevalue_2 }
+			add_building = ct_asoiaf_summerisland_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_qarth_basevalue_2 }
+			add_building = ct_asoiaf_qarth_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_ghiscari_basevalue_2 }
+			add_building = ct_asoiaf_ghiscari_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_lhazareen_basevalue_2 }
+			add_building = ct_asoiaf_lhazareen_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_asshai_basevalue_2 }
+			add_building = ct_asoiaf_asshai_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_ibben_basevalue_2 }
+			add_building = ct_asoiaf_ibben_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_yiti_basevalue_2 }
+			add_building = ct_asoiaf_yiti_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_sarnor_basevalue_2 }
+			add_building = ct_asoiaf_sarnor_basevalue_3 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_asshai_basevalue_2 }
+			add_building = ct_asoiaf_asshai_basevalue_3 break = yes
+		}
+		####
+		if = {
+			limit = { has_building = ct_asoiaf_north_basevalue_1 }
+			add_building = ct_asoiaf_north_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_river_basevalue_1 }
+			add_building = ct_asoiaf_river_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_dorne_basevalue_1 }
+			add_building = ct_asoiaf_dorne_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_ironislands_basevalue_1 }
+			add_building = ct_asoiaf_ironislands_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_crown_basevalue_1 }
+			add_building = ct_asoiaf_crown_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_storm_basevalue_1 }
+			add_building = ct_asoiaf_storm_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_vale_basevalue_1 }
+			add_building = ct_asoiaf_vale_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_westerland_basevalue_1 }
+			add_building = ct_asoiaf_westerland_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_reach_basevalue_1 }
+			add_building = ct_asoiaf_reach_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_essos_basevalue_1 }
+			add_building = ct_asoiaf_essos_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_summerisland_basevalue_1 }
+			add_building = ct_asoiaf_summerisland_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_qarth_basevalue_1 }
+			add_building = ct_asoiaf_qarth_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_ghiscari_basevalue_1 }
+			add_building = ct_asoiaf_ghiscari_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_lhazareen_basevalue_1 }
+			add_building = ct_asoiaf_lhazareen_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_asshai_basevalue_1 }
+			add_building = ct_asoiaf_asshai_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_ibben_basevalue_1 }
+			add_building = ct_asoiaf_ibben_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_yiti_basevalue_1 }
+			add_building = ct_asoiaf_yiti_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_sarnor_basevalue_1 }
+			add_building = ct_asoiaf_sarnor_basevalue_2 break = yes
+		}
+		if = {
+			limit = { has_building = ct_asoiaf_asshai_basevalue_1 }
+			add_building = ct_asoiaf_asshai_basevalue_2 break = yes
+		}
+		####
+		if = {
+			limit = {
+				location = {
+					region = world_north
+				}
+			}
+			add_building = ct_asoiaf_north_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_riverlands
+				}
+			}
+			add_building = ct_asoiaf_river_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_dorne
+				}
+			}
+			add_building = ct_asoiaf_dorne_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_iron_isles
+				}
+			}
+			add_building = ct_asoiaf_ironislands_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_crownlands
+				}
+			}
+			add_building = ct_asoiaf_crown_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_stormlands
+				}
+			}
+			add_building = ct_asoiaf_storm_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_vale
+				}
+			}
+			add_building = ct_asoiaf_vale_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_westerlands
+				}
+			}
+			add_building = ct_asoiaf_westerland_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_reach
+				}
+			}
+			add_building = ct_asoiaf_reach_basevalue_1	break = yes	
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_free_cities
+				}
+			}
+			add_building = ct_asoiaf_essos_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_summer_sea
+				}
+			}
+			add_building = ct_asoiaf_summerisland_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					OR = {
+						region = world_qarth
+						region = world_moraq
+					}
+				}
+			}
+			add_building = ct_asoiaf_qarth_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_ghiscar
+				}
+			}
+			add_building = ct_asoiaf_ghiscari_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_lhazar
+				}
+			}
+			add_building = ct_asoiaf_lhazareen_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					OR = {
+						region = world_bone_mountains
+						region = world_nghai
+					}
+				}
+			}
+			add_building = ct_asoiaf_asshai_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_ibben
+				}
+			}
+			add_building = ct_asoiaf_ibben_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_yi_ti
+				}
+			}
+			add_building = ct_asoiaf_yiti_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_sarnor
+				}
+			}
+			add_building = ct_asoiaf_sarnor_basevalue_1 break = yes
+		}
+		if = {
+			limit = {
+				location = {
+					region = world_asshai
+				}
+			}
+			add_building = ct_asoiaf_asshai_basevalue_1 break = yes
+		}
+	}
+	hidden_tooltip = { refill_holding_levy = yes }
+}
+set_unsullied_name_effect = {
+	random_list = {
+		1 = { set_name = "Grey Worm" }
+		1 = { set_name = "Red Worm" }
+		1 = { set_name = "Blue Worm" }
+		1 = { set_name = "Yellow Worm" }
+		1 = { set_name = "Green Worm" }
+		1 = { set_name = "Black Worm" }
+		1 = { set_name = "Brown Worm" }
+		1 = { set_name = "White Worm" }
+		1 = { set_name = "Pink Worm" }
+		1 = { set_name = "Purple Worm" }
+		1 = { set_name = "Gold Worm" }
+		1 = { set_name = "Grey Rat" }
+		1 = { set_name = "Red Rat" }
+		1 = { set_name = "Blue Rat" }
+		1 = { set_name = "Yellow Rat" }
+		1 = { set_name = "Green Rat" }
+		1 = { set_name = "Black Rat" }
+		1 = { set_name = "Brown Rat" }
+		1 = { set_name = "White Rat" }
+		1 = { set_name = "Pink Rat" }
+		1 = { set_name = "Purple Rat" }
+		1 = { set_name = "Gold Rat" }
+		1 = { set_name = "Grey Cockroach" }
+		1 = { set_name = "Red Cockroach" }
+		1 = { set_name = "Blue Cockroach" }
+		1 = { set_name = "Yellow Cockroach" }
+		1 = { set_name = "Green Cockroach" }
+		1 = { set_name = "Black Cockroach" }
+		1 = { set_name = "Brown Cockroach" }
+		1 = { set_name = "White Cockroach" }
+		1 = { set_name = "Pink Cockroach" }
+		1 = { set_name = "Purple Cockroach" }
+		1 = { set_name = "Gold Cockroach" }
+		1 = { set_name = "Grey Mouse" }
+		1 = { set_name = "Red Mouse" }
+		1 = { set_name = "Blue Mouse" }
+		1 = { set_name = "Yellow Mouse" }
+		1 = { set_name = "Green Mouse" }
+		1 = { set_name = "Black Mouse" }
+		1 = { set_name = "Brown Mouse" }
+		1 = { set_name = "White Mouse" }
+		1 = { set_name = "Pink Mouse" }
+		1 = { set_name = "Purple Mouse" }
+		1 = { set_name = "Gold Mouse" }
+		1 = { set_name = "Grey Louse" }
+		1 = { set_name = "Red Louse" }
+		1 = { set_name = "Blue Louse" }
+		1 = { set_name = "Yellow Louse" }
+		1 = { set_name = "Green Louse" }
+		1 = { set_name = "Black Louse" }
+		1 = { set_name = "Brown Louse" }
+		1 = { set_name = "White Louse" }
+		1 = { set_name = "Pink Louse" }
+		1 = { set_name = "Purple Louse" }
+		1 = { set_name = "Gold Louse" }
+		1 = { set_name = "Grey Dog" }
+		1 = { set_name = "Red Dog" }
+		1 = { set_name = "Blue Dog" }
+		1 = { set_name = "Yellow Dog" }
+		1 = { set_name = "Green Dog" }
+		1 = { set_name = "Black Dog" }
+		1 = { set_name = "Brown Dog" }
+		1 = { set_name = "White Dog" }
+		1 = { set_name = "Pink Dog" }
+		1 = { set_name = "Purple Dog" }
+		1 = { set_name = "Gold Dog" }
+		1 = { set_name = "Grey Flea" }
+		1 = { set_name = "Red Flea" }
+		1 = { set_name = "Blue Flea" }
+		1 = { set_name = "Yellow Flea" }
+		1 = { set_name = "Green Flea" }
+		1 = { set_name = "Black Flea" }
+		1 = { set_name = "Brown Flea" }
+		1 = { set_name = "White Flea" }
+		1 = { set_name = "Pink Flea" }
+		1 = { set_name = "Purple Flea" }
+		1 = { set_name = "Gold Flea" }
+		1 = { set_name = "Grey Ant" }
+		1 = { set_name = "Red Ant" }
+		1 = { set_name = "Blue Ant" }
+		1 = { set_name = "Yellow Ant" }
+		1 = { set_name = "Green Ant" }
+		1 = { set_name = "Black Ant" }
+		1 = { set_name = "Brown Ant" }
+		1 = { set_name = "White Ant" }
+		1 = { set_name = "Pink Ant" }
+		1 = { set_name = "Purple Ant" }
+		1 = { set_name = "Gold Ant" }
+		1 = { set_name = "Grey Gnat" }
+		1 = { set_name = "Red Gnat" }
+		1 = { set_name = "Blue Gnat" }
+		1 = { set_name = "Yellow Gnat" }
+		1 = { set_name = "Green Gnat" }
+		1 = { set_name = "Black Gnat" }
+		1 = { set_name = "Brown Gnat" }
+		1 = { set_name = "White Gnat" }
+		1 = { set_name = "Pink Gnat" }
+		1 = { set_name = "Purple Gnat" }
+		1 = { set_name = "Gold Gnat" }
+		1 = { set_name = "Grey Leech" }
+		1 = { set_name = "Red Leech" }
+		1 = { set_name = "Blue Leech" }
+		1 = { set_name = "Yellow Leech" }
+		1 = { set_name = "Green Leech" }
+		1 = { set_name = "Black Leech" }
+		1 = { set_name = "Brown Leech" }
+		1 = { set_name = "White Leech" }
+		1 = { set_name = "Pink Leech" }
+		1 = { set_name = "Purple Leech" }
+		1 = { set_name = "Gold Leech" }
+		1 = { set_name = "Grey Maggot" }
+		1 = { set_name = "Red Maggot" }
+		1 = { set_name = "Blue Maggot" }
+		1 = { set_name = "Yellow Maggot" }
+		1 = { set_name = "Green Maggot" }
+		1 = { set_name = "Black Maggot" }
+		1 = { set_name = "Brown Maggot" }
+		1 = { set_name = "White Maggot" }
+		1 = { set_name = "Pink Maggot" }
+		1 = { set_name = "Purple Maggot" }
+		1 = { set_name = "Gold Maggot" }
+		1 = { set_name = "Grey Locust" }
+		1 = { set_name = "Red Locust" }
+		1 = { set_name = "Blue Locust" }
+		1 = { set_name = "Yellow Locust" }
+		1 = { set_name = "Green Locust" }
+		1 = { set_name = "Black Locust" }
+		1 = { set_name = "Brown Locust" }
+		1 = { set_name = "White Locust" }
+		1 = { set_name = "Pink Locust" }
+		1 = { set_name = "Purple Locust" }
+		1 = { set_name = "Gold Locust" }
+		1 = { set_name = "Grey Slug" }
+		1 = { set_name = "Red Slug" }
+		1 = { set_name = "Blue Slug" }
+		1 = { set_name = "Yellow Slug" }
+		1 = { set_name = "Green Slug" }
+		1 = { set_name = "Black Slug" }
+		1 = { set_name = "Brown Slug" }
+		1 = { set_name = "White Slug" }
+		1 = { set_name = "Pink Slug" }
+		1 = { set_name = "Purple Slug" }
+		1 = { set_name = "Gold Slug" }
+		1 = { set_name = "Grey Shrew" }
+		1 = { set_name = "Red Shrew" }
+		1 = { set_name = "Blue Shrew" }
+		1 = { set_name = "Yellow Shrew" }
+		1 = { set_name = "Green Shrew" }
+		1 = { set_name = "Black Shrew" }
+		1 = { set_name = "Brown Shrew" }
+		1 = { set_name = "White Shrew" }
+		1 = { set_name = "Pink Shrew" }
+		1 = { set_name = "Purple Shrew" }
+		1 = { set_name = "Gold Shrew" }
+		1 = { set_name = "Grey Beetle" }
+		1 = { set_name = "Red Beetle" }
+		1 = { set_name = "Blue Beetle" }
+		1 = { set_name = "Yellow Beetle" }
+		1 = { set_name = "Green Beetle" }
+		1 = { set_name = "Black Beetle" }
+		1 = { set_name = "Brown Beetle" }
+		1 = { set_name = "White Beetle" }
+		1 = { set_name = "Pink Beetle" }
+		1 = { set_name = "Purple Beetle" }
+		1 = { set_name = "Gold Beetle" }
+		1 = { set_name = "Grey Frog" }
+		1 = { set_name = "Red Frog" }
+		1 = { set_name = "Blue Frog" }
+		1 = { set_name = "Yellow Frog" }
+		1 = { set_name = "Green Frog" }
+		1 = { set_name = "Black Frog" }
+		1 = { set_name = "Brown Frog" }
+		1 = { set_name = "White Frog" }
+		1 = { set_name = "Pink Frog" }
+		1 = { set_name = "Purple Frog" }
+		1 = { set_name = "Gold Frog" }
+		1 = { set_name = "Grey Newt" }
+		1 = { set_name = "Red Newt" }
+		1 = { set_name = "Blue Newt" }
+		1 = { set_name = "Yellow Newt" }
+		1 = { set_name = "Green Newt" }
+		1 = { set_name = "Black Newt" }
+		1 = { set_name = "Brown Newt" }
+		1 = { set_name = "White Newt" }
+		1 = { set_name = "Pink Newt" }
+		1 = { set_name = "Purple Newt" }
+		1 = { set_name = "Gold Newt" }
+		1 = { set_name = "Grey Mole" }
+		1 = { set_name = "Red Mole" }
+		1 = { set_name = "Blue Mole" }
+		1 = { set_name = "Yellow Mole" }
+		1 = { set_name = "Green Mole" }
+		1 = { set_name = "Black Mole" }
+		1 = { set_name = "Brown Mole" }
+		1 = { set_name = "White Mole" }
+		1 = { set_name = "Pink Mole" }
+		1 = { set_name = "Purple Mole" }
+		1 = { set_name = "Gold Mole" }
+		1 = { set_name = "Grey Urchin" }
+		1 = { set_name = "Red Urchin" }
+		1 = { set_name = "Blue Urchin" }
+		1 = { set_name = "Yellow Urchin" }
+		1 = { set_name = "Green Urchin" }
+		1 = { set_name = "Black Urchin" }
+		1 = { set_name = "Brown Urchin" }
+		1 = { set_name = "White Urchin" }
+		1 = { set_name = "Pink Urchin" }
+		1 = { set_name = "Purple Urchin" }
+		1 = { set_name = "Gold Urchin" }
+		1 = { set_name = "Grey Toad" }
+		1 = { set_name = "Red Toad" }
+		1 = { set_name = "Blue Toad" }
+		1 = { set_name = "Yellow Toad" }
+		1 = { set_name = "Green Toad" }
+		1 = { set_name = "Black Toad" }
+		1 = { set_name = "Brown Toad" }
+		1 = { set_name = "White Toad" }
+		1 = { set_name = "Pink Toad" }
+		1 = { set_name = "Purple Toad" }
+		1 = { set_name = "Gold Toad" }
+		1 = { set_name = "Grey Vulture" }
+		1 = { set_name = "Red Vulture" }
+		1 = { set_name = "Blue Vulture" }
+		1 = { set_name = "Yellow Vulture" }
+		1 = { set_name = "Green Vulture" }
+		1 = { set_name = "Black Vulture" }
+		1 = { set_name = "Brown Vulture" }
+		1 = { set_name = "White Vulture" }
+		1 = { set_name = "Pink Vulture" }
+		1 = { set_name = "Purple Vulture" }
+		1 = { set_name = "Gold Vulture" }
+		1 = { set_name = "Grey Crow" }
+		1 = { set_name = "Red Crow" }
+		1 = { set_name = "Blue Crow" }
+		1 = { set_name = "Yellow Crow" }
+		1 = { set_name = "Green Crow" }
+		1 = { set_name = "Black Crow" }
+		1 = { set_name = "Brown Crow" }
+		1 = { set_name = "White Crow" }
+		1 = { set_name = "Pink Crow" }
+		1 = { set_name = "Purple Crow" }
+		1 = { set_name = "Gold Crow" }
+		1 = { set_name = "Grey Fist" }
+		1 = { set_name = "Red Fist" }
+		1 = { set_name = "Blue Fist" }
+		1 = { set_name = "Yellow Fist" }
+		1 = { set_name = "Green Fist" }
+		1 = { set_name = "Black Fist" }
+		1 = { set_name = "Brown Fist" }
+		1 = { set_name = "White Fist" }
+		1 = { set_name = "Pink Fist" }
+		1 = { set_name = "Purple Fist" }
+		1 = { set_name = "Gold Fist" }
+		1 = { set_name = "Grey Spear" }
+		1 = { set_name = "Red Spear" }
+		1 = { set_name = "Blue Spear" }
+		1 = { set_name = "Yellow Spear" }
+		1 = { set_name = "Green Spear" }
+		1 = { set_name = "Black Spear" }
+		1 = { set_name = "Brown Spear" }
+		1 = { set_name = "White Spear" }
+		1 = { set_name = "Pink Spear" }
+		1 = { set_name = "Purple Spear" }
+		1 = { set_name = "Gold Spear" }
+	}
+}
+plot_murder_undiscovered_effect = {
+	hidden_tooltip = {
+		#Check if Rhllor saves character
+		if = {
+			limit = { 
+				religion = rhllor 
+				OR = {
+					trait = resurrected_by_rhllor
+					AND = {
+						OR = { 	
+							trait = favored_by_rhllor
+							trait = chosen_by_rhllor				
+						}
+						OR = {
+							check_variable = { which = "red_god_magic" value = 10 }
+							has_global_flag = age_of_dragons
+						}
+					}
+				}	
+			}
+			random = {
+				chance = 10
+				modifier = {
+					factor = 2
+					trait = resurrected_by_rhllor
+				}
+				modifier = {
+					factor = 2
+					trait = chosen_by_rhllor
+				}
+				modifier = {
+					factor = 2
+					has_global_flag = age_of_dragons
+				}
+				modifier = {
+					factor = 1.33
+					check_variable = { which = "red_god_magic" value = 1 }
+				}
+				modifier = {
+					factor = 1.5
+					check_variable = { which = "red_god_magic" value = 5 }
+				}
+				character_event = { id = red_priest.38 tooltip = CUSTOMTOOLTIPrhllor_saved_me }
+				FROMFROM = { character_event = { id = red_priest.40 days = 2 } }
+				FROMFROMFROM = { 
+					if = {
+						limit = { NOT = { character = ROOT_FROMFROM } }
+						character_event = { id = red_priest.40 days = 2 }
+					}		
+				}
+				break = yes
+			}
+		}
+	}
+}
+plot_murder_discovered_effect = {
+	hidden_tooltip = {
+		save_event_target_as = target_victim
+		FROMFROM = { character_event = { id = 10 } } # Consequences of discovery
+		FROMFROMFROM = { 
+			if = {
+				limit = { NOT = { character = ROOT_FROMFROM} }
+				character_event = { id = 10 } # Consequences of discovery
+			}		
+		}
+		clear_event_target = target_victim
+		#Check if Rhllor saves character
+		if = {
+			limit = { 
+				religion = rhllor 
+				OR = {
+					trait = resurrected_by_rhllor
+					AND = {
+						OR = { 	
+							trait = favored_by_rhllor
+							trait = chosen_by_rhllor				
+						}
+						OR = {
+							check_variable = { which = "red_god_magic" value = 10 }
+							has_global_flag = age_of_dragons
+						}
+					}
+				}	
+			}
+			random = {
+				chance = 10
+				modifier = {
+					factor = 2
+					trait = resurrected_by_rhllor
+				}
+				modifier = {
+					factor = 2
+					trait = chosen_by_rhllor
+				}
+				modifier = {
+					factor = 2
+					has_global_flag = age_of_dragons
+				}
+				modifier = {
+					factor = 1.33
+					check_variable = { which = "red_god_magic" value = 1 }
+				}
+				modifier = {
+					factor = 1.5
+					check_variable = { which = "red_god_magic" value = 5 }
+				}
+				character_event = { id = red_priest.38 tooltip = CUSTOMTOOLTIPrhllor_saved_me }
+				FROMFROM = { character_event = { id = red_priest.40 days = 2 } }
+				FROMFROMFROM = { 
+					if = {
+						limit = { NOT = { character = ROOT_FROMFROM } }
+						character_event = { id = red_priest.40 days = 2 }
+					}		
+				}
+				break = yes
+			}
+		}
+	}
+}
+cm_plot_murder_undiscovered_effect = { #for charlemagne murders
+	hidden_tooltip = {		
+		#Check if Rhllor saves character
+		if = {
+			limit = { 
+				religion = rhllor 
+				OR = {
+					trait = resurrected_by_rhllor
+					AND = {
+						OR = { 	
+							trait = favored_by_rhllor
+							trait = chosen_by_rhllor				
+						}
+						OR = {
+							check_variable = { which = "red_god_magic" value = 10 }
+							has_global_flag = age_of_dragons
+						}
+					}
+				}	
+			}
+			random = {
+				chance = 10
+				modifier = {
+					factor = 2
+					trait = resurrected_by_rhllor
+				}
+				modifier = {
+					factor = 2
+					trait = chosen_by_rhllor
+				}
+				modifier = {
+					factor = 2
+					has_global_flag = age_of_dragons
+				}
+				modifier = {
+					factor = 1.33
+					check_variable = { which = "red_god_magic" value = 1 }
+				}
+				modifier = {
+					factor = 1.5
+					check_variable = { which = "red_god_magic" value = 5 }
+				}
+				character_event = { id = red_priest.38 tooltip = CUSTOMTOOLTIPrhllor_saved_me }
+				FROMFROM = { character_event = { id = red_priest.40 days = 2 } }
+				break = yes
+			}
+		}
+	}
+}
+cm_plot_murder_discovered_effect = {
+	hidden_tooltip = {
+		save_event_target_as = target_victim
+		FROMFROM = { character_event = { id = 10 } } # Consequences of discovery
+		clear_event_target = target_victim
+		#Check if Rhllor saves character
+		if = {
+			limit = { 
+				religion = rhllor 
+				OR = {
+					trait = resurrected_by_rhllor
+					AND = {
+						OR = { 	
+							trait = favored_by_rhllor
+							trait = chosen_by_rhllor				
+						}
+						OR = {
+							check_variable = { which = "red_god_magic" value = 10 }
+							has_global_flag = age_of_dragons
+						}
+					}
+				}	
+			}
+			random = {
+				chance = 10
+				modifier = {
+					factor = 2
+					trait = resurrected_by_rhllor
+				}
+				modifier = {
+					factor = 2
+					trait = chosen_by_rhllor
+				}
+				modifier = {
+					factor = 2
+					has_global_flag = age_of_dragons
+				}
+				modifier = {
+					factor = 1.33
+					check_variable = { which = "red_god_magic" value = 1 }
+				}
+				modifier = {
+					factor = 1.5
+					check_variable = { which = "red_god_magic" value = 5 }
+				}
+				character_event = { id = red_priest.38 tooltip = CUSTOMTOOLTIPrhllor_saved_me }
+				FROMFROM = { character_event = { id = red_priest.40 days = 2 } }
+				break = yes
+			}
+		}
+	}
+}
+FROM_murder_red_god_resurrect_effect = {
+	hidden_tooltip = {
+		#Check if Rhllor saves character
+		if = {
+			limit = { 
+				religion = rhllor 
+				OR = {
+					trait = resurrected_by_rhllor
+					AND = {
+						OR = { 	
+							trait = favored_by_rhllor
+							trait = chosen_by_rhllor				
+						}
+						OR = {
+							check_variable = { which = "red_god_magic" value = 10 }
+							has_global_flag = age_of_dragons
+						}
+					}
+				}	
+			}
+			random = {
+				chance = 10
+				modifier = {
+					factor = 2
+					trait = resurrected_by_rhllor
+				}
+				modifier = {
+					factor = 2
+					trait = chosen_by_rhllor
+				}
+				modifier = {
+					factor = 2
+					has_global_flag = age_of_dragons
+				}
+				modifier = {
+					factor = 1.33
+					check_variable = { which = "red_god_magic" value = 1 }
+				}
+				modifier = {
+					factor = 1.5
+					check_variable = { which = "red_god_magic" value = 5 }
+				}
+				character_event = { id = red_priest.38 tooltip = CUSTOMTOOLTIPrhllor_saved_me }
+				FROM = { character_event = { id = red_priest.40 days = 2 } }
+				break = yes
+			}
+		}
+	}
+}
+ROOT_murder_red_god_resurrect_effect = {
+	hidden_tooltip = {
+		#Check if Rhllor saves character
+		if = {
+			limit = { 
+				religion = rhllor 
+				OR = {
+					trait = resurrected_by_rhllor
+					AND = {
+						OR = { 	
+							trait = favored_by_rhllor
+							trait = chosen_by_rhllor				
+						}
+						OR = {
+							check_variable = { which = "red_god_magic" value = 10 }
+							has_global_flag = age_of_dragons
+						}
+					}
+				}	
+			}
+			random = {
+				chance = 10
+				modifier = {
+					factor = 2
+					trait = resurrected_by_rhllor
+				}
+				modifier = {
+					factor = 2
+					trait = chosen_by_rhllor
+				}
+				modifier = {
+					factor = 2
+					has_global_flag = age_of_dragons
+				}
+				modifier = {
+					factor = 1.33
+					check_variable = { which = "red_god_magic" value = 1 }
+				}
+				modifier = {
+					factor = 1.5
+					check_variable = { which = "red_god_magic" value = 5 }
+				}
+				character_event = { id = red_priest.38 tooltip = CUSTOMTOOLTIPrhllor_saved_me }
+				ROOT = { character_event = { id = red_priest.40 days = 2 } }
+				break = yes
+			}
+		}
+	}
+}
+red_god_resurrect_effect = {
+	#Check if Rhllor saves character
+	hidden_tooltip = {
+		if = {
+			limit = { 
+				religion = rhllor 
+				OR = {
+					trait = resurrected_by_rhllor
+					AND = {
+						OR = { 	
+							trait = favored_by_rhllor
+							trait = chosen_by_rhllor				
+						}
+						OR = {
+							check_variable = { which = "red_god_magic" value = 10 }
+							has_global_flag = age_of_dragons
+						}
+					}
+				}	
+			}
+			random = {
+				chance = 10
+				modifier = {
+					factor = 2
+					trait = resurrected_by_rhllor
+				}
+				modifier = {
+					factor = 2
+					trait = chosen_by_rhllor
+				}
+				modifier = {
+					factor = 2
+					has_global_flag = age_of_dragons
+				}
+				modifier = {
+					factor = 1.33
+					check_variable = { which = "red_god_magic" value = 1 }
+				}
+				modifier = {
+					factor = 1.5
+					check_variable = { which = "red_god_magic" value = 5 }
+				}
+				character_event = { id = red_priest.38 tooltip = CUSTOMTOOLTIPrhllor_saved_me }
+				break = yes
+			}
+		}
+	}	
+}
+legitimise_newborn_FROM_effect = {
+	custom_tooltip = {
+		text = EVTTOOLTIP302
+		hidden_tooltip = {
+			if = {
+				limit = { NOT = { dynasty = 0 } }
+				dynasty = mother_bastard
+			}
+			mother_even_if_dead = {
+				if = {
+					limit = { NOT = { character = ROOT } }
+					if = { #bastards who have bastards start new dynasty
+						limit = { 
+							trait = bastard
+							NOT = { dynasty = 0 }
+							PREV = { NOT = { father_even_if_dead = { always = yes } } }
+						}
+						if = {
+							limit = { mother_even_if_dead = { dynasty = PREV } }
+							dynasty = mother_bastard
+						}
+						if = {
+							limit = { father_even_if_dead = { dynasty = PREV } }
+							dynasty = father_bastard
+						}
+					}
+					random_child = {
+						limit = { character = PREVPREV }
+						dynasty = PREV
+					}
+				}	
+			}
+			father_even_if_dead = {
+				if = {
+					limit = { NOT = { character = ROOT } }
+					if = { #bastards who have bastards start new dynasty
+						limit = { 
+							trait = bastard
+							NOT = { dynasty = 0 }
+						}
+						if = {
+							limit = { mother_even_if_dead = { dynasty = PREV } }
+							dynasty = mother_bastard
+						}
+						if = {
+							limit = { father_even_if_dead = { dynasty = PREV } }
+							dynasty = father_bastard
+						}
+					}
+					random_child = {
+						limit = { character = PREVPREV }
+						dynasty = PREV
+					}
+				}	
+			}
+			ROOT = {
+				if = { #bastards who have bastards start new dynasty
+					limit = { 
+						trait = bastard
+						NOT = { dynasty = 0 }
+					}
+					if = {
+						limit = { mother_even_if_dead = { dynasty = PREV } }
+						dynasty = mother_bastard
+					}
+					if = {
+						limit = { father_even_if_dead = { dynasty = PREV } }
+						dynasty = father_bastard
+					}
+				}
+			}
+			dynasty = ROOT	
+			remove_trait = bastard
+			add_trait = legit_bastard
+			if = {
+				limit = { liege = { NOT = { any_child = { character = PREVPREV } } } }
+				move_character = ROOT
+			}
+			ROOT = {
+				any_spouse = {
+					character_event = { id = 305 tooltip = EVTTOOLTIP305 } # The parent's spouse is enraged
+				}
+			}
+		}
+	}
+}
+acknowledge_newborn_FROM_effect = {
+	custom_tooltip = {
+		text = EVTTOOLTIP306
+		hidden_tooltip = {
+			if = {
+				limit = { NOT = { dynasty = 0 } }
+				dynasty = mother_bastard
+			}
+			mother_even_if_dead = {
+				if = {
+					limit = { NOT = { character = ROOT } }
+					random_child = {
+						limit = { character = PREVPREV }
+						dynasty = PREV
+					}
+				}	
+			}
+			father_even_if_dead = {
+				if = {
+					limit = { NOT = { character = ROOT } }
+					random_child = {
+						limit = { character = PREVPREV }
+						dynasty = PREV
+					}
+				}	
+			}
+			dynasty = ROOT				
+			add_trait = bastard
+			if = {
+				limit = { mother_even_if_dead = { always = yes } }
+				bastard_nickname_mother_effect = yes	
+			}	
+			if = {
+				limit = { NOT = { mother_even_if_dead = { always = yes } } }
+				bastard_nickname_father_effect = yes	
+			}	
+			if = {
+				limit = { mother = { is_consort = no } }
+				ROOT = {
+					any_spouse = {
+						character_event = { id = 308 tooltip = EVTTOOLTIP308 } # The father's wife is angered
+					}
+				}
+			}
+		}
+	}
+}
+denounce_newborn_FROM_effect = {
+	custom_tooltip = {
+		text = EVTTOOLTIP309
+		hidden_tooltip = {
+			if = {
+				limit = { NOT = { dynasty = 0 } }
+				dynasty = mother_bastard
+			}
+			mother_even_if_dead = {
+				random_child = {
+					limit = { character = PREVPREV }
+					dynasty = PREV
+				}
+			}
+			add_trait = bastard
+			set_father = 0
+			set_real_father = ROOT
+			bastard_nickname_mother_effect = yes
+			mother = {
+				if = {
+					limit = { is_ruler = yes is_alive = yes }
+					ROOT = { move_character = PREV }
+				}
+				if = {
+					limit = { is_ruler = no is_alive = yes }
+					liege = { ROOT = { move_character = PREV } }
+				}
+			}
+			if = {
+				limit = { mother = { is_consort = no } }		
+				ROOT = {
+					any_spouse = {
+						character_event = { id = 311 } # The father's wife is displeased
+					}
+				}
+			}
+		}
+	}
+}
+bastard_nickname_mother_effect = {
+	mother_even_if_dead = {
+		location = {
+			if = { 	
+				limit = {
+					OR = {
+						region = world_north
+						duchy = { title = d_the_wall }
+					}	
+				}
+				PREVPREV = { give_nickname = nick_snow }
+			}	
+			if = { 	
+				limit = { region = world_riverlands }
+				PREVPREV = { give_nickname = nick_rivers }
+			}
+			if = { 	
+				limit = { region = world_vale }
+				PREVPREV = { give_nickname = nick_stone }
+			}
+			if = { 	
+				limit = { region = world_westerlands }
+				PREVPREV = { give_nickname = nick_hill }
+			}
+			if = { 	
+				limit = { region = world_reach }
+				PREVPREV = { give_nickname = nick_flowers }
+			}
+			if = { 	
+				limit = { region = world_stormlands }
+				PREVPREV = { give_nickname = nick_storm }
+			}
+			if = { 	
+				limit = { region = world_crownlands }
+				PREVPREV = { give_nickname = nick_waters }
+			}
+			if = { 	
+				limit = { region = world_dorne }
+				PREVPREV = { give_nickname = nick_sand }
+			}
+			if = { 	
+				limit = { region = world_iron_isles }
+				PREVPREV = { give_nickname = nick_pyke }
+			}
+		}	
+	}
+}
+bastard_nickname_father_effect = {
+	father_even_if_dead = {
+		location = {
+			if = { 	
+				limit = {
+					OR = {
+						region = world_north
+						duchy = { title = d_the_wall }
+					}	
+				}
+				PREVPREV = { give_nickname = nick_snow }
+			}	
+			if = { 	
+				limit = { region = world_riverlands }
+				PREVPREV = { give_nickname = nick_rivers }
+			}
+			if = { 	
+				limit = { region = world_vale }
+				PREVPREV = { give_nickname = nick_stone }
+			}
+			if = { 	
+				limit = { region = world_westerlands }
+				PREVPREV = { give_nickname = nick_hill }
+			}
+			if = { 	
+				limit = { region = world_reach }
+				PREVPREV = { give_nickname = nick_flowers }
+			}
+			if = { 	
+				limit = { region = world_stormlands }
+				PREVPREV = { give_nickname = nick_storm }
+			}
+			if = { 	
+				limit = { region = world_crownlands }
+				PREVPREV = { give_nickname = nick_waters }
+			}
+			if = { 	
+				limit = { region = world_dorne }
+				PREVPREV = { give_nickname = nick_sand }
+			}
+			if = { 	
+				limit = { region = world_iron_isles }
+				PREVPREV = { give_nickname = nick_pyke }
+			}
+		}	
+	}
+}
+bastard_nickname_ROOT_effect = {
+	ROOT = {
+		location = {
+			if = { 	
+				limit = {
+					OR = {
+						region = world_north
+						duchy = { title = d_the_wall }
+					}	
+				}
+				PREVPREV = { give_nickname = nick_snow }
+			}	
+			if = { 	
+				limit = { region = world_riverlands }
+				PREVPREV = { give_nickname = nick_rivers }
+			}
+			if = { 	
+				limit = { region = world_vale }
+				PREVPREV = { give_nickname = nick_stone }
+			}
+			if = { 	
+				limit = { region = world_westerlands }
+				PREVPREV = { give_nickname = nick_hill }
+			}
+			if = { 	
+				limit = { region = world_reach }
+				PREVPREV = { give_nickname = nick_flowers }
+			}
+			if = { 	
+				limit = { region = world_stormlands }
+				PREVPREV = { give_nickname = nick_storm }
+			}
+			if = { 	
+				limit = { region = world_crownlands }
+				PREVPREV = { give_nickname = nick_waters }
+			}
+			if = { 	
+				limit = { region = world_dorne }
+				PREVPREV = { give_nickname = nick_sand }
+			}
+			if = { 	
+				limit = { region = world_iron_isles }
+				PREVPREV = { give_nickname = nick_pyke }
+			}
+		}	
+	}
+}
+transfer_wealth_to_ROOT_effect = {
+	custom_tooltip = {
+		text = TOOLTIPtransfer_wealth_to_ROOT_effect
+		hidden_tooltip = {
+			if = {
+				limit = { wealth = 25000 }
+				wealth = -25000
+				ROOT = { wealth = 25000 }
+			}
+			if = {
+				limit = { wealth = 12500 }
+				wealth = -12500
+				ROOT = { wealth = 12500 }
+			}
+			if = {
+				limit = { wealth = 6000 }
+				wealth = -6000
+				ROOT = { wealth = 6000 }
+			}
+			if = {
+				limit = { wealth = 3000 }
+				wealth = -3000
+				ROOT = { wealth = 3000 }
+			}
+			if = {
+				limit = { wealth = 1500 }
+				wealth = -1500
+				ROOT = { wealth = 1500 }
+			}
+			if = {
+				limit = { wealth = 750 }
+				wealth = -750
+				ROOT = { wealth = 750 }
+			}
+			if = {
+				limit = { wealth = 375 }
+				wealth = -375
+				ROOT = { wealth = 375 }
+			}
+			if = {
+				limit = { wealth = 187 }
+				wealth = -187
+				ROOT = { wealth = 187 }
+			}
+			if = {
+				limit = { wealth = 100 }
+				wealth = -100
+				ROOT = { wealth = 100 }
+			}
+			if = {
+				limit = { wealth = 50 }
+				wealth = -50
+				ROOT = { wealth = 50 }
+			}
+			if = {
+				limit = { wealth = 25 }
+				wealth = -25
+				ROOT = { wealth = 25 }
+			}
+			if = {
+				limit = { wealth = 12 }
+				wealth = -12
+				ROOT = { wealth = 12 }
+			}
+			if = {
+				limit = { wealth = 6 }
+				wealth = -6
+				ROOT = { wealth = 6 }
+			}
+			if = {
+				limit = { wealth = 3 }
+				wealth = -3
+				ROOT = { wealth = 3 }
+			}
+			if = {
+				limit = { wealth = 2 }
+				wealth = -2
+				ROOT = { wealth = 2 }
+			}
+			if = {
+				limit = { wealth = 1 }
+				wealth = -1
+				ROOT = { wealth = 1 }
+			}
+		}
+	}
+}
+transfer_wealth_to_heir_effect = {
+	custom_tooltip = {
+		text = TOOLTIPtransfer_wealth_to_heir_effect
+		hidden_tooltip = {
+			if = {
+				limit = { wealth = 25000 }
+				wealth = -25000
+				current_heir = { wealth = 25000 }
+			}
+			if = {
+				limit = { wealth = 12500 }
+				wealth = -12500
+				current_heir = { wealth = 12500 }
+			}
+			if = {
+				limit = { wealth = 6000 }
+				wealth = -6000
+				current_heir = { wealth = 6000 }
+			}
+			if = {
+				limit = { wealth = 3000 }
+				wealth = -3000
+				current_heir = { wealth = 3000 }
+			}
+			if = {
+				limit = { wealth = 1500 }
+				wealth = -1500
+				current_heir = { wealth = 1500 }
+			}
+			if = {
+				limit = { wealth = 750 }
+				wealth = -750
+				current_heir = { wealth = 750 }
+			}
+			if = {
+				limit = { wealth = 375 }
+				wealth = -375
+				current_heir = { wealth = 375 }
+			}
+			if = {
+				limit = { wealth = 187 }
+				wealth = -187
+				current_heir = { wealth = 187 }
+			}
+			if = {
+				limit = { wealth = 100 }
+				wealth = -100
+				current_heir = { wealth = 100 }
+			}
+			if = {
+				limit = { wealth = 50 }
+				wealth = -50
+				current_heir = { wealth = 50 }
+			}
+			if = {
+				limit = { wealth = 25 }
+				wealth = -25
+				current_heir = { wealth = 25 }
+			}
+			if = {
+				limit = { wealth = 12 }
+				wealth = -12
+				current_heir = { wealth = 12 }
+			}
+			if = {
+				limit = { wealth = 6 }
+				wealth = -6
+				current_heir = { wealth = 6 }
+			}
+			if = {
+				limit = { wealth = 3 }
+				wealth = -3
+				current_heir = { wealth = 3 }
+			}
+			if = {
+				limit = { wealth = 2 }
+				wealth = -2
+				current_heir = { wealth = 2 }
+			}
+			if = {
+				limit = { wealth = 1 }
+				wealth = -1
+				current_heir = { wealth = 1 }
+			}
+		}
+	}
+}
+set_mega_war_empire_variable_ROOT_effect = {
+	ROOT = {
+		clr_character_flag = mega_war_empire_found
+		primary_title = { #try dejure empire first
+			empire = {
+				if = {
+					limit = { holder = PREVPREVPREV }
+					ROOT = {
+						any_demesne_title = {
+							limit = { 
+								NOT = { tier = BARON } 
+								NOT = { tier = EMPEROR }
+							}				
+							set_variable = { which = "de_facto_empire" which = PREVPREV } 
+						}
+						set_character_flag = mega_war_empire_found
+					}
+				}
+			}
+		}
+	}	
+	if = {
+		limit = { NOT = { ROOT = { has_character_flag = mega_war_empire_found } } }
+		primary_title = {  #then primary
+			ROOT = {
+				any_demesne_title = {
+					limit = { 
+						NOT = { tier = BARON } 
+						NOT = { tier = EMPEROR }
+					}				
+					set_variable = { which = "de_facto_empire" which = PREVPREV } 
+				}
+			}	
+		}	
+	}	
+	ROOT = { clr_character_flag = mega_war_empire_found }
+}
+set_mega_war_kingdom_variable_ROOT_effect = {
+	ROOT = {
+		clr_character_flag = mega_war_kingdom_found
+		primary_title = { #try dejure kingdom first
+			kingdom = {
+				if = {
+					limit = { holder = PREVPREVPREV }
+					ROOT = {
+						any_demesne_title = {
+							limit = { 
+								OR = {
+									tier = COUNT
+									tier = DUKE
+								}
+							}				
+							set_variable = { which = "de_facto_kingdom" which = PREVPREV }
+						}
+						set_character_flag = mega_war_kingdom_found
+					}
+				}
+			}
+			if = { #then empire
+				limit = { NOT = { ROOT = { has_character_flag = mega_war_kingdom_found } } }
+				empire = {
+					if = {
+						limit = { 
+							holder = PREVPREVPREV 
+							check_variable = { which = "de_facto_kingdom" value = 1 }
+						}
+						ROOT = {
+							any_demesne_title = {
+								limit = { 
+									OR = {
+										tier = COUNT
+										tier = DUKE
+									}
+								}				
+								set_variable = { which = "de_facto_kingdom" which = PREVPREV }
+							}
+							set_character_flag = mega_war_kingdom_found
+						}
+					}
+				}
+				
+			}	
+		}
+	}	
+	if = {
+		limit = { NOT = { ROOT = { has_character_flag = mega_war_kingdom_found } } }
+		primary_title = {  #then primary
+			ROOT = {
+				any_demesne_title = {
+					limit = { 
+						OR = {
+							tier = COUNT
+							tier = DUKE
+						}
+					}				
+					set_variable = { which = "de_facto_kingdom" which = PREVPREV }
+				}
+			}	
+		}	
+	}	
+	ROOT = { clr_character_flag = mega_war_kingdom_found }
+}
+extrajudicial_action_tyranny_effect = {
+	if = {
+		limit = { primary_title = { has_law = justice_voting_power_1 } }
+		custom_tooltip = {
+			text = TOOLTIPextrajudicial_action_tyranny
+			hidden_tooltip = {
+				change_variable = { which = "tyrant" value = 10 } 
+				character_event = { id = maintenance.1 } #tyrant trait
+			}
+		}
+	}
+}
+
+add_sympathy_trait_effect = {
+	trigger_switch = {
+		on_trigger = religion_group
+		westerosi_religion = { add_trait = sympathy_westerosi }
+		drowned_god_group = { add_trait = sympathy_drowned_god }
+		essos_group = { add_trait = sympathy_essos_group }
+		ghiscar_rel = { add_trait = sympathy_ghiscar_rel }
+		valyrian_rel_group	= { add_trait = sympathy_valyrian_rel_group }
+		wildling_religion = { add_trait = sympathy_wildling_religion }
+		sarnor_rel = { add_trait = sympathy_sarnor_rel }
+		qarth_rel = { add_trait = sympathy_qarth_rel }
+		far_east_group = { add_trait = sympathy_far_east_group }
+		ibben_rel	= { add_trait = sympathy_ibben_rel }
+		dothraki_rel_group = { add_trait = sympathy_dothraki_rel_group }
+		jogos_rel_group = { add_trait = sympathy_jogos_rel_group }
+		lhazar_rel_group = { add_trait = sympathy_lhazar_rel_group }
+		summer_rel_group	= { add_trait = sympathy_summer_rel_group }
+		sothoryos_rel_group = { add_trait = sympathy_sothoryos_rel_group }
+		pirate_group	= { add_trait = sympathy_pirate_group }
+		pagan_group = { add_trait = sympathy_pagans }
+	}
+}
+
+slave_raid_gain_slaves_effect = { #Use in location scope, ROOT is raider/attacker
+	custom_tooltip = { # Give the attacker new slaves
+		text = TOOLTIPslave_raid_new_slaves
+		hidden_tooltip = {
+			save_event_target_as = slave_raid_province
+			ROOT = { character_event = { id = slavery.780 days = 1 } }
+		}	
+	}
+}
+add_priest_trait_effect = {
+	if = {
+		limit = { religion = drowned_god }
+		add_trait = drowned
+	}
+	if = {
+		limit = { religion = the_seven }
+		if = {
+			limit = { is_female = no }
+			add_trait = septon
+			set_special_character_title = title_septon
+		}
+		if = {
+			limit = { is_female = yes }
+			add_trait = septa
+			set_special_character_title = title_septa
+		}
+	}
+	if = {
+		limit = { religion = rhllor }
+		add_trait = red_priest
+		if = {
+			limit = { 
+				NOT = { father_even_if_dead = { always = yes } }
+				NOT = { real_father_even_if_dead = { always = yes } }
+			}	
+			add_trait = fire_obsessed
+			if = {
+				limit = { is_female = yes }
+				random = {
+					chance = 5
+					set_character_flag = shadowbinder_magic_knowledge
+				}
+			}
+		}	
+	}
+	if = {
+		limit = { religion = qarth_warlocks }
+		add_trait = warlock
+		add_trait = mystic
+	}
+	if = {
+		limit = { religion = bearded_priests }
+		add_trait = bearded_priest
+		if = {
+			limit = { 
+				NOT = { father_even_if_dead = { always = yes } }
+				NOT = { real_father_even_if_dead = { always = yes } }
+				NOT = { trait = poor_warrior }
+				NOT = { trait = trained_warrior }
+				NOT = { trait = skilled_warrior }
+				NOT = { trait = master_warrior }
+			}
+			random_list = {
+				20 = { add_trait = poor_warrior }
+				65 = { add_trait = trained_warrior }
+				15 = { add_trait = skilled_warrior }
+			}
+		}
+	}
+	if = {
+		limit = { religion = harpy }
+		if = {
+			limit = { 
+				is_female = no 
+				is_ruler = yes
+			}
+			liege = {
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					female = yes
+					religion = harpy
+				}
+				new_character = {
+					remove_trait = imbecile
+					remove_trait = inbred
+					remove_trait = slow
+					add_trait = grace
+					ROOT = { abdicate_to = PREV }
+					primary_title = { gender_succ = enatic }
+					recalc_succession = yes
+				}
+			}
+			if = {
+				limit = {
+					NOR = {
+						father_even_if_dead = { always = yes }
+						mother_even_if_dead = { always = yes }
+						real_father_even_if_dead = { always = yes }
+					}
+				}
+				death = yes
+			}	
+		}
+		if = {
+			limit = { is_female = yes }
+			add_trait = grace
+		}	
+	}
+	if = {
+		limit = { religion = shadowbinders }
+		if = {
+			limit = { 
+				is_female = no 
+				is_ruler = yes
+			}
+			liege = {
+				create_character = {
+					random_traits = yes
+					dynasty = none
+					female = yes
+					religion = shadowbinders
+				}
+				new_character = {
+					remove_trait = imbecile
+					remove_trait = inbred
+					remove_trait = slow
+					add_trait = shadowbinder
+					add_trait = mystic
+					ROOT = { abdicate_to = PREV }
+				}
+			}
+			if = {
+				limit = {
+					NOR = {
+						father_even_if_dead = { always = yes }
+						mother_even_if_dead = { always = yes }
+						real_father_even_if_dead = { always = yes }
+					}
+				}
+				death = yes
+			}
+		}
+		if = {
+			limit = { is_female = yes }
+			add_trait = shadowbinder
+			add_trait = mystic
+		}	
+	}
+	if = {
+		limit = { religion = summer_rel }
+		add_trait = love_priest
+		if = {
+			limit = { 
+				NOT = { father_even_if_dead = { always = yes } }
+				NOT = { real_father_even_if_dead = { always = yes } }
+			}
+			remove_trait = celibate
+			remove_trait = chaste
+			random = {
+				chance = 30
+				add_trait = lustful
+			}
+			random = {
+				chance = 15
+				add_trait = fair
+				remove_trait = ugly
+			}
+			random = {
+				chance = 10
+				if = {
+					limit = { is_female = no }
+					add_trait = seducer
+				}
+				if = {
+					limit = { is_female = yes }
+					add_trait = seductress
+				}				
+			}
+		}
+	}
+	if = {
+		limit = { 
+			NOR = {
+				religion = rhllor 
+				religion = the_seven 
+				religion = drowned_god
+				religion = qarth_warlocks
+				religion = bearded_priests
+				religion = summer_rel
+				religion = shadowbinders
+				religion = harpy
+			}	
+		}
+		add_trait = zealous
+	}
+}
+heal_basic_effect = {
+	if = {
+		limit = { trait = wounded }
+		remove_trait = wounded
+	}
+	if = {
+		limit = { trait = depressed }
+		remove_trait = depressed
+	}
+	if = {
+		limit = { trait = stressed }
+		remove_trait = stressed
+	}
+	if = {
+		limit = { trait = lovers_pox }
+		remove_trait = lovers_pox
+	}
+	if = {
+		limit = { trait = ill }
+		remove_trait = ill
+	}
+	if = {
+		limit = { trait = pneumonic }
+		remove_trait = pneumonic
+	}
+	if = {
+		limit = { trait = syphilitic }
+		remove_trait = syphilitic
+	}
+	if = {
+		limit = { trait = leper }
+		remove_trait = leper
+	}
+	if = {
+	 	limit = { trait = has_bloody_flux }
+	 	remove_trait = has_bloody_flux
+		set_character_flag = immune_tuberculosis
+	}
+	if = {
+	 	limit = { trait = has_typhoid_fever }
+	 	remove_trait = has_typhoid_fever
+		set_character_flag = immune_typhoid_fever
+	}
+	if = {
+	 	limit = { trait = has_grey_plague }
+	 	remove_trait = has_grey_plague
+		set_character_flag = immune_typhus
+	}
+	if = {
+	 	limit = { trait = has_bubonic_plague }
+	 	remove_trait = has_bubonic_plague
+		set_character_flag = immune_bubonic_plague
+	}
+	if = {
+	 	limit = { trait = has_measles }
+	 	remove_trait = has_measles
+		set_character_flag = immune_measles
+	}
+	if = {
+	 	limit = { trait = has_small_pox }
+	 	remove_trait = has_small_pox
+		set_character_flag = immune_small_pox
+	}
+	if = {
+	 	limit = { trait = has_aztec_disease }
+	 	remove_trait = has_aztec_disease
+		set_character_flag = immune_aztec_disease
+	}
+	if = {
+	 	limit = { trait = syphilitic }
+	 	remove_trait = syphilitic
+		set_character_flag = immune_syphilitic
+	}				
+	if = {
+		limit = { trait = has_greyscale }
+		remove_trait = has_greyscale
+	}			
+	if = {
+		limit = { trait = has_pox }
+		remove_trait = has_pox
+	}
+	if = {
+		limit = { trait = sickly }
+		remove_trait = sickly
+	}						
+	if = {
+		limit = { trait = has_butterfly_fever }
+		remove_trait = has_butterfly_fever
+	}	
+	if = {
+		limit = { trait = old_ones_scourge }
+		remove_trait = old_ones_scourge
+		set_character_flag = immune_old_ones_scourge
+	}	
+	if = {
+		limit = { trait = has_red_death }
+		remove_trait = has_red_death
+		set_character_flag = immune_red_death
+	}
+	#reapers	
+	if = {
+		limit = { trait = abdominal_pain }
+		remove_trait = abdominal_pain
+	}
+	if = {
+		limit = { trait = cough }
+		remove_trait = cough
+	}
+	if = {
+		limit = { trait = fever }
+		remove_trait = fever
+	}
+	if = {
+		limit = { trait = malaise }
+		remove_trait = malaise
+	}
+	if = {
+		limit = { trait = fatigue }
+		remove_trait = fatigue
+	}
+	if = {
+		limit = { trait = chest_pain }
+		remove_trait = chest_pain
+	}
+	if = {
+		limit = { trait = vomiting }
+		remove_trait = vomiting
+	}
+	if = {
+		limit = { trait = diarrhea }
+		remove_trait = diarrhea
+	}
+	if = {
+		limit = { trait = headache }
+		remove_trait = headache
+	}
+	if = {
+		limit = { trait = cramps }
+		remove_trait = cramps
+	}
+	if = {
+		limit = { trait = rash }
+		remove_trait = rash
+	}
+	if = {
+		limit = { trait = infection }
+		remove_trait = infection
+	}
+	if = { limit = { trait = flu } remove_trait = flu }
+	if = { limit = { trait = dysentery } remove_trait = dysentery }
+	if = { limit = { trait = gout }	remove_trait = gout }
+	if = { limit = { trait = food_poisoning } remove_trait = food_poisoning }
+	if = { limit = { trait = rabies } remove_trait = rabies }
+	if = { limit = { trait = cancer } remove_trait = cancer }  
+	if = {
+	 	limit = { trait = scurvy }
+	 	remove_trait = scurvy
+	}
+	hidden_tooltip = {
+		remove_character_modifier = symptom_treatment_1
+		remove_character_modifier = symptom_treatment_2
+		remove_character_modifier = symptom_treatment_3
+		remove_character_modifier = symptom_treatment_4
+		clr_character_flag = developing_illness		
+		remove_disease_flags_effect = yes
+		clear_disease_level_effect = yes
+		remove_treatment_modifiers_effect = yes
+	}
+}
+heal_advanced_effect = {
+	if = {
+		limit = { trait = clubfooted }
+		remove_trait = clubfooted
+	}	
+	if = {
+		limit = { trait = harelip }
+		remove_trait = harelip
+	}	
+	if = {
+		limit = { trait = hunchback }
+		remove_trait = hunchback
+	}	
+	if = {
+		limit = { trait = lisp }
+		remove_trait = lisp
+	}	
+	if = {
+		limit = { trait = stutter }
+		remove_trait = stutter
+	}	
+	if = {
+		limit = { trait = ugly  }
+		remove_trait = ugly 
+	}		
+	if = {
+		limit = { trait = slow }
+		remove_trait = slow
+	}	
+	if = {
+		limit = { trait = imbecile }
+		remove_trait = imbecile
+	}	
+	if = {
+		limit = { trait = weak }
+		remove_trait = weak
+	}	
+	if = {
+		limit = { trait = inbred }
+		remove_trait = inbred
+	}
+	if = {
+		limit = { trait = crippled }
+		remove_trait = crippled
+	}
+	if = {
+		limit = { trait = disfigured_AGOT }
+		remove_trait = disfigured_AGOT
+	}
+	if = {
+		limit = { trait = infirm }
+		remove_trait = infirm
+	}	
+	if = {
+		limit = { trait = maimed }
+		remove_trait = maimed
+	}
+	if = {
+		limit = { trait = incapable }
+		remove_trait = incapable
+	}	
+	if = {
+		limit = { trait = possessed }
+		remove_trait = possessed
+	}
+	# if = {
+		# limit = { trait = lunatic }
+		# remove_trait = lunatic
+	# }
+	if = {
+		limit = { trait = blinded_age }
+		remove_trait = blinded_age
+	}	
+	if = {
+		limit = { trait = disfigured }
+		remove_trait = disfigured
+	}
+	if = {
+		limit = { trait = mangled }
+		remove_trait = mangled
+	}
+	if = {
+		limit = { trait = severely_injured }
+		remove_trait = severely_injured
+	}		
+}
+
+# R'hllor magic increases from sacrifices, do the effect in the scope of the person being executed ROOT is the executor
+# eg: FROMFROM is being executed - FROMFROM = { increase_red_god_magic = yes }
+increase_red_god_magic = {
+	# log = "I am [This.GetTitledFirstName] being executed by [Root.GetTitledFirstName]"
+	if = {
+		limit = {
+			OR = {
+				tier = EMPEROR
+				father_even_if_dead = { tier = EMPEROR }
+				mother_even_if_dead = { father_even_if_dead = { tier = EMPEROR } }
+				father_even_if_dead = { father_even_if_dead = { tier = EMPEROR } }
+				any_claim = { tier = EMPEROR }
+			}
+		}
+		ROOT = { change_variable = { which = "red_god_magic" value = 3 } }
+		break = yes
+	}
+	if = {
+		limit = {
+			OR = {
+				tier = KING
+				father_even_if_dead = { tier = KING }
+				mother_even_if_dead = { father_even_if_dead = { tier = KING } }
+				father_even_if_dead = { father_even_if_dead = { tier = KING } }
+				any_claim = { tier = KING }
+			}
+		}
+		ROOT = { change_variable = { which = "red_god_magic" value = 2 } }
+		break = yes
+	}
+	if = {
+		limit = {
+			OR = {
+				tier = DUKE
+				father_even_if_dead = { tier = DUKE }
+				mother_even_if_dead = { father_even_if_dead = { tier = DUKE } }
+				father_even_if_dead = { father_even_if_dead = { tier = DUKE } }
+				any_claim = { tier = DUKE }
+				is_priest = yes
+				trait = dosh_khaleen
+				trait = silent_sister
+				trait = red_priest
+				trait = drowned
+				trait = grace
+				trait = warlock
+				trait = shadowbinder
+				trait = bearded_priest
+				trait = septa
+				trait = septon
+				trait = love_priest
+			}
+		}
+		ROOT = { change_variable = { which = "red_god_magic" value = 1 } }
+		break = yes
+	}
+	if = {
+		limit = {
+			OR = {
+				tier = COUNT
+				father_even_if_dead = { tier = COUNT }
+				mother_even_if_dead = { father_even_if_dead = { tier = COUNT } }
+				father_even_if_dead = { father_even_if_dead = { tier = COUNT } }
+				any_claim = { tier = COUNT }
+			}
+		}
+		ROOT = { change_variable = { which = "red_god_magic" value = 0.5 } }
+		break = yes
+	}
+	ROOT = { change_variable = { which = "red_god_magic" value = 0.25 } }
+}
+
+shattered_realms_effect = {
+	if = { #Kingdoms
+		limit = {
+			has_game_rule = { name = shattered_realms value = kingdoms }
+		}
+		d_kingsguard = { #disable kingsguard
+			holder_scope = {
+				remove_trait = kingsguard
+				activate_title = { title = d_kingsguard status = no }
+				d_kingsguard = { destroy_landed_title = THIS }
+			}
+		}
+		any_character = {
+			limit = { 
+				is_alive = yes 
+				trait = kingsguard
+			}
+			remove_trait = kingsguard
+		}
+		e_iron_throne = {
+			holder_scope = {
+				k_crownlands = { gain_title = PREV }
+			}
+		}
+		any_title = { #destroy emperor titles
+			limit = {
+				has_holder = yes
+				tier = EMPEROR
+				is_landless_type_title = no
+				is_nomadic = no
+			}
+			destroy_landed_title = THIS
+		}
+		any_playable_ruler = { #destroy secondary kingdom titles
+			limit = {					
+				tier = KING
+				num_of_king_titles = 2
+				demesne_size = 1
+				NOT = { trait = nightswatch }
+			}
+			any_demesne_title = {
+				limit = {
+					tier = KING
+					is_landless_type_title = no
+					is_primary_holder_title = no
+				}
+				destroy_landed_title = THIS
+			}
+		}
+		any_playable_ruler = { #grant non dejure counts/dukes independence
+			limit = {					
+				OR = {
+					tier = COUNT
+					tier = DUKE
+				}
+				independent = no
+				NOT = {
+					primary_title = {
+						dejure_liege_title = {
+							OR = {
+								holder_scope = { is_liege_of = PREVPREVPREV }
+								dejure_liege_title = { holder_scope = { is_liege_of = PREVPREVPREVPREV } }
+							}	
+						}
+					}
+				}
+			}
+			set_defacto_liege = THIS
+		}
+		any_playable_ruler = { #split nomadic clans
+			limit = {					
+				tier = KING
+				is_nomadic = yes
+			}
+			set_defacto_liege = THIS
+		}
+		any_playable_ruler = {
+			limit = { is_nomadic = yes }
+			add_population_scaled = -0.25
+			manpower = -750
+		}
+	}
+	if = { #Duchies
+		limit = {
+			has_game_rule = { name = shattered_realms value = duchies }
+		}
+		d_kingsguard = { #disable kingsguard
+			holder_scope = {
+				remove_trait = kingsguard
+				activate_title = { title = d_kingsguard status = no }
+				d_kingsguard = { destroy_landed_title = THIS }
+			}
+		}
+		any_character = {
+			limit = { 
+				is_alive = yes 
+				trait = kingsguard
+			}
+			remove_trait = kingsguard
+		}
+		any_title = { #destroy king+ titles
+			limit = {
+				has_holder = yes
+				higher_tier_than = DUKE
+				is_landless_type_title = no
+				is_nomadic = no
+			}
+			destroy_landed_title = THIS
+		}
+		any_playable_ruler = { #destroy secondary duke titles
+			limit = {					
+				tier = DUKE
+				num_of_duke_titles = 2
+				demesne_size = 1
+				NOT = { trait = nightswatch }
+			}
+			any_demesne_title = {
+				limit = {
+					tier = DUKE
+					is_landless_type_title = no
+					is_primary_holder_title = no
+				}
+				destroy_landed_title = THIS
+			}
+		}
+		any_playable_ruler = { #grant non dejure counts independence
+			limit = {					
+				tier = COUNT
+				independent = no
+				NOT = {
+					primary_title = {
+						dejure_liege_title = {
+							holder_scope = { is_liege_of = PREVPREVPREV }
+						}
+					}
+				}
+			}
+			set_defacto_liege = THIS
+		}
+		any_playable_ruler = { #split nomadic clans
+			limit = {					
+				tier = KING
+				is_nomadic = yes
+			}
+			set_defacto_liege = THIS
+		}
+		any_playable_ruler = {
+			limit = { is_nomadic = yes }
+			add_population_scaled = -0.5
+			manpower = -1250
+		}
+	}
+	if = { #Counties
+		limit = {
+			has_game_rule = { name = shattered_realms value = counties }
+		}
+		d_kingsguard = { #disable kingsguard
+			holder_scope = {
+				remove_trait = kingsguard
+				activate_title = { title = d_kingsguard status = no }
+				d_kingsguard = { destroy_landed_title = THIS }
+			}
+		}
+		any_character = {
+			limit = { 
+				is_alive = yes 
+				trait = kingsguard
+			}
+			remove_trait = kingsguard
+		}
+		any_playable_ruler = { #patricians become feudal
+			limit = {
+				is_patrician = yes
+			}
+			family_palace = { destroy_settlement = THIS }
+			set_government_type = feudal_government
+		}
+		any_title = { #destroy duke+ titles
+			limit = {
+				has_holder = yes
+				higher_tier_than = COUNT
+				is_landless_type_title = no
+				is_nomadic = no
+				holder_scope = {
+					NOT = { trait = nightswatch }
+				}
+			}
+			destroy_landed_title = THIS
+		}
+		any_playable_ruler = { #lose secondary count titles
+			limit = {					
+				tier = COUNT
+				num_of_count_titles = 2
+				demesne_size = 2
+				NOT = { trait = nightswatch }
+			}
+			any_demesne_title = {
+				limit = {
+					tier = COUNT
+					is_landless_type_title = no
+					is_primary_holder_title = no
+				}
+				holder_scope = {
+					random_courtier = {
+						limit = {
+							is_ruler = no
+							NOT = { is_child_of = PREV }
+							is_adult = yes
+							prisoner = no
+							is_female = no
+							can_inherit_titles_trigger = yes
+							NOT = { dynasty = 0 }
+						}
+						gain_title = PREVPREV
+					}
+				}
+			}
+		}
+		any_playable_ruler = { #split nomadic clans
+			limit = {					
+				tier = KING
+				is_nomadic = yes
+			}
+			set_defacto_liege = THIS
+		}
+		any_playable_ruler = {
+			limit = { is_nomadic = yes }
+			add_population_scaled = -0.75
+			manpower = -2500
+		}
+	}
+}
+symmetrical_start_effect = {
+	any_title = {
+		limit = {
+			tier = BARON
+			has_holder = yes
+		}
+		remove_building = ca_asoiaf_ironshipyard
+		remove_building = ca_asoiaf_redwyneshipyard
+		remove_building = ca_asoiaf_targshipyard
+		remove_building = ca_asoiaf_driftmarkshipyard
+		remove_building = ca_asoiaf_essosshipyard
+		remove_building = ca_asoiaf_smallshipyard
+		remove_building = ca_asoiaf_lannshipyard
+		remove_building = ca_asoiaf_oldtownshipyard
+		remove_building = ca_asoiaf_shieldshipyard
+		remove_building = ca_asoiaf_koj_shipyard
+		remove_building = ca_hyrkooni_fortress
+		remove_building = ca_five_forts
+		remove_building = ca_wildling_barracks
+		remove_building = ca_asoiaf_pirateshipyard
+		remove_building = ca_dragon_pit
+		remove_building = ct_asoiaf_targshipyard
+		remove_building = ct_asoiaf_driftmarkshipyard
+		remove_building = ct_asoiaf_redwyneshipyard
+		remove_building = ct_asoiaf_oldtownshipyard
+		remove_building = ct_asoiaf_essosshipyard
+		remove_building = ct_asoiaf_smallshipyard
+		remove_building = ct_asoiaf_koj_shipyard
+		remove_building = ct_gold_cloaks
+		remove_building = ct_lannisport
+		remove_building = tp_monastery_1
+		
+		remove_building = ca_asoiaf_north_basevalue_1
+		remove_building = ca_asoiaf_river_basevalue_1
+		remove_building = ca_asoiaf_dorne_basevalue_1
+		remove_building = ca_asoiaf_ironislands_basevalue_1
+		remove_building = ca_asoiaf_crown_basevalue_1
+		remove_building = ca_asoiaf_storm_basevalue_1
+		remove_building = ca_asoiaf_vale_basevalue_1
+		remove_building = ca_asoiaf_westerland_basevalue_1
+		remove_building = ca_asoiaf_reach_basevalue_1
+		remove_building = ca_asoiaf_essos_basevalue_1
+		remove_building = ca_asoiaf_summerisland_basevalue_1
+		remove_building = ca_asoiaf_qarth_basevalue_1
+		remove_building = ca_asoiaf_ghiscari_basevalue_1
+		remove_building = ca_asoiaf_lhazareen_basevalue_1
+		remove_building = ca_asoiaf_nighswatch_basevalue_1
+		remove_building = ca_asoiaf_eastern_basevalue_1
+		remove_building = ca_asoiaf_yiti_basevalue_1
+		remove_building = ca_asoiaf_ibben_basevalue_1
+		remove_building = ca_asoiaf_sarnor_basevalue_1
+		remove_building = ca_asoiaf_asshai_basevalue_1
+		remove_building = ct_asoiaf_north_basevalue_1
+		remove_building = ct_asoiaf_river_basevalue_1
+		remove_building = ct_asoiaf_dorne_basevalue_1
+		remove_building = ct_asoiaf_ironislands_basevalue_1
+		remove_building = ct_asoiaf_crown_basevalue_1
+		remove_building = ct_asoiaf_storm_basevalue_1
+		remove_building = ct_asoiaf_vale_basevalue_1
+		remove_building = ct_asoiaf_westerland_basevalue_1
+		remove_building = ct_asoiaf_reach_basevalue_1
+		remove_building = ct_asoiaf_essos_basevalue_1
+		remove_building = ct_asoiaf_summerisland_basevalue_1
+		remove_building = ct_asoiaf_qarth_basevalue_1
+		remove_building = ct_asoiaf_ghiscari_basevalue_1
+		remove_building = ct_asoiaf_lhazareen_basevalue_1
+		remove_building = ct_asoiaf_eastern_basevalue_1
+		remove_building = ct_asoiaf_yiti_basevalue_1
+		remove_building = ct_asoiaf_ibben_basevalue_1
+		remove_building = ct_asoiaf_sarnor_basevalue_1
+		remove_building = ct_asoiaf_asshai_basevalue_1
+	}
+}
+startup_prosperity_effect = {
+	any_province = {
+		limit = {
+			any_province_holding = { #empty provinces (including provinces with ONLY a temple) do not prosper
+				OR = {
+					holding_type = city
+					holding_type = castle
+					#holding_type = tribal
+				}
+			}
+		}
+		if = {
+			limit = { owner = { NOT_mythical_creature_trigger = yes } }
+			if = {
+				limit = { any_province_holding = { base_value_1_trigger = yes } }
+				set_variable = { which = prosperity_value value = 10 }
+			}
+			if = {
+				limit = { any_province_holding = { base_value_2_trigger = yes } }
+				set_variable = { which = prosperity_value value = 30 }
+			}
+			if = {
+				limit = { any_province_holding = { base_value_3_trigger = yes } }
+				set_variable = { which = prosperity_value value = 75 }
+			}
+			if = {
+				limit = { any_province_holding = { base_value_4_trigger = yes } }
+				set_variable = { which = prosperity_value value = 150 }
+			}
+			if = {
+				limit = { any_province_holding = { base_value_5_trigger = yes } }
+				set_variable = { which = prosperity_value value = 200 }
+			}
+			if = {
+				limit = { any_province_holding = { base_value_6_trigger = yes } }
+				set_variable = { which = prosperity_value value = 350 }
+			}
+		}	
+		if = {
+			limit = { owner = { NOT = { NOT_mythical_creature_trigger = yes } } }
+			set_variable = { which = prosperity_value value = 0 }
+			# add_province_modifier = {
+				# name = depopulated_3
+				# duration = -1
+			# }
+			# set_province_flag = recent_depopulation_3
+		}
+	}
+	
+	##Special##
+	#Iron islands are poor
+	any_province = {
+		limit = { region = world_iron_isles }
+		if = {
+			limit = { NOT = { check_variable = { which = prosperity_value value = 151 } } }
+			set_variable = { which = prosperity_value value = 0 }
+		}
+		if = {
+			limit = { check_variable = { which = prosperity_value value = 151 } }
+			change_variable = { which = prosperity_value value = -150 }
+		}
+	}
+	#The Conquest
+	if = {
+		limit = {
+			year = 7999
+			NOT = { year = 8020 }	
+		}
+		107 = { #Harrenhal
+			set_variable = { which = prosperity_value value = 0 }
+		}
+	}
+	#Dance of the Dragons
+	if = {
+		limit = {
+			year = 8130
+			NOT = { year = 8140 }	
+		}
+		any_province = {
+			limit = { region = world_crownlands }
+			set_variable = { which = prosperity_value value = 0 }
+		}
+		any_province = {
+			limit = { region = world_riverlands }
+			set_variable = { which = prosperity_value value = 0 }
+		}
+		any_province = {
+			limit = { duchy = { title = d_tumbleton } }
+			set_variable = { which = prosperity_value value = 0 }
+		}
+	}
+	#Peake Uprising
+	if = {
+		limit = {
+			year = 8234
+			NOT = { year = 8260 }
+		}
+		279 = { #Starpike
+			set_variable = { which = prosperity_value value = 0 }
+		}
+	}
+	#Roberts Rebellion
+	if = {
+		limit = {
+			year = 8284
+			NOT = { year = 8290 }	
+		}
+		any_province = {
+			limit = { region = world_crownlands }
+			set_variable = { which = prosperity_value value = 0 }
+		}
+		any_province = {
+			limit = { region = world_stormlands }
+			set_variable = { which = prosperity_value value = 0 }
+		}
+		112 = { #Stoney Sept
+			set_variable = { which = prosperity_value value = 0 }
+		}
+		149 = { #Gulltown
+			set_variable = { which = prosperity_value value = 0 }
+		}
+	}
+	#Greyjoy Rebellion
+	if = {
+		limit = {
+			year = 8290
+		}
+		161 = { #Lordsport
+			set_variable = { which = prosperity_value value = 0 }
+		}
+		162 = { #Pyke
+			set_variable = { which = prosperity_value value = 0 }
+		}
+	}
+	#ACOK
+	if = {
+		limit = {
+			OR = {
+				year = 8300
+				AND = {
+					year = 8299
+					month = 5
+				}
+			}	
+		}
+		any_province = {
+			limit = { duchy = { title = d_wolfswood } }
+			set_variable = { which = prosperity_value value = 0 }
+		}
+		any_province = {
+			limit = { duchy = { title = d_winterfell } }
+			set_variable = { which = prosperity_value value = 0 }
+		}
+		any_province = {
+			limit = { duchy = { title = d_rills } }
+			set_variable = { which = prosperity_value value = 0 }
+		}
+		164 = { #The Crag
+			set_variable = { which = prosperity_value value = 0 }
+		}
+		173 = { #Ashemark
+			set_variable = { which = prosperity_value value = 0 }
+		}
+		176 = { #Oxcross
+			set_variable = { which = prosperity_value value = 0 }
+		}
+		174 = { #Golden Tooth
+			set_variable = { which = prosperity_value value = 0 }
+		}
+		any_province = {
+			limit = { region = world_astapor }
+			set_variable = { which = prosperity_value value = 0 }
+		}
+		any_province = {
+			limit = { region = world_meereen }
+			set_variable = { which = prosperity_value value = 0 }
+		}
+		any_province = {
+			limit = { region = world_riverlands }
+			set_variable = { which = prosperity_value value = 0 }
+		}
+		any_province = {
+			limit = { region = world_crownlands }
+			set_variable = { which = prosperity_value value = 0 }
+		}
+	}
+	#AFFC
+	if = {
+		limit = {
+			year = 8300	
+		}
+		any_province = {
+			limit = { region = world_stormlands }
+			set_variable = { which = prosperity_value value = 0 }
+		}
+		any_province = {
+			limit = { duchy = { title = d_the_shield_isles } }
+			set_variable = { which = prosperity_value value = 0 }
+		}
+	}
+	##
+	
+	any_province = {
+		limit = {
+			check_variable = { which = prosperity_value value = 100 } #gain modifiers at 100/250/500 value
+		}
+		add_province_modifier = { name = prosperity_modifier_1 duration = -1 }
+	}
+	any_province = {
+		limit = {
+			check_variable = { which = prosperity_value value = 250 }
+		}
+		remove_province_modifier = prosperity_modifier_1
+		add_province_modifier = { name = prosperity_modifier_2 duration = -1 }
+	}
+	any_province = {
+		limit = {
+			check_variable = { which = prosperity_value value = 500 }
+		}
+		remove_province_modifier = prosperity_modifier_2
+		add_province_modifier = { name = prosperity_modifier_3 duration = -1 }
+	}
+}
+gain_regency_effect = {
+	hidden_tooltip = { 
+		liege = { regent = { remove_title = title_regent } } 
+		remove_title = title_triarch
+	}
+	if = {
+		limit = { 
+			is_ruler = yes
+			is_councillor = no 
+		}
+		hidden_tooltip = {
+			remove_title = title_high_admiral
+			remove_title = title_councilmember_king
+			remove_title = title_councilmember_emperor
+			#remove_title = title_master_of_ships				
+			liege = { job_castellan = { remove_title = job_castellan } }
+		}
+		give_job_title = job_castellan
+	}		
+	give_minor_title = title_regent	
+	hidden_tooltip = { 
+		if = {
+			limit = { has_character_flag = triarch }
+			give_minor_title = title_triarch 
+		}	
+	}
+}
+find_ship_name_effect = { #use in immediate
+	hidden_tooltip = {
+		if = {
+			limit = {
+				ai = no
+				OR = {
+					has_character_modifier = enormous_flagship
+					has_character_modifier = regular_flagship
+					has_character_modifier = small_flagship
+				}
+			}
+			#For loc
+			if = {
+				limit = { has_character_flag = flagship_name_PROVINCE }
+				random_province = {
+					limit = { ROOT = { has_character_flag = flagship_name_PROVINCE_@PREV } }
+					save_event_target_as = flagship_name
+					break = yes
+				}
+			}
+			if = {
+				limit = {
+					NOR = {
+						has_character_flag = flagship_name_SELF
+						has_character_flag = flagship_name_FATHER
+						has_character_flag = flagship_name_SPOUSE
+						has_character_flag = flagship_name_GOD
+						#has_character_flag = flagship_name_PROVINCE
+						has_character_flag = flagship_name_DYNASTY
+					}
+				}
+				dead_target = {
+					limit = { ROOT = { has_character_flag = flagship_name_@PREV } }
+					save_event_target_as = flagship_name
+					break = yes
+				}
+			}
+		}	
+	}
+}
+add_fear_execution_effect = {
+	if = { #Landed Vassals
+		limit = {
+			is_ruler = yes
+			OR = {
+				is_liege_or_above = FROM
+				liege_before_war = { character = FROM }
+				any_liege = { liege_before_war = { character = FROM } }
+				primary_title = { 
+					FROM = {
+						any_demesne_title = {
+							is_variable_equal = { which = "de_facto_empire" which = PREVPREV }
+							check_variable = { which = "de_facto_empire" value = 0.9 }
+						}
+					}
+				}
+			}	
+		}
+		FROM = { 
+			change_variable = { which = fear_actions value = 10 } 
+			hidden_tooltip = { character_event = { id = faction_event_new.90 } }
+		}
+	}
+	if = { #Relatives of Vassals or FROM
+		limit = {
+			is_ruler = no
+			OR = {
+				is_close_relative = FROM
+				AND = {						
+					dynasty = FROM
+					NOT = { dynasty = 0 }
+				}	
+				any_close_relative = {
+					is_ruler = yes	
+					OR = {
+						is_liege_or_above = FROM
+						liege_before_war = { character = FROM }
+						any_liege = { liege_before_war = { character = FROM } }
+						primary_title = { 
+							FROM = {
+								any_demesne_title = {
+									is_variable_equal = { which = "de_facto_empire" which = PREVPREV }
+									check_variable = { which = "de_facto_empire" value = 0.9 }
+								}
+							}
+						}
+					}
+				}	
+			}	
+		}
+		FROM = { 
+			change_variable = { which = fear_actions value = 5 } 
+			hidden_tooltip = { character_event = { id = faction_event_new.90 } }
+		}
+	}
+}
+add_fear_torture_effect = { #as above, just different values
+	if = { #Landed Vassals
+		limit = {
+			is_ruler = yes
+			OR = {
+				is_liege_or_above = ROOT_FROM
+				liege_before_war = { character = ROOT_FROM }
+				any_liege = { liege_before_war = { character = ROOT_FROM } }
+				primary_title = { 
+					ROOT_FROM = {
+						any_demesne_title = {
+							is_variable_equal = { which = "de_facto_empire" which = PREVPREV }
+							check_variable = { which = "de_facto_empire" value = 0.9 }
+						}
+					}
+				}
+			}	
+		}
+		ROOT_FROM = { 
+			change_variable = { which = fear_actions value = 5 } 
+			hidden_tooltip = { character_event = { id = faction_event_new.90 } }
+		}
+	}
+	if = { #Relatives of Vassals or FROM
+		limit = {
+			is_ruler = no
+			OR = {
+				is_close_relative = ROOT_FROM
+				AND = {						
+					dynasty = ROOT_FROM
+					NOT = { dynasty = 0 }
+				}	
+				any_close_relative = {
+					is_ruler = yes	
+					OR = {
+						is_liege_or_above = ROOT_FROM
+						liege_before_war = { character = ROOT_FROM }
+						any_liege = { liege_before_war = { character = ROOT_FROM } }
+						primary_title = { 
+							ROOT_FROM = {
+								any_demesne_title = {
+									is_variable_equal = { which = "de_facto_empire" which = PREVPREV }
+									check_variable = { which = "de_facto_empire" value = 0.9 }
+								}
+							}
+						}
+					}
+				}	
+			}	
+		}
+		ROOT_FROM = { 
+			change_variable = { which = fear_actions value = 2 } 
+			hidden_tooltip = { character_event = { id = faction_event_new.90 } }
+		}
+	}
+}
+enslave_effect = { #must set enslaver event target
+	add_trait = slave	
+	hidden_tooltip = {
+		any_spouse = {
+			limit = { opinion = { who = event_target:enslaver value = -25 } }
+			opinion = { who = event_target:enslaver modifier = opinion_enslaved_close_relative }
+		}
+		any_spouse = {
+			opinion = { who = event_target:enslaver modifier = opinion_my_abducted_spouse years = 100 }
+		}
+		prisoner = no
+		any_spouse = { remove_spouse = PREV }	
+		any_consort = { remove_consort = PREV }	
+		clr_character_flag = escaped_slave
+		if = {
+			limit = { has_guardian = yes }
+			remove_guardian = yes
+		}
+		remove_trait = former_slave
+		remove_trait = kingsguard
+		remove_trait = nightswatch
+		if = {
+			limit = { trait = archmaester }
+			remove_trait = archmaester
+			add_trait = maester
+			set_special_character_title = title_maester
+			clr_character_flag = grandmaester
+		}
+		clr_character_flag = triarch
+		clr_character_flag = title_freeholder
+		remove_title = title_freeholder
+		diplomatic_immunity = no
+		#give_minor_title = title_slave
+		clr_character_flag = captured_in_battle
+		clr_character_flag = kidnapped_by_plot
+		clr_character_flag = lost_trial_by_combat
+		clr_character_flag = imprisoned_for_relatives_crimes
+		move_character = event_target:enslaver
+		opinion = { who = event_target:enslaver modifier = opinion_my_owner }
+		reverse_opinion = { who = event_target:enslaver modifier = opinion_my_slave }
+		event_target:enslaver = { add_trait = slave_owner }
+		character_event = { id = slavery.259	days = 1 } #slave management		
+	}
+}
+get_education_level_effect = {
+	if = {
+		limit = { trait = incapable }
+		set_character_flag = education_outcome_level_1
+	}	
+	if = {
+		limit = { NOT = { trait = incapable } }
+		if = {
+			limit = { #too dumb 
+				NOT = { learning = 3 }
+			}
+			random_list = {
+				75 = {set_character_flag = education_outcome_level_1}
+				25 = {set_character_flag = education_outcome_level_2}
+				#0 = {set_character_flag = education_outcome_level_3}
+				#0 = {set_character_flag = education_outcome_level_4}
+			}
+		}
+		if = {
+			limit = {
+				learning = 3
+				NOT = { learning = 5 }
+			}
+			random_list = {
+				55 = {set_character_flag = education_outcome_level_1}
+				45 = {set_character_flag = education_outcome_level_2}
+				#0 = {set_character_flag = education_outcome_level_3}
+				#0 = {set_character_flag = education_outcome_level_4}
+			}
+		}
+		if = {
+			limit = {
+				learning = 5
+				NOT = { learning = 7 }
+			}
+			random_list = {
+				35 = {set_character_flag = education_outcome_level_1}
+				50 = {set_character_flag = education_outcome_level_2}
+				15 = {set_character_flag = education_outcome_level_3}
+				#0 = {set_character_flag = education_outcome_level_4}
+			}
+		}
+		if = {
+			limit = {
+				learning = 7
+				NOT = { learning = 9 }
+			}
+			random_list = {
+				20 = {set_character_flag = education_outcome_level_1}
+				50 = {set_character_flag = education_outcome_level_2}
+				20 = {set_character_flag = education_outcome_level_3}
+				10 = {set_character_flag = education_outcome_level_4}
+			}
+		}
+		if = {
+			limit = {
+				learning = 9
+				NOT = { learning = 11 }
+			}
+			random_list = {
+				10 = {set_character_flag = education_outcome_level_1}
+				35 = {set_character_flag = education_outcome_level_2}
+				35 = {set_character_flag = education_outcome_level_3}
+				20 = {set_character_flag = education_outcome_level_4}
+			}
+		}
+		if = {
+			limit = {
+				learning = 11
+				NOT = { learning = 13 }
+			}
+			random_list = {
+				#0 = {set_character_flag = education_outcome_level_1}
+				25 = {set_character_flag = education_outcome_level_2}
+				45 = {set_character_flag = education_outcome_level_3}
+				30 = {set_character_flag = education_outcome_level_4}
+			}
+		}
+		if = {
+			limit = {
+				learning = 13
+				NOT = { learning = 15 }
+			}
+			random_list = {
+				#0 = {set_character_flag = education_outcome_level_1}
+				10 = {set_character_flag = education_outcome_level_2}
+				50 = {set_character_flag = education_outcome_level_3}
+				40 = {set_character_flag = education_outcome_level_4}
+			}
+		}
+		if = {
+			limit = {
+				learning = 15
+				NOT = { learning = 17 }
+			}
+			random_list = {
+				#0 = {set_character_flag = education_outcome_level_1}
+				#0 = {set_character_flag = education_outcome_level_2}
+				35 = {set_character_flag = education_outcome_level_3}
+				65 = {set_character_flag = education_outcome_level_4}
+			}
+		}
+		if = {
+			limit = { learning = 17 }
+			random_list = {
+				#0 = {set_character_flag = education_outcome_level_1}
+				#0 = {set_character_flag = education_outcome_level_2}
+				10 = {set_character_flag = education_outcome_level_3}
+				90 = {set_character_flag = education_outcome_level_4}
+			}
+		}
+	}	
+}
+decrease_education_level_effect = {
+	if = {
+		limit = {
+			has_character_flag = education_outcome_level_2
+		}
+		clr_character_flag = education_outcome_level_2
+		set_character_flag = education_outcome_level_1
+	}
+	if = {
+		limit = {
+			has_character_flag = education_outcome_level_3
+		}
+		clr_character_flag = education_outcome_level_3
+		set_character_flag = education_outcome_level_2
+	}
+	if = {
+		limit = {
+			has_character_flag = education_outcome_level_4
+		}
+		clr_character_flag = education_outcome_level_4
+		set_character_flag = education_outcome_level_3
+	}
+}
+increase_education_level_effect = {
+	if = {
+		limit = {
+			has_character_flag = education_outcome_level_3
+		}
+		clr_character_flag = education_outcome_level_3
+		set_character_flag = education_outcome_level_4
+	}
+	if = {
+		limit = {
+			has_character_flag = education_outcome_level_2
+		}
+		clr_character_flag = education_outcome_level_2
+		set_character_flag = education_outcome_level_3
+	}
+	if = {
+		limit = {
+			has_character_flag = education_outcome_level_1
+		}
+		clr_character_flag = education_outcome_level_1
+		set_character_flag = education_outcome_level_2
+	}
+}
+add_random_leadership_trait_effect = {
+	random_list = {
+		10 = { 
+			modifier = {
+				factor = 0
+				OR = { 
+					trait = cavalry_leader
+					trait = heavy_infantry_leader
+					trait = light_foot_leader
+				}
+			}
+			add_trait = light_foot_leader 
+		}
+		10 = { 
+			modifier = {
+				factor = 0
+				OR = { 
+					trait = cavalry_leader
+					trait = heavy_infantry_leader
+					trait = light_foot_leader
+				}
+			}
+			add_trait = heavy_infantry_leader 
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				OR = { 
+					trait = cavalry_leader
+					trait = heavy_infantry_leader
+					trait = light_foot_leader
+				}
+			}
+			add_trait = cavalry_leader 
+		}
+		10 = { 
+			modifier = {
+				factor = 0
+				OR = { 
+					trait = inspiring_leader
+					trait = back_seat_leader
+				}
+			}
+			add_trait = inspiring_leader 
+		}
+		10 = { 
+			modifier = {
+				factor = 0
+				trait = trickster
+			}
+			add_trait = trickster 
+		}
+		10 = { 
+			modifier = {
+				factor = 0
+				trait = organizer
+			}
+			add_trait = organizer 
+		}
+		10 = { 
+			modifier = {
+				factor = 0
+				OR = { 
+					trait = defensive_leader
+					trait = aggressive_leader
+				}
+			}
+			add_trait = defensive_leader 
+		}
+		10 = { 
+			modifier = {
+				factor = 0
+				trait = experimenter 
+			}
+			add_trait = experimenter 
+		}
+		10 = { 
+			modifier = {
+				factor = 0
+				trait = flanker
+			}
+			add_trait = flanker 
+		}
+		10 = { 
+			modifier = {
+				factor = 0
+				OR = { 
+					trait = defensive_leader
+					trait = aggressive_leader
+				}
+			}
+			add_trait = aggressive_leader 
+		}
+		10 = { 
+			modifier = {
+				factor = 0
+				OR = { 
+					trait = rough_terrain_leader
+					trait = flat_terrain_leader
+					trait = mountain_terrain_leader
+					trait = desert_terrain_leader
+					trait = jungle_terrain_leader
+					NOR = {
+						location = { terrain = plains }
+						location = { terrain = farmlands }
+						location = { terrain = steppe }
+					}
+				}
+			}
+			add_trait = flat_terrain_leader 
+		}
+		10 = { 
+			modifier = {
+				factor = 0
+				OR = { 
+					trait = rough_terrain_leader
+					trait = flat_terrain_leader
+					trait = mountain_terrain_leader
+					trait = desert_terrain_leader
+					trait = jungle_terrain_leader
+					NOR = {
+						location = { terrain = forest }
+						location = { terrain = hills }
+					}
+				}
+			}
+			add_trait = rough_terrain_leader
+		}
+		10 = { 
+			modifier = {
+				factor = 0
+				OR = { 
+					trait = rough_terrain_leader
+					trait = flat_terrain_leader
+					trait = mountain_terrain_leader
+					trait = desert_terrain_leader
+					trait = jungle_terrain_leader
+					NOT = { location = { terrain = mountain } }
+				}
+			}
+			add_trait = mountain_terrain_leader
+		}
+		10 = { 
+			modifier = {
+				factor = 0
+				OR = { 
+					trait = rough_terrain_leader
+					trait = flat_terrain_leader
+					trait = mountain_terrain_leader
+					trait = desert_terrain_leader
+					trait = jungle_terrain_leader
+					NOT = { location = { terrain = desert } }
+				}
+			}
+			add_trait = desert_terrain_leader 
+		}
+		10 = { 
+			modifier = {
+				factor = 0
+				OR = { 
+					trait = rough_terrain_leader
+					trait = flat_terrain_leader
+					trait = mountain_terrain_leader
+					trait = desert_terrain_leader
+					trait = jungle_terrain_leader
+					NOT = { location = { terrain = jungle } }
+				}
+			}
+			add_trait = jungle_terrain_leader
+		}
+		10 = { 
+			modifier = {
+				factor = 0
+				OR = { 
+					NOT = { trait = zealous }
+					trait = holy_warrior
+					trait = cynical
+				}
+			}
+			add_trait = holy_warrior
+		}
+		10 = { 
+			modifier = {
+				factor = 0
+				trait = unyielding_leader
+			}
+			add_trait = unyielding_leader
+		}
+		10 = { 
+			modifier = {
+				factor = 0
+				OR = { 
+					trait = inspiring_leader
+					trait = back_seat_leader
+				}
+			}
+			add_trait = back_seat_leader 
+		}
+		10 = { 
+			modifier = {
+				factor = 0
+				trait = siege_leader
+			}
+			add_trait = siege_leader
+		}
+		10 = { 
+			modifier = {
+				factor = 0
+				OR = { 
+					trait = narrow_flank_leader
+					NOR = {
+						location = { terrain = mountain }
+						location = { terrain = hills }
+						location = { terrain = forest }
+					}
+				}
+			}
+			add_trait = narrow_flank_leader
+		}
+		10 = { 
+			modifier = {
+				factor = 0
+				OR = { 
+					trait = war_elephant_leader
+					location = {
+						NOR = {
+							culture_group = moraqi_group
+							culture_group = yi_ti_group
+							culture = volantene
+							culture = eastern_valyrian
+							culture_group = ghiscari_group
+							culture_group = qarth_group
+							culture_group = jade_islands_group
+						}
+					}
+				}
+			}
+			add_trait = war_elephant_leader
+		}
+	}
+}
+add_education_leadership_traits_effect = {
+	if = {
+		limit = {
+			OR = {
+				trait = skilled_tactician
+				trait = brilliant_strategist
+			}
+			NOT = { leadership_traits = 1 }
+		}
+		add_random_leadership_trait_effect = yes
+	}
+	if = {
+		limit = {
+			trait = brilliant_strategist
+			NOT = { leadership_traits = 2 }
+		}
+		add_random_leadership_trait_effect = yes
+	}
+}

@@ -1,0 +1,3645 @@
+## Events for Maesters/Archmaesters- by knuckey
+namespace = maester
+
+#maester.1- Archmaester maintenance
+#maester.2- Maester mainetance
+#maester.3- I want to go to The Citadel (character decides to go)
+#maester.4- Someone wants to go to The Citadel (liege responds)
+#maester.5- Novice advances to rank of Maester 
+#maester.6- New maesters parent s informed
+#maester.7- New maester decides about staying at he Citadel
+#maester.8- New maester assigned a court
+#maester.9- New maester moved to court
+#maester.10- Number of Archmaesters counted yearly [REDUNDANT]
+#maester.11- Archmaester counter checked (must be 21) 
+#maester.12- new Archmaester found 
+#maester.13- Character loses Archmaester trait
+#maester.14- 'Mayor' of Citadel gains Archmaester trait
+#maester.27- The Maester informs his liege of child's progress
+#maester.20- The Maester informs his liege of child's regress
+#maester.21 Citadel looking for new home
+#maester.22 new home transferred
+#maester.23 new maester arrives #changed to letter event see how it goes
+#maester.24 Inform liege of maesters promotion to archmaester
+#maester.25 New Grand Maester needed
+#maester.26 King informed of Grand Maester's arrival
+#maester.33 Maester improves troop's morale
+#maester.34 liege informed 
+#maester.35 Maester worsens troop's morale
+#maester.36 liege informed 
+
+##Maintenance events by Wolfgang
+#maester.28-4
+
+# maester.1 -Archmaester maintenance
+character_event = {
+	id = maester.1
+	desc = "EVTDESCmaester.1"
+	
+	is_triggered_only = yes
+
+	trigger = {
+		trait = archmaester
+		OR = {	
+			is_married = yes	
+			AND = {
+				is_ruler = no
+				NOT = { has_minor_title = title_archmaester }
+			}	
+			NOT = { 
+				OR = {	
+					has_landed_title = c_the_citadel 
+					has_character_flag = grandmaester
+					host = { has_landed_title = c_the_citadel }
+				}	
+			} 
+		}	
+	}
+	
+	option = { 
+		name = "Now go back to the Citadel, asshole"
+		trigger = { 
+			is_married = yes		
+		}
+		remove_spouse = spouse	
+		if = {
+			limit = { NOT = { has_job_title = job_spiritual } }
+			liege = { letter_event = { id = maester.29 } } #inform liege that I gots to go
+			set_character_flag = new_maester
+			c_the_citadel = { 
+				holder_scope = { ROOT = { move_character = PREV } }
+			}
+		}	
+	}
+	
+	option = { 
+		name = "EVTOPTAmaester.13"
+		trigger = {
+			NOT = { 
+				OR = {	
+					has_landed_title = c_the_citadel 
+					has_character_flag = grandmaester
+					host = { has_landed_title = c_the_citadel }
+				}	
+			}
+		}
+		remove_trait = archmaester
+		add_trait = maester
+		set_special_character_title = title_maester
+		hidden_tooltip = { remove_trait = knight }
+		prestige = -50
+	}
+	
+	option = {
+		name = "EVTOPTB39000"
+		trigger = {
+			is_ruler = no
+			NOT = { has_minor_title = title_archmaester }
+		}
+		give_minor_title = title_archmaester
+	}
+}
+# maester.2 -Maester mainetance
+character_event = {
+	id = maester.2
+	desc = "EVTDESCmaester.2"
+	
+	is_triggered_only = yes
+	is_married = yes
+	
+	trigger = {
+		trait = maester
+		NOT = { demesne_size = 1 }
+	}
+	
+	option = { 
+		name = "Now go back to the Citadel, asshole"
+		remove_spouse = spouse	
+		if = {
+			limit = { NOT = { has_job_title = job_spiritual } }
+			liege = { letter_event = { id = maester.29 } } #inform liege that I gots to go
+			set_character_flag = new_maester
+			c_the_citadel = { 
+				holder_scope = { ROOT = { move_character = PREV } }
+			}
+		}	
+	}
+}
+
+# maester.3 -I want to go to the Citadel!
+character_event = {
+	id = maester.3
+	desc = "EVTDESCmaester.3"
+	
+	min_age = 14
+	max_age = 25
+	capable_only = yes
+	prisoner = no
+	only_men = yes
+	
+	trigger = {
+		is_ruler = no
+		liege = { 
+			demesne_size = 1  
+			OR = {
+				AND = {
+					culture_group = andal
+					NOT = { culture = old_andal }
+				}	
+				culture = ironborn
+				AND = {
+					culture_group = dornish
+					NOT = { culture = rhoynar }
+				}	
+				culture = western_valyrian
+				AND = {
+					culture_group = first_men
+					NOT = { culture = moon_clansman }
+					NOT = { culture = thenn }
+				}
+				capital_scope = { region = world_westeros }
+			}
+		}			
+		NOT = { culture = dothraki }
+		NOT = { culture = jogos_nhai }
+		learning = 8		
+		is_married = no
+		#is_betrothed = no
+		OR = {
+			can_inherit_titles_trigger = yes
+			trait = bastard
+			trait = eunuch
+			trait = disinherited
+		}
+		is_ill = no
+		NOT = { trait = wikid }
+		NOT = { trait = on_reaving }
+		
+		NOT = { has_minor_title = title_triarch }
+		NOT = { has_character_flag = wikid_companion }
+		NOT = { has_character_flag = asked_citadel }
+	}
+	
+	mean_time_to_happen = {
+		months = 280
+		modifier = {
+			factor = 1.5
+			culture_group = first_men
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				culture = ironborn
+				culture = skagosi
+			}	
+		}
+		modifier = {
+			factor = 0.5
+			host = { has_landed_title = c_the_citadel }	
+		}
+	
+		modifier = {
+			factor = 0.9
+			learning = 10
+		}
+		modifier = {
+			factor = 0.9
+			learning = 12
+		}
+		modifier = {
+			factor = 0.9
+			learning = 14
+		}
+		modifier = {
+			factor = 0.9
+			learning = 16
+		}
+		modifier = {
+			factor = 0.9
+			learning = 18
+		}
+		modifier = {
+			factor = 2
+			OR = { 	
+				trait = misguided_warrior
+				trait = tough_soldier
+				trait = skilled_tactician
+				trait = brilliant_strategist
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = { 	
+				trait = skilled_warrior
+				trait = master_warrior
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = { 	
+				trait = stressed
+				trait = depressed
+			}
+		}
+		modifier = {
+			factor = 0.9
+			trait = eunuch
+		}
+		modifier = {
+			factor = 0.9
+			trait = disinherited
+		}
+		modifier = {
+			factor = 0.9
+			trait = bastard
+		}
+		modifier = {
+			factor = 0.8
+			trait = celibate
+		}
+		modifier = {
+			factor = 3
+			trait = hedonist
+		}
+		modifier = {
+			factor = 0.5
+			trait = scholar
+		}
+		modifier = {
+			factor = 1.5
+			trait = duelist
+		}
+		modifier = {
+			factor = 1.5
+			trait = hunter
+		}
+		modifier = {
+			factor = 1.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 0.8
+			trait = diligent
+		}
+		modifier = {
+			factor = 1.25
+			trait = proud
+		}
+		modifier = {
+			factor = 0.8
+			trait = humble
+		}
+		modifier = {
+			factor = 0.8
+			trait = craven
+		}
+		modifier = {
+			factor = 2
+			trait = ambitious
+		}
+		modifier = {
+			factor = 0.75
+			trait = content
+		}
+		modifier = {
+			factor = 3
+			is_primary_heir = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_pretender = yes 
+		}
+	}
+	immediate = {
+		set_character_flag = asked_citadel
+	}
+
+	option = {
+		name = "EVTOPTAmaester.3" 
+		liege = { letter_event = { id = maester.4 days = 5 tooltip = EVTTOOLTIP73241 } } 
+	}
+}
+#Someone wants to go to The Citadel
+letter_event = {
+	id = maester.4
+	desc = "EVTDESCmaester.4"
+	picture = GFX_evt_library
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAmaester.4" #Yes
+		ai_chance = {
+			factor = 80
+			
+			modifier = {
+				factor = 0.25
+				FROM = { is_betrothed = yes }
+			}
+			modifier = {
+				factor = 0
+				AND = { current_heir = { character = FROM }
+					NOT = { num_of_children = 2 }
+				}
+			}
+			modifier = {
+				factor = 0.5
+				AND = { current_heir = { character = FROM }
+					NOT = { num_of_children = 3 }
+				}
+			}
+			modifier = {
+				factor = 0.5
+				AND = { current_heir = { character = FROM }
+					NOT = { num_of_children = 4 }
+				}
+			}
+			modifier = {
+				factor = 0.04
+				current_heir = { character = FROM }
+			}
+			modifier = {
+				factor = 2
+				AND = { 	current_heir = { character = FROM }
+							FROM = { 	OR = { 	NOT = { martial = 8 } 
+												trait = craven
+												is_weak_trigger = yes
+										}
+							}
+				}
+			}
+			modifier = {
+				factor = 0.75
+				any_child = { character = FROM }
+			}
+			modifier = {
+				factor = 0.75
+				FROM = { dynasty = ROOT }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { martial = 12 }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { martial = 16 }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { stewardship = 16 }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { diplomacy = 16 }
+			}
+			modifier = {
+				factor = 0.8
+				FROM = { intrigue = 16 }
+			}
+			modifier = {
+				factor = 1.2
+				trait = kind
+			}
+			modifier = {
+				factor = 0.8
+				trait = cruel
+			}
+			modifier = {
+				factor = 0.8
+				trait = arbitrary
+			}
+			modifier = {
+				factor = 1.2
+				trait = scholar
+			}
+			modifier = {
+				factor = 1.2
+				learning = 10
+			}
+			modifier = {
+				factor = 1.5
+				has_landed_title = c_the_citadel
+			}
+		}
+		if = {
+			limit = {
+				any_child = { character = FROM }
+				NOT = { current_heir = { character = FROM } }
+			}
+			prestige = 25
+		}
+		if = {
+			limit = {
+				current_heir = { character = FROM } 
+			}
+			prestige = 50
+		}
+		FROM = {
+			prestige = 20
+			add_character_modifier = {
+				name = maester_education
+				duration = -1
+			}
+			set_character_flag = maester_education
+			if = {
+				limit = { is_betrothed = yes }
+				betrothed = {
+					if = {
+						limit = { 
+							is_ruler = yes 
+							NOT = { character = ROOT }
+						}
+						opinion = {
+							who = ROOT
+							modifier = opinion_betrothal_broken
+						}
+						opinion = {
+							who = PREV
+							modifier = opinion_betrothal_broken
+						}
+					}
+					if = {
+						limit = { 
+							is_ruler = no 
+							liege = { 
+								is_close_relative = PREV 
+								NOT = { character = ROOT }
+							}
+						}
+						opinion = {
+							who = ROOT
+							modifier = opinion_betrothal_broken
+						}
+						liege = {
+							opinion = {
+								who = ROOT
+								modifier = opinion_betrothal_broken
+							}
+							opinion = {
+								who = PREVPREV
+								modifier = opinion_betrothal_broken
+							}
+						}	
+					}
+					break_betrothal = PREV
+				}	
+			}
+			hidden_tooltip = { 	
+				clr_character_flag = asked_citadel 
+				clr_character_flag = serving_varangian	#Merc company
+				if = {
+					limit = { NOT = { has_dlc = "Zeus" } }
+					remove_character_modifier = court_education
+					remove_character_modifier = martial_education
+					remove_character_modifier = steward_education
+					remove_character_modifier = no_education
+				}			
+				any_spouse = { remove_spouse = PREV }
+				any_consort = { remove_consort = PREV }
+				remove_guardian = yes
+				end_inaccessibility_effect = yes
+				clr_character_flag = hidden_from_siege
+			}
+		}
+		c_the_citadel = {
+			holder_scope = {
+				FROM = { move_character = PREV }
+			}
+		}	
+	}
+	option = {
+		name = "EVTOPTBmaester.4" #No
+		trigger = { NOT = { 	current_heir = { character = FROM } 
+					any_child = { character = FROM }
+			    }
+		}
+		ai_chance = {
+			factor = 20
+		}
+		from = {
+			prestige = -10
+		}
+		from = {
+			opinion = {
+				who = root
+				modifier = opinion_refused_citadel
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTDmaester.4" #No son of mine
+		trigger = { NOT = { current_heir = { character = FROM } }
+				   any_child = { character = FROM }
+		}
+		ai_chance = {
+			factor = 80
+		}
+		from = {
+			prestige = -10
+		}
+		from = {
+			opinion = {
+				who = root
+				modifier = opinion_refused_citadel
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTCmaester.4" #You're my heir!
+		trigger = { current_heir = { character = FROM } 	    
+		}
+		ai_chance = {
+			factor = 50
+		}
+		from = {
+			prestige = -15
+		}
+		from = {
+			opinion = {
+				who = root
+				modifier = opinion_refused_citadel
+			}
+		}
+	}
+
+}
+#Novice advances to rank of Maester
+character_event = {
+	id = maester.5
+	desc = "EVTDESCmaester.5"
+	picture = GFX_evt_library
+	
+	min_age = 21
+	capable_only = yes
+	prisoner = no
+	only_men = yes
+	
+	trigger = {
+		host = { has_landed_title = c_the_citadel }	
+		has_character_modifier = maester_education	
+		is_ill = no		
+		NOT = { trait = kingsguard }
+		NOT = { trait = maester }
+		NOT = { trait = archmaester }	
+		NOT = { trait = drowned }
+		NOT = { trait = septon }
+		NOT = { trait = septa }
+		NOT = { trait = red_priest }
+		NOT = { trait = silent_sister }
+		OR = {
+			NOT = { has_character_flag = maester_education }
+			had_character_flag = { flag = maester_education days = 1095 } #three year minimum
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 150
+		
+		modifier = {
+			factor = 0.05
+			age = 30
+		}
+		modifier = {
+			factor = 0.1
+			age = 28
+		}
+		modifier = {
+			factor = 0.5
+			age = 26
+		}
+		modifier = {
+			factor = 0.75
+			age = 24
+		}
+		modifier = {
+			factor = 1.33
+			NOT = { age = 18 }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { age = 20 }
+		}
+		
+		modifier = {
+			factor = 1.2
+			NOT = { learning = 2 }
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { learning = 4 }
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { learning = 6 }
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { learning = 8 }
+		}
+		modifier = {
+			factor = 0.83
+			learning = 10
+		}
+		modifier = {
+			factor = 0.83
+			learning = 12
+		}
+		modifier = {
+			factor = 0.83
+			learning = 14
+		}
+		modifier = {
+			factor = 0.83
+			learning = 16
+		}
+		modifier = {
+			factor = 0.83
+			learning = 18
+		}
+		modifier = {
+			factor = 2
+			OR = { 	
+				trait = stressed
+				trait = depressed
+			}
+		}
+		modifier = {
+			factor = 0.9
+			trait = scholar
+		}
+		modifier = {
+			factor = 1.2
+			trait = slothful
+		}
+		modifier = {
+			factor = 0.9
+			trait = diligent
+		}
+		modifier = {
+			factor = 0.9
+			trait = ambitious
+		}
+		modifier = {
+			factor = 1.1
+			trait = content
+		}
+	}	
+
+
+	option = {
+		name = "EVTOPTAmaester.5" #Yes
+		prestige = 20
+		add_trait = maester
+		#add_trait = bastard
+		set_special_character_title = title_maester
+		remove_trait = knight
+		remove_trait = squire
+		remove_trait = disinherited
+		remove_trait = forbid_marriage
+		any_spouse = { 
+			limit = { is_alive = yes }
+			remove_spouse = PREV 
+		}
+		remove_character_modifier = maester_education
+		clr_character_flag = maester_education
+		if = { 	
+			limit = { 	
+				OR = { 	
+					trait = skilled_tactician
+					trait = brilliant_strategist
+				}		
+			}
+			change_martial = 4
+		}
+		if = { 	
+			limit = { 	
+				OR = { 	
+					trait = intricate_webweaver
+					trait = elusive_shadow
+				}		
+			}
+			change_intrigue = 4
+		}
+		if = { 	
+			limit = { 	
+				OR = { 	
+					trait = fortune_builder
+					trait = midas_touched
+				}		
+			}
+			change_stewardship = 4
+		}
+		if = { 	
+			limit = { 	
+				OR = { 	
+					trait = charismatic_negotiator
+					trait = grey_eminence
+				}		
+			}
+			change_diplomacy = 4
+		}
+		hidden_tooltip = {
+			remove_trait = amateurish_plotter
+			remove_trait = flamboyant_schemer
+			remove_trait = intricate_webweaver
+			remove_trait = elusive_shadow
+			remove_trait = naive_appeaser
+			remove_trait = underhanded_rogue
+			remove_trait = charismatic_negotiator
+			remove_trait = grey_eminence
+			remove_trait = indulgent_wastrel
+			remove_trait = thrifty_clerk
+			remove_trait = fortune_builder
+			remove_trait = midas_touched
+			remove_trait = misguided_warrior
+			remove_trait = tough_soldier
+			remove_trait = skilled_tactician
+			remove_trait = brilliant_strategist
+			remove_trait = detached_priest
+			remove_trait = martial_cleric
+			remove_trait = scholarly_theologian
+			remove_trait = mastermind_theologian
+		}
+		
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 4
+					learning = 3
+					NOT = { learning = 5 }
+				}
+				modifier = {
+					factor = 6
+					learning = 5
+					NOT = { learning = 7 }
+				}
+				modifier = {
+					factor = 3.5
+					learning = 7
+					NOT = { learning = 9 }
+				}
+				modifier = {
+					factor = 1.5
+					learning = 11
+					NOT = { learning = 13 }
+				}
+				modifier = {
+					factor = 0
+					learning = 13
+				}
+				add_trait="detached_priest"
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					trait = incapable
+				}
+				modifier = {
+					factor = 0
+					NOT = { learning = 3 }
+				}
+				modifier = {
+					factor = 3
+					learning = 5
+					NOT = { learning = 7 }
+				}
+				modifier = {
+					factor = 3.5
+					learning = 7
+					NOT = { learning = 9 }
+				}
+				modifier = {
+					factor = 4
+					learning = 11
+					NOT = { learning = 13 }
+				}
+				modifier = {
+					factor = 0
+					learning = 15
+				}
+				add_trait="martial_cleric"
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = { learning = 5 }
+				}
+				modifier = {
+					factor = 2
+					learning = 7
+					NOT = { learning = 9 }
+				}
+				modifier = {
+					factor = 6
+					learning = 11
+					NOT = { learning = 13 }
+				}
+				modifier = {
+					factor = 3
+					learning = 13
+					NOT = { learning = 15 }
+				}
+				modifier = {
+					factor = 0
+					learning = 17
+				}
+				modifier = {
+					factor = 0
+					trait = incapable
+				}
+				add_trait="scholarly_theologian"
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = { learning = 7 }
+				}
+				modifier = {
+					factor = 3.5
+					learning = 11
+					NOT = { learning = 13 }
+				}
+				modifier = {
+					factor = 6
+					learning = 13
+					NOT = { learning = 15 }
+				}
+				modifier = {
+					factor = 4
+					learning = 15
+					NOT = { learning = 17 }
+				}
+				modifier = {
+					factor = 0
+					trait = incapable
+				}
+				add_trait="mastermind_theologian"
+			}
+		}
+		#any_claim = {
+			#remove_claim = ROOT
+		#}
+		character_event = { id = maester.7 days = 1 }
+		recalc_succession = yes
+		# Inform relatives
+		any_playable_ruler = {
+			limit = { 
+				ai = no 
+				OR = {
+					is_close_relative = ROOT
+					is_friend = ROOT
+				}
+			}
+			character_event = { id = maester.6 }
+		}
+	}
+}
+# The character's parents informed
+character_event = {
+	id = maester.6
+	desc = "EVTDESCmaester.6"
+	picture = GFX_evt_library
+
+	is_triggered_only = yes
+	
+	option = {
+		trigger = { opinion = { who = FROM value =  0 } 	}
+		name = "EVTOPTAmaester.6"
+		prestige = 15
+		recalc_succession = yes
+	}
+	option = {
+		trigger = { NOT = { opinion = { who = FROM value =  0 } } }
+		name = "EVTOPTBmaester.6"
+		prestige = 15
+		recalc_succession = yes
+	}
+}
+# Stay at the Citadel?
+character_event = {
+	id = maester.7
+	desc = "EVTDESCmaester.7"
+	picture = GFX_evt_library
+	
+	is_triggered_only = yes
+
+	option = {
+		trigger = { NOT = { trait = nightswatch } }
+		ai_chance = {
+			factor = 95
+		}
+		name = "EVTOPTAmaester.7" #Assigned to Lord
+		#first try high ranking lord with no maester
+		random_playable_ruler = {
+			limit = {
+				demesne_size = 1
+				maester_culture_trigger = yes
+				higher_tier_than = COUNT
+				NOT = { any_courtier = { trait = maester } }
+			}
+			character_event = { id = maester.8 }
+			break = yes
+		}
+		#then try high ranking lord
+		if = {
+			limit = { learning = 18 }
+			random_playable_ruler = {
+				limit = {
+					demesne_size = 1
+					maester_culture_trigger = yes
+					OR = {
+						prestige = 1000
+						higher_tier_than = DUKE
+					}	
+				}
+				character_event = { id = maester.8 }
+				break = yes
+			}
+		}	
+		if = {
+			limit = { learning = 14 }
+			random_playable_ruler = {
+				limit = {
+					demesne_size = 1
+					maester_culture_trigger = yes
+					OR = {
+						prestige = 500
+						higher_tier_than = COUNT
+					}	
+				}
+				character_event = { id = maester.8 }
+				break = yes
+			}
+		}
+		#then any lord who needs maester
+		random_playable_ruler = {
+			limit = {
+				demesne_size = 1
+				maester_culture_trigger = yes
+				NOT = { any_courtier = { trait = maester } }
+			}
+			character_event = { id = maester.8 }
+			break = yes
+		}
+		#random
+		random_playable_ruler = {
+			limit = {
+				demesne_size = 1
+				maester_culture_trigger = yes
+			}
+			character_event = { id = maester.8 }
+			break = yes
+		}
+	}
+	option = {
+		trigger = { NOT = { trait = nightswatch } }
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				trait = nightswatch
+			}
+		}
+		name = "EVTOPTBmaester.7" #stay at citadel
+		set_character_flag = maester_at_citadel	
+	}
+	option = {
+		trigger = { trait = nightswatch }
+		name = "EVTOPTCmaester.7" 
+		d_nightswatch = {
+			holder_scope = {
+				character_event = { id = maester.8 }
+			}
+		}
+	}
+}
+# maester.8 -Maester of Citadel assigned
+character_event = {
+	id = maester.8
+	desc = "EVTDESCmaester.8"
+	picture = GFX_evt_library
+
+	only_playable = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAmaester.8"		 
+		FROM = {
+			move_character = ROOT
+			set_character_flag = serving_with_lord
+		}
+	}
+}
+
+# # Move Maester
+# character_event = {
+	# id = maester.9
+	# desc = "EVTDESCmaester.9"
+	# picture = GFX_evt_library
+
+	# is_triggered_only = yes
+	
+	# option = {
+		# name = "EVTOPTAmaester.9"	
+	# }
+# }
+
+#Archmaester counter
+# character_event = {
+	# id = maester.10
+	# desc = "EVTDESCmaester.10"
+	# picture = GFX_evt_library
+
+	# is_triggered_only = yes
+	
+	# trigger = {
+		# has_landed_title = c_the_citadel
+		# #primary_title = { tier = BARON }
+	# }
+	
+	# mean_time_to_happen = {
+		# days = 1
+		# # modifier = {
+			# # factor = 0.001
+			# # NOT = { has_character_flag = archmaester_counter_initialised }
+		# # }
+	# }
+
+	# immediate = {
+		# set_variable = { which = "archmaester_count" value = 0 }
+	# }
+	
+	# option = { 
+		# name = "EVTOPTAmaester.10"
+		# #set_variable = { which = "archmaester_count" value = 0 }
+		# any_courtier = {
+			# limit = {
+				# trait=archmaester
+			# }
+			# ROOT = { change_variable = { which = "archmaester_count" value = 1 } }
+		# }
+		# set_character_flag = archmaester_counter_initialised
+	# }
+# }
+#New Archmaester needed
+character_event = {
+	id = maester.11
+	desc = "EVTDESCmaester.11"
+	picture = GFX_evt_library
+
+	is_triggered_only = yes
+	only_playable = yes
+	
+	trigger = {
+		has_landed_title = c_the_citadel
+		NOT = { 
+			any_courtier = {
+				trait = archmaester
+				count = 15
+			}
+		}
+	}
+	
+	immediate = { #find the maester
+		random_character = {
+			limit = {
+				trait = maester
+				NOT = { demesne_size = 1 }
+				NOT = { trait = archmaester }
+				NOT = { trait = nightswatch }
+				NOT = { trait = kingsguard }
+				prisoner = no
+				is_incapable = no
+				OR = {
+					NOT = { has_character_flag = serving_with_lord }
+					had_character_flag = { flag = serving_with_lord days = 3650 }
+				}
+				OR = {
+					learning = 20
+					AND = {
+						learning = 16
+						OR = {
+							age = 50
+							trait = ambitious
+							trait = scholar
+							host = { has_landed_title = c_the_citadel }
+						}
+						NOR = { 
+							trait = content
+							trait = stressed
+							trait = depressed
+						}
+					}
+					AND = {
+						learning = 10
+						OR = {
+							prestige = 250
+							any_claim = { higher_tier_than = COUNT }
+						}
+						NOR = { 
+							trait = content
+							trait = stressed
+							trait = depressed
+						}
+					}
+				}				
+			}
+			character_event = { id = maester.12 }
+			break = yes
+		}
+		random_character = {
+			limit = {
+				trait = maester
+				NOT = { demesne_size = 1 }
+				NOT = { trait = archmaester }
+				NOT = { trait = nightswatch }
+				NOT = { trait = kingsguard }
+				prisoner = no
+				is_incapable = no
+				OR = {
+					NOT = { has_character_flag = serving_with_lord }
+					had_character_flag = { flag = serving_with_lord days = 3650 }
+				}
+				OR = {
+					learning = 17
+					AND = {
+						learning = 13
+						OR = {
+							age = 50
+							trait = ambitious
+							trait = scholar
+							host = { has_landed_title = c_the_citadel }
+						}
+						NOR = { 
+							trait = content
+							trait = stressed
+							trait = depressed
+						}
+					}
+					AND = {
+						learning = 8
+						OR = {
+							prestige = 250
+							any_claim = { higher_tier_than = COUNT }
+						}
+						NOR = { 
+							trait = content
+							trait = stressed
+							trait = depressed
+						}
+					}
+				}				
+			}
+			character_event = { id = maester.12 }
+			break = yes
+		}
+		random_character = {
+			limit = {
+				trait = maester
+				NOT = { demesne_size = 1 }
+				NOT = { trait = archmaester }
+				NOT = { trait = nightswatch }
+				NOT = { trait = kingsguard }
+				prisoner = no
+				is_incapable = no
+				OR = {
+					NOT = { has_character_flag = serving_with_lord }
+					had_character_flag = { flag = serving_with_lord days = 3650 }
+				}
+				OR = {
+					learning = 14
+					AND = {
+						learning = 10
+						OR = {
+							age = 50
+							trait = ambitious
+							trait = scholar
+							host = { has_landed_title = c_the_citadel }
+						}
+						NOR = { 
+							trait = content
+							trait = stressed
+							trait = depressed
+						}
+					}
+					AND = {
+						OR = {
+							prestige = 250
+							any_claim = { higher_tier_than = COUNT }
+						}
+						NOR = { 
+							trait = content
+							trait = stressed
+							trait = depressed
+						}
+					}
+				}				
+			}
+			character_event = { id = maester.12 }
+			break = yes
+		}
+		random_character = {
+			limit = {
+				trait = maester
+				NOT = { demesne_size = 1 }
+				NOT = { trait = archmaester }
+				NOT = { trait = nightswatch }
+				NOT = { trait = kingsguard }
+				prisoner = no
+				is_incapable = no
+				OR = {
+					NOT = { has_character_flag = serving_with_lord }
+					had_character_flag = { flag = serving_with_lord days = 3650 }
+				}
+				OR = {
+					learning = 12				
+					AND = {
+						learning = 10
+						OR = {
+							age = 50
+							trait = ambitious
+							trait = scholar
+							host = { has_landed_title = c_the_citadel }
+						}
+					}
+					prestige = 150
+					any_claim = { higher_tier_than = BARON }
+				}				
+			}
+			character_event = { id = maester.12 }
+			break = yes
+		}
+		random_character = {
+			limit = {
+				trait = maester
+				NOT = { demesne_size = 1 }
+				NOT = { trait = archmaester }
+				NOT = { trait = nightswatch }
+				NOT = { trait = kingsguard }
+				prisoner = no
+				is_incapable = no
+				OR = {
+					NOT = { has_character_flag = serving_with_lord }
+					had_character_flag = { flag = serving_with_lord days = 3650 }
+				}
+				OR = {
+					learning = 10				
+					AND = {
+						learning = 8
+						OR = {
+							age = 50
+							trait = ambitious
+							trait = scholar
+							host = { has_landed_title = c_the_citadel }
+						}
+					}
+					prestige = 100
+					num_of_claims = 1
+				}				
+			}
+			character_event = { id = maester.12 }
+			break = yes
+		}
+		random_character = {
+			limit = {
+				trait = maester
+				NOT = { demesne_size = 1 }
+				NOT = { trait = archmaester }
+				NOT = { trait = nightswatch }
+				NOT = { trait = kingsguard }
+				prisoner = no
+				is_incapable = no
+				OR = {
+					NOT = { has_character_flag = serving_with_lord }
+					had_character_flag = { flag = serving_with_lord days = 3650 }
+				}			
+			}
+			character_event = { id = maester.12 }
+			break = yes
+		}
+	}
+	
+	option = { 
+		name = "EVTOPTAmaester.11"
+	}
+}
+#Maester selected
+character_event = {
+	id = maester.12
+	desc = "EVTDESCmaester.12"
+	picture = GFX_evt_library
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = "EVTOPTAmaester.12"
+		add_trait = archmaester
+		remove_trait = maester
+		remove_special_character_title = title_maester
+		give_minor_title = title_archmaester		
+		clr_character_flag = serving_with_lord
+		prestige = 50
+		liege = {
+			letter_event = { id = maester.24 }
+		}	
+		c_the_citadel = {
+			holder_scope = {
+				ROOT = { move_character = PREV }
+				if = { 	
+					limit = { 
+						NOT = { 
+							any_courtier = {
+								trait = archmaester
+								count = 15
+							}
+						}
+					}
+					character_event = { id = maester.11 days = 3 }
+				}
+			}
+		}
+		#Make sure they a parent to avoid culling
+		if = {
+			limit = { 
+				NOT = { father_even_if_dead = { always = yes } } 
+				NOT = { mother_even_if_dead = { always = yes } }
+			}
+			if = {
+				limit = { NOT = { age = 20 } }
+				create_character = {
+					random_traits = yes
+					dynasty = NONE
+					female = no
+					age = 36
+					culture = ROOT
+					religion = ROOT
+				}
+				new_character = {
+					ROOT = { set_father = PREV }
+					death = yes
+				}
+			}
+			if = {
+				limit = { 
+					age = 20
+					NOT = { age = 35 } 
+				}
+				create_character = {
+					random_traits = yes
+					dynasty = NONE
+					female = no
+					age = 51
+					culture = ROOT
+					religion = ROOT
+				}
+				new_character = {
+					ROOT = { set_father = PREV }
+					death = yes
+				}
+			}
+			if = {
+				limit = { age = 35 }
+				create_character = {
+					random_traits = yes
+					dynasty = NONE
+					female = no
+					age = 66
+					culture = ROOT
+					religion = ROOT
+				}
+				new_character = {
+					ROOT = { set_father = PREV }
+					death = yes
+				}
+			}
+		}
+	}
+}
+# #Archmaester title gained
+# character_event = {
+	# id = maester.14
+	# desc = "EVTDESCmaester.14"
+	# picture = GFX_evt_library
+	
+	# is_triggered_only = yes
+	
+	# trigger = {
+		# has_landed_title = c_the_citadel 
+		# NOT = { trait = archmaester }
+	# }
+	
+	# mean_time_to_happen = {
+		# months = 1
+	# }
+	
+	# option = { 
+		# name = "EVTOPTAmaester.14"
+		# add_trait = archmaester
+		# remove_trait = maester
+		# hidden_tooltip = { remove_trait = knight }
+		# prestige = 25
+	# }
+# }
+
+# maester.15: Maester improves childs knowledge
+character_event = {
+	id = maester.15
+	title = "EVTNAMEmaester.15"
+	desc = "EVTDESCmaester.15"
+	picture = "GFX_evt_child_reading"
+
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		#has_job_action = action_improve_rel_relations	#Tutor Children
+		#OR = {
+			has_job_title = job_spiritual
+			# AND = {
+				# has_job_title = job_priest
+				# religion = jogos_pagan
+			# }
+		#}	
+		liege = {
+			any_courtier = {
+				age = 6
+				NOT = { age = 16 }
+				OR = {
+					character = PREV
+					AND = {
+						same_liege = ROOT	
+						is_close_relative = PREV
+					}	
+				}	
+				NOT = { trait = incapable }
+				NOT = { trait = dragon }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 175
+		modifier = {
+			factor = 1.3
+			NOT = { learning = 2 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { learning = 4 }
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { learning = 6 }
+		}
+		modifier = {
+			factor = 1.15
+			NOT = { learning = 8 }
+		}
+		modifier = {
+			factor = 0.8
+			learning = 10
+		}
+		modifier = {
+			factor = 0.9
+			learning = 12
+		}
+		modifier = {
+			factor = 0.9
+			learning = 14
+		}
+		modifier = {
+			factor = 0.9
+			learning = 16
+		}
+		modifier = {
+			factor = 0.9
+			learning = 18
+		}
+		modifier = {
+			factor = 0.9
+			learning = 20
+		}
+		modifier = {
+			factor = 0.9
+			learning = 22
+		}
+		modifier = {
+			factor = 0.9
+			learning = 24
+		}
+		modifier = {
+			factor = 0.9
+			learning = 26
+		}
+		modifier = {
+			factor = 2
+			has_character_flag = job_action_sabotage
+			NOT = {
+				had_character_flag = {
+					flag = job_action_sabotage
+					days = 1825
+				}
+			}	
+		}
+		# modifier = { #removed to avoid confusion
+			# factor = 9999
+			# NOT = {
+				# liege = {
+					# OR = {
+						# any_child = {
+							# age = 6
+							# NOT = { age = 16 }	
+							# NOT = { trait = incapable }
+							# same_liege = ROOT
+						# }
+						# any_child = {
+							# any_child = {
+								# age = 6
+								# NOT = { age = 16 }	
+								# NOT = { trait = incapable }
+								# same_liege = ROOT
+							# }
+						# }	
+					# }		
+				# }
+			# }	
+		# }
+	}
+
+	option = {
+		name = "EVTOPTAmaester.15"
+		prestige = 5
+		liege = {
+			random_courtier = {
+				limit = {
+					age = 6
+					NOT = { age = 16 }
+					OR = {
+						character = PREV
+						AND = {
+							same_liege = ROOT	
+							is_close_relative = PREV
+						}	
+					}			
+					NOT = { trait = incapable }	
+					NOT = { trait = dragon }
+				}
+				random_list = {
+					25 = { set_character_flag = maester_intrigue }
+					25 = { set_character_flag = maester_stewardship }
+					25 = { set_character_flag = maester_diplomacy  }
+					25 = { set_character_flag = maester_learning  }
+				}
+				if = { 
+					limit = { NOT = { personality_traits = 5 } }
+					random_list = {
+						75 = { }
+						5 = { set_character_flag = maester_diligent }
+						5 = { set_character_flag = maester_patient  }
+						5 = { set_character_flag = maester_humble  }
+						5 = { set_character_flag = maester_just  }
+						5 = { set_character_flag = maester_temperate  }
+					}
+				}
+				character_event = { id = maester.16 }
+			}			
+		}
+	}
+}
+#Inform child
+character_event = {
+	id = maester.16
+	desc = "EVTDESCmaester.16"
+	picture = "GFX_evt_child_reading"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAmaester.16"
+		if = {
+			limit = {
+				has_character_flag = maester_intrigue
+			}
+			change_intrigue = 2
+		}	
+		if = {
+			limit = {
+				has_character_flag = maester_stewardship
+			}
+			change_stewardship = 2
+		}	
+		if = {
+			limit = {
+				has_character_flag = maester_diplomacy
+			}
+			change_diplomacy = 2
+		}	
+		if = {
+			limit = {
+				has_character_flag = maester_learning
+			}
+			change_learning = 2
+		}	
+		if = {
+			limit = {
+				has_character_flag = maester_diligent
+			}
+			add_trait = diligent
+		}	
+		if = {
+			limit = {
+				has_character_flag = maester_patient
+			}
+			add_trait = patient
+		}	
+		if = {
+			limit = {
+				has_character_flag = maester_humble
+			}
+			add_trait = humble
+		}	
+		if = {
+			limit = {
+				has_character_flag = maester_just
+			}
+			add_trait = just
+		}	
+		if = {
+			limit = {
+				has_character_flag = maester_temperate
+			}
+			add_trait = temperate
+		}	
+		FROM = { 
+			liege = { 
+				if = {
+					limit = { NOT = { character = ROOT } }
+					letter_event = { id = maester.27 } 
+				}
+				if = {
+					limit = { character = ROOT }
+					clr_character_flag = maester_intrigue 
+					clr_character_flag = maester_stewardship
+					clr_character_flag = maester_diplomacy
+					clr_character_flag = maester_learning
+					clr_character_flag = maester_diligent
+					clr_character_flag = maester_patient
+					clr_character_flag = maester_humble
+					clr_character_flag = maester_just
+					clr_character_flag = maester_temperate
+				}				
+			} 
+		}
+	}	
+}	
+# maester.27: The Maester informs his liege of progress
+letter_event = {
+	id = maester.27
+	desc = "EVTDESCmaester.27"
+	
+	is_triggered_only = yes
+	show_from_from = yes
+
+	option = {
+		name = "EVTOPTAmaester.27"
+		FROM = {
+			if = {
+				limit = {
+					has_character_flag = maester_intrigue
+				}
+				change_intrigue = 2
+				clr_character_flag = maester_intrigue
+			}	
+			if = {
+				limit = {
+					has_character_flag = maester_stewardship
+				}
+				change_stewardship = 2
+				clr_character_flag = maester_stewardship
+			}	
+			if = {
+				limit = {
+					has_character_flag = maester_diplomacy
+				}
+				change_diplomacy = 2
+				clr_character_flag = maester_diplomacy
+			}	
+			if = {
+				limit = {
+					has_character_flag = maester_learning
+				}
+				change_learning = 2
+				clr_character_flag = maester_learning
+			}	
+			if = {
+				limit = {
+					has_character_flag = maester_diligent
+				}
+				add_trait = diligent
+				clr_character_flag = maester_diligent
+			}	
+			if = {
+				limit = {
+					has_character_flag = maester_patient
+				}
+				add_trait = patient
+				clr_character_flag = maester_patient
+			}	
+			if = {
+				limit = {
+					has_character_flag = maester_humble
+				}
+				add_trait = humble
+				clr_character_flag = maester_humble
+			}	
+			if = {
+				limit = {
+					has_character_flag = maester_just
+				}
+				add_trait = just
+				clr_character_flag = maester_just
+			}	
+			if = {
+				limit = {
+					has_character_flag = maester_temperate
+				}
+				add_trait = temperate
+				clr_character_flag = maester_temperate
+			}	
+		}			
+	}
+}
+
+# 9001: Child not responding to maester
+character_event = {
+	id = maester.18
+	title = "EVTNAMEmaester.18"
+	desc = "EVTDESCmaester.18"
+	picture = "GFX_evt_child_reading"
+
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		#has_job_action = action_improve_rel_relations	#Tutor Children
+		#OR = {
+			has_job_title = job_spiritual
+			# AND = {
+				# has_job_title = job_priest
+				# religion = jogos_pagan
+			# }
+		#}
+		liege = {
+			any_courtier = {
+				age = 6
+				NOT = { age = 16 }
+				OR = {
+					character = PREV
+					AND = {
+						same_liege = ROOT	
+						is_close_relative = PREV
+					}	
+				}		
+				NOT = { trait = incapable }
+				NOT = { trait = dragon }	
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 0.7
+			NOT = { learning = 2 }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { learning = 4 }
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { learning = 6 }
+		}
+		modifier = {
+			factor = 0.85
+			NOT = { learning = 8 }
+		}
+		modifier = {
+			factor = 1.2
+			learning = 10
+		}
+		modifier = {
+			factor = 1.1
+			learning = 12
+		}
+		modifier = {
+			factor = 1.1
+			learning = 14
+		}
+		modifier = {
+			factor = 1.1
+			learning = 16
+		}
+		modifier = {
+			factor = 1.1
+			learning = 18
+		}
+		modifier = {
+			factor = 1.1
+			learning = 20
+		}
+		modifier = {
+			factor = 1.1
+			learning = 22
+		}
+		modifier = {
+			factor = 1.1
+			learning = 24
+		}
+		modifier = {
+			factor = 1.1
+			learning = 26
+		}
+		# modifier = {
+			# factor = 9999
+			# NOT = {
+				# liege = {
+					# any_courtier = {
+						# age = 6
+						# NOT = { age = 16 }
+						# same_liege = ROOT	
+						# is_close_relative = PREV		
+						# NOT = { trait = incapable }		
+					# }	
+				# }
+			# }	
+		# }
+	}
+
+	option = {
+		name = "EVTOPTAmaester.18"
+		prestige = -5
+		liege = {
+			random_courtier = {
+				limit = {
+					age = 6
+					NOT = { age = 16 }
+					OR = {
+						character = PREV
+						AND = {
+							same_liege = ROOT	
+							is_close_relative = PREV
+						}	
+					}		
+					NOT = { trait = incapable }
+					NOT = { trait = dragon }		
+				}
+				random_list = {
+					25 = { set_character_flag = maester_intrigue }
+					25 = { set_character_flag = maester_stewardship }
+					25 = { set_character_flag = maester_diplomacy  }
+					25 = { set_character_flag = maester_learning  }
+				}
+				if = { limit = { NOT = { personality_traits = 5 } }
+					random_list = {
+						75 = { }
+						5 = { set_character_flag = maester_slothful }
+						5 = { set_character_flag = maester_wroth  }
+						5 = { set_character_flag = maester_proud  }
+						5 = { set_character_flag = maester_arbitrary  }
+						5 = { set_character_flag = maester_gluttonous  }
+					}
+				}
+				character_event = { id = maester.19 }
+			}			
+		}
+	}
+}
+#Inform child
+character_event = {
+	id = maester.19
+	desc = "EVTDESCmaester.19"
+	picture = GFX_evt_child_play
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAmaester.19"
+		if = {
+			limit = {
+				has_character_flag = maester_intrigue
+			}
+			change_intrigue = -1
+		}	
+		if = {
+			limit = {
+				has_character_flag = maester_stewardship
+			}
+			change_stewardship = -1
+		}	
+		if = {
+			limit = {
+				has_character_flag = maester_diplomacy
+			}
+			change_diplomacy = -1
+		}	
+		if = {
+			limit = {
+				has_character_flag = maester_learning
+			}
+			change_learning = -1
+		}	
+		if = {
+			limit = {
+				has_character_flag = maester_slothful
+			}
+			add_trait = slothful
+		}	
+		if = {
+			limit = {
+				has_character_flag = maester_wroth
+			}
+			add_trait = wroth
+		}	
+		if = {
+			limit = {
+				has_character_flag = maester_proud
+			}
+			add_trait = proud
+		}	
+		if = {
+			limit = {
+				has_character_flag = maester_arbitrary
+			}
+			add_trait = arbitrary
+		}	
+		if = {
+			limit = {
+				has_character_flag = maester_gluttonous
+			}
+			add_trait = gluttonous
+		}	
+		FROM = { 
+			liege = { 
+				if = {
+					limit = { NOT = { character = ROOT } }
+					letter_event = { id = maester.20 } 
+				}	
+				if = {
+					limit = { character = ROOT }
+					clr_character_flag = maester_intrigue 
+					clr_character_flag = maester_stewardship
+					clr_character_flag = maester_diplomacy
+					clr_character_flag = maester_learning
+					clr_character_flag = maester_slothful
+					clr_character_flag = maester_wroth
+					clr_character_flag = maester_proud
+					clr_character_flag = maester_arbitrary
+					clr_character_flag = maester_gluttonous
+				}
+			} 
+		}
+	}	
+}	
+# maester.20: The Maester informs his liege of progress
+letter_event = {
+	id = maester.20
+	desc = "EVTDESCmaester.20"
+	
+	is_triggered_only = yes
+	show_from_from = yes
+
+	option = {
+		name = "EVTOPTAmaester.20"
+		FROM = {
+			if = {
+				limit = {
+					has_character_flag = maester_intrigue
+				}
+				tooltip = { change_intrigue = -1 }
+				clr_character_flag = maester_intrigue
+			}	
+			if = {
+				limit = {
+					has_character_flag = maester_stewardship
+				}
+				tooltip = { change_stewardship = -1 }
+				clr_character_flag = maester_stewardship
+			}	
+			if = {
+				limit = {
+					has_character_flag = maester_diplomacy
+				}
+				tooltip = { change_diplomacy = -1 }
+				clr_character_flag = maester_diplomacy
+			}	
+			if = {
+				limit = {
+					has_character_flag = maester_learning
+				}
+				tooltip = { change_learning = -1 }
+				clr_character_flag = maester_learning
+			}	
+			if = {
+				limit = {
+					has_character_flag = maester_slothful
+				}
+				tooltip = { add_trait = slothful }
+				clr_character_flag = maester_slothful
+			}	
+			if = {
+				limit = {
+					has_character_flag = maester_wroth
+				}
+				tooltip = { add_trait = wroth }
+				clr_character_flag = maester_wroth
+			}	
+			if = {
+				limit = {
+					has_character_flag = maester_proud
+				}
+				tooltip = { add_trait = proud }
+				clr_character_flag = maester_proud
+			}	
+			if = {
+				limit = {
+					has_character_flag = maester_arbitrary
+				}
+				tooltip = { add_trait = arbitrary }
+				clr_character_flag = maester_arbitrary
+			}	
+			if = {
+				limit = {
+					has_character_flag = maester_gluttonous
+				}
+				tooltip = { add_trait = gluttonous }
+				clr_character_flag = maester_gluttonous
+			}
+		}	
+	}
+}
+# maester.21 Citadel looking for new home
+character_event = {
+	id = maester.2199
+	
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = { 
+		if = {
+			limit = {
+				b_the_citadel = {
+					holder_scope = {
+						liege = { can_host_citadel_trigger = yes }
+					}
+				}
+			}
+			liege = { character_event = { id = maester.21 } }
+			break = yes
+		}
+		random = {
+			chance = 50
+			random_playable_ruler = {
+				limit = {
+					can_host_citadel_trigger = yes
+					capital_scope = {
+						OR = {
+							region = world_reach
+							region = world_crownlands
+						}
+					}	
+				}
+				character_event = { id = maester.21 }
+				break = yes
+			}
+		}	
+		random = {
+			chance = 50
+			random_playable_ruler = {
+				limit = {
+					can_host_citadel_trigger = yes
+					capital_scope = {
+						region = world_westeros
+						NOR = {
+							region = world_vale
+							region = world_iron_isles
+							region = world_westeros_north
+						}
+					}
+				}
+				character_event = { id = maester.21 }
+				break = yes
+			}
+		}
+		random = {
+			chance = 80
+			random_playable_ruler = {
+				limit = {
+					can_host_citadel_trigger = yes
+					capital_scope = { region = world_westeros }
+				}
+				character_event = { id = maester.21 }
+				break = yes
+			}
+		}	
+		random_playable_ruler = {
+			limit = {
+				can_host_citadel_trigger = yes
+			}
+			character_event = { id = maester.21 }
+			break = yes
+		}	
+		random_playable_ruler = { #This is very unlikely
+			limit = {
+				higher_tier_than = DUKE
+				demesne_size = 1
+				NOT = { has_character_flag =  rejected_citadel }
+				NOT = { culture_group = winter_group }
+				any_vassal = {
+					primary_title = { NOT = { holding_type = temple } }
+					tier = BARON
+					is_patrician = no
+				}
+			}
+			character_event = { id = maester.21 }
+			break = yes
+		}
+	}
+
+	option = {
+		name = OK 
+	}
+}	
+character_event = {
+	id = maester.21
+	desc = "EVTDESCmaester.21"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAmaester.21" 
+		c_the_citadel = {
+			holder_scope = {		
+				opinion = {
+					modifier = opinion_granted_barony
+					who = ROOT
+				}
+				set_defacto_liege = ROOT
+			}	
+		}	
+		prestige = 100
+		piety = 100
+		if = { 
+			limit = { NOT = { any_vassal = { primary_title = { title = b_the_citadel } } } }
+			random_vassal = {
+				limit = { 
+					primary_title = { 
+						NOT = { holding_type = temple } 
+						NOT = { title = b_oldtown }
+						NOT = { title = b_lannisportone }
+						NOT = { title = b_kings_landing }
+					}
+					tier = BARON
+					is_patrician = no
+				}
+				character_event = { id = maester.22 tooltip = EVTTOOLTIPmaester.22 }		
+			}		
+		}		
+		if = { 
+			limit = { any_vassal = { primary_title = { title = b_the_citadel } } }
+			random_vassal = {
+				limit = { primary_title = { title = b_the_citadel } }
+				character_event = { id = maester.22 tooltip = EVTTOOLTIPmaester.22 }		
+			}		
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBmaester.21" 
+		set_character_flag = rejected_citadel	
+		prestige = -10		
+		c_the_citadel = { 
+			hidden_tooltip = { holder_scope = { character_event = { id = maester.2199 days = 5 } } } #try again
+		}
+	}
+}	
+# maester.22 new home transferred
+character_event = {
+	id = maester.22
+	desc = "EVTDESCmaester.22"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAmaester.22" 
+		c_the_citadel = {
+			holder_scope = {
+				ROOT = {
+					primary_title = {
+						grant_title = PREVPREV
+					}
+				}
+				clr_character_flag =  new_home_found	
+			}
+			
+		}	
+		opinion = {
+			modifier = opinion_revoked_my_title
+			who = FROM
+		}
+	}
+}	
+# maester.23 new maester arrives
+character_event = {
+	id = maester.23
+	desc = "EVTDESCmaester.23"
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		random_province = { #This picks a random westerosi culture
+			limit = {
+				OR = {
+					culture_group = andal
+					#culture = ironborn
+					culture_group = dornish
+					#culture = high_valyrian
+					culture = western_valyrian
+					culture_group = first_men
+					#culture = skagosi
+				}
+				NOT = { culture = rhoynar }
+				NOT = { culture = old_andal }
+			}
+			ROOT = {
+				create_random_priest = {
+					random_traits = yes
+					trait = maester
+					dynasty = none
+					female = no
+					culture = PREV
+					religion = PREV
+					historical = yes
+				}
+				new_character = {
+					remove_trait = martial_cleric
+					remove_trait = scholarly_theologian
+					remove_trait = mastermind_theologian
+					remove_trait = detached_priest
+					random_list = {
+						40 = {
+							modifier = {
+								factor = 0.5
+								ROOT = { higher_tier_than = DUKE }
+							}
+							modifier = {
+								factor = 1.5
+								c_the_citadel = { holder_scope = { NOT = { opinion = { who = ROOT value = -35 } } } }
+							}
+							modifier = {
+								factor = 1.5
+								c_the_citadel = { holder_scope = { NOT = { opinion = { who = ROOT value = -70 } } } }
+							}
+							add_trait = detached_priest
+						}
+						30 = {
+							modifier = {
+								factor = 0.75
+								ROOT = { higher_tier_than = DUKE }
+							}
+							modifier = {
+								factor = 1.5
+								c_the_citadel = { holder_scope = { NOT = { opinion = { who = ROOT value = -35 } } } }
+							}
+							modifier = {
+								factor = 1.5
+								c_the_citadel = { holder_scope = { NOT = { opinion = { who = ROOT value = -70 } } } }
+							}
+							add_trait = martial_cleric
+						}
+						20 = {
+							modifier = {
+								factor = 1.5
+								c_the_citadel = { holder_scope = { opinion = { who = ROOT value = 35 } } }
+							}
+							modifier = {
+								factor = 1.5
+								c_the_citadel = { holder_scope = { opinion = { who = ROOT value = 70 } } }
+							}
+							add_trait = scholarly_theologian
+						}
+						10 = {
+							modifier = {
+								factor = 1.5
+								c_the_citadel = { holder_scope = { opinion = { who = ROOT value = 35 } } }
+							}
+							modifier = {
+								factor = 1.5
+								c_the_citadel = { holder_scope = { opinion = { who = ROOT value = 70 } } }
+							}
+							add_trait = mastermind_theologian
+						}
+					}
+					random_list = { # Is the Physician a Quack?
+						90 = {
+						}
+						10 = {
+							set_character_flag = physician_is_quack
+						}
+					}
+					if = { 	
+						limit = { ROOT = { trait = nightswatch } }
+						add_trait = nightswatch
+						remove_trait = wildling
+					}
+					save_event_target_as = new_maester
+					
+					set_character_flag = serving_with_lord
+					remove_trait = imbecile
+					remove_trait = inbred
+					remove_trait = slow
+					remove_trait = infirm
+					remove_trait = incapable
+					remove_trait = leper
+					remove_trait = possessed
+					remove_trait = ill
+					remove_trait = pneumonic
+					remove_trait = maimed
+					set_special_character_title = title_maester
+					change_stewardship = 3
+					change_diplomacy = 3
+					change_intrigue = 3
+					#cannot be pirate 
+					if = { 	
+						limit = { 
+							OR = {
+								religion = pirate
+								religion = corsair
+							}
+							NOT = { religion = ROOT }
+						}
+						if = {
+							limit = { 
+								OR = {
+									culture_group = andal
+									culture_group = dornish
+									culture = western_valyrian
+								}
+							}
+							religion = the_seven
+						}
+						if = {
+							limit = { 
+								culture_group = first_men
+							}
+							religion = old_gods
+						}
+						if = {
+							limit = { 
+								OR = {
+									religion = pirate
+									religion = corsair
+								}
+							}
+							religion = ROOT
+						}
+						if = {
+							limit = { NOT = { trait = zealous } }
+							add_trait = sympathy_pirate_group
+						}
+					}
+					#Give important maesters a father to avoid culling
+					if = {
+						limit = {
+							ROOT = {
+								OR = {
+									ai = no
+									higher_tier_than = DUKE
+									any_heir_title = { higher_tier_than = DUKE }
+								}
+							}
+						}
+						character_event = { id = maester.2399 } 
+					}
+				}
+				hidden_tooltip = {
+					if = {
+						limit = { tier = EMPEROR }
+						c_the_citadel = { holder_scope = { wealth = 50 } }
+					}
+					if = {
+						limit = { tier = KING }
+						c_the_citadel = { holder_scope = { wealth = 25 } }
+					}
+					if = {
+						limit = { tier = DUKE }
+						c_the_citadel = { holder_scope = { wealth = 10 } }
+					}
+					if = {
+						limit = { tier = COUNT }
+						c_the_citadel = { holder_scope = { wealth = 5 } }
+					}
+				}	
+			}
+		}	
+	}
+
+	option = {
+		name = "EVTOPTAmaester.23" 
+		event_target:new_maester = {
+			give_job_title = job_spiritual
+		}
+		clr_character_flag = employed_maester
+	}
+}
+#Give important maesters a father to avoid culling
+letter_event = {
+	id = maester.2399
+
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		NOR = {
+			father_even_if_dead = { always = yes }
+			mother_even_if_dead = { always = yes }
+		}
+	}
+	
+	immediate = {
+		create_character = {
+			random_traits = yes
+			dynasty = NONE
+			female = no
+			age = 60
+			culture = ROOT
+			religion = ROOT
+		}
+		new_character = {
+			ROOT = { set_father = PREV }
+			death = yes
+		}
+	}
+
+	option = {
+		name = OK		
+	}
+}
+#Inform liege of maesters promotion to archmaester
+letter_event = {
+	id = maester.24
+	desc = "EVTDESCmaester.24"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAmaester.24" #Yes			
+	}
+}	
+
+#New Grand Maester needed
+character_event = {
+	id = maester.2599
+
+	only_independent = yes
+	hide_window = yes
+
+	trigger = {
+		has_landed_title = e_iron_throne
+		maester_culture_trigger = yes 
+		NOT = { has_global_flag = aegons_conquest }
+		NOT = {
+			archmaester = {
+				is_alive = yes
+				has_character_flag = grandmaester
+			}
+		}
+		NOT = { has_character_flag = grand_maester_selected }
+	}
+	
+	immediate = {
+		#Find new grandmaester
+		c_the_citadel = {
+			holder_scope = {
+				random_courtier = {
+					limit = {
+						OR = {	
+							trait = maester
+							trait = archmaester
+						}
+						liege = { character = PREVPREV }
+						is_ruler = no
+						prisoner = no
+						is_incapable = no
+						OR = {
+							learning = 24
+							AND = {
+								learning = 20
+								OR = {
+									age = 50
+									trait = ambitious
+									trait = archmaester
+									liege = { opinion = { who = PREV value = 30 } }
+								}
+								NOR = { 
+									trait = content
+									trait = stressed
+									trait = depressed
+								}
+							}
+							AND = {
+								learning = 16
+								OR = {
+									prestige = 300
+									any_claim = { higher_tier_than = COUNT }
+									liege = { opinion = { who = PREV value = 45 } }
+								}
+								NOR = { 
+									trait = content
+									trait = stressed
+									trait = depressed
+								}
+							}
+						}
+					}
+					character_event = { id = maester.25 }
+					break = yes
+				}
+				random_courtier = {
+					limit = {
+						OR = {	
+							trait = maester
+							trait = archmaester
+						}
+						liege = { character = PREVPREV }
+						is_ruler = no
+						prisoner = no
+						is_incapable = no
+						OR = {
+							learning = 20
+							AND = {
+								learning = 16
+								OR = {
+									age = 50
+									trait = ambitious
+									trait = archmaester
+									liege = { opinion = { who = PREV value = 30 } }
+								}
+								NOR = { 
+									trait = content
+									trait = stressed
+									trait = depressed
+								}
+							}
+							AND = {
+								learning = 12
+								OR = {
+									prestige = 300
+									any_claim = { higher_tier_than = COUNT }
+									liege = { opinion = { who = PREV value = 45 } }
+								}
+								NOR = { 
+									trait = content
+									trait = stressed
+									trait = depressed
+								}
+							}
+						}
+					}
+					character_event = { id = maester.25 }
+					break = yes
+				}
+				random_courtier = {
+					limit = {
+						OR = {	
+							trait = maester
+							trait = archmaester
+						}
+						liege = { character = PREVPREV }
+						is_ruler = no
+						prisoner = no
+						is_incapable = no
+						OR = {
+							learning = 16
+							AND = {
+								learning = 13
+								OR = {
+									age = 50
+									trait = ambitious
+									trait = archmaester
+									liege = { opinion = { who = PREV value = 30 } }
+								}
+								NOR = { 
+									trait = content
+									trait = stressed
+									trait = depressed
+								}
+							}
+							AND = {
+								learning = 10
+								OR = {
+									prestige = 300
+									any_claim = { higher_tier_than = COUNT }
+									liege = { opinion = { who = PREV value = 45 } }
+								}
+								NOR = { 
+									trait = content
+									trait = stressed
+									trait = depressed
+								}
+							}
+						}
+					}
+					character_event = { id = maester.25 }
+					break = yes
+				}
+				random_courtier = {
+					limit = {
+						OR = {	
+							trait = maester
+							trait = archmaester
+						}
+						liege = { character = PREVPREV }
+						is_ruler = no
+						prisoner = no
+						is_incapable = no
+						OR = {
+							learning = 13
+							AND = {
+								learning = 10
+								OR = {
+									age = 50
+									trait = ambitious
+									trait = archmaester
+									liege = { opinion = { who = PREV value = 15 } }
+								}
+								NOR = { 
+									trait = content
+									trait = stressed
+									trait = depressed
+								}
+							}
+							AND = {
+								learning = 8
+								OR = {
+									prestige = 300
+									any_claim = { higher_tier_than = BARON }
+									liege = { opinion = { who = PREV value = 30 } }
+								}
+								NOR = { 
+									trait = content
+									trait = stressed
+									trait = depressed
+								}
+							}
+						}
+					}
+					character_event = { id = maester.25 }
+					break = yes
+				}
+				random_courtier = {
+					limit = {
+						OR = {	
+							trait = maester
+							trait = archmaester
+						}
+						liege = { character = PREVPREV }
+						is_ruler = no
+						prisoner = no
+						is_incapable = no
+						OR = {
+							learning = 10
+							AND = {
+								learning = 8
+								OR = {
+									age = 50
+									trait = ambitious
+									trait = archmaester
+									liege = { opinion = { who = PREV value = 10 } }
+								}
+							}
+							prestige = 200
+							num_of_claims = 1
+							liege = { opinion = { who = PREV value = 20 } }
+						}
+					}
+					character_event = { id = maester.25 }
+					break = yes
+				}
+				random_courtier = {
+					limit = {
+						OR = {	
+							trait = maester
+							trait = archmaester
+						}
+						liege = { character = PREVPREV }
+						is_ruler = no
+						prisoner = no
+						is_incapable = no
+					}
+					character_event = { id = maester.25 }
+					break = yes
+				}
+			}
+		}
+		#failsafe, create random
+		random_playable_ruler = { #This picks a random westerosi culture
+			limit = {
+				OR = {
+					culture_group = andal
+					#culture = ironborn
+					culture_group = dornish
+					#culture = high_valyrian
+					culture = western_valyrian
+					culture_group = first_men
+					#culture = skagosi
+				}
+				NOT = { culture = rhoynar }
+				NOT = { culture = old_andal }
+			}
+			ROOT = {
+				create_random_priest = {
+					random_traits = yes
+					trait = archmaester
+					trait = scholarly_theologian
+					dynasty = none
+					female = no
+					culture = PREV
+					religion = PREV
+					historical = yes
+				}
+				new_character = {
+					character_event = { id = maester.25 }
+					remove_trait = imbecile
+					remove_trait = inbred
+					remove_trait = slow
+					remove_trait = infirm
+					remove_trait = incapable
+					remove_trait = leper
+					remove_trait = possessed
+					remove_trait = ill
+					remove_trait = pneumonic
+					remove_trait = maimed
+					change_stewardship = 3
+					change_diplomacy = 3
+					change_intrigue = 3
+					change_learning = 3
+				}
+			}
+		}
+	}
+	
+	option = { 
+		name = OK
+	}
+}
+character_event = {
+	id = maester.25
+	desc = "EVTDESCmaester.25"
+	picture = GFX_evt_library
+	
+	is_triggered_only = yes
+
+	immediate = {
+		FROM = {
+			set_character_flag = grand_maester_selected
+		}	
+	}
+	
+	option = { 
+		name = "EVTOPTAmaester.25"
+		add_trait = archmaester
+		remove_trait = maester
+		remove_special_character_title = title_maester
+		set_character_flag = grandmaester
+		set_character_flag = new_grandmaester
+		FROM = {
+			character_event = { id = maester.26 days = 1 }
+		}
+		#any_claim = { remove_claim = ROOT }
+	}
+}
+#king informed of grand maester's arrival
+character_event = {
+	id = maester.26
+	desc = "EVTDESCmaester.26"
+	
+	only_independent = yes
+
+	trigger = {
+		has_landed_title = e_iron_throne
+		archmaester = {
+			has_character_flag = grandmaester
+			NOT = { liege = { character = ROOT } }
+		}
+	}
+
+	option = {
+		name = "EVTOPTAmaester.26" #Yes	
+		archmaester = {
+			limit = {
+				has_character_flag = grandmaester
+			}
+			if = {
+				limit = { has_character_flag = new_grandmaester }
+				prestige = 100
+				clr_character_flag = new_grandmaester
+			}
+			if = {
+				limit = { NOT = { liege = { character = ROOT } } }
+				move_character = ROOT
+			}
+			give_job_title = job_spiritual
+			give_minor_title = title_grandmaester
+		}	
+		clr_character_flag = grand_maester_selected
+	}
+
+}	
+
+letter_event = {
+	id = maester.29
+	desc = EVTDESCmaester.29 #My lord, I have been recalled to The Citadel and must leave your service.
+	is_triggered_only = yes
+	option = { name = "OK" }
+}
+
+#CITADEL ARCHMAESTER MAINTENANCE
+character_event = {
+	id = maester.30
+	desc = "Only Archmaesters may lead The Citadel"
+	
+	only_playable = yes
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		has_landed_title = c_the_citadel		
+	}
+	
+	option = {
+		name = "OK"
+		if = { #must be archmaester
+			limit = { NOT = { trait = archmaester } }
+			#Abdicate to random archmaester
+			random_courtier = {
+				limit = { trait = archmaester }
+				ROOT = { 
+					if = {
+						limit = { NOT = { primary_title = { title = c_the_citadel } } }
+						c_the_citadel = { gain_title = PREVPREV }
+					}
+					if = {
+						limit = { primary_title = { title = c_the_citadel } }
+						abdicate_to = PREV 
+					}	
+				}
+				character_event = { id = maester.30 days = 1 } #maintenance
+			}
+			#Create random archmaester if neccesary
+			if = {
+				limit = { has_landed_title = c_the_citadel }
+				random_playable_ruler = { #This picks a random westerosi culture
+					limit = {
+						OR = {
+							culture_group = andal
+							#culture = ironborn
+							culture_group = dornish
+							#culture = high_valyrian
+							culture = western_valyrian
+							culture_group = first_men
+							#culture = skagosi
+						}
+						NOT = { culture = rhoynar }
+						NOT = { culture = old_andal }
+					}
+					ROOT = {
+						create_random_priest = {
+							random_traits = yes
+							trait = archmaester
+							trait = scholarly_theologian
+							dynasty = none
+							female = no
+							culture = PREV
+							religion = PREV
+							historical = yes
+						}
+						new_character = {
+							ROOT = { 
+								if = {
+									limit = { NOT = { primary_title = { title = c_the_citadel } } }
+									c_the_citadel = { gain_title = PREVPREV }
+								}
+								if = {
+									limit = { primary_title = { title = c_the_citadel } }
+									abdicate_to = PREV 
+								}	
+							}
+							remove_trait = imbecile
+							remove_trait = inbred
+							remove_trait = slow
+							remove_trait = infirm
+							remove_trait = incapable
+							remove_trait = leper
+							remove_trait = possessed
+							remove_trait = ill
+							remove_trait = pneumonic
+							remove_trait = maimed
+							change_stewardship = 3
+							change_diplomacy = 3
+							change_intrigue = 3
+							change_learning = 3
+							character_event = { id = maester.30 days = 1 } #maintenance
+						}
+					}
+				}
+			}			
+			banish = yes
+			if = { #if maester send back to citadel
+				limit = {
+					OR = {
+						trait = maester
+						has_character_modifier = maester_education
+					}	
+				}
+				character_event = { id = maester.31 days = 1 } #event to recall
+			}	
+			break = yes
+		}	
+		#No non-maesters in the citadel
+		any_courtier = {
+			limit = {
+				liege = { character = ROOT }
+				is_ruler = no
+				NOT = { trait = maester }
+				NOT = { trait = archmaester }
+				NOT = { has_character_modifier = maester_education }
+				NOT = { has_character_flag = citadel_courtier }
+			}
+			character_event = { id = maester.32 }
+		}
+		#Looking for a new home
+		if = {
+			limit = { NOT = { demesne_size = 1 } }
+			character_event = { id = maester.2199 days = 1 }
+		}
+	}
+}
+
+character_event = {
+	id = maester.31
+	desc = "Recall the former Archmaester"
+	is_triggered_only = yes
+	
+	option = {
+		name = "Cool"
+		c_the_citadel = { holder_scope = { ROOT = { move_character = PREV } } }
+	}
+}
+##No non-maesters in the citadel
+character_event = {
+	id = maester.32
+	desc = "Move from the Citadel"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Cool"
+		random_spouse = {
+			limit = {
+				is_alive = yes
+				can_press_claims_trigger = yes
+				NOT = { same_liege = ROOT }
+				NOT = { is_liege_of = ROOT }
+			}
+			if = { 	
+				limit = { is_ruler = yes }
+				ROOT = { move_character = PREV }
+			}
+			if = { 
+				limit = { is_ruler = no }
+				liege = { ROOT = { move_character = PREV } }
+			}
+			break = yes
+		}
+		father = {
+			if = {
+				limit = {
+					is_alive = yes
+					can_press_claims_trigger = yes
+					NOT = { same_liege = ROOT }
+					NOT = { is_liege_of = ROOT }
+				}
+				if = { 	
+					limit = { is_ruler = yes }
+					ROOT = { move_character = PREV }
+				}
+				if = { 
+					limit = { is_ruler = no }
+					liege = { ROOT = { move_character = PREV } }
+				}
+				break = yes
+			}	
+		}
+		mother = {
+			if = {
+				limit = {
+					is_alive = yes
+					can_press_claims_trigger = yes
+					NOT = { same_liege = ROOT }
+					NOT = { is_liege_of = ROOT }
+				}
+				if = { 	
+					limit = { is_ruler = yes }
+					ROOT = { move_character = PREV }
+				}
+				if = { 
+					limit = { is_ruler = no }
+					liege = { ROOT = { move_character = PREV } }
+				}
+				break = yes
+			}	
+		}
+		if = {
+			limit = { NOT = { dynasty = 0 } }
+			if = {
+				limit = {
+					dynasty_head = {
+						NOT = { character = ROOT }
+						can_press_claims_trigger = yes
+						NOT = { same_liege = ROOT }
+						NOT = { is_liege_of = ROOT }
+					}
+				}
+				dynasty_head = {
+					if = {
+						limit = { is_ruler = yes }
+						ROOT = { move_character = PREV }
+					}
+					if = {
+						limit = { NOT = { is_ruler = yes } }
+						liege = { ROOT = { move_character = PREV } }
+					}
+				}
+				break = yes
+			}
+			random_dynasty_member = {
+				limit = {
+					is_alive = yes
+					is_ruler = yes
+					can_press_claims_trigger = yes
+					NOT = { same_liege = ROOT }
+					NOT = { is_liege_of = ROOT }
+				}
+				ROOT = { move_character = PREV }
+				break = yes
+			}
+			random_spouse = {
+				random_dynasty_member = {
+					limit = {
+						is_alive = yes
+						is_ruler = yes
+						can_press_claims_trigger = yes
+						NOT = { same_liege = ROOT }
+						NOT = { is_liege_of = ROOT }
+					}
+					ROOT = { move_character = PREV }
+					break = yes
+				}	
+			}
+			random_dynasty_member = {
+				limit = {
+					is_alive = yes
+					can_press_claims_trigger = yes
+					NOT = { same_liege = ROOT }
+					NOT = { is_liege_of = ROOT }
+				}
+				if = { 	
+					limit = { is_ruler = yes }
+					ROOT = { move_character = PREV }
+				}
+				if = { 
+					limit = { is_ruler = no }
+					liege = { ROOT = { move_character = PREV } }
+				}
+				break = yes
+			}	
+		}	
+		random_friend = {
+			limit = {
+				is_alive = yes
+				can_press_claims_trigger = yes
+				NOT = { same_liege = ROOT }
+				NOT = { is_liege_of = ROOT }
+			}
+			if = { 	
+				limit = { is_ruler = yes }
+				ROOT = { move_character = PREV }
+			}
+			if = { 
+				limit = { is_ruler = no }
+				liege = { ROOT = { move_character = PREV } }
+			}
+			break = yes
+		}
+		if = {
+			limit = {
+				OR = {
+					num_of_claims = 1
+					father_even_if_dead = { always = yes }					
+					mother_even_if_dead = { always = yes }
+					real_father_even_if_dead = { always = yes }
+					NOT = { age = 14 }
+				}
+			}
+			random_playable_ruler = {
+				limit = {
+					demesne_size = 1
+					OR = {
+						higher_tier_than = DUKE
+						culture_group = ROOT
+					}
+					is_within_diplo_range = ROOT		
+					NOT = { same_liege = ROOT }
+					NOT = { is_liege_of = ROOT }					
+					can_press_claims_trigger = yes
+					NOT = { culture_group = unoccupied_group }
+					OR = {
+						NOT = { trait = wildling }
+						ROOT = { trait = wildling }
+					}	
+					OR = {
+						NOT = { culture = old_andal }
+						higher_tier_than = DUKE
+						ROOT = { culture = old_andal }
+					}
+					OR = {
+						NOT = { culture = rhoynar }
+						higher_tier_than = DUKE
+						ROOT = { culture = rhoynar }
+					}	
+					OR = {
+						NOT = { trait = pirate }
+						ROOT = { trait = pirate }
+					}			
+				}
+				ROOT = { move_character = PREV }
+				break = yes
+			}
+		}
+		if = {
+			limit = { is_female = no }
+			add_character_modifier = {
+				name = maester_education
+				duration = -1
+			}
+		}
+		if = {
+			limit = { is_female = yes }
+			set_character_flag = citadel_courtier
+		}
+	}
+}
+
+# maester.33: Maester improves troop's morale
+character_event = {
+	id = maester.33
+	title = "EVTNAMEmaester.33"
+	desc = "EVTDESCmaester.33"
+	picture = GFX_evt_large_army
+
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		#has_job_action = action_tend_to_wounded
+		#OR = {
+			has_job_title = job_spiritual
+			# AND = {
+				# has_job_title = job_priest
+				# religion = jogos_pagan
+			# }
+		#}
+		liege = {
+			OR = {
+				war = yes
+				any_liege = { war = yes }
+			}	
+			any_vassal = {
+				liege = { 
+					OR = {
+						has_raised_levies = PREV 
+						has_raised_levies = PREVPREV 
+					}	
+				}
+			}
+			NOT = { has_character_modifier = troops_likes_maester } 
+			NOT = { has_character_modifier = troops_unnerve_maester } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 1.3
+			NOT = { learning = 2 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { learning = 4 }
+		}
+		modifier = {
+			factor = 1.2
+			NOT = { learning = 6 }
+		}
+		modifier = {
+			factor = 1.15
+			NOT = { learning = 8 }
+		}
+		modifier = {
+			factor = 0.8
+			learning = 10
+		}
+		modifier = {
+			factor = 0.9
+			learning = 12
+		}
+		modifier = {
+			factor = 0.9
+			learning = 14
+		}
+		modifier = {
+			factor = 0.9
+			learning = 16
+		}
+		modifier = {
+			factor = 0.9
+			learning = 18
+		}
+		modifier = {
+			factor = 0.9
+			learning = 20
+		}
+		modifier = {
+			factor = 0.9
+			learning = 22
+		}
+		modifier = {
+			factor = 0.9
+			learning = 24
+		}
+		modifier = {
+			factor = 0.9
+			learning = 26
+		}
+		modifier = {
+			factor = 0.75
+			trait = brave
+		}
+		modifier = {
+			factor = 1.25
+			trait = craven
+		}
+		# modifier = {
+			# factor = 9999
+			# NOT = {
+				# liege = {
+					# OR = {
+						# war = yes
+						# any_liege = { war = yes }
+					# }	
+					# any_vassal = {
+						# liege = { 
+							# OR = {
+								# has_raised_levies = PREV 
+								# has_raised_levies = PREVPREV 
+							# }	
+						# }
+					# }				
+				# }
+			# }	
+		# }
+		modifier = {
+			factor = 2
+			has_character_flag = job_action_sabotage
+			NOT = {
+				had_character_flag = {
+					flag = job_action_sabotage
+					days = 1825
+				}
+			}	
+		}
+	}
+
+	option = {
+		name = "EVTOPTAmaester.33"
+		prestige = 5
+		if = {
+			limit = { trait = craven } 
+			remove_trait = craven
+		}
+		if = {
+			limit = { NOT = { trait = brave } }
+			random = {
+				chance = 5	
+				add_trait = brave
+				hidden_tooltip = {
+					character_event = {
+						id = 38270 #Notify brave
+					}
+				}
+			}
+		}	
+		liege = {
+			letter_event = { id = maester.34 days = 1 }
+		}
+	}
+}
+# maester.34: The Maester informs his liege of troop's morale
+letter_event = {
+	id = maester.34
+	desc = "EVTDESCmaester.34"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAmaester.34"
+		add_character_modifier = {
+			name = troops_likes_maester
+			duration = 365
+		}
+	}
+}
+# maester.35: Maester is stressed from war
+character_event = {
+	id = maester.35
+	title = "EVTNAMEmaester.35"
+	desc = "EVTDESCmaester.35"
+	picture = GFX_evt_drunk
+
+	only_men = yes
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		#has_job_action = action_tend_to_wounded
+		#OR = {
+			has_job_title = job_spiritual
+			# AND = {
+				# has_job_title = job_priest
+				# religion = jogos_pagan
+			# }
+		#}
+		liege = {
+			OR = {
+				war = yes
+				any_liege = { war = yes }
+			}	
+			any_vassal = {
+				liege = { 
+					OR = {
+						has_raised_levies = PREV 
+						has_raised_levies = PREVPREV 
+					}	
+				}
+			}		
+			NOT = { has_character_modifier = troops_unnerve_maester } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 0.7
+			NOT = { learning = 2 }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { learning = 4 }
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { learning = 6 }
+		}
+		modifier = {
+			factor = 0.85
+			NOT = { learning = 8 }
+		}
+		modifier = {
+			factor = 1.2
+			learning = 10
+		}
+		modifier = {
+			factor = 1.1
+			learning = 12
+		}
+		modifier = {
+			factor = 1.1
+			learning = 14
+		}
+		modifier = {
+			factor = 1.1
+			learning = 16
+		}
+		modifier = {
+			factor = 1.1
+			learning = 18
+		}
+		modifier = {
+			factor = 1.1
+			learning = 20
+		}
+		modifier = {
+			factor = 1.1
+			learning = 22
+		}
+		modifier = {
+			factor = 1.1
+			learning = 24
+		}
+		modifier = {
+			factor = 1.1
+			learning = 26
+		}
+		modifier = {
+			factor = 1.25
+			trait = brave
+		}
+		modifier = {
+			factor = 0.75
+			trait = craven
+		}
+		# modifier = {
+			# factor = 9999
+			# NOT = {
+				# liege = {
+					# OR = {
+						# war = yes
+						# any_liege = { war = yes }
+					# }	
+					# any_vassal = {
+						# liege = { 
+							# OR = {
+								# has_raised_levies = PREV 
+								# has_raised_levies = PREVPREV 
+							# }	
+						# }
+					# }	
+				# }
+			# }	
+		# }
+	}
+
+	option = {
+		name = "EVTOPTAmaester.35"
+		prestige = -5
+		add_trait = stressed
+		if = {
+			limit = { trait = brave } 
+			remove_trait = brave
+		}
+		if = {
+			limit = { NOT = { trait = craven } NOT = { trait = berserker } }
+			random = {
+				chance = 5	
+				add_trait = craven
+				hidden_tooltip = {
+					character_event = {
+						id = 38257 #Notify Craven
+					}
+				}
+			}
+		}	
+		liege = {
+			remove_character_modifier = troops_likes_maester 
+			letter_event = { id = maester.36 days = 1 }
+		}
+	}
+}
+# maester.36: Tliege informed of maester's stress
+letter_event = {
+	id = maester.36
+	desc = "EVTDESCmaester.36"
+	picture = GFX_evt_drunk
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTAmaester.36"
+		FROM = { add_trait = stressed }
+		hidden_tooltip = {
+			if = {
+				limit = { 
+					FROM = { 
+						has_character_flag = job_action_sabotage 
+						NOT = {
+							had_character_flag = {
+								flag = job_action_sabotage
+								days = 1825
+							}
+						}	
+					} 
+				}
+				FROM = { remove_trait = stressed }
+			}
+		}
+		add_character_modifier = {
+			name = troops_unnerve_maester
+			duration = 365
+		}
+	}
+}
+# # archmaester dies
+# character_event = {
+	# id = maester.37
+	# desc = "EVTDESCmaester.37"
+	# picture = GFX_evt_drunk
+
+	# trigger = {
+		# trait = archmaester
+		# age = 35
+	# }
+	
+	# mean_time_to_happen = {
+		# years = 40
+		# modifier = {
+			# factor = 1.5
+			# NOT = { age = 45 }
+		# }
+		# modifier = {
+			# factor = 0.5
+			# age = 70
+		# }
+		# modifier = {
+			# factor = 0.4
+			# age = 80
+		# }
+		# modifier = {
+			# factor = 0.2
+			# age = 90
+		# }
+		# modifier = {
+			# factor = 0.9
+			# NOT = { health = 1 }
+		# }
+		# modifier = {
+			# factor = 0.9
+			# NOT = { health = 2 }
+		# }
+		# modifier = {
+			# factor = 1.1
+			# health = 4
+		# }
+		# modifier = {
+			# factor = 1.1
+			# health = 5
+		# }
+		# modifier = {
+			# factor = 1.1
+			# health = 6
+		# }
+		# modifier = {
+			# factor = 1.1
+			# health = 7
+		# }
+		# modifier = {
+			# factor = 1.1
+			# health = 8
+		# }
+		# modifier = {
+			# factor = 0.8
+			# is_weak_trigger = yes
+		# }
+		# modifier = {
+			# factor = 0.8
+			# trait = infirm
+		# }
+		# modifier = {
+			# factor = 0.8
+			# trait = drunkard
+		# }
+		# modifier = {
+			# factor = 0.8
+			# trait = inbred
+		# }
+		# modifier = {
+			# factor = 0.8
+			# trait = incapable
+		# }
+		# modifier = {
+			# factor = 1.2
+			# is_strong_trigger = yes
+		# }
+		# modifier = {
+			# factor = 0.9
+			# trait = hedonist
+		# }
+		
+	# }
+
+	# option = {
+		# name = "EVTOPTAmaester.35"
+		# death = yes
+	# }
+# }

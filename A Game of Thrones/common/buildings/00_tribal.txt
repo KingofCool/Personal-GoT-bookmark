@@ -1,0 +1,535 @@
+ # Triggers are in Province scope. The From Scope contains the settlement holder (character)
+ # start trigger is in title scope.
+
+tribal = {	
+	tb_wildling_barracks = {
+		desc = ca_wildling_barracks_desc
+		potential = {
+			FROM = {
+				OR = {
+					culture_group = free_folk
+					culture = thenn
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+		}
+		
+		convert_to_castle = ca_wildling_barracks
+		
+		archers = 50
+		light_infantry = 150
+		tax_income = 1
+		levy_reinforce_rate = 0.15
+		#gold_cost = 50
+		prestige_cost = 60
+		build_time = 180
+		ai_creation_factor = 200
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+
+	tb_wildling_barracks2 = {
+		desc = ca_wildling_barracks2_desc
+		potential = {
+			FROM = {
+				OR = {
+					culture_group = free_folk
+					culture = thenn
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+		}
+		#trigger = { FROM = { prestige = 125 } }
+		
+		convert_to_castle = ca_wildling_barracks2
+		
+		upgrades_from = tb_wildling_barracks
+		archers = 100
+		light_infantry = 300
+		tax_income = 1.5
+		levy_reinforce_rate = 0.15
+		#gold_cost = 50
+		prestige_cost = 125
+		build_time = 180
+		ai_creation_factor = 200
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+
+	tb_wildling_barracks3 = {
+		desc = ca_wildling_barracks3_desc
+		potential = {
+			FROM = {
+				OR = {
+					culture_group = free_folk
+					culture = thenn
+				}
+			}
+		}	
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+		}
+		#trigger = { FROM = { prestige = 250 } }
+		
+		convert_to_castle = ca_wildling_barracks3
+		upgrades_from = tb_wildling_barracks2
+		archers = 200
+		light_infantry = 600
+		tax_income = 2.5
+		levy_reinforce_rate = 0.15
+		#gold_cost = 100
+		prestige_cost = 250
+		build_time = 365
+		ai_creation_factor = 200
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+
+	tb_wildling_barracks4 = {
+		desc = ca_wildling_barracks4_desc
+		potential = {
+			FROM = {
+				OR = {
+					culture_group = free_folk
+					culture = thenn
+				}
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+		}
+		#trigger = { FROM = { prestige = 500 } }
+		
+		convert_to_castle = ca_wildling_barracks4
+		upgrades_from = tb_wildling_barracks3
+		archers = 400
+		light_infantry = 800
+		tax_income = 4
+		levy_reinforce_rate = 0.15
+		#gold_cost = 200
+		prestige_cost = 500
+		build_time = 365
+		ai_creation_factor = 200
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	tb_hillfort_1 = {
+		desc = tb_hillfort_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 25
+		build_time = 365
+		
+		fort_level = 0.25
+		levy_size = 0.05
+		ai_creation_factor = 97
+		ai_feudal_modifier = 10
+		ai_republic_modifier = -10
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_hillfort_2 = {
+		desc = tb_hillfort_2_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = tb_hillfort_1
+		gold_cost = 50
+		build_time = 365
+		
+		fort_level = 0.25
+		levy_size = 0.05
+		ai_creation_factor = 98
+		ai_feudal_modifier = 10
+		ai_republic_modifier = -10
+		
+		convert_to_city = ct_wall_1
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_hillfort_3 = {
+		desc = tb_hillfort_3_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = tb_hillfort_2
+		gold_cost = 75
+		build_time = 365
+		
+		fort_level = 0.25
+		levy_size = 0.05
+		ai_creation_factor = 99
+		ai_feudal_modifier = 10
+		ai_republic_modifier = -10
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_hillfort_4 = {
+		desc = tb_hillfort_4_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = tb_hillfort_3
+		gold_cost = 100
+		build_time = 365
+		
+		fort_level = 0.25
+		levy_size = 0.05
+		ai_creation_factor = 100
+		ai_feudal_modifier = 10
+		ai_republic_modifier = -10
+		
+		convert_to_city = ct_wall_2
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_market_town_1 = {
+		desc = tb_market_town_1_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }
+		gold_cost = 25
+		build_time = 365
+		
+		tax_income = 0.5
+		ai_creation_factor = 97
+		ai_feudal_modifier = -10
+		ai_republic_modifier = 10
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_market_town_2 = {
+		desc = tb_market_town_2_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }
+		upgrades_from = tb_market_town_1
+		gold_cost = 50
+		build_time = 365
+		
+		tax_income = 0.5
+		ai_creation_factor = 98
+		ai_feudal_modifier = -10
+		ai_republic_modifier = 10
+		
+		convert_to_castle = ca_town_1
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_market_town_3 = {
+		desc = tb_market_town_3_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }
+		upgrades_from = tb_market_town_2
+		gold_cost = 75
+		build_time = 365
+		
+		tax_income = 0.5
+		ai_creation_factor = 99
+		ai_feudal_modifier = -10
+		ai_republic_modifier = 10
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_market_town_4 = {
+		desc = tb_market_town_4_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }
+		upgrades_from = tb_market_town_3
+		gold_cost = 100
+		build_time = 365
+		
+		tax_income = 0.5
+		ai_creation_factor = 100
+		ai_feudal_modifier = -10
+		ai_republic_modifier = 10
+		
+		convert_to_castle = ca_town_2
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_shipyard_1 = {
+		desc = shipyard_desc
+		port = yes
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }
+		prestige_cost = 300
+		build_time = 365
+		galleys = 6
+		ai_creation_factor = 96
+		ai_republic_modifier = 5
+		
+		#convert_to_castle = ca_shipyard_1
+		convert_to_city = ct_port_1
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_shipyard_2 = {
+		desc = shipyard_desc
+		port = yes
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }
+		upgrades_from = tb_shipyard_1
+		prestige_cost = 400
+		build_time = 730
+		galleys = 7
+		ai_creation_factor = 95
+		ai_republic_modifier = 5
+		
+		#convert_to_castle = ca_shipyard_2
+		convert_to_city = ct_port_2
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_shipyard_3 = {
+		desc = shipyard_desc
+		port = yes
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }
+		upgrades_from = tb_shipyard_2
+		prestige_cost = 500
+		build_time = 1095
+		galleys = 8
+		ai_creation_factor = 94
+		ai_republic_modifier = 5
+		
+		#convert_to_castle = ca_shipyard_3
+		convert_to_city = ct_port_3
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_shipyard_4 = {
+		desc = shipyard_desc
+		port = yes
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }
+		upgrades_from = tb_shipyard_3
+		prestige_cost = 600
+		build_time = 1460
+		galleys = 9
+		ai_creation_factor = 93
+		ai_republic_modifier = 5
+		
+		#convert_to_castle = ca_shipyard_4
+		convert_to_city = ct_port_4
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_training_grounds_1 = {
+		desc = tb_training_grounds_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prestige_cost = 300
+		build_time = 547
+		levy_size = 0.025
+		garrison_size = 0.025
+		ai_creation_factor = 98
+
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_training_grounds_2 = {
+		desc = tb_training_grounds_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = tb_training_grounds_1
+		prestige_cost = 400
+		build_time = 730
+		levy_size = 0.05
+		garrison_size = 0.05
+		ai_creation_factor = 97
+		
+		convert_to_castle = ca_keep_1
+		convert_to_city = ct_training_grounds_1
+
+		extra_tech_building_start = 10.0 # Never get at start of game
+	} 
+	
+	tb_training_grounds_3 = {
+		desc = tb_training_grounds_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = tb_training_grounds_2
+		prestige_cost = 500
+		build_time = 1095
+		levy_size = 0.075
+		garrison_size = 0.075
+		ai_creation_factor = 96
+
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_training_grounds_4 = {
+		desc = tb_training_grounds_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = tb_training_grounds_3
+		prestige_cost = 600
+		build_time = 1460
+		levy_size = 0.1
+		garrison_size = 0.1
+		ai_creation_factor = 95
+		
+		convert_to_castle = ca_keep_2
+		convert_to_city = ct_training_grounds_2
+
+		extra_tech_building_start = 10.0 # Never get at start of game
+	} 
+	
+	tb_war_camp_1 = {
+		desc = tb_war_camp_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prestige_cost = 300
+		build_time = 365
+		light_infantry = 40
+		ai_creation_factor = 95
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_war_camp_2 = {
+		desc = tb_war_camp_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = tb_war_camp_1
+		prestige_cost = 400
+		build_time = 547
+		light_infantry = 40
+		ai_creation_factor = 94
+		
+		convert_to_castle = ca_barracks_1
+		convert_to_city = ct_wall_1
+
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_war_camp_3 = {
+		desc = tb_war_camp_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = tb_war_camp_2
+		prestige_cost = 500
+		build_time = 730
+		light_infantry = 40
+		ai_creation_factor = 93
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_war_camp_4 = {
+		desc = tb_war_camp_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = tb_war_camp_3
+		prestige_cost = 600
+		build_time = 1095
+		light_infantry = 40
+		ai_creation_factor = 92
+		
+		convert_to_castle = ca_barracks_2
+		convert_to_city = ct_wall_2
+
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_practice_range_1 = {
+		desc = tb_practice_range_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prestige_cost = 300
+		build_time = 365
+		archers = 15
+		ai_creation_factor = 95
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_practice_range_2 = {
+		desc = tb_practice_range_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = tb_practice_range_1
+		prestige_cost = 400
+		build_time = 547
+		archers = 15
+		ai_creation_factor = 94
+		
+		convert_to_castle = ca_militia_barracks_1
+		convert_to_city = ct_barracks_1
+
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_practice_range_3 = {
+		desc = tb_practice_range_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = tb_practice_range_2
+		prestige_cost = 500
+		build_time = 730
+		archers = 15
+		ai_creation_factor = 93
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_practice_range_4 = {
+		desc = tb_practice_range_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = tb_practice_range_3
+		prestige_cost = 600
+		build_time = 1095
+		archers = 15
+		ai_creation_factor = 92
+		
+		convert_to_castle = ca_militia_barracks_2
+		convert_to_city = ct_barracks_2
+
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_arsenal_1 = {
+		desc = tb_arsenal_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		prestige_cost = 300
+		build_time = 547
+		land_morale = 0.1
+		levy_reinforce_rate = 0.1
+		ai_creation_factor = 98
+
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_arsenal_2 = {
+		desc = tb_arsenal_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = tb_arsenal_1
+		prestige_cost = 400
+		build_time = 730
+		land_morale = 0.1
+		levy_reinforce_rate = 0.1
+		ai_creation_factor = 97
+
+		extra_tech_building_start = 10.0 # Never get at start of game
+		
+		convert_to_castle = ca_training_grounds_1
+		convert_to_city = ct_barracks_1
+	}
+	
+	tb_arsenal_3 = {
+		desc = tb_arsenal_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = tb_arsenal_2
+		prestige_cost = 500
+		build_time = 1095
+		land_morale = 0.1
+		levy_reinforce_rate = 0.1
+		ai_creation_factor = 96
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+	}
+	
+	tb_arsenal_4 = {
+		desc = tb_arsenal_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		upgrades_from = tb_arsenal_3
+		prestige_cost = 600
+		build_time = 1460
+		land_morale = 0.1
+		levy_reinforce_rate = 0.1
+		ai_creation_factor = 95
+		
+		extra_tech_building_start = 10.0 # Never get at start of game
+		
+		convert_to_castle = ca_training_grounds_2
+		convert_to_city = ct_barracks_2
+	}
+}

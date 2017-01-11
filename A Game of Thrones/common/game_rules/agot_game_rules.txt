@@ -1,0 +1,355 @@
+#
+# List of options showing in the Game Rules screen
+#
+# format is:
+# rule_token = {
+#	name = "TEXT_KEY_FOR_NAME"
+#	desc = "TEXT_KEY_FOR_LONG_DESC"
+#	option = {										# please note that the first option is always the default option
+#		name = option_token
+#		text = "TEXT_KEY_FOR_OPTION_NAME"
+#		achievements = no							# by default achievements = yes, allows or disallows achievements
+#	}
+# }
+
+mega_wars = {
+	name = "RULE_MEGA_WARS"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_MEGA_WARS_ON_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_MEGA_WARS_OFF_DESC"
+	}
+}
+white_walkers = {
+	name = "RULE_WHITE_WALKERS"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_WHITE_WALKERS_ON_DESC"
+	}
+	option = {
+		name = canon
+		text = "RULE_OPTION_CANON"
+		desc = "RULE_WHITE_WALKERS_CANON_DESC"
+	}
+	option = {
+		name = hard # *2 troops
+		text = "RULE_WHITE_WALKERS_HARD"
+		desc = "RULE_WHITE_WALKERS_HARD_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_WHITE_WALKERS_OFF_DESC"
+	}
+}
+non_lore_invasions = {
+	name = "RULE_NON_LORE_INVASIONS"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_NON_LORE_INVASIONS_ON_DESC"
+	}
+	option = {
+		name = rare
+		text = "RULE_OPTION_RARE"
+		desc = "RULE_NON_LORE_INVASIONS_RARE_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_NON_LORE_INVASIONS_OFF_DESC"
+	}
+}
+dragon_hatching_taming = {
+	name = "RULE_DRAGON_HATCHING"
+	option = {
+		name = normal
+		text = "RULE_OPTION_NORMAL"
+		desc = "RULE_DRAGON_HATCHING_NORMAL_DESC"
+	}
+	option = {
+		name = easy
+		text = "RULE_DRAGON_HATCHING_EASY"
+		desc = "RULE_DRAGON_HATCHING_EASY_DESC"
+	}
+	option = {
+		name = less_hard
+		text = "RULE_DRAGON_HATCHING_LESS_HARD"
+		desc = "RULE_DRAGON_HATCHING_LESS_HARD_DESC"
+	}
+	option = {
+		name = hard
+		text = "RULE_DRAGON_HATCHING_HARD"
+		desc = "RULE_DRAGON_HATCHING_HARD_DESC"
+	}
+	option = {
+		name = valyrian_only
+		text = "RULE_DRAGON_HATCHING_VALYRIAN_ONLY"
+		desc = "RULE_DRAGON_HATCHING_VALYRIAN_ONLY_DESC"
+	}
+}
+high_valyrian_cull = {
+	name = "RULE_HIGH_VALYRIAN_CULL"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_HIGH_VALYRIAN_CULL_ON_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_HIGH_VALYRIAN_CULL_OFF_DESC"
+	}
+}
+duel_outcome_randomness = {
+	name = "RULE_DUEL_OUTCOME_RANDOMNESS"
+	option = {
+		name = normal
+		text = "RULE_OPTION_NORMAL"
+		desc = "RULE_DUEL_OUTCOME_RANDOMNESS_NORMAL_DESC"
+	}
+	option = {
+		name = very_low
+		text = "RULE_DUEL_OUTCOME_RANDOMNESS_VERY_LOW"
+		desc = "RULE_DUEL_OUTCOME_RANDOMNESS_VERY_LOW_DESC"
+	}
+	option = {
+		name = low
+		text = "RULE_DUEL_OUTCOME_RANDOMNESS_LOW"
+		desc = "RULE_DUEL_OUTCOME_RANDOMNESS_LOW_DESC"
+	}
+	option = {
+		name = high
+		text = "RULE_DUEL_OUTCOME_RANDOMNESS_HIGH"
+		desc = "RULE_DUEL_OUTCOME_RANDOMNESS_HIGH_DESC"
+	}
+}
+nomad_invasions = {
+	name = "RULE_NOMAD_INVASIONS"
+	option = {
+		name = normal
+		text = "RULE_OPTION_NORMAL"
+		desc = "RULE_NOMAD_INVASIONS_NORMAL_DESC"
+	}
+	option = {
+		name = unrestricted
+		text = "RULE_OPTION_UNRESTRICTED"
+		desc = "RULE_NOMAD_INVASIONS_UNRESTRICTED_DESC"
+	}
+}
+hl_creation_requirement = {
+	name = "RULE_HL_CREATION_REQUIREMENT"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_HL_CREATION_REQUIREMENT_ON_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_HL_CREATION_REQUIREMENT_OFF_DESC"
+	}
+}
+disinheritance_decisions = {
+	name = "RULE_DISINHERITANCE_DECISIONS"
+	option = {
+		name = normal
+		text = "RULE_OPTION_NORMAL"
+		desc = "RULE_DISINHERITANCE_DECISIONS_NORMAL_DESC"
+	}
+	option = {
+		name = unrestricted
+		text = "RULE_OPTION_UNRESTRICTED"
+		desc = "RULE_DISINHERITANCE_DECISIONS_UNRESTRICTED_DESC"
+	}
+}
+abdication = {
+	name = "RULE_ABDICATION"
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_ABDICATION_OFF_DESC"
+	}
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_ABDICATION_ON_DESC"
+	}
+}
+colinisation_cost = {
+	name = "RULE_COLINISATION_COST"
+	option = {
+		name = normal
+		text = "RULE_OPTION_NORMAL"
+		desc = "RULE_COLINISATION_COST_NORMAL_DESC"
+	}
+	option = {
+		name = cheap
+		text = "RULE_COLINISATION_COST_CHEAP"
+		desc = "RULE_COLINISATION_COST_CHEAP_DESC"
+	}
+	option = {
+		name = expensive
+		text = "RULE_COLINISATION_COST_EXPENSIVE"
+		desc = "RULE_COLINISATION_COST_EXPENSIVE_DESC"
+	}
+}
+colinisation_time = {
+	name = "RULE_COLINISATION_TIME"
+	option = {
+		name = normal
+		text = "RULE_OPTION_NORMAL"
+		desc = "RULE_COLINISATION_TIME_NORMAL_DESC"
+	}
+	option = {
+		name = short
+		text = "RULE_COLINISATION_TIME_SHORT"
+		desc = "RULE_COLINISATION_TIME_SHORT_DESC"
+	}
+	option = {
+		name = long
+		text = "RULE_COLINISATION_TIME_LONG"
+		desc = "RULE_COLINISATION_TIME_LONG_DESC"
+	}
+}
+battlefield_duels = {
+	name = "RULE_BATTLEFIELD_DUELS"
+	option = {
+		name = normal
+		text = "RULE_OPTION_NORMAL"
+		desc = "RULE_BATTLEFIELD_DUELS_NORMAL_DESC"
+	}
+	option = {
+		name = more_frequent
+		text = "RULE_BATTLEFIELD_DUELS_MORE_FREQUENT"
+		desc = "RULE_BATTLEFIELD_DUELS_MORE_FREQUENT_DESC"
+	}
+	option = {
+		name = rare
+		text = "RULE_OPTION_RARE"
+		desc = "RULE_BATTLEFIELD_DUELS_RARE_DESC"
+	}
+}
+shattered_realms = {
+	name = "RULE_SHATTERED_REALMS"
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_SHATTERED_REALMS_OFF_DESC"
+	}
+	option = {
+		name = counties
+		text = "RULE_SHATTERED_REALMS_COUNTIES"
+		desc = "RULE_SHATTERED_REALMS_COUNTIES_DESC"
+	}
+	option = {
+		name = duchies
+		text = "RULE_SHATTERED_REALMS_DUCHIES"
+		desc = "RULE_SHATTERED_REALMS_DUCHIES_DESC"
+	}
+	option = {
+		name = kingdoms
+		text = "RULE_SHATTERED_REALMS_KINGDOMS"
+		desc = "RULE_SHATTERED_REALMS_KINGDOMS_DESC"
+	}
+}
+symmetrical_start = {
+	name = "RULE_SYMMETRICAL_START"
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_SYMMETRICAL_START_OFF_DESC"
+	}
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_SYMMETRICAL_START_ON_DESC"
+	}
+}
+ambition_invasion = {
+	name = "RULE_AMBITION_INVASION"
+	option = {
+		name = normal
+		text = "RULE_OPTION_NORMAL"
+		desc = "RULE_AMBITION_INVASION_NORMAL_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_AMBITION_INVASION_OFF_DESC"
+	}
+	option = {
+		name = unrestricted
+		text = "RULE_OPTION_UNRESTRICTED"
+		desc = "RULE_AMBITION_INVASION_UNRESTRICTED_DESC"
+	}
+}
+ai_female_marriage_correction = {
+	name = "RULE_AI_FEMALE_MARRIAGE_CORRECTION"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_AI_FEMALE_MARRIAGE_CORRECTION_ON_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_AI_FEMALE_MARRIAGE_CORRECTION_OFF_DESC"
+	}
+}
+
+traditional_dynastic_claims = {
+	name = "RULE_TRADITIONAL_DYNASTIC_CLAIMS"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_TRADITIONAL_DYNASTIC_CLAIMS_ON_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_TRADITIONAL_DYNASTIC_CLAIMS_OFF_DESC"
+	}
+}
+dynastic_stability = {
+	name = "RULE_DYNASTIC_STABILITY"
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_DYNASTIC_STABILITY_OFF_DESC"
+	}
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_DYNASTIC_STABILITY_ON_DESC"
+	}
+}
+fabricating_claims = {
+	name = "RULE_FABRICATING_CLAIMS"
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_FABRICATING_CLAIMS_ON_DESC"
+	}
+	option = {
+		name = faster
+		text = "RULE_OPTION_FASTER"
+		desc = "RULE_FABRICATING_CLAIMS_FASTER_DESC"
+	}
+	option = {
+		name = slower
+		text = "RULE_FABRICATING_CLAIMS_SLOWER"
+		desc = "RULE_FABRICATING_CLAIMS_SLOWER_DESC"
+	}
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_FABRICATING_CLAIMS_OFF_DESC"
+	}
+}

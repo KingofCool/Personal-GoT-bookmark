@@ -1,0 +1,4 @@
+# The character is visibly scarred from an old wound
+scarred = {
+	monthly_character_prestige = 0.1
+}

@@ -1,0 +1,427 @@
+###########################################
+#
+# Holy Order Decisions for Sons of Abraham
+#
+###########################################
+# Written by Henrik Fåhraeus
+###########################################
+
+# Holy Order Decisions are listed for each existing holy order of the right religion
+
+decisions = {
+
+	donate_money_to_knights_templar = {
+		only_rulers = yes
+		potential = {
+			religion = the_seven
+			is_heretic = no
+			is_title_active = d_warriors_sons	
+			NOT = { has_character_modifier = expelled_d_warriors_sons }
+						
+			has_dlc = "Sons of Abraham"
+			holy_order = no
+			NOT = { trait = incapable }
+						
+			d_warriors_sons	 = {
+				holder_scope = {
+					liege = {
+						NOT = { character = ROOT }
+					}
+				}
+			}
+		}
+		
+		allow = {
+			wealth = 300
+		}
+		
+		effect = {
+			wealth = -300
+			if = {
+				limit = { 
+					has_character_modifier = donated_to_holy_order
+				}
+				piety = 50
+			}
+			if = {
+				limit = { 
+					NOT = { has_character_modifier = donated_to_holy_order }
+				}
+				piety = 300
+				add_character_modifier = {
+					name = donated_to_holy_order
+					duration = -1
+				}
+			}
+			
+			hidden_tooltip = {
+				d_warriors_sons = {
+					holder_scope = {
+						character_event = {
+							id = SoA.1140
+						}
+						ROOT = {
+							chronicle = {
+								entry = CHRONICLE_HOLY_ORDER_DONATION
+								portrait = [Prev.GetID]
+							}
+						}
+					}
+				}
+			}
+			
+			
+			
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					piety = 1000
+					NOT = { wealth = 1000 }
+					controls_religion = the_seven
+					trait = greedy
+					trait = cynical
+				}
+			}
+			modifier = {
+				factor = 0.002 # Slow it down
+			}
+		}
+	}
+	
+	donate_money_to_knights_hospitaler = {
+		only_rulers = yes
+		potential = {
+			religion = the_seven
+			is_heretic = no
+			is_title_active = d_poor_fellows
+			NOT = { has_character_modifier = expelled_d_poor_fellows }	
+			
+			has_dlc = "Sons of Abraham"
+			holy_order = no
+			NOT = { trait = incapable }
+			
+			d_poor_fellows = {
+				holder_scope = {
+					liege = {
+						NOT = { character = ROOT }
+					}
+				}
+			}
+		}
+		
+		allow = {
+			wealth = 300
+		}
+		
+		effect = {
+			wealth = -300
+			if = {
+				limit = { 
+					has_character_modifier = donated_to_holy_order
+				}
+				piety = 50
+			}
+			if = {
+				limit = { 
+					NOT = { has_character_modifier = donated_to_holy_order }
+				}
+				piety = 300
+				add_character_modifier = {
+					name = donated_to_holy_order
+					duration = -1
+				}
+			}
+			
+			hidden_tooltip = {
+				d_poor_fellows = {
+					holder_scope = {
+						character_event = {
+							id = SoA.1140
+						}
+						ROOT = {
+							chronicle = {
+								entry = CHRONICLE_HOLY_ORDER_DONATION
+								portrait = [Prev.GetID]
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					piety = 1000
+					NOT = { wealth = 1000 }
+					controls_religion = the_seven
+					trait = greedy
+					trait = cynical
+				}
+			}
+			modifier = {
+				factor = 0.002 # Slow it down
+			}
+		}
+	}
+	
+	donate_money_to_teutonic_order = {
+		only_rulers = yes
+		potential = {
+			religion = bearded_priests
+			is_heretic = no
+			is_title_active = d_bearded_priests
+			#NOT = { has_character_modifier = expelled_d_bearded_priests }				
+			has_dlc = "Sons of Abraham"
+			d_bearded_priests	= {
+				holder_scope = {
+					liege = {
+						NOT = { character = ROOT }
+					}
+				}
+			}
+		}
+		
+		allow = {
+			wealth = 300
+		}
+		
+		effect = {
+			wealth = -300
+			if = {
+				limit = { 
+					has_character_modifier = donated_to_holy_order
+				}
+				piety = 50
+			}
+			if = {
+				limit = { 
+					NOT = { has_character_modifier = donated_to_holy_order }
+				}
+				piety = 300
+				add_character_modifier = {
+					name = donated_to_holy_order
+					duration = -1
+				}
+			}
+			
+			hidden_tooltip = {
+				d_bearded_priests	= {
+					holder_scope = {
+						character_event = {
+							id = SoA.1340
+						}
+						ROOT = {
+							chronicle = {
+								entry = CHRONICLE_HOLY_ORDER_DONATION
+								portrait = [Prev.GetID]
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					piety = 1000
+					NOT = { wealth = 1000 }
+					trait = greedy
+					trait = cynical
+				}
+			}
+			modifier = {
+				factor = 0.002 # Slow it down
+			}
+		}
+	}	
+	expel_the_knights_templar = {
+		only_playable = yes
+		potential = {
+			ai = no
+			religion = the_seven
+			higher_tier_than = DUKE
+			independent = yes
+			is_title_active = d_warriors_sons
+			NOT = { has_character_modifier = expelled_d_warriors_sons }
+		
+			any_realm_province = {
+				any_province_lord = {
+					d_warriors_sons = {
+						holder_scope = {
+							OR = {
+								character = PREVPREV
+								is_vassal_or_below = PREVPREV
+							}
+						}
+					}
+				}
+			}
+			
+			has_dlc = "Sons of Abraham"
+		}
+		
+		allow = {
+			piety = 500
+			crownlaw_title = { NOT = { has_law = investiture_law_3 } }
+			custom_tooltip = {
+				text = expelling_holy_order_decision_tooltip
+				hidden_tooltip = {
+					NOT = { has_character_flag = expel_the_knights_templar_check }
+				}
+			}
+		}
+		
+		effect = {
+			set_character_flag = expel_the_knights_templar_check
+			custom_tooltip = {
+				text = expelling_holy_order_decision_tooltip_b
+				hidden_tooltip = {
+					character_event = { id = SoA.2990 }
+				}
+			}
+		}
+		# effect = {
+			# piety = -500
+			
+			# religion_authority = {
+				# modifier = holy_order_expelled
+				# years = 20
+			# }
+			
+			# hidden_tooltip = {
+				# d_warriors_sons = {
+					# holder_scope = {
+						# character_event = {
+							# id = SoA.1060
+						# }
+						# ROOT = {
+							# chronicle = {
+								# entry = CHRONICLE_HOLY_ORDER_EXPELLED
+								# portrait = [Prev.GetID]
+							# }
+						# }
+					# }
+				# }
+				# add_character_modifier = {
+					# name = expelled_d_warriors_sons
+					# duration = -1
+					# inherit = yes
+				# }
+			# }
+		# }
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	expel_the_knights_hospitaler = {
+		only_playable = yes
+		potential = {
+			ai = no
+			religion = the_seven
+			higher_tier_than = DUKE
+			independent = yes
+			is_title_active = d_poor_fellows
+			NOT = { has_character_modifier = expelled_d_poor_fellows }
+			
+			any_realm_province = {
+				any_province_lord = {
+					d_poor_fellows = {
+						holder_scope = {
+							OR = {
+								character = PREVPREV
+								is_vassal_or_below = PREVPREV
+							}
+						}
+					}
+				}
+			}
+			
+			has_dlc = "Sons of Abraham"
+		}
+		
+		allow = {
+			piety = 500
+			crownlaw_title = { NOT = { has_law = investiture_law_3 } }
+			custom_tooltip = {
+				text = expelling_holy_order_decision_tooltip
+				hidden_tooltip = {
+					NOT = { has_character_flag = expel_the_knights_hospitaler_check }
+				}
+			}
+		}
+		
+		effect = {
+			set_character_flag = expel_the_knights_hospitaler_check
+			custom_tooltip = {
+				text = expelling_holy_order_decision_tooltip_b
+				hidden_tooltip = {
+					character_event = { id = SoA.2990 }
+				}
+			}
+		}
+		# effect = {
+			# piety = -500
+			
+			# religion_authority = {
+				# modifier = holy_order_expelled
+				# years = 20
+			# }
+			
+			# hidden_tooltip = {
+				# d_poor_fellows = {
+					# holder_scope = {
+						# character_event = {
+							# id = SoA.1060
+						# }
+						# ROOT = {
+							# chronicle = {
+								# entry = CHRONICLE_HOLY_ORDER_EXPELLED
+								# portrait = [Prev.GetID]
+							# }
+						# }
+					# }
+				# }
+				# add_character_modifier = {
+					# name = expelled_d_poor_fellows
+					# duration = -1
+					# inherit = yes
+				# }
+			# }
+		# }
+		
+		revoke_allowed = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

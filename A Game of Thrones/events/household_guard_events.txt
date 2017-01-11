@@ -1,0 +1,316 @@
+#Capital Guard established
+character_event = {
+	id = 347796
+	desc = "EVTDESC347796"	
+	
+	is_triggered_only = yes
+	
+	picture = "GFX_evt_emissary"
+
+	immediate = {
+		hidden_tooltip = {
+			top_liege = {
+				any_realm_province = {
+					limit = {
+						is_capital = no
+						has_province_modifier = employed_cityguard
+					}
+					remove_province_modifier = employed_cityguard 
+					remove_province_modifier = cityguard_busy
+					remove_province_modifier = cityguard_drilling
+					remove_province_modifier = forced_training
+					remove_province_modifier = capital_defense
+					#remove_province_modifier = burned_land
+					remove_province_modifier = tyranny
+				}
+			}
+		}	
+	}
+
+	option = {
+		name = "EVTOPTA347796" #Good work	
+		custom_tooltip = { text = TOOLTIP347796 }
+	}
+}
+
+#Menu
+character_event = {
+	id = 347790
+	desc = "EVTDESC347790"	
+	
+	is_triggered_only = yes
+	
+	only_playable = yes
+	prisoner = no
+	
+	picture = "GFX_evt_emissary"
+
+	trigger = {
+		capital_scope = {
+			NOT = { has_province_modifier = cityguard_busy }
+		}
+	}
+	
+	option = {
+		name = "EVTOPTA347790" #Improve
+		character_event = { id = 347791 tooltip = EVTTOOLTIP347790 }
+	}
+	option = {
+		trigger = {
+			wealth = 10
+			capital_scope = {
+				NOT = { has_province_modifier = capital_defense }
+			}
+		}
+		name = "EVTOPTA347792" #Prepare to defend
+		hidden_tooltip = {
+			add_province_modifier = {
+				name = cityguard_busy
+				duration = 30
+			}
+		}
+		if = {
+			limit = { yearly_income = 200 }
+			scaled_wealth = -0.25
+		}
+		if = {
+			limit = { NOT = { yearly_income = 200 } }
+			wealth = -50
+		}				
+		character_event = { id = 347795 days = 30 tooltip = TOOLTIP347795 }	
+	}
+	# option = {
+		# name = "EVTOPTB347790" #Defend
+		# character_event = { id = 347792 tooltip = EVTTOOLTIP347791 }
+	# }
+	option = {
+		name = "EVTOPTC347790" #Enforce
+		character_event = { id = 347793 tooltip = EVTTOOLTIP347792 }
+	}
+	option = {
+		name = "EVTOPTD347790" #Nothing
+	}
+	
+}
+#Improve
+character_event = {
+	id = 347791
+	desc = "EVTDESC347791"	
+	
+	is_triggered_only = yes
+	
+	only_playable = yes
+	prisoner = no
+	
+	picture = "GFX_evt_emissary"
+	
+	trigger = {
+		capital_scope = {
+			NOT = { has_province_modifier = cityguard_busy }
+		}
+	}
+	
+	option = {
+		trigger = {
+			capital_scope = {
+				NOT = { has_province_modifier = forced_training }
+			}
+		}
+		name = "EVTOPTA347791" #Train		
+		capital_scope = {		
+			add_province_modifier = {
+				name = forced_training
+				duration = -1
+			}
+			hidden_tooltip = { 
+				remove_province_modifier = cityguard_drilling
+				remove_province_modifier = tyranny
+				remove_province_modifier = capital_defense
+				#remove_province_modifier = burned_land
+			}	
+		}
+	}
+	option = {
+		trigger = {
+			capital_scope = {
+				NOT = { has_province_modifier = cityguard_drilling }
+			}
+		}
+		name = "EVTOPTB347791" #Drill		
+		capital_scope = {	
+			add_province_modifier = {
+				name = cityguard_drilling
+				duration = -1
+			}
+			hidden_tooltip = { 
+				remove_province_modifier = forced_training
+				remove_province_modifier = tyranny
+				remove_province_modifier = capital_defense
+				#remove_province_modifier = burned_land
+			}		
+		}
+	}
+	option = {
+		name = "EVTOPTD347791" #Nothing			
+	}		
+}
+
+# #Defend
+# character_event = {
+	# id = 347792
+	# desc = "EVTDESC347792"	
+	
+	# is_triggered_only = yes
+	
+	# only_playable = yes
+	# prisoner = no
+	
+	# picture = "GFX_evt_emissary"
+
+	# trigger = {
+		# capital_scope = {
+			# NOT = { has_province_modifier = cityguard_busy }
+		# }
+	# }
+	
+	# option = {
+		# trigger = {
+			# wealth = 10
+			# capital_scope = {
+				# NOT = { has_province_modifier = capital_defense }
+			# }
+		# }
+		# name = "EVTOPTA347792" #Prepare to defend
+		# wealth = -50
+		# character_event = { id = 347795 days = 30 }	
+	# }
+	# option = {
+		# name = "EVTOPTD347792" #Nothing			
+	# }	
+# }
+
+#Enforce
+character_event = {
+	id = 347793
+	desc = "EVTDESC347793"	
+	
+	is_triggered_only = yes
+	
+	only_playable = yes
+	prisoner = no
+	
+	picture = "GFX_evt_emissary"
+
+	trigger = {
+		capital_scope = {
+			NOT = { has_province_modifier = cityguard_busy }
+		}
+	}
+
+	option = {
+		name = "EVTOPTA347793" #Tyranny
+		trigger = {
+			capital_scope = {
+				NOT = { has_province_modifier = tyranny }
+			}
+		}
+		if = {
+			limit = { tier = EMPEROR }
+			prestige = -100
+		}
+		if = {
+			limit = { tier = KING }
+			prestige = -75
+		}
+		if = {
+			limit = { tier = DUKE }
+			prestige = -40
+		}
+		if = {
+			limit = { tier = COUNT }
+			prestige = -20
+		}	
+		capital_scope = {		
+			add_province_modifier = {
+				name = tyranny
+				duration = -1
+			}
+			hidden_tooltip = { 
+				remove_province_modifier = cityguard_drilling
+				remove_province_modifier = forced_training
+				remove_province_modifier = capital_defense
+				#remove_province_modifier = burned_land
+			}
+		}		
+	}
+	option = {
+		name = "EVTOPTB347793" #Burn Land
+		trigger = {
+			capital_scope = {
+				NOT = { has_province_modifier = burned_land }
+			}
+		}
+		#set_character_flag = hk_burnedland
+		if = {
+			limit = { tier = EMPEROR }
+			prestige = -50
+		}
+		if = {
+			limit = { tier = KING }
+			prestige = -35
+		}
+		if = {
+			limit = { tier = DUKE }
+			prestige = -20
+		}
+		if = {
+			limit = { tier = COUNT }
+			prestige = -10
+		}
+		capital_scope = {		
+			add_province_modifier = {
+				name = burned_land
+				duration = 1825
+			}
+			hidden_tooltip = { 
+				remove_province_modifier = cityguard_drilling
+				remove_province_modifier = forced_training
+				remove_province_modifier = tyranny
+				remove_province_modifier = capital_defense
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTD347793" #Nothing			
+	}	
+}
+
+#Build defenses
+character_event = {
+	id = 347795
+	desc = "EVTDESC347795"	
+	
+	is_triggered_only = yes	
+	only_playable = yes
+	prisoner = no
+	
+	picture = "GFX_evt_emissary"
+
+	option = {
+		name = "EVTOPTA347795" #Good work
+		capital_scope = {		
+			add_province_modifier = {
+				name = capital_defense
+				duration = -1
+			}
+			hidden_tooltip = { 
+				remove_province_modifier = cityguard_drilling
+				remove_province_modifier = forced_training
+				remove_province_modifier = tyranny
+				remove_province_modifier = capital_defense
+				#remove_province_modifier = burned_land
+			}
+		}
+	}
+}
+

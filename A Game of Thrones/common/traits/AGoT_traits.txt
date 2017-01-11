@@ -1,0 +1,273 @@
+bracken = {
+	# congenital = yes #Not a great idea, random characters will get the traits
+	# birth = yes
+	#inherit_chance = 100
+	opposites =  {blackwood}
+	opposite_opinion = -100
+	ai_ambition = 20
+	customizer = no
+}
+blackwood= {
+	# congenital = yes
+	# inherit_chance = 100
+	# birth = yes
+	opposites =  {bracken }
+	opposite_opinion = -100
+	ai_ambition = 20
+	customizer = no
+}
+kingsguard = {
+	diplomacy = 1
+	monthly_character_prestige = 2
+	monthly_character_piety = 0.1
+	liege_opinion = 15
+	#top_liege_opinion = 30 #does not work
+	customizer = no
+	cached = yes
+	cannot_marry = yes
+	cannot_inherit = yes
+	ai_ambition = -20
+	command_modifier = {
+		morale_defence = 0.2
+	}
+}
+
+elephant = {
+	opposites =  {
+		tiger
+	}
+	opposite_opinion = -15
+
+	ai_ambition = -30
+
+	global_tax_modifier = 0.025
+	command_modifier = {
+		morale_offence = -0.025
+		morale_defence = -0.025
+	}
+	customizer = no
+}
+tiger = {
+	opposites =  {
+		elephant
+	}
+	opposite_opinion = -15
+
+	ai_ambition = 20
+	
+	global_tax_modifier = -0.025
+	command_modifier = {
+		morale_offence = 0.025
+		morale_defence = 0.025
+	}
+	customizer = no
+}
+
+giant= {
+	customizer = no
+	cannot_marry = yes
+	opposites = { wildling } # Counteract wildling general malus
+	opposite_opinion = 100
+}
+
+
+disinherited ={
+	monthly_character_prestige = -0.5
+	diplomacy = -2
+	cannot_inherit = yes
+	customizer = no
+}
+
+#Added by jjstinson
+###New Disease###
+has_grey_plague = {
+	is_epidemic = yes
+	is_illness = yes	
+	health_penalty = -7
+	customizer = no
+	
+	combat_rating = -5.17
+}
+has_greyscale = {
+	#is_epidemic = yes
+	is_illness = yes	
+	sex_appeal_opinion = -25
+	general_opinion = -5
+	diplomacy_penalty = -3
+	health_penalty = -3
+	customizer = no
+	
+	combat_rating = -2
+}
+has_bloody_flux = { 
+	is_epidemic = yes
+	is_illness = yes
+	health_penalty = -2
+	customizer = no
+	
+	combat_rating = -5.17
+}
+not_a_bear = {
+	diplomacy = -1
+	customizer = no
+}
+has_pox = { 
+	is_health = yes
+	is_illness = yes
+	health_penalty = -2
+	fertility_penalty = -0.2
+	sex_appeal_opinion = -15
+	customizer = no
+	
+	combat_rating = -2
+	
+	male_insult_adj = INSULT_POX_RIDDEN
+	female_insult_adj = INSULT_POX_RIDDEN
+	child_insult_adj = INSULT_SMELLY
+}
+has_missing = {
+	is_epidemic = yes
+	is_illness = yes
+	pilgrimage = yes # Will need a regent, but can still be guardian to children
+	cannot_marry = yes
+	health = -1
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger 	
+	customizer = no
+}
+
+
+
+#Maesters see maester_traits
+
+nightswatch = {	
+	#opposites = { turncloak }
+	potential = {
+		is_female = no
+	}
+	monthly_character_piety = 0.2
+
+	same_opinion = 5
+	#sex_appeal_opinion = -100
+	dynasty_opinion = 5
+	general_opinion = 5
+	opposite_opinion = -50
+	customizer = no
+	cannot_marry = yes
+	cannot_inherit = yes
+
+	ai_ambition = -25
+	ai_honor = 10
+}
+
+turncloak = {
+	#opposites = { nightswatch }
+	
+	same_opinion = 5
+	general_opinion = -20
+	
+	monthly_character_piety = -0.2
+	customizer = no
+	
+	male_insult = INSULT_TURNCLOAK
+	female_insult = INSULT_TURNCLOAK
+}
+
+deserter = {
+	opposites = { nightswatch }
+
+	same_opinion = 10
+	general_opinion = -20
+
+	monthly_character_piety = -0.2
+	customizer = no
+	
+	male_insult = INSULT_BETRAYER
+	female_insult = INSULT_DESERTER
+}
+
+fire_obsessed = {
+	learning = 2
+	stewardship = -1
+	
+	same_opinion = 15
+	
+	ai_rationality = -20
+	
+	male_insult = INSULT_PYROMANIAC
+	female_insult = INSULT_PYROMANIAC
+	male_insult_adj = INSULT_DEMENTED
+	female_insult_adj = INSULT_CRAZED
+	child_insult_adj = CRAZY
+}
+
+# Wildlings do not get along well with others
+wildling = {
+	general_opinion = -50
+	same_opinion = 50
+	ai_honor = -100
+	customizer = no
+	
+	male_insult = INSULT_WILDLING
+	female_insult = INSULT_WILDLING
+	male_insult_adj = INSULT_SAVAGE
+	female_insult_adj = INSULT_SAVAGE
+}
+
+# Pirates do not get along well with others
+pirate = {
+	general_opinion = -50
+	same_opinion = 50
+	ai_honor = -100
+	customizer = no
+	
+	male_insult = INSULT_SEA_RAT
+	female_insult = INSULT_PIRATE
+}
+
+# Declared incapable by regent
+declared_incapable = {
+	incapacitating = yes # Will need a regent	
+	
+	opposites = {
+		incapable
+	}
+	diplomacy = -6
+	intrigue = -6
+	martial = -6
+	stewardship = -6
+	monthly_character_prestige = -1
+	customizer=no
+}
+winterhorn = {
+	ai_ambition = 20
+	monthly_character_prestige = 2
+	customizer = no
+	cached = yes
+}
+
+# Reaving
+on_reaving = {
+	pilgrimage = yes # Will need a regent, but can still be guardian to children
+	cached=yes
+	customizer=no
+}
+salt_wife = {
+	general_opinion = -15
+	same_opinion = 10
+	
+	#fertility = -100.0
+	
+	diplomacy = -10
+	monthly_character_prestige = -0.05
+	cached=yes
+	customizer=no
+	cannot_marry = yes
+	cannot_inherit = yes
+}
+
+
+
+
+
+
+

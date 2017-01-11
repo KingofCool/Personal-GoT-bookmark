@@ -1,0 +1,267 @@
+decisions = {
+	dragon_dreams_reveal_plots = { #reveal plots
+		is_high_prio = yes
+		only_playable = yes
+		
+		potential = {
+			is_ruler = yes
+			OR = {
+				trait = dragon_dreams
+				AND = {
+					NOT = { trait = dragon_dreams }
+					any_courtier = { trait = dragon_dreams }
+				}
+			}
+		}
+		allow = {
+			custom_tooltip = {
+				text = TOOLTIPredgod_reveal_plots # Localisation works for this as well
+				hidden_tooltip = {
+					OR = {
+						any_unknown_plotter = { 
+							plot_target_char = { always = yes }
+							NOT = { has_plot = plot_rescue_prisoner }
+							NOT = { plot_is_known_by = ROOT }
+							NOT = { character = ROOT }
+						}
+						any_spouse = {
+							any_unknown_plotter = {
+								plot_target_char = { always = yes }
+								NOT = { has_plot = plot_rescue_prisoner }
+								NOT = { plot_is_known_by = ROOT }
+								NOT = { character = ROOT }
+							}
+						}
+						any_child = {
+							any_unknown_plotter = {
+								plot_target_char = { always = yes }
+								NOT = { has_plot = plot_rescue_prisoner }
+								NOT = { plot_is_known_by = ROOT }
+								NOT = { character = ROOT }
+							}
+						}
+						any_child = {
+							any_child = {
+								any_unknown_plotter = {
+									plot_target_char = { always = yes }
+									NOT = { has_plot = plot_rescue_prisoner }
+									NOT = { plot_is_known_by = ROOT }
+									NOT = { character = ROOT }
+								}
+							}
+						}	
+						any_sibling = {
+							any_unknown_plotter = {
+								plot_target_char = { always = yes }
+								NOT = { has_plot = plot_rescue_prisoner }
+								NOT = { plot_is_known_by = ROOT }
+								NOT = { character = ROOT }
+							}
+						}
+					}
+				}
+			}
+			OR = {
+				trait = dragon_dreams
+				AND = {
+					NOT = { trait = dragon_dreams }
+					any_courtier = { trait = dragon_dreams }
+				}
+			}
+			NOT = { has_character_modifier = dragon_dreams_reveal_plots_timer }
+		}
+				
+		effect = {
+			if = {
+				limit = { trait = dragon_dreams }
+				save_event_target_as = dragon_dreamer
+				random_list = {
+					50 = {
+						custom_tooltip = {
+							text = TOOLTIPredgod_reveal_plotsSUCCESS # Localisation works for this as well
+							hidden_tooltip = { ROOT = { character_event = { id = high_valyrian.30 } } }
+						}
+						
+						modifier = {
+							factor = 3
+							culture = high_valyrian
+						}
+						modifier = {
+							factor = 1.5
+							culture_group = valyrian
+						}
+						modifier = {
+							factor = 2
+							dynasty = 496
+						}
+						modifier = {
+							factor = 1.5
+							OR = {					
+								dynasty = 7000 #Bittersteel
+								dynasty = 57 #Blackfyre
+								dynasty = 497 #Aegons "of Essos"
+								#Targ cadets
+								dynasty = 45000204
+								dynasty = 45000205
+								dynasty = 45000206
+								dynasty = 45000207
+							}
+						}
+						
+						modifier = {
+							factor = 0.66
+							NOT = { learning = 4 }
+						}
+						modifier = {
+							factor = 0.66
+							NOT = { learning = 8 }
+						}
+						modifier = {
+							factor = 1.5
+							learning = 12
+						}
+						modifier = {
+							factor = 1.5
+							learning = 16
+						}
+						modifier = {
+							factor = 1.5
+							learning = 20
+						}
+						
+						modifier = {
+							factor = 0.66
+							NOT = { intrigue = 4 }
+						}
+						modifier = {
+							factor = 0.66
+							NOT = { intrigue = 8 }
+						}
+						modifier = {
+							factor = 1.5
+							intrigue = 12
+						}
+						modifier = {
+							factor = 1.5
+							intrigue = 16
+						}
+						modifier = {
+							factor = 1.5
+							intrigue = 20
+						}
+					}
+					50 = {
+						custom_tooltip = {
+							text = TOOLTIPredgod_reveal_plotsFAIL # Localisation works for this as well
+							hidden_tooltip = { ROOT = { character_event = { id = high_valyrian.31 } } }
+						}	
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { trait = dragon_dreams }
+				}
+				random_courtier = {
+					limit = { trait = dragon_dreams }
+					save_event_target_as = dragon_dreamer
+					random_list = {
+						50 = {
+							custom_tooltip = {
+								text = TOOLTIPredgod_reveal_plotsSUCCESS # Localisation works for this as well
+								hidden_tooltip = { ROOT = { character_event = { id = high_valyrian.30 } } }
+							}
+							
+							modifier = {
+								factor = 3
+								culture = high_valyrian
+							}
+							modifier = {
+								factor = 1.5
+								culture_group = valyrian
+							}
+							modifier = {
+								factor = 2
+								dynasty = 496
+							}
+							modifier = {
+								factor = 1.5
+								OR = {					
+									dynasty = 7000 #Bittersteel
+									dynasty = 57 #Blackfyre
+									dynasty = 497 #Aegons "of Essos"
+									#Targ cadets
+									dynasty = 45000204
+									dynasty = 45000205
+									dynasty = 45000206
+									dynasty = 45000207
+								}
+							}
+							
+							modifier = {
+								factor = 0.66
+								NOT = { learning = 4 }
+							}
+							modifier = {
+								factor = 0.66
+								NOT = { learning = 8 }
+							}
+							modifier = {
+								factor = 1.5
+								learning = 12
+							}
+							modifier = {
+								factor = 1.5
+								learning = 16
+							}
+							modifier = {
+								factor = 1.5
+								learning = 20
+							}
+							
+							modifier = {
+								factor = 0.66
+								NOT = { intrigue = 4 }
+							}
+							modifier = {
+								factor = 0.66
+								NOT = { intrigue = 8 }
+							}
+							modifier = {
+								factor = 1.5
+								intrigue = 12
+							}
+							modifier = {
+								factor = 1.5
+								intrigue = 16
+							}
+							modifier = {
+								factor = 1.5
+								intrigue = 20
+							}
+						}
+						50 = {
+							custom_tooltip = {
+								text = TOOLTIPredgod_reveal_plotsFAIL # Localisation works for this as well
+								hidden_tooltip = { ROOT = { character_event = { id = high_valyrian.31 } } }
+							}	
+						}
+					}
+				}
+			}
+			hidden_tooltip = {
+				add_character_modifier = {
+					name = dragon_dreams_reveal_plots_timer
+					duration = 365
+				}
+			}
+		}		
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				factor = 100
+				trait = paranoid 
+			}
+		} 
+	}
+}

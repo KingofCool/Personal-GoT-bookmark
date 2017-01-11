@@ -1,0 +1,57 @@
+building_alchemist_guild = {
+	icon = 29
+}
+
+alchemist_guild = {
+	icon = 9
+}
+
+making_wildfire = {
+	icon = 2
+}
+
+destroying_wildfire = {
+	icon = 27
+}
+
+wildfire_1 = {
+	icon = 9
+}
+
+wildfire_2 = {
+	icon = 9
+}
+
+wildfire_3 = {
+	icon = 9
+}
+
+wildfire_4 = {
+	icon = 9
+}
+
+wildfire_5 = {
+	icon = 9
+}
+
+wildfire_outbreak = { #doesnt magically kill everyone in the province
+	supply_limit = -10
+	#local_build_time_modifier = 10
+	#local_build_cost_modifier = 10
+	#castle_levy_size = -0.95
+	#city_levy_size = -0.95
+	#temple_levy_size = -0.95
+	levy_reinforce_rate = -0.95
+	tax_income = -5
+	icon = 9
+}
+
+used_wildfire_in_siege = {
+	icon = 9
+}
+
+wildfire_display = {
+	local_revolt_risk = -0.05
+	local_tax_modifier = 0.05
+	icon = 8
+}

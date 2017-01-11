@@ -1,0 +1,305 @@
+republic_governments = {
+
+	merchant_republic_government = {
+		preferred_holdings = { CITY }
+		allowed_holdings = { 
+			TRADE_POST
+			CITY
+			CASTLE
+			FAMILY_PALACE
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+		accepts_liege_governments = { # Accepts other republics
+			republic_government
+			triarch_merchant_republic_government
+			alliance_government
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			tribal_government
+		}
+		frame_suffix = "_merchantrepublic"
+		title_prefix = "city_"
+		potential = {
+			controls_religion = no
+			OR = {
+				AND = {
+					is_patrician = yes
+					OR = {
+						liege_before_war = {
+							NOT = { character = PREV }
+							is_merchant_republic = yes
+							NOT = {
+								liege_before_war = {
+									NOT = { character = PREV }
+									is_republic = yes
+								}
+							}
+						}
+						has_game_started = no
+					}
+				}
+				AND = {
+					OR = {
+						AND = {
+							has_game_started = yes
+							is_merchant_republic = yes
+						}
+						capital_scope = { port = yes }
+					}
+					higher_real_tier_than = COUNT
+					any_demesne_title = {
+						tier = BARON
+						NOT = { holding_type = family_palace }
+						location = { has_owner = yes }
+					}
+					NOR = {
+						liege_before_war = {
+							NOT = { character = PREV }
+							is_republic = yes
+						}
+						any_liege = {
+							NOT = { character = PREV }
+							is_republic = yes
+						}
+					}
+					NAND = { #Standard Republic split during mega war
+						independent = yes
+						NOT = { tier = EMPEROR }
+						is_merchant_republic = no
+						primary_title = { check_variable = { which = "de_facto_empire" value = 1 } }
+					}
+				}
+			}
+			# Conditions for other governments
+			NAND = { # Triarchs
+				higher_tier_than = DUKE
+				OR = {
+					AND = { #Primary Title is Volantis
+						primary_title = { title = k_volantis }
+						OR = { #Ruler or any patrician is Valyrian or Essosi
+							culture_group = valyrian
+							culture_group = free_cities
+							any_vassal = {
+								is_patrician = yes
+								OR = {
+									culture_group = valyrian
+									culture_group = free_cities
+								}	
+							}
+						}						
+					}				
+					AND = { #Ruler is Eastern Valyrian or Volantene
+						OR = {
+							culture = eastern_valyrian
+							culture = volantene
+						}
+						OR = { #Republic is located in Volantis region or all patricians are Valyrian/Volantene
+							capital_scope = { region = world_volantis }
+							primary_title = { capital_scope = { region = world_volantis } }
+							NOT = {
+								any_vassal = {
+									is_patrician = yes
+									NOR = {
+										culture_group = valyrian
+										culture = volantene
+									}	
+								}
+							}	
+						}
+					}	
+				}	
+				OR = { #triarch elections do not happen in the revived freehold
+					NOT = { has_global_flag = revived_valyrian_freehold }
+					NOT = { has_landed_title = e_new_valyria }
+				}
+			}
+		}
+		
+		color = { 250 0 0 }
+		
+		merchant_republic = yes
+		
+		can_imprison_without_reason = no
+		can_revoke_without_reason = no
+		#can_usurp_kingdoms_and_empires = no
+		#have_gender_laws = no
+		can_grant_kingdoms_and_empires_to_other_government = yes
+		#allows_matrilineal_marriage = no
+
+		can_build_tribal = no
+				
+		#landed_inheritance = no
+	}
+	
+	republic_government = {
+		preferred_holdings = { CITY }
+		allowed_holdings = { 
+			CITY
+			CASTLE
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+		accepts_liege_governments = { # Accepts other republics
+			merchant_republic_government
+			NW_government # For Brandons Gift
+			alliance_government
+			triarch_merchant_republic_government
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			tribal_government
+		}
+		frame_suffix = "_republic"
+		title_prefix = "city_"
+		potential = {
+			controls_religion = no
+			NOT = { is_government_potential = merchant_republic_government }
+			NOT = { is_government_potential = triarch_merchant_republic_government }
+			NOT = { is_government_potential = military_command_government }
+		}
+		
+		color = { 209 125 130 }
+		
+		can_imprison_without_reason = no
+		can_revoke_without_reason = no
+		can_build_tribal = no
+	}
+	
+	triarch_merchant_republic_government = {
+		preferred_holdings = { CITY }
+		allowed_holdings = { 
+			TRADE_POST
+			CITY
+			CASTLE
+			FAMILY_PALACE
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+		accepts_liege_governments = { # Accepts other republics
+			republic_government
+			merchant_republic_government
+			alliance_government
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			tribal_government
+		}
+		frame_suffix = "_merchantrepublic"
+		title_prefix = "triarchy_"
+		potential = {
+			controls_religion = no
+			OR = {
+				AND = {
+					is_patrician = yes
+					OR = {
+						liege_before_war = {
+							NOT = { character = PREV }
+							is_merchant_republic = yes
+							NOT = {
+								liege_before_war = {
+									NOT = { character = PREV }
+									is_republic = yes
+								}
+							}
+						}
+						has_game_started = no
+					}
+				}
+				AND = {
+					OR = {
+						AND = {
+							has_game_started = yes
+							is_merchant_republic = yes
+						}
+						capital_scope = { port = yes }
+					}
+					higher_real_tier_than = COUNT
+					any_demesne_title = {
+						tier = BARON
+						NOT = { holding_type = family_palace }
+						location = { has_owner = yes }
+					}
+					NOR = {
+						liege_before_war = {
+							NOT = { character = PREV }
+							is_republic = yes
+						}
+						any_liege = {
+							NOT = { character = PREV }
+							is_republic = yes
+						}
+					}
+					NAND = { #Standard Republic split during mega war
+						independent = yes
+						NOT = { tier = EMPEROR }
+						is_merchant_republic = no
+						primary_title = { check_variable = { which = "de_facto_empire" value = 1 } }
+					}
+				}
+			}
+			higher_tier_than = DUKE
+			OR = {
+				AND = { #Primary Title is Volantis
+					primary_title = { title = k_volantis }
+					OR = { #Ruler or any patrician is Valyrian or Essosi
+						culture_group = valyrian
+						culture_group = free_cities
+						any_vassal = {
+							is_patrician = yes
+							OR = {
+								culture_group = valyrian
+								culture_group = free_cities
+							}	
+						}
+					}						
+				}				
+				AND = { #Ruler is Eastern Valyrian or Volantene
+					OR = {
+						culture = eastern_valyrian
+						culture = volantene
+					}
+					OR = { #Republic is located in Volantis region or all patricians are Valyrian/Volantene
+						capital_scope = { region = world_volantis }
+						primary_title = { capital_scope = { region = world_volantis } }
+						NOT = {
+							any_vassal = {
+								is_patrician = yes
+								NOR = {
+									culture_group = valyrian
+									culture = volantene
+								}	
+							}
+						}	
+					}
+				}	
+			}	
+			OR = { #triarch elections do not happen in the revived freehold
+				NOT = { has_global_flag = revived_valyrian_freehold }
+				NOT = { has_landed_title = e_new_valyria }
+			}
+		}
+		
+		color = { 148 0 0 }
+		
+		merchant_republic = yes
+		
+		can_imprison_without_reason = no
+		can_revoke_without_reason = no
+		#can_usurp_kingdoms_and_empires = no
+		#have_gender_laws = no
+		can_grant_kingdoms_and_empires_to_other_government = yes
+		#allows_matrilineal_marriage = no
+
+		can_build_tribal = no
+		
+		#landed_inheritance = no
+	}
+}

@@ -20629,6 +20629,7 @@
 
 	8256.1.1 = {birth="8256.1.1"}
 	8272.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8313.1.1 = {death = yes}	
 }
 3025283 = {
 	name="Leonette"	# not a lord
@@ -20642,6 +20643,7 @@
 	mother=4023283
 
 	8259.1.1 = {birth="8259.1.1"}
+	8315.1.1 = {death = yes}	
 }
 ###Sloane###
 3000259 = {

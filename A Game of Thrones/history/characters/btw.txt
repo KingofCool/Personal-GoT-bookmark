@@ -51,6 +51,9 @@
 			character_event = { id = feast_for_crows.31 days = 1 } #Thenn choice event
 		}
 	}
+	8303.1.1 = {
+		employer=5089 #Alys Karstark
+	}
 }
 
 174345 = {
@@ -467,6 +470,9 @@
 			}
 		}
 	}
+	8301.1.1 = {
+		death = yes
+	}	
 }
 57000 = {
 	name="Dalla"
@@ -524,18 +530,6 @@
 		add_trait=trained_warrior
 		add_trait="charismatic_negotiator"
 	}
-	8300.3.1 = {
-		employer=4317
-		effect = {
-			set_character_flag = captured_in_battle
-			set_character_flag = val_wildling
-			k_stormlands = {
-				holder_scope = {
-					ROOT = { imprison = PREV }
-				}
-			}
-		}
-	}
 }
 57050 = {
 	name="Aemon"
@@ -554,14 +548,17 @@
 	8300.3.1 = {
 		birth="8300.3.1"
 		add_claim=k_beyond_wall
-		effect = {
-			set_character_flag = captured_in_battle
-			k_stormlands = {
-				holder_scope = {
-					ROOT = { imprison = PREV }
-				}
-			}
-		}
+	}
+	8320.1.1={
+		remove_trait = "wildling"	
+		add_trait="maester"
+		religion="the_seven"
+		culture="reachman"			
+	}	
+	8330.1.1={
+		employer=88130
+		remove_trait="maester"		
+		add_trait="archmaester"
 	}
 }
 57002 = {

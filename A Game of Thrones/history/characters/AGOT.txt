@@ -93,6 +93,7 @@
 
    8256.1.1 = {birth="8256.1.1"}
    8280.1.1 = {add_spouse=450003}
+   8310.1.1 = { death = yes }
 }
 450003 = {
    name="Olivia"
@@ -429,6 +430,7 @@
 	add_trait="ambitious"
 	8247.9.17 = { birth = "8247.9.17" }
 	8268.1.1 = { add_spouse = 4500092 }
+	8306.1.1 = { death = yes }		
 }
 4500092 = {
 	name="Lesley"
@@ -453,6 +455,7 @@
 	add_trait="cynical"
 	add_trait="ambitious"
 	8246.5.2 = { birth = "8246.5.2" }
+	8306.1.1 = { death = yes }		
 }
 4500093 = {
 	name="Cathryn"
@@ -530,6 +533,7 @@
 		add_trait="knight"
 		add_trait="skilled_warrior"
    }
+   8312.1.1 = { death = yes } 
 }
 450011 = {
    name="Marina"
@@ -555,6 +559,7 @@
    add_trait="fashionable"
 
    8254.5.12 = {birth="8254.5.12"}
+   8312.1.1 = { death = yes }    
 }
 450012 = {
    name="Santiago"
@@ -644,6 +649,9 @@
 		add_spouse = 45000154
 		add_trait = "skilled_warrior"
 	}
+	8315.1.1 = {
+		death=yes
+	}	
 }
 
 45000154 = {
@@ -668,6 +676,9 @@
 	8276.6.2 = {
 		add_spouse = 45000153
 	}
+	8315.1.1 = {
+		death=yes
+	}		
 }
 
 45000155 = {
@@ -714,6 +725,7 @@
 		add_trait="knight"
 		add_trait="skilled_warrior"
    }
+   8302.1.1 = { death = yes }
 }
 
 45000157 = {      
@@ -734,6 +746,7 @@
    add_trait="familyperson"
    
    8231.1.1 = {birth="8231.1.1"}
+   8302.1.1 = { death = yes }
 }
 
 45000158 = {
@@ -755,6 +768,7 @@
    8249.7.1 = {
       birth="8249.7.1"
    }
+   8302.1.1 = { death = yes }
 }
 
 45000159 = {
@@ -829,6 +843,7 @@
    8224.1.1 = {
       birth="8224.1.1"
    }
+   8302.1.1 = { death = yes }
 }
 
 ###################
@@ -1559,6 +1574,9 @@
 	}
 	8300.3.1 = {	
 		employer=1002059 #Jon Snow
+	}
+	8303.1.1 = {
+		employer=1296
 	}	
 }
 ###xoatl
@@ -1585,6 +1603,9 @@
 	}
 	8300.3.1 = {	
 		employer=1002059 #Jon Snow
+	}
+	8303.1.1 = {
+		employer=1296
 	}	
 }
 ###kingslayer
@@ -1858,6 +1879,9 @@
 	}
 	8300.3.1 = {	
 		employer=1002059 #Jon Snow
+	}
+	8303.1.1 = {
+		employer=1296
 	}		
 }
 ###EviLaz
@@ -1885,6 +1909,9 @@
 	}
 	8300.3.1 = {	
 		employer=1002059 #Jon Snow
+	}
+	8303.1.1 = {
+		employer=1296
 	}	
 }
 ###Gogkti
@@ -1913,6 +1940,9 @@
 	}
 	8300.3.1 = {	
 		employer=1002059 #Jon Snow
+	}
+	8303.1.1 = {
+		employer=1296
 	}	
 }
 ###Pande
@@ -2080,6 +2110,9 @@
 	}
 	8300.3.1 = {	
 		employer=1002059 #Jon Snow
+	}
+	8303.1.1 = {
+		employer=1296
 	}	
 }
 ###Deaghaidh/Dea
@@ -2222,7 +2255,7 @@
 	}
 }
 
-### blackninja9939
+### blackninja9939 and others
 14500001 = {
 	name="Matthew"
 	
@@ -2249,6 +2282,9 @@
 	}
 	8284.1.1 = {
 		employer = 4317 # Dragonstone - Stannis Baratheon
+		effect = {
+			add_friend = 34500001
+		}
 	}
 	8286.1.1 = {
 		employer=121000 #Qorgyle aka good old Jantos
@@ -2258,7 +2294,55 @@
 	}
 	8300.3.1 = {	
 		employer=1002059 #Jon Snow
+	}
+	8303.1.1 = {
+		employer=1296
 	}		
+}
+34500001 = {
+	name="Daniel"
+
+	dna="bkaibjgegci"
+	properties="0h00b"
+	
+	learning = 3
+	martial = 1
+	stewardship = 2
+	intrigue = 1
+	diplomacy = 1
+	religion="the_seven"
+	culture="reachman"
+	add_trait = "skilled_tactician"
+	add_trait = "trained_warrior"
+	add_trait = "lustful"
+	add_trait = "cruel"
+	add_trait = "ruthless"
+	add_trait = "arbitrary"
+	add_trait = "rude"
+	#add_trait = "quick"
+	add_trait = "tall"
+	8268.1.1 = {
+		birth="8268.1.1"
+		employer = 77039 # Dragonstone - Rhaegar Targaryen
+	}
+	8284.1.1 = {
+		employer = 4317 # Dragonstone - Stannis Baratheon
+		effect = {
+			add_friend = 14500001
+		}
+	}
+	8286.1.1 = {
+		employer=121000 #Qorgyle aka good old Jantos
+	}
+	8294.1.1 = {	
+		employer=336 #Jeor Mormont
+	}
+	8300.3.1 = {	
+		employer=1002059 #Jon Snow
+	}
+	8303.1.1 = {
+		employer=1296
+	}
 }
 ### kuczaja
 54500001 = {

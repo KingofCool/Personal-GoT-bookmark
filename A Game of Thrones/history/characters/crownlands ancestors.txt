@@ -277,9 +277,9 @@
 		add_trait="blackfyre"
 		add_trait="darksister"
 	}
-	7978.1.1 = {
-		add_trait=assign_mission_target #cadet dynasty tracker, baratheon. cadet flags added in orys' entry
-	}
+	7978.1.1={
+		add_trait=assign_mission_target #cadet dynasty tracker
+	}	
 	7996.1.1={death="7996.1.1"}
 }
 60000496 = {
@@ -9720,6 +9720,7 @@
 	mother=4511042
 
 	8251.1.1 = {birth="8251.1.1"}
+	8315.1.1 = { death = yes }		
 }
 3516042 = {
 	name="Wallace"	# a lord
@@ -24989,6 +24990,7 @@
 	8246.1.1 = {
 		birth="8246.1.1"
 	}
+	8309.1.1 = { death = yes }		
 }
 #House Wendwater#
 6000044 = {
@@ -27277,32 +27279,6 @@
 	
 	8123.1.1 = {birth="8123.1.1"}
 	8176.1.1 = {death="8176.1.1"}
-}
-350174410 = { #LC of Night's Watch (nc)
-	name="Robin"
-	dynasty=174410
-	
-	martial = 6
-	diplomacy = 9
-	intrigue = 6
-	stewardship = 7
-	learning = 5
-
-	religion="the_seven"
-	culture="crackclawmen"
-
-	father=306174410
-	
-	8128.1.1 = {birth="8128.1.1"}
-	8144.1.1 = {
-		add_trait = knight
-		add_trait = trained_warrior
-		add_trait = tough_soldier
-	}
-	8150.1.1 = {
-		add_trait = nightswatch
-	}
-	8184.1.1 = {death="8184.1.1"}
 }
 306174410 = {
 	name="Perkin"
@@ -32067,5 +32043,8 @@
 				}
 			}
 		}	
+	}
+	8302.1.1 = { 
+		death = yes	
 	}
 }

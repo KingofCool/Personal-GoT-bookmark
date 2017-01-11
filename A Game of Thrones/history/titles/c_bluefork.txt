@@ -96,3 +96,6 @@
 8300.4.15 = {
 	holder=127 #Walder Frey
 }
+8303.1.1={
+	holder=6059
+}

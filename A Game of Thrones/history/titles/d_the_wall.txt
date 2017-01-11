@@ -55,10 +55,10 @@
 	holder = 121400 #Tristan Mudd
 }
 8168.1.1 = {
-	holder = 350174410 #Robin Boggs (nc)
+	holder = 350174410 #Robin Boggs
 }
 8184.1.1 = {
-	holder = 5150137 #Patrek Darry (nc)
+	holder = 5150137 #Patrek Darry
 }
 8206.1.1 = {
 	holder=121401 #Runcel Hightower
@@ -84,4 +84,7 @@
 8300.3.1 = {	
 	holder=1002059 #Jon Snow
 	effect = { copy_title_history = d_nightswatch_dummy } #Remove janos Slynt from history
+}
+8300.12.1={
+	holder=1296
 }

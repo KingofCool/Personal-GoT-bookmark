@@ -41,8 +41,8 @@
 				any_dynasty_member = {
 					reverse_opinion = { who = ROOT modifier = forbidden_raid_target months = 120 } #forbid further raids
 				}
-			}
-			
+			}	
+	
 			spawn_unit = {
 				province = 93 #The Red Fork
 				owner = THIS
@@ -90,4 +90,7 @@
 }
 8299.11.5 = {
 	holder = 250159 #Lady Stoneheart
+}
+8303.1.1 = {
+	holder = 0
 }

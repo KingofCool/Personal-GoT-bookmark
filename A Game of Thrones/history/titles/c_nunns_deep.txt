@@ -16,3 +16,5 @@
 8212.1.1 = { holder=329204 } # Darlessa (nc)
 8220.1.1 = { holder=331204 } # Martyn (nc)
 8266.1.1 = {holder=204} # Philip (c)
+8302.1.1 = {holder=1204}
+8326.1.1 = {holder=91205}

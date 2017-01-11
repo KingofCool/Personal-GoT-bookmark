@@ -15,5 +15,5 @@
 8216.1.1 = { holder=6027350 } # Wyman (nc)
 8247.1.1 = { holder=6030350 } # Wynton (nc)
 8268.1.1 = { holder=6031350 } # Yoren (nc)
-8352.1.1 = { holder=6036350 } # Beron (nc)
+8313.1.1 = { holder=6036350 } # Beron (nc)
 

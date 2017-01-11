@@ -15,3 +15,4 @@
 8252.1.1 = { holder=138178454 } # Benfrey (nc)
 8275.1.1 = { holder=140178454 } # Wilbert (C)
 8298.12.1 = { holder=142178454 } # Dennett (nc)
+8305.1.1 = { holder=143178454 } # Cosgrove

@@ -46,4 +46,10 @@ holder=301226 # Returned to the Plumm's
 8267.1.1 = {
 holder=60000266 # Osmyn Plumm, brother of Philip (nc)
 }	
+8311.1.1 = {
+holder=22266
+}
+8325.1.1 = {
+holder=93266
+}
 

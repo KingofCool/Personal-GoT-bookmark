@@ -3115,6 +3115,7 @@
 		add_trait="maester"
 		effect = { set_character_flag = serving_with_lord }
 	}
+	8307.1.1 = { death = yes }	
 }
 ###House Redwyne###
 60130288 = {
@@ -10927,6 +10928,9 @@
 	mother=4026248
 
 	8249.1.1 = {birth="8249.1.1"}
+	8310.1.1={
+		death = yes
+	}	
 }
 
 3033248 = {
@@ -10941,6 +10945,9 @@
 	mother=4026248
 
 	8251.1.1 = {birth="8251.1.1"}
+	8313.1.1={
+		death = yes
+	}	
 }  
 ###Caswells###
 3000264 = {
@@ -13121,6 +13128,7 @@
 	mother=4031291
 
 	8237.1.1 = {birth="8237.1.1"}
+	8310.1.1 = {death=yes}		
 }
 4032291 = {
 	name="Leonette"
@@ -13824,6 +13832,9 @@
 	8247.1.1 = {birth="8247.1.1"}
 	8263.1.1 = {add_trait=knight add_trait=trained_warrior}
 	8264.1.1 = {add_spouse=4036289}
+	8310.1.1={
+		death = yes
+	}	
 }
 3038289 = {
 	name="Leyla"	# Luthor's daughter, not a lord
@@ -15537,6 +15548,7 @@
 	mother=4031292
 
 	8255.1.1 = {birth="8255.1.1"}
+	8313.1.1 = { death = yes }		
 }
 3034292 = {
 	name="Fruella"	# Orton's daughter, not a lord
@@ -15550,6 +15562,7 @@
 	mother=4031292
 
 	8257.1.1 = {birth="8257.1.1"}
+	8312.1.1 = { death = yes }	
 }
 ###Mullendore###
 3000290 = {
@@ -16090,6 +16103,7 @@
 	mother=4023290
 
 	8253.1.1 = {birth="8253.1.1"}
+	8310.1.1 = {death=yes}	
 }
 3025290 = {
 	name="Rylene"	# Alester's daughter, not a lord
@@ -16103,6 +16117,7 @@
 	mother=4023290
 
 	8256.1.1 = {birth="8256.1.1"}
+	8315.1.1 = {death=yes}	
 }
 3026290 = {
 	name="Willas"	# Alester's bastard son (defeated by barristan in a tourney)
@@ -18201,6 +18216,7 @@
 
 	8255.1.1 = {birth="8255.1.1"}
 	8271.1.1 = {add_trait=trained_warrior}
+	8318.1.1 = { death = yes}	
 }
 4030298 = {
 	name="Melara"
@@ -18638,6 +18654,7 @@
 		add_trait=knight 
 		add_trait=trained_warrior
 	}
+	8311.1.1 = { death = yes }	
 }
 323279 = {
 	name="Alester"	# not a lord
@@ -18659,6 +18676,7 @@
 		employer=1253 #Mace Tyrel
 	}
 	8266.1.1 = {add_spouse=423279}
+	8314.1.1 = { death = yes }	
 }
 423279 = {
 	name="Lysa"
@@ -22690,6 +22708,9 @@
 	culture="reachman"
 
 	8231.1.1 = {birth="8231.1.1"}
+	8307.1.1={
+		death = yes
+	}	
 }
 3032255 = {
 	name="Helyna"	# not a lord
@@ -22703,6 +22724,7 @@
 	mother=4031255
 
 	8257.1.1 = {birth="8257.1.1"}
+	8315.1.1 = {death = yes}	
 }
 3033255 = {
 	name="Bertram"	# not a lord
@@ -22716,6 +22738,7 @@
 
 	8259.1.1 = {birth="8259.1.1"}
 	8275.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8320.1.1 = { death = yes }	
 }
 3034255 = {
 	name="Lia"	# not a lord
@@ -25775,6 +25798,7 @@
 	mother=4026278
 
 	8244.1.1 = {birth="8244.1.1"}
+	8310.1.1 = {death = yes}	
 }
 3030278 = {
 	name="Morm"	# not a lord
@@ -37572,6 +37596,9 @@
 	8256.1.1 = {birth="8256.1.1"}
 	8272.1.1 = {add_trait=knight add_trait=trained_warrior}
 	8274.1.1 = {add_spouse=4025241}
+	8308.1.1={
+		death=yes
+	}	
 }
 4025241 = {
 	name="Megga"
@@ -37581,6 +37608,9 @@
 	culture="reachman"
 
 	8256.1.1 = {birth="8256.1.1"}
+	8308.1.1={
+		death=yes
+	}	
 }
 3026241 = {
 	name="Dareon"	# not a lord

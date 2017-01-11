@@ -4278,6 +4278,7 @@
 	8278.1.1 = {add_spouse=45306}
 	8280.1.1 = {employer=1}
 	#8283.4.7 = {death = {death_reason = death_battle}}
+	8304.1.1 = {birth=yes}		
 }
 35336 = {
 	name="Jeyne" # Married to son of House Gargalen.
@@ -4291,6 +4292,7 @@
 	culture="salt_dornish"
 
 	8261.1.1 = {birth="8261.1.1"}
+	8311.1.1 = {birth=yes}	
 }
 45306 = {
 	name="Ashara"

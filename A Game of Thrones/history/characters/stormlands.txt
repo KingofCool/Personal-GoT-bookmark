@@ -745,6 +745,9 @@
 			set_character_flag = stannis_affc
 		}
 	}
+		8303.1.1={
+		death=yes
+		}
 }
 5317 = {	
 	name="Renly"	
@@ -1251,6 +1254,29 @@
 		#add_trait="ugly" #She doesnt become congenitally ugly
 		add_trait="scarred"
 	}
+	8303.1.1 = { 
+		effect = { #Her co-wives
+			add_friend = 6059
+			add_friend = 7059
+			add_friend = 7253
+			add_friend = 4316
+			add_friend = 4001
+			add_friend = 77041
+			add_friend = 7107
+			add_friend = 206054
+			add_friend = 1126
+			add_friend = 6102
+			add_friend = 3034050
+			add_friend = 9017
+			add_friend = 88091
+			add_friend = 500184
+			add_friend = 155174371
+		}
+	}
+	8303.1.1 = {
+		fertility = 1.5
+		add_trait="chaste"
+	}	
 }
 7316 = {		
 	name="Tommen"	
@@ -1484,6 +1510,12 @@
 			}
 		}
 	}
+	8303.1.1 = {
+		death = yes
+	}
+	8303.1.1 = {
+		remove_trait=widowswail
+	}	
 }
 
 6316 = { #The Edric Storm
@@ -1522,30 +1554,80 @@
 		guardian=4317 #stannis
 		employer=4317		
 	}
-	8299.12.1 = { 
-		guardian=6330 #Smuggled to Lys with Andrew Estermont
-		effect = {		
-			k_lys = {
-				holder_scope = {
-					ROOT = { move_character = PREV }
-					c_6330 = {
-						if = {
-							limit = { is_alive = yes }
-							ROOT = { 
-								if = {
-									limit = { is_adult = no }
-									set_guardian = PREV
-								}
-							}
-							move_character = PREV
-						}	
-					}
-				}
-			}				
-		}
+	8304.1.1={	
+		remove_trait=bastard 		
+		add_trait=legit_bastard
+		effect = { remove_nickname = yes }	
 	}
+	8314.1.1={	
+		add_spouse = 253204		
+	}		
 }
-
+93316 = {
+	name = "Davos"
+	dynasty=317
+	
+	religion="the_seven"	
+	culture="stormlander"
+	
+	add_trait="strong"
+	
+	father=6316
+	mother=253204
+	
+	8317.1.1 = { 
+		birth = yes
+	}		
+}
+93317 = {
+	name = "Steffon"
+	dynasty=317
+	
+	religion="the_seven"	
+	culture="stormlander"
+	
+	add_trait="tall"
+	
+	father=6316
+	mother=253204
+	
+	8319.1.1 = { 
+		birth = yes
+	}		
+}
+93318 = {
+	name = "Delena"
+	dynasty=317
+	female=yes
+	religion="the_seven"	
+	culture="stormlander"
+	
+	add_trait="strong"
+	add_trait="fair"	
+	
+	father=6316
+	mother=253204
+	
+	8321.1.1 = { 
+		birth = yes
+	}		
+}
+93319 = {
+	name = "Mya"
+	dynasty=317
+	female=yes
+	religion="the_seven"	
+	culture="stormlander"
+	
+	add_trait="quick"	
+	
+	father=6316
+	mother=253204
+	
+	8324.1.1 = { 
+		birth = yes
+	}		
+}
 
 5316 = { #The Gendry
 	name = "Gendry"
@@ -1577,38 +1659,21 @@
 	8285.1.1 = { 
 		birth ="8285.1.1" 
 		effect = { 
-			b_warriors_sons = { #Flea bottom
-				holder_scope = {
-					ROOT = { move_character = PREV }
-				}
-			}
 			c_317 = {
 				ROOT = { set_real_father = PREV }
 			}
 		}
-	}
-	8298.10.28={
-		effect = { 
-			b_harrentown = {
-				holder_scope = {
-					ROOT = { move_character = PREV }
-				}
-			}			
-		}		
 	}	
 	8299.2.1 = { #Joins brotherhood (a little bit earlier than in canon so he's present in ACoK bookmark with Beric)
-		effect = { 
-			d_brotherhood = {
-				holder_scope = {
-					ROOT = { move_character = PREV }
-				}
-			}	
-			add_friend = 9267059 #arya
-		}
 		add_trait = poor_warrior
 		add_trait = knight
 		dynasty = 803030 #of the hollow hill.
 	}
+	8304.1.1={
+		add_trait = trained_warrior	
+		dynasty=317	
+		father=317	
+	}	
 }
 4005316 = { #random mother to prevent culling
 	name = "Joanna"
@@ -1672,6 +1737,38 @@
 	8297.1.1={
 		employer=94003
 	}
+	8303.1.1 = { 
+		effect = { #Her co-wives
+			add_friend = 6059
+			add_friend = 7059
+			add_friend = 7253
+			add_friend = 77041
+			add_friend = 4001
+			add_friend = 8316
+			add_friend = 7107
+			add_friend = 206054
+			add_friend = 1126
+			add_friend = 6102
+			add_friend = 3034050
+			add_friend = 9017
+			add_friend = 88091
+			add_friend = 500184
+			add_friend = 155174371
+		}
+	}
+	8303.1.1 = {
+		fertility = 1.5
+		add_trait="chaste"
+	}	
+	8303.1.1={
+		culture="stormlander"	
+		remove_trait=bastard
+		remove_trait=lustful 		
+		add_trait=legit_bastard
+		effect = { remove_nickname = yes }	
+		dynasty=317	
+		father=317	
+	}		
 }
 4004316 = { #random mother to prevent culling
 	name = "Lyanna"
@@ -1835,6 +1932,9 @@
 		effect = { religion="rhllor" }
 		add_trait = sympathy_westerosi		
 	}
+	8300.10.1 = {
+		death = yes
+	}	
 }
 
 ###
@@ -1882,7 +1982,8 @@
 				set_variable = { which = "de_facto_kingdom" value = 8 } #stormlands
 			}
 		}
-	}	
+	}
+	8303.1.1 = { death = yes }		
 }
 4201054 = {
 	name="Biliana"	# Selwyn's wife
@@ -2021,6 +2122,35 @@
 	8299.11.5 = { #given Oathkeeper by Jaime
 		add_trait=oathkeeper
 	}
+	8303.1.1 = { 
+		remove_trait="skilled_warrior"
+		add_trait="master_warrior"
+		add_trait="familyperson"
+		remove_trait="celibate"
+		remove_trait=oathkeeper #remelted into Ice		
+	}
+	8303.1.1 = { 
+		effect = { #Her co-wives
+			add_friend = 6059
+			add_friend = 7059
+			add_friend = 7253
+			add_friend = 4316
+			add_friend = 4001
+			add_friend = 8316
+			add_friend = 7107
+			add_friend = 77041
+			add_friend = 1126
+			add_friend = 6102
+			add_friend = 3034050
+			add_friend = 9017
+			add_friend = 88091
+			add_friend = 155174371
+		}
+	}
+	8303.1.1 = {
+		fertility = 1.5
+		add_trait="chaste"
+	}	
 }
 
 ###
@@ -2048,6 +2178,7 @@
 	8248.1.1 = {add_trait="knight"}
 	8252.1.1 = {add_spouse=425320}
 	8295.1.1 = {add_trait="infirm"}
+	8303.1.1 = { death = yes }	
 }
 425320 = {
 	name="Cymoril"	# Steffon's wife
@@ -2059,6 +2190,7 @@
 	culture="stormlander"
 
 	8230.1.1 = {birth="8230.1.1"}
+	8303.1.1 = { death = yes }	
 }
 206320 = {
 	name="Cortnay"	# Canon, Steffon's son, not a lord
@@ -2110,6 +2242,7 @@
 	culture="stormlander"
 
 	8260.1.1 = {birth="8260.1.1"}
+	8310.1.1 = { death = yes }	
 }
 315320 = {
 	name="Ossifer"	# Cortnay's son, not a lord
@@ -2158,6 +2291,7 @@
 	
 	8262.1.1 = { birth="8262.1.1"}	
 	8278.1.1 = {add_trait="knight" add_trait=trained_warrior}
+	8311.1.1 = { death = yes }	
 }
 2318 = {
 	name="Sebastion" # canon, actual lord
@@ -2272,8 +2406,143 @@
 	8299.6.1={ #Dany
 		employer = 77041
 	}
+	8303.1.1={
+		add_spouse = 690113
+	}
+	8310.1.1 = {death=yes}	
 }
+959733302 = {
+	name="Daenerys"
+	female=yes
+	dynasty=302
+	religion="the_seven"
+	culture="stormlander"
 
+	father=201302
+	mother=690113
+
+	add_trait="strong"
+	add_trait="fair"
+	add_trait="tall"
+	add_trait="quick"
+	add_trait="twin"
+
+	8305.1.1 = {birth=yes}
+}
+959733303 = {
+	name="Bethany"
+	female=yes
+	dynasty=302
+	religion="the_seven"
+	culture="stormlander"
+
+	father=201302
+	mother=690113
+
+	add_trait="strong"
+	add_trait="fair"
+	add_trait="tall"
+	add_trait="quick"
+	add_trait="twin"
+
+	8305.1.1 = {birth=yes}
+}
+959733304 = {
+	name="Elinor"
+	female=yes
+	dynasty=302
+	religion="the_seven"
+	culture="stormlander"
+
+	father=201302
+	mother=690113
+
+	add_trait="strong"
+	add_trait="fair"
+
+	8306.9.1 = {birth=yes}
+}
+959733305 = {
+	name="Jeyne"
+	female=yes
+	dynasty=302
+	religion="the_seven"
+	culture="stormlander"
+
+	father=201302
+	mother=88073
+
+	add_trait="legit_bastard"	
+	add_trait="strong"
+	add_trait="fair"
+	add_trait="tall"
+	add_trait="quick"
+
+	8306.6.1 = {birth=yes}
+}
+959733306 = {
+	name="Rhaegar"
+	dynasty=302
+	religion="the_seven"
+	culture="stormlander"
+
+	father=201302
+	mother=690113
+
+	add_trait="strong"
+	add_trait="tall"
+
+	8307.11.1 = {birth=yes}
+}
+959733307 = {
+	name="Lyonel"
+	dynasty=302
+	religion="the_seven"
+	culture="stormlander"
+
+	father=201302
+	mother=690113
+
+	add_trait="strong"
+	add_trait="fair"
+
+	8309.4.1 = {birth=yes}
+}
+959733308 = {
+	name="Missandei"
+	female=yes
+	dynasty=302
+	religion="the_seven"
+	culture="stormlander"
+
+	father=201302
+	mother=88073
+
+	add_trait="legit_bastard"	
+	add_trait="strong"
+	add_trait="fair"
+	add_trait="quick"
+	add_trait="twin"	
+
+	8308.8.1 = {birth=yes}
+}
+959733309 = {
+	name="Jon"
+
+	dynasty=302
+	religion="the_seven"
+	culture="stormlander"
+
+	father=201302
+	mother=88073
+
+	add_trait="legit_bastard"	
+	add_trait="strong"
+	add_trait="genius"
+	add_trait="twin"	
+
+	8308.8.1 = {birth=yes}
+}
 333302 = {
 	name="Dontos"	# Lyonel's son, not a lord
 	dynasty=302
@@ -2328,6 +2597,7 @@
 
 	8257.1.1 = {birth="8257.1.1"}
 	8273.1.1 = {add_trait="knight"}
+	8320.1.1 = { death = yes }	
 }
 336302 = {
 	name="Casper"	# Dontos's son, not a lord
@@ -2341,6 +2611,7 @@
 
 	8260.1.1 = {birth="8260.1.1"}
 	8276.1.1 = {add_trait="knight"}
+	8314.1.1 = { death = yes }	
 }
 434302 = {
 	name="Malora"	# 
@@ -2350,6 +2621,7 @@
 	culture="stormlander"
 
 	8255.1.1 = {birth="8255.1.1"}
+	8315.1.1 = { death = yes }	
 }
 202302 = {
 	name="Arstan"	# Canon, Paxter's son, a lord
@@ -2368,6 +2640,84 @@
 		add_trait="knight"
 		add_trait="trained_warrior"
 	}
+	8301.1.1 = {add_spouse=344354}	
+}
+222302 = {
+	name="Paxter"
+
+	dynasty=302
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=202302
+	mother=344354
+
+	8303.1.1 = {birth=yes}
+	8321.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+222303 = {
+	name="Barristan"
+
+	dynasty=302
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=202302
+	mother=344354
+
+	8306.1.1 = {birth=yes}
+	8324.1.1 = {
+		add_trait="knight"
+		add_trait="master_warrior"
+	}	
+}
+222304 = {
+	name="Bonifer"
+
+	dynasty=302
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=202302
+	mother=344354
+
+	8308.1.1 = {birth=yes}
+	8326.1.1 = {
+		add_trait="knight"
+		add_trait="skilled_warrior"
+	}	
+}
+222305 = {
+	name="Rhoelle"
+	female=yes
+	dynasty=302
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=202302
+	mother=344354
+
+	8311.1.1 = {birth=yes}	
+}
+222306 = {
+	name="Beth"
+	female=yes
+	dynasty=302
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=202302
+	mother=344354
+
+	8313.1.1 = {birth=yes}	
 }
 
 ###
@@ -2460,6 +2810,7 @@
 		add_trait="celibate"	
 	}
 	8275.1.1 = { give_nickname = nick_the_good }	
+	8310.1.1 = { death = yes }	
 }
 314312 = {
 	name="Byron"	# a lord
@@ -2472,6 +2823,7 @@
 
 	8249.1.1 = {birth="8249.1.1"}
 	8265.1.1 = {add_trait="knight"}
+	8308.1.1 = { death = yes }	
 }
 315312 = {
 	name="Burton"	# not a lord
@@ -2507,23 +2859,7 @@
 		add_trait="poor_warrior"
 	}	
 	8272.1.1 = { add_spouse = 100319}
-	8299.7.2 = {
-		effect = {
-			set_defacto_liege = ROOT
-			set_character_flag = neutral
-			clr_character_flag = supporting_king
-			clr_character_flag = against_king
-			any_demesne_title = {
-				limit = { 
-					OR = {
-						tier = COUNT
-						tier = DUKE
-					}
-				}				
-				set_variable = { which = "de_facto_kingdom" value = 8 } #stormlands
-			}
-		}
-	}	
+	8310.1.1 = { death = yes }	
 }
 100319 = {		
 	name="Alerie"
@@ -2534,7 +2870,8 @@
 	religion="the_seven"	
 	culture="stormlander"
 	
-	8256.1.1 = {birth="8256.1.1"}	
+	8256.1.1 = {birth="8256.1.1"}
+	8310.1.1 = { death = yes }	
 }
 101319 = {		
 	name="Selmyr"	
@@ -2548,6 +2885,63 @@
 	
 	8274.1.1 = {birth="8274.1.1"}	
 	8290.1.1 = { 
+		add_trait="knight"	
+		add_trait="trained_warrior"
+	}
+	8304.1.1 = { add_spouse = 3303}	
+}
+188319 = {		
+	name="Brus"	
+	dynasty=319
+	
+	religion="the_seven"	
+	culture="stormlander"
+	
+	mother=3303
+	father=101319
+	
+	8306.1.1 = {birth=yes}	
+	8322.1.1 = { 
+		add_trait="knight"	
+		add_trait="trained_warrior"
+	}
+}
+188320 = {		
+	name="Cecyle"	
+	dynasty=319
+	female=yes
+	religion="the_seven"	
+	culture="stormlander"
+	
+	mother=3303
+	father=101319
+	
+	8308.1.1 = {birth=yes}	
+}
+188321 = {		
+	name="Alerie"	
+	dynasty=319
+	female=yes
+	religion="the_seven"	
+	culture="stormlander"
+	
+	mother=3303
+	father=101319
+	
+	8310.1.1 = {birth=yes}	
+}
+188322 = {		
+	name="Bryen"	
+	dynasty=319
+	
+	religion="the_seven"	
+	culture="stormlander"
+	
+	mother=3303
+	father=101319
+	
+	8312.1.1 = {birth=yes}	
+	8330.1.1 = { 
 		add_trait="knight"	
 		add_trait="trained_warrior"
 	}
@@ -2604,6 +2998,7 @@
 	8300.3.1={
 		add_spouse=574803 #Gerra Redbeard
 	}
+	8313.1.1 = { death = yes }	
 }
 
 ###
@@ -2675,6 +3070,7 @@
 	culture="stormlander"
 
 	8250.1.1 = {birth="8250.1.1"}	
+	8309.1.1 = { death = yes }	
 }
 175313 = {	
 	name="Michael"	
@@ -2706,6 +3102,7 @@
 	culture="stormlander"
 	
 	8264.1.1 = { birth="8264.1.1"}
+	8305.1.1 = { death = yes }	
 }
 101313 = {
 	name="Rickard"
@@ -2728,7 +3125,51 @@
 	}	
 	8283.1.1 = { 
 		employer=317	
-	}	
+	}
+	8301.1.1 = { add_spouse=8065046 }
+	8320.1.1 = { death = yes }	
+}
+191313 = {
+	name="Helicent"
+	dynasty=313	
+	female=yes
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=101313
+	mother=8065046
+	
+	add_trait="strong"
+	
+	8303.1.1 = { birth=yes}		
+}
+191314 = {
+	name="Lucas"
+	dynasty=313	
+	
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=101313
+	mother=8065046
+	
+	add_trait="tall"
+	
+	8306.1.1 = { birth=yes}		
+}
+191315 = {
+	name="Harwood"
+	dynasty=313	
+	
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=101313
+	mother=8065046
+	
+	add_trait="fair"	
+	
+	8308.1.1 = { birth=yes}		
 }			
 1313 = {	
 	name="Harwood"	
@@ -2863,6 +3304,9 @@
 			character_event = { id = feast_for_crows.160 } #end siege in griffins roost
 		}
 	}
+	8303.1.1={
+		death = yes
+	}	
 }
 1316 = {		
 	name="Armond"	#Jons Father
@@ -2983,7 +3427,8 @@
 
 	add_trait="naive_appeaser"
 
-	8258.1.1 = {birth="8258.1.1"}	
+	8258.1.1 = {birth="8258.1.1"}
+	8304.1.1 = { death = yes }	
 }
 3316 = {		
 	name="Ronnet"	#Red Ronnet
@@ -3012,7 +3457,54 @@
 			# set_character_flag = neutral
 			# set_character_flag = vassal_of_stormlands
 		# }
-	# }	
+	# }
+	8303.1.1 = { 
+		add_spouse=328361
+	}	
+}
+94316 = {		
+	name="Lia"
+	dynasty=316	
+	female=yes
+	religion="the_seven"	
+	culture="stormlander"	
+	
+	father=3316
+	mother=328361
+	
+	8305.1.1 = { birth=yes}
+}
+94317 = {		
+	name="Richard"
+	dynasty=316	
+
+	religion="the_seven"	
+	culture="stormlander"	
+	
+	father=3316
+	mother=328361
+	
+	8308.1.1 = { birth=yes}
+	8327.1.1 = {
+		add_trait="knight"
+		add_trait="skilled_warrior"	
+	}	
+}
+94318 = {		
+	name="Jon"
+	dynasty=316	
+
+	religion="the_seven"	
+	culture="stormlander"	
+	
+	father=3316
+	mother=328361
+	
+	8311.1.1 = { birth=yes}
+	8330.1.1 = {
+		add_trait="knight"
+		add_trait="skilled_warrior"	
+	}	
 }
 1003316 = {		
 	name="Raymund"	
@@ -3161,6 +3653,9 @@
 			clr_character_flag = against_rebel_liege
 		}
 	}
+	8303.1.1={
+		death = yes
+	}
 }
 105308 = {		
 	name="Ziva"
@@ -3172,6 +3667,9 @@
 	culture="stormlander"
 
 	8237.1.1 = {birth="8237.1.1"}
+	8303.1.1={
+		death = yes
+	}
 }
 103308 = {		
 	name="Luthor"	
@@ -3189,6 +3687,9 @@
 		add_trait="poor_warrior"	
 		add_trait="knight"
 	}
+	8321.1.1={
+		death = yes
+	}
 }
 106308 = {		
 	name="Luminizza"
@@ -3200,6 +3701,9 @@
 	culture="stormlander"
 
 	8255.1.1 = {birth="8255.1.1"}
+	8321.1.1={
+		death = yes
+	}
 }
 107308 = {		
 	name="Olyver"	
@@ -3333,7 +3837,7 @@
 		employer=4317
 	}
 	8298.1.1 = { effect = { religion="rhllor" } }
-
+	8328.1.1 = { death = yes }	
 }
 108308 = {		
 	name="Michael"	
@@ -3416,6 +3920,7 @@
 		add_trait="knight"
 		add_trait = "trained_warrior"
 	}
+	8310.1.1 = {death=yes}	
 }
 202321 = {
 	name="Richard"	# CANON, Ronnet's son, not a lord
@@ -3432,6 +3937,51 @@
 		add_trait = "knight"
 		add_trait = "trained_warrior"
 	}
+	8301.1.1 = {add_spouse=102319}	
+}
+202322 = {
+	name="Guyard"
+	dynasty=321
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=202321
+	mother=102319
+
+	8303.1.1 = {birth=yes}
+	8322.1.1 = {
+		add_trait = "knight"
+		add_trait = "trained_warrior"
+	}
+}
+202323 = {
+	name="Lyonel"
+	dynasty=321
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=202321
+	mother=102319
+
+	8306.1.1 = {birth=yes}
+	8325.1.1 = {
+		add_trait = "knight"
+		add_trait = "trained_warrior"
+	}
+}
+202324 = {
+	name="Annara"
+	dynasty=321
+	female=yes
+	religion="the_seven"
+	culture="stormlander"
+
+	father=202321
+	mother=102319
+
+	8308.1.1 = {birth=yes}
 }
 203321 = {
 	name="Guyard"	# Canon, Ronnet's son, not a lord, Rainbow Guard
@@ -3489,6 +4039,7 @@
 		add_trait = "knight"
 		add_trait = "poor_warrior"
 	}
+	8315.1.1 = { death = yes }	
 }
 415328 = {
 	name="Denira"
@@ -3500,6 +4051,7 @@
 	culture="stormlander"
 
 	8262.1.1 = {birth="8262.1.1"}
+	8315.1.1 = { death = yes }	
 }
 316328 = {		
 	name="Quellon"	
@@ -3625,6 +4177,7 @@
 		add_trait = "trained_warrior"
 	}
 	8284.1.1 = {employer=4317}
+	8302.1.1 = { death = yes }	
 }
 1063329 = {		
 	name="Selma"
@@ -3636,6 +4189,7 @@
 	culture="stormlander"		
 
 	8225.1.1 = {birth="8225.1.1"}
+	8302.1.1 = { death = yes }	
 }
 329 = {		
 	name="Casper"	# Canon, a lord
@@ -3657,6 +4211,7 @@
 		effect = { c_rain_house = { add_pressed_claim = ROOT } }
 		#add_trait=dead_target
 	}
+	8307.1.1 = { death = yes }	
 }
 103329 = {		
 	name="Avelina"
@@ -3667,7 +4222,8 @@
 	religion="the_seven"	
 	culture="stormlander"
 	
-	8246.1.1 = {birth="8246.1.1"}	
+	8246.1.1 = {birth="8246.1.1"}
+	8310.1.1 = { death = yes }	
 }
 
 100329 = {		
@@ -3897,6 +4453,7 @@
 		}
 	}	
 	8300.3.1 = {add_spouse=1002} # Spotted Syla
+	8302.1.1 = { death = yes}	
 }
 1012330 = {		
 	name="Daniela"
@@ -3937,6 +4494,7 @@
 			}
 		}
 	}
+	8307.1.1 = { death = yes}	
 }
 1023330 = {		
 	name="Felicia"	
@@ -3947,7 +4505,8 @@
 	religion="the_seven"	
 	culture="stormlander"
 
-	8240.1.1 = {birth="8240.1.1"}	
+	8240.1.1 = {birth="8240.1.1"}
+	8307.1.1 = { death = yes}	
 }		
 1330 = {		
 	name="Cassana"	
@@ -4029,6 +4588,7 @@
 		add_trait = "knight"
 		add_trait = "trained_warrior"
 	}	
+	8314.1.1 = { death = yes}	
 }	
 1032330 = {		
 	name="Jeyne"
@@ -4039,7 +4599,8 @@
 	religion="the_seven"	
 	culture="stormlander"
 
-	8250.1.1 = {birth="8250.1.1"}	
+	8250.1.1 = {birth="8250.1.1"}
+	8314.1.1 = { death = yes}	
 }	
 ##Issue of Lomas
 6330 = {		
@@ -4099,8 +4660,79 @@
 	8291.1.1 = {
 		add_trait = "knight"
 		add_trait = "trained_warrior"
+	}
+	8302.1.1 = {
+		add_spouse = 1013316
 	}	
 }	
+1004331 = {		
+	name="Alynne"	
+	dynasty=330
+	female=yes
+	religion="the_seven"	
+	culture="stormlander"
+	
+	father=1004330
+	mother=1013316
+
+	8304.1.1 = { birth=yes}		
+}
+1004332 = {		
+	name="Melessa"	
+	dynasty=330
+	female=yes
+	religion="the_seven"	
+	culture="stormlander"
+	
+	father=1004330
+	mother=1013316
+
+	8306.1.1 = { birth=yes}		
+}
+1004333 = {		
+	name="Lomas"	
+	dynasty=330
+
+	religion="the_seven"	
+	culture="stormlander"
+	
+	father=1004330
+	mother=1013316
+
+	8309.1.1 = { birth=yes}	
+	8328.1.1 = {
+		add_trait = "knight"
+		add_trait = "skilled_warrior"
+	}	
+}
+1004334 = {		
+	name="Andrew"	
+	dynasty=330
+
+	religion="the_seven"	
+	culture="stormlander"
+	
+	father=1004330
+	mother=1013316
+
+	8311.1.1 = { birth=yes}	
+	8330.1.1 = {
+		add_trait = "knight"
+		add_trait = "skilled_warrior"
+	}	
+}
+1004335 = {		
+	name="Mya"	
+	dynasty=330
+	female=yes
+	religion="the_seven"	
+	culture="stormlander"
+	
+	father=1004330
+	mother=1013316
+
+	8313.1.1 = { birth=yes}		
+}
 ##Issue of Richard
 176330 = {	#Robert's unnamed 'playmate'
 	name="Melessa"	
@@ -4187,6 +4819,9 @@
 		effect = { health = 3 }
 	}
 	8283.1.1 = { add_trait = widowed }
+	8307.1.1 = {
+		death = yes
+	}	
 }
 311327 = {
 	name="Herbert"	# Renly's son, a lord
@@ -4204,6 +4839,7 @@
 		add_trait="trained_warrior"
 	}
 	8270.1.1 = {add_spouse=411327}
+	8314.1.1 = { death = yes }	
 }
 411327 = {		
 	name="Berta"	# Herbert's wife
@@ -4214,7 +4850,8 @@
 	religion="the_seven"	
 	culture="stormlander"		
 
-	8252.1.1 = {birth="8252.1.1"}	
+	8252.1.1 = {birth="8252.1.1"}
+	8314.1.1 = { death = yes }	
 }	
 315327 = {
 	name="Robert"	# Renly's son, not a lord
@@ -4231,6 +4868,7 @@
 		add_trait="knight"
 		add_trait="trained_warrior"
 	}
+	8313.1.1 = { death = yes }	
 }
 316327 = {
 	name="Bonifer"	# Renly's son, not a lord
@@ -4247,6 +4885,7 @@
 		add_trait="knight"
 		add_trait="trained_warrior"
 	}
+	8317.1.1 = { death = yes }	
 }		
 201327 = {		
 	name="Eldon"		
@@ -4263,7 +4902,64 @@
 		add_trait="knight"
 		add_trait="trained_warrior"
 	}
-}		
+	8303.1.1 = {add_spouse=342354}	
+}	
+201337 = {		
+	name="Rhoelle"		
+	dynasty=327	
+	female=yes
+	religion="the_seven"	
+	culture="stormlander"	
+
+	father=201327
+	mother=342354	
+	
+	8306.1.1 = {birth=yes}	
+}
+201347 = {		
+	name="Bryen"		
+	dynasty=327	
+
+	religion="the_seven"	
+	culture="stormlander"	
+
+	father=201327
+	mother=342354	
+	
+	8308.1.1 = {birth=yes}	
+	8327.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+201357 = {		
+	name="Tancred"		
+	dynasty=327	
+
+	religion="the_seven"	
+	culture="stormlander"	
+
+	father=201327
+	mother=342354	
+	
+	8311.1.1 = {birth=yes}	
+	8330.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+201367 = {		
+	name="Felicia"		
+	dynasty=327	
+	female=yes
+	religion="the_seven"	
+	culture="stormlander"	
+
+	father=201327
+	mother=342354	
+	
+	8313.1.1 = {birth=yes}	
+}	
 313327 = {		
 	name="Bryen"
 	dynasty=327	
@@ -4349,6 +5045,7 @@
 	8250.1.1 = {birth="8250.1.1"}
 	8266.1.1 = {add_trait="knight"}
 	8270.1.1 = {add_spouse=4326}
+	8309.1.1 = { death = yes }	
 }
 4326 = {
 	name="Janyce"
@@ -4361,6 +5058,7 @@
 	add_trait="flamboyant_schemer"
 	
 	8247.1.1 = {birth="8247.1.1"}
+	8309.1.1 = { death = yes }	
 }
 1326 = {
 	name="Danica"
@@ -4375,6 +5073,7 @@
 	mother = 4326
 	
 	8280.1.1 = { birth="8280.1.1" }
+	8312.1.1 = { death = yes }		
 }
 2326 = {
 	name="Marianne"
@@ -4389,6 +5088,45 @@
 	mother = 4326
 	
 	8283.1.1 = {birth="8283.1.1"}
+	8302.1.1 = {add_spouse=328325}	
+}
+77326 = {
+	name="Steffon"
+	dynasty=326
+	
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=328325
+	mother = 2326
+	
+	8305.1.1 = {birth=yes}	
+	8323.1.1 = {add_trait="knight" add_trait="trained_warrior"}	
+}
+77327 = {
+	name="Desmera"
+	dynasty=326
+	female=yes
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=328325
+	mother = 2326
+	
+	8308.1.1 = {birth=yes}	
+}
+77328 = {
+	name="Rickard"
+	dynasty=326
+	
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=328325
+	mother = 2326
+	
+	8311.1.1 = {birth=yes}	
+	8330.1.1 = {add_trait="knight" add_trait="trained_warrior"}	
 }
 3326 = {
 	name="Desmera"
@@ -4421,6 +5159,7 @@
 	
 	8254.1.1 = { birth="8254.1.1"}
 	8270.1.1 = {add_trait="knight"}
+	8311.1.1 = {death=yes}	
 }
 
 ###
@@ -4442,6 +5181,7 @@
 	8267.1.1 = {birth="8267.1.1"}
 	8283.1.1 = {add_trait="knight"}
 	8285.1.1 = {add_spouse=427325}
+	8321.1.1 = { death = yes }	
 }
 427325 = {
 	name="Senelle"	# Michael's wife
@@ -4451,6 +5191,7 @@
 	culture="stormlander"
 
 	8267.1.1 = {birth="8267.1.1"}
+	8321.1.1 = { death = yes }	
 }
 328325 = {
 	name="Grance"	# Thurgood's son, not a lord
@@ -4465,6 +5206,7 @@
 
 	8270.1.1 = {birth="8270.1.1"}
 	8286.1.1 = {add_trait="knight"}
+	8328.1.1 = { death = yes }	
 }
 329325 = {
 	name="Melessa"	# Michael's daughter, not a lord
@@ -4505,6 +5247,56 @@
 
 	8291.1.1 = {birth="8291.1.1"}
 	8307.1.1 = {add_trait="knight"}
+	8308.1.1 = {add_spouse=343304}	
+}
+331326 = {
+	name="Brella"
+	dynasty=325
+	female=yes
+	religion="the_seven"
+	culture="stormlander"
+
+	father=331325
+	mother=343304
+
+	8311.1.1 = {birth=yes}	
+}
+331327 = {
+	name="Michael"
+	dynasty=325
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=331325
+	mother=343304
+
+	8313.1.1 = {birth=yes}
+	8330.1.1 = {add_trait="knight"}	
+}
+331328 = {
+	name="Senelle"
+	dynasty=325
+	female=yes
+	religion="the_seven"
+	culture="stormlander"
+
+	father=331325
+	mother=343304
+
+	8316.1.1 = {birth=yes}	
+}
+331329 = {
+	name="Cortnay"
+	dynasty=325
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=331325
+	mother=343304
+
+	8319.1.1 = {birth=yes}
 }
 
 ###
@@ -4525,6 +5317,7 @@
 	8256.1.1 = {birth="8256.1.1"}
 	8272.1.1 = {add_trait="knight"}
 	8276.1.1 = {add_spouse=415324}
+	8308.1.1 = { death = yes }	
 }
 415324 = {
 	name="Matrice"	# Jeren's wife
@@ -4534,6 +5327,7 @@
 	culture="stormlander"
 
 	8256.1.1 = {birth="8256.1.1"}
+	8308.1.1 = { death = yes }	
 }
 316324 = {
 	name="Ben"	# Jeren's son
@@ -4606,23 +5400,7 @@
 		give_nickname = nick_pennylover
 	}
 	8279.1.1 = {add_spouse=4200323}
-	8299.7.2 = {
-		effect = {
-			set_defacto_liege = ROOT
-			set_character_flag = neutral
-			clr_character_flag = supporting_king
-			clr_character_flag = against_king
-			any_demesne_title = {
-				limit = { 
-					OR = {
-						tier = COUNT
-						tier = DUKE
-					}
-				}				
-				set_variable = { which = "de_facto_kingdom" value = 8 } #stormlands
-			}
-		}
-	}
+	8317.1.1 = { death = yes }	
 }
 4200323 = {
 	name="Tyana"	# 
@@ -4632,6 +5410,7 @@
 	culture="stormlander"
 
 	8261.1.1 = {birth="8261.1.1"}
+	8317.1.1 = { death = yes }	
 }
 338323 = {
 	name="Arstan"	# Simon's son, not a lord
@@ -4658,6 +5437,7 @@
 
 	8264.1.1 = {birth="8264.1.1"}
 	8280.1.1 = {add_trait="knight"}
+	8330.1.1 = { death = yes }	
 }
 340323 = {
 	name="Addam"	# Alesander's son, not a lord
@@ -4671,6 +5451,32 @@
 
 	8280.1.1 = {birth="8280.1.1"}
 	8296.1.1 = {add_trait="knight"}
+	8304.1.1 = {add_spouse=330361}	
+}
+349323 = {
+	name="Alesander"
+	dynasty=323
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=340323
+	mother=330361
+
+	8307.1.1 = {birth=yes}
+	8325.1.1 = {add_trait="knight"}
+}
+349324 = {
+	name="Corenna"
+	dynasty=323
+	female=yes
+	religion="the_seven"
+	culture="stormlander"
+
+	father=340323
+	mother=330361
+
+	8310.1.1 = {birth=yes}
 }
 
 ###
@@ -4723,6 +5529,7 @@
 			}
 		}
 	}
+	8302.1.1 = { death = yes}	
 }
 4204306 = {
 	name="Rhonda"	# Gulian's wife
@@ -4774,6 +5581,43 @@
 		add_trait=wounded
 		employer=204306
 	}
+	8300.6.1 = {add_spouse=341304}	
+	8302.1.1={
+		remove_trait=wounded
+	}
+	8317.1.1 = { death = yes}		
+}
+206307 = {
+	name="Balon"
+	dynasty=306
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=206306
+	mother=341304
+
+	8302.1.1 = {birth=yes}
+	8320.1.1 = {
+		add_trait="knight"
+		add_trait="skilled_warrior"
+	}	
+}
+206308 = {
+	name="Gulian"
+	dynasty=306
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=206306
+	mother=341304
+
+	8304.1.1 = {birth=yes}
+	8321.1.1 = {
+		add_trait="knight"
+		add_trait="skilled_warrior"
+	}	
 }
 207306 = { #moved from riverlands
 	name="Ravella"	# Canon, Gulian's daughter, not a lord
@@ -4788,6 +5632,7 @@
 
 	8260.1.1 = {birth="8260.1.1"}
 	#8277.1.1 - Spouse - Theomar Smallwood
+	8316.1.1 = { death = yes }	
 }
 208306 = {
 	name="Jeyne"	# Canon, Gulian's daughter, not a lord
@@ -4801,6 +5646,7 @@
 	mother=4204306
 
 	8262.1.1 = {birth="8262.1.1"}
+	8320.1.1 = { death = yes }	
 }
 209306 = {
 	name="Balon"	# Canon, Gulian's son, not a lord
@@ -4837,6 +5683,7 @@
 		employer=3190 # Jaime Lannister
 		add_trait="kingsguard"
 	}
+	8303.1.1 = { death = yes }	
 }
 210306 = {
 	name="Clifford"	# Canon, Gulian's brother, not a lord
@@ -4855,6 +5702,7 @@
 		add_trait="knight"
 		add_trait="trained_warrior"
 	}
+	8306.1.1 = { death = yes }	
 }
 
 ###
@@ -4887,6 +5735,7 @@
 	add_trait="naive_appeaser"
 	
 	8241.1.1 = {birth="8241.1.1"}
+	8302.1.1 = { death = yes }		
 }
 200305 = {
 	name="Richard"	# Canon, Joffrey's son, a lord
@@ -4917,6 +5766,58 @@
 		add_trait="trained_warrior"
 		add_trait="drunkard"
 	}
+	8301.1.1 = {add_spouse=327361}
+	8327.1.1 = { death = yes }	
+}
+299305 = {
+	name="Joffrey"
+	dynasty=305
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=200305
+	mother=327361
+	
+	add_trait="brave"
+
+	8303.1.1 = {birth=yes}
+	8321.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}
+}
+299306 = {
+	name="Clifford"
+	dynasty=305
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=200305
+	mother=327361
+	
+	add_trait="brave"
+
+	8305.1.1 = {birth=yes}
+	8323.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}
+}
+299307 = {
+	name="Dalla"
+	dynasty=305
+	female=yes
+	religion="the_seven"
+	culture="stormlander"
+
+	father=200305
+	mother=327361
+	
+	add_trait="brave"
+
+	8307.1.1 = {birth=yes}
 }
 317305 = {
 	name="Alona"	# Joffrey's daughter, not a lord
@@ -5049,7 +5950,58 @@
 			}
 		}
 	}
-}		
+	8302.1.1 = {add_spouse=102310}	
+}	
+44303 = {		
+	name="Beric"	
+	dynasty=303	
+	
+	religion="the_seven"	
+	culture="stormlander"	
+
+	father=2303
+	mother=102310
+
+	8304.1.1 = {birth=yes}
+	8323.1.1 = {add_trait="knight"}
+}
+44304 = {		
+	name="Elyssa"	
+	dynasty=303	
+	female=yes
+	religion="the_seven"	
+	culture="stormlander"	
+
+	father=2303
+	mother=102310
+
+	8306.1.1 = {birth=yes}
+}	
+44305 = {		
+	name="Edric"	
+	dynasty=303	
+	
+	religion="the_seven"	
+	culture="stormlander"	
+
+	father=2303
+	mother=102310
+
+	8309.1.1 = {birth=yes}
+	8327.1.1 = {add_trait="knight"}
+}
+44306 = {		
+	name="Alona"	
+	dynasty=303	
+	female=yes
+	religion="the_seven"	
+	culture="stormlander"	
+
+	father=2303
+	mother=102310
+
+	8312.1.1 = {birth=yes}
+}
 3303 = {		
 	name="Cecyle"	
 	female=yes	
@@ -5062,7 +6014,6 @@
 	mother=400303
 
 	8281.1.1 = {birth="8281.1.1"}	
-	8298.10.28 = { employer = 2303 }
 }
 
 ###
@@ -5139,23 +6090,6 @@
 
 	8269.1.1 = {birth="8269.1.1"}
 	8289.1.1 = {add_spouse = 104310}
-	8299.7.2 = {
-		effect = {
-			set_defacto_liege = ROOT
-			set_character_flag = neutral
-			clr_character_flag = supporting_king
-			clr_character_flag = against_king
-			any_demesne_title = {
-				limit = { 
-					OR = {
-						tier = COUNT
-						tier = DUKE
-					}
-				}				
-				set_variable = { which = "de_facto_kingdom" value = 8 } #stormlands
-			}
-		}
-	}
 }
 104310 = {		
 	name="Myrcella"
@@ -5235,6 +6169,7 @@
 		employer=201302 # Barristan Selmy
 	}
 	8299.1.1 = { employer = 3190}		# Jaime Lannister
+	8303.1.1 = { death = yes }	
 }
 339304 = {
 	name="Barra"	# Beric's daughter, not a lord
@@ -5275,6 +6210,7 @@
 	mother=436304
 
 	8267.1.1 = {birth="8267.1.1"}
+	8313.1.1 = { death = yes }		
 }
 342304 = {
 	name="Goodwin"	# Beric's son, a lord
@@ -5289,23 +6225,7 @@
 	8268.1.1 = {birth="8268.1.1"}
 	8284.1.1 = {add_trait="knight"}
 	8286.1.1 = {add_spouse=442304}
-	8299.7.2 = {
-		effect = {
-			set_defacto_liege = ROOT
-			set_character_flag = neutral
-			clr_character_flag = supporting_king
-			clr_character_flag = against_king
-			any_demesne_title = {
-				limit = { 
-					OR = {
-						tier = COUNT
-						tier = DUKE
-					}
-				}				
-				set_variable = { which = "de_facto_kingdom" value = 8 } #stormlands
-			}
-		}
-	}
+	8320.1.1 = { death = yes }		
 }
 442304 = {
 	name="Leona"	# 
@@ -5315,6 +6235,7 @@
 	culture="stormlander"
 
 	8268.1.1 = {birth="8268.1.1"}
+	8320.1.1 = { death = yes }		
 }
 343304 = {
 	name="Brella"	# Goodwin's daughter, not a lord
@@ -5416,6 +6337,7 @@
 			force_mult = 1
 		}
 	}
+	8310.1.1 = { death = yes }		
 }
 412273 = {
 	name="Katya"	# Robin's wife
@@ -5427,6 +6349,7 @@
 	add_trait="naive_appeaser"
 
 	8257.1.1 = {birth="8257.1.1"}
+	8310.1.1 = { death = yes }		
 }
 312273 = {
 	name="Reyhala"	# Robin's daughter, not a lord
@@ -5440,6 +6363,57 @@
 	mother=412273
 
 	8280.1.1 = {birth="8280.1.1"}
+	8301.1.1 = {add_spouse=10223}	
+}
+312274 = {
+	name="Rolland"
+	dynasty=273
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=10223
+	mother=312273
+
+	8304.1.1 = {birth=yes}	
+	8322.1.1 = {add_trait="knight" add_trait="skilled_warrior"}	
+}
+312275 = {
+	name="Katya"
+	dynasty=273
+	female=yes
+	religion="the_seven"
+	culture="stormlander"
+
+	father=10223
+	mother=312273
+
+	8307.1.1 = {birth=yes}	
+}
+312276 = {
+	name="Robin"
+	dynasty=273
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=10223
+	mother=312273
+
+	8309.1.1 = {birth=yes}	
+	8327.1.1 = {add_trait="knight" add_trait="skilled_warrior"}	
+}
+312277 = {
+	name="Donyse"
+	dynasty=273
+	female=yes
+	religion="the_seven"
+	culture="stormlander"
+
+	father=10223
+	mother=312273
+
+	8312.1.1 = {birth=yes}	
 }
 
 ###
@@ -5523,6 +6497,7 @@
 	culture="stormlander"
 	
 	8265.1.1 = {birth="8265.1.1"}
+	8318.1.1 = { death = yes }		
 }
 3301 = {		
 	name="Mylenda"	 ###Petyr Frey's Wife###
@@ -5539,6 +6514,7 @@
 	mother=100301	
 	
 	8261.1.1 = { birth="8261.1.1"}	
+	8314.1.1 = { death = yes }	
 }
 101301 = {
 	name="Rolland"	# canon
@@ -5860,6 +6836,7 @@
 			}
 		}
 	}	
+	8303.1.1 = {death = yes}	
 }
 324361 = {
 	name="Myrcella"	# not a lord
@@ -5888,6 +6865,7 @@
 	8257.1.1 = {birth="8257.1.1"}
 	8273.1.1 = {add_trait="knight"}
 	8275.1.1 = {add_spouse=425361}
+	8312.1.1 = {death = yes}	
 }
 425361 = {
 	name="Brella"	# 
@@ -5897,6 +6875,7 @@
 	culture="stormlander"
 
 	8257.1.1 = {birth="8257.1.1"}
+	8312.1.1 = {death = yes}	
 }
 326361 = {
 	name="Bethany"	# not a lord
@@ -5910,6 +6889,7 @@
 	mother=422361
 
 	8259.1.1 = {birth="8259.1.1"}
+	8319.1.1 = {death = yes}	
 }
 327361 = {
 	name="Dalla"	# not a lord
@@ -5949,6 +6929,68 @@
 
 	8287.1.1 = {birth="8287.1.1"}
 	8303.1.1 = {add_trait="knight"}
+	8305.1.1 = {add_spouse=329325}	
+}
+399361 = {
+	name="Bethany"	# not a lord
+	dynasty=361
+	female=yes
+	religion="the_seven"
+	culture="stormlander"
+
+	father=329361
+	mother=329325
+
+	8308.1.1 = {birth=yes}
+}
+399362 = {
+	name="Melessa"	# not a lord
+	dynasty=361
+	female=yes
+	religion="the_seven"
+	culture="stormlander"
+
+	father=329361
+	mother=329325
+
+	8310.1.1 = {birth=yes}
+}
+399363 = {
+	name="Gunthor"	# not a lord
+	dynasty=361
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=329361
+	mother=329325
+
+	8313.1.1 = {birth=yes}
+	8330.1.1 = {add_trait="knight"}
+}
+399364 = {
+	name="Jon"	# not a lord
+	dynasty=361
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=329361
+	mother=329325
+
+	8316.1.1 = {birth=yes}
+}
+399365 = {
+	name="Talla"	# not a lord
+	dynasty=361
+	female=yes
+	religion="the_seven"
+	culture="stormlander"
+
+	father=329361
+	mother=329325
+
+	8319.1.1 = {birth=yes}
 }
 330361 = {
 	name="Barra"	# not a lord
@@ -6019,6 +7061,7 @@
 	mother=4032362
 
 	8253.1.1 = {birth="8253.1.1"}
+	8309.1.1 = { death = yes }		
 }
 3037362 = {
 	name="Alesander"	# not a lord
@@ -6031,6 +7074,7 @@
 	mother=4032362
 
 	8254.1.1 = {birth="8254.1.1"}
+	8311.1.1 = { death = yes }		
 }
 3038362 = {
 	name="Argilac"	# a lord
@@ -6053,6 +7097,42 @@
 	culture="stormlander"
 
 	8281.1.1 = {birth="8281.1.1"}
+}
+3038363 = {
+	name="Alaric"	# a lord
+	dynasty=362
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=3038362
+	mother=4038362
+
+	8302.1.1 = {birth=yes}
+}
+3038364 = {
+	name="Meredyth"	# a lord
+	dynasty=362
+	female=yes
+	religion="the_seven"
+	culture="stormlander"
+
+	father=3038362
+	mother=4038362
+
+	8305.1.1 = {birth=yes}
+}
+3038365 = {
+	name="Alesander"	# a lord
+	dynasty=362
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=3038362
+	mother=4038362
+
+	8307.1.1 = {birth=yes}
 }
 3039362 = {
 	name="Armond"	# not a lord
@@ -6115,6 +7195,7 @@
 			force_mult = 1
 		}
 	}
+	8322.1.1 = { death = yes }	
 }
 4024311 = {
 	name="Leona"
@@ -6178,6 +7259,36 @@
 	mother=4024311
 
 	8289.1.1 = {birth="8289.1.1"}
+	8303.1.1 = { death = yes }		
+}
+3026312 = {
+	name="Guyard"
+	dynasty=311
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=3024311
+	mother=4024311
+
+	8302.1.1 = {birth=yes}
+	8321.1.1={ 
+		add_trait=trained_warrior
+		add_trait=knight
+	}	
+}
+3026313 = {
+	name="Senelle"	# not a lord
+	female=yes
+	dynasty=311
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=3024311
+	mother=4024311
+
+	8304.1.1 = {birth=yes}
 }
 
 ###
@@ -6349,6 +7460,7 @@
 	mother=2002333
 
 	8255.1.1 = {birth="8255.1.1"}
+	8311.1.1 = {death = yes}	
 }
 2006333 = {
 	name="Tommen"	# not a lord
@@ -6460,7 +7572,7 @@
 	
 	8219.1.1 = { birth="8219.1.1" }
 	8235.1.1 = {
-		employer=20317 #Lyonel Baratheon
+		employer=20317 #“Lyonel” Baratheon
 		add_trait="humble"
 		add_trait="scholarly_theologian"
 		add_trait="celibate"
@@ -6775,7 +7887,8 @@
 				# }
 			# }
 		}
-	}	
+	}
+	8303.1.1 = {death = yes}	
 }
 1029110 = {
 	name="Marya"
@@ -6937,7 +8050,52 @@
 			religion="rhllor"
 		}
 		add_trait="zealous"
+	}
+	8308.1.1={ add_spouse = 345304 }		
+}
+1089111 = {
+	name="Jon"
+	
+	religion="rhllor"
+	culture="stormlander"
+	father=1089110
+	mother=345304
+	dynasty=9110
+	
+
+	8310.1.1={ birth=yes}
+	8328.1.1={
+		add_trait=knight
+		add_trait=skilled_warrior		
 	}	
+}
+1089112 = {
+	name="Barristan"
+	
+	religion="rhllor"
+	culture="stormlander"
+	father=1089110
+	mother=345304
+	dynasty=9110
+	
+
+	8312.1.1={ birth=yes}
+	8330.1.1={
+		add_trait=knight
+		add_trait=skilled_warrior		
+	}	
+}
+1089113 = {
+	name="Melisandre"
+	female=yes
+	religion="rhllor"
+	culture="stormlander"
+	father=1089110
+	mother=345304
+	dynasty=9110
+	
+
+	8315.1.1={ birth=yes}
 }
 1099110 = {
 	name="Stannis"
@@ -7186,6 +8344,7 @@
 	mother=428805046
 
 	8240.1.1 = {birth="8240.1.1"}
+	8312.1.1 = { death = yes }	
 }
 133805046 = {
 	name="Eglantine"	# not a lord
@@ -7199,6 +8358,7 @@
 	mother=428805046
 
 	8243.1.1 = {birth="8243.1.1"}
+	8309.1.1 = { death = yes }	
 }
 134805046 = {
 	name="Meredyth"	# not a lord
@@ -7227,6 +8387,7 @@
 	8260.1.1 = {birth="8260.1.1"}
 	8276.1.1 = {add_trait=knight add_trait=trained_warrior}
 	8278.1.1 = {add_spouse=435805046}
+	8312.1.1 = { death = yes }		
 }
 435805046 = {
 	name="Gwyneth"
@@ -7236,6 +8397,7 @@
 	culture="stormlander"
 
 	8260.1.1 = {birth="8260.1.1"}
+	8312.1.1 = { death = yes }		
 }
 136805046 = {
 	name="Devan"	# not a lord
@@ -7263,6 +8425,7 @@
 	mother=431805046
 
 	8264.1.1 = {birth="8264.1.1"}
+	8321.1.1 = { death = yes }		
 }
 138805046 = {
 	name="Cedrik"	# not a lord
@@ -7276,6 +8439,7 @@
 
 	8266.1.1 = {birth="8266.1.1"}
 	8282.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8322.1.1 = { death = yes }		
 }
 139805046 = {
 	name="Gowen"	# not a lord
@@ -7289,6 +8453,7 @@
 
 	8268.1.1 = {birth="8268.1.1"}
 	8284.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8330.1.1 = { death = yes }		
 }
 140805046 = {
 	name="Lynesse"	# not a lord
@@ -7317,6 +8482,57 @@
 
 	8281.1.1 = {birth="8281.1.1"}
 	8297.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8303.1.1 = {add_spouse=2008333}	
+}
+141046 = {
+	name="Dermot"	# not a lord
+	dynasty=805046
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=141805046
+	mother=2008333
+
+	8305.1.1 = {birth=yes}
+	8324.1.1 = {add_trait=knight add_trait=trained_warrior}
+}
+141047 = {
+	name="Richard"	# not a lord
+	dynasty=805046
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=141805046
+	mother=2008333
+
+	8307.1.1 = {birth=yes}
+	8327.1.1 = {add_trait=knight add_trait=trained_warrior}
+}
+141048 = {
+	name="Leyla"	# not a lord
+	dynasty=805046
+	female=yes
+	religion="the_seven"
+	culture="stormlander"
+
+	father=141805046
+	mother=2008333
+
+	8310.1.1 = {birth=yes}
+}
+141049 = {
+	name="Ravella"	# not a lord
+	dynasty=805046
+	female=yes
+	religion="the_seven"
+	culture="stormlander"
+
+	father=141805046
+	mother=2008333
+
+	8313.1.1 = {birth=yes}
 }
 142805046 = {
 	name="Ravella"	# not a lord

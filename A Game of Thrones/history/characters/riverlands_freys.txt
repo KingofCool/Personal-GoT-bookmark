@@ -138,6 +138,9 @@
 			}
 		}
 	}
+	8303.1.1={
+		death=yes
+		}
 }
 ###Walders Wifes###
 5187 = {
@@ -230,9 +233,9 @@
 	father=127
 	mother = 5187
 	
-	8234.1.1 = {birth="8234.1.1" effect = { health = 2 } }	
+	8234.1.1 = {birth="8234.1.1" effect = { health = 2 } }
 	8249.1.1 = {add_spouse= 205306} #Corenna Swann - Mother to Ryman.
-	8250.1.1 = { add_trait = knight add_trait = trained_warrior }
+	8250.1.1 = { add_trait = knight add_trait = trained_warrior }	
 	8251.1.1 = {add_spouse= 2217} #Jeyne Lydden - Mother to Aegon & Maegelle.
 	8253.1.1 = {add_spouse= 666182} #Marsella Waynwood - Mother to Walton.
 	8255.1.1 = { 
@@ -298,6 +301,7 @@
 	8300.2.9={
 		employer=4190 #Cersei
 	}
+	8303.1.1 = { death = yes }	
 }
 ###Emmons 1st Child###
 6137 = {
@@ -368,6 +372,7 @@
 	8300.2.9={
 		employer=4190 #Cersei
 	}
+	8303.1.1 = { death = yes }		
 }
 71371 = {
 	name="Willem"
@@ -387,6 +392,7 @@
 	8300.2.9={
 		employer=4190 #Cersei
 	}
+	8303.1.1 = { death = yes }	
 	##page at ashemark
 }
 ###Emmons 2nd Son###
@@ -417,6 +423,7 @@
 	8300.2.9={
 		employer=4190 #Cersei
 	}
+	8303.1.1 = { death = yes }	
 }
 ###Emmons 3rd Son###
 7188 = {
@@ -483,6 +490,7 @@
 	8300.2.9={
 		employer=4190 #Cersei
 	}
+	8303.1.1 = { death = yes }	
 }
 ###
 ###Aenys (son 3)
@@ -510,7 +518,7 @@
 	father=127
 	mother = 5187
 	
-	8242.1.1 = { birth="8242.1.1"}		
+	8242.1.1 = { birth="8242.1.1"}
 	8258.1.1 = { 
 		add_trait="trained_warrior"
 		add_trait="knight"
@@ -537,6 +545,9 @@
 	mother = 5187
 	
 	8244.10.1 = {birth="8244.10.1"}
+	8305.1.1={
+		death = yes
+	}
 }
 ####################################
 ###Cyrenna Swann's Sons (post 34)###
@@ -631,6 +642,7 @@
 		employer=77113
 		effect = { set_character_flag = themost_devout }
 	}
+	8310.1.1 = { death = yes }		
 }
 ##########################################
 ###Amareis Crakehall Children (post 42)###
@@ -687,6 +699,7 @@
 			hidden_tooltip = { character_event = { id = maintenance.3 } }#dishonour trait
 		} 
 	}
+	8303.1.1 = { death = yes }	
 }
 8127 = {
 	name="Lythene" #Married Lucias Vypren.
@@ -700,6 +713,7 @@
 	mother = 4227
 	
 	8259.1.1 = {birth="8259.1.1"}
+	8303.1.1 = { death = yes }		
 }
 100129 = {
 	name="Symond"
@@ -775,7 +789,8 @@
 			set_variable = { which = "dishonorable" value = 10 } 
 			hidden_tooltip = { character_event = { id = maintenance.3 } }#dishonour trait
 		} 
-	}
+	}		
+	8303.1.1 = { death = yes }		
 }
 ###Danwells Wife###
 ##Wynafrei Whent
@@ -997,7 +1012,8 @@
 		add_trait=poor_warrior
 		add_trait=squire
 		guardian=94023 #Donnel Waynwood
-	}
+	}	
+	8303.1.1 = { death = yes }		
 }
 662129 = {
 	name="Cynthea"
@@ -1042,7 +1058,8 @@
 			set_variable = { which = "dishonorable" value = 10 } 
 			hidden_tooltip = { character_event = { id = maintenance.3 } }#dishonour trait
 		} 
-	}
+	}		
+	8303.1.1 = { death = yes }	
 }
 ###His Wife###
 5282 = {
@@ -1057,6 +1074,7 @@
 	mother=111282
 	
 	8267.1.1={ birth="8267.1.1"}	
+	8329.1.1 = { death = yes }	
 }
 ####Rymunds Children###
 7282 = {
@@ -1077,6 +1095,9 @@
 	8298.1.1 = { 
 		employer=88130 #learning at citadel
 	}
+	8303.1.1 = {
+		add_trait="maester"	
+	}		
 }
 18282 = {
 	name="Malwyn"
@@ -1092,6 +1113,7 @@
 	8294.1.1 = {
 		add_trait="poor_warrior"
 	}
+	8303.1.1 = { death = yes }				
 }
 28282 = {
 	name="Serra"
@@ -1152,7 +1174,7 @@
 	father=3129
 	mother = 5282
 	
-	8299.2.1 = {birth="8299.2.1"}
+	8299.2.1 = {birth="8299.2.1"}	
 }
 68282 = {
 	name="Jaime"
@@ -1204,7 +1226,8 @@
 			set_variable = { which = "dishonorable" value = 10 } 
 			hidden_tooltip = { character_event = { id = maintenance.3 } }#dishonour trait
 		} 
-	}
+	}		
+	8303.1.1 = { death = yes }	
 }
 ###Lothars Children###
 6150 = {
@@ -1277,7 +1300,8 @@
 		add_spouse= 2134 #Sallei Paege - Mother of Walder, Dickon & Mathis. 
 		add_trait=knight
 		add_trait="trained_warrior"
-	} 
+	} 	
+	8303.1.1 = { death = yes }		
 }
 ###His Wife###
 2134 = {
@@ -1292,6 +1316,7 @@
 	mother=10134
 	
 	8263.1.1 = {birth="8263.1.1"}
+	8320.1.1 = { death = yes }	
 }
 ###Jammos Children###
 15129 = {
@@ -1368,7 +1393,8 @@
 			set_variable = { which = "dishonorable" value = 10 } 
 			hidden_tooltip = { character_event = { id = maintenance.3 } }#dishonour trait
 		} 
-	}
+	}	
+	8303.1.1 = { death = yes }	
 }
 ###His Wife###
 3134 = {
@@ -1429,6 +1455,7 @@
 	mother = 1150
 	
 	8269.6.1 = {birth="8269.6.1"}
+	8303.1.1 = { death = yes }		
 }
 8129 = {
 	name="Tyta"
@@ -1443,6 +1470,7 @@
 	father=127
 	mother = 1150
 	8270.6.1 = { birth="8270.6.1"}
+	8303.1.1 = { death = yes }		
 }
 ######################################
 ###Bethany Rosby Children (post 61)###
@@ -1466,6 +1494,7 @@
 		add_trait=knight
 		add_trait=skilled_warrior
 	}
+	8303.1.1 = { death = yes }	
 }
 1130 = {
 	name="Benfrey"
@@ -1554,6 +1583,7 @@
 	8300.1.1 = {
 		employer=94053 #House Hunter
 	}
+	8328.1.1 = { death = yes }		
 }
 3130 = {
 	name="Olyvar"
@@ -1583,6 +1613,7 @@
 		employer = 127 
 		remove_trait="squire"
 	}
+	8303.1.1 = { death = yes }		
 }
 4130 = {
 	name="Roslin"
@@ -1641,6 +1672,7 @@
 	8296.1.1 = {
 		add_trait="poor_warrior"
 	}
+	8303.1.1 = { death = yes }		
 }
 8787876 = {
 	name="Colmar"
@@ -1656,6 +1688,7 @@
 	8298.1.1 = {
 		add_trait="trained_warrior"
 	}
+	8303.1.1 = { death = yes }		
 }
 8787877 = {
 	name="Waltyr"
@@ -1673,6 +1706,7 @@
 	8299.1.1 = {
 		add_trait="poor_warrior"
 	}
+	8303.1.1 = { death = yes }		
 }
 
 8787878 = {
@@ -1693,6 +1727,7 @@
 		guardian=87 #roose bolton
 		add_trait="trained_warrior"
 	}
+	8303.1.1 = { death = yes }		
 }
 8787879 = {
 	name="Shirei"
@@ -1765,7 +1800,8 @@
 	religion="the_seven"
 	culture="riverlander"
 	
-	8246.1.1 = {birth="8246.1.1"}
+	8246.1.1 = {birth="8246.1.1"}	
+	8311.1.1 = { death = yes }	
 }
 ###Rymans 1st son###
 5177 = {
@@ -1795,7 +1831,8 @@
 			add_rival = 6177 #Black Walder
 		}
 	}
-	8285.1.1 = {add_spouse= 94056} #Janyce Hunter, mother of Walda Frey
+	8285.1.1 = {add_spouse= 94056} #Janyce Hunter, mother of Walda Frey	
+	8303.1.1 = { death = yes }	
 }
 ###Edwyns Wife###
 94056 = {
@@ -1867,7 +1904,8 @@
 			set_variable = { which = "dishonorable" value = 10 } 
 			hidden_tooltip = { character_event = { id = maintenance.3 } }#dishonour trait
 		} 
-	}
+	}	
+	8303.1.1 = { death = yes }	
 }
 ###Rymans 3rd Son###
 4301 = {
@@ -1996,6 +2034,7 @@
 	8296.1.1 = {
 		add_trait="trained_warrior"
 	}
+	8303.1.1 = { death = yes }		
 }
 26665153 = {
 	name="Patrek"
@@ -2029,6 +2068,7 @@
 		add_trait="poor_warrior"
 	}
 	8275.1.1 = { add_spouse= 66651531} #Deana Hardyng, wife of Walton Frey
+	8314.1.1 = { death = yes }	
 }
 ###Waldons Wife###
 66651531 = {
@@ -2042,6 +2082,7 @@
 	father=94087
 	
 	8249.1.1 = {birth="8249.1.1"}
+	8312.1.1 = { death = yes }	
 }
 ###Waldons 3 children###
 9992171 = {
@@ -2096,6 +2137,7 @@
 	8298.1.1 = {
 		add_trait="trained_warrior"
 	}
+	8303.1.1 = { death = yes }	
 }
 ##############################
 ###Aenys Children & Family ###
@@ -2183,7 +2225,8 @@
 	father=2282
 	mother=111282
 	
-	8263.1.1={birth="8263.1.1"}	
+	8263.1.1={birth="8263.1.1"}
+	8303.1.1 = { death = yes }		
 }
 ###Rahegars Sons###
 532911 = {
@@ -2256,6 +2299,7 @@
 			hidden_tooltip = { character_event = { id = maintenance.3 } }#dishonour trait
 		} 
 	}
+	8303.1.1 = { death = yes }
 }
 1132 = {
 	name="Harys"
@@ -2279,6 +2323,7 @@
 		add_trait="knight" 
 		add_trait=trained_warrior
 	}
+	8303.1.1 = { death = yes }		
 }
 ###Harys Wife###
 9991132 = {
@@ -2289,6 +2334,7 @@
 	culture="riverlander"
 	
 	8263.1.1 = {birth="8263.1.1"}
+	8303.1.1 = { death = yes }		
 }
 ###Harys Son###
 99911321 = {
@@ -2329,6 +2375,7 @@
 		add_trait="knight" 
 		add_trait=trained_warrior
 	}
+	8303.1.1 = { death = yes }		
 }
 3132 = {
 	name="Alyn"
@@ -2345,6 +2392,7 @@
 	8299.1.1 = { 
 		add_trait=trained_warrior
 	}
+	8303.1.1 = { death = yes }	
 }
 #############################
 ###Jareds Extended Family ###
@@ -2394,6 +2442,7 @@
 	mother=10155
 	
 	8260.1.1 = {birth="8260.1.1"}
+	8303.1.1 = { death = yes }		
 }
 ###Tytos Children###
 4155 = {
@@ -2427,6 +2476,7 @@
 	mother = 1155
 	
 	8287.1.1 = {birth="8287.1.1"}
+	8303.1.1 = { death = yes }		
 }
 5148 = {
 	name="Kyra"
@@ -2443,6 +2493,7 @@
 	8299.11.5={
 		add_trait="widowed"
 	}
+	8303.1.1 = { death = yes }		
 }
 ###Kyra's Husband### Garse Goodbrook
 ##############################
@@ -2460,6 +2511,7 @@
 	father=1139
 	
 	8252.1.1 = {birth="8252.1.1"}
+	8315.1.1 = { death = yes }	
 }
 ###Hosteens Eldest Son###
 3139 = {
@@ -2482,6 +2534,7 @@
 		add_trait="knight" 
 		add_trait=trained_warrior
 	} 
+	8303.1.1 = { death = yes }		
 }
 ###Arnwoods Children###
 11139 = {
@@ -2556,6 +2609,7 @@
 		add_trait=trained_warrior
 	}
 	8274.1.1 = {add_spouse= 8127} 
+	8308.1.1 = { death = yes }		
 }
 ###His Children###
 1131 = {
@@ -2585,7 +2639,48 @@
 	8294.1.1 = { 
 		add_trait="knight" 
 		add_trait=trained_warrior
-	}
+	}	
+	8302.1.1 = {add_spouse= 4155} 	
+}
+112131 = {
+	name="Lucias"
+	dynasty=131
+	
+	religion="old_gods"
+	culture="riverlander"
+	
+	father = 2131
+	mother = 4155
+	
+	8304.1.1 = {birth=yes}
+	8324.1.1 = { 
+		add_trait="knight" 
+		add_trait=trained_warrior
+	}	
+}
+112132 = {
+	name="Arwyn"
+	dynasty=131
+	female=yes
+	religion="old_gods"
+	culture="riverlander"
+	
+	father = 2131
+	mother = 4155
+	
+	8307.1.1 = {birth=yes}	
+}
+112133 = {
+	name="Bellena"
+	dynasty=131
+	female=yes
+	religion="old_gods"
+	culture="riverlander"
+	
+	father = 2131
+	mother = 4155
+	
+	8309.1.1 = {birth=yes}	
 }
 ####################
 ###Symond's Bravosi Branch###
@@ -2603,6 +2698,7 @@
 	add_trait=fair
 	
 	8261.1.1 = {birth="8261.1.1"}
+	8303.1.1 = { death = yes }		
 }
 ###Their Children###
 102129 = {
@@ -2620,6 +2716,7 @@
 		add_trait="poet" 
 		add_trait=poor_warrior
 	}
+	8303.1.1 = { death = yes }		
 }
 103129 = {
 	name="Alyx"
@@ -2678,6 +2775,7 @@
 			hidden_tooltip = { character_event = { id = maintenance.3 } }#dishonour trait
 		} 
 	}
+	8308.1.1 = { death = yes }	
 }
 ###His Wife###
 18125 = {
@@ -2703,6 +2801,7 @@
 			clr_character_flag = no_wedding_event
 		}
 	}
+	8308.1.1 = { death = yes }		
 }
 ###His Children###
 6001127 = {
@@ -2737,7 +2836,8 @@
 	}
 	8293.1.1 = { 
 		add_spouse=6003127
-	}
+	}	
+	8303.1.1 = { death = yes }	
 }
 ###His Wife & Child###
 6003127 = {
@@ -2784,6 +2884,7 @@
 		employer=38 #Rosbys
 		effect = { set_character_flag = serving_with_lord }
 	}
+	8314.1.1 = { death = yes }	
 }
 6006127 = {
 	name="Jeyne"
@@ -2799,6 +2900,7 @@
 	add_trait="bastard"
 	
 	8260.1.1 = { birth="8260.1.1"}
+	8311.1.1 = { death = yes }	
 }
 6007127 = {
 	name="Martyn"
@@ -2818,6 +2920,11 @@
 	8279.1.1 = { 
 		add_trait="trained_warrior"
 	}
+	8303.1.1 = {
+		add_trait="nightswatch"	
+		employer=1296
+	}		
+	8318.1.1 = { death = yes }	
 }
 6008127 = {
 	name="Ryger"
@@ -2836,6 +2943,11 @@
 	8280.1.1 = { 
 		add_trait=trained_warrior
 	}
+	8303.1.1 = {
+		add_trait="nightswatch"	
+		employer=1296
+	}	
+	8321.1.1 = { death = yes }	
 }
 6009127 = {
 	name="Ronnel"
@@ -2870,7 +2982,7 @@
 	8299.6.1 = {
 		effect = { prisoner = no }
 	}
-
+	8303.1.1 = { death = yes }
 }
 6010127 = {
 	name="Mellara"
@@ -2886,6 +2998,7 @@
 	add_trait="bastard"
 
 	8265.1.1 = { birth="8265.1.1"}
+	8318.1.1 = { death = yes }	
 }
 
 ################################################

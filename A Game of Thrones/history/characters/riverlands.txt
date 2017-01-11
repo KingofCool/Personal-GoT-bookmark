@@ -364,6 +364,79 @@
 			}
 		}	
 	}
+	8328.1.1 = {
+		death=yes
+	}
+}
+84159 = {
+	name="Roslin"
+	dynasty=159
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	add_trait = "fair"
+	father=4159
+	mother=4130
+	
+	8300.8.1 = { birth = yes  }	            
+}
+84160 = {
+	name="Patrek"
+	dynasty=159
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=4159
+	mother=4130
+	
+	8303.1.1 = { birth = yes  }	            
+	8321.1.1 = {
+		add_trait = "master_warrior"
+		add_trait = "knight"
+	}
+}
+84161 = {
+	name="Brynden"
+	dynasty=159
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=4159
+	mother=4130
+	
+	8306.1.1 = { birth = yes  }	            
+	8324.1.1 = {
+		add_trait = "trained_warrior"
+		add_trait = "knight"
+	}
+}
+84162 = {
+	name="Sansa"	
+	dynasty=159
+	female=yes
+	dna="cgjffvjhdgc"
+	properties="0b0000"	
+	religion="the_seven"
+	culture="riverlander"
+	add_trait = "fair"
+	father=4159
+	mother=4130
+
+	8308.1.1 = { birth = yes  }	            
+}
+84163 = {
+	name="Minisa"
+	dynasty=159
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	add_trait = "fair"
+	father=4159
+	mother=4130
+
+	8312.1.1 = { birth = yes  }	            
 }
 1059 = {
 	name="Catelyn"
@@ -395,7 +468,7 @@
 	8264.1.1 = {birth="8264.1.1"}
 	8280.1.1 = {add_trait="charismatic_negotiator"}
 	8298.11.2 = { 
-		add_trait = "widowed" 
+		add_trait = "widowed"
 		effect = { set_character_flag = dead_spouse_was_lover }
 		employer = 2059 #Robb
 	}
@@ -445,8 +518,8 @@
 	}
 	8280.1.1 = {add_trait="charismatic_negotiator"}
 	8298.11.2 = { 
-		add_trait = "widowed" 
-		effect = { set_character_flag = dead_spouse_was_lover }
+		add_trait = "widowed"
+		effect = { set_character_flag = dead_spouse_was_lover }		
 	}
 	8299.11.5 = {
 		# The Red Wedding
@@ -479,6 +552,9 @@
 		add_trait = ruthless
 		add_trait = cruel
 		give_nickname = nick_stoneheart
+	}
+	8303.1. = { 
+		death = yes
 	}
 }
 5159 = {
@@ -582,6 +658,15 @@
 	8279.1.1 = {give_nickname = nick_blackfish}
 	8298.12.20 = {employer=2059} #Joins Robb's army at Moat Cailan and serves as commander of his Outriders
 	8299.10.5 = {employer=4159} #Is left at Riverrun when Robb goes North. Defends it in the Siege of Riverrun
+	8303.1.1 = {
+		add_trait="kingsguard"
+	}
+	8303.1.1 = {
+		employer=6253
+	}
+	8306.1.1={
+		death = yes
+	}
 }
 #Household
 2000159 = {
@@ -652,6 +737,7 @@
 	8256.1.1 = {birth="8256.1.1"}
 	8272.1.1 = {add_spouse= 3125} 
 	8273.1.1 = {add_trait="knight"}
+	8312.1.1 = { death = yes }	
 }
 ###His Wife###
 3125 = {
@@ -662,6 +748,7 @@
 	culture="riverlander"
 	
 	8256.1.1 = {birth="8256.1.1"}
+	8312.1.1 = { death = yes }		
 }
 ###His Children###
 1125 = {
@@ -730,6 +817,7 @@
 	
 	8252.1.1 = {birth="8252.1.1"}
 	8268.1.1 = {add_spouse= 11291} 
+	8314.1.1 = { death = yes }		
 }
 ###His Wife###
 11291 = {
@@ -740,6 +828,7 @@
 	culture="riverlander"
 	
 	8252.1.1 = {birth="8252.1.1"}
+	8314.1.1 = { death = yes }		
 }
 ###His Children###
 21292 = {
@@ -753,6 +842,44 @@
 	mother= 11291
 	
 	8270.1.1 = {birth="8270.1.1"}
+	8302.1.1 = {add_spouse= 1125}
+ 	8323.1.1 = { death = yes }		
+}
+91292 = {
+	name="Fenice"
+	dynasty=129
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	
+	father= 21292
+	mother= 1125
+	
+	8303.1.1 = {birth=yes}	
+}
+91293 = {
+	name="Garrick"
+	dynasty=129
+
+	religion="the_seven"
+	culture="riverlander"
+	
+	father= 21292
+	mother= 1125
+	
+	8305.1.1 = {birth=yes}	
+}
+91294 = {
+	name="Raimond"
+	dynasty=129
+
+	religion="the_seven"
+	culture="riverlander"
+	
+	father= 21292
+	mother= 1125
+	
+	8308.1.1 = {birth=yes}	
 }
 ########################
 ####House Mallister#####
@@ -781,6 +908,9 @@
 	culture="riverlander"
 	
 	8218.1.1 = {birth="yes"}
+	8304.1.1={
+		death = yes
+	}
 }
 ###Jason's Father
 4128 = {
@@ -808,6 +938,9 @@
 	culture="riverlander"
 	
 	8230.1.1 = {birth="yes"}
+	8306.1.1={
+		death = yes
+	}
 }
 ###The Lord###
 128 = {
@@ -844,23 +977,7 @@
 		add_trait="skilled_tactician"
 		add_trait="knight"
 	}
-	8299.11.5 = { 
-		effect = {
-			set_defacto_liege = ROOT
-			set_character_flag = neutral
-			clr_character_flag = supporting_king
-			clr_character_flag = against_king
-			any_demesne_title = {
-				limit = { 
-					OR = {
-						tier = COUNT
-						tier = DUKE
-					}
-				}				
-				set_variable = { which = "de_facto_kingdom" value = 3 } #riverlands
-			}
-		}
-	}
+	8315.1.1 = { death = yes }		
 }
 ###His Wife###
 12028 = {
@@ -873,6 +990,7 @@
 	culture="riverlander"
 	
 	8250.1.1 = {birth="8250.1.1"}
+	8310.1.1 = { death = yes }		
 }
 ###His Brother###
 1128 = {
@@ -912,6 +1030,7 @@
 	culture="riverlander"
 	
 	8250.1.1 = {birth="8250.1.1"}
+	8311.1.1 = { death = yes }		
 }
 ###Guy on The wall###
 2128 = {
@@ -942,6 +1061,7 @@
 		employer=121000
 		add_trait="nightswatch"
 	}
+	8303.1.1 = { death = yes }		
 }
 ###His Son###
 3128 = {
@@ -962,6 +1082,91 @@ name="Patrek"
 		add_trait="knight"
 		add_trait="trained_warrior"
 	}
+	8308.1.1 = {add_spouse=261150}	
+}
+93128 = {
+name="Bess" 
+	dynasty=128
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+
+	father=3128
+	mother=261150
+	
+	8309.1.1 = {birth=yes}
+}
+93129 = {
+name="Edmure" 
+	dynasty=128
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=3128
+	mother=261150
+	
+	8311.1.1 = {birth=yes}
+	8329.1.1 = {
+		add_trait="knight"
+		add_trait="skilled_warrior"
+	}	
+}
+93130 = {
+name="Freya" 
+	dynasty=128
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+
+	father=3128
+	mother=261150
+	
+	8313.1.1 = {birth=yes}
+}
+93131 = {
+name="Imoen" 
+	dynasty=128
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+
+	father=3128
+	mother=261150
+	
+	8315.1.1 = {birth=yes}
+}
+93132 = {
+name="Jason" 
+	dynasty=128
+
+	religion="the_seven"
+	culture="riverlander"
+	add_trait="twin"
+	father=3128
+	mother=261150
+	
+	8317.1.1 = {birth=yes}
+	8330.1.1 = {
+		add_trait="squire"
+		add_trait="trained_warrior"
+	}	
+}
+93133 = {
+name="Marq" 
+	dynasty=128
+
+	religion="the_seven"
+	culture="riverlander"
+	add_trait="twin"
+	father=3128
+	mother=261150
+	
+	8317.1.1 = {birth=yes}
+	8330.1.1 = {
+		add_trait="squire"
+		add_trait="trained_warrior"
+	}	
 }
 ###His daughter###
 220128 = {
@@ -1021,6 +1226,7 @@ name="Jason"
 	
 	8252.1.1 = {birth="8252.1.1"}
 	8268.1.1 = {add_spouse= 169113} 
+	8309.1.1 = { death = yes }		
 }
 ###His Wife###
 169113 = {
@@ -1031,6 +1237,7 @@ name="Jason"
 	culture="riverlander"
 	
 	8252.1.1 = {birth="8252.1.1"}
+	8311.1.1 = { death = yes }		
 }
 ###His Children###
 269113 = {
@@ -1075,6 +1282,7 @@ name="Jason"
 	
 	8240.1.1 = {birth="8240.1.1"}
 	8256.1.1 = {add_spouse= 5133} #Gisela
+	8309.1.1 = { death = yes }	
 }
 ###His Wife##
 5133 = {
@@ -1090,6 +1298,7 @@ name="Jason"
 	add_trait="fair"
 	
 	8240.1.1 = {birth="8240.1.1"}
+	8309.1.1 = { death = yes }		
 }
 ###Their Children###
 1133 = {
@@ -1104,6 +1313,7 @@ name="Jason"
 	mother = 5133
 	
 	8256.1.1 = {birth="8256.1.1"}
+	8318.1.1 = { death = yes }		
 }
 2133 = {
 	name="Lindya"
@@ -1117,6 +1327,7 @@ name="Jason"
 	mother = 5133
 	
 	8264.1.1 = {birth="8264.1.1"}
+	8325.1.1 = { death = yes }		
 }
 3133 = {
 	name="Duncan"
@@ -1129,6 +1340,64 @@ name="Jason"
 	mother = 5133
 	
 	8267.1.1 = {birth="8267.1.1"}
+	8303.1.1 = {add_spouse= 210128}
+	8325.1.1 = { death = yes }	
+}
+103133 = {
+	name="Desmond"
+	dynasty=133
+	
+	religion="the_seven"
+	culture="riverlander"
+
+	father = 3133
+	mother = 210128
+	
+	8305.1.1 = {birth=yes}
+	8325.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}
+}
+104133 = {
+	name="Freya"
+	dynasty=133
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+
+	father = 3133
+	mother = 210128
+	
+	8307.1.1 = {birth=yes}
+}
+105133 = {
+	name="Edwyn"
+	dynasty=133
+	
+	religion="the_seven"
+	culture="riverlander"
+
+	father = 3133
+	mother = 210128
+	
+	8309.1.1 = {birth=yes}
+	8329.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}
+}
+106133 = {
+	name="Olivia"
+	dynasty=133
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+
+	father = 3133
+	mother = 210128
+	
+	8312.1.1 = {birth=yes}
 }
 7133 = {
 	name="Thom"
@@ -1156,7 +1425,8 @@ name="Jason"
 	father=369114
 	
 	8252.1.1 = {birth="8252.1.1"}
-	8268.1.1 = {add_spouse= 169114} 
+	8268.1.1 = {add_spouse= 169114}
+	8311.1.1 = { death = yes }		
 }
 ###His Wife###
 169114 = {
@@ -1167,6 +1437,7 @@ name="Jason"
 	culture="riverlander"
 	
 	8252.1.1 = {birth="8252.1.1"}
+	8311.1.1 = { death = yes }		
 }
 ###His Children###
 269114 = {
@@ -1180,6 +1451,48 @@ name="Jason"
 	mother= 169114
 	
 	8270.1.1 = {birth="8270.1.1"}
+	8303.1.1 = {add_spouse= 3151}
+	8328.1.1 = { death = yes }		
+}
+269115 = {
+	name="Agralan"
+	dynasty=69114
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father= 269114
+	mother= 3151
+	
+	8306.1.1 = {birth=yes}
+	8325.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}			
+}
+269116 = {
+	name="Rosey"
+	dynasty=69114
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	
+	father= 269114
+	mother= 3151
+	
+	8308.1.1 = {birth=yes}	
+}
+269117 = {
+	name="Gendry"
+	dynasty=69114
+
+	religion="the_seven"
+	culture="riverlander"
+	
+	father= 269114
+	mother= 3151
+	
+	8311.1.1 = {birth=yes}	
 }
 ###
 ####House Terrick
@@ -1196,6 +1509,9 @@ name="Jason"
 	
 	8240.1.1 = {birth="8240.1.1"}
 	8271.1.1 = {add_spouse= 10141} 
+	8311.1.1={
+		death = yes 
+	}	
 }
 ###His Wife###
 10141 = {
@@ -1206,6 +1522,9 @@ name="Jason"
 	culture="riverlander"
 	
 	8242.1.1 = {birth="8242.1.1"}
+	8311.1.1={
+		death = yes 
+	}		
 }
 ###Children###
 9141 = {
@@ -1219,6 +1538,35 @@ name="Jason"
 	mother=10141
 	
 	8258.1.1 = {birth="8258.1.1"}
+	8301.8.1 = {add_spouse= 2142}
+	8319.1.1={
+		death = yes 
+	}		
+}
+91410 = {
+	name="Gendry"
+	dynasty=141
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=9141
+	mother=2142
+	
+	8302.1.1 = {birth=yes}
+}
+91411 = {
+	name="Olivia"
+	dynasty=141
+	female=yes
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=9141
+	mother=2142
+	
+	8304.1.1 = {birth=yes}
 }
 ###
 ###House Keath
@@ -1235,6 +1583,7 @@ name="Jason"
 	
 	8260.1.1 = {birth="8260.1.1"}
 	8271.1.1 = {add_spouse= 4142}
+	8323.1.1={ death = yes }		
 }
 ###The Wife###
 4142 = {
@@ -1245,6 +1594,7 @@ name="Jason"
 	culture="riverlander"
 
 	8260.1.1 = {birth="8260.1.1"}
+	8323.1.1={ death = yes }	
 }
 ###Children###
 1142 = {
@@ -1258,6 +1608,45 @@ name="Jason"
 	father=142
 	mother = 4142
 	8275.1.1 = {birth="8275.1.1"}
+	8301.1.1 = {
+		add_matrilineal_spouse=4153
+	}	
+}
+11420 = {
+	name="Gordyn"
+	dynasty=142
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=4153
+	mother = 1142
+	
+	8303.1.1 = {birth=yes}	
+}
+11421 = {
+	name="Jaheira"
+	dynasty=142
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=4153
+	mother = 1142
+	
+	8305.1.1 = {birth=yes}	
+}
+11422 = {
+	name="Varion"
+	dynasty=142
+
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=4153
+	mother = 1142
+	
+	8307.1.1 = {birth=yes}	
 }
 2142 = {
 	name="Jaheira"
@@ -1312,6 +1701,9 @@ name="Jason"
 	
 	8237.1.1 = {birth="8237.1.1"}
 	8253.1.1 = {add_spouse= 3140}
+	8302.1.1={
+		death = yes
+	}
 }
 ###The Wife
 3140 = {
@@ -1322,6 +1714,9 @@ name="Jason"
 	culture="riverlander"
 	
 	8237.1.1 = {birth="8237.1.1"}
+	8302.1.1={
+		death = yes
+	}
 }
 ###Children###
 2140 = {
@@ -1336,6 +1731,7 @@ name="Jason"
 	mother=3140
 	
 	8260.1.1 = {birth="8260.1.1"}
+	8315.1.1 = { death = yes }		
 }
 4140 = {
 	name="Lomaer"
@@ -1348,6 +1744,56 @@ name="Jason"
 	mother=3140
 	
 	8267.1.1 = {birth="8267.1.1"}
+	8302.1.1 = {add_spouse= 9992172}
+	8329.1.1 = { death = yes }		
+}
+94140 = {
+	name="Utherydes"
+	dynasty=140
+	
+	religion="the_seven"
+	culture="riverlander"
+	add_trait="fair"	
+	father=4140
+	mother=9992172
+	
+	8304.1.1 = {birth=yes}		
+}
+94141 = {
+	name="Amerei"
+	dynasty=140
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	add_trait="fair"	
+	father=4140
+	mother=9992172
+	
+	8306.1.1 = {birth=yes}		
+}
+94142 = {
+	name="Triston"
+	dynasty=140
+	
+	religion="the_seven"
+	culture="riverlander"
+	add_trait="fair"	
+	father=4140
+	mother=9992172
+	
+	8309.1.1 = {birth=yes}		
+}
+94143 = {
+	name="Corrine"
+	dynasty=140
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	add_trait="fair"	
+	father=4140
+	mother=9992172
+	
+	8311.1.1 = {birth=yes}		
 }
 ###
 ###House Roote
@@ -1370,6 +1816,7 @@ name="Jason"
 	8255.1.1 = {birth="8255.1.1"}
 	8271.1.1 = {add_trait="knight"}
 	8279.1.1 = {add_spouse= 3145}
+	8316.1.1 = { death = yes }		
 }
 ###The Wife###
 3145 = {
@@ -1380,6 +1827,7 @@ name="Jason"
 	culture="riverlander"
 	
 	8260.1.1 = {birth="8260.1.1"}
+	8316.1.1 = { death = yes }		
 }
 ###Children###
 1145 = {
@@ -1401,6 +1849,63 @@ name="Jason"
 		add_trait="knight"
 		add_trait="trained_warrior"
 	}
+	8302.1.1 = {add_spouse= 12152}		
+}
+99145 = {
+	name="Corrine"
+	dynasty=145
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	
+	mother=12152
+	father=1145
+	
+	8305.1.1 = {birth=yes}	
+}
+99146 = {
+	name="Varion"
+	dynasty=145
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	mother=12152
+	father=1145
+	
+	8307.1.1 = {birth=yes}	
+	8325.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+99147 = {
+	name="Halmon"
+	dynasty=145
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	mother=12152
+	father=1145
+	
+	8309.1.1 = {birth=yes}	
+	8325.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+99148 = {
+	name="Jaheira"
+	dynasty=145
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	
+	mother=12152
+	father=1145
+	
+	8312.1.1 = {birth=yes}	
 }
 2145 = {
 	name="Andreya"
@@ -1450,6 +1955,7 @@ name="Jason"
 	
 	8229.1.1 = {birth="8229.1.1"}
 	8245.1.1 = {add_spouse= 100139}
+	8301.1.1 = { death = yes }
 }
 ###The Wife###
 100139 = {
@@ -1460,6 +1966,7 @@ name="Jason"
 	culture="riverlander"
 	
 	8229.1.1 = {birth="8229.1.1"}
+	8301.1.1 = { death = yes }
 }
 ###Children###
 2139 = {
@@ -1474,6 +1981,7 @@ name="Jason"
 	father=1139
 	
 	8245.1.1 = {birth="8245.1.1"}
+	8301.1.1 = { death = yes }
 }
 21391 = {
 	name="Garion"
@@ -1486,6 +1994,7 @@ name="Jason"
 	father=1139
 	
 	8250.1.1 = {birth="8250.1.1"}
+	8305.1.1 = { death = yes }	
 }
 21392 = {
 	name="Gregor"
@@ -1498,6 +2007,44 @@ name="Jason"
 	father=1139
 	
 	8255.1.1 = {birth="8255.1.1"}
+	8301.1.1 = {add_spouse= 3149}
+	8317.1.1 = { death = yes }		
+}
+213920 = {
+	name="Sylwa"
+	dynasty=139
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	
+	mother=3149
+	father=21392
+	
+	8302.1.1 = {birth=yes}	
+}
+213921 = {
+	name="Tuprin"
+	dynasty=139
+
+	religion="the_seven"
+	culture="riverlander"
+	
+	mother=3149
+	father=21392
+	
+	8304.1.1 = {birth=yes}	
+}
+213922 = {
+	name="Garion"
+	dynasty=139
+
+	religion="the_seven"
+	culture="riverlander"
+	
+	mother=3149
+	father=21392
+	
+	8305.1.1 = {birth=yes}	
 }
 21393 = {
 	name="Gauter"
@@ -1510,6 +2057,7 @@ name="Jason"
 	father=1139
 	
 	8260.1.1 = {birth="8260.1.1"}
+	8329.1.1 = { death = yes }	
 }
 ###
 ###House Paege
@@ -1529,6 +2077,7 @@ name="Jason"
 	8245.1.1 = {birth="8245.1.1"}
 	8261.1.1 = {add_trait="knight" add_trait="trained_warrior"}
 	8261.1.1 = {add_spouse = 10134}
+	8312.1.1 = { death = yes }	
 }
 10134 = {
 	name="Celiya"
@@ -1540,6 +2089,7 @@ name="Jason"
 	add_trait="naive_appeaser"
 	
 	8245.1.1 = {birth="8245.1.1"}
+	8312.1.1 = { death = yes }		
 }
 ###Children##
 1134 = {
@@ -1564,6 +2114,7 @@ name="Jason"
 	8287.1.1 = {
 		add_spouse=450134
 	}
+	8325.1.1 = { death = yes }		
 }
 450134 = {
 	name="Emphyria"
@@ -1575,6 +2126,7 @@ name="Jason"
 	add_trait="naive_appeaser"
 	
 	8261.1.1 = {birth="8261.1.1"}
+	8325.1.1 = { death = yes }		
 }
 11134 = {
 	name="Damon"
@@ -1595,6 +2147,7 @@ name="Jason"
 		add_trait="knight"
 		add_trait="trained_warrior"
 	}
+	8318.1.1 = { death = yes }		
 }
 4134 = {
 	name="Garrett"
@@ -1611,14 +2164,65 @@ name="Jason"
 	mother=450134
 	
 	8287.1.1 = {birth="8287.1.1"}
-	8297.1.1 = {
-		add_trait="squire"
-		add_trait="poor_warrior"
+	8306.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
 	}
-	8300.1.1 = { #Hostage
-		guardian = 3190
-		employer = 7316 #Tommen
-	}
+	8307.1.1 = {
+		add_spouse=132178452
+	}	
+}
+184134 = {
+	name="Halmon"
+	dynasty=134
+
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=4134
+	mother=132178452
+	
+	8312.1.1 = {birth=yes}
+	8330.1.1 = {
+		add_trait="knight"
+		add_trait="skilled_warrior"
+	}	
+}
+184136 = {
+	name="Philena"
+	dynasty=134
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=4134
+	mother=132178452
+	
+	8315.1.1 = {birth=yes}	
+}
+184137 = {
+	name="Walder"
+	dynasty=134
+
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=4134
+	mother=132178452
+	
+	8317.1.1 = {birth=yes}	
+}
+184138 = {
+	name="Jannia"
+	dynasty=134
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=4134
+	mother=132178452
+	
+	8320.1.1 = {birth=yes}	
 }
 ###
 ###House Shawney
@@ -1635,6 +2239,46 @@ name="Jason"
 	father = 6151
 	
 	8261.1.1 = {birth="8261.1.1"}
+	8301.1.1 = {
+		add_spouse=5149
+	}
+	8320.1.1 = { death = yes }		
+}
+151000 = {
+	name="Bess"
+	dynasty=151
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+
+	mother = 5149
+	father = 151
+	
+	8302.1.1 = {birth=yes}	
+}
+151001 = {
+	name="Osmond"
+	dynasty=151
+
+	religion="the_seven"
+	culture="riverlander"
+
+	mother = 5149
+	father = 151
+	
+	8303.1.1 = {birth=yes}	
+}
+151002 = {
+	name="Brynden"
+	dynasty=151
+
+	religion="the_seven"
+	culture="riverlander"
+
+	mother = 5149
+	father = 151
+	
+	8305.1.1 = {birth=yes}	
 }
 6151 = {
 	name="Osmond"
@@ -1704,6 +2348,7 @@ name="Jason"
 
 	8231.1.1 = {birth="8231.1.1"}
 	8281.1.1 = {add_trait=widowed}
+	8307.1.1 = { death = yes }		
 }
 252150 = {
 	name="Lacey"	# not a lord
@@ -1718,6 +2363,7 @@ name="Jason"
 
 	8239.1.1 = {birth="8239.1.1"}
 	8292.1.1 = {add_trait=widowed}
+	8308.1.1 = { death = yes }	
 }
 253150 = {
 	name="Pia"	# not a lord
@@ -1732,6 +2378,7 @@ name="Jason"
 
 	8241.1.1 = {birth="8241.1.1"}
 	8294.1.1 = {add_trait=widowed}
+	8306.1.1 = { death = yes }		
 }
 254150 = {
 	name="Maynard"	# not a lord
@@ -1825,6 +2472,7 @@ name="Jason"
 		} 
 	}
 	8300.1.1 = { add_trait = rebel_leader }
+	8304.1.1 = { death = yes}
 }
 11150 = {
 	name="Oriel"
@@ -1839,6 +2487,7 @@ name="Jason"
 	add_trait="fair"
 	
 	8260.1.1 = {birth="8260.1.1"}
+	8324.1.1 = { death = yes}
 }
 255150 = {
 	name="Edwyn"	# not a lord
@@ -1919,6 +2568,63 @@ name="Jason"
 		add_trait="knight"
 		add_trait="trained_warrior"
 	}
+	8303.1.1 = {add_spouse=361443}
+}
+212150 = {
+	name="Mira"
+	dynasty=150
+	female=yes
+	religion="old_gods"
+	culture="riverlander"
+		
+	father=12150
+	mother=361443
+	
+	8305.1.1 = {birth=yes}
+}
+213150 = {
+	name="Tytos"
+	dynasty=150
+
+	religion="old_gods"
+	culture="riverlander"
+		
+	father=12150
+	mother=361443
+	
+	8307.1.1 = {birth=yes}
+	8324.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+214150 = {
+	name="Ethan"
+	dynasty=150
+
+	religion="old_gods"
+	culture="riverlander"
+		
+	father=12150
+	mother=361443
+	
+	8310.1.1 = {birth=yes}
+	8327.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+215150 = {
+	name="Lacey"
+	dynasty=150
+	female=yes
+	religion="old_gods"
+	culture="riverlander"
+		
+	father=12150
+	mother=361443
+	
+	8312.1.1 = {birth=yes}
 }
 13150 = {
 	name="Lucas"
@@ -1969,15 +2675,6 @@ name="Jason"
 	mother=11150
 	
 	8283.1.1 = {birth="8283.1.1"}
-	8300.4.15 = {
-		effect = {
-			e_iron_throne = {
-				holder_scope = {
-					ROOT = { move_character = PREV }
-				}
-			}
-		}	
-	}
 }
 15150 = {
 	name="Edmund"
@@ -2202,24 +2899,7 @@ name="Jason"
 	}
 	8299.4.1 = { add_trait = wounded }
 	8299.8.1 = { remove_trait = wounded }
-	8299.11.5 = { 
-		effect = {
-			set_defacto_liege = ROOT
-			clr_character_flag = against_king
-			set_character_flag = supporting_king
-			e_iron_throne = {
-				holder_scope = { 
-					ROOT = {
-						opinion = {
-							who = PREV
-							modifier = opinion_with_king
-							years = 100
-						}	
-					}
-				}
-			}
-		}
-	}
+	8310.1.1 = { death = yes }		
 }
 ###His Wife###
 1149 = {
@@ -2233,6 +2913,7 @@ name="Jason"
 	culture="riverlander"
 	
 	8257.1.1 = {birth="8257.1.1"}
+	8315.1.1 = { death = yes }		
 }
 ###Children###
 2149 = {
@@ -2252,6 +2933,64 @@ name="Jason"
 	mother=1149
 	
 	8273.1.1 = {birth="8273.1.1"}
+	8302.1.1 = {add_matrilineal_spouse = 5316}	
+}
+91149 = {
+	name="Brynden"
+	dynasty=149
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	add_trait="strong"
+	add_trait="tall"	
+	
+	father=5316
+	mother=2149
+	
+	8304.1.1 = {birth=yes}
+}
+92149 = {
+	name="Jonos"
+	dynasty=149
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	add_trait="strong"	
+	
+	father=5316
+	mother=2149
+	
+	8306.1.1 = {birth=yes}
+}
+93149 = {
+	name="Bethany"
+	dynasty=149
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	
+	add_trait="tall"	
+	
+	father=5316
+	mother=2149
+	
+	8308.1.1 = {birth=yes}
+}
+94149 = {
+	name="Pia"
+	dynasty=149
+	female=yes
+	religion="the_seven"
+	culture="riverlander"	
+
+	add_trait="quick"
+	
+	father=5316
+	mother=2149
+	
+	8310.1.1 = {birth=yes}
 }
 3149 = {
 	name="Jayne"
@@ -2279,6 +3018,7 @@ name="Jason"
 			}
 		}	
 	}
+	8330.1.1 = { death = yes }		
 }
 4149 = {
 	name="Catelyn"
@@ -2442,6 +3182,7 @@ name="Jason"
 		add_trait = scarred
 		add_trait = depressed  #no quite the same after his sons deaths
 	} 
+	8309.1.1 = { death = yes }		
 }
 10147 = {
 	name="Armanda"
@@ -2453,6 +3194,7 @@ name="Jason"
 	culture="riverlander"
 	
 	8242.1.1 = {birth="8242.1.1"}
+	8309.1.1 = { death = yes }		
 }
 4147 = {
 	name="Arlan" 
@@ -2481,6 +3223,7 @@ name="Jason"
 	culture="riverlander"
 	
 	8244.1.1 = {birth="8244.1.1"}
+	8311.1.1 = { death = yes }		
 }
 ###Issue of Lymond###
 1147 = {
@@ -2586,6 +3329,54 @@ name="Jason"
 		add_trait=knight
 		add_trait=trained_warrior
 	}
+	8302.1.1 = {
+		add_spouse = 2214
+	}
+	8323.1.1 = { death = yes }		
+}
+96147 = {
+	name="Barba"
+	dynasty=147
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+
+	father=6147
+	mother=2214
+	
+	8304.1.1 = {birth=yes}	
+}
+96148 = {
+	name="Arlan"
+	dynasty=147
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=6147
+	mother=2214
+	
+	8306.1.1 = {birth=yes}
+	8324.1.1 = {
+		add_trait=knight
+		add_trait=trained_warrior
+	}	
+}
+96149 = {
+	name="Gerold"
+	dynasty=147
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=6147
+	mother=2214
+	
+	8308.1.1 = {birth=yes}
+	8326.1.1 = {
+		add_trait=knight
+		add_trait=trained_warrior
+	}	
 }
 ###
 ###House Blanetree
@@ -2601,6 +3392,7 @@ name="Jason"
 	
 	8231.1.1 = {birth="8231.1.1"}
 	8247.1.1 = {add_spouse = 10155}
+	8306.1.1 = { death = yes }
 }
 10155 = {
 	name="Eilinor"
@@ -2612,11 +3404,12 @@ name="Jason"
 	culture="riverlander"
 	
 	8231.1.1 = {birth="8231.1.1"}
+	8306.1.1 = { death = yes }
 }
 11155 = {
 	name="Otho"
 	dynasty=155
-	
+	dna="caoznemmcxa"	
 	religion="the_seven"
 	culture="riverlander"
 	
@@ -2624,6 +3417,56 @@ name="Jason"
 	mother=10155
 	
 	8262.1.1 = {birth="8262.1.1"}
+	8301.1.1 = {add_spouse = 141178454}	
+	8325.1.1 = { death = yes }	
+}
+91155 = {
+	name="Robert"
+	dynasty=155
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=11155
+	mother=141178454
+	
+	8302.1.1 = {birth=yes}
+}
+91156 = {
+	name="Otho"
+	dynasty=155
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=11155
+	mother=141178454
+	
+	8304.1.1 = {birth=yes}
+}
+91157 = {
+	name="Barba"
+	dynasty=155
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=11155
+	mother=141178454
+	
+	8306.1.1 = {birth=yes}
+}
+91158 = {
+	name="Zhoe"
+	dynasty=155
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=11155
+	mother=141178454
+	
+	8308.1.1 = {birth=yes}
 }
 2155 = {
 	name="Oselya"
@@ -2655,6 +3498,9 @@ name="Jason"
 	8240.1.1 = {birth="8240.1.1"}
 	8256.1.1 = {add_spouse = 101153}
 	8275.1.1 = {add_trait = blinded}
+	8309.1.1={
+		death = yes
+	}	
 }
 101153 = {
 	name="Lihana"
@@ -2666,6 +3512,9 @@ name="Jason"
 	culture="riverlander"
 	
 	8240.1.1 = {birth="8240.1.1"}
+	8309.1.1={
+		death = yes
+	}	
 }
 ###Children###
 1153 = {
@@ -2687,6 +3536,7 @@ name="Jason"
 	
 	8257.1.1 = {birth="8257.1.1"}
 	8273.1.1 = {give_nickname = nick_the_bad}
+	8311.1.1 = {death = yes}	
 }
 2153 = {
 	name="Hugo"
@@ -2705,6 +3555,51 @@ name="Jason"
 	mother=101153
 	
 	8259.1.1 = {birth="8259.1.1"}
+	8301.1.1 = {add_spouse=12135}
+	8318.1.1 = {death = yes}	
+}
+21531 = {
+	name="Norbert"
+	dynasty=153
+	
+	martial = 6
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	add_trait="tough_soldier"
+	add_trait="trained_warrior"
+	add_trait="knight"
+	
+	father=2153
+	mother=12135
+	
+	8302.1.1 = {birth=yes}
+}
+21532 = {
+	name="Felicia"
+	dynasty=153
+	female=yes
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=2153
+	mother=12135
+	
+	8304.1.1 = {birth=yes}
+}
+21533 = {
+	name="Lymond"
+	dynasty=153
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=2153
+	mother=12135
+	
+	8305.5.1 = {birth=yes}
 }
 3153 = {
 	name="Ellery"
@@ -2723,6 +3618,7 @@ name="Jason"
 	mother=101153
 	
 	8261.1.1 = {birth="8261.1.1"}
+	8315.1.1 = {death=yes}		
 }
 4153 = {
 	name="Kirth"
@@ -2741,6 +3637,7 @@ name="Jason"
 	mother=101153
 	
 	8265.1.1 = {birth="8265.1.1"}
+	8324.1.1 = {death=yes}	
 }
 7153 = {
 	name="Jon"
@@ -2793,6 +3690,7 @@ name="Jason"
 	culture="riverlander"
 	
 	8256.1.1 = {birth="8256.1.1"}
+	8316.1.1 = { death = yes }		
 }
 ###Children###
 1154 = {
@@ -2812,29 +3710,6 @@ name="Jason"
 	8281.1.1 = {add_trait=squire add_trait=poor_warrior}
 	8288.1.1 = {add_trait=knight remove_trait=poor_warrior add_trait=trained_warrior remove_trait=squire add_trait=tough_soldier}
 	8288.2.1 = {add_spouse=40100154}
-	8299.11.5 = { 
-		effect = {
-			set_defacto_liege = ROOT
-			clr_character_flag = against_king
-			set_character_flag = supporting_king
-			e_iron_throne = {
-				holder_scope = { 
-					ROOT = {
-						opinion = {
-							who = PREV
-							modifier = opinion_with_king
-							years = 100
-						}	
-					}
-					opinion = {
-						who = ROOT
-						modifier = opinion_loyal_to_crown
-						years = 5
-					}
-				}
-			}
-		}
-	}
 }
 40100154 = {
 	name="Liane"
@@ -2895,6 +3770,19 @@ name="Jason"
 	
 	8294.2.9 = {birth="8294.2.9"}
 }
+60200155 = {
+	name="Dafyn" # 
+	dynasty=153
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=1154
+	mother=40100154
+	
+	8303.1.1 = {birth=yes}
+	8322.1.1 = {add_trait=knight add_trait=trained_warrior add_trait=skilled_tactician}	
+}
 ###Karyl's uncle, from riverlands_freys.txt
 5153 = {
 	name="Dafyn" # Made an uncle of Karyl Vance.
@@ -2913,6 +3801,7 @@ name="Jason"
 	            add_trait="tough_soldier"
 	            add_trait="knight"}
 	8276.1.1 = {add_spouse= 6153} #Maegelle Frey - Mother of Marianne, Walder & Patrek
+	8315.1.1 = { death = yes }		
 }
 ###
 ###House Lolliston
@@ -2929,6 +3818,7 @@ name="Jason"
 	
 	8260.1.1 = {birth="8260.1.1"}
 	8276.1.1 = {add_spouse = 10135}
+	8318.1.1 = { death = yes }		
 }
 10135 = {
 	name="Delena"
@@ -2940,6 +3830,7 @@ name="Jason"
 	culture="riverlander"
 	
 	8260.1.1 = {birth="8260.1.1"}
+	8318.1.1 = { death = yes }		
 }
 11135 = {
 	name="Gauter"
@@ -3004,7 +3895,8 @@ name="Jason"
 	father=1336
 	
 	8261.1.1 = {birth="8261.1.1"}
-	8277.1.1 = {add_spouse= 207306}
+	8277.1.1 = {add_spouse= 207306}	
+	8315.1.1 = {death=yes}	
 }
 600156 = {
 	name="Terrance" # Son that died at age seven
@@ -3031,6 +3923,18 @@ name="Jason"
 	mother=207306
 	
 	8288.1.1 = {birth="8288.1.1"}
+}
+111156 = {
+	name="Erec"
+	dynasty=156
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=156
+	mother=207306
+	
+	8302.1.1 = {birth=yes}
 }
 ###Child###	
 2156 = {
@@ -3277,6 +4181,7 @@ name="Jason"
 	mother=450146
 	
 	8250.1.1 = {birth="8250.1.1" effect = { fertility = -0.45 } }
+	8319.1.1 = { death = yes }		
 }
 ###Issue of Walter/Shella###
 25056 = {
@@ -3446,29 +4351,7 @@ name="Jason"
 		add_trait="knight"
 	}
 	8256.1.1 = {add_spouse = 100157}
-	8299.11.5 = { 
-		effect = {
-			set_defacto_liege = ROOT
-			clr_character_flag = against_king
-			set_character_flag = supporting_king
-			e_iron_throne = {
-				holder_scope = { 
-					ROOT = {
-						opinion = {
-							who = PREV
-							modifier = opinion_with_king
-							years = 100
-						}	
-					}
-					opinion = {
-						who = ROOT
-						modifier = opinion_loyal_to_crown
-						years = 5
-					}
-				}
-			}
-		}
-	}
+	8309.1.1 = { death = yes }	
 }
 100157 = {
 	name="Felicia"
@@ -3483,6 +4366,7 @@ name="Jason"
 	culture="riverlander"
 	
 	8240.1.1 = {birth="8240.1.1"}
+	8309.1.1 = { death = yes }	
 }
 350157 = {
 	name="Robert"
@@ -3514,6 +4398,7 @@ name="Jason"
 	culture="riverlander"
 	
 	8240.1.1 = {birth="8240.1.1"}
+	8309.1.1 = { death = yes }	
 }
 ##Issue of Allen
 6100157 = {
@@ -3532,6 +4417,7 @@ name="Jason"
 		add_trait="knight"
 	}
 	8280.1.1 = { add_spouse = 4100157 }
+	8319.1.1 = { death = yes }		
 }
 4100157 = {
 	name="Myranda"
@@ -3543,6 +4429,7 @@ name="Jason"
 	culture="riverlander"
 	
 	8258.1.1 = {birth="8258.1.1"}
+	8319.1.1 = { death = yes }		
 }
 354157 = {
 	name="Ben"
@@ -3586,17 +4473,78 @@ name="Jason"
 		add_trait="knight"
 		add_trait="tough_soldier"
 	}
-	8299.11.5 = {
-		effect = {
-			d_thecrossing = {
-				holder_scope = {
-					ROOT = { 
-						imprison = PREV 
-						set_character_flag = captured_in_battle
-					}
-				}
-			}
-		}
+	8303.1.1 = { add_spouse = 690313 }	
+}
+98157 = {
+	name="Lewys"
+	dynasty=157
+	
+	religion="the_seven"
+	culture="riverlander"
+	add_trait="quick"	
+	father=1157
+	mother=690313
+	
+	8306.1.1 = {birth=yes}
+	8325.1.1 = {
+		add_trait="skilled_warrior"
+		add_trait="knight"
+	}
+}
+98158 = {
+	name="Clement"
+	dynasty=157
+	
+	religion="the_seven"
+	culture="riverlander"
+	add_trait="fair"	
+	father=1157
+	mother=690313
+	
+	8308.1.1 = {birth=yes}
+	8326.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
+	}
+}
+98159 = {
+	name="Felicia"
+	dynasty=157
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	add_trait="fair"	
+	father=1157
+	mother=690313
+	
+	8310.1.1 = {birth=yes}
+}
+98160 = {
+	name="Jeyne"
+	dynasty=157
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	add_trait="strong"	
+	father=1157
+	mother=690313
+	
+	8312.1.1 = {birth=yes}
+}
+98161 = {
+	name="Brynden"
+	dynasty=157
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=1157
+	mother=690313
+	
+	8314.1.1 = {birth=yes}
+	8330.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"
 	}
 }
 11115711 = {
@@ -3650,6 +4598,7 @@ name="Jason"
 		add_trait="trained_warrior"
 		add_trait="knight"
 	}
+	8324.1.1 = { death = yes }		
 }
 352157 = {
 	name="Reynard"
@@ -3666,6 +4615,7 @@ name="Jason"
 		add_trait="poor_warrior"
 		add_trait="knight"
 	}
+	8328.1.1 = { death = yes }		
 }
 353157 = {
 	name="Ronald"
@@ -3729,6 +4679,7 @@ name="Jason"
 	culture="riverlander"
 	
 	8231.1.1 = {birth="8231.1.1"}
+	8306.1.1 = { death = yes }
 }
 ###Lord##
 4148 = {
@@ -3796,6 +4747,7 @@ name="Jason"
 	culture="riverlander"
 	
 	8247.1.1 = {birth="8247.1.1"}
+	8311.1.1 = { death = yes }		
 }
 ###Heir###
 124148 = {
@@ -3813,6 +4765,48 @@ name="Jason"
 		add_trait="knight"
 		add_trait="trained_warrior"
 	}
+	8306.1.1 = { death = yes }		
+}
+124149 = {
+	name="Lewyn"
+	dynasty=148
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=134148
+	mother=18157
+	add_trait="fair"	
+	8305.1.1 = {birth=yes}
+	8308.1.1 = { death = yes }		
+}
+124150 = {
+	name="Osmynd"
+	dynasty=148
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=134148
+	mother=18157
+	add_trait="fair"	
+	8307.1.1 = {birth=yes}
+	8326.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+124151 = {
+	name="Danelle"
+	dynasty=148
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=134148
+	mother=18157
+	add_trait="fair"	
+	8310.1.1 = {birth=yes}	
 }
 134148 = {
 	name="Harrold"
@@ -3829,6 +4823,7 @@ name="Jason"
 		add_trait="knight"
 		add_trait="poor_warrior"
 	}
+	8303.1.1 = {add_spouse= 18157}	
 }
 
 1148 = {
@@ -3943,7 +4938,7 @@ name="Jason"
 			
 		}
 	}
-				
+	8318.1.1 = { death = yes }					
 }
 10152 = {
 	name="Flandina"
@@ -3955,6 +4950,7 @@ name="Jason"
 	culture="riverlander"
 	
 	8257.1.1 = {birth="8257.1.1"}
+	8318.1.1 = { death = yes }		
 }
 11152 = {
 	name="Tristan"
@@ -3967,6 +4963,75 @@ name="Jason"
 	mother=10152
 	
 	8275.1.1 = {birth="8275.1.1"}
+	8303.1.1 = {add_spouse= 6665153}
+	8303.1.1 = {
+		add_trait="knight"
+		add_trait="poor_warrior"
+	}	
+}
+92152 = {
+	name="Whilma"
+	dynasty=152
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=11152
+	mother=6665153
+	
+	8306.1.1 = {birth=yes}
+}
+92153 = {
+	name="Barbara"
+	dynasty=152
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=11152
+	mother=6665153
+	
+	8309.1.1 = {birth=yes}
+}
+92154 = {
+	name="Liane"
+	dynasty=152
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=11152
+	mother=6665153
+	
+	8311.1.1 = {birth=yes}
+}
+92155 = {
+	name="Damon"
+	dynasty=152
+
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=11152
+	mother=6665153
+	
+	8313.1.1 = {birth=yes}
+	8330.1.1 = {
+		add_trait="knight"
+		add_trait="trained_warrior"
+	}	
+}
+92156 = {
+	name="Garrett"
+	dynasty=152
+
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=11152
+	mother=6665153
+	
+	8315.1.1 = {birth=yes}	
 }
 12152 = {
 	name="Flandina"
@@ -3995,6 +5060,7 @@ name="Jason"
 	
 	8240.1.1 = {birth="8240.1.1"}
 	8276.1.1 = {add_spouse = 2151}
+	8309.1.1 = { death = yes }	
 }
 3151 = {
 	name="Whilma"
@@ -4020,6 +5086,67 @@ name="Jason"
 	father = 143
 	
 	8281.1.1 = {birth="8281.1.1"}
+	8303.1.1 = {add_spouse = 3142}	
+}
+55151 = {
+	name="Lacey"
+	dynasty=143
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+
+	mother = 3142
+	father = 4151
+	
+	8305.1.1 = {birth=yes}
+}
+55152 = {
+	name="Marianne"
+	dynasty=143
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+
+	mother = 3142
+	father = 4151
+	
+	8307.1.1 = {birth=yes}
+}
+55153 = {
+	name="Bethany"
+	dynasty=143
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+
+	mother = 3142
+	father = 4151
+	
+	8309.1.1 = {birth=yes}
+}
+55154 = {
+	name="Ambrose"
+	dynasty=143
+
+	religion="the_seven"
+	culture="riverlander"
+
+	mother = 3142
+	father = 4151
+	
+	8312.1.1 = {birth=yes}
+}
+55155 = {
+	name="Brynden"
+	dynasty=143
+
+	religion="the_seven"
+	culture="riverlander"
+
+	mother = 3142
+	father = 4151
+	
+	8315.1.1 = {birth=yes}
 }
 5151 = {
 	name="Rosey"
@@ -4048,6 +5175,7 @@ name="Jason"
 	
 	8247.1.1 = {birth="8247.1.1"}
 	8263.1.1 = {add_spouse = 10136}
+	8310.1.1 = { death = yes }		
 }
 10136 = {
 	name="Geanina"
@@ -4059,6 +5187,7 @@ name="Jason"
 	culture="riverlander"
 	
 	8247.1.1 = {birth="8247.1.1"}
+	8310.1.1 = { death = yes }		
 }
 2136 = {
 	name="Esteyle"
@@ -4095,6 +5224,44 @@ name="Jason"
 	mother=10136
 	
 	8269.1.1 = {birth="8269.1.1"}
+	8302.1.1 = {add_spouse = 143174429}
+	8326.1.1 = { death = yes }		
+}
+91136 = {
+	name="William"
+	dynasty=136
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=1136
+	mother=143174429
+	
+	8304.1.1 = {birth=yes}	
+}
+91137 = {
+	name="Jantos"
+	dynasty=136
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=1136
+	mother=143174429
+	
+	8306.1.1 = {birth=yes}	
+}
+91138 = {
+	name="Joyeuse"
+	dynasty=136
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=1136
+	mother=143174429
+	
+	8307.1.1 = {birth=yes}	
 }
 #########################
 ######House Mooton#######
@@ -4113,6 +5280,7 @@ name="Jason"
 	8264.1.1 = {birth="8264.1.1"}
 	8281.1.1 = {add_spouse=40000138}
 	8290.1.1 = {add_trait=craven add_trait=shy} # coward and timid
+	8325.1.1 = { death = yes }		
 }
 40000138 = {
 	name="Eleanor"
@@ -4123,6 +5291,7 @@ name="Jason"
 	culture="riverlander"
 	
 	8262.1.1 = {birth="8262.1.1"}
+	8325.1.1 = { death = yes }		
 }
 ###His daughter###
 8138 = {
@@ -4152,6 +5321,7 @@ name="Jason"
 	
 	8288.1.1 = {birth="8288.1.1"}
 	8298.1.1 = {add_trait=squire}
+	8306.1.1 = {remove_trait=squire add_trait=knight}	
 }
 26138 = {
 	name="Myles"
@@ -4166,6 +5336,57 @@ name="Jason"
 	8285.1.1 = {birth="8285.1.1"}
 	8295.1.1 = {add_trait=squire add_trait=poor_warrior add_trait=brave}
 	8301.1.1 = {add_trait=knight remove_trait=squire}
+	8303.1.1 = {add_spouse=5151}	
+}
+92138 = {
+	name="Jon"
+	dynasty=138
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=26138
+	mother=5151
+	
+	8306.1.1 = {birth=yes}
+	8324.1.1 = {add_trait=skilled_warrior add_trait=knight add_trait=brave}	
+}
+92139 = {
+	name="Rosey"
+	dynasty=138
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=26138
+	mother=5151
+	
+	8308.1.1 = {birth=yes}
+}
+92140 = {
+	name="Denys"
+	dynasty=138
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=26138
+	mother=5151
+	
+	8311.1.1 = {birth=yes}
+	8330.1.1 = {add_trait=trained_warrior add_trait=knight}	
+}
+92141 = {
+	name="Olivia"
+	dynasty=138
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+	
+	father=26138
+	mother=5151
+	
+	8313.1.1 = {birth=yes}
 }
 ###his siblings and parents###
 3138 = {
@@ -4204,6 +5425,7 @@ name="Jason"
 	culture="riverlander"
 	
 	8240.1.1 = {birth="8240.1.1"}
+	8309.1.1 = { death = yes }		
 }
 2138 = {
 	name="Myles" # Rhaegars former squire
@@ -4318,6 +5540,7 @@ name="Jason"
 	culture="riverlander"
 	
 	8241.1.1 = {birth="8241.1.1"}
+	8313.1.1 = { death = yes }		
 }
 ###Son##
 1137 = {
@@ -4415,7 +5638,8 @@ name="Jason"
 				add_weak_pressed_claim = ROOT
 			}
 		}	
-	}	
+	}
+	8311.1.1 = { death = yes }		
 }
 4137 = {		
 	name="Jeyne"	
@@ -4441,6 +5665,7 @@ name="Jason"
 			}
 		}	
 	}	
+	8323.1.1 = { death = yes }		
 }
 #Elder Brothers - Killed at Trident#
 123137 = {
@@ -4602,6 +5827,7 @@ name="Jason"
 			}
 		}
 	}
+	8312.1.1 = { death = yes }		
 }
 
 #Bastard of Darry overlooked in succession
@@ -4639,6 +5865,68 @@ name="Jason"
 			c_darry = { holder_scope = { ROOT = { move_character = PREV } } }
 		}
 	}
+	8304.1.1 = { 
+		remove_trait=bastard 
+		add_trait=legit_bastard	
+		effect = { remove_nickname = yes }
+		add_spouse = 12129
+	}		
+}
+195137 = {
+	name="Jonothor"
+	dynasty=137
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=125137
+	mother=12129
+	
+	8306.1.1 = {birth=yes}
+	8324.1.1 = {
+		add_trait="master_warrior"
+		add_trait="knight"		
+	}		
+}
+195138 = {
+	name="Sansa"
+	dynasty=137
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+
+	father=125137
+	mother=12129
+	
+	8308.1.1 = {birth=yes}		
+}
+195139 = {
+	name="Willem"
+	dynasty=137
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=125137
+	mother=12129
+	
+	8311.1.1 = {birth=yes}
+	8330.1.1 = {
+		add_trait="trained_warrior"
+		add_trait="knight"		
+	}		
+}
+195140 = {
+	name="Marianne"
+	dynasty=137
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+
+	father=125137
+	mother=12129
+	
+	8314.1.1 = {birth=yes}		
 }
 
 ###
@@ -4904,6 +6192,63 @@ name="Jason"
 		add_trait = poor_warrior
 		add_trait = knight
 	}
+	8302.1.1 = {add_spouse= 2145}	
+}
+3000212 = {
+	name="Quincy"
+	dynasty=211
+	
+	religion="the_seven"
+	culture="riverlander"
+
+	father=3000211
+	mother=2145
+	
+	8304.1.1 = {birth=yes}
+	8323.1.1 = {
+		add_trait = trained_warrior
+		add_trait = knight
+	}	
+}
+3000213 = {
+	name="Belgrave"
+	dynasty=211
+	
+	religion="the_seven"
+	culture="riverlander"
+
+	father=3000211
+	mother=2145
+	
+	8306.1.1 = {birth=yes}
+	8324.1.1 = {
+		add_trait = trained_warrior
+		add_trait = knight
+	}	
+}
+3000214 = {
+	name="Andreya"
+	dynasty=211
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+
+	father=3000211
+	mother=2145
+	
+	8309.1.1 = {birth=yes}	
+}
+3000215 = {
+	name="Mariya"
+	dynasty=211
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+
+	father=3000211
+	mother=2145
+	
+	8312.1.1 = {birth=yes}	
 }
 ###
 ###House Cox of Saltpans
@@ -4925,6 +6270,7 @@ name="Jason"
 	8244.1.1 = {birth="8244.1.1"}
 	8260.1.1 = {add_trait=knight add_trait=poor_warrior}
 	8262.1.1 = {add_spouse=440174429}
+	8306.1.1 = { death = yes }		
 }
 440174429 = {
 	name="Leslyn"
@@ -4934,6 +6280,7 @@ name="Jason"
 	culture="riverlander"
 
 	8244.1.1 = {birth="8244.1.1"}
+	8306.1.1 = { death = yes }		
 }
 141174429 = {
 	name="Danelle"	# not a lord
@@ -4947,6 +6294,7 @@ name="Jason"
 	mother=440174429
 
 	8268.1.1 = {birth="8268.1.1"}
+	8327.1.1 = { death = yes }		
 }
 142174429 = {
 	name="Osmund"	# not a lord
@@ -4973,6 +6321,7 @@ name="Jason"
 	culture="riverlander"
 
 	8270.1.1 = {birth="8270.1.1"}
+	8330.1.1 = { death = yes }		
 }
 143174429 = {
 	name="Joyeuse"	# not a lord
@@ -5025,6 +6374,46 @@ name="Jason"
 
 	8275.1.1 = {birth="8275.1.1"}
 	8291.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8302.1.1 = {add_spouse=2136}
+	8321.1.1 = { death = yes }
+}
+99429 = {
+	name="Osmund"
+	dynasty=174429
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=145174429
+	mother=2136
+
+	8304.1.1 = {birth=yes}
+	8321.1.1 = {add_trait=knight add_trait=trained_warrior}	
+}
+99430 = {
+	name="Quincy"
+	dynasty=174429
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=145174429
+	mother=2136
+
+	8306.1.1 = {birth=yes}
+	8324.1.1 = {add_trait=knight add_trait=trained_warrior}	
+}
+99431 = {
+	name="Sallei"
+	dynasty=174429
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+
+	father=145174429
+	mother=2136
+
+	8308.1.1 = {birth=yes}
 }
 146174429 = {
 	name="Hibald"	# not a lord
@@ -5227,6 +6616,7 @@ name="Jason"
 
 	8279.1.1 = {birth="8279.1.1"}
 	8295.1.1 = {add_trait=knight add_trait=trained_warrior}
+	8305.1.1 = {death=yes}	
 }
 143178454 = {
 	name="Cosgrove"	# not a lord
@@ -5240,6 +6630,45 @@ name="Jason"
 
 	8282.1.1 = {birth="8282.1.1"}
 	8298.1.1 = {add_trait=knight add_trait=poor_warrior}
+	8305.1.1 = {add_spouse=60000154}	
+}
+143178455 = {
+	name="Wilbert"	# not a lord
+	dynasty=178454
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=143178454
+	mother=60000154
+
+	8307.1.1 = {birth=yes}
+	8325.1.1 = {add_trait=knight add_trait=skilled_warrior}	
+}
+143178456 = {
+	name="Danelle"	# not a lord
+	dynasty=178454
+	female=yes
+	religion="the_seven"
+	culture="riverlander"
+
+	father=143178454
+	mother=60000154
+
+	8309.1.1 = {birth=yes}
+}
+143178457 = {
+	name="Melwys"	# not a lord
+	dynasty=178454
+
+	religion="the_seven"
+	culture="riverlander"
+
+	father=143178454
+	mother=60000154
+
+	8311.1.1 = {birth=yes}
+	8330.1.1 = {add_trait=knight add_trait=trained_warrior}	
 }
 144178454 = {
 	name="Denys"	# not a lord
@@ -5284,6 +6713,7 @@ name="Jason"
 	8299.11.5 = {
 		employer = 250159 #Stoneheart
 	}
+	8306.1.1 = { death = yes }		
 }
 101130377 = { #Father of Jack be Lucky
 	name="Jon"
@@ -5328,6 +6758,7 @@ name="Jason"
 	8299.11.5 = {
 		employer = 250159 #Stoneheart
 	}
+	8305.1.1 = { death = yes }		
 }
 103130377 = {
 	name="Wat"
@@ -5351,4 +6782,5 @@ name="Jason"
 		add_trait=poor_warrior
 		add_trait=nightswatch
 	}
+	8312.1.1 = { death = yes }		
 }

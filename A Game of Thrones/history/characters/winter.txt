@@ -231,6 +231,9 @@
 			}
 		}
 	}
+	8305.1.1={
+		death = yes
+	}	
 }
 
 999001666 = {
@@ -261,6 +264,9 @@
 			set_character_flag = white_walker
 		}
 	}
+	8305.1.1={
+		death = yes
+	}	
 }
 
 999002666 = {
@@ -291,6 +297,9 @@
 			set_character_flag = white_walker
 		}
 	}
+	8305.1.1={
+		death = yes
+	}	
 }
 
 999003666 = {
@@ -321,6 +330,9 @@
 			set_character_flag = white_walker
 		}
 	}
+	8305.1.1={
+		death = yes
+	}	
 }
 
 999004666 = {
@@ -351,6 +363,9 @@
 			set_character_flag = white_walker
 		}
 	}
+	8305.1.1={
+		death = yes
+	}	
 }
 
 999005666 = {
@@ -382,6 +397,9 @@
 		}
 
 	}
+	8305.1.1={
+		death = yes
+	}	
 }
 
 #White Walker of the East
@@ -423,4 +441,7 @@
 			}
 		}
 	}
+	8305.1.1={
+		death = yes
+	}	
 }

@@ -48,6 +48,8 @@ westerosi_religion = {
 		religious_clothing_priest = 2
 		
 		max_consorts = 7
+		
+		intermarry = valyrian		
 	}
 	
 	old_gods = {
@@ -77,6 +79,7 @@ westerosi_religion = {
 		
 		intermarry = beyond_wall_old_gods
 		intermarry = thenn_rel
+		intermarry = valyrian		
 	}
 }
 
@@ -228,6 +231,8 @@ drowned_god_group = {
 		aggression = 2.0
 		religious_clothing_head = 4
 		religious_clothing_priest = 4
+		
+		intermarry = valyrian		
 	}
 	
 	storm_god = {
@@ -250,6 +255,8 @@ drowned_god_group = {
 		
 		religious_clothing_head = 4
 		religious_clothing_priest = 4
+		
+		intermarry = valyrian		
 	}
 }
 
@@ -615,7 +622,7 @@ valyrian_rel_group = { #red, yellow, orange
 		scripture_name = THE_LEGENDS
 		priest_title = job_priest_valyrian
 		
-		max_wives = 3
+		max_wives = 20
 		max_consorts = 7
 
 		divine_blood = yes

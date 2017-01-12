@@ -1041,3 +1041,21 @@ bm_FEAST_FOR_CROWS = {
 		id = 3300101 #Khal Pono
 	}
 }
+bm_JON_TARGARYEN = {
+	name = "BM_JON_TARGARYEN"
+	desc = "BM_JON_TARGARYEN_DESC"
+	date = 8331.1.1
+	
+	selectable_character = {	
+		id = 29577043 #Rhaegar, son of Jon and Dany
+	}
+	selectable_character = {	
+		id = 29577060 #Daemon, son of Jon and Margaery
+	}
+	selectable_character = {	
+		id = 29577063 #Elaena, son of Jon and Arianne
+	}
+	selectable_character = {	
+		id = 29577071 #Aemon, son of Jon and AAsha
+	}
+}

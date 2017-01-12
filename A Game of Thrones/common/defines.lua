@@ -827,9 +827,9 @@ NCharacter = {
 	AGE_VERY_OLD = 70,								-- Non-child characters below this age have the 'old' static modifier applied
 	MAX_CHILD_BIRTH_AGE = 45,						-- Female menopause age.
 	CHILD_BIRTH_TO_PREGNANCY_WAIT = 3,
-	BASE_NR_OF_CHILDREN_PER_COUPLE = 2,
-	EXTRA_NR_OF_CHILDREN_FOR_PLAYERS = 0,
-	COURT_SIZE_CHILD_PENALTY_THRESHOLD = 30,
+	BASE_NR_OF_CHILDREN_PER_COUPLE = 5,
+	EXTRA_NR_OF_CHILDREN_FOR_PLAYERS = 30,
+	COURT_SIZE_CHILD_PENALTY_THRESHOLD = 100,
 	DYNASTY_CONTROLS_HOLY_ORDER_PRESTIGE = 2,		-- Monthly Prestige from a dynasty member as head of a Holy Order (only for counts+ and if the same religion)
 	DYNASTY_CONTROLS_HOLY_ORDER_PIETY = 1,			-- Monthly Piety from a dynasty member as head of a Holy Order (only for counts+ and if the same religion)
 	DYNASTY_CONTROLS_RELIGIOUS_HEAD_PRESTIGE = 2,	-- Monthly Prestige from a dynasty member as head of a religion (only for counts+ and if the same religion)
@@ -1365,7 +1365,7 @@ NMilitary = {
 	SPECIAL_TROOPS_PHASE_SKIRMISH_DEFENSE = 1,
 	SPECIAL_TROOPS_PHASE_MELEE_DEFENSE = 1,
 	SPECIAL_TROOPS_PHASE_PURSUE_DEFENSE = 1,
-	SPECIAL_TROOPS_GRAPHICAL_FACTOR = 1,
+	SPECIAL_TROOPS_GRAPHICAL_FACTOR = 2,
 
 	GALLEYS_MORALE = 1,
 	GALLEYS_MAINTENANCE = 10,
@@ -1532,8 +1532,8 @@ NEngine = {
 	MISSING_SCRIPTED_SUCCESSOR_ERROR_CUTOFF_YEAR = 7000, -- The missing scripted successor error will not be shown before this date
 	MISSING_SCRIPTED_SUCCESSOR_ERROR_CUTOFF_MONTH = 8,
 	MISSING_SCRIPTED_SUCCESSOR_ERROR_CUTOFF_DAY = 16,
-	COURT_PRUNE_SIZE = 15, 				-- Courts larger than this will be checked for pruning each month
-	PRUNE_MINIMAL_AGE = 33,				-- Minimum age for a courtier to be prunable if considered irrelevant
+	COURT_PRUNE_SIZE = 10, 				-- Courts larger than this will be checked for pruning each month
+	PRUNE_MINIMAL_AGE = 40,				-- Minimum age for a courtier to be prunable if considered irrelevant
 	HEALTH_IMMUNITY_TO_PRUNING = 7,		-- If a character has that much health, they won't be pruned
 },
 

@@ -1492,7 +1492,7 @@
 	8300.2.9={
 		employer=4190 #Cersei
 	}
-	8319.1.1={
+	8314.1.1={
 		death=yes
 	}	
 }
@@ -2671,7 +2671,7 @@
 	
 	8259.1.1 = {birth="8259.1.1"}
 	8280.1.1 = {add_spouse=431208}
-	8321.1.1={
+	8313.1.1={
 		death=yes
 	}	
 }
@@ -2793,7 +2793,7 @@
 	mother=3523190
 	father=17208
 	
-	8313.1.1 = { birth = yes }	
+	8311.1.1 = { birth = yes }	
 }
 37209 = {		
 	name="Podrick"	
@@ -2806,7 +2806,7 @@
 	mother=3523190
 	father=17208
 	
-	8315.1.1 = { birth = yes }	
+	8312.1.1 = { birth = yes }	
 	8330.1.1={
 		add_trait="trained_warrior"
 		add_trait="knight"
@@ -2822,7 +2822,7 @@
 	mother=3523190
 	father=17208
 	
-	8318.1.1 = { birth = yes }			
+	8314.1.1 = { birth = yes }			
 }
 37211 = {		
 	name="Myrcella"	
@@ -2835,7 +2835,7 @@
 	mother=3523190
 	father=17208
 	
-	8320.1.1 = { birth = yes }	
+	8315.1.1 = { birth = yes }	
 }
 18208 = {		
 	name="Robert"	
@@ -3325,7 +3325,7 @@
 			   add_trait="trained_warrior"
 	           give_nickname = nick_strongboar}
 	8277.1.1 = {add_spouse = 12227}
-	8316.1.1 = { death = yes }	
+	8311.1.1 = { death = yes }	
 }
 12227 = {		
 	name="Zoe" # Strongboar's wife.
@@ -3337,7 +3337,7 @@
 	culture="westerman"	
 	
 	8260.1.1 = {birth="8260.1.1"}
-	8316.1.1 = { death = yes }	
+	8311.1.1 = { death = yes }	
 }
 13227 = {		
 	name="Theodore" # Strongboar's son.
@@ -3507,7 +3507,7 @@
 		}
 	}
 	8299.1.1 = {employer=9316}
-	8316.1.1 = { death = yes }	
+	8307.1.1 = { death = yes }	
 }
 10228 = {		
 	name="Heloise"
@@ -3520,7 +3520,7 @@
 	
 	
 	8241.1.1 = {birth="8241.1.1"}
-	8316.1.1 = { death = yes }	
+	8307.1.1 = { death = yes }	
 }
 2228 = {		
 	name="Steffon" ###Helped to take Riverrun###
@@ -3601,7 +3601,7 @@
 	mother=10228	
 	
 	8262.1.1 = {birth="8262.1.1"}
-	8321.1.1 = { death = yes }	
+	8311.1.1 = { death = yes }	
 }
 
 ###Steffons daughter###
@@ -3677,7 +3677,7 @@
 	culture="westerman"
 	
 	8257.1.1 = {birth="8257.1.1"}
-	8325.1.1={
+	8315.1.1={
 		death = yes
 	}	
 }
@@ -3782,7 +3782,7 @@
 	culture="westerman"
 	
     8252.1.1 = {birth="8252.1.1"}
-	8327.1.1={
+	8310.1.1={
 		death=yes
 	}	
 }
@@ -3897,7 +3897,7 @@
 	mother=2231	
 
 	8285.7.3 = {birth="8285.7.3"}
-	8313.1.1 = {add_spouse=19208}
+	8311.1.1 = {add_spouse=19208}
 }
 77232 = {		
 	name="Preston"	
@@ -3909,7 +3909,7 @@
 	father=7232
 	mother=19208
 
-	8315.1.1 = {birth=yes}
+	8313.1.1 = {birth=yes}
 }
 77233 = {		
 	name="Erren"	
@@ -3921,7 +3921,7 @@
 	father=7232
 	mother=19208
 
-	8317.1.1 = {birth=yes}
+	8314.1.1 = {birth=yes}
 }
 77234 = {		
 	name="Pia"	
@@ -3933,7 +3933,7 @@
 	father=7232
 	mother=19208
 
-	8319.1.1 = {birth=yes}
+	8315.1.1 = {birth=yes}
 }
 77235 = {		
 	name="Joy"	
@@ -5052,7 +5052,7 @@
 	father=6219
 	mother=7199	
 	
-	8316.1.1 = {birth=yes}	
+	8314.1.1 = {birth=yes}	
 }
 ###Montfory's daughter###
 7219 = {		
@@ -5318,7 +5318,7 @@
 	mother=200213
 	
 	8252.1.1 = {birth="8252.1.1"}
-	8323.1.1={
+	8313.1.1={
 		death = yes
 	}	
 }
@@ -5663,7 +5663,7 @@
 				
 		}
 	}
-	8316.1.1={
+	8308.1.1={
 		death=yes
 	}	
 }
@@ -5782,7 +5782,7 @@
 	father = 3199	
 	mother = 11190
 	
-	8316.1.1 = {birth=yes}			
+	8315.1.1 = {birth=yes}			
 }	
 ###Son###
 4199 = {		
@@ -6025,7 +6025,7 @@
 	8275.1.1 = {remove_trait="squire"
 	            add_trait="knight"}
 	8301.1.1 = {add_spouse = 1195}	
-	8316.1.1 = { death = yes }		
+	8313.1.1 = { death = yes }		
 }
 319299 = {		
 	name="Elianor"	
@@ -6539,7 +6539,7 @@
 	8300.2.9={
 		employer = 7316
 	}
-	8321.1.1={
+	8314.1.1={
 		death = yes
 	}	
 }	
@@ -6804,7 +6804,7 @@
 		add_trait = knight
 		add_trait = trained_warrior
 	}
-	8320.1.1={
+	8310.1.1={
 		death=yes
 	}	
 }
@@ -7241,7 +7241,7 @@
 	8242.1.1 = {birth="8242.1.1"}
 	8258.1.1 = {add_spouse = 3214}
 	8258.1.2 = {add_trait="knight" add_trait="poor_warrior"}
-	8316.1.1={
+	8306.1.1={
 		death=yes
 	}	
 }
@@ -7255,7 +7255,7 @@
 	culture="westerman"	
 	
 	8242.1.1 = {birth="8242.1.1"}
-	8316.1.1={
+	8306.1.1={
 		death=yes
 	}	
 }					
@@ -7589,7 +7589,7 @@
 	8299.11.5 = {
 		employer=0
 	}
-	8322.1.1={
+	8313.1.1={
 		death = yes
 	}		
 }
@@ -7714,7 +7714,7 @@
 	culture="westerman"
 	
 	8252.1.1 = {birth="8252.1.1"}
-	8320.1.1={
+	8310.1.1={
 		death=yes
 	}	
 }
@@ -7847,7 +7847,7 @@
 	culture="westerman"
 	
 	8252.1.1 = {birth="8252.1.1"}
-	8319.1.1={
+	8309.1.1={
 		death = yes
 	}	
 }

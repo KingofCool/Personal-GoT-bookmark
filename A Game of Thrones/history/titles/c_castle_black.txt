@@ -79,5 +79,5 @@
 	effect = { copy_title_history = d_nightswatch_dummy } #Remove janos Slynt from history
 }
 8300.12.1={
-	holder=1296
+	holder=94032
 }

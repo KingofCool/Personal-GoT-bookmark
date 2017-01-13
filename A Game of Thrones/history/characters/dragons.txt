@@ -1697,7 +1697,7 @@
 		effect = { 
 			set_character_flag = wild_dragon 			
 			character_event = { id = dragon.0 }
-			add_friend = 29577041
+			add_friend = 29577127
 			e_iron_throne = {
 				holder_scope = {					
 					ROOT = { move_character = PREV }
@@ -1714,7 +1714,7 @@
 		effect = { 
 			set_character_flag = tamed_dragon 			
 			character_event = { id = dragon.0 }
-			add_friend = 29577041
+			add_friend = 29577127
 			e_iron_throne = {
 				holder_scope = {					
 					ROOT = { move_character = PREV }

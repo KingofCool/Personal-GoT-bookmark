@@ -4830,7 +4830,7 @@
 	}
 	8294.1.1 = {employer=336 }
 	8300.3.1 = {employer=1002059 }
-	8303.1.1 = { death = yes }	
+	8300.12.1 = { remove_trait="depressed" add_trait="sympathy_wildling_religion" }	
 	
 }
 ################

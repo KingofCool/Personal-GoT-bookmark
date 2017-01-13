@@ -170,6 +170,14 @@
 	name = Goodmen
 	culture = northman
 }
+800843 = {
+	name = of Eastwatch
+	culture = northman
+}
+800844 = {
+	name = of the Shadow Tower
+	culture = northman
+}
 59 = {
 	name="Stark"
 	culture = northman

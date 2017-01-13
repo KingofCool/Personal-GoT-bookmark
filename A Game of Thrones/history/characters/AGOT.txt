@@ -1576,7 +1576,7 @@
 		employer=1002059 #Jon Snow
 	}
 	8303.1.1 = {
-		employer=1296
+		employer=94032
 	}	
 }
 ###xoatl
@@ -1605,7 +1605,7 @@
 		employer=1002059 #Jon Snow
 	}
 	8303.1.1 = {
-		employer=1296
+		employer=94032
 	}	
 }
 ###kingslayer
@@ -1881,7 +1881,7 @@
 		employer=1002059 #Jon Snow
 	}
 	8303.1.1 = {
-		employer=1296
+		employer=94032
 	}		
 }
 ###EviLaz
@@ -1911,7 +1911,7 @@
 		employer=1002059 #Jon Snow
 	}
 	8303.1.1 = {
-		employer=1296
+		employer=94032
 	}	
 }
 ###Gogkti
@@ -1942,7 +1942,7 @@
 		employer=1002059 #Jon Snow
 	}
 	8303.1.1 = {
-		employer=1296
+		employer=94032
 	}	
 }
 ###Pande
@@ -2112,7 +2112,7 @@
 		employer=1002059 #Jon Snow
 	}
 	8303.1.1 = {
-		employer=1296
+		employer=94032
 	}	
 }
 ###Deaghaidh/Dea
@@ -2296,7 +2296,7 @@
 		employer=1002059 #Jon Snow
 	}
 	8303.1.1 = {
-		employer=1296
+		employer=94032
 	}		
 }
 34500001 = {
@@ -2341,7 +2341,7 @@
 		employer=1002059 #Jon Snow
 	}
 	8303.1.1 = {
-		employer=1296
+		employer=94032
 	}
 }
 ### kuczaja

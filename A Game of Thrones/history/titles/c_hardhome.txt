@@ -16,6 +16,6 @@
 	holder=157015
 }
 8307.1.1={
-	liege="d_haunted_forest"
-	holder=174345
+	liege="0"
+	holder=123467
 }

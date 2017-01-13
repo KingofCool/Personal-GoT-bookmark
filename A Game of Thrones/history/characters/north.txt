@@ -705,7 +705,7 @@
 		add_spouse=9017
 		add_spouse=155174371
 	}
-	8315.1.1 = {
+	8313.1.1 = {
 		add_spouse=500184
 	}
 }   
@@ -721,17 +721,13 @@
 	add_trait = genius
 	add_trait = strong
 	add_trait = robust
+	add_trait = twin	
 
 	father=1002059
 	mother=77041
 	
 	8303.1.1 = {
 		birth=yes
-		# set_character_flag = rhaegal
-	}
-	8317.1.1 = {
-		# set_character_flag = rhaegal
-		add_trait="dragon_rider"
 	}
 }
 29577042 = {
@@ -754,15 +750,12 @@
 	}
 }
 29577043 = {
-	name="Rhaegar" # Rhaegar the Heir
+	name="Aemon" # Aemon the Heir
 	dynasty=496		
 	dna="dmhgitkjaac"
 	properties="0e00d"		
 	religion="valyrian"
-	culture="high_valyrian"
-	add_trait="just"
-	add_trait="authoritative"
-	add_trait="honorable"	
+	culture="high_valyrian"	
 	add_trait = genius
 	add_trait = strong
 	add_trait = twin
@@ -772,21 +765,6 @@
 	
 	8305.1.1 = {
 		birth=yes
-	}
-	8330.12.1 = {
-		# set_character_flag = viserion
-		fertility = 1.2
-		add_trait="brave"
-		add_trait="diligent"
-		add_trait="dragon_rider"
-		add_trait="seducer"
-		add_trait="lustful"
-		add_trait="familyperson"
-		add_trait="socializer"
-		add_trait="knight"
-		add_trait="patient"
-		add_trait="master_warrior"
-		add_trait="blackfyre"
 	}
 }
 29577044 = {
@@ -839,12 +817,12 @@
 	father=1002059
 	mother=77041
 	
-	8307.6.1 = {
+	8307.1.1 = {
 		birth=yes
 	}
 } 
 29577047 = {
-	name="Aemon" # Aemon the Handsome Dragon
+	name="Aenar" # Aenar the Handsome Dragon
 	dynasty=496		
 	
 	religion="valyrian"
@@ -856,7 +834,7 @@
 	father=1002059
 	mother=77041
 	
-	8309.11.1 = {
+	8308.1.1 = {
 		birth=yes
 	}
 }
@@ -894,7 +872,7 @@
 	father=1002059
 	mother=6059
 	
-	8306.6.1 = {
+	8306.3.1 = {
 		birth=yes
 		culture="high_valyrian"
 	}
@@ -914,7 +892,7 @@
 	father=1002059
 	mother=6059
 	
-	8308.10.1 = {
+	8308.1.1 = {
 		birth=yes
 		culture="high_valyrian"
 	}
@@ -933,7 +911,7 @@
 	father=1002059
 	mother=6059
 	
-	8309.12.1 = {
+	8309.1.1 = {
 		birth=yes
 		culture="high_valyrian"
 	}
@@ -1046,7 +1024,7 @@
 	father=1002059
 	mother=77041
 	
-	8311.1.1 = {
+	8309.1.1 = {
 		birth=yes
 	}
 }
@@ -1063,7 +1041,7 @@
 	father=1002059
 	mother=77041
 	
-	8314.1.1 = {
+	8311.1.1 = {
 		birth=yes
 	}
 }
@@ -1101,7 +1079,7 @@
 	father=1002059
 	mother=7253
 	
-	8306.12.1 = {
+	8306.10.1 = {
 		birth=yes
 		culture="high_valyrian"
 	}
@@ -1119,7 +1097,7 @@
 	father=1002059
 	mother=7253
 	
-	8308.3.1 = {
+	8308.1.1 = {
 		birth=yes
 		culture="high_valyrian"
 	}
@@ -1138,7 +1116,7 @@
 	father=1002059
 	mother=7253
 	
-	8309.11.1 = {
+	8309.6.1 = {
 		birth=yes
 		culture="high_valyrian"
 	}
@@ -1695,7 +1673,7 @@
 	father=1002059
 	mother=77041
 	
-	8312.1.1 = {
+	8310.1.1 = {
 		birth=yes
 	}
 }
@@ -1713,7 +1691,7 @@
 	father=1002059
 	mother=77041
 	
-	8315.1.1 = {
+	8312.1.1 = {
 		birth=yes
 	}
 } 
@@ -1730,7 +1708,7 @@
 	father=1002059
 	mother=77041
 	
-	8316.1.1 = {
+	8313.1.1 = {
 		birth=yes
 	}
 } 
@@ -1747,7 +1725,7 @@
 	father=1002059
 	mother=77041
 	
-	8317.1.1 = {
+	8314.1.1 = {
 		birth=yes
 	}
 } 
@@ -1765,7 +1743,7 @@
 	father=1002059
 	mother=6059
 	
-	8311.1.1 = {
+	8310.1.1 = {
 		birth=yes
 		culture="high_valyrian"
 	}
@@ -1803,7 +1781,7 @@
 	father=1002059
 	mother=6059
 	
-	8315.1.1 = {
+	8314.1.1 = {
 		birth=yes
 		culture="high_valyrian"
 	}
@@ -1822,7 +1800,7 @@
 	father=1002059
 	mother=7059
 	
-	8313.1.1 = {
+	8312.1.1 = {
 		birth=yes
 		culture="high_valyrian"
 	}
@@ -1840,7 +1818,7 @@
 	father=1002059
 	mother=7059
 	
-	8315.1.1 = {
+	8314.1.1 = {
 		birth=yes
 		culture="high_valyrian"
 	}
@@ -1949,7 +1927,7 @@
 	father=1002059
 	mother=4001
 	
-	8312.1.1 = {
+	8311.1.1 = {
 		birth=yes
 		culture="high_valyrian"
 	}
@@ -1966,7 +1944,7 @@
 	father=1002059
 	mother=4001
 	
-	8315.1.1 = {
+	8313.1.1 = {
 		birth=yes
 		culture="high_valyrian"
 	}
@@ -1983,7 +1961,7 @@
 	father=1002059
 	mother=6102
 	
-	8313.1.1 = {
+	8311.1.1 = {
 		birth=yes
 		culture="high_valyrian"
 	}
@@ -1997,13 +1975,12 @@
 	culture="high_valyrian"
 	
 	add_trait = strong
-	add_trait = dragon_dreams
-	add_trait = twin	
+	add_trait = dragon_dreams	
 
 	father=1002059
 	mother=77041
 	
-	8320.1.1 = {
+	8315.1.1 = {
 		birth=yes
 	}
 }  
@@ -2057,7 +2034,7 @@
 	father=1002059
 	mother=7253
 	
-	8315.1.1 = {
+	8314.1.1 = {
 		birth=yes
 		culture="high_valyrian"
 	}
@@ -2093,7 +2070,7 @@
 	father=1002059
 	mother=8316
 	
-	8314.1.1 = {
+	8312.1.1 = {
 		birth=yes
 		culture="high_valyrian"
 	}
@@ -2109,6 +2086,7 @@
 	add_trait = genius
 	add_trait = strong
 	add_trait = fair
+	add_trait = twin	
 
 	father=1002059
 	mother=500184
@@ -2124,50 +2102,16 @@
 	
 	religion="valyrian"
 	culture="valeman"
-	
+
+	add_trait = genius	
 	add_trait = strong
 	add_trait = fair
+	add_trait = twin	
 
 	father=1002059
 	mother=500184
 	
-	8317.1.1 = {
-		birth=yes
-		culture="high_valyrian"
-	}
-} 
-29577119 = {
-	name="Aegor" # Aegor of the Vale
-	dynasty=496		
-	
-	religion="valyrian"
-	culture="valeman"
-	
-	add_trait = strong
-
-	father=1002059
-	mother=500184
-	
-	8319.1.1 = {
-		birth=yes
-		culture="high_valyrian"
-	}
-}
-29577120 = {
-	name="Calla" # Calla of the Vale
-	female=yes
-	dynasty=496		
-	
-	religion="valyrian"
-	culture="valeman"
-	
-	add_trait = quick
-	add_trait = tall
-
-	father=1002059
-	mother=500184
-	
-	8321.1.1 = {
+	8315.1.1 = {
 		birth=yes
 		culture="high_valyrian"
 	}
@@ -2221,7 +2165,7 @@
 	father=1002059
 	mother=8316
 	
-	8316.1.1 = {
+	8314.1.1 = {
 		birth=yes
 		culture="high_valyrian"
 	}
@@ -2240,7 +2184,7 @@
 	father=1002059
 	mother=6102
 	
-	8316.1.1 = {
+	8314.1.1 = {
 		birth=yes
 		culture="high_valyrian"
 	}
@@ -2273,31 +2217,41 @@
 	culture="high_valyrian"
 
 	add_trait = tall
-	add_trait = fair		
+	add_trait = fair
+	add_trait = twin	
 
 	father=1002059
 	mother=77041
 	
-	8319.1.1 = {
+	8314.1.1 = {
 		birth=yes
 	}
 }
 29577127 = {
-	name="Aenar" # Aenar the Heir
+	name="Rhaegar" # Rhaegar the Heir
 	dynasty=496		
 	
 	religion="valyrian"
 	culture="high_valyrian"
 
+	add_trait="just"
+	add_trait="authoritative"
+	add_trait="honorable"	
 	add_trait = quick
-	add_trait = strong		
+	add_trait = strong
+	add_trait = twin	
 
 	father=1002059
 	mother=77041
 	
-	8321.1.1 = {
+	8303.1.1 = {
 		birth=yes
+		# set_character_flag = rhaegal
 	}
+	8315.1.1 = {
+		# set_character_flag = rhaegal
+		add_trait="dragon_rider"
+	}		
 }                   	 
 6059 = {
 	name="Sansa"
@@ -5010,7 +4964,7 @@
 	8294.1.1 = {employer=336} # Jeor Mormont
 	8300.3.1 = {employer=1002059} # Jon Snow
 	8303.1.1 = {
-		employer=1296
+		employer=94032
 	}
 	8322.1.1 = { death = yes }		
 }

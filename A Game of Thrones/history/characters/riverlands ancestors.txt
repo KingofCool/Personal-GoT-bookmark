@@ -12278,8 +12278,9 @@
 		employer=1002059 #Jon Snow
 	}
 	8303.1.1 = {
-		employer=1296
+		employer=94032
 	}
+	8307.1.1 = {death=yes}	
 }
 
 14152 = {

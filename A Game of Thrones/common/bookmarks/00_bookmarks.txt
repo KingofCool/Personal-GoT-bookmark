@@ -1044,15 +1044,9 @@ bm_FEAST_FOR_CROWS = {
 bm_JON_TARGARYEN = {
 	name = "BM_JON_TARGARYEN"
 	desc = "BM_JON_TARGARYEN_DESC"
-	date = 8331.1.1
+	date = 8315.1.1
 	
 	selectable_character = {	
 		id = 1002059 #Jon
-	}
-	selectable_character = {	
-		id = 29577063 #Elaena, son of Jon and Arianne
-	}
-	selectable_character = {	
-		id = 29577071 #Aemon, son of Jon and AAsha
 	}
 }

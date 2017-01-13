@@ -198,9 +198,7 @@
 				limit = { is_ruler = yes }
 				add_trait = ruin
 				set_defacto_liege = THIS
-				c_thenn = {  location = { set_province_flag = ca_colony_5 } }
 				character_event = { id = unoccupied.101 }	
-				
 				create_character = {
 					name = ""
 					religion="ruins"
@@ -214,6 +212,9 @@
 						learning = 0
 					}
 					trait = ruin
+				}
+				new_character = {
+					b_thenn = { gain_title = PREV }
 				}
 			}	
 		}
@@ -237,9 +238,7 @@
 				limit = { is_ruler = yes }
 				add_trait = ruin
 				set_defacto_liege = THIS
-				c_shivering_forest = {  location = { set_province_flag = ca_colony_5 } }
 				character_event = { id = unoccupied.101 }	
-				
 				create_character = {
 					name = ""
 					religion="ruins"
@@ -253,6 +252,9 @@
 						learning = 0
 					}
 					trait = ruin
+				}
+				new_character = {
+					b_shivering_grove = { gain_title = PREV }
 				}
 			}	
 		}
@@ -276,9 +278,7 @@
 				limit = { is_ruler = yes }
 				add_trait = ruin
 				set_defacto_liege = THIS
-				c_skirling_pass = {  location = { set_province_flag = ca_colony_5 } }
 				character_event = { id = unoccupied.101 }	
-				
 				create_character = {
 					name = ""
 					religion="ruins"
@@ -292,6 +292,9 @@
 						learning = 0
 					}
 					trait = ruin
+				}
+				new_character = {
+					b_skirling_watch = { gain_title = PREV }
 				}
 			}	
 		}
@@ -315,9 +318,7 @@
 				limit = { is_ruler = yes }
 				add_trait = ruin
 				set_defacto_liege = THIS
-				c_c_frostfangs = {  location = { set_province_flag = ca_colony_5 } }
 				character_event = { id = unoccupied.101 }	
-				
 				create_character = {
 					name = ""
 					religion="ruins"
@@ -331,6 +332,9 @@
 						learning = 0
 					}
 					trait = ruin
+				}
+				new_character = {
+					b_giants_stair = { gain_title = PREV }
 				}
 			}	
 		}
@@ -354,9 +358,7 @@
 				limit = { is_ruler = yes }
 				add_trait = ruin
 				set_defacto_liege = THIS
-				c_n_frostfangs = {  location = { set_province_flag = ca_colony_5 } }
 				character_event = { id = unoccupied.101 }	
-				
 				create_character = {
 					name = ""
 					religion="ruins"
@@ -370,6 +372,9 @@
 						learning = 0
 					}
 					trait = ruin
+				}
+				new_character = {
+					b_forktop_point = { gain_title = PREV }
 				}
 			}	
 		}
@@ -393,9 +398,7 @@
 				limit = { is_ruler = yes }
 				add_trait = ruin
 				set_defacto_liege = THIS
-				c_ice_bay_shore = {  location = { set_province_flag = ca_colony_5 } }
 				character_event = { id = unoccupied.101 }	
-				
 				create_character = {
 					name = ""
 					religion="ruins"
@@ -409,6 +412,9 @@
 						learning = 0
 					}
 					trait = ruin
+				}
+				new_character = {
+					b_iceguard = { gain_title = PREV }
 				}
 			}	
 		}
@@ -432,9 +438,7 @@
 				limit = { is_ruler = yes }
 				add_trait = ruin
 				set_defacto_liege = THIS
-				c_frozen_shore = {  location = { set_province_flag = ca_colony_5 } }
 				character_event = { id = unoccupied.101 }	
-				
 				create_character = {
 					name = ""
 					religion="ruins"
@@ -448,6 +452,9 @@
 						learning = 0
 					}
 					trait = ruin
+				}
+				new_character = {
+					b_icehome = { gain_title = PREV }
 				}
 			}	
 		}
@@ -471,9 +478,24 @@
 				limit = { is_ruler = yes }
 				add_trait = ruin
 				set_defacto_liege = THIS
-				c_hardhome = {  location = { set_province_flag = ca_colony_5 } }
 				character_event = { id = unoccupied.101 }	
-				
+				create_character = {
+					name = ""
+					religion="ruins"
+					culture="ruin"	
+					dynasty=none
+					attributes = {
+						martial = 0
+						diplomacy = 0
+						intrigue = 0
+						stewardship = 0
+						learning = 0
+					}
+					trait = ruin
+				}
+				new_character = {
+					b_storrolds_point = { gain_title = PREV }
+				}
 				create_character = {
 					name = ""
 					religion="ruins"
@@ -490,7 +512,7 @@
 				}
 				new_character = {
 					b_hardhome = { gain_title = PREV }
-				}
+				}				
 			}	
 		}
 	}
@@ -513,9 +535,24 @@
 				limit = { is_ruler = yes }
 				add_trait = ruin
 				set_defacto_liege = THIS
-				c_fot_first_men = {  location = { set_province_flag = ca_colony_5 } }
 				character_event = { id = unoccupied.101 }	
-				
+				create_character = {
+					name = ""
+					religion="ruins"
+					culture="ruin"	
+					dynasty=none
+					attributes = {
+						martial = 0
+						diplomacy = 0
+						intrigue = 0
+						stewardship = 0
+						learning = 0
+					}
+					trait = ruin
+				}
+				new_character = {
+					b_the_fist = { gain_title = PREV }
+				}
 				create_character = {
 					name = ""
 					religion="ruins"
@@ -532,7 +569,7 @@
 				}
 				new_character = {
 					b_the_fist_temple = { gain_title = PREV }
-				}
+				}				
 			}	
 		}
 	}
@@ -555,9 +592,7 @@
 				limit = { is_ruler = yes }
 				add_trait = ruin
 				set_defacto_liege = THIS
-				c_the_gorge = {  location = { set_province_flag = ca_colony_5 } }
 				character_event = { id = unoccupied.101 }	
-				
 				create_character = {
 					name = ""
 					religion="ruins"
@@ -571,6 +606,9 @@
 						learning = 0
 					}
 					trait = ruin
+				}
+				new_character = {
+					b_ruddy_hall = { gain_title = PREV }
 				}
 			}	
 		}
@@ -594,9 +632,7 @@
 				limit = { is_ruler = yes }
 				add_trait = ruin
 				set_defacto_liege = THIS
-				c_crasters_keep = {  location = { set_province_flag = ca_colony_5 } }
 				character_event = { id = unoccupied.101 }	
-				
 				create_character = {
 					name = ""
 					religion="ruins"
@@ -610,6 +646,9 @@
 						learning = 0
 					}
 					trait = ruin
+				}
+				new_character = {
+					b_crasters_keep = { gain_title = PREV }
 				}
 			}	
 		}
@@ -633,9 +672,7 @@
 				limit = { is_ruler = yes }
 				add_trait = ruin
 				set_defacto_liege = THIS
-				c_haunted_forest = {  location = { set_province_flag = ca_colony_5 } }
 				character_event = { id = unoccupied.101 }	
-				
 				create_character = {
 					name = ""
 					religion="ruins"
@@ -649,6 +686,9 @@
 						learning = 0
 					}
 					trait = ruin
+				}
+				new_character = {
+					b_haunted_keep = { gain_title = PREV }
 				}
 			}	
 		}
@@ -672,9 +712,7 @@
 				limit = { is_ruler = yes }
 				add_trait = ruin
 				set_defacto_liege = THIS
-				c_antler_vale = {  location = { set_province_flag = ca_colony_5 } }
 				character_event = { id = unoccupied.101 }	
-				
 				create_character = {
 					name = ""
 					religion="ruins"
@@ -688,6 +726,9 @@
 						learning = 0
 					}
 					trait = ruin
+				}
+				new_character = {
+					b_antler_fork = { gain_title = PREV }
 				}
 			}	
 		}

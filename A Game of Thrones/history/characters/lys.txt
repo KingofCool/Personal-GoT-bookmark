@@ -3588,6 +3588,7 @@
 			}
 		}
 	}
+	8314.1.1 = {death = yes}	
 }
 #concubines
 419982370 = {
@@ -3638,7 +3639,7 @@
 120982370 = {
 	name="Lysono"	# not a lord
 	dynasty=982370
-
+	dna="akhmisffaaq"
 	religion="pirate"
 	culture="lysene"
 
@@ -3649,6 +3650,7 @@
 
 	8287.1.1 = {birth="8287.1.1"}
 	8303.1.1 = {add_trait=poor_warrior}
+	8310.1.1 = {remove_trait=poor_warrior add_trait=skilled_warrior}	
 }
 121982370 = {
 	name="Mellario"	# not a lord
@@ -3695,7 +3697,21 @@
 	8295.1.1 = {birth="8295.1.1"}
 	8311.1.1 = {add_trait=trained_warrior}
 }
+124982370 = {
+	name="Syrea"	# not a lord
+	female=yes
+	dynasty=982370
 
+	religion="pirate"
+	culture="lysene"
+
+	father=119982370
+	mother=419982370
+	
+	add_trait = child_of_consort
+
+	8303.1.1 = {birth=yes}
+}
 ### Bloodstone rulers to stop fix targaryen title history
 1001639 = {
 	name="Syrio"	# not a lord

@@ -2440,7 +2440,7 @@
 			add_friend = 2126 #Jojen
 			add_friend = 10174 #Hodor
 	}
-	8320.1.1 = { death = yes }	
+	8305.1.1 = { death = yes }	
 }
 9059 = {
 	name="Rickon"
@@ -2476,12 +2476,12 @@
 		add_trait="skilled_warrior"
 		add_trait="ice"
 	}
-	8311.1.1 = {
+	8310.1.1 = {
 		add_spouse = 98093		
 		add_trait="skilled_tactician"
 		add_trait="brawny"
 	}
-	8316.1.1 = {
+	8314.1.1 = {
 		add_spouse = 4062		
 	}	
 }
@@ -2495,7 +2495,7 @@
 	father=9059
 	mother=98093
 	
-	8312.1.1 = {birth=yes}
+	8311.1.1 = {birth=yes}
 	8330.1.1 = {		
 		add_trait="skilled_warrior"
 	}	
@@ -2510,7 +2510,7 @@
 	father=9059
 	mother=98093
 	
-	8313.1.1 = {birth=yes}
+	8312.1.1 = {birth=yes}
 	8330.1.1 = {		
 		add_trait="trained_warrior"
 	}	
@@ -2526,7 +2526,7 @@
 	father=9059
 	mother=98093
 	
-	8315.1.1 = {birth=yes}	
+	8313.1.1 = {birth=yes}	
 }
 49059 = {
 	name="Lyanna"
@@ -2539,31 +2539,7 @@
 	father=9059
 	mother=4062
 	
-	8317.1.1 = {birth=yes}	
-}
-59059 = {
-	name="Benjen"
-	dynasty=59
-	
-	religion="old_gods"
-	culture="northman"
-
-	father=9059
-	mother=4062
-	
-	8319.1.1 = {birth=yes}	
-}
-69059 = {
-	name="Mira"
-	dynasty=59
-	female=yes
-	religion="old_gods"
-	culture="northman"
-	
-	father=9059
-	mother=4062
-	
-	8320.1.1 = {birth=yes}	
+	8315.1.1 = {birth=yes}	
 }
 #Dummy characters for missing Stark children
 9266059 = {
@@ -3572,7 +3548,7 @@
 	
 	8282.1.1 = {birth="8282.1.1"}
 	8298.1.1 = {add_trait="trained_warrior"}
-	8316.1.1 = {death=yes}	
+	8314.1.1 = {death=yes}	
 }
 ###
 5093 = {

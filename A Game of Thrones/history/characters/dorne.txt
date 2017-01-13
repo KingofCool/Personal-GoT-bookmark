@@ -847,7 +847,7 @@
 	8284.1.1 = {
 		add_spouse=4506001
 	}
-	8316.1.1 = { death = yes }		
+	8315.1.1 = { death = yes }		
 }
 4506001 = {
 	name="Allyria"
@@ -857,7 +857,7 @@
 	culture="salt_dornish"
 	
 	8264.1.1 = {birth="8264.1.1"}
-	8316.1.1 = { death = yes }		
+	8315.1.1 = { death = yes }		
 }
 #Household
 5001001 = {
@@ -2619,7 +2619,7 @@
 	mother=35285
 
 	8254.3.17 = {birth="8254.3.17"}
-	8320.1.1 = { death = yes }		
+	8310.1.1 = { death = yes }		
 }
 64113 = {
 	name="Bedwyck"	# not a lord
@@ -2757,7 +2757,7 @@
 	mother=6008
 	father=6011
 	
-	8314.1.1 = {birth=yes}
+	8313.1.1 = {birth=yes}
 	8330.1.1 = {add_trait=knight add_trait=skilled_warrior}	
 }
 66013 = {
@@ -2770,7 +2770,7 @@
 	mother=6008
 	father=6011
 	
-	8316.1.1 = {birth=yes}
+	8314.1.1 = {birth=yes}
 }
 66014 = {
 	name="Oberyn"
@@ -2782,7 +2782,7 @@
 	mother=6008
 	father=6011
 	
-	8319.1.1 = {birth=yes}
+	8315.1.1 = {birth=yes}
 }
 7011 = {
 	name="Yassmena"
@@ -3822,11 +3822,11 @@
 	
 	religion="the_seven"
 	culture="western_valyrian"
-	
+	add_trait = twin	
 	father=95017
 	mother=13019
 	
-	8316.1.1 = {birth=yes 	culture="stone_dornish"}
+	8315.1.1 = {birth=yes 	culture="stone_dornish"}
 }
 83020 = {
 	name="Jeyne"
@@ -3846,11 +3846,11 @@
 	female=yes
 	religion="the_seven"
 	culture="western_valyrian"
-	
+	add_trait = twin	
 	father=95017
 	mother=13019
 	
-	8321.1.1 = {birth=yes 	culture="stone_dornish"}
+	8315.1.1 = {birth=yes 	culture="stone_dornish"}
 }
 83022 = {
 	name="Alyse"
@@ -4087,7 +4087,7 @@
 	mother=53114
 
 	8254.8.11 = {birth="8254.8.11"}
-	8317.1.1 = { death = yes }		
+	8315.1.1 = { death = yes }		
 }
 63514 = {
 	name="Aron"	# not a lord, cousin.
@@ -4368,7 +4368,7 @@
 	father=9016
 	mother=105174398
 	
-	8313.1.1 = {birth=yes effect = { culture=stone_dornish } }	
+	8312.1.1 = {birth=yes effect = { culture=stone_dornish } }	
 	8329.1.1 = {add_trait=knight add_trait=trained_warrior add_trait=brave add_trait=honorable}			
 }
 90161 = {
@@ -4381,7 +4381,7 @@
 	father=9016
 	mother=105174398
 	
-	8314.1.1 = {birth=yes effect = { culture=stone_dornish } }	
+	8313.1.1 = {birth=yes effect = { culture=stone_dornish } }	
 }
 90162 = {
 	name="Nysterica"
@@ -4395,7 +4395,7 @@
 
 	add_trait=fair
 	
-	8316.1.1 = {birth=yes effect = { culture=stone_dornish } }	
+	8314.1.1 = {birth=yes effect = { culture=stone_dornish } }	
 }
 90163 = {
 	name="Ulrick"
@@ -4407,7 +4407,7 @@
 	father=9016
 	mother=105174398
 	
-	8318.1.1 = {birth=yes effect = { culture=stone_dornish } }	
+	8315.1.1 = {birth=yes effect = { culture=stone_dornish } }	
 	8330.1.1 = {add_trait=squire add_trait=trained_warrior add_trait=brave add_trait=honorable}			
 }
 90164 = {

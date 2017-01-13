@@ -20,3 +20,6 @@ religion = pirate
 	b_theskulls = ca_shipyard_1
 	b_theskulls = ca_shipyard_2
 }
+8314.1.1 = {
+	religion = weeping_lady
+}

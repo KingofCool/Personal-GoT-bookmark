@@ -549,7 +549,7 @@
 		birth="8300.3.1"
 		add_claim=k_beyond_wall
 	}
-	8320.1.1={
+	8315.1.1={
 		remove_trait = "wildling"	
 		add_trait="maester"
 		religion="the_seven"

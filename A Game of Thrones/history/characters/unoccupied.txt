@@ -734,3 +734,43 @@
 		}
 	}
 }
+#c_whitetree
+123473 = {
+	name = " "
+	
+	religion="ruins"
+	culture="ruin"	
+	
+	8307.1.1 = {
+		birth="8307.1.1"
+		effect = {
+			if = {
+				limit = { is_ruler = no }
+				death = yes
+			}	
+			if = {
+				limit = { is_ruler = yes }
+				add_trait = ruin
+				set_defacto_liege = THIS
+				character_event = { id = unoccupied.101 }	
+				create_character = {
+					name = ""
+					religion="ruins"
+					culture="ruin"	
+					dynasty=none
+					attributes = {
+						martial = 0
+						diplomacy = 0
+						intrigue = 0
+						stewardship = 0
+						learning = 0
+					}
+					trait = ruin
+				}
+				new_character = {
+					b_whitewatch = { gain_title = PREV }
+				}
+			}	
+		}
+	}
+}

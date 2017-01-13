@@ -625,7 +625,6 @@
 			add_friend = 8316
 			add_friend = 7107
 			add_friend = 206054
-			add_friend = 1126
 			add_friend = 6102
 			add_friend = 3034050
 			add_friend = 9017
@@ -1179,24 +1178,6 @@
 	mother=88032
 	8281.1.1={
 		birth="8281.1.1"
-	}
-	8303.1.1 = { 
-		effect = { #Her co-wives
-			add_friend = 6059
-			add_friend = 7059
-			add_friend = 7253
-			add_friend = 4316
-			add_friend = 4001
-			add_friend = 8316
-			add_friend = 7107
-			add_friend = 206054
-			add_friend = 1126
-			add_friend = 6102
-			add_friend = 3034050
-			add_friend = 9017
-			add_friend = 77041
-			add_friend = 155174371
-		}
 	}
 }
 #Courtiers

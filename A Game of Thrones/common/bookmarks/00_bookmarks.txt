@@ -1047,10 +1047,7 @@ bm_JON_TARGARYEN = {
 	date = 8331.1.1
 	
 	selectable_character = {	
-		id = 29577043 #Rhaegar, son of Jon and Dany
-	}
-	selectable_character = {	
-		id = 29577060 #Daemon, son of Jon and Margaery
+		id = 1002059 #Jon
 	}
 	selectable_character = {	
 		id = 29577063 #Elaena, son of Jon and Arianne

@@ -700,7 +700,6 @@
 		add_spouse=8316
 		add_spouse=7107
 		add_spouse=206054
-		add_spouse=1126
 		add_spouse=6102
 		add_spouse=3034050
 		add_spouse=9017
@@ -709,7 +708,6 @@
 	8315.1.1 = {
 		add_spouse=500184
 	}
-	8330.12.1 = { death = yes }	
 }   
 29577041 = {
 	name="Daenerys" # Daenerys the Heiress
@@ -818,12 +816,12 @@
 	culture="high_valyrian"
 	
 	add_trait = quick
-	add_trait = fair
+	add_trait = fair	
 
 	father=1002059
 	mother=77041
 	
-	8306.5.1 = {
+	8306.1.1 = {
 		birth=yes
 	}
 }
@@ -841,7 +839,7 @@
 	father=1002059
 	mother=77041
 	
-	8308.2.1 = {
+	8307.6.1 = {
 		birth=yes
 	}
 } 
@@ -1034,41 +1032,39 @@
 	}
 }
 29577057 = {
-	name="Aelinor" # Aelinor daughter of Jon and Meera Reed
+	name="Aelinor" # Aelinor daughter of Jon and Dany
 	female=yes
 	dynasty=496		
 	
 	religion="valyrian"
-	culture="crannogman"
+	culture="high_valyrian"
 	
 	add_trait = fair
 	add_trait = strong
-	add_trait = greensight
+	add_trait = dragon_dreams	
 
 	father=1002059
-	mother=1126
+	mother=77041
 	
-	8305.11.1 = {
+	8311.1.1 = {
 		birth=yes
-		culture="high_valyrian"
 	}
 }
 29577058 = {
-	name="Daeron" # Daeron son of Jon and Meera Reed
+	name="Daeron" # Daeron son of Jon and Dany
 	dynasty=496		
 	
 	religion="valyrian"
-	culture="crannogman"
+	culture="high_valyrian"
 	
 	add_trait = quick
-	add_trait = greensight
+	add_trait = dragon_dreams
 
 	father=1002059
-	mother=1126
+	mother=77041
 	
-	8308.1.1 = {
+	8314.1.1 = {
 		birth=yes
-		culture="high_valyrian"
 	}
 }
 29577059 = {
@@ -1694,7 +1690,7 @@
 
 	add_trait = quick	
 	add_trait = strong
-	add_trait = fair
+	add_trait = fair	
 
 	father=1002059
 	mother=77041
@@ -1717,7 +1713,7 @@
 	father=1002059
 	mother=77041
 	
-	8314.1.1 = {
+	8315.1.1 = {
 		birth=yes
 	}
 } 
@@ -1734,7 +1730,7 @@
 	father=1002059
 	mother=77041
 	
-	8315.1.1 = {
+	8316.1.1 = {
 		birth=yes
 	}
 } 
@@ -1991,42 +1987,24 @@
 		birth=yes
 		culture="high_valyrian"
 	}
-}    
-29577110 = {
-	name="Aerys" # Aerys son of Jon and Meera Reed
-	dynasty=496		
-	
-	religion="valyrian"
-	culture="crannogman"
-	
-	add_trait = fair
-	add_trait = greensight
-
-	father=1002059
-	mother=1126
-	
-	8310.1.1 = {
-		birth=yes
-		culture="high_valyrian"
-	}
-}  
+}     
 29577111 = {
-	name="Ravella" # Ravella daughter of Jon and Meera Reed
+	name="Ravella" # Ravella daughter of Jon and Dany
 	female=yes
 	dynasty=496		
 	
 	religion="valyrian"
-	culture="crannogman"
+	culture="high_valyrian"
 	
 	add_trait = strong
-	add_trait = greensight
+	add_trait = dragon_dreams
+	add_trait = twin	
 
 	father=1002059
-	mother=1126
+	mother=77041
 	
-	8313.1.1 = {
+	8320.1.1 = {
 		birth=yes
-		culture="high_valyrian"
 	}
 }  
 29577112 = {
@@ -2401,11 +2379,9 @@
 			add_friend = 8316
 			add_friend = 7107
 			add_friend = 206054
-			add_friend = 1126
 			add_friend = 6102
 			add_friend = 3034050
 			add_friend = 9017
-			add_friend = 88091
 			add_friend = 500184
 			add_friend = 155174371
 		}
@@ -2465,11 +2441,9 @@
 			add_friend = 8316
 			add_friend = 7107
 			add_friend = 206054
-			add_friend = 1126
 			add_friend = 6102
 			add_friend = 3034050
 			add_friend = 9017
-			add_friend = 88091
 			add_friend = 500184
 			add_friend = 155174371
 		}
@@ -2512,6 +2486,7 @@
 			add_friend = 2126 #Jojen
 			add_friend = 10174 #Hodor
 	}
+	8320.1.1 = { death = yes }	
 }
 9059 = {
 	name="Rickon"
@@ -8264,11 +8239,9 @@
 			add_friend = 8316
 			add_friend = 7107
 			add_friend = 206054
-			add_friend = 1126
 			add_friend = 77041
 			add_friend = 3034050
 			add_friend = 9017
-			add_friend = 88091
 			add_friend = 500184
 			add_friend = 155174371
 		}
@@ -9729,29 +9702,8 @@
 			add_friend = 10174 #Hodor
 		employer=1002059
 	}
-	8303.1.1 = { 
-		effect = { #Her co-wives
-			add_friend = 6059
-			add_friend = 7059
-			add_friend = 7253
-			add_friend = 4316
-			add_friend = 4001
-			add_friend = 8316
-			add_friend = 7107
-			add_friend = 206054
-			add_friend = 77041
-			add_friend = 6102
-			add_friend = 3034050
-			add_friend = 9017
-			add_friend = 88091
-			add_friend = 500184
-			add_friend = 155174371
-		}
-	}
-	8303.1.1 = {
-		fertility = 1.5
-		add_trait="chaste"
-		add_trait="familyperson"
+	8304.1.1 = {
+		death = yes
 	}
 }
 2126 = {
@@ -9781,7 +9733,7 @@
 	mother=1226
 	
 	8285.1.1 = {birth="8285.1.1"}
-	8309.1.1 = {death = yes}
+	8304.1.1 = {death = yes}
 }
 21260 = {
 	name="Dorina"

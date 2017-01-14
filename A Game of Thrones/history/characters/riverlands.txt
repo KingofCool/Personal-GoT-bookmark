@@ -1134,7 +1134,7 @@ name="Imoen"
 	father=3128
 	mother=261150
 	
-	8315.1.1 = {birth=yes}
+	8314.1.1 = {birth=yes}
 }
 93132 = {
 name="Jason" 
@@ -1146,7 +1146,7 @@ name="Jason"
 	father=3128
 	mother=261150
 	
-	8317.1.1 = {birth=yes}
+	8315.1.1 = {birth=yes}
 	8330.1.1 = {
 		add_trait="squire"
 		add_trait="trained_warrior"
@@ -1162,7 +1162,7 @@ name="Marq"
 	father=3128
 	mother=261150
 	
-	8317.1.1 = {birth=yes}
+	8315.1.1 = {birth=yes}
 	8330.1.1 = {
 		add_trait="squire"
 		add_trait="trained_warrior"
@@ -2198,7 +2198,7 @@ name="Jason"
 	father=4134
 	mother=132178452
 	
-	8315.1.1 = {birth=yes}	
+	8314.1.1 = {birth=yes}	
 }
 184137 = {
 	name="Walder"
@@ -2210,7 +2210,7 @@ name="Jason"
 	father=4134
 	mother=132178452
 	
-	8317.1.1 = {birth=yes}	
+	8315.1.1 = {birth=yes}	
 }
 184138 = {
 	name="Jannia"

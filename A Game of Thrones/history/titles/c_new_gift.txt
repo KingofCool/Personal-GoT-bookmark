@@ -13,7 +13,7 @@
 	effect = { location = { set_name = "New Gift" } }
 }
 8307.1.1={
-	law = succ_turkish_succession
+	law = succ_primogeniture
 	law = agnatic_succession
 	holder=174345
 }

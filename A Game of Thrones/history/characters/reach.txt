@@ -569,7 +569,7 @@
 		employer=3190
 	}
 	8303.1.1 = {
-		employer=102
+		death = yes
 	}
 }
 
@@ -2174,7 +2174,7 @@
 	8279.1.1={
 		add_spouse=2281 #Melessan Florent
 	}
-	8316.1.1={
+	8304.1.1={
 		death=yes
 	}	
 }
@@ -2285,7 +2285,7 @@
 	8299.9.1 = { #battle of Duskendale
 		add_spouse = 8138 #Eleanor Mootoon
 	}
-	8316.1.1={ add_trait="heartsbane" }	
+	8304.1.1={ add_trait="heartsbane" }	
 }
 22960 = {
 	name="Samwell" #
@@ -3217,7 +3217,7 @@
 		add_spouse = 100248
 		add_trait="knight"
 	}
-	8316.1.1={
+	8314.1.1={
 		death = yes
 	}	
 }
@@ -3230,7 +3230,7 @@
 	8252.1.1={
 		birth="8252.1.1"
 	}
-	8316.1.1={
+	8314.1.1={
 		death = yes
 	}	
 }
@@ -4131,7 +4131,7 @@
 	culture="reachman"
 	father=2263
 	mother=88076
-	8313.1.1={
+	8312.1.1={
 		birth=yes
 	}
 	8330.1.1 = {
@@ -4147,7 +4147,7 @@
 	culture="reachman"
 	father=2263
 	mother=88076
-	8316.1.1={
+	8314.1.1={
 		birth=yes
 	}	
 }
@@ -4159,7 +4159,7 @@
 	culture="reachman"
 	father=2263
 	mother=88076
-	8319.1.1={
+	8315.1.1={
 		birth=yes
 	}	
 }
@@ -4796,7 +4796,7 @@
 		add_trait="knight"
 		add_trait="poor_warrior"
 	}
-	8316.1.1={
+	8315.1.1={
 		death = yes
 	}	
 }
@@ -4809,7 +4809,7 @@
 	8255.1.1={
 		birth="8255.1.1"
 	}
-	8316.1.1={
+	8315.1.1={
 		death = yes
 	}	
 }
@@ -5804,7 +5804,7 @@
 	father=3030257
 	mother=88039
 
-	8316.1.1 = {birth=yes}
+	8313.1.1 = {birth=yes}
 	8328.1.1 = {add_trait=squire}
 }
 3131258 = {
@@ -5817,7 +5817,7 @@
 	father=3030257
 	mother=88039
 
-	8319.1.1 = {birth=yes}
+	8314.1.1 = {birth=yes}
 }
 3131259 = {
 	name="Alyn"	# not a lord
@@ -5829,7 +5829,7 @@
 	father=3030257
 	mother=88039
 
-	8322.1.1 = {birth=yes}
+	8315.1.1 = {birth=yes}
 }
 ###Cockshaws
 1271 = {
@@ -6954,7 +6954,7 @@
 	8239.1.1={
 		birth="8239.1.1"
 	}
-	8319.1.1={
+	8309.1.1={
 		death = yes
 	}
 }
@@ -7353,7 +7353,7 @@
 	culture="reachman"
 	father=5240
 	mother=88038
-	8315.1.1={
+	8314.1.1={
 		birth=yes
 	}	
 }
@@ -7365,7 +7365,7 @@
 	culture="reachman"
 	father=5240
 	mother=88038
-	8316.1.1={
+	8315.1.1={
 		birth=yes
 	}	
 }
@@ -7847,7 +7847,7 @@
 	culture="reachman"
 	father=4252
 	mother=88269
-	8316.1.1={
+	8315.1.1={
 		birth=yes
 	}	
 }   
@@ -8812,7 +8812,7 @@
 	culture="reachman"
 	father=1299
 	mother=1242	
-	8315.1.1={
+	8312.1.1={
 		birth=yes
 	}	
 }
@@ -8824,7 +8824,7 @@
 	culture="reachman"
 	father=1299
 	mother=1242	
-	8317.1.1={
+	8313.1.1={
 		birth=yes
 	}	
 }
@@ -8836,7 +8836,7 @@
 	culture="reachman"
 	father=1299
 	mother=1242	
-	8320.1.1={
+	8315.1.1={
 		birth=yes
 	}	
 }

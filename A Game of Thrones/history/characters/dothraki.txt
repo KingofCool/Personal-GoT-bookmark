@@ -809,7 +809,7 @@
 		add_trait="kingsguard"
 	}
 	8303.1.1 = {
-		employer=6253
+		employer=600496
 	}
 	8307.1.1 = {
 		death = yes
@@ -872,7 +872,7 @@
 		add_trait="kingsguard"
 	}
 	8303.1.1 = {
-		employer=6253
+		employer=600496
 	}
 	8306.1.1={
 		death = yes

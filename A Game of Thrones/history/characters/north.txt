@@ -4091,7 +4091,7 @@
 	father=274344
 	mother=5089
 	
-	8316.1.1 = { birth = yes }
+	8314.1.1 = { birth = yes }
 }
 59089 = {
 	name="Cregan"
@@ -4105,7 +4105,7 @@
 	father=274344
 	mother=5089
 	
-	8317.1.1 = { birth = yes }
+	8315.1.1 = { birth = yes }
 	8330.12.1 = {
 		add_trait=trained_warrior
 	}	
@@ -4440,7 +4440,7 @@
 		# remove_trait="bastard"
 		# add_trait="legit_bastard"
 	# }
-	8303.1.1={
+	8301.1.1={
 		death=yes
 		}
 }
@@ -5073,7 +5073,7 @@
 	
 	8244.1.1 = {birth="8244.1.1"}
 	8260.1.1 = {add_spouse = 3095}
-	8316.1.1={
+	8306.1.1={
 		death = yes
 	}
 }
@@ -5087,7 +5087,7 @@
 	culture="northman"
 	
 	8244.1.1 = {birth="8244.1.1"}
-	8316.1.1={
+	8306.1.1={
 		death = yes
 	}
 }
@@ -5404,7 +5404,7 @@
 	father = 3062
 	mother = 1005102
 	
-	8314.1.1 = {birth=yes}
+	8312.1.1 = {birth=yes}
 }
 56062 = {
 	name="Galbart"
@@ -5416,7 +5416,7 @@
 	father = 3062
 	mother = 1005102
 	
-	8316.1.1 = { birth = yes }
+	8313.1.1 = { birth = yes }
 	8330.1.1 = { add_trait="trained_warrior" }		
 }
 57062 = {
@@ -5429,7 +5429,7 @@
 	father = 3062
 	mother = 1005102
 	
-	8318.1.1 = {birth=yes}
+	8314.1.1 = {birth=yes}
 }
 58062 = {
 	name="Ethan"
@@ -5441,7 +5441,7 @@
 	father = 3062
 	mother = 1005102
 	
-	8319.1.1 = { birth = yes }
+	8315.1.1 = { birth = yes }
 	8330.1.1 = { add_trait="trained_warrior" }		
 }
 59062 = {
@@ -8207,7 +8207,7 @@
 	father = 4005102
 	
 	8297.1.1 = {birth="8297.1.1" }
-	8315.1.1 = {add_spouse = 266150}		
+	8313.1.1 = {add_spouse = 266150}		
 }
 1015103 = {
 	name="Jorah"
@@ -8219,7 +8219,7 @@
 	mother = 266150
 	father = 1015102
 	
-	8317.1.1 = {birth=yes }		
+	8314.1.1 = {birth=yes }		
 }
 1015104 = {
 	name="Dacey"
@@ -8231,7 +8231,7 @@
 	mother = 266150
 	father = 1015102
 	
-	8319.1.1 = {birth=yes }		
+	8315.1.1 = {birth=yes }		
 }
 1015105 = {
 	name="Bjeorn"
@@ -8490,7 +8490,7 @@
 	father=200068
 	mother=264150
 
-	8316.1.1 = {birth=yes}	
+	8314.1.1 = {birth=yes}	
 }
 200072 = {
 	name="Anya"
@@ -8502,7 +8502,7 @@
 	father=200068
 	mother=264150
 
-	8318.1.1 = {birth=yes}	
+	8315.1.1 = {birth=yes}	
 }
 200073 = {
 	name="Jeor"
@@ -10668,7 +10668,7 @@
 	add_trait=fair
 	add_trait=quick
 
-	8313.1.1 = {birth=yes}	
+	8312.1.1 = {birth=yes}	
 }
 134443 = {
 	name="Gregor"	# canon, a lord
@@ -10682,7 +10682,7 @@
 	
 	add_trait=quick
 
-	8315.1.1 = {birth=yes}
+	8314.1.1 = {birth=yes}
 	8330.1.1 = {add_trait=trained_warrior}	
 }
 135443 = {
@@ -10697,7 +10697,7 @@
 	
 	add_trait=strong
 
-	8317.1.1 = {birth=yes}	
+	8315.1.1 = {birth=yes}	
 }
 136443 = {
 	name="Robb"

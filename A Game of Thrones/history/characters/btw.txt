@@ -78,7 +78,7 @@
 		add_trait="skilled_warrior"
 	}
 	8279.1.1 = {give_nickname = nick_giantsbane}
-	8300.3.1 = { employer = 1002059 } #Jon
+	8300.3.1 = { employer = 1002059 } #Jon		
 }
 274345 = {
 	name="Toregg"
@@ -98,7 +98,7 @@
 	8286.1.1 = {
 		add_trait="trained_warrior"
 		give_nickname = nick_the_tall
-	}
+	}		
 }
 374345 = {
 	name="Torwynd"
@@ -137,7 +137,7 @@
 	8275.1.1 = {birth="8275.1.1"}
 	8289.1.1 = {
 		add_trait="trained_warrior"
-	}
+	}	
 }
 574345 = {
 	name="Dormund"
@@ -161,7 +161,7 @@
 			death_reason = death_battle
 			killer = 2000311 #Richard Horpe
 		}
-	}
+	}	
 }
 574346 = {
 	name="Munda"
@@ -180,7 +180,7 @@
 	8278.1.1 = {birth="8278.1.1"}
 	8292.1.1 = {
 		add_trait="trained_warrior"
-	}
+	}	
 }
 574347 = {
 	name="Halgor"

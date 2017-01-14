@@ -2991,7 +2991,7 @@
 		add_trait="kingsguard"
 	}
 	8306.1.1 = {
-		employer=6253
+		employer=600496
 	}	
 }	
 #####################
@@ -3909,7 +3909,7 @@
 	father=7232
 	mother=19208
 
-	8313.1.1 = {birth=yes}
+	8312.1.1 = {birth=yes}
 }
 77233 = {		
 	name="Erren"	
@@ -3921,7 +3921,7 @@
 	father=7232
 	mother=19208
 
-	8314.1.1 = {birth=yes}
+	8313.1.1 = {birth=yes}
 }
 77234 = {		
 	name="Pia"	
@@ -3933,7 +3933,7 @@
 	father=7232
 	mother=19208
 
-	8315.1.1 = {birth=yes}
+	8314.1.1 = {birth=yes}
 }
 77235 = {		
 	name="Joy"	
@@ -3945,7 +3945,7 @@
 	father=7232
 	mother=19208
 
-	8322.1.1 = {birth=yes}
+	8315.1.1 = {birth=yes}
 }
 ###################
 ####House Myatt#### # Updated \Chrisjm89/
@@ -7987,7 +7987,7 @@
 		add_trait="kingsguard"
 	}
 	8307.1.1 = {
-		employer=6253
+		employer=600496
 	}	
 }
 ###Plumms in Essos###

@@ -1485,7 +1485,7 @@
 	mother=3012 #Ynys Ywonwood
 	
 	8297.1.1 = {birth="8297.1.1"}
-	8315.1.1 = {add_spouse=7011 add_trait="skilled_warrior" add_trait="knight"}	
+	8312.1.1 = {add_spouse=7011 add_trait="skilled_warrior" add_trait="knight"}	
 }
 153009 = {
 	name="Ariel" 
@@ -1497,7 +1497,7 @@
 	father=150009
 	mother=7011
 	
-	8318.1.1 = {birth=yes}
+	8313.1.1 = {birth=yes}
 }
 154009 = {
 	name="Myriah" 
@@ -1509,7 +1509,7 @@
 	father=150009
 	mother=7011
 	
-	8321.1.1 = {birth=yes}
+	8314.1.1 = {birth=yes}
 }
 155009 = {
 	name="Lewyn" 
@@ -1521,7 +1521,7 @@
 	father=150009
 	mother=7011
 	
-	8323.1.1 = {birth=yes}
+	8315.1.1 = {birth=yes}
 }
 156009 = {
 	name="Andryn" 
@@ -3814,7 +3814,7 @@
 	mother=4009
 	
 	8291.3.2 = {birth="8291.3.2"}
-	8314.1.1 = {add_spouse=95017}
+	8313.1.1 = {add_spouse=95017}
 }
 83019 = {
 	name="Aryon"
@@ -3826,7 +3826,7 @@
 	father=95017
 	mother=13019
 	
-	8315.1.1 = {birth=yes 	culture="stone_dornish"}
+	8314.1.1 = {birth=yes 	culture="stone_dornish"}
 }
 83020 = {
 	name="Jeyne"
@@ -3838,7 +3838,7 @@
 	father=95017
 	mother=13019
 	
-	8318.1.1 = {birth=yes 	culture="stone_dornish"}
+	8315.1.1 = {birth=yes 	culture="stone_dornish"}
 }
 83021 = {
 	name="Ashara"
@@ -3850,7 +3850,7 @@
 	father=95017
 	mother=13019
 	
-	8315.1.1 = {birth=yes 	culture="stone_dornish"}
+	8314.1.1 = {birth=yes 	culture="stone_dornish"}
 }
 83022 = {
 	name="Alyse"
@@ -4356,7 +4356,7 @@
 	8300.6.4 = {remove_trait=trained_warrior add_trait=skilled_warrior}
 	8301.9.11 = {remove_trait=skilled_warrior add_trait=master_warrior}
 	8307.1.1 = { add_trait=knight remove_trait=squire add_trait=tough_soldier }	
-	8311.1.1 = {add_spouse=105174398}			
+	8310.1.1 = {add_spouse=105174398}			
 }
 90160 = {
 	name="Arron"
@@ -4368,7 +4368,7 @@
 	father=9016
 	mother=105174398
 	
-	8312.1.1 = {birth=yes effect = { culture=stone_dornish } }	
+	8311.1.1 = {birth=yes effect = { culture=stone_dornish } }	
 	8329.1.1 = {add_trait=knight add_trait=trained_warrior add_trait=brave add_trait=honorable}			
 }
 90161 = {
@@ -4381,7 +4381,7 @@
 	father=9016
 	mother=105174398
 	
-	8313.1.1 = {birth=yes effect = { culture=stone_dornish } }	
+	8312.1.1 = {birth=yes effect = { culture=stone_dornish } }	
 }
 90162 = {
 	name="Nysterica"
@@ -4395,7 +4395,7 @@
 
 	add_trait=fair
 	
-	8314.1.1 = {birth=yes effect = { culture=stone_dornish } }	
+	8313.1.1 = {birth=yes effect = { culture=stone_dornish } }	
 }
 90163 = {
 	name="Ulrick"
@@ -4407,7 +4407,7 @@
 	father=9016
 	mother=105174398
 	
-	8315.1.1 = {birth=yes effect = { culture=stone_dornish } }	
+	8314.1.1 = {birth=yes effect = { culture=stone_dornish } }	
 	8330.1.1 = {add_trait=squire add_trait=trained_warrior add_trait=brave add_trait=honorable}			
 }
 90164 = {
@@ -4420,7 +4420,7 @@
 	father=9016
 	mother=105174398
 	
-	8321.1.1 = {birth=yes effect = { culture=stone_dornish } }	
+	8315.1.1 = {birth=yes effect = { culture=stone_dornish } }	
 }
 #issue of Alyster
 8016 = {

@@ -3871,6 +3871,7 @@
 	culture="yi_ti"
 
 	8224.1.1 = {birth="8224.1.1"}
+	8302.1.1 = {death=yes}	
 }
 12969193 = {
 	name="Lien"	# not a lord

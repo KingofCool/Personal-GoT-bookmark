@@ -1251,6 +1251,57 @@ name="Jason"
 	mother= 169113
 	
 	8270.1.1 = {birth="8270.1.1"}
+	8303.1.1 = {add_spouse= 3138}	
+}
+399113 = {
+	name="Roger"
+	dynasty=69113
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father= 269113
+	mother= 3138
+	
+	8304.1.1 = {birth=yes}	
+}
+399114 = {
+	name="Walder"
+	dynasty=69113
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father= 269113
+	mother= 3138
+	
+	8306.1.1 = {birth=yes}	
+}
+399115 = {
+	name="Imoen"
+	female=yes
+	dynasty=69113
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father= 269113
+	mother= 3138
+	
+	8307.1.1 = {birth=yes}	
+}
+399116 = {
+	name="Andreya"
+	female=yes
+	dynasty=69113
+	
+	religion="the_seven"
+	culture="riverlander"
+	
+	father= 269113
+	mother= 3138
+	
+	8309.1.1 = {birth=yes}	
 }
 ###
 ###House Grell 

@@ -3903,6 +3903,7 @@
 	culture="meereenese"
 	
 	8210.1.1 = { birth="8210.1.1"} #meereen is supposed to be filled with crones and grandpas
+	8302.1.1 = {death=yes}	
 }
 111360016 = {
 	name="Azzea"

@@ -1971,6 +1971,7 @@
 	culture="westerman"
 	
 	8243.1.1 = {birth="8243.1.1"}
+	8309.1.1 = {death=yes}	
 }
 ###Unnamed little sister###
 101230 = {		
@@ -2629,6 +2630,7 @@
 
 	8234.1.1 = {birth="8234.1.1"}
 	8250.1.1 = {add_spouse=1208}
+	8305.1.1 = {death=yes}	
 }
 ###Ilyn and Pod's line###
 6208 = {		

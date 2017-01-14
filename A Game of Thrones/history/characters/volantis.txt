@@ -3744,6 +3744,7 @@
 		give_nickname = nick_the_widow_of_the_waterfront
 		effect = { wealth = 350 }
 	}
+	8303.1.1 = {death=yes}	
 }
 140174397 = {
 	name="Nyessa"	# not a lord

@@ -4838,6 +4838,44 @@
 	8299.7.1={
 		add_trait="maimed" #battle of balckwater
 	}
+	8302.7.1={
+		add_spouse = 2256
+	}	
+}
+81290 = {
+	name="Addam" #
+	dynasty=290 #Mullendore
+	religion="the_seven"
+	culture="reachman"
+	father=1290
+	mother=2256
+	8304.1.1={
+		birth=yes
+	}	
+}
+81291 = {
+	name="Jenevie" #
+	female=yes
+	dynasty=290 #Mullendore
+	religion="the_seven"
+	culture="reachman"
+	father=1290
+	mother=2256
+	8306.1.1={
+		birth=yes
+	}	
+}
+81292 = {
+	name="Ursula" #
+	female=yes
+	dynasty=290 #Mullendore
+	religion="the_seven"
+	culture="reachman"
+	father=1290
+	mother=2256
+	8307.1.1={
+		birth=yes
+	}	
 }
 ###Bulwers
 284 = {
@@ -8021,6 +8059,46 @@
 		add_trait="knight"
 		add_trait="poor_warrior"
 	}
+	8302.1.1 = {
+		add_spouse = 1256
+	}	
+}
+91277 = {
+	name="Ector" 
+	dynasty=277 #Chester
+	religion="the_seven"
+	culture="reachman"
+	add_trait="tough_soldier"
+	father=1277
+	mother=1256
+	8304.1.1={
+		birth="yes"
+	}	
+}
+91278 = {
+	name="Lidia"
+	female=yes
+	dynasty=277 #Chester
+	religion="the_seven"
+	culture="reachman"
+	add_trait="tough_soldier"
+	father=1277
+	mother=1256
+	8305.1.1={
+		birth="yes"
+	}	
+}
+91279 = {
+	name="Holgor" 
+	dynasty=277 #Chester
+	religion="the_seven"
+	culture="reachman"
+	add_trait="tough_soldier"
+	father=1277
+	mother=1256
+	8306.1.1={
+		birth="yes"
+	}	
 }
 2277 = {
 	name="Hectyr" 
@@ -9019,6 +9097,66 @@
 	8275.1.1={
 		birth="8275.1.1"
 	}
+	8302.1.1={
+		add_spouse = 88235
+	}	
+}
+93256 = {
+	name="Theodore" 
+	dynasty=256 #Orme
+	religion="the_seven"
+	culture="reachman"
+	father=3256
+	mother=88235
+	8303.1.1={
+		birth="yes"
+	}	
+}
+93257 = {
+	name="Bors" 
+	dynasty=256 #Orme
+	religion="the_seven"
+	culture="reachman"
+	father=3256
+	mother=88235
+	8305.1.1={
+		birth="yes"
+	}	
+}
+93258 = {
+	name="Rylene"
+	female=yes
+	dynasty=256 #Orme
+	religion="the_seven"
+	culture="reachman"
+	father=3256
+	mother=88235
+	8307.1.1={
+		birth="yes"
+	}	
+}
+93259 = {
+	name="Jeanna"
+	female=yes
+	dynasty=256 #Orme
+	religion="the_seven"
+	culture="reachman"
+	father=3256
+	mother=88235
+	8309.1.1={
+		birth="yes"
+	}	
+}
+93260 = {
+	name="Samwell" 
+	dynasty=256 #Orme
+	religion="the_seven"
+	culture="reachman"
+	father=3256
+	mother=88235
+	8310.1.1={
+		birth="yes"
+	}	
 }
 ###Bushy
 245 = {
@@ -9139,7 +9277,7 @@
 		add_spouse = 101252
 		add_trait="knight"
 	}
-	8316.1.1={
+	8311.1.1={
 		death = yes
 	}	
 }
@@ -9152,7 +9290,7 @@
 	8245.1.1={
 		birth="8245.1.1"
 	}
-	8316.1.1={
+	8311.1.1={
 		death = yes
 	}	
 }

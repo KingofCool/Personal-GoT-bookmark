@@ -1947,7 +1947,7 @@
 	mother=4030034
 
 	8279.1.1 = {birth="8279.1.1"}
-	8326.1.1 = {death="8326.1.1"}
+	8330.1.1 = {death=yes}
 }
 3036034 = {
 	name="Florian"	# not a lord
@@ -6352,6 +6352,55 @@
 		add_trait="trained_warrior"
 		add_trait="knight"
 	}
+	8302.1.1 = {
+		add_spouse = 3035034
+	}		
+}
+110144 = {
+	name="Cyrenna" #
+	female=yes
+	dynasty=44
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=10144
+	mother=3035034
+	
+	8304.1.1 = {birth=yes}	
+}
+110145 = {
+	name="Raynard" #
+	dynasty=44
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=10144
+	mother=3035034
+	
+	8306.1.1 = {birth=yes}	
+}
+110146 = {
+	name="Dalla" #
+	female=yes
+	dynasty=44
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=10144
+	mother=3035034
+	
+	8307.1.1 = {birth=yes}	
+}
+110147 = {
+	name="Gilbert" #
+	dynasty=44
+	religion="the_seven"
+	culture="stormlander"
+	
+	father=10144
+	mother=3035034
+	
+	8309.1.1 = {birth=yes}	
 }
 10244 = {
 	name="Manfred" #Son 2

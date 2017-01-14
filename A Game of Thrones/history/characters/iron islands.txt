@@ -3793,7 +3793,7 @@
 	culture="ironborn"	
 	
 	8255.1.1 = {birth="8255.1.1"}
-	8317.1.1 = { death = yes }	
+	8315.1.1 = { death = yes }	
 }
 ###Children###	
 1114 = {		

@@ -3514,7 +3514,7 @@
 		
 	add_trait="fair"
 		
-	8315.1.1 = {birth=yes}		
+	8314.1.1 = {birth=yes}		
 }
 197069 = {
 	name="Robar"
@@ -3527,7 +3527,7 @@
 		
 	add_trait="quick"
 		
-	8317.1.1 = {birth=yes}	
+	8315.1.1 = {birth=yes}	
 }
 94073 = {
 	name="Vivyen" #unnamed in canon, daughter of Lord Yohn of Runestone

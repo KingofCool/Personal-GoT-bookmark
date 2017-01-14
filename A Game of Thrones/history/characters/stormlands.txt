@@ -1557,7 +1557,7 @@
 		add_trait=legit_bastard
 		effect = { remove_nickname = yes }	
 	}
-	8314.1.1={	
+	8312.1.1={	
 		add_spouse = 253204		
 	}		
 }
@@ -1573,7 +1573,7 @@
 	father=6316
 	mother=253204
 	
-	8317.1.1 = { 
+	8313.1.1 = { 
 		birth = yes
 	}		
 }
@@ -1589,7 +1589,7 @@
 	father=6316
 	mother=253204
 	
-	8319.1.1 = { 
+	8314.1.1 = { 
 		birth = yes
 	}		
 }
@@ -1601,12 +1601,13 @@
 	culture="stormlander"
 	
 	add_trait="strong"
-	add_trait="fair"	
+	add_trait="fair"
+	add_trait="twin"	
 	
 	father=6316
 	mother=253204
 	
-	8321.1.1 = { 
+	8315.1.1 = { 
 		birth = yes
 	}		
 }
@@ -1617,12 +1618,13 @@
 	religion="the_seven"	
 	culture="stormlander"
 	
-	add_trait="quick"	
+	add_trait="quick"
+	add_trait="twin"	
 	
 	father=6316
 	mother=253204
 	
-	8324.1.1 = { 
+	8315.1.1 = { 
 		birth = yes
 	}		
 }
@@ -5278,7 +5280,7 @@
 	father=331325
 	mother=343304
 
-	8316.1.1 = {birth=yes}	
+	8314.1.1 = {birth=yes}	
 }
 331329 = {
 	name="Cortnay"
@@ -5290,7 +5292,7 @@
 	father=331325
 	mother=343304
 
-	8319.1.1 = {birth=yes}
+	8315.1.1 = {birth=yes}
 }
 
 ###
@@ -6973,7 +6975,7 @@
 	father=329361
 	mother=329325
 
-	8316.1.1 = {birth=yes}
+	8314.1.1 = {birth=yes}
 }
 399365 = {
 	name="Talla"	# not a lord
@@ -6985,7 +6987,7 @@
 	father=329361
 	mother=329325
 
-	8319.1.1 = {birth=yes}
+	8315.1.1 = {birth=yes}
 }
 330361 = {
 	name="Barra"	# not a lord

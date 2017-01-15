@@ -8004,6 +8004,55 @@
 	8296.1.1 = {
 		add_trait="knight"
 	}
+	8303.1.1 = {
+		add_spouse = 3027259
+	}	
+}
+72275 = {
+	name="Guthor" 
+	dynasty=275 #Grimm
+	religion="the_seven"
+	culture="reachman"
+	father=2275
+	mother=3027259
+	8305.1.1={
+		birth=yes
+	}	
+}
+72276 = {
+	name="Moribald" 
+	dynasty=275 #Grimm
+	religion="the_seven"
+	culture="reachman"
+	father=2275
+	mother=3027259
+	8307.1.1={
+		birth=yes
+	}	
+}
+72277 = {
+	name="Jenna"
+	female=yes
+	dynasty=275 #Grimm
+	religion="the_seven"
+	culture="reachman"
+	father=2275
+	mother=3027259
+	8309.1.1={
+		birth=yes
+	}	
+}
+72278 = {
+	name="Taena"
+	female=yes
+	dynasty=275 #Grimm
+	religion="the_seven"
+	culture="reachman"
+	father=2275
+	mother=3027259
+	8311.1.1={
+		birth=yes
+	}	
 }
 ###Chester
 277 = {

@@ -2255,6 +2255,46 @@
 		add_trait="knight"
 		add_trait="fortune_builder"
 	}
+	8302.1.1 = {
+		add_spouse = 317305
+	}		
+}
+515320 = {
+	name="Steffon"	#
+	dynasty=320
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=315320
+	mother=317305
+
+	8303.1.1 = {birth=yes}		
+}
+515321 = {
+	name="Katya"	#
+	female=yes
+	dynasty=320
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=315320
+	mother=317305
+
+	8305.1.1 = {birth=yes}		
+}
+515322 = {
+	name="Burton"	#
+	dynasty=320
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=315320
+	mother=317305
+
+	8306.1.1 = {birth=yes}		
 }
 
 ###
@@ -2832,6 +2872,57 @@
 
 	8274.1.1 = {birth="8274.1.1"}
 	8290.1.1 = {add_trait="knight"}
+	8302.1.1 = {add_spouse = 317324}
+}
+415312 = {
+	name="Bonifer"	# not a lord
+	dynasty=312
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=315312
+	mother=317324
+
+	8304.1.1 = {birth=yes}
+}
+415313 = {
+	name="Belwyn"	# not a lord
+	dynasty=312
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=315312
+	mother=317324
+
+	8306.1.1 = {birth=yes}
+}
+415314 = {
+	name="Shireen"	# not a lord
+	female=yes
+	dynasty=312
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=315312
+	mother=317324
+
+	8308.1.1 = {birth=yes}
+}
+415315 = {
+	name="Felicia"	# not a lord
+	female=yes
+	dynasty=312
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=315312
+	mother=317324
+
+	8310.1.1 = {birth=yes}
 }
 
 ###

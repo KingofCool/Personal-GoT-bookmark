@@ -22,3 +22,8 @@
 	law = agnatic_succession 
 	holder=119982370 # Salladhor Saan 
 }
+8314.1.1 = {
+	liege="k_stepstones"
+	law = succ_primogeniture 
+	holder=120982370 # Lysono Saan 
+}

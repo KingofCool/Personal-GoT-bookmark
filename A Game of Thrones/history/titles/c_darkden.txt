@@ -56,3 +56,6 @@
 8284.1.1 = { 
 	liege = d_northern_stepstones
 }
+8314.1.1 = {
+	holder=120982370 # Lysono Saan 
+}

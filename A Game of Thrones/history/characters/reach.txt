@@ -5993,6 +5993,43 @@
 		add_trait="knight"
 		add_trait="poor_warrior"
 	}
+	8303.1.1 = {
+		add_spouse = 88209
+	}
+}
+83271 = {
+	name="Alyn" #
+	dynasty=271 #Cockshaw
+	religion="the_seven"
+	culture="reachman"
+	father=3271	
+	mother=88209
+	8306.1.1={
+		birth=yes
+	}
+}
+83272 = {
+	name="Rycherd" #
+	dynasty=271 #Cockshaw
+	religion="the_seven"
+	culture="reachman"
+	father=3271	
+	mother=88209
+	8308.1.1={
+		birth=yes
+	}
+}
+83273 = {
+	name="Alerie" #
+	female=yes
+	dynasty=271 #Cockshaw
+	religion="the_seven"
+	culture="reachman"
+	father=3271	
+	mother=88209
+	8310.1.1={
+		birth=yes
+	}
 }
 4271 = {
 	name="Owen" #
@@ -7815,7 +7852,7 @@
 		employer=278
 	}
 	8304.1.1={
-		add_spouse=4252
+		add_matrilineal_spouse=4252
 	}	
 }
 222269 = {

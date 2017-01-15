@@ -7157,6 +7157,7 @@
 	culture="pentosi"
 
 	8231.1.1 = {birth="8231.1.1"}
+	8303.1.1 = {death=yes}	
 }
 102269123 = {
 	name="Ternesia"	# not a lord

@@ -1753,6 +1753,7 @@
 
 	8229.1.1 = {birth="8229.1.1"}
 	#8286.1.1 = {death="8286.1.1"} #she was alive in books
+	8302.1.1 = {death = yes}	
 }
 130360003 = {
 	name="Qezzala"	# not a lord

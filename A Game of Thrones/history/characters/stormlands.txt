@@ -5565,6 +5565,30 @@
 
 	8310.1.1 = {birth=yes}
 }
+349325 = {
+	name="Bryen"
+	dynasty=323
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=340323
+	mother=330361
+
+	8312.1.1 = {birth=yes}
+}
+349326 = {
+	name="Esme"
+	dynasty=323
+	female=yes
+	religion="the_seven"
+	culture="stormlander"
+
+	father=340323
+	mother=330361
+
+	8314.1.1 = {birth=yes}
+}
 
 ###
 ### HOUSE SWANN (id = 306)
@@ -6847,6 +6871,57 @@
 
 	8274.1.1 = {birth="8274.1.1"}
 	8290.1.1 = {add_trait="knight"}
+	8303.1.1 = {add_spouse=3010332}	
+}
+941354 = {
+	name="Humfrey"
+	dynasty=354
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=341354
+	mother=3010332
+
+	8305.1.1 = {birth=yes}	
+}
+941355 = {
+	name="Beric"
+	dynasty=354
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=341354
+	mother=3010332
+
+	8307.1.1 = {birth=yes}	
+}
+941356 = {
+	name="Berta"
+	female=yes
+	dynasty=354
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=341354
+	mother=3010332
+
+	8309.1.1 = {birth=yes}	
+}
+941357 = {
+	name="Larra"
+	female=yes
+	dynasty=354
+
+	religion="the_seven"
+	culture="stormlander"
+
+	father=341354
+	mother=3010332
+
+	8310.1.1 = {birth=yes}	
 }
 342354 = {
 	name="Rhonda"	# Beric's daughter, not a lord

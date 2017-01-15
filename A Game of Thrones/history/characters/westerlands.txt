@@ -3077,6 +3077,57 @@
 	8283.10.17 = {birth="8283.10.17"}
 	8294.5.4 = {add_trait="squire"}
 	8299.7.2 = {remove_trait="squire" add_trait="knight" add_trait="trained_warrior"} # Day after Blackwater
+	8303.1.1 = { add_spouse = 200228}	
+}
+85229 = {		
+	name="Genna"
+	female=yes
+	dynasty=229	
+	
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=5229
+	mother=200228
+	
+	8305.1.1 = {birth=yes}
+}
+85230 = {		
+	name="Lobella"
+	female=yes
+	dynasty=229	
+	
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=5229
+	mother=200228
+	
+	8307.1.1 = {birth=yes}
+}
+85231 = {		
+	name="Halder"
+	dynasty=229	
+	
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=5229
+	mother=200228
+	
+	8309.1.1 = {birth=yes}
+}
+85232 = {		
+	name="Lorent"
+	dynasty=229	
+	
+	religion="the_seven"	
+	culture="westerman"	
+	
+	father=5229
+	mother=200228
+	
+	8311.1.1 = {birth=yes}
 }
 6229 = {		
 	name="Leo"		
@@ -7785,6 +7836,57 @@
 	mother=103207
 	
 	8277.1.1 = {birth="8277.1.1"}
+	8303.1.1 = { add_spouse = 1188}	
+}
+904207 = {
+	name="Tybolt"
+	dynasty=207
+	
+	religion="the_seven"
+	culture="westerman"
+	
+	father=104207
+	mother=1188
+	
+	8305.1.1 = {birth=yes}
+}
+904208 = {
+	name="Tyanne"
+	female=yes
+	dynasty=207
+	
+	religion="the_seven"
+	culture="westerman"
+	
+	father=104207
+	mother=1188
+	
+	8307.1.1 = {birth=yes}
+}
+904209 = {
+	name="Stafford"
+	dynasty=207
+	
+	religion="the_seven"
+	culture="westerman"
+	
+	father=104207
+	mother=1188
+	
+	8309.1.1 = {birth=yes}
+}
+904210 = {
+	name="Lyabella"
+	female=yes
+	dynasty=207
+	
+	religion="the_seven"
+	culture="westerman"
+	
+	father=104207
+	mother=1188
+	
+	8310.1.1 = {birth=yes}
 }
 60000207 = {
 	name="Lorien"

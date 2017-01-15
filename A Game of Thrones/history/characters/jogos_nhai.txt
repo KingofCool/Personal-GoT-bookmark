@@ -511,6 +511,7 @@
 	culture="jogos_nhai"
 
 	8226.1.1 = {birth="8226.1.1"}
+	8304.1.1 = {death=yes}	
 }
 124607300 = {
 	name="Gulloo"	# not a lord

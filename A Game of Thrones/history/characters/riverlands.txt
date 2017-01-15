@@ -338,32 +338,6 @@
 		}
 	}
 	8300.1.1 = { add_trait = rebel_leader }
-	8300.4.15 = {
-		effect = {
-			k_westerlands = {
-				holder_scope = {
-					ROOT = { 
-						imprison = PREV 
-						set_character_flag = captured_in_battle
-						remove_character_modifier = the_dungeon
-						add_character_modifier = { 
-							name = house_arrest
-							duration = -1
-						}
-					}
-					reverse_banish = ROOT
-				}
-			}
-			e_iron_throne = {
-				holder_scope = { 
-					remove_opinion = {
-						modifier = opinion_joined_rebellion
-						who = ROOT
-					}
-				}
-			}
-		}	
-	}
 	8328.1.1 = {
 		death=yes
 	}

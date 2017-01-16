@@ -1819,6 +1819,12 @@
 			}
 		}	
 	}
+	8303.1.1 = {
+		add_trait="kingsguard"
+	}
+	8303.1.1 = {
+		employer=600496
+	}	
 	8323.1.1 = { death = yes }		
 }
 3521042 = {
@@ -6979,6 +6985,12 @@
 	}
 	8298.1.1 = { effect = { religion="rhllor" } }
 	8299.12.1 = { give_nickname = nick_the_giantsslayer }
+	8303.1.1 = {
+		add_trait="kingsguard"
+	}
+	8303.1.1 = {
+		employer=600496
+	}	
 	8320.1.1={
 		death="8320.1.1"
 	}

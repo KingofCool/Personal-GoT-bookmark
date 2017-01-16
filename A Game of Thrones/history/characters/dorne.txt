@@ -3293,7 +3293,13 @@
 			add_friend = 1003
 		}
 	}	
-	8298.1.1 = {give_nickname = nick_the_big_man} 		
+	8298.1.1 = {give_nickname = nick_the_big_man}
+	8303.1.1 = {
+		add_trait="kingsguard"
+	}
+	8303.1.1 = {
+		employer=600496
+	}	
 }
 ####################
 ###House Manwoody###

@@ -1671,6 +1671,7 @@
 	}
 	8304.1.1={
 		add_trait = trained_warrior	
+		remove_trait = poor_warrior		
 		dynasty=317	
 		father=317	
 	}	

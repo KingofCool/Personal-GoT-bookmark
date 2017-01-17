@@ -3034,15 +3034,6 @@ name="Jason"
 	mother=1149
 	
 	8274.1.1 = {birth="8274.1.1"}
-	8300.4.15 = {
-		effect = {
-			e_iron_throne = {
-				holder_scope = {
-					reverse_banish = ROOT
-				}
-			}
-		}	
-	}
 	8330.1.1 = { death = yes }		
 }
 4149 = {

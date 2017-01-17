@@ -705,6 +705,26 @@
 		add_spouse=9017
 		add_spouse=155174371
 	}
+	8303.1.1={ 
+		effect = {
+			set_character_flag = crowned_by_high_septon
+			add_character_modifier = {
+				name = suspected_bastard
+				duration = -1
+			}	
+			capital_scope = {
+				add_province_modifier = {
+					name = alchemist_guild
+					duration = -1
+				}
+			}
+			random_courtier = {
+				limit = { trait = archmaester }
+				set_character_flag = grandmaester
+				give_minor_title = title_grandmaester
+			}		
+		}
+	}	
 	8313.1.1 = {
 		add_spouse=500184
 	}

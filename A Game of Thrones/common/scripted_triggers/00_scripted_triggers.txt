@@ -812,23 +812,6 @@ can_be_castellan_trigger = {
 	NOR = {
 		trait = maester
 		trait = archmaester
-	}
-	OR = {
-		is_female = no
-		liege = { 
-			OR = {
-				culture = kayakayanayan
-				culture = samyrianan
-				culture = bayasabhadi
-				primary_title = {
-					OR = {
-						has_law = enatic_succession
-						has_law = enatic_cognatic_succession
-					}
-				}
-			}
-		}	
-		has_character_flag = special_chancellor			
 	}	
 	is_adult = yes
 	prisoner = no
@@ -863,24 +846,6 @@ can_be_chancellor_trigger = {
 	}
 	is_adult = yes
 	prisoner = no
-	OR = {
-		is_female = no
-		liege = { 
-			OR = {
-				is_close_relative = PREV
-				culture = kayakayanayan
-				culture = samyrianan
-				culture = bayasabhadi
-				primary_title = {
-					OR = {
-						has_law = enatic_succession
-						has_law = enatic_cognatic_succession
-					}
-				}
-			}
-		}	
-		has_character_flag = special_chancellor			
-	}
 	NOT = { trait = incapable }
 	NOT = { trait = in_hiding }
 	NOT = { trait = wikid }
@@ -910,59 +875,6 @@ can_be_marshal_trigger = {
 	NOR = {
 		trait = maester
 		trait = archmaester
-	}
-	OR = {
-		AND = {
-			is_female = no
-			NOT = {
-				liege = { 
-					OR = {
-						culture = kayakayanayan
-						culture = samyrianan
-						culture = bayasabhadi
-					}
-				}
-			}	
-		}
-		AND = {
-			is_female = yes
-			liege = { 
-				OR = {
-					culture = kayakayanayan
-					culture = samyrianan
-					culture = bayasabhadi	
-					culture = sarnorian				
-				}
-			}
-		}
-		AND = {
-			OR = {
-				trait = wildling
-				culture = moon_clansman				
-			}
-			liege = { culture = ROOT }
-		}
-		martial = 20
-		AND = {
-			OR = {
-				liege = { is_close_relative = ROOT }
-				is_ruler = yes
-			}
-			martial = 15
-		}
-		AND = {
-			OR = {
-				liege = { culture_group = dornish }
-				AND = {
-					trait = proud
-					is_ruler = yes
-				}	
-			}	
-			martial = 10
-		}
-		trait = dragon_rider
-		trait = horse
-		has_character_flag = special_marshal	
 	}
 	OR = {
 		is_adult = yes
@@ -1011,24 +923,6 @@ can_be_treasurer_trigger = {
 	}
 	is_adult = yes
 	prisoner = no
-	OR = {
-		is_female = no
-		liege = { 
-			OR = {
-				is_close_relative = PREV
-				culture = kayakayanayan
-				culture = samyrianan
-				culture = bayasabhadi
-				primary_title = {
-					OR = {
-						has_law = enatic_succession
-						has_law = enatic_cognatic_succession
-					}
-				}
-			}
-		}	
-		has_character_flag = special_chancellor			
-	}
 	NOT = { trait = incapable }
 	NOT = { trait = in_hiding }
 	NOT = { trait = wikid }

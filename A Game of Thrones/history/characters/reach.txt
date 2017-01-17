@@ -626,9 +626,6 @@
 			add_friend = 7107
 			add_friend = 206054
 			add_friend = 6102
-			add_friend = 3034050
-			add_friend = 9017
-			add_friend = 88091
 			add_friend = 155174371
 		}
 	}

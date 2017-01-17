@@ -37,3 +37,7 @@
 	liege="0"
 }
 8265.1.1 = { holder=12756821 } # Khorane (nc)
+8303.1.1={
+	liege="k_stepstones"
+	holder = 77160
+}

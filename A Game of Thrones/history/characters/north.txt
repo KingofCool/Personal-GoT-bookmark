@@ -701,8 +701,6 @@
 		add_spouse=7107
 		add_spouse=206054
 		add_spouse=6102
-		add_spouse=3034050
-		add_spouse=9017
 		add_spouse=155174371
 	}
 	8303.1.1={ 
@@ -1220,63 +1218,6 @@
 		culture="high_valyrian"
 	}
 }
-29577067 = {
-	name="Baela" # Baela daughter of Jon and Alyse Dayne
-	female=yes
-	dynasty=496		
-	
-	religion="valyrian"
-	culture="western_valyrian"
-	
-	add_trait = quick
-	add_trait = fair
-
-	father=1002059
-	mother=9017
-	
-	8306.1.1 = {
-		birth=yes
-		culture="high_valyrian"
-	}
-}
-29577068 = {
-	name="Calla" # Calla daughter of Jon and Alyse Dayne
-	female=yes
-	dynasty=496		
-	
-	religion="valyrian"
-	culture="western_valyrian"
-	
-	add_trait = tall
-	add_trait = strong
-	add_trait = fair
-
-	father=1002059
-	mother=9017
-	
-	8308.1.1 = {
-		birth=yes
-		culture="high_valyrian"
-	}
-}
-29577069 = {
-	name="Qoherys" # Qoherys son of Jon and Alyse Dayne
-	dynasty=496		
-	
-	religion="valyrian"
-	culture="western_valyrian"
-	
-	add_trait = tall
-	add_trait = strong
-
-	father=1002059
-	mother=9017
-	
-	8309.11.1 = {
-		birth=yes
-		culture="high_valyrian"
-	}
-} 
 29577070 = {
 	name="Shaena" # Shaena of the Iron Islands
 	female=yes
@@ -1639,45 +1580,6 @@
 		culture="high_valyrian"
 	}
 } 
-29577090 = {
-	name="Daeryssa" # Daeryssa daughter of Jon and Mylenda Celtigar
-	female=yes
-	dynasty=496		
-	
-	religion="valyrian"
-	culture="western_valyrian"
-
-	add_trait = fair
-	add_trait = strong
-	add_trait = genius
-
-	father=1002059
-	mother=3034050
-	
-	8306.12.1 = {
-		birth=yes
-		culture="high_valyrian"
-	}
-} 
-29577091 = {
-	name="Mhaegan" # Mhaegan daughter of Jon and Mylenda Celtigar
-	female=yes
-	dynasty=496		
-	
-	religion="valyrian"
-	culture="western_valyrian"
-
-	add_trait = fair
-	add_trait = tall
-
-	father=1002059
-	mother=3034050
-	
-	8309.1.1 = {
-		birth=yes
-		culture="high_valyrian"
-	}
-}  
 29577092 = {
 	name="Shiera" # Shiera the Heiress
 	female=yes
@@ -1842,25 +1744,7 @@
 		birth=yes
 		culture="high_valyrian"
 	}
-}
-29577101 = {
-	name="Leaysa" # Leaysa daughter of Jon and Alyse Dayne
-	female=yes
-	dynasty=496		
-	
-	religion="valyrian"
-	culture="western_valyrian"
-	
-	add_trait = quick
-
-	father=1002059
-	mother=9017
-	
-	8312.1.1 = {
-		birth=yes
-		culture="high_valyrian"
-	}
-}  
+} 
 29577102 = {
 	name="Asha" # Asha of the Iron Islands
 	female=yes
@@ -2354,8 +2238,6 @@
 			add_friend = 7107
 			add_friend = 206054
 			add_friend = 6102
-			add_friend = 3034050
-			add_friend = 9017
 			add_friend = 500184
 			add_friend = 155174371
 		}
@@ -2416,8 +2298,6 @@
 			add_friend = 7107
 			add_friend = 206054
 			add_friend = 6102
-			add_friend = 3034050
-			add_friend = 9017
 			add_friend = 500184
 			add_friend = 155174371
 		}
@@ -6616,10 +6496,7 @@
 	
 	8280.1.1 = {birth="8280.1.1"}
 	8289.1.1 = {add_trait="deceitful"}
-	8295.1.1 = {add_trait="flamboyant_schemer"}
-	8302.1.1 = {
-		add_matrilineal_spouse=474345
-	}	
+	8295.1.1 = {add_trait="flamboyant_schemer"}	
 }
 771081 = {
 	name="Wyman"
@@ -6630,7 +6507,6 @@
 		
 	add_trait="proud"
 
-	father=474345
 	mother=771080
 	
 	8303.1.1 = {birth=yes}	
@@ -6642,48 +6518,9 @@
 	religion="the_seven"
 	culture="half_southron"
 
-	father=474345
 	mother=771080
 	
-	8305.1.1 = {birth=yes}	
-}
-771083 = {
-	name="Wylla"
-	dynasty=80
-	female=yes
-	dna="bcbai0bfac0"		
-	religion="the_seven"
-	culture="half_southron"
-
-	father=474345
-	mother=771080
-	
-	8307.1.1 = {birth=yes}	
-}
-771084 = {
-	name="Donella"
-	dynasty=80
-	female=yes
-	
-	religion="the_seven"
-	culture="half_southron"
-
-	father=474345
-	mother=771080
-	
-	8308.1.1 = {birth=yes}	
-}
-771085 = {
-	name="Tormund"
-	dynasty=80
-	
-	religion="the_seven"
-	culture="half_southron"
-
-	father=474345
-	mother=771080
-	
-	8310.1.1 = {birth=yes}	
+	8304.1.1 = {birth=yes}	
 }
 781080 = {
 	name="Wylla"
@@ -8187,8 +8024,6 @@
 			add_friend = 7107
 			add_friend = 206054
 			add_friend = 77041
-			add_friend = 3034050
-			add_friend = 9017
 			add_friend = 500184
 			add_friend = 155174371
 		}

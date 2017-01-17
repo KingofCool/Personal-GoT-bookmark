@@ -2463,7 +2463,7 @@
 	add_trait="quick"
 	add_trait="twin"
 
-	8305.1.1 = {birth=yes}
+	8304.1.1 = {birth=yes}
 }
 959733303 = {
 	name="Bethany"
@@ -2481,7 +2481,7 @@
 	add_trait="quick"
 	add_trait="twin"
 
-	8305.1.1 = {birth=yes}
+	8304.1.1 = {birth=yes}
 }
 959733304 = {
 	name="Elinor"

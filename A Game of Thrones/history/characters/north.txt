@@ -7833,49 +7833,46 @@
 			}
 		}
 	}
-	8303.1.1 = {add_spouse = 4288}	
+	8303.1.1 = {add_spouse = 690113}	
 	8320.1.1 = {
 		death=yes
 	}	
 }
 56877330 = {
-	name="Arya" # Arya daughter of Jorah Mormont
+	name="Daenerys"
 	female=yes
-	dynasty=102		
-	
+	dynasty=302
 	religion="the_seven"
-	culture="northman"
-
-	add_trait = fair
-	add_trait = strong
-	add_trait = genius
+	culture="stormlander"
 
 	father=102
-	mother=4288
-	
-	8305.1.1 = {
-		birth=yes
-		culture="crownlander"	
-	}
+	mother=690113
+
+	add_trait="strong"
+	add_trait="fair"
+	add_trait="tall"
+	add_trait="quick"
+	add_trait="twin"
+
+	8304.1.1 = {birth=yes}
 }
 56877331 = {
-	name="Lyanna" # Lyanna daughter of Jorah Mormont
+	name="Lyanna"
 	female=yes
-	dynasty=102		
-	
+	dynasty=302
 	religion="the_seven"
-	culture="northman"
-
-	add_trait = tall
-	add_trait = quick
+	culture="stormlander"
 
 	father=102
-	mother=4288
-	
-	8307.1.1 = {
-		birth=yes
-		culture="crownlander"		
-	}
+	mother=690113
+
+	add_trait="strong"
+	add_trait="fair"
+	add_trait="tall"
+	add_trait="quick"
+	add_trait="twin"
+
+	8304.1.1 = {birth=yes}
 }
 56877332 = {
 	name="Sansa" # Sansa daughter of Jorah Mormont
@@ -7889,9 +7886,9 @@
 	add_trait = fair
 
 	father=102
-	mother=4288
+	mother=690113
 	
-	8308.1.1 = {
+	8306.1.1 = {
 		birth=yes
 		culture="crownlander"		
 	}
@@ -7908,9 +7905,9 @@
 	add_trait = strong
 
 	father=102
-	mother=4288
+	mother=690113
 	
-	8309.1.1 = {
+	8308.1.1 = {
 		birth=yes
 		culture="crownlander"		
 	}
@@ -7927,15 +7924,15 @@
 	add_trait = twin
 
 	father=102
-	mother=4288
+	mother=690113
 	
-	8311.1.1 = {
+	8310.1.1 = {
 		birth=yes
 		culture="crownlander"		
 	}
 }
 56877335 = {
-	name="Daenerys" # Daenerys daughter of Jorah Mormont
+	name="Arya" # Arya daughter of Jorah Mormont
 	female=yes
 	dynasty=102		
 	
@@ -7947,7 +7944,7 @@
 	add_trait = twin	
 
 	father=102
-	mother=4288
+	mother=690113
 	
 	8311.1.1 = {
 		birth=yes

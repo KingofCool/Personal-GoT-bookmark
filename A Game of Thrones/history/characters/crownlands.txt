@@ -5810,7 +5810,7 @@
 	father=77160
 	mother=157174371
 	
-	8315.1.1 = {birth=yes}		
+	8304.1.1 = {birth=yes}		
 }
 110162 = {
 	name="Aerion"
@@ -5825,7 +5825,7 @@
 	father=77160
 	mother=157174371
 	
-	8315.1.1 = {birth=yes}
+	8304.1.1 = {birth=yes}
 	8330.1.1 = {
 		add_trait="trained_warrior"
 		add_trait="knight"

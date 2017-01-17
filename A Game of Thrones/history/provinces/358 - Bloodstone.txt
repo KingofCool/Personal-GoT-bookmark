@@ -20,6 +20,6 @@ religion = pirate
 	b_bloodstone = ca_shipyard_1
 	b_bloodstone = ca_shipyard_2
 }
-8314.1.1 = {
+8303.1.1 = {
 	religion = weeping_lady
 }

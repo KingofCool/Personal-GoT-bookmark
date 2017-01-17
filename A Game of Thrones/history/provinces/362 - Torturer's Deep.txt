@@ -25,6 +25,6 @@ religion = pirate
 	b_torturersdeep = ca_asoiaf_pirateshipyard_3
 	b_torturersdeep = ca_asoiaf_pirateshipyard_4
 }
-8314.1.1 = {
+8303.1.1 = {
 	religion = weeping_lady
 }
